@@ -1,0 +1,74 @@
+{
+  // "$schema": "https://smapi.io/schemas/manifest.json", commented out because of VS Code schema problems
+
+  // Mod Name
+
+  "Name": "[CP] Eleanor",
+
+  // Mod Author
+
+  "Author": "StrojvedouciDenis",
+
+  // Current Version
+
+  "Version": "0.6.8-beta.1",
+
+  // Description
+
+  "Description": "This mod for Content Patcher adds new NPC named Eleanor created by StrojvedouciDenis.",
+
+  // Unique Manifest ID for Content Pack
+
+  "UniqueID": "StrojvedouciDenis.Eleanor",
+
+  // Update Keys
+
+  "UpdateKeys": ["Nexus:???"], // Deactivates SMAPI error, ??? will be changed to ID of this mod on NexusMods
+
+  // Framework Manifest ID
+
+  "ContentPackFor": { "UniqueID": "Pathoschild.ContentPatcher" },
+
+  // Minimum Version for SMAPI
+
+  "MinimumApiVersion": "4.0.0",
+
+  // Dependencies - Required mods and optional mods
+
+  "Dependencies": [
+    {
+      "UniqueID": "Pathoschild.ContentPatcher", // Content Patcher
+      "IsRequired": true,
+      "MinimumVersion": "2.0.0"
+    },
+    {
+      "UniqueID": "FlashShifter.StardewValleyExpandedCP", // Stardew Valley Expanded (a.k.a. SVE)
+      "IsRequired": true,
+      "MinimumVersion": "1.14.25"
+    },
+
+    // Optional mods & their compatibility		// CT's *should* not care about that mod missing or not --> these mods are not listed here
+    {
+      "UniqueID": "flashshifter.immersivefarm2remastered", // SVE map layout
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "flashshifter.GrandpasFarm", // SVE map layout
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Rafseazz.RSVCP", // Ridgeside Valley
+      "IsRequired": false,
+      "MinimumVersion": "2.5.4"
+    },
+    {
+      "UniqueID": "LemurKat.EastScarpe.SMAPI", // East Scarpe
+      "IsRequired": false,
+      "MinimumVersion": "2.4.2"
+    },
+    {
+      "UniqueID": "HogwartsET.CP.Hogwarts", // Hogwarts
+      "IsRequired": false
+    }
+  ]
+}

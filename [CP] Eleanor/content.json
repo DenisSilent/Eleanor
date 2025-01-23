@@ -1,0 +1,458 @@
+{
+ // "$schema": "https://smapi.io/schemas/content-patcher.json", commented out because of formating problems after format 2.5.0
+
+  "Format": "2.5.0",
+
+  // NPC Eleanor - config.json file //
+
+  // Config is also translatable with i18n, even though it doesn't look like
+  "ConfigSchema": {
+    // Optional content for Eleanor
+    "Eleanor_festivals": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Optional content for Eleanor",
+      "Description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor don't have any festival clothes for now, so Eleanor'll use it's default. As of 0.6.8-beta.1 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true."
+    },
+
+    "Eleanor_marriage": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Section": "Optional content for Eleanor",
+      "Description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.6.8-beta.1 it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! ="
+    },
+
+    "Eleanor_14hearts-variants": {
+      "AllowValues": "short, long",
+      "Default": "short", // short due to multiplayer support, I worry that long is too long for 1 SV multiplayer day
+      "Section": "Optional content for Eleanor",
+      "Description": "This setting lets you choose variant of Eleanor's 14hearts event. You can choose between short and long version, which contains of 5 automatically triggered events. = Short version has fully different outcome than the long one! = Default setting: long."
+    },
+
+    "Eleanor_14hearts-commented": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Section": "Optional content for Eleanor",
+      "Description": "This setting lets you choose if Eleanor's 14hearts event will include comments or not. Default setting: false."
+    },
+
+    // Visual side of Eleanor
+
+    "Eleanor_graphics": {
+      "AllowValues": "one look only, vanilla, full",
+      "Default": "one look only",
+      "Section": "Visual side of Eleanor",
+      "Description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.6.8-beta.1 it includes around 30%-done content. Default setting: only one look."
+    },
+
+    // Experimental - D O * N O T * C H A N G E
+    "Eleanor_14-->10hearts change": {
+      "AllowValues": "on, off",
+      "Default": "on",
+      "Section": "Experimental - DoNotChange",
+      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting changes Eleanor's 14 heart event to a 10 heart event. As of 0.6.8-beta.1 it *might* (needs better testing) be functional. If true, then the event that would be triggered when reaching 14 hearts with Eleanor will be triggered with only 10 hearts (so that it could even be triggerabe before marriage update; then this setting will be deleted) Default setting: true."
+    },
+
+    "Eleanor_on/off": {
+      "AllowValues": "on, safe mode, off",
+      "Default": "on",
+      "Section": "Experimental - DoNotChange",
+      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added into game. As of 0.6.8-beta.1 it is functional. When set to safe mode, Eleanor will be put out of map but all progres with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on."
+    }
+  },
+
+  // NPC Eleanor //
+
+  "DynamicTokens": [
+    // (in)formality
+    {
+      "Name": "Eleanor.(in)formal_DT",
+      "Value": "formal",
+      "When": {
+        "Hearts:Eleanor": "{{Range: 0, 3}}"
+      }
+    },
+    {
+      "Name": "Eleanor.(in)formal_DT",
+       "Value": "informal",
+      "When": {
+        "Hearts:Eleanor": "{{Range: 4, 14}}"
+      }
+    },
+    // dialogues heart levels
+    /*
+    {
+      "Name": "Eleanor - Dynamic Tokens - heart level",
+      "Value": "2",
+      "When": {
+        "Hearts:Eleanor": "2, 3"
+      }
+    },
+    {
+      "Name": "Eleanor - Dynamic Tokens - heart level",
+      "Value": "4",
+      "When": {
+        "Hearts:Eleanor": "4, 5"
+      }
+    },
+    {
+      "Name": "Eleanor - Dynamic Tokens - heart level",
+      "Value": "6",
+      "When": {
+        "Hearts:Eleanor": "6, 7"
+      }
+    },
+    {
+      "Name": "Eleanor - Dynamic Tokens - heart level",
+      "Value": "8",
+      "When": {
+        "Hearts:Eleanor": "8, 9"
+      }
+    },
+    {
+      "Name": "Eleanor - Dynamic Tokens - heart level",
+      "Value": "10",
+      "When": {
+        "Hearts:Eleanor": "{{Range: 10, 14}}"
+      }
+    },
+*/
+    // Weekdays - edited code from https://stardewmodding.wiki.gg/wiki/Npc_template#Content.json
+    {
+      "Name": "Eleanor.weekday_DT",
+      "Value": "Mon",
+      "When": { "DayOfWeek": "Monday" }
+    },
+    {
+      "Name": "Eleanor.weekday_DT",
+      "Value": "Tue",
+      "When": { "DayOfWeek": "Tuesday" }
+    },
+    {
+      "Name": "Eleanor.weekday_DT",
+      "Value": "Wed",
+      "When": { "DayOfWeek": "Wednesday" }
+    },
+    {
+      "Name": "Eleanor.weekday_DT",
+      "Value": "Thu",
+      "When": { "DayOfWeek": "Thursday" }
+    },
+    {
+      "Name": "Eleanor.weekday_DT",
+      "Value": "Fri",
+      "When": { "DayOfWeek": "Friday" }
+    },
+    {
+      "Name": "Eleanor.weekday_DT",
+      "Value": "Sat",
+      "When": { "DayOfWeek": "Saturday" }
+    },
+    {
+      "Name": "Eleanor.weekday_DT",
+      "Value": "Sun",
+      "When": { "DayOfWeek": "Sunday" }
+    }
+  ],
+
+  "Changes": [
+    // Dispositions //
+    {
+      "LogName": "Eleanor - NPC dispositions load command",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Eleanor": {
+          "DisplayName": "{{i18n:DisplayName}}",
+          "Language": "default", // speaks normal Stardew Valley language (default = English) X also knows some arcane or magical languages
+          "Gender": "female",
+          "Age": "adult", // around 25? might change (1.1.2025)
+          "Manner": "polite", // very polite
+          "SocialAnxiety": "shy", // very shy, but should open up to player
+          "Optimism": "neutral", // has realistic view on life
+          "BirthSeason": "fall",
+          "BirthDay": "18",
+          "HomeRegion": "town",
+          "IsDarkSkinned": "false",
+
+          "CanSocialize": "true",
+          "CanBeRomanced": "false",
+          "CanReceiveGifts": "true",
+          "CanCommentOnPurchasedShopItems": "true",
+          "CanGreetNearbyCharacters": "true",
+          "CanVisitIsland": "true",
+          "LoveInterest": "null",
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "HiddenUntilMet",
+          "SpouseAdopts": "null",
+          "SpouseWantsChildren": "true",
+          "SpouseGiftJealousy": "true",
+          "SpouseGiftJealousyFriendshipChange": -15,
+
+          /* 
+   "SpouseRoom": {
+        "MapAsset": "",
+        "MapSourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 0,
+            "Height": 0
+        }
+    },
+    "SpousePatio": {
+        "MapAsset": "",
+        "MapSourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 0,
+            "Height": 0
+        },
+        "SpriteAnimationFrames": [],
+        "SpriteAnimationPixelOffset": {
+            "X": 0,
+            "Y": 0
+        }
+    },
+    "SpouseFloors": "",
+    "SpouseWallpapers": "", 
+*/
+          "IntroductionsQuest": "true",
+          "ItemDeliveryQuests": "true",
+          "PerfectionScore": "true",
+          "EndSlideShow": "TrailingGroup", // Eleanor isn't important enough to be in the main group, so she'll be in the trailing group (with Wizard/Mr. Rasmodius, Sandy, Krobus, etc.)
+          "FriendsAndFamily": { "Wizard": "mentor" }, // NOT SURE IF WORKING NOR IF IT HAS ANY EFFECT (7.1.2025)
+
+          // Dumpster Diving
+          "DumpsterDiveEmote": "28",
+          "DumpsterDiveFriendshipEffect": "-5",
+
+          // Festivals
+          "FlowerDanceCanDance": "false",
+          "WinterStarParticipant": "true",
+          /*
+    "WinterStarGifts": [],
+*/
+
+          // Spawn Rules
+          "UnlockConditions": "true",
+          "SpawnIfMissing": "true",
+          "Home": [
+            {
+              "ID": "Default",
+              "Location": "WizardHouse",
+              "Tile": {
+                "X": 10,
+                "Y": 17
+              },
+              "Direction": "down",
+              "Condition": "true"
+            }
+          ],
+
+          // Appearance & Sprite
+          // I don't even want to know what are these lines of code doing, so let's just skip them - may the game use it's default or do whatever it wants
+          /*
+// keeping default
+    "TextureName": "Eleanor",
+    "Appearance": [
+        {
+            "Id": "",
+            "Season": "",
+            "Indoors": "",
+            "Outdoors": "",
+            "Condition": "",
+            "Portrait": "",
+            "Sprite": "",
+            "IsIslandAttire": "",
+            "Precedence": 0,
+            "Weight": 1
+        }
+    ],
+    "MugShotSourceRect": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 24
+    },
+    "Size": {
+        "X": 16,
+        "Y": 32
+    },
+*/
+          "Breather": "true",
+          /*
+// keeping default
+    "BreathChestRect": {
+        "X": 0,
+        "Y": 0,
+        "Width": 0,
+        "Height": 0
+    },
+    "BreathChestPosition": {
+        "X": 0,
+        "Y": 0
+    },
+*/
+          "Shadow": {
+            "Visible": "true",
+            "Offset": {
+              "X": 0,
+              "Y": 0
+            },
+            "Scale": 1
+          },
+          /*
+    "EmoteOffset": {
+        "X": 0,
+        "Y": 0
+    },
+*/
+          /*
+    "ShakePortraits": [],
+    "KissSpriteIndex": "",
+    "KissSpriteFacingDirection": "true",
+*/
+          "HiddenProfileEmoteSound": "achievement", // some secret, don't remember what it was
+          "HiddenProfileEmoteDuration": "5000" // some secret, don't remember what it was; 5000 = 5 seconds
+          /*
+    "HiddenProfileEmoteStartFrame": "",
+    "HiddenProfileEmoteFrameCount": "",
+    "HiddenProfileEmoteFrameDuration": "",
+*/
+          /*
+    // Advanced
+    "CustomFields": "",
+    "FormerCharacterNames": [],
+    "FestivalVanillaActorIndex": ""
+*/
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Eleanor": {
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "WizardHouse",
+              "Tile": {
+                "X": 1,
+                "Y": 1
+              }
+            }
+          ]
+        }
+      },
+      "When": {
+        "Eleanor_on/off": "safe mode"
+      }
+    },
+    {
+      "LogName": "Eleanor - marriage disposition when turned on load command",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Eleanor": {
+          "CanBeRomanced": true
+        }
+      },
+      "When": {
+        "Eleanor_marriage": "true"
+      }
+    },
+
+    // Blank file triggering
+    {
+      "LogName": "Eleanor - blank file load command",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Eleanor, Characters/schedules/Eleanor",
+      "FromFile": "assets/zzz_blankfile.json",
+      "When": {
+        "Eleanor_on/off": "on, safe mode"
+      }
+    },
+
+    // Dialogues //
+    {
+      "LogName": "Eleanor - dialogues load command",
+      "Action": "Include",
+      "FromFile": "assets/dialogues.json",
+      "When": {
+        "Eleanor_on/off": "on, safe mode"
+      }
+    },
+
+    // Events //
+    {
+      "LogName": "Eleanor - events load command",
+      "Action": "Include",
+      "FromFile": "assets/events.json",
+      "When": {
+        "Eleanor_on/off": "on, safe mode"
+      }
+    },
+
+    // Festivals //
+    {
+      "LogName": "Eleanor - festivals load command",
+      "Action": "Include",
+      "FromFile": "assets/festivals.json",
+      "When": {
+        "Eleanor_on/off": "on",
+        "Eleanor_festivals": "true"
+      }
+    },
+
+    // Gifts //
+    {
+      "LogName": "Eleanor - gifts load command",
+      "Action": "Include",
+      "FromFile": "assets/gifts.json",
+      "When": {
+        "Eleanor_on/off": "on, safe mode"
+      }
+    },
+
+    // Mails //
+    {
+      "LogName": "Eleanor - mails load command",
+      "Action": "Include",
+      "FromFile": "assets/mails.json",
+      "When": {
+        "Eleanor_on/off": "on, safe mode"
+      }
+    },
+
+    // NPC sprites & portraits //
+    {
+      "LogName": "Eleanor - graphics load command",
+      "Action": "Include",
+      "FromFile": "assets/NPCgraphics.json",
+      "When": {
+        "Eleanor_on/off": "on, safe mode"
+      }
+    },
+
+    // Schedule //
+    {
+      "LogName": "Eleanor - schedule load command",
+      "Action": "Include",
+      "FromFile": "assets/schedules.json",
+      "When": {
+        "Eleanor_on/off": "on, safe mode"
+      }
+    },
+
+    // Secrets of Eleanor //
+    {
+      "LogName": "Eleanor - secrets load command",
+      "Action": "Include",
+      "FromFile": "assets/z_secrets.json",
+      "When": {
+        "Eleanor_on/off": "on, safe mode"
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+Link:
+http://forums.stardewvalley.net/threads/unofficial-mod-updates.2096/
+
+Text:
+
+Unofficial updates fix mod compatibility when the author is away. This thread lets you download and request them.
+
+
+For players
+​
+How do I find the latest update?​
+Don't search this thread directly! Comments here might be outdated. See the SMAPI compatibility list and XNB alternatives list instead, which will link to the latest update (whether official or unofficial).​
+
+​
+How do I get help with a broken mod with no unofficial update?​
+First, see Modding:Help#Using mods on the wiki for the best places to get help.​
+​
+If that doesn't work, and the mod is incompatible and hasn't been updated in a long time and the author isn't responding to comments on the mod page, post a message in this thread and we'll help. Make sure to attach your SMAPI log after trying the mod.​
+
+​
+What mod types does this thread cover?​
+For XNB mods (the ones that manually replace game files), see migrating XNB mods to Content Patcher packs. This thread covers all other mod types.​
+
+
+For mod authors
+​
+How do I create an unofficial update?​
+Unofficial updates use a special version format, to avoid breaking update alerts for official updates. See create an unofficial update on the wiki for more info.​
+​
+To share an unofficial update, post a comment here with...​
+
+    the mod name, with a link to the official mod page;
+    a list of changes you made;
+    a link to the pull request where you submitted the changes to the original author (recommended);
+    the unofficial update as a .zip file (avoid .rar or .7z for best compatibility).
+
+
+​
+Can I update a closed-source or proprietary mod?​
+No, only open-source mods should be updated unofficially. If you post an unofficial update for a closed-source or proprietary mod, you're violating the original author's copyright on their work. You can contact the author and suggest making their mod open-source instead (and link them to open source on the wiki for more info).​
+
+​
+What if the mod author is still active?​
+
+    To fix a bug: submit a pull request or report it on the mod page instead. Unofficial updates for active compatible mods won't be listed on the mod compatibility list, so most players won't find them.
+    To fix an incompatible mod: you can technically post an unofficial update for an actively-maintained mod, but it's considered rude and some mod authors will be annoyed if you do this. Consider contacting the mod author to ask if they plan to update the mod themselves first.
+
+
+​
+How do I update my own mods?​
+For a SMAPI mod, see migration guides on the wiki. You can also check smapi.io/mods to know if the mod worked as of the last check (the list is updated regularly).​
+​
+For a content pack, ask the author of the framework mod that loads it (e.g. on the Content Patcher page for a Content Patcher pack). Most content packs aren't affected by game updates once the parent mod updates.​
+
+
+
+
+Link:
+https://stardewvalleywiki.com/Modding:Mod_compatibility#For_mod_developers
+
+Text:
+
+For mod developers
+Updating a mod
+
+See migration guides. You can...
+
+    Add or update your mods in the list above (see format).
+    Post a message in the coordination thread to ask questions or say when your mods are updated.
+    Chat or ask questions in #making-mods on Discord.
+
+Creating an unofficial update
+
+To avoid conflicting with official updates, here's the recommended way to create an unofficial update. This assumes you're creating a basic update (not a continuation or reinvention), and the code is on GitHub (adjust the steps accordingly if it's elsewhere).
+
+    Fork the code.
+    Make your changes to that fork (see updating a mod).
+    Change the version in manifest.json to the official version number plus 0.0.1, with -unofficial.1-yourName at the end.
+    For example, if the current version is 1.0.0 and your name is SampleUser, change it to 1.0.1-unofficial.1-sampleUser. If you need to release a new unofficial update, just increment unofficial.1 to unofficial.2, etc. This ensures that official versions supersede unofficial ones (e.g., for update checks), and other users can release newer unofficial updates if needed.
+    Push your changes to GitHub.
+    Post a release package to the coordination thread with a link to your fork on GitHub.
+    (If the mod uses the NuGet build package, there should be a release package named <mod name> <version>.zip in your bin folder.)
+    Submit a pull request to the original author (if applicable).

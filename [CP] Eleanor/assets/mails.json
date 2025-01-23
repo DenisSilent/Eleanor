@@ -1,0 +1,36 @@
+{
+  "Changes": [
+    // triggering mails
+    {
+      "LogName": "Eleanor - mails - trigger",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_mail_Debug": {
+          "Id": "{{ModId}}_mail_Debug",
+          "Trigger": "DayEnding",
+          "Action": "AddMail Current {{ModId}}_mail_Debug"
+        }
+      }
+    },
+    /*
+    {
+      "LogName": "Eleanor - mails",
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "{{ModId}}_mail_DebugT": "null."
+      }
+    },
+    */
+    // the mail itself
+    {
+      "LogName": "Eleanor - mails",
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "{{ModId}}_mail_Debug": "{{i18n:Mail.Debug |PlayerName={{PlayerName}}}}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+// Wait for this. First, create and test other things.
+
+// Format: starting frame/animation frames/ending frame
+
+{
+  "Changes": [
+    {
+      "LogName": "Eleanor - animations",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+        "eventname": "spriteframe/spriteframe spriteframe ... spriteframe spriteframe/spriteframe",
+        "": ""
+      }
+    }
+  ]
+}

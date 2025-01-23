@@ -1,0 +1,7 @@
+{}
+
+/*
+This file is triggered (for this mod only) for dialogues & schedules . It contains no data, which is its purpose. So you can have one file with conditions (instead of many files triggered if conditions in "content.json" are met --> really bad troubleshooting) in files for dialogues, schedules, etc.
+
+This file is created after asking at SV's Discord why schedule in my mod won't work. User aviroen2 saved me. Thanks so much!
+*/
