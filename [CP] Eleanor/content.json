@@ -72,14 +72,14 @@ commented out because of the missing art
   "DynamicTokens": [
     // (in)formality
     {
-      "Name": "Eleanor.(in)formal_DT",
+      "Name": "DT_formallity",
       "Value": "formal",
       "When": {
         "Hearts:Eleanor": "{{Range: 0, 3}}"
       }
     },
     {
-      "Name": "Eleanor.(in)formal_DT",
+      "Name": "DT_formallity",
        "Value": "informal",
       "When": {
         "Hearts:Eleanor": "{{Range: 4, 14}}"
@@ -125,37 +125,37 @@ commented out because of the missing art
 */
     // Weekdays - edited code from https://stardewmodding.wiki.gg/wiki/Npc_template#Content.json
     {
-      "Name": "Eleanor.weekday_DT",
+      "Name": "DT_weekday",
       "Value": "Mon",
       "When": { "DayOfWeek": "Monday" }
     },
     {
-      "Name": "Eleanor.weekday_DT",
+      "Name": "DT_weekday",
       "Value": "Tue",
       "When": { "DayOfWeek": "Tuesday" }
     },
     {
-      "Name": "Eleanor.weekday_DT",
+      "Name": "DT_weekday",
       "Value": "Wed",
       "When": { "DayOfWeek": "Wednesday" }
     },
     {
-      "Name": "Eleanor.weekday_DT",
+      "Name": "DT_weekday",
       "Value": "Thu",
       "When": { "DayOfWeek": "Thursday" }
     },
     {
-      "Name": "Eleanor.weekday_DT",
+      "Name": "DT_weekday",
       "Value": "Fri",
       "When": { "DayOfWeek": "Friday" }
     },
     {
-      "Name": "Eleanor.weekday_DT",
+      "Name": "DT_weekday",
       "Value": "Sat",
       "When": { "DayOfWeek": "Saturday" }
     },
     {
-      "Name": "Eleanor.weekday_DT",
+      "Name": "DT_weekday",
       "Value": "Sun",
       "When": { "DayOfWeek": "Sunday" }
     }

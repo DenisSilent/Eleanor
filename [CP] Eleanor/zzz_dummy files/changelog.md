@@ -6,7 +6,7 @@
 
 ### version 0.6.9-beta.5 (24.1.2025)
 
-- Changed code names for config, NPC code name, log names
+- Changed code names for config, NPC code name, log names, Dynamic Topics names
 - Commented some parts of the code out (prepare for future release)
 - Fix for dispositions with Discord help by the same ones as last time
 - 10 hearts event is now old short 14 hearts version (until marriage update)
