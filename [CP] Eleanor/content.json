@@ -8,56 +8,62 @@
   // Config is also translatable with i18n, even though it doesn't look like
   "ConfigSchema": {
     // Optional content for Eleanor
-    "Eleanor_festivals": {
+    "Festivals": {
       "AllowValues": "true, false",
       "Default": "true",
       "Section": "Optional content for Eleanor",
-      "Description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor don't have any festival clothes for now, so Eleanor'll use it's default. As of 0.6.8-beta.1 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true."
+      "Description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor don't have any festival clothes for now, so Eleanor'll use it's default. As of 0.6.9-beta.3 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true."
     },
 
-    "Eleanor_marriage": {
+    "Marriage": {
       "AllowValues": "true, false",
       "Default": "false",
       "Section": "Optional content for Eleanor",
-      "Description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.6.8-beta.1 it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! ="
+      "Description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.6.9-beta.3 it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! ="
     },
-
-    "Eleanor_14hearts-variants": {
+/*
+commented out untill marriage update
+    "14hearts-variants": {
       "AllowValues": "short, long",
       "Default": "short", // short due to multiplayer support, I worry that long is too long for 1 SV multiplayer day
       "Section": "Optional content for Eleanor",
       "Description": "This setting lets you choose variant of Eleanor's 14hearts event. You can choose between short and long version, which contains of 5 automatically triggered events. = Short version has fully different outcome than the long one! = Default setting: long."
     },
 
-    "Eleanor_14hearts-commented": {
+    "14hearts-commented": {
       "AllowValues": "true, false",
       "Default": "false",
       "Section": "Optional content for Eleanor",
       "Description": "This setting lets you choose if Eleanor's 14hearts event will include comments or not. Default setting: false."
     },
+*/
 
     // Visual side of Eleanor
-
-    "Eleanor_graphics": {
+/*
+commented out because of the missing art
+    "Graphics": {
       "AllowValues": "one look only, vanilla, full",
       "Default": "one look only",
       "Section": "Visual side of Eleanor",
-      "Description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.6.8-beta.1 it includes around 30%-done content. Default setting: only one look."
+      "Description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.6.9-beta.3 it includes around 30%-done content. Default setting: only one look."
     },
+    */
 
     // Experimental - D O * N O T * C H A N G E
-    "Eleanor_14-->10hearts change": {
+    /*
+    "14-->10hearts change": {
       "AllowValues": "on, off",
       "Default": "on",
       "Section": "Experimental - DoNotChange",
-      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting changes Eleanor's 14 heart event to a 10 heart event. As of 0.6.8-beta.1 it *might* (needs better testing) be functional. If true, then the event that would be triggered when reaching 14 hearts with Eleanor will be triggered with only 10 hearts (so that it could even be triggerabe before marriage update; then this setting will be deleted) Default setting: true."
+      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting changes Eleanor's 14 heart event to a 10 heart event. As of 0.6.9-beta.3 it *might* (needs better testing) be functional. If true, then the event that would be triggered when reaching 14 hearts with Eleanor will be triggered with only 10 hearts (so that it could even be triggerabe before marriage update; then this setting will be deleted) Default setting: true."
     },
+    */
 
-    "Eleanor_on/off": {
+    "On/off": {
       "AllowValues": "on, safe mode, off",
       "Default": "on",
       "Section": "Experimental - DoNotChange",
-      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added into game. As of 0.6.8-beta.1 it is functional. When set to safe mode, Eleanor will be put out of map but all progres with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on."
+      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added into game. As of 0.6.9-beta.3 it is functional. When set to safe mode, Eleanor will be put out of map but all progres with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on."
     }
   },
 
@@ -158,15 +164,15 @@
   "Changes": [
     // Dispositions //
     {
-      "LogName": "Eleanor - NPC dispositions load command",
+      "LogName": "{{ModId}} - NPC dispositions load command",
       "Action": "EditData",
       "Target": "Data/Characters",
       "Entries": {
-        "Eleanor": {
+        "StrojvedouciDenis.Eleanor": {
           "DisplayName": "{{i18n:DisplayName}}",
           "Language": "default", // speaks normal Stardew Valley language (default = English) X also knows some arcane or magical languages
           "Gender": "female",
-          "Age": "adult", // around 25? might change (1.1.2025)
+          "Age": "adult", // around 20? might change (23.1.2025)
           "Manner": "polite", // very polite
           "SocialAnxiety": "shy", // very shy, but should open up to player
           "Optimism": "neutral", // has realistic view on life
@@ -253,7 +259,7 @@
           // I don't even want to know what are these lines of code doing, so let's just skip them - may the game use it's default or do whatever it wants
           /*
 // keeping default
-    "TextureName": "Eleanor",
+    "TextureName": "StrojvedouciDenis.Eleanor",
     "Appearance": [
         {
             "Id": "",
@@ -329,10 +335,11 @@
       }
     },
     {
+      "LogName": "{{ModId}} - safe mode disposition when turned on load command",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "Entries": {
-        "Eleanor": {
+      "Fields": {
+        "StrojvedouciDenis.Eleanor": {
           "Home": [
             {
               "Id": "Default",
@@ -346,112 +353,115 @@
         }
       },
       "When": {
-        "Eleanor_on/off": "safe mode"
+        "On/off": "safe mode"
       }
     },
+    /*
+commented out untill marriage update
     {
-      "LogName": "Eleanor - marriage disposition when turned on load command",
+      "LogName": "{{ModId}} - marriage disposition when turned on load command",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "Entries": {
-        "Eleanor": {
+      "Fields": {
+        "StrojvedouciDenis.Eleanor": {
           "CanBeRomanced": true
         }
       },
       "When": {
-        "Eleanor_marriage": "true"
+        "Marriage": "true"
       }
     },
+    */
 
     // Blank file triggering
     {
-      "LogName": "Eleanor - blank file load command",
+      "LogName": "{{ModId}} - blank file load command",
       "Action": "Load",
-      "Target": "Characters/Dialogue/Eleanor, Characters/schedules/Eleanor",
+      "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor, Characters/schedules/StrojvedouciDenis.Eleanor",
       "FromFile": "assets/zzz_blankfile.json",
       "When": {
-        "Eleanor_on/off": "on, safe mode"
+        "On/off": "on, safe mode"
       }
     },
 
     // Dialogues //
     {
-      "LogName": "Eleanor - dialogues load command",
+      "LogName": "{{ModId}} - dialogues load command",
       "Action": "Include",
       "FromFile": "assets/dialogues.json",
       "When": {
-        "Eleanor_on/off": "on, safe mode"
+        "On/off": "on, safe mode"
       }
     },
 
     // Events //
     {
-      "LogName": "Eleanor - events load command",
+      "LogName": "{{ModId}} - events load command",
       "Action": "Include",
       "FromFile": "assets/events.json",
       "When": {
-        "Eleanor_on/off": "on, safe mode"
+        "On/off": "on, safe mode"
       }
     },
 
     // Festivals //
     {
-      "LogName": "Eleanor - festivals load command",
+      "LogName": "{{ModId}} - festivals load command",
       "Action": "Include",
       "FromFile": "assets/festivals.json",
       "When": {
-        "Eleanor_on/off": "on",
-        "Eleanor_festivals": "true"
+        "On/off": "on",
+        "Festivals": "true"
       }
     },
 
     // Gifts //
     {
-      "LogName": "Eleanor - gifts load command",
+      "LogName": "{{ModId}} - gifts load command",
       "Action": "Include",
       "FromFile": "assets/gifts.json",
       "When": {
-        "Eleanor_on/off": "on, safe mode"
+        "On/off": "on, safe mode"
       }
     },
 
     // Mails //
     {
-      "LogName": "Eleanor - mails load command",
+      "LogName": "{{ModId}} - mails load command",
       "Action": "Include",
       "FromFile": "assets/mails.json",
       "When": {
-        "Eleanor_on/off": "on, safe mode"
+        "On/off": "on, safe mode"
       }
     },
 
     // NPC sprites & portraits //
     {
-      "LogName": "Eleanor - graphics load command",
+      "LogName": "{{ModId}} - graphics load command",
       "Action": "Include",
       "FromFile": "assets/NPCgraphics.json",
       "When": {
-        "Eleanor_on/off": "on, safe mode"
+        "On/off": "on, safe mode"
       }
     },
 
     // Schedule //
     {
-      "LogName": "Eleanor - schedule load command",
+      "LogName": "{{ModId}} - schedule load command",
       "Action": "Include",
       "FromFile": "assets/schedules.json",
       "When": {
-        "Eleanor_on/off": "on, safe mode"
+        "On/off": "on, safe mode"
       }
     },
 
     // Secrets of Eleanor //
     {
-      "LogName": "Eleanor - secrets load command",
+      "LogName": "{{ModId}} - secrets load command",
       "Action": "Include",
       "FromFile": "assets/z_secrets.json",
       "When": {
-        "Eleanor_on/off": "on, safe mode"
+        "On/off": "on, safe mode"
       }
     }
   ]

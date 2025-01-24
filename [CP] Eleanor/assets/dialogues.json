@@ -5,7 +5,7 @@
     {
       "LogName": "Eleanor - dialogues - schedule strings",
       "Action": "EditData",
-      "Target": "Strings/schedules/Eleanor",
+      "Target": "Strings/schedules/StrojvedouciDenis.Eleanor",
       "Entries": {
         "safemode": "{{i18n:Schedule.safemode |PlayerName={{PlayerName}}}}"
       }
@@ -16,7 +16,7 @@
     {
       "LogName": "Eleanor - dialogues - weekday",
       "Action": "EditData",
-      "Target": "Characters/Dialogue/Eleanor",
+      "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
       "Entries": {
         // GENERIC DIALOGUE
 
@@ -182,7 +182,7 @@
     {
       "LogName": "Eleanor - formal dialogues - CT's selection",
       "Action": "EditData",
-      "Target": "Characters/Dialogue/Eleanor",
+      "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
       "Entries": {
         //Conversation Topics
         //Vanilla & Vanilla+ (More CT's mod + 1.6 strings)
@@ -307,7 +307,7 @@
         "Eleanor_fest_spouse-spr24": "{{i18n:Dialogues.festivals.{{Eleanor.(in)formal_DT}}_spouse-spr24 |PlayerName={{PlayerName}}}}"
       },
       "When": {
-        "Eleanor_festivals": "true"
+        "Festivals": "true"
       }
     },
     {
@@ -319,7 +319,7 @@
         "Eleanor_fest_spouse-sum28": "{{i18n:Dialogues.festivals.{{Eleanor.(in)formal_DT}}_spouse-sum28 |PlayerName={{PlayerName}}}}"
       },
       "When": {
-        "Eleanor_festivals": "true"
+        "Festivals": "true"
       }
     },
     {
@@ -331,7 +331,7 @@
         "Eleanor_fest_spouse-fal16": "{{i18n:Dialogues.festivals.{{Eleanor.(in)formal_DT}}_spouse-fal16 |PlayerName={{PlayerName}}}}"
       },
       "When": {
-        "Eleanor_festivals": "true"
+        "Festivals": "true"
       }
     },
     {
@@ -343,7 +343,7 @@
         "Eleanor_fest_spouse-fal27": "{{i18n:Dialogues.festivals.{{Eleanor.(in)formal_DT}}_spouse-fal27 |PlayerName={{PlayerName}}}}"
       },
       "When": {
-        "Eleanor_festivals": "true"
+        "Festivals": "true"
       }
     },
     {
@@ -355,7 +355,7 @@
         "Eleanor_fest_spouse-win8": "{{i18n:Dialogues.festivals.{{Eleanor.(in)formal_DT}}_spouse-win8 |PlayerName={{PlayerName}}}}"
       },
       "When": {
-        "Eleanor_festivals": "true"
+        "Festivals": "true"
       }
     },
     {
@@ -367,7 +367,7 @@
         "Eleanor_fest_spouse-win25": "{{i18n:Dialogues.festivals.{{Eleanor.(in)formal_DT}}_spouse-win25 |PlayerName={{PlayerName}}}}"
       },
       "When": {
-        "Eleanor_festivals": "true"
+        "Festivals": "true"
       }
     },
 
@@ -397,7 +397,7 @@
         "Utility.cs.5383": "{{i18n:Dialogues.marriage.Utility.cs.5383 |PlayerName={{PlayerName}}}}"
       },
       "When": {
-        "Eleanor_marriage": "true"
+        "Marriage": "true"
       }
     },
     {
@@ -420,7 +420,7 @@
         "SummitEvent_closingmessage5": "And you've made us very proud!"
       },
       "When": {
-        "Eleanor_marriage": "true",
+        "Marriage": "true",
         "Hearts:Eleanor": "{{Range: 10, 14}}"
       }
     },
@@ -503,7 +503,7 @@
         "Bad_9": "{{i18n:Dialogues.marriage.Bad_9 |PlayerName={{PlayerName}}}}"
       },
       "When": {
-        "Eleanor_marriage": "true"
+        "Marriage": "true"
       }
     },
 
@@ -511,7 +511,7 @@
     {
       "LogName": "Eleanor - dialogues - Hogwarts",
       "Action": "EditData",
-      "Target": "Characters/Dialogue/Eleanor",
+      "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
       "Entries": {
         "summer_3": "{{i18n:Dialogues.addons.summer_3 |PlayerName={{PlayerName}}}}",
         "summer_4": "{{i18n:Dialogues.addons.summer_4 |PlayerName={{PlayerName}}}}",

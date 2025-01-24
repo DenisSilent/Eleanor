@@ -11,52 +11,52 @@
   "config.section.Optional content for Eleanor.name": "Optional content for Eleanor",
   "config.section.Optional content for Eleanor.description": "Fully optional content for NPC Eleanor that can be turned on or off at player's wish.",
 
-  "config.Eleanor_festivals.name": "Eleanor - festivals",
-  "config.Eleanor_festivals.values.true": "true",
-  "config.Eleanor_festivals.values.false": "false",
-  "config.Eleanor_festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor don't have any festival clothes for now, so Eleanor'll use it's default. As of 0.6.8-beta.1 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
+  "config.Festivals.name": "Festivals",
+  "config.Festivals.values.true": "true",
+  "config.Festivals.values.false": "false",
+  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor don't have any festival clothes for now, so Eleanor'll use it's default. As of 0.6.9-beta.3 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
 
-  "config.Eleanor_marriage.name": "Eleanor - marriage",
-  "config.Eleanor_marriage.values.true": "true",
-  "config.Eleanor_marriage.values.false": "false",
-  "config.Eleanor_marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.6.8-beta.1 it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
+  "config.Marriage.name": "Marriage",
+  "config.Marriage.values.true": "true",
+  "config.Marriage.values.false": "false",
+  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.6.9-beta.3 it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
 
-  "config.Eleanor_14hearts-variants.name": "Eleanor - 14 hearts event variant",
-  "config.Eleanor_14hearts-variants.values.short": "short",
-  "config.Eleanor_14hearts-variants.values.long": "long",
-  "config.Eleanor_14hearts-variants.description": "This setting lets you choose variant of Eleanor's 14hearts event. You can choose between short and long version, which contains of 5 automatically triggered events. = Short version has fully different outcome than the long one! = Default setting: long.",
+  "config.14hearts-variants.name": "14 hearts event variant",
+  "config.14hearts-variants.values.short": "short",
+  "config.14hearts-variants.values.long": "long",
+  "config.14hearts-variants.description": "This setting lets you choose variant of Eleanor's 14hearts event. You can choose between short and long version, which contains of 5 automatically triggered events. = Short version has fully different outcome than the long one! = Default setting: long.",
 
-  "config.Eleanor_14hearts-commented.name": "Eleanor - 14 hearts event comments",
-  "config.Eleanor_14hearts-commented.values.true": "true",
-  "config.Eleanor_14hearts-commented.values.false": "false",
-  "config.Eleanor_14hearts-commented.description": "This setting lets you choose if Eleanor's 14hearts event will include comments or not. Default setting: false.",
+  "config.14hearts-commented.name": "14 hearts event comments",
+  "config.14hearts-commented.values.true": "true",
+  "config.14hearts-commented.values.false": "false",
+  "config.14hearts-commented.description": "This setting lets you choose if Eleanor's 14hearts event will include comments or not. Default setting: false.",
 
   // Visual side of Eleanor
 
   "config.section.Visual side of Eleanor.name": "Visual side of Eleanor",
   "config.section.Visual side of Eleanor.description": "Visual side of Eleanor.",
 
-  "config.Eleanor_graphics.name": "Eleanor - graphics",
-  "config.Eleanor_graphics.values.one look only": "one look only",
-  "config.Eleanor_graphics.values.vanilla": "vanilla",
-  "config.Eleanor_graphics.values.full": "full",
-  "config.Eleanor_graphics.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.6.8-beta.1 it includes around 30%-done content. Default setting: only one look.",
+  "config.Graphics.name": "NPC graphics",
+  "config.Graphics.values.one look only": "one look only",
+  "config.Graphics.values.vanilla": "vanilla",
+  "config.Graphics.values.full": "full",
+  "config.Graphics.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.6.9-beta.3 it includes around 30%-done content. Default setting: only one look.",
 
   // Experimental - DoNotChange
 
   "config.section.Experimental - DoNotChange.name": "Experimental - = Do = Not = Change =",
   "config.section.Experimental - DoNotChange.description": "Fair warning: If you change anything from these below, you might corrupt your savegame.",
 
-  "config.Eleanor_14-->10hearts change.name": "Eleanor - event change 14 hearts --> 10hearts",
-  "config.Eleanor_14-->10hearts change.values.on": "on",
-  "config.Eleanor_14-->10hearts change.values.off": "off",
-  "config.Eleanor_14-->10hearts change.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting changes Eleanor's 14 heart event to a 10 heart event. As of 0.6.8-beta.1 it *might* (needs better testing) be functional. If true, then the event that would be triggered when reaching 14 hearts with Eleanor will be triggered with only 10 hearts (so that it could even be triggerabe before marriage update; then this setting will be deleted) Default setting: true.",
+  "config.14-->10hearts change.name": "Event change 14 hearts --> 10hearts",
+  "config.14-->10hearts change.values.on": "on",
+  "config.14-->10hearts change.values.off": "off",
+  "config.14-->10hearts change.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting changes Eleanor's 14 heart event to a 10 heart event. As of 0.6.9-beta.3 it *might* (needs better testing) be functional. If true, then the event that would be triggered when reaching 14 hearts with Eleanor will be triggered with only 10 hearts (so that it could even be triggerabe before marriage update; then this setting will be deleted) Default setting: true.",
 
-  "config.Eleanor_on/off.name": "Eleanor - on/off",
-  "config.Eleanor_on/off.values.on": "on",
-  "config.Eleanor_on/off.values.safe mode": "safe mode",
-  "config.Eleanor_on/off.values.off": "off",
-  "config.Eleanor_on/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added into game. As of 0.6.8-beta.1 it is functional. When set to safe mode, Eleanor will be put out of map but all progres with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
+  "config.On/off.name": "On/off",
+  "config.On/off.values.on": "on",
+  "config.On/off.values.safe mode": "safe mode",
+  "config.On/off.values.off": "off",
+  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added into game. As of 0.6.9-beta.3 it is functional. When set to safe mode, Eleanor will be put out of map but all progres with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
 
   // Eleanor's name
   "DisplayName": "Eleanor",

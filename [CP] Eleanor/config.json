@@ -1,9 +1,7 @@
 {
-  "Eleanor_festivals": "true",
-  "Eleanor_marriage": "false",
-  "Eleanor_14hearts-variants": "long",
-  "Eleanor_14hearts-commented": "true",
-  "Eleanor_graphics": "full",
-  "Eleanor_14-->10hearts change": "off",
-  "Eleanor_on/off": "on"
+  "Festivals": "true",
+  "Marriage": "false",
+  "14hearts-variants": "short",
+  "14hearts-commented": "false",
+  "On/off": "on"
 }

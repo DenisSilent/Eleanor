@@ -4,18 +4,46 @@
 
 ## Last version
 
+### version 0.6.9-beta.5 (24.1.2025)
+
+- Changed code names for config, NPC code name, log names
+- Commented some parts of the code out (prepare for future release)
+- Fix for dispositions with Discord help by the same ones as last time
+- 10 hearts event is now old short 14 hearts version (until marriage update)
+- Various other non-code fixes
+- Synchroniezd with GitHub repo
+
+---
+
+### version 0.6.9-beta.4 (23.1.2025)
+
+- Changed config names for better readibility in GMCM
+- "ModID" in entries and its duplicating with Discord help by:
+  - `@spiderbuttons`
+  - `@atravita`
+  - `@chu2.718281828459045235360287471`
+  - `@agentlyoko`
+
+---
+
+### version 0.6.9-beta.3 (21.1.2025)
+
+- Synchronied manifest versions
+- Prepared 14to10 hearts event fix
+
+---
 
 ### version 0.6.9-beta.2 (19.1.2025)
 
-- Created final (for now private) GitHub repo
-- Unified *"NexusMods page.md"* and *"README.md"* formating
-- Unified *Dynamic Tokens* formating
+- Created final (for now private) GitHub repository
+- unified *"NexusMods page.md"* and *"README.md"* formating
+- unified *Dynamic Tokens* formating
 
 ---
 
 ### version 0.6.9-beta.1 (19.1.2025)
 
-- Changelog converting to .md format with Discord help by:
+- Changelog converting to .md format with help from Discord users:
   - `@airyn16`
   - `@tlitookilakin`
   - `@chu2.718281828459045235360287471`
@@ -27,7 +55,7 @@
 
 ### version 0.6.8-beta.2 (12.1.2025)
 
-- Dialogue breaks Discord help by:
+- Dialogue breaks fixed with help from Discord users:
   - `@ichortower`
   - `@abagaianye`
   - `@l0veraven`
@@ -37,7 +65,7 @@
 
 ### version 0.6.8-beta.1 (10.1.2025)
 
-- Mail code not working fix (Discord)
+- Mail code not working fix with help from Discord users:
   - `@atravita`
   - `@tiakall`
   - `@ichortower`
@@ -48,7 +76,7 @@
 
 ### version 0.6.7-beta.12 (9.1.2025)
 
-- 2 hearts event code edits and fixes (Discord)
+- 2 hearts event code edits and fixes with help from Discord users:
   - `@atravita`
   - `@tiakall`
   - `@ichortower`
@@ -139,7 +167,7 @@
 ### version 0.6.7-beta.3 (26.-28.12.2024)
 
 - Testing and debugging and fixing and ... 14 hearts event (p1)
-- These Discord members tried and successfully helped me with my problem about farmer's name not showing properly in events
+- These Discord members tried and successfully helped me with my problem about farmer's name not showing properly in events:
   - `@angelofstars`
   - `@endertedi`
   - `@atravita`
