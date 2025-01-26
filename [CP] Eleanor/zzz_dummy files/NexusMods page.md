@@ -1,4 +1,3 @@
-
 # NPC Eleanor
 
 The NPC Eleanor mod, created by StrojvedouciDenis (a.k.a. DenisSilent or Denis001 (at Discord)) for game Stardew Valley.
@@ -9,14 +8,17 @@ Eleanor is a young witch that studies at Mr. Rasmodius' tower. She is kinda shy 
 
 ### **Roadmap**:
 
-* 0.7.5 - whole vanilla NPC graphics
-* 0.8.0 - release
-* 0.9.0 - marriage
-* X.X.X - more sprites & portaites - won't happen any time soon
+* ~~0.7.0 - one look only clothes + 1st GitHub release~~ 26.1.2025
+* 0.7.4 - final mod content before internal testing and debugging
+* 0.7.4-beta.7 - final private internal version, synchro with GitHub and upcoming NexusMods release
+* 0.8.0 - wide public release on NexusMods
+* 0.9.0 - marriage update
+* 1.0.0 - whole vanilla NPC graphics
+* ~~X.X.X - more sprites & portaites - won't happen any time soon~~
 
 ### **Compactibility with other mods:**
 
-SVE - this mod was created as an add-on NPC for SVE, so it should be fully compactible (there *might* be bugs, as not 100% of the SV or SVE content was tested; if you report them, I'll try my best to fix them)
+SVE - this mod was created as an add-on NPC for SVE, so it should be fully compactible (there *might* be bugs, as not 100% of the SV nor SVE content was tested; if you report them, I'll try my best to fix them)
 RSV - should be fully compactible (there might be bugs; if you report them, I'll try my best to fix them)
 ES - should be fully compactible (there might be bugs; if you report them, I'll try my best to fix them)
 Other NPC mods:
@@ -42,7 +44,7 @@ Disclamer (from MIT Licence):
 
 THE SOFTWARE IS PROVIDED *"AS IS"*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Portaites for Eleanor are made using [https://jazzybee.itch.io/sdvcharactercreator](https://jazzybee.itch.io/sdvcharactercreator) and edited so they could be used as portaites for NPC. However, as the program's Terms of Use define, I do not claim any rights for these images (not that I would even want them, but...). Also, as the program and its images are shared under Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License, images (Eleanor's portraites) will stay licenced with Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License, no matter the other mod files's licencing.
+Portaites for Eleanor are made using [https://jazzybee.itch.io/sdvcharactercreator](https://jazzybee.itch.io/sdvcharactercreator) and edited so they could be used as portaites for NPC. However, as the program's Terms of Use define, I do not claim any rights for these images (not that I would even want them, but...). Also, as the program and its images are shared under Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License, images created with it (Eleanor's portraits and also her sprites that are made from the portraites, even though I drawed them myself) will stay licenced with Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License, no matter the other mod files's licencing.
 
 #### **Permissons:**
 

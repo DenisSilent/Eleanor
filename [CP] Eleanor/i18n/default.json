@@ -63,19 +63,6 @@
 
   // Dialogues.json
 
-  /*
-// questions; might be used for event
-
-"Wed4": "'$y Hello, {{PlayerName}}.#$b#Do you think you have...#$b#...let's say...#$b#...something to do with some kind of magic?__Looks like I do._I suppose you do - I fell magic from you - but we shall let the time tell, shouldn't we?_Magic? No, I don't think so._Well, I'll leave you with that opinion, at least for now...'",
-
-"Thu4": "#$q Eleanor.learning-yes/Eleanor.learning-notreally/Eleanor.learning-no Eleanor.Thu4_followup#Hello, {{PlayerName}}. I'd like to ask - what is your opinion about learning new things?        #$r Eleanor.learning-yes 50 Eleanor.Thu4_yes#I love it!        #$r Eleanor.learning-notreally -10 Eleanor.Thu4_sorry#It's a thing we can't avoid.        #$r Eleanor.learning-no -25 Eleanor.Thu4_no#Personally, I don't like it.    ", "Eleanor.learning-yes": "Me too! It's always good to expand your knowgladge, don't you think?$h",        "Eleanor.learning-notreally": "Hmm... That's actually ture. Interesting point of view to my question, {{PlayerName}}.",        "Eleanor.learning-no": "Oh.#$b#I didn't expect that, but it is a valid answer indeed, so let it be this way. But please, don't blame me for really liking it.$s",    
-
-"Thu6": "Hi, {{PlayerName}}!#$b#$y 'How is the life treating you today?_I suppose good._Glad to hear that!_I had better days._Oh. I'm sorry for that. But try to think positively, {{PlayerName}}, and everything will be good again.'",
-"Sun6": "$y 'Hello, {{PlayerName}}. If you won't mind, I'd like to know if you believe in Yoba or not. Just so I wouldn't say something that would upset you._Yes, I do._Good to know. I hope you won't mind that I don't._No, I don't._Me neither. But I hope you won't mind the ones that do.'",    
-
-"Mon10": "Hi, {{PlayerName}}!#$b#$y 'How is it going today?_Better, especially with you here._Oh! Well..._I had better days._Oh. I'm sorry for that. But try to think positively, {{PlayerName}}, and everything will be good again.'",
-*/
-
   // Daily dialogues
   
   "Dialogues.0hearts.random.0": "Uh...#$b#Hello, ${Mr.^Ms.^Mx.}$ {{PlayerName}}.#$b#%Eleanor turns away from you... Looks like she is trying to ignore your existence.",
@@ -462,6 +449,8 @@
   "Dialogues.marriage.AfterWedding": "StrojvedouciDenis.Eleanor-DEBUG:AfterWedding",
   "Dialogues.marriage.Engaged": "StrojvedouciDenis.Eleanor-DEBUG:Engaged",
   "Dialogues.marriage.EngagedRoommate": "StrojvedouciDenis.Eleanor-DEBUG:EngagedRoommate",
+  "Dialogues.marriage.SummitEvent_Dialogue3A_StrojvedouciDenis.Eleanor": "Such a nice view here, don't you think, {{PlayerName}}?#$b#I'm glad we came here...#$b#It is %years years since you came to Pelican Town, and I'm happy you did.#$b#Because my life is much better with you in it.#$b#Just think about it - how would my life look like if you didn't come here?#$b#Would I ever find out about myself? About my powers? About my parents's past?#$b#Because I can't...",
+  "Dialogues.marriage.SummitEvent_Dialogue3B_StrojvedouciDenis.Eleanor": "But that doesn't matter anymore, because of you, {{PlayerName}}.#$b# It was you who helped me in my search for myself.#$b#And I know that I can't thank you enough for that.#$b#But I'll try to do it every day, every moment, every second of my life.#$b#Because you are the one who helped me to find myself.#$b#And I'm so grateful for that...#$b#I love you, {{PlayerName}}.",
 
   // Marriage edit
   "Dialogues.marriage.Utility.cs.5367": "When Eleanor first arrived as a student of Mr. Rasmodius, we had the same feeling as with {{PlayerName}} half a year later - we didn't know if they would fit in with our community...#$b#But from this day forward, both of them are going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite {{PlayerName}} and Eleanor in the bonds of marriage.",

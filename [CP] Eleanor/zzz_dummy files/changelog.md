@@ -4,6 +4,14 @@
 
 ## Last version
 
+### version 0.7.0-beta.1 (26.1.2025)
+
+- Summit dialogues experiment
+- Finally completed one look only clothes
+- Updated NexusMods page document
+
+---
+
 ### version 0.6.9-beta.5 (24.1.2025)
 
 - Changed code names for config, NPC code name, log names, Dynamic Topics names

@@ -14,15 +14,15 @@
       "Section": "Optional content for Eleanor",
       "Description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor don't have any festival clothes for now, so Eleanor'll use it's default. As of 0.6.9-beta.3 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true."
     },
-
+/*
+commented out untill marriage update
     "Marriage": {
       "AllowValues": "true, false",
       "Default": "false",
       "Section": "Optional content for Eleanor",
       "Description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.6.9-beta.3 it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! ="
     },
-/*
-commented out untill marriage update
+
     "14hearts-variants": {
       "AllowValues": "short, long",
       "Default": "short", // short due to multiplayer support, I worry that long is too long for 1 SV multiplayer day

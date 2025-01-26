@@ -405,23 +405,12 @@
       "Action": "EditData",
       "Target": "Data/EngagementDialogue",
       "Entries": {
-        "SummitEvent_Intro_Spouse": "Hey, {{PlayerName}}.",
-        "SummitEvent_Intro2_Spouse": "It's so beautiful up here...",
-        "SummitEvent_Intro2_Spouse_Gruff": "Great view, huh?",
-        "SummitEvent_Dialogue1_Spouse": "I was just thinking about the last %year years...",
-        "SummitEvent_Dialogue1B_Spouse": "We've been through a lot together, haven't we?$h",
-        "SummitEvent_Dialogue2_Spouse": "...But look how far we've come.",
-        "SummitEvent_Dialogue3_{{ModId}}": "StrojvedouciDenis.Eleanor-DEBUG:SummitEvent_Dialogue3_{{ModId}}",
-      
-        "SummitEvent_closingmessage": "It's been a long road...",
-        "SummitEvent_closingmessage2": "You challenged yourself to reach the summit",
-        "SummitEvent_closingmessage3": "What an accomplishment!",
-        "SummitEvent_closingmessage4": "We've been watching every step of the way",
-        "SummitEvent_closingmessage5": "And you've made us very proud!"
-      },
+        "SummitEvent_Intro_Spouse": "Hey, @.\"/pause 500/message \"If I can see this, then it works!\"",
+        "SummitEvent_Intro2_Spouse": "It's so beautiful up here...\"/pause 500/message \"If I can see this, then it works!\"",
+        "SummitEvent_Dialogue3_{{ModId}}": "{{i18n:Dialogues.marriage.SummitEvent_Dialogue3A_{{ModId}} |PlayerName={{PlayerName}}}}/"
+            },
       "When": {
-        "Marriage": "true",
-        "Hearts:Eleanor": "{{Range: 10, 14}}"
+        "Marriage": "true"
       }
     },
     {
