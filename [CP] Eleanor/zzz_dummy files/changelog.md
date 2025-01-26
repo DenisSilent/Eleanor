@@ -9,6 +9,7 @@
 - Summit dialogues experiment
 - Finally completed one look only clothes
 - Updated NexusMods page document
+- First experimental GitHub release
 
 ---
 
