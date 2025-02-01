@@ -598,11 +598,11 @@
   "Events.8h.4": "StrojvedouciDenis.Eleanor-DEBUG:8h.4",
 
   // 10 hearts
-  // 10 hearts event will be created along with Eleanor's marriage update (0.9.0)
+  // commented out untill marriage update
   // "Event.10h.0": "StrojvedouciDenis.Eleanor-DEBUG:10h.0",
 
   // 14 hearts
-  // OLD part 1/1 (old 14h event dialogues, now 14h-short; variants are automatically used depending if you have Hogwarts installed or not)
+  // OLD part 1/1 (old 14h event dialogues, now 14h-short; variants are automatically used depending if you have Hogwarts installed or not; also 10 hearts temporary event)
   // SVE
   "Events.14h-short_SVE.0": "... You ask yourself why on earth is Eleanor here, standing in this magic circle, left all alone...",  //message
   "Events.14h-short_SVE.1": "Wait, she still didn't notice you.#You look at her face and you see...#...#tears???#Now THIS is unexpected.",  //message

@@ -102,7 +102,7 @@ debug 27.1.25, for summit dialogues
     // SVE only version
     // Location: Wizard's Tower
     // Trigger: Entering the Wizard's Tower after reaching 10 hearts with Eleanor.
-    // Description: StrojvedouciDenis.Eleanor shares her history with the player, revealing her past and her connection to magic.
+    // Description: Eleanor shares her history with the player, revealing her past and her connection to magic.
     {
       "LogName": "Eleanor - 10hearts temporary event (14h SVE short)",
       "Action": "EditData",
@@ -118,7 +118,7 @@ debug 27.1.25, for summit dialogues
     // Description: ???
 
     /*
-    Event until marriage update.
+    Commented out until marriage update.
     {
       "LogName": "Eleanor - event - 12hearts",
       "Action": "EditData",
@@ -132,8 +132,8 @@ debug 27.1.25, for summit dialogues
     // 14hearts
     // Part 0 - event checker
     // Location: your farm
-    // Trigger: Automatically after reaching 14 hearts with StrojvedouciDenis.Eleanor.
-    // Description: It is an event checker. What do you want from him? It just does its job. Wait, it doesn't, it's commented out.
+    // Trigger: Automatically (??? needs testing) after reaching 14 hearts with Eleanor.
+    // Description: It is an event checker. What do you want from him? It just does its job. Wait, it doesn't, it's commented out ;)
     /*
     {
       "LogName": "Eleanor - 14hearts event (p0) - evnet checker",
@@ -148,10 +148,10 @@ debug 27.1.25, for summit dialogues
     // long versions
     // NOTE: Multiplayer does NOT pause time during cutscenes! One in-game hour = 43 real world seconds, full day = 14 minutes 20 seconds... (Taken from: https://stardewmodding.wiki.gg/wiki/Tips_for_Heart_Events_-_Writing_and_Narrative_Design#Additional_Tips,_Caveats_and_Notes)
     // Part 1 - Eleanor's note
-    //NOTE: This event will be unique depending on your configuration.
+    // NOTE: This event will be unique depending on your configuration.
     // Location: your farmhouse
     // Trigger: Automatically when getting up at your farmhouse after reaching 14 hearts with StrojvedouciDenis.Eleanor.
-    // Description: StrojvedouciDenis.Eleanor will be gone and you will find a letter from her.
+    // Description: Eleanor will be gone and you will find a letter from her.
     /*
     {
       "LogName": "Eleanor - 14hearts event (p1) - Eleanor's letter (no comment)",
@@ -180,8 +180,8 @@ debug 27.1.25, for summit dialogues
 
     // Part 2 - Wizard's tower
     // Location: Wizard's tower
-    // Trigger: Immediatly after reading StrojvedouciDenis.Eleanor's letter.
-    // Description: StrojvedouciDenis.Eleanor is gone. You run to Mr. Rasmodius to ask him about her.
+    // Trigger: Immediatly after reading Eleanor's letter.
+    // Description: Eleanor is gone. You run to Mr. Rasmodius to ask him about her.
     {
       "LogName": "Eleanor - 14hearts event (p2) - Wizard's tower",
       "Action": "EditData",
@@ -198,7 +198,7 @@ debug 27.1.25, for summit dialogues
     // Part 3 - Sprite Spring note
     // Location: Sprite Spring
     // Trigger: Immediatly after talking to Mr. Rasmodius.
-    // Description: You find a note from StrojvedouciDenis.Eleanor.
+    // Description: You find a note from Eleanor.
     {
       "LogName": "Eleanor - 14hearts event (p3) - Sprite Spring note",
       "Action": "EditData",
@@ -213,8 +213,8 @@ debug 27.1.25, for summit dialogues
 
     // Part 4 - Abigail's dream
     // Location: Abigail's room
-    // Trigger: Immediatly after reading StrojvedouciDenis.Eleanor's note.
-    // Description: You find Abigail in her room, having a dream containing message from StrojvedouciDenis.Eleanor.
+    // Trigger: Immediatly after reading Eleanor's note.
+    // Description: You find Abigail in her room, having a dream containing message from Eleanor.
     {
       "LogName": "Eleanor - 14hearts event (p4) - Abigail's dream",
       "Action": "EditData",
@@ -230,7 +230,7 @@ debug 27.1.25, for summit dialogues
     // Part 5 - The end
     // Location: The beach
     // Trigger: Immediatly after talking to Abigail.
-    // Description: Happy end. You find StrojvedouciDenis.Eleanor on the beach.
+    // Description: Happy end. You find Eleanor on the beach, safe. The mystery will be solved.
     {
       "LogName": "Eleanor - 14hearts event (p5) - The end",
       "Action": "EditData",
@@ -245,8 +245,8 @@ debug 27.1.25, for summit dialogues
 
     // Part 6 - Thank you from mod author
     // Location: your farmhouse
-    // Trigger: Immediatly after the happy end.
-    // Description: Thank you
+    // Trigger: Immediatly after the happy end (p5).
+    // Description: Thank you!
     {
       "LogName": "Eleanor - 14hearts event (p6) - Thank you from mod author",
       "Action": "EditData",
@@ -262,14 +262,14 @@ Removed for now due to the lack of marriage update
     // short versions
     // SVE only version
     // Location: Wizard's Tower
-    // Trigger: Entering the Wizard's Tower after reaching 14 hearts with StrojvedouciDenis.Eleanor.
-    // Description: StrojvedouciDenis.Eleanor shares her history with the player, revealing her past and her connection to magic.
+    // Trigger: Entering the Wizard's Tower after reaching 14 hearts with Eleanor.
+    // Description: Eleanor shares her history with the player, revealing her past and her connection to magic.
     {
       "LogName": "Eleanor - 14hearts event (short) - SVE",
       "Action": "EditData",
       "Target": "Data/Events/WizardHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-short_SVE/e StrojvedouciDenis.Eleanor_10hearts/f StrojvedouciDenis.Eleanor 3500": "none/-1000 -1000/farmer 8 8 0 StrojvedouciDenis.Eleanor 10 17 0/pause 2222/move farmer 0 17 1/pause 2500/message \"{{i18n:Events.14h-short_SVE.0 |PlayerName={{PlayerName}}}}\"/pause 3333/message \"{{i18n:Events.14h-short_SVE.1 |PlayerName={{PlayerName}}}}\"/message \"{{i18n:Events.14h-short_SVE.2 |PlayerName={{PlayerName}}}}\"/pause 1111/move StrojvedouciDenis.Eleanor 10 17 3/pause 1111/message \"{{i18n:Events.14h-short_SVE.3 |PlayerName={{PlayerName}}}}\"/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.4 |PlayerName={{PlayerName}}}}\"/pause 1111/emote farmer 8 continue/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.5 |PlayerName={{PlayerName}}}}\"/emote farmer 56 continue/pause 1111/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.6 |PlayerName={{PlayerName}}}}\"/pause 2000/shake StrojvedouciDenis.Eleanor 1000/pause 3000/message \"{{i18n:Events.14h-short_SVE.7 |PlayerName={{PlayerName}}}}\"globalFade/pause 3500/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.8 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.9 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.10 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.11 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.12 |PlayerName={{PlayerName}}}}\"/pause 3333/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.13 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.14 |PlayerName={{PlayerName}}}}\"globalFadeToClear/pause 5000/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.15 |PlayerName={{PlayerName}}}}\"/globalfadeout/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.16|PlayerName={{PlayerName}}}}\"/pause 7777/end newDay"
+        "StrojvedouciDenis.Eleanor_14hearts-short_SVE/e StrojvedouciDenis.Eleanor_10hearts/f StrojvedouciDenis.Eleanor 3500": "none/10 25/farmer 9 33 0 StrojvedouciDenis.Eleanor 10 17 0/skippable/viewport move 0 -2 4000/pause 1111/move farmer 0 -9 0/pause 1000/emote farmer 8/pause 3000/message \"{{i18n:Events.14h-short_SVE.0 |PlayerName={{PlayerName}}}}\"/pause 1500/move farmer 0 -7 1/pause 1500/message \"{{i18n:Events.14h-short_SVE.1 |PlayerName={{PlayerName}}}}\"/pause 1111/message \"{{i18n:Events.14h-short_SVE.2 |PlayerName={{PlayerName}}}}\"/pause 555/jump StrojvedouciDenis.Eleanor 4/pause 111/faceDirection StrojvedouciDenis.Eleanor 3/pause 1111/message \"{{i18n:Events.14h-short_SVE.3 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.4 |PlayerName={{PlayerName}}}}\"/pause 1111/emote farmer 8/pause 111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.5 |PlayerName={{PlayerName}}}}\"/emote farmer 56/pause 222/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.6 |PlayerName={{PlayerName}}}}\"/pause 2000/shake StrojvedouciDenis.Eleanor 1000/pause 2111/message \"{{i18n:Events.14h-short_SVE.7 |PlayerName={{PlayerName}}}}\"/globalFade/viewport -1000 -1000/pause 3500/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.8 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.9 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.10 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.11 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.12 |PlayerName={{PlayerName}}}}\"/pause 3333/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.13 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.14 |PlayerName={{PlayerName}}}}\"/pause 5000/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.15 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.16|PlayerName={{PlayerName}}}}\"/pause 5555/end"
       },
       "When": {
         "HasMod |contains=HogwartsET.CP.Hogwarts": false,
@@ -278,8 +278,8 @@ Removed for now due to the lack of marriage update
     },
     // Hogwarts version
     // Location: Hogwarts Hogsmeade Village
-    // Trigger: Entering Hogsmeade Village after reaching 14 hearts with StrojvedouciDenis.Eleanor and having the Hogwarts mod installed.
-    // Description: StrojvedouciDenis.Eleanor shares her history with the player, revealing her past and her connection to magic in the context of Hogwarts.
+    // Trigger: Entering Hogsmeade Village after reaching 14 hearts with Eleanor and having the Hogwarts mod installed.
+    // Description: Eleanor shares her history with the player, revealing her past and her connection to magic in the context of Hogwarts.
     {
       "LogName": "Eleanor - 14hearts event (short) - Hogwarts ",
       "Action": "EditData",
@@ -298,7 +298,7 @@ Removed for now due to the lack of marriage update
     // Hogwarts gone - y1
     // Location: your farm
     // Trigger: Entering your farm.
-    // Description: Mr. Rasmodius will inform player about StrojvedouciDenis.Eleanor's trip to Hogwarts.
+    // Description: Mr. Rasmodius will inform player about .Eleanor's trip to Hogwarts.
     {
       "LogName": "Eleanor - event - Hogwarts gone y1",
       "Action": "EditData",

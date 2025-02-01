@@ -372,6 +372,9 @@
     },
 
     // Marriage + engagement dialogues //
+    /*
+    commented out untill marriage update
+    
     {
       "LogName": "Eleanor - engagement dialogues + marriage fix",
       "Action": "EditData",
@@ -400,7 +403,7 @@
         "Marriage": "true"
       }
     },
-/*
+
     {
       "LogName": "Eleanor - summit fixes and changes",
       "Action": "EditData",
@@ -432,22 +435,21 @@
         "SummitEvent_Intro2_Spouse": "/speak StrojvedouciDenis.Eleanor \"It is so beautiful up here...\"/pause 500/speak StrojvedouciDenis.Eleanor \"If I can see this, then the second one works!\"/pause 500",
         "SummitEvent_Dialogue3_<spouse>": "{{i18n:Dialogues.marriage.SummitEvent_Dialogue3A_{{ModId}} |PlayerName={{PlayerName}}}}/"
             },
-            /*
       "When": {
         "Marriage": "true"
       }
     },
-    */
+
     {
       "LogName": "Eleanor - marriage dialogues",
       "Action": "EditData",
       "Target": "Characters/Dialogue/MarriageDialogueEleanor",
       "Entries": {
-        /*
+        
         These 2 commented lines below will stay here as a memory of the Discord chat with many user (including Pathoschild, who gave me the 1st line)
        "Rainy_Day_{{Random: {{Range:0,4}} |key=rainy_day}}": "{{i18n:Dialogues. rainy-day.{{Random: {{Range:0,4}} |key=rainy_day}}}}",
         "Rainy_Night": "{{i18n:Dialogues.{{ModId}}.Rainy_Day_{{Random:{{Range:0,5}}}} |PlayerName={{PlayerName}}}}",
-*/
+
         "Rainy_Day_0": "{{i18n:Dialogues.marriage.Rainy_day_0 |PlayerName={{PlayerName}}}}",
         "Rainy_Day_1": "{{i18n:Dialogues.marriage.Rainy_day_1 |PlayerName={{PlayerName}}}}",
         "Rainy_Day_2": "{{i18n:Dialogues.marriage.Rainy_day_2 |PlayerName={{PlayerName}}}}",
@@ -520,7 +522,7 @@
         "Marriage": "true"
       }
     },
-
+*/
     // Other mods
     {
       "LogName": "Eleanor - dialogues - Hogwarts",
