@@ -1,5 +1,7 @@
 # Changelog
 
+Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/commits/Releases)
+
 ---
 
 ## Last version
