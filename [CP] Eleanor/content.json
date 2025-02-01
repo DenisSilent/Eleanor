@@ -12,7 +12,7 @@
       "AllowValues": "true, false",
       "Default": "true",
       "Section": "Optional content for Eleanor",
-      "Description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor don't have any festival clothes for now, so Eleanor'll use it's default. As of 0.6.9-beta.3 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true."
+      "Description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor don't have any festival clothes for now, so Eleanor'll use it's default. As of 0.7.0-beta.3 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true."
     },
 /*
 commented out untill marriage update
@@ -20,7 +20,7 @@ commented out untill marriage update
       "AllowValues": "true, false",
       "Default": "false",
       "Section": "Optional content for Eleanor",
-      "Description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.6.9-beta.3 it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! ="
+      "Description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.7.0-beta.3 it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! ="
     },
 
     "14hearts-variants": {
@@ -45,7 +45,7 @@ commented out because of the missing art
       "AllowValues": "one look only, vanilla, full",
       "Default": "one look only",
       "Section": "Visual side of Eleanor",
-      "Description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.6.9-beta.3 it includes around 30%-done content. Default setting: only one look."
+      "Description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.7.0-beta.3 it includes around 30%-done content. Default setting: only one look."
     },
     */
 
@@ -55,7 +55,7 @@ commented out because of the missing art
       "AllowValues": "on, off",
       "Default": "on",
       "Section": "Experimental - DoNotChange",
-      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting changes Eleanor's 14 heart event to a 10 heart event. As of 0.6.9-beta.3 it *might* (needs better testing) be functional. If true, then the event that would be triggered when reaching 14 hearts with Eleanor will be triggered with only 10 hearts (so that it could even be triggerabe before marriage update; then this setting will be deleted) Default setting: true."
+      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting changes Eleanor's 14 heart event to a 10 heart event. As of 0.7.0-beta.3 it *might* (needs better testing) be functional. If true, then the event that would be triggered when reaching 14 hearts with Eleanor will be triggered with only 10 hearts (so that it could even be triggerabe before marriage update; then this setting will be deleted) Default setting: true."
     },
     */
 
@@ -63,7 +63,7 @@ commented out because of the missing art
       "AllowValues": "on, safe mode, off",
       "Default": "on",
       "Section": "Experimental - DoNotChange",
-      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added into game. As of 0.6.9-beta.3 it is functional. When set to safe mode, Eleanor will be put out of map but all progres with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on."
+      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added into game. As of 0.7.0-beta.3 it is functional. When set to safe mode, Eleanor will be put out of map but all progres with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on."
     }
   },
 
