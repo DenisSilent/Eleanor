@@ -7,10 +7,10 @@ To share an unofficial update, post a comment to https://forums.stardewvalley.ne
     a list of changes you made;
     the unofficial update as a .zip file (avoid .rar or .7z for best compatibility).
 
-(PS: If someone will ask for source code of this mod (https://github.com/DenisSilent/StrojvedouciDenis.Eleanor), the mod itself is it's source code as it doesn't include any .dll nor other type of files, so the original source code is lastest version of this mod created by StrojvedouciDenis and/or lastest unofficial update, so you should link to those)
+(PS: If someone asks for source code of this mod (https://github.com/DenisSilent/StrojvedouciDenis.Eleanor), the mod itself is its source code as it doesn't include any .dll nor other types of files, so the original source code is lastest version of this mod created by StrojvedouciDenis and/or lastest unofficial update, so you should link to those)
 ​
 ​
 What if the mod author (StrojvedouciDenis) is still active?​
-Just push out a unofficial update, I'd be glad.
+Just push out an unofficial update, I'd be glad.
 
 ​

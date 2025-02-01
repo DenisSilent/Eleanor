@@ -12,7 +12,7 @@
 * Fixed temporary 10 hearts (a.k.a. 14h short SVE version) event
 * Various fixes and edits
 * Corrected manifest versions
-* Synchroniezd with GitHub repo + made it publicly availible
+* Synchronized with GitHub repo + made it publicly available
 
 ### version 0.7.0-beta.3 (1.2.2025)
 
@@ -50,7 +50,7 @@
 * Changed code names for config, NPC code name, log names, Dynamic Topics names
 * Commented some parts of the code out (prepare for future release)
 * Fix for dispositions with Discord help by the same ones as last time
-* 10 hearts event is now old short 14 hearts version (until marriage update)
+* 10 hearts event is now an old short 14 hearts version (until the marriage update)
 * Various other non-code fixes
 * Synchroniezd with GitHub repo
 
@@ -58,7 +58,7 @@
 
 ### version 0.6.9-beta.4 (23.1.2025)
 
-* Changed config names for better readibility in GMCM
+* Changed config names for better readability in GMCM
 * "ModID" in entries and its duplicating with Discord help by:
   * `@spiderbuttons`
   * `@atravita`
@@ -89,8 +89,8 @@
   * `@tlitookilakin`
   * `@chu2.718281828459045235360287471`
   * `@pathoschild`
-* Another hopeless tries with local .NET v6.0.428 projects... somewhy, I can't manage to compile any project succesfully, no matter it works and is decompiled properly
-* Created private GitHub repository
+* Another hopeless try with local .NET v6.0.428 projects... somewhy, I can't manage to compile any project successfully, no matter if it works and is decompiled properly
+* Created a private GitHub repository
 
 ---
 
@@ -138,7 +138,7 @@
 
 ### version 0.6.7-beta.10 (7.1.2025)
 
-* Hotfixing dialogues problems (normal heart ones fixed; idk if other ones were affected)
+* Hotfixing dialogue problems (normal heart ones fixed; idk if other ones were affected)
 * Discussion(s) on Discord about optimizing marriage code (unsuccessful), which I started. These Discord users, listed below, helped me and we discussed my "problem" really well. Thanks to each one of them!
   * `@abagaianye`
   * `@0c58ef7b`
@@ -158,7 +158,7 @@
 
 ### version 0.6.7-beta.9 (4.1.2025)
 
-* Written all of dialogues for all 6 of 14 hearts events
+* Written all of the dialogues for all 6 of 14 hearts events
 * Fixed some errors in 14 hearts events
 * **BUGS:**
   * Events:
@@ -172,7 +172,7 @@
 ### version 0.6.7-beta.8 (1.1.2025)
 
 * Written half of dialogues for final part 5 from 14 hearts event
-* Fixed some code errors from change in 0.6.7-beta.4
+* Fixed some code errors from a change in 0.6.7-beta.4
 * Added/changed a few more dialogues --> slightly changed personality?
 * Added 2 configurations for 14 hearts event (long 5 parts X old from 28.10.2024, respectively 7.11.2024)
 * Finally took care of this changelog and fixed many errors in it
@@ -208,7 +208,7 @@
 ### version 0.6.7-beta.3 (26.-28.12.2024)
 
 * Testing and debugging and fixing and ... 14 hearts event (p1)
-* These Discord members tried and successfully helped me with my problem about farmer's name not showing properly in events:
+* These Discord members tried and successfully helped me with my problem about the farmer's name not showing properly in events:
   * `@angelofstars`
   * `@endertedi`
   * `@atravita`
@@ -236,7 +236,7 @@
 ### version 0.6.7-beta.1 (19.12.2024)
 
 * Optimized code for dialogues using Dynamic Tokens
-* Fixed SMAPI errors in events.json ("When" field was in incorrect position)
+* Fixed SMAPI errors in events.json ("When" field was in the incorrect position)
 
 ---
 
@@ -253,14 +253,14 @@
 
 * Hotfixed mod not loading (removed the line with '"Format": "2.4.0",')
 * Fixed mistakes in NPCgraphics.json file again (but bug from 0.5.5-beta2 (14.9.2024) is still present...)
-* Fixed wrong version schema
+* Fixed the wrong version schema
 
 ---
 
 ### version 0.6.6-beta9 (14.12.2024)
 
 * Added/changed a few more dialogues --> slightly changed personality?
-* Internal reorganization of this mod's coding, now VS Code is used instead of basic WIN10 notebook
+* Internal reorganization of this mod's coding, now VS Code is used instead of the basic WIN10 notebook
 * Deleted "Trailing commas" in many files (thanks to Visual Studio Code)
 
 ---
@@ -350,7 +350,7 @@
 * Added a few more dialogues --> slightly changed personality?
 * Rewritten config for this mod
 * Fixed a coding error in .mails.json (wrong log name)
-  * Note about bug from 0.5.5-beta2 (14.9.2024) - This bug should NOT affect your gaming experience at all; looks like it is an error with my code, SMAPI, CP & mods like CJB Cheats or Teleport NPC Location
+  * Note about the bug from 0.5.5-beta2 (14.9.2024) - This bug should NOT affect your gaming experience at all; looks like it is an error with my code, SMAPI, CP & mods like CJB Cheats or Teleport NPC Location
 
 ---
 
