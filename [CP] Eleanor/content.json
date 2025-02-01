@@ -319,18 +319,18 @@ commented out because of the missing art
     "KissSpriteFacingDirection": "true",
 */
           "HiddenProfileEmoteSound": "achievement", // some secret, don't remember what it was
-          "HiddenProfileEmoteDuration": "5000" // some secret, don't remember what it was; 5000 = 5 seconds
+          "HiddenProfileEmoteDuration": "5000", // some secret, don't remember what it was; 5000 = 5 seconds
           /*
     "HiddenProfileEmoteStartFrame": "",
     "HiddenProfileEmoteFrameCount": "",
     "HiddenProfileEmoteFrameDuration": "",
 */
-          /*
+          
     // Advanced
-    "CustomFields": "",
-    "FormerCharacterNames": [],
-    "FestivalVanillaActorIndex": ""
-*/
+   // "CustomFields": "", // what is this? I don't know, so let's skip it
+    "FormerCharacterNames": ["Eleanor"],
+   // "FestivalVanillaActorIndex": ""
+
         }
       }
     },

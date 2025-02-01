@@ -4,9 +4,31 @@
 
 ## Last version
 
+### version 0.7.0-beta.3 (1.2.2025)
+
+* Fixed and improved NPC graphics
+* Commented some parts of the code out (prepare for future release)
+* Pre-prepared some parts of the code, commented as of version 0.7.0-beta.3
+* Various fixes and edits in events
+* Synchronized manifest versions
+* Various fixes, should be seen in GitHub commit log (if that thing even exists...)
+
+### version 0.7.0-beta.2 (26.1.2025)
+
+- Summit dialogues experiments (again) with Discord help by:
+
+  - `@fireredlily`
+  - `@wopr1234`
+  - `@8awa8`
+  - `@forsythia`
+
 ### version 0.7.0-beta.1 (26.1.2025)
 
-- Summit dialogues experiment
+- Summit dialogues experiments with Discord help by:
+  - `@rokugin`
+  - `@atravita`
+  - `@spiderbuttons`
+  - `@cosmicbea`
 - Finally completed one look only clothes
 - Updated NexusMods page document
 - First experimental GitHub release

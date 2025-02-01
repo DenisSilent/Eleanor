@@ -604,23 +604,23 @@
   // 14 hearts
   // OLD part 1/1 (old 14h event dialogues, now 14h-short; variants are automatically used depending if you have Hogwarts installed or not)
   // SVE
-  "Events.14h-short_SVE.0": "... You ask yourself why on earth is Eleanor here, standing in this magic circle, left all alone...",
-  "Events.14h-short_SVE.1": "Wait, she still didn't notice you.#$b#You look at her face and you see...#$b#...#$b#tears???#$b#Now THIS is unexpected.",
-  "Events.14h-short_SVE.2": "You give yourself a second to procces this situation and then you ask her if she is okay.",
-  "Events.14h-short_SVE.3": "You scared her, which was not the goal but looks like it worked...",
-  "Events.14h-short_SVE.4": "Oh!$s#$b#{{PlayerName}}!!!#$b#What on Earth are you doing here?!$s",
-  "Events.14h-short_SVE.5": "...#$b#That's actually true - you have full rights to ask me the same question, don't you?#$b#Sorry...",
-  "Events.14h-short_SVE.6": "To answer your question...",
+  "Events.14h-short_SVE.0": "... You ask yourself why on earth is Eleanor here, standing in this magic circle, left all alone...",  //message
+  "Events.14h-short_SVE.1": "Wait, she still didn't notice you.#You look at her face and you see...#...#tears???#Now THIS is unexpected.",  //message
+  "Events.14h-short_SVE.2": "You give yourself a second to procces this situation and then you ask her if everything is okay.", //message
+  "Events.14h-short_SVE.3": "You scared her, which was not the goal but looks like it worked...", //message
+  "Events.14h-short_SVE.4": "Oh!$s#$b#{{PlayerName}}!!!$s#$b#What on Earth are you doing here?!$s",
+  "Events.14h-short_SVE.5": "...$s#$b#That's actually true - you have full rights to ask me the same question, don't you?$s#$b#Sorry...$s",
+  "Events.14h-short_SVE.6": "To answer your question...$s",
   "Events.14h-short_SVE.7": "You notice she started to breath heavilly. Some strange magical connection is telling you that a sad story is incoming...",
   "Events.14h-short_SVE.8": "It's hard to talk about, but...$s#$b#I don't quite remember - I was just a small kid back then - what happened, but I know what was said to me...$s",
   "Events.14h-short_SVE.9": "As far as anyone knew back then, my parents left one day because of the incoming danger - and no one has ever heard nor seen them again after that day...$s",
   "Events.14h-short_SVE.10": "I was already send to my grandparents that time, so we didn't know until like a week later - after they weren't found.$s",
-  "Events.14h-short_SVE.11": "Everyone thinks they were killed, but I am still hoping...$s#$b#...hoping they are somewhere.",
-  "Events.14h-short_SVE.12": "No one knows this, but that day, I had a dream - my parents were looking round our house when they saw them coming...$s#$b#They run away, and then everything blacked out...",
-  "Events.14h-short_SVE.13": "I had a pretty big ilnesses these days, so I was mainly sleeping.$s#$b#And when I fell asleep again, I heard their voices saying...#$b#...that we will not meet again, as they are trapped in a place they can't leave...#$b#...that I have unusual magical abilities...",
-  "Events.14h-short_SVE.14": "I know, it looks like they were killed, but at least I can hope...$s #$b#...hope that they are somewhere, waiting for me to find them. ",
+  "Events.14h-short_SVE.11": "Everyone thinks they were killed, but I am still hoping...$s#$b#...hoping they are somewhere.$s",
+  "Events.14h-short_SVE.12": "No one knows this, but that day, I had a dream - my parents were looking round our house when they saw them coming...$s#$b#They run away, and then everything blacked out...$s",
+  "Events.14h-short_SVE.13": "I had a pretty big ilnesses these days, so I was mainly sleeping.$s#$b#And when I fell asleep again, I heard their voices saying...$s#$b#...that we will not meet again, as they are trapped in a place they can't leave...$s#$b#...that I have unusual magical abilities...$s",
+  "Events.14h-short_SVE.14": "I know, it looks like they were killed, but at least I can hope...$s #$b#...$s#$b#...hope that they are somewhere, waiting for me to find them.",
   "Events.14h-short_SVE.15": "I was never able to fully solve those dreams, but there is this one thing they said to me in these strange dreams - that I have a secret soulmate that also has unique magical abilities - and I'll meet my soulmate when I will miss my parents the most.#$b#Which was the day when Pelican Town got a big news - someone was coming to take over your grandpa's farm...#$b#My parents knew your grandpa...#$b#...they knew about you.#$b#You, {{PlayerName}}.#$b#It's a mystery I don't expect I'll ever solve, but...",
-  "Events.14h-short_SVE.16": "...I love you, {{PlayerName}}.",
+  "Events.14h-short_SVE.16": "...I love you, {{PlayerName}}.$l",
   // Hogwarts
   "Events.14h-short_Hog.0": "... You ask yourself why on earth is Eleanor here, next to the memorial of the one and only Battle of Hogwarts, May 2, 1998??",
   "Events.14h-short_Hog.1": "Wait, she still didn't notice you.#$b#You look at her face and you see...#$b#...#$b#tears???#$b#Now THIS is unexpected.",

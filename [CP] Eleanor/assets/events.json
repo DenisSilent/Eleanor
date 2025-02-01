@@ -1,6 +1,19 @@
 {
   "Changes": [
-    // 0hearts   - Eleanor's introduction
+    /*
+debug 27.1.25, for summit dialogues
+{
+  "LogName": "Eleanor - event - debug",
+  "Action": "EditData",
+  "Target": "Data/Events/farm",
+  "Entries": {
+    "StrojvedouciDenis.Eleanor_debug": "none/-1000 -1000/farmer 2 2 2 StrojvedouciDenis.Eleanor 3 3 0/skippable/pause 3333/speak StrojvedouciDenis.Eleanor Hey, @./pause 500/message \"If I can see this, then it works!\"/pause 2222/end"
+  }
+},
+*/
+
+
+    // 0hearts - Eleanor's introduction
     // Location: your farm
     // Trigger: Entering your farm after seeing itroduction event with Mr. Rasmodius.
     // Description: Eleanor introduces herself to the player, greeting them politely and explaining who she is and that she knows about you and Junimos.
@@ -9,11 +22,11 @@
       "Action": "EditData",
       "Target": "Data/Events/farm",
       "Entries": {
-        "Eleanor_Intro/e 112": "none/-1000 -1000/farmer 2 2 2 Eleanor 3 3 0/skippable/pause 1111/speak Eleanor \"{{i18n:Events.Intro.0 |PlayerName={{PlayerName}}}}\"/pause 222/emote farmer 40/pause 222/emote farmer 8/pause 222/speak Eleanor \"{{i18n:Events.Intro.1 |PlayerName={{PlayerName}}}}\"/pause 222/speak Eleanor \"{{i18n:Events.Intro.2 |PlayerName={{PlayerName}}}}\"/pause 222/speak Eleanor \"{{i18n:Events.Intro.3 |PlayerName={{PlayerName}}}}\"/pause 222/speak Eleanor \"{{i18n:Events.Intro.4|PlayerName={{PlayerName}}}}\"/pause 2222/end"
+        "StrojvedouciDenis.Eleanor_Intro/e 112": "none/-1000 -1000/farmer 2 2 2 StrojvedouciDenis.Eleanor 3 3 0/skippable/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.Intro.0 |PlayerName={{PlayerName}}}}\"/pause 222/emote farmer 40/pause 222/emote farmer 8/pause 222/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.Intro.1 |PlayerName={{PlayerName}}}}\"/pause 222/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.Intro.2 |PlayerName={{PlayerName}}}}\"/pause 222/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.Intro.3 |PlayerName={{PlayerName}}}}\"/pause 222/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.Intro.4|PlayerName={{PlayerName}}}}\"/pause 2222/end"
       }
     },
 
-    // 2hearts  - Eleanor's nature admiring
+    // 2hearts - Eleanor's nature admiring
     // Location: Forest
     // Trigger: Enter the Forest between 6:00 and 12:00.
     // Description: Eleanor is admiring nature when she notices the player. She greets them and asks if they like nature as well.
@@ -22,25 +35,25 @@
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "Eleanor_2hearts/e EleanorIntro/f Eleanor 500/t 600 1200": "none/21 27/farmer 21 20 2 Eleanor 16 30 1/skippable/pause 1111/Move farmer 0 10 2 true/pause 4444/textAboveHead Eleanor \"{{i18n:Events.2h.0 |PlayerName={{PlayerName}}}}\"/pause 500/emote farmer 8/pause 500/faceDirection farmer 0 true/pause 500/faceDirection farmer 1 true/pause 500/faceDirection farmer 2 true/pause 500/faceDirection farmer 3 true/pause 500/faceDirection farmer 2 true/pause 250/emote Eleanor 40/pause 500/speak Eleanor \"{{i18n:Events.2h.1 |PlayerName={{PlayerName}}}}\"/pause 500/faceDirection farmer 3 true/pause 750/emote farmer 16/pause 500/speak Eleanor \"{{i18n:Events.2h.2 |PlayerName={{PlayerName}}}}\"/pause 750/emote farmer 60/pause 500/quickQuestion {{i18n:Events.2h.3_q |PlayerName={{PlayerName}}}}(break)switchEvent Eleanor_2hearts_q1_yes(break)switchEvent Eleanor_2hearts_q1_no",
-        "Eleanor_2hearts_q1_yes": "resetVariable/friendship Eleanor 200/speak Eleanor \"{{i18n:Events.2h.4_yes |PlayerName={{PlayerName}}}}\"/pause 2500/speak Eleanor \"{{i18n:Events.2h.5 |PlayerName={{PlayerName}}}}\"/end",
-        "Eleanor_2hearts_q1_no": "resetVariable/friendship Eleanor -350/speak Eleanor \"{{i18n:Events.2h.4_no |PlayerName={{PlayerName}}}}\"/pause 2500/speak Eleanor \"{{i18n:Events.2h.5 |PlayerName={{PlayerName}}}}\"/end"
+        "StrojvedouciDenis.Eleanor_2hearts/e StrojvedouciDenis.EleanorIntro/f StrojvedouciDenis.Eleanor 500/t 600 1200": "none/21 27/farmer 21 20 2 StrojvedouciDenis.Eleanor 16 30 1/skippable/pause 1111/Move farmer 0 10 2 true/pause 4444/textAboveHead StrojvedouciDenis.Eleanor \"{{i18n:Events.2h.0 |PlayerName={{PlayerName}}}}\"/pause 500/emote farmer 8/pause 500/faceDirection farmer 0 true/pause 500/faceDirection farmer 1 true/pause 500/faceDirection farmer 2 true/pause 500/faceDirection farmer 3 true/pause 500/faceDirection farmer 2 true/pause 250/emote StrojvedouciDenis.Eleanor 40/pause 500/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.2h.1 |PlayerName={{PlayerName}}}}\"/pause 500/faceDirection farmer 3 true/pause 750/emote farmer 16/pause 500/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.2h.2 |PlayerName={{PlayerName}}}}\"/pause 750/emote farmer 60/pause 500/quickQuestion {{i18n:Events.2h.3_q |PlayerName={{PlayerName}}}}(break)switchEvent StrojvedouciDenis.Eleanor_2hearts_q1_yes(break)switchEvent StrojvedouciDenis.Eleanor_2hearts_q1_no",
+        "StrojvedouciDenis.Eleanor_2hearts_q1_yes": "resetVariable/friendship StrojvedouciDenis.Eleanor 200/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.2h.4_yes |PlayerName={{PlayerName}}}}\"/pause 2500/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.2h.5 |PlayerName={{PlayerName}}}}\"/end",
+        "StrojvedouciDenis.Eleanor_2hearts_q1_no": "resetVariable/friendship StrojvedouciDenis.Eleanor -350/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.2h.4_no |PlayerName={{PlayerName}}}}\"/pause 2500/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.2h.5 |PlayerName={{PlayerName}}}}\"/end"
       }
     },
 
     // 4hearts - ???
-    // Location: ???
+    // Location: Custom_WizardBasement
     // Trigger: ???
     // Description: ???
     {
       "LogName": "Eleanor - event - 4hearts",
       "Action": "EditData",
-      "Target": "Data/Events/Forest",
+      "Target": "Data/Events/Custom_WizardBasement",
       "Entries": {
-        "Eleanor_4hearts/e Eleanor_2hearts/f Eleanor 1000": "none/-1000 -1000/farmer 0 0 0 Eleanor 1 1 0/skippable/end"
+        "StrojvedouciDenis.Eleanor_4hearts/e StrojvedouciDenis.Eleanor_2hearts/f StrojvedouciDenis.Eleanor 1000": "none/-1000 -1000/farmer 0 0 0 StrojvedouciDenis.Eleanor 1 1 0/skippable/end"
       }
     },
-
+/*
     // 6hearts - ???
     // Location: ???
     // Trigger: ???
@@ -48,9 +61,9 @@
     {
       "LogName": "Eleanor - event - 6hearts",
       "Action": "EditData",
-      "Target": "Data/Events/Forest",
+      "Target": "Data/Events/Town",
       "Entries": {
-        "Eleanor_6hearts/e Eleanor_4hearts/f Eleanor 1500": "none/-1000 -1000/farmer 0 0 0 Eleanor 1 1 0/skippable/end"
+        "StrojvedouciDenis.Eleanor_6hearts/e StrojvedouciDenis.Eleanor_4hearts/f StrojvedouciDenis.Eleanor 1500": "none/-1000 -1000/farmer 0 0 0 StrojvedouciDenis.Eleanor 1 1 0/skippable/end"
       }
     },
 
@@ -63,9 +76,10 @@
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "Eleanor_8hearts/e Eleanor_6hearts/f Eleanor 2000": "none/-1000 -1000/farmer 0 0 0 Eleanor 1 1 0/skippable/end"
+        "StrojvedouciDenis.Eleanor_8hearts/e StrojvedouciDenis.Eleanor_6hearts/f StrojvedouciDenis.Eleanor 2000": "none/-1000 -1000/farmer 0 0 0 StrojvedouciDenis.Eleanor 1 1 0/skippable/end"
       }
     },
+*/
 
     // 10hearts - Eleanor's gift
     // Location: Wizard's Tower
@@ -73,13 +87,13 @@
     // Description: Eleanor has prepared a gift for farmer.
 
     /*
-    Replaced with 14 hearts event until marriage update.
+    Replaced with short 14 hearts event variant until marriage update.
     {
       "LogName": "Eleanor - event - 10hearts",
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "Eleanor_10hearts/e Eleanor_8hearts/f Eleanor 2500": "none/-1000 -1000/farmer 0 0 0 Eleanor 1 1 0/skippable/end"
+        "StrojvedouciDenis.Eleanor_10hearts/e StrojvedouciDenis.Eleanor_8hearts/f StrojvedouciDenis.Eleanor 2500": "none/-1000 -1000/farmer 0 0 0 StrojvedouciDenis.Eleanor 1 1 0/skippable/end"
       }
     },
     */
@@ -87,34 +101,17 @@
     // 10 hearts - same as 14 hearts short event variants
     // SVE only version
     // Location: Wizard's Tower
-    // Trigger: Entering the Wizard's Tower after reaching 14 hearts with Eleanor.
-    // Description: Eleanor shares her history with the player, revealing her past and her connection to magic.
+    // Trigger: Entering the Wizard's Tower after reaching 10 hearts with Eleanor.
+    // Description: StrojvedouciDenis.Eleanor shares her history with the player, revealing her past and her connection to magic.
     {
-      "LogName": "Eleanor - 14hearts event (short) - SVE",
+      "LogName": "Eleanor - 10hearts temporary event (14h SVE short)",
       "Action": "EditData",
       "Target": "Data/Events/WizardHouse",
       "Entries": {
-        "Eleanor_10hearts-temporary/e Eleanor_8hearts/f Eleanor 2500": "none/-1000 -1000/farmer 8 8 0 Eleanor 10 17 0/pause 2222/move farmer 0 17 1/pause 2500/message \"{{i18n:Events.14h-p3_SVE.0 |PlayerName={{PlayerName}}}}\"/pause 3333/message \"{{i18n:Events.14h-p3_SVE.1 |PlayerName={{PlayerName}}}}\"/message \"{{i18n:Events.14h-p3_SVE.2 |PlayerName={{PlayerName}}}}\"/pause 1111/move Eleanor 10 17 3/pause 1111/message \"{{i18n:Events.14h-p3_SVE.3 |PlayerName={{PlayerName}}}}\"/speak Eleanor \"{{i18n:Events.14h-p3_SVE.4 |PlayerName={{PlayerName}}}}\"/pause 1111/emote farmer 8 continue/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_SVE.5 |PlayerName={{PlayerName}}}}\"/emote farmer 56 continue/pause 1111/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_SVE.6 |PlayerName={{PlayerName}}}}\"/pause 2000/shake Eleanor 1000/pause 3000/message \"{{i18n:Events.14h-p3_SVE.7 |PlayerName={{PlayerName}}}}\"globalFade/pause 3500/speak Eleanor \"{{i18n:Events.14h-p3_SVE.8 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_SVE.9 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_SVE.10 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_SVE.11 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_SVE.12 |PlayerName={{PlayerName}}}}\"/pause 3333/speak Eleanor \"{{i18n:Events.14h-p3_SVE.13 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_SVE.14 |PlayerName={{PlayerName}}}}\"globalFadeToClear/pause 5000/speak Eleanor \"{{i18n:Events.14h-p3_SVE.15 |PlayerName={{PlayerName}}}}\"/globalfadeout/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_SVE.16|PlayerName={{PlayerName}}}}\"/pause 7777/end warpOut "
+        "StrojvedouciDenis.Eleanor_10hearts-temporary/e StrojvedouciDenis.Eleanor_8hearts/f StrojvedouciDenis.Eleanor 2500": "none/10 25/farmer 9 33 0 StrojvedouciDenis.Eleanor 10 17 0/skippable/viewport move 0 -2 4000/pause 1111/move farmer 0 -9 0/pause 1000/emote farmer 8/pause 3000/message \"{{i18n:Events.14h-short_SVE.0 |PlayerName={{PlayerName}}}}\"/pause 1500/move farmer 0 -7 1/pause 1500/message \"{{i18n:Events.14h-short_SVE.1 |PlayerName={{PlayerName}}}}\"/pause 1111/message \"{{i18n:Events.14h-short_SVE.2 |PlayerName={{PlayerName}}}}\"/pause 555/jump StrojvedouciDenis.Eleanor 4/pause 111/faceDirection StrojvedouciDenis.Eleanor 3/pause 1111/message \"{{i18n:Events.14h-short_SVE.3 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.4 |PlayerName={{PlayerName}}}}\"/pause 1111/emote farmer 8/pause 111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.5 |PlayerName={{PlayerName}}}}\"/emote farmer 56/pause 222/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.6 |PlayerName={{PlayerName}}}}\"/pause 2000/shake StrojvedouciDenis.Eleanor 1000/pause 2111/message \"{{i18n:Events.14h-short_SVE.7 |PlayerName={{PlayerName}}}}\"/globalFade/viewport -1000 -1000/pause 3500/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.8 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.9 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.10 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.11 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.12 |PlayerName={{PlayerName}}}}\"/pause 3333/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.13 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.14 |PlayerName={{PlayerName}}}}\"/pause 5000/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.15 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.16|PlayerName={{PlayerName}}}}\"/pause 5555/end"
       }
     },
-    // Hogwarts version
-    // Location: Hogwarts Hogsmeade Village
-    // Trigger: Entering Hogsmeade Village after reaching 14 hearts with Eleanor and having the Hogwarts mod installed.
-    // Description: Eleanor shares her history with the player, revealing her past and her connection to magic in the context of Hogwarts.
-    /*
-    {
-      "LogName": "Eleanor - 14hearts event (short) - Hogwarts ",
-      "Action": "EditData",
-      "Target": "Data/Events/HogwartsET.CP.Hogwarts_HogsmeadeVillage",
-      "Entries": {
-        "Eleanor_14hearts-short_Hog/e Eleanor_8hearts/e EleanorHog_y1/f Eleanor 2500": "none/-1000 -1000/farmer 22 20 0 Eleanor 22 24 0/pause 2222/move farmer 23 24 1/pause 2500/message \"{{i18n:Events.14h-p3_Hog.0 |PlayerName={{PlayerName}}}}\"/pause 3333/message \"{{i18n:Events.14h-p3_Hog.1 |PlayerName={{PlayerName}}}}\"/message \"{{i18n:Events.14h-p3_Hog.2 |PlayerName={{PlayerName}}}}\"/pause 1111/move Eleanor 22 24 1/pause 1111/message \"{{i18n:Events.14h-p3_Hog.3 |PlayerName={{PlayerName}}}}\"/speak Eleanor \"{{i18n:Events.14h-p3_Hog.4 |PlayerName={{PlayerName}}}}\"/pause 1111/emote farmer 8 continue/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_Hog.5 |PlayerName={{PlayerName}}}}\"/emote farmer 56 continue/pause 1111/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_Hog.6 |PlayerName={{PlayerName}}}}\"/pause 2000/shake Eleanor 1000/pause 3000/message \"{{i18n:Events.14h-p3_Hog.7 |PlayerName={{PlayerName}}}}\"globalFade/pause 3500/speak Eleanor \"{{i18n:Events.14h-p3_Hog.8 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_Hog.9 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_Hog.10 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_Hog.11 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_Hog.12 |PlayerName={{PlayerName}}}}\"/pause 3333/speak Eleanor \"{{i18n:Events.14h-p3_Hog.13 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_Hog.14 |PlayerName={{PlayerName}}}}\"globalFadeToClear/pause 5000/speak Eleanor \"{{i18n:Events.14h-p3_Hog.15 |PlayerName={{PlayerName}}}}\"/pause 1111/message \"{{i18n:Events.14h-p3_Hog.16 |PlayerName={{PlayerName}}}}\"/globalfadeout/pause 5000/speak Eleanor  \"{{i18n:Events.14h-p3_Hog.17|PlayerName={{PlayerName}}}}\"/pause 7777/end newDay"
-      },
-      "When": {
-        "HasMod |contains=HogwartsET.CP.Hogwarts": true
-      }
-    },
-    */
-
+    
     // 12hearts - ???
     // Location: ???
     // Trigger: ???
@@ -127,7 +124,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "Eleanor_12hearts/e Eleanor_10hearts/f Eleanor 3000": "none/-1000 -1000/farmer 0 0 0 Eleanor 1 1 0/skippable/end"
+        "StrojvedouciDenis.Eleanor_12hearts/e StrojvedouciDenis.Eleanor_10hearts/f StrojvedouciDenis.Eleanor 3000": "none/-1000 -1000/farmer 0 0 0 StrojvedouciDenis.Eleanor 1 1 0/skippable/end"
       }
     },
     */
@@ -135,7 +132,7 @@
     // 14hearts
     // Part 0 - event checker
     // Location: your farm
-    // Trigger: Automatically after reaching 14 hearts with Eleanor.
+    // Trigger: Automatically after reaching 14 hearts with StrojvedouciDenis.Eleanor.
     // Description: It is an event checker. What do you want from him? It just does its job. Wait, it doesn't, it's commented out.
     /*
     {
@@ -143,23 +140,25 @@
       "Action": "EditData",
       "Target": "Data/Events/FarmHouse",
       "Entries": {
-        "Eleanor_14hearts-p0/e Eleanor_10hearts/f Eleanor 3500": "Nothing you can do nor see here. Move along!"
+        "StrojvedouciDenis.Eleanor_14hearts-p0/e StrojvedouciDenis.Eleanor_10hearts/f StrojvedouciDenis.Eleanor 3500": "none/-1000 -1000/farmer 0 0 0 StrojvedouciDenis.Eleanor 1 1 0/eventSeen StrojvedouciDenis.Eleanor_14hearts-p0 false/end"
       }
     },
     */
 
     // long versions
+    // NOTE: Multiplayer does NOT pause time during cutscenes! One in-game hour = 43 real world seconds, full day = 14 minutes 20 seconds... (Taken from: https://stardewmodding.wiki.gg/wiki/Tips_for_Heart_Events_-_Writing_and_Narrative_Design#Additional_Tips,_Caveats_and_Notes)
     // Part 1 - Eleanor's note
     //NOTE: This event will be unique depending on your configuration.
     // Location: your farmhouse
-    // Trigger: Automatically when getting up at your farmhouse after reaching 14 hearts with Eleanor.
-    // Description: Eleanor will be gone and you will find a letter from her.
+    // Trigger: Automatically when getting up at your farmhouse after reaching 14 hearts with StrojvedouciDenis.Eleanor.
+    // Description: StrojvedouciDenis.Eleanor will be gone and you will find a letter from her.
+    /*
     {
       "LogName": "Eleanor - 14hearts event (p1) - Eleanor's letter (no comment)",
       "Action": "EditData",
       "Target": "Data/Events/FarmHouse",
       "Entries": {
-        "Eleanor_14hearts-p1/e Eleanor_10hearts/f Eleanor 3500": "none/-1000 -1000/farmer 0 0 0 Eleanor 0 0 0/viewport -1000 -1000/pause 4500/message \"{{i18n:Events.14h-p1.0 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.1 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.2 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.3 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.4 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.5 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.6 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.7 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.8 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.9 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.10 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.11 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.12 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.13 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.14 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.15 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.16 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.17 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.18 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.19 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.20 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.21 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.22 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.23 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.24 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.25 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.26 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.27 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.28 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.29 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.30 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.31 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.32 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.33 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.34|PlayerName={{PlayerName}}}}\"/switchEvent Eleanor_14hearts-p2"
+        "StrojvedouciDenis.Eleanor_14hearts-p1/e StrojvedouciDenis.Eleanor_10hearts/f StrojvedouciDenis.Eleanor 3500": "none/-1000 -1000/farmer 0 0 0 StrojvedouciDenis.Eleanor 0 0 0/viewport -1000 -1000/pause 4500/message \"{{i18n:Events.14h-p1.0 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.1 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.2 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.3 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.4 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.5 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.6 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.7 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.8 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.9 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.10 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.11 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.12 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.13 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.14 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.15 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.16 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.17 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.18 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.19 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.20 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.21 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.22 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.23 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.24 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.25 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.26 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.27 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.28 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.29 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.30 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.31 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.32 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.33 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.34|PlayerName={{PlayerName}}}}\"/switchEvent StrojvedouciDenis.Eleanor_14hearts-p2"
       },
       "When": {
         "14hearts-variants": "long",
@@ -171,7 +170,7 @@
       "Action": "EditData",
       "Target": "Data/Events/FarmHouse",
       "Entries": {
-        "Eleanor_14hearts-p1/e Eleanor_10hearts/f Eleanor 3500": "none/-1000 -1000/farmer 0 0 0 Eleanor 0 0 0/viewport -1000 -1000/pause 4500/message \"{{i18n:Events.14h-p1.0 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.1 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.2 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.3 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.4 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.5 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.5-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.6 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.6-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.7 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.7-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.8 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.8-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.9 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.9-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.10 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.10-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.11 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.11-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.12 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.12-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.13 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.13-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.14 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.14-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.15 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.15-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.16 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.16-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.17 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.17-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.18 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.18-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.19 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.19-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.20 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.20-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.21 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.21-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.22 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.22-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.23 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.23-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.24 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.24-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.25 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.25-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.26 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.26-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.27 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.27-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.28 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.28-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.29 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.29-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.30 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.30-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.31 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.32 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.33 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.34|PlayerName={{PlayerName}}}}\"/switchEvent Eleanor_14hearts-p2_pre"
+        "StrojvedouciDenis.Eleanor_14hearts-p1/e StrojvedouciDenis.Eleanor_10hearts/f StrojvedouciDenis.Eleanor 3500": "none/-1000 -1000/farmer 0 0 0 StrojvedouciDenis.Eleanor 0 0 0/viewport -1000 -1000/pause 4500/message \"{{i18n:Events.14h-p1.0 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.1 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.2 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.3 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.4 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.5 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.5-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.6 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.6-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.7 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.7-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.8 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.8-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.9 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.9-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.10 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.10-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.11 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.11-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.12 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.12-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.13 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.13-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.14 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.14-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.15 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.15-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.16 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.16-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.17 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.17-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.18 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.18-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.19 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.19-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.20 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.20-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.21 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.21-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.22 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.22-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.23 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.23-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.24 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.24-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.25 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.25-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.26 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.26-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.27 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.27-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.28 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.28-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.29 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.29-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.30 |PlayerName={{PlayerName}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.30-commented |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.31 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.32 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.33 |PlayerName={{PlayerName}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.34|PlayerName={{PlayerName}}}}\"/switchEvent StrojvedouciDenis.Eleanor_14hearts-p2_pre"
       },
       "When": {
         "14hearts-variants": "long",
@@ -181,15 +180,15 @@
 
     // Part 2 - Wizard's tower
     // Location: Wizard's tower
-    // Trigger: Immediatly after reading Eleanor's letter.
-    // Description: Eleanor is gone. You run to Mr. Rasmodius to ask him about her.
+    // Trigger: Immediatly after reading StrojvedouciDenis.Eleanor's letter.
+    // Description: StrojvedouciDenis.Eleanor is gone. You run to Mr. Rasmodius to ask him about her.
     {
       "LogName": "Eleanor - 14hearts event (p2) - Wizard's tower",
       "Action": "EditData",
       "Target": "Data/Events/WizardHouse",
       "Entries": {
-        "Eleanor_14hearts-p2_pre/e Eleanor_14hearts-p1": "none/20 20/farmer 0 0 0/viewport -1000 -1000/pause 2222/message \"{{i18n:Events.14h-p2.0|PlayerName={{PlayerName}}}}\"pause 1111/switchEvent Eleanor_14hearts-p2",
-        "Eleanor_14hearts-p2/e Eleanor_14hearts-p1": "none/20 20/farmer 9 33 0 Wizard 7 7 0/viewport 20 20/pause 111/move Wizard 0 14 2/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.1|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.2|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.3|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.4|PlayerName={{PlayerName}}}}\"/pause 1111/message \"{{i18n:Events.14h-p2.5|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.6|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.7|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.8|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.9|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.10|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.11|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.12|PlayerName={{PlayerName}}}}\"/pause 1111/emote farmer 56/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.13|PlayerName={{PlayerName}}}}\"/pause 1111/pause 1111/switchEvent Eleanor_14hearts-p3"
+        "StrojvedouciDenis.Eleanor_14hearts-p2_pre/e StrojvedouciDenis.Eleanor_14hearts-p1": "none/20 20/farmer 0 0 0/viewport -1000 -1000/pause 2222/message \"{{i18n:Events.14h-p2.0|PlayerName={{PlayerName}}}}\"pause 1111/switchEvent StrojvedouciDenis.Eleanor_14hearts-p2",
+        "StrojvedouciDenis.Eleanor_14hearts-p2/e StrojvedouciDenis.Eleanor_14hearts-p1": "none/20 20/farmer 9 33 0 Wizard 7 7 0/viewport 20 20/pause 111/move Wizard 0 14 2/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.1|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.2|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.3|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.4|PlayerName={{PlayerName}}}}\"/pause 1111/message \"{{i18n:Events.14h-p2.5|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.6|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.7|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.8|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.9|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.10|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.11|PlayerName={{PlayerName}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.12|PlayerName={{PlayerName}}}}\"/pause 1111/emote farmer 56/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.13|PlayerName={{PlayerName}}}}\"/pause 1111/pause 1111/switchEvent StrojvedouciDenis.Eleanor_14hearts-p3"
       },
       "When": {
         "14hearts-variants": "long"
@@ -199,13 +198,13 @@
     // Part 3 - Sprite Spring note
     // Location: Sprite Spring
     // Trigger: Immediatly after talking to Mr. Rasmodius.
-    // Description: You find a note from Eleanor.
+    // Description: You find a note from StrojvedouciDenis.Eleanor.
     {
       "LogName": "Eleanor - 14hearts event (p3) - Sprite Spring note",
       "Action": "EditData",
       "Target": "Data/Events/WizardHouse",
       "Entries": {
-        "Eleanor_14hearts-p3/e Eleanor_14hearts-p2": "none/-1000 -1000/farmer 0 0 0 Eleanor 0 0 0/nonskippable/pause 2222/message \"{{i18n:Events.14h-p3.0 |PlayerName={{PlayerName}}}}\"/pause 1111/switchEvent Eleanor_14hearts-p4"
+        "StrojvedouciDenis.Eleanor_14hearts-p3/e StrojvedouciDenis.Eleanor_14hearts-p2": "none/-1000 -1000/farmer 0 0 0 StrojvedouciDenis.Eleanor 0 0 0/nonskippable/pause 2222/message \"{{i18n:Events.14h-p3.0 |PlayerName={{PlayerName}}}}\"/pause 1111/switchEvent StrojvedouciDenis.Eleanor_14hearts-p4"
       },
       "When": {
         "14hearts-variants": "long"
@@ -214,14 +213,14 @@
 
     // Part 4 - Abigail's dream
     // Location: Abigail's room
-    // Trigger: Immediatly after reading Eleanor's note.
-    // Description: You find Abigail in her room, having a dream containing message from Eleanor.
+    // Trigger: Immediatly after reading StrojvedouciDenis.Eleanor's note.
+    // Description: You find Abigail in her room, having a dream containing message from StrojvedouciDenis.Eleanor.
     {
       "LogName": "Eleanor - 14hearts event (p4) - Abigail's dream",
       "Action": "EditData",
       "Target": "Data/Events/AbigailHouse",
       "Entries": {
-        "Eleanor_14hearts-p4/e Eleanor_14hearts-p3": "none/-1000 -1000/farmer 0 0 0 Abigail 0 0 0/nonskippable/pause 2222/message \"{{i18n:Events.14h-p4.0 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Abigail \"{{i18n:Events.14h-p4.1 |PlayerName={{PlayerName}}}}\"/pause 1111/switchEvent Eleanor_14hearts-p5"
+        "StrojvedouciDenis.Eleanor_14hearts-p4/e StrojvedouciDenis.Eleanor_14hearts-p3": "none/-1000 -1000/farmer 0 0 0 Abigail 0 0 0/nonskippable/pause 2222/message \"{{i18n:Events.14h-p4.0 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Abigail \"{{i18n:Events.14h-p4.1 |PlayerName={{PlayerName}}}}\"/pause 1111/switchEvent StrojvedouciDenis.Eleanor_14hearts-p5"
       },
       "When": {
         "14hearts-variants": "long"
@@ -231,13 +230,13 @@
     // Part 5 - The end
     // Location: The beach
     // Trigger: Immediatly after talking to Abigail.
-    // Description: Happy end. You find Eleanor on the beach.
+    // Description: Happy end. You find StrojvedouciDenis.Eleanor on the beach.
     {
       "LogName": "Eleanor - 14hearts event (p5) - The end",
       "Action": "EditData",
       "Target": "Data/Events/Beach",
       "Entries": {
-        "Eleanor_14hearts-p5/e Eleanor_14hearts-p4": "none/-1000 -1000/farmer 0 0 0 Eleanor 0 0 0/nonskippable/pause 2222/message \"{{i18n:Events.14h-p5.0 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p5.1 |PlayerName={{PlayerName}}}}\"/pause 1111/switchEvent Eleanor_14hearts-p6"
+        "StrojvedouciDenis.Eleanor_14hearts-p5/e StrojvedouciDenis.Eleanor_14hearts-p4": "none/-1000 -1000/farmer 0 0 0 StrojvedouciDenis.Eleanor 0 0 0/nonskippable/pause 2222/message \"{{i18n:Events.14h-p5.0 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-p5.1 |PlayerName={{PlayerName}}}}\"/pause 1111/switchEvent StrojvedouciDenis.Eleanor_14hearts-p6"
       },
       "When": {
         "14hearts-variants": "long"
@@ -253,24 +252,24 @@
       "Action": "EditData",
       "Target": "Data/Events/FarmHouse",
       "Entries": {
-        "Eleanor_14hearts-p6/e Eleanor_14hearts-p5": "none/-1000 -1000/farmer 0 0 0 Eleanor 0 0 0/nonskippable/pause 2222/message \"{{i18n:Events.14h-p6.0 |PlayerName={{PlayerName}}}}\"/pause 1111/end"
+        "StrojvedouciDenis.Eleanor_14hearts-p6/e StrojvedouciDenis.Eleanor_14hearts-p5": "none/-1000 -1000/farmer 0 0 0 StrojvedouciDenis.Eleanor 0 0 0/nonskippable/pause 2222/message \"{{i18n:Events.14h-p6.0 |PlayerName={{PlayerName}}}}\"/pause 1111/end"
       }
     },
-
+*/
 /*
 Removed for now due to the lack of marriage update
 
     // short versions
     // SVE only version
     // Location: Wizard's Tower
-    // Trigger: Entering the Wizard's Tower after reaching 14 hearts with Eleanor.
-    // Description: Eleanor shares her history with the player, revealing her past and her connection to magic.
+    // Trigger: Entering the Wizard's Tower after reaching 14 hearts with StrojvedouciDenis.Eleanor.
+    // Description: StrojvedouciDenis.Eleanor shares her history with the player, revealing her past and her connection to magic.
     {
       "LogName": "Eleanor - 14hearts event (short) - SVE",
       "Action": "EditData",
       "Target": "Data/Events/WizardHouse",
       "Entries": {
-        "Eleanor_14hearts-short_SVE/e Eleanor_10hearts/f Eleanor 3500": "none/-1000 -1000/farmer 8 8 0 Eleanor 10 17 0/pause 2222/move farmer 0 17 1/pause 2500/message \"{{i18n:Events.14h-p3_SVE.0 |PlayerName={{PlayerName}}}}\"/pause 3333/message \"{{i18n:Events.14h-p3_SVE.1 |PlayerName={{PlayerName}}}}\"/message \"{{i18n:Events.14h-p3_SVE.2 |PlayerName={{PlayerName}}}}\"/pause 1111/move Eleanor 10 17 3/pause 1111/message \"{{i18n:Events.14h-p3_SVE.3 |PlayerName={{PlayerName}}}}\"/speak Eleanor \"{{i18n:Events.14h-p3_SVE.4 |PlayerName={{PlayerName}}}}\"/pause 1111/emote farmer 8 continue/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_SVE.5 |PlayerName={{PlayerName}}}}\"/emote farmer 56 continue/pause 1111/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_SVE.6 |PlayerName={{PlayerName}}}}\"/pause 2000/shake Eleanor 1000/pause 3000/message \"{{i18n:Events.14h-p3_SVE.7 |PlayerName={{PlayerName}}}}\"globalFade/pause 3500/speak Eleanor \"{{i18n:Events.14h-p3_SVE.8 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_SVE.9 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_SVE.10 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_SVE.11 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_SVE.12 |PlayerName={{PlayerName}}}}\"/pause 3333/speak Eleanor \"{{i18n:Events.14h-p3_SVE.13 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_SVE.14 |PlayerName={{PlayerName}}}}\"globalFadeToClear/pause 5000/speak Eleanor \"{{i18n:Events.14h-p3_SVE.15 |PlayerName={{PlayerName}}}}\"/globalfadeout/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_SVE.16|PlayerName={{PlayerName}}}}\"/pause 7777/end newDay"
+        "StrojvedouciDenis.Eleanor_14hearts-short_SVE/e StrojvedouciDenis.Eleanor_10hearts/f StrojvedouciDenis.Eleanor 3500": "none/-1000 -1000/farmer 8 8 0 StrojvedouciDenis.Eleanor 10 17 0/pause 2222/move farmer 0 17 1/pause 2500/message \"{{i18n:Events.14h-short_SVE.0 |PlayerName={{PlayerName}}}}\"/pause 3333/message \"{{i18n:Events.14h-short_SVE.1 |PlayerName={{PlayerName}}}}\"/message \"{{i18n:Events.14h-short_SVE.2 |PlayerName={{PlayerName}}}}\"/pause 1111/move StrojvedouciDenis.Eleanor 10 17 3/pause 1111/message \"{{i18n:Events.14h-short_SVE.3 |PlayerName={{PlayerName}}}}\"/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.4 |PlayerName={{PlayerName}}}}\"/pause 1111/emote farmer 8 continue/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.5 |PlayerName={{PlayerName}}}}\"/emote farmer 56 continue/pause 1111/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.6 |PlayerName={{PlayerName}}}}\"/pause 2000/shake StrojvedouciDenis.Eleanor 1000/pause 3000/message \"{{i18n:Events.14h-short_SVE.7 |PlayerName={{PlayerName}}}}\"globalFade/pause 3500/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.8 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.9 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.10 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.11 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.12 |PlayerName={{PlayerName}}}}\"/pause 3333/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.13 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.14 |PlayerName={{PlayerName}}}}\"globalFadeToClear/pause 5000/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.15 |PlayerName={{PlayerName}}}}\"/globalfadeout/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-short_SVE.16|PlayerName={{PlayerName}}}}\"/pause 7777/end newDay"
       },
       "When": {
         "HasMod |contains=HogwartsET.CP.Hogwarts": false,
@@ -279,14 +278,14 @@ Removed for now due to the lack of marriage update
     },
     // Hogwarts version
     // Location: Hogwarts Hogsmeade Village
-    // Trigger: Entering Hogsmeade Village after reaching 14 hearts with Eleanor and having the Hogwarts mod installed.
-    // Description: Eleanor shares her history with the player, revealing her past and her connection to magic in the context of Hogwarts.
+    // Trigger: Entering Hogsmeade Village after reaching 14 hearts with StrojvedouciDenis.Eleanor and having the Hogwarts mod installed.
+    // Description: StrojvedouciDenis.Eleanor shares her history with the player, revealing her past and her connection to magic in the context of Hogwarts.
     {
       "LogName": "Eleanor - 14hearts event (short) - Hogwarts ",
       "Action": "EditData",
       "Target": "Data/Events/HogwartsET.CP.Hogwarts_HogsmeadeVillage",
       "Entries": {
-        "Eleanor_14hearts-short_Hog/e Eleanor_10hearts/e EleanorHog_y1/f Eleanor 3500": "none/-1000 -1000/farmer 22 20 0 Eleanor 22 24 0/pause 2222/move farmer 23 24 1/pause 2500/message \"{{i18n:Events.14h-p3_Hog.0 |PlayerName={{PlayerName}}}}\"/pause 3333/message \"{{i18n:Events.14h-p3_Hog.1 |PlayerName={{PlayerName}}}}\"/message \"{{i18n:Events.14h-p3_Hog.2 |PlayerName={{PlayerName}}}}\"/pause 1111/move Eleanor 22 24 1/pause 1111/message \"{{i18n:Events.14h-p3_Hog.3 |PlayerName={{PlayerName}}}}\"/speak Eleanor \"{{i18n:Events.14h-p3_Hog.4 |PlayerName={{PlayerName}}}}\"/pause 1111/emote farmer 8 continue/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_Hog.5 |PlayerName={{PlayerName}}}}\"/emote farmer 56 continue/pause 1111/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_Hog.6 |PlayerName={{PlayerName}}}}\"/pause 2000/shake Eleanor 1000/pause 3000/message \"{{i18n:Events.14h-p3_Hog.7 |PlayerName={{PlayerName}}}}\"globalFade/pause 3500/speak Eleanor \"{{i18n:Events.14h-p3_Hog.8 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_Hog.9 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_Hog.10 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_Hog.11 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_Hog.12 |PlayerName={{PlayerName}}}}\"/pause 3333/speak Eleanor \"{{i18n:Events.14h-p3_Hog.13 |PlayerName={{PlayerName}}}}\"/pause 1111/speak Eleanor \"{{i18n:Events.14h-p3_Hog.14 |PlayerName={{PlayerName}}}}\"globalFadeToClear/pause 5000/speak Eleanor \"{{i18n:Events.14h-p3_Hog.15 |PlayerName={{PlayerName}}}}\"/pause 1111/message \"{{i18n:Events.14h-p3_Hog.16 |PlayerName={{PlayerName}}}}\"/globalfadeout/pause 5000/speak Eleanor  \"{{i18n:Events.14h-p3_Hog.17|PlayerName={{PlayerName}}}}\"/pause 7777/end newDay"
+        "StrojvedouciDenis.Eleanor_14hearts-short_Hog/e StrojvedouciDenis.Eleanor_10hearts/e StrojvedouciDenis.EleanorHog_y1/f StrojvedouciDenis.Eleanor 3500": "none/-1000 -1000/farmer 22 20 0 StrojvedouciDenis.Eleanor 22 24 0/pause 2222/move farmer 23 24 1/pause 2500/message \"{{i18n:Events.14h-p3_Hog.0 |PlayerName={{PlayerName}}}}\"/pause 3333/message \"{{i18n:Events.14h-p3_Hog.1 |PlayerName={{PlayerName}}}}\"/message \"{{i18n:Events.14h-p3_Hog.2 |PlayerName={{PlayerName}}}}\"/pause 1111/move StrojvedouciDenis.Eleanor 22 24 1/pause 1111/message \"{{i18n:Events.14h-p3_Hog.3 |PlayerName={{PlayerName}}}}\"/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-p3_Hog.4 |PlayerName={{PlayerName}}}}\"/pause 1111/emote farmer 8 continue/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-p3_Hog.5 |PlayerName={{PlayerName}}}}\"/emote farmer 56 continue/pause 1111/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-p3_Hog.6 |PlayerName={{PlayerName}}}}\"/pause 2000/shake StrojvedouciDenis.Eleanor 1000/pause 3000/message \"{{i18n:Events.14h-p3_Hog.7 |PlayerName={{PlayerName}}}}\"globalFade/pause 3500/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-p3_Hog.8 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-p3_Hog.9 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-p3_Hog.10 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-p3_Hog.11 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-p3_Hog.12 |PlayerName={{PlayerName}}}}\"/pause 3333/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-p3_Hog.13 |PlayerName={{PlayerName}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-p3_Hog.14 |PlayerName={{PlayerName}}}}\"globalFadeToClear/pause 5000/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.14h-p3_Hog.15 |PlayerName={{PlayerName}}}}\"/pause 1111/message \"{{i18n:Events.14h-p3_Hog.16 |PlayerName={{PlayerName}}}}\"/globalfadeout/pause 5000/speak StrojvedouciDenis.Eleanor  \"{{i18n:Events.14h-p3_Hog.17|PlayerName={{PlayerName}}}}\"/pause 7777/end newDay"
       },
       "When": {
         "HasMod |contains=HogwartsET.CP.Hogwarts": true,
@@ -299,13 +298,13 @@ Removed for now due to the lack of marriage update
     // Hogwarts gone - y1
     // Location: your farm
     // Trigger: Entering your farm.
-    // Description: Mr. Rasmodius will inform player about Eleanor's trip to Hogwarts.
+    // Description: Mr. Rasmodius will inform player about StrojvedouciDenis.Eleanor's trip to Hogwarts.
     {
       "LogName": "Eleanor - event - Hogwarts gone y1",
       "Action": "EditData",
       "Target": "Data/Events/farm",
       "Entries": {
-        "Eleanor_Hog_gone_y1/e EleanorIntro/j 30": "none/-1000 -1000/farmer 2 2 2 Wizard 3 3 0/skippable/pause 2222/speak Wizard \"{{i18n:Hog_gone_y1.0|PlayerName={{PlayerName}}}}\"/pause 1111/end"
+        "StrojvedouciDenis.Eleanor_Hog_gone_y1/e StrojvedouciDenis.EleanorIntro/j 30": "none/-1000 -1000/farmer 2 2 2 Wizard 3 3 0/skippable/pause 2222/speak Wizard \"{{i18n:Hog_gone_y1.0|PlayerName={{PlayerName}}}}\"/pause 1111/end"
       },
       "When": {
         "HasMod": "HogwartsET.CP.Hogwarts"
