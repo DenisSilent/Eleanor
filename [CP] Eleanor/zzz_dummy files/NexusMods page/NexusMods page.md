@@ -6,6 +6,7 @@
 
 Eleanor is a young witch who studies at Mr. Rasmodius' tower. She is kinda shy at first, but she'll eventually open up to you (or, at least, that's how her dialogues & events are written).
 
+
 ### **Roadmap**:
 
 * ~~0.7.0 - one look only clothes + 1st GitHub release~~ 1.2.2025
@@ -18,25 +19,28 @@ Eleanor is a young witch who studies at Mr. Rasmodius' tower. She is kinda shy a
 
 ### **Compatibility with other mods:**
 
-SVE - this mod was created as an add-on NPC for SVE, so it should be fully compatible (there *might* be bugs, as not 100% of the SV or SVE content was tested; if you report them, I'll try my best to fix them)
+SVE - this mod was created as an add-on NPC, requiring SVE, so it should be fully compatible (there *might* be bugs, as not 100% of the SV or SVE content was tested; if you report them, I'll try my best to fix them)
 RSV - should be fully compatible (there might be bugs; if you report them, I'll try my best to fix them)
 ES - should be fully compatible (there might be bugs; if you report them, I'll try my best to fix them)
+
 Other NPC mods:
 ... I'll be honest - this mod *might or might not* work with NPC mods you use. I expect many bugs with many NPCs; if you report them, I'll try my best to fix them. For festivals, I work by LemurKat's method "First in gets priority" which is described here: [https://lemurkat.wordpress.com/2021/11/13/help-theyre-overlapping-at-a-festival/](https://lemurkat.wordpress.com/2021/11/13/help-theyre-overlapping-at-a-festival/). And as my mod is pretty young, I expect A LOT of festival moves on my side.
+
 Other mods:
+There shouldn't be any technical incompactibility, but there might be some things that might bot be 100% "lore friendly", so compactible, but:
 ...only time will tell...
 
 ### **Credits:**
 
-Basics (parts of content.json, manifest.json, mod folder structure) were created with the help of *MissCoriel's NPC Creator*, which is not bad at all, but in my opinion, it is better to do it from some NPC mod you like (I used many NPC mods I play with; as SVE & RSV, but these great mods are so big that their code is not easy to follow at all (ES is in a quite good position), so I recommend smaller ones like Jorts and Jean (totally ideal, with combination with this link: [https://stardewmodding.wiki.gg/wiki/Tutorial:_Making_a_Custom_NPC](https://stardewmodding.wiki.gg/wiki/Tutorial:_Making_a_Custom_NPC)), MrGinger (due to his story it is not so easy to follow his code) or this one of course ☻). So credits to those:
+Basics (parts of content.json, manifest.json, now-quite-obstolete mod folder structure) were created with the help of *MissCoriel's NPC Creator*, which is not bad at all, but in my opinion, it is better to do it from some NPC mod you like (I used many NPC mods I play with; as SVE & RSV, but these great mods are so big that their code is not easy to follow at all (ES is in a quite good position,though), so I recommend smaller ones like Jorts and Jean (totally ideal, with combination with this link: [https://stardewmodding.wiki.gg/wiki/Tutorial:_Making_a_Custom_NPC](https://stardewmodding.wiki.gg/wiki/Tutorial:_Making_a_Custom_NPC)), MrGinger (due to his story it is not so easy to follow his code) or this one of course ☻). Anyways credits to those:
 
-*Eric Barone "ConcernedApe"* - extremely big THANK YOU for making & updating Stardew Valley (also a big THANK YOU to everyone who was or is working with him)
+**Eric Barone *"ConcernedApe"*** - extremely big THANK YOU for making & updating Stardew Valley (also a big THANK YOU to everyone who was or is working with him);
 
-Pathoschild - very big THANK YOU for making SMAPI, Content Patcher, and many more mods (technically, the whole new method of SV modding exists because of your work, and it is easier to mod and to use instead of that method by changing the game's .xnb files); also thanks for helping me
+**Jessie Plamondon-Willard *"Pathoschild"*** - very big THANK YOU for making SMAPI, Content Patcher,  many more mods and being the *"Modfather"*; also thanks for helping me;
 
-FlashShifter - big THANK YOU for making Stardew Valley Expanded
+Anyone who was willing to help or ask for help from Stardew Valley Discord (especially from #making-mods-general; many thanks to everyone there). All users that helped me are mentioned in the "changelog.md" file located [in the changelog file](https://github.com/DenisSilent/Eleanor/blob/main/%5BCP%5D%20Eleanor/zzz_dummy%20files/changelog.md);
 
-Anyone who was willing to help or ask for help from Stardew Valley Discord (especially from #making-mods-general; many thanks to everyone there). All users that helped me are mentioned in the "changelog.md" file located [in the changelog file](https://github.com/DenisSilent/Eleanor/blob/main/%5BCP%5D%20Eleanor/zzz_dummy%20files/changelog.md).
+Everyone who somehow contributed to Stardew Valley
 
 ### **Legal note:**
 
@@ -58,9 +62,8 @@ Portraits for Eleanor are made using [https://jazzybee.itch.io/sdvcharactercreat
 
 ##### **You can not:**
 
-steal/dishonest/... this mod
-
-place this mod behind a paywall/monetize in any way any part of this mod (you can, however, monetize your mod in any way, even if you are inspired by my code)
+* steal/dishonest/... this mod
+* place this mod behind a paywall/monetize in any way any part of this mod (you can, however, monetize your mod in any way, even if you are inspired by my code)
 
 ##### **Warning for mod authors:**
 

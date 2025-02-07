@@ -23,7 +23,7 @@
 
   // Update Keys
 
-  "UpdateKeys": ["Nexus:???"], // Deactivates SMAPI error, ??? will be changed to ID of this mod on NexusMods
+  "UpdateKeys": [ "GitHub:DenisSilent/Eleanor" ],
 
   // Framework Manifest ID
 

@@ -70,56 +70,63 @@ commented out because of the missing art
   // NPC Eleanor //
 
   "DynamicTokens": [
-    // (in)formality
+    // (in)formality + GNMT support
     {
-      "Name": "DT_formallity",
-      "Value": "formal",
+      "Name": "DT_dialogues",
+      "Value": "${Mr.^Ms.^Mx.}$ {{PlayerName}}",
+      "Condition": "MarkEventSeen Current StrojvedouciDenis.Eleanor_4hearts false"
+    },
+    {
+      "Name": "DT_dialogues",
+      "Value": "{{Hana.GNMTokens/Title}} {{PlayerName}}",
       "When": {
-        "Hearts:Eleanor": "{{Range: 0, 3}}"
+      "Condition": "MarkEventSeen Current StrojvedouciDenis.Eleanor_4hearts false",
+        "HasMod": "Hana.GNMTokens"
       }
     },
     {
-      "Name": "DT_formallity",
-       "Value": "informal",
+      "Name": "DT_dialogues",
+       "Value": "{{PlayerName}}",
       "When": {
-        "Hearts:Eleanor": "{{Range: 4, 14}}"
+      "Condition": "MarkEventSeen Current StrojvedouciDenis.Eleanor_4hearts"
       }
     },
+
     // dialogues heart levels
     /*
     {
       "Name": "Eleanor - Dynamic Tokens - heart level",
       "Value": "2",
       "When": {
-        "Hearts:Eleanor": "2, 3"
+        "Hearts:StrojvedouciDenis.Eleanor": "2, 3"
       }
     },
     {
       "Name": "Eleanor - Dynamic Tokens - heart level",
       "Value": "4",
       "When": {
-        "Hearts:Eleanor": "4, 5"
+        "Hearts:StrojvedouciDenis.Eleanor": "4, 5"
       }
     },
     {
       "Name": "Eleanor - Dynamic Tokens - heart level",
       "Value": "6",
       "When": {
-        "Hearts:Eleanor": "6, 7"
+        "Hearts:StrojvedouciDenis.Eleanor": "6, 7"
       }
     },
     {
       "Name": "Eleanor - Dynamic Tokens - heart level",
       "Value": "8",
       "When": {
-        "Hearts:Eleanor": "8, 9"
+        "Hearts:StrojvedouciDenis.Eleanor": "8, 9"
       }
     },
     {
       "Name": "Eleanor - Dynamic Tokens - heart level",
       "Value": "10",
       "When": {
-        "Hearts:Eleanor": "{{Range: 10, 14}}"
+        "Hearts:StrojvedouciDenis.Eleanor": "{{Range: 10, 14}}"
       }
     },
 */

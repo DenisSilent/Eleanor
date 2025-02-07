@@ -6,6 +6,24 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ## Last version
 
+### version 0.7.1 (7.2.2025)
+
+* Created 4 and 7 hearts events
+* Fixed events, mails and secrets not using the new Dynamic Token, supporting GNMTokens
+* Added update key to GitHub for this mod so SMAPI would detect updates released on GitHub
+* Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
+
+### version 0.7.1-beta.1 (3.2.2025)
+
+* Added update key to this mod's manifest so SMAPI will detect updates
+* Dynamic tokens + GNMTokens to i18n posibility Discord help by:
+  * `@atravita`
+  * `@wopr1234`
+  * `@lumisteria`
+  * `@pathoschild `
+  * `@tiakall`
+* Fully rewritten dialogues prefixes format + added proper triggable Gender Neutral Mod support
+
 ### version 0.7.0 (1.2.2025)
 
 * First public hoping-that-not-game-breaking release! 🎉

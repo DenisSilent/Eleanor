@@ -7,7 +7,7 @@
       "Action": "EditData",
       "Target": "Strings/schedules/StrojvedouciDenis.Eleanor",
       "Entries": {
-        "safemode": "{{i18n:Schedule.safemode |PlayerName={{PlayerName}}}}"
+        "safemode": "{{i18n:Schedule.safemode |DT_dialogues={{DT_dialogues}}}}"
       }
     },
 
@@ -20,48 +20,46 @@
       "Entries": {
         // GENERIC DIALOGUE
 
-        //       "{{DT_weekday}}": "{{Random: {{i18n:0hearts.random1}} & {{i18n:0hearts.random2}} & {{i18n:0hearts.random3}} & {{i18n:0hearts.random4}} & {{i18n:0hearts.random5}} & {{i18n:0hearts.random6}} & {{i18n:0hearts.random7}} |inputSeparator=& |PlayerName={{PlayerName}}}}",
-        //        "{{DT_weekday}}": "{{i18n:Dialogues.0hearts.random1 |PlayerName={{PlayerName}}}}",
-        "{{DT_weekday}}": "{{i18n:Dialogues.0hearts.random.{{Random:{{Range:0,6}}}}|PlayerName={{PlayerName}}}}",
+        "{{DT_weekday}}": "{{i18n:Dialogues.0hearts.random.{{Random:{{Range:0,6}}}}|DT_dialogues={{DT_dialogues}}}}",
 
-        "{{DT_weekday}}2": "{{i18n:Dialogues.{{DT_weekday}}2 |PlayerName={{PlayerName}}}}",
+        "{{DT_weekday}}2": "{{i18n:Dialogues.{{DT_weekday}}2 |DT_dialogues={{DT_dialogues}}}}",
 
-        "{{DT_weekday}}4": "{{i18n:Dialogues.{{DT_weekday}}4 |PlayerName={{PlayerName}}}}",
+        "{{DT_weekday}}4": "{{i18n:Dialogues.{{DT_weekday}}4 |DT_dialogues={{DT_dialogues}}}}",
 
-        "{{DT_weekday}}6": "{{i18n:Dialogues.{{DT_weekday}}6 |PlayerName={{PlayerName}}}}",
+        "{{DT_weekday}}6": "{{i18n:Dialogues.{{DT_weekday}}6 |DT_dialogues={{DT_dialogues}}}}",
 
-        "{{DT_weekday}}8": "{{i18n:Dialogues.{{DT_weekday}}8 |PlayerName={{PlayerName}}}}",
+        "{{DT_weekday}}8": "{{i18n:Dialogues.{{DT_weekday}}8 |DT_dialogues={{DT_dialogues}}}}",
 
-        "{{DT_weekday}}10": "{{i18n:Dialogues.{{DT_weekday}}10 |PlayerName={{PlayerName}}}}",
+        "{{DT_weekday}}10": "{{i18n:Dialogues.{{DT_weekday}}10 |DT_dialogues={{DT_dialogues}}}}",
 
         // SPECIFIC DAY DIALOGUE
         // Note: Works only in the first year. Use format season_dayOfMonth_2 for year 2 and later (e.g., "summer_10_2"). To target specific years, use CP conditions with the "_2" suffix.
 
-        "spring_1": "{{i18n:Dialogues.{{DT_formallity}}.spring_1 |PlayerName={{PlayerName}}}}",
-        "spring_12": "{{i18n:Dialogues.{{DT_formallity}}.spring_12 |PlayerName={{PlayerName}}}}",
-        "spring_23": "{{i18n:Dialogues.{{DT_formallity}}.spring_23 |PlayerName={{PlayerName}}}}",
+        "spring_1": "{{i18n:Dialogues.spring_1 |DT_dialogues={{DT_dialogues}}}}",
+        "spring_12": "{{i18n:Dialogues.spring_12 |DT_dialogues={{DT_dialogues}}}}",
+        "spring_23": "{{i18n:Dialogues.spring_23 |DT_dialogues={{DT_dialogues}}}}",
 
-        "summer_10": "{{i18n:Dialogues.{{DT_formallity}}.summer_10 |PlayerName={{PlayerName}}}}",
-        "summer_27": "{{i18n:Dialogues.{{DT_formallity}}.summer_27 |PlayerName={{PlayerName}}}}",
+        "summer_10": "{{i18n:Dialogues.summer_10 |DT_dialogues={{DT_dialogues}}}}",
+        "summer_27": "{{i18n:Dialogues.summer_27 |DT_dialogues={{DT_dialogues}}}}",
 
-        "fall_1_1": "{{i18n:Dialogues.{{DT_formallity}}.fall_1_1 |PlayerName={{PlayerName}}}}",
-        "fall_15": "{{i18n:Dialogues.{{DT_formallity}}.fall_15 |PlayerName={{PlayerName}}}}",
-        "fall_17": "{{i18n:Dialogues.{{DT_formallity}}.fall_17 |PlayerName={{PlayerName}}}}",
-        "fall_18": "{{i18n:Dialogues.{{DT_formallity}}.fall_18 |PlayerName={{PlayerName}}}}",
-        "fall_26": "{{i18n:Dialogues.{{DT_formallity}}.fall_26 |PlayerName={{PlayerName}}}}",
+        "fall_1_1": "{{i18n:Dialogues.fall_1_1 |DT_dialogues={{DT_dialogues}}}}",
+        "fall_15": "{{i18n:Dialogues.fall_15 |DT_dialogues={{DT_dialogues}}}}",
+        "fall_17": "{{i18n:Dialogues.fall_17 |DT_dialogues={{DT_dialogues}}}}",
+        "fall_18": "{{i18n:Dialogues.fall_18 |DT_dialogues={{DT_dialogues}}}}",
+        "fall_26": "{{i18n:Dialogues.fall_26 |DT_dialogues={{DT_dialogues}}}}",
 
-        "winter_7": "{{i18n:Dialogues.{{DT_formallity}}.winter_7 |PlayerName={{PlayerName}}}}",
-        "winter_23": "{{i18n:Dialogues.{{DT_formallity}}.winter_23 |PlayerName={{PlayerName}}}}",
-        "winter_24": "{{i18n:Dialogues.{{DT_formallity}}.winter_24 |PlayerName={{PlayerName}}}}",
-        "winter_28": "{{i18n:Dialogues.{{DT_formallity}}.winter_28 |PlayerName={{PlayerName}}}}"
+        "winter_7": "{{i18n:Dialogues.winter_7 |DT_dialogues={{DT_dialogues}}}}",
+        "winter_23": "{{i18n:Dialogues.winter_23 |DT_dialogues={{DT_dialogues}}}}",
+        "winter_24": "{{i18n:Dialogues.winter_24 |DT_dialogues={{DT_dialogues}}}}",
+        "winter_28": "{{i18n:Dialogues.winter_28 |DT_dialogues={{DT_dialogues}}}}"
 
         // maybe for future updates
 /*
 	// Special dialogues
 
-"AcceptBirthdayGift": "{{i18n:Dialogues.AcceptBirthdayGift |PlayerName={{PlayerName}}}}",
-"AcceptBirthdayGift_Negative": "{{i18n:Dialogues.AcceptBirthdayGift_Negative |PlayerName={{PlayerName}}}}",
-"AcceptBirthdayGift_Positive": "{{i18n:Dialogues.AcceptBirthdayGift_Positive |PlayerName={{PlayerName}}}}",
+"AcceptBirthdayGift": "{{i18n:Dialogues.AcceptBirthdayGift |DT_dialogues={{DT_dialogues}}}}",
+"AcceptBirthdayGift_Negative": "{{i18n:Dialogues.AcceptBirthdayGift_Negative |DT_dialogues={{DT_dialogues}}}}",
+"AcceptBirthdayGift_Positive": "{{i18n:Dialogues.AcceptBirthdayGift_Positive |DT_dialogues={{DT_dialogues}}}}",
 //"AcceptBirthdayGift_<id>": "",
 //"AcceptBirthdayGift_<tag>": "",
 //"AcceptBirthdayGift_<taste>": "",
@@ -69,46 +67,46 @@
 //"AcceptGift_<id>": "",
 //"AcceptGift_<tag>": "",
 
-"RejectGift_Divorced": "{{i18n:Dialogues.RejectGift_Divorced |PlayerName={{PlayerName}}}}",
+"RejectGift_Divorced": "{{i18n:Dialogues.RejectGift_Divorced |DT_dialogues={{DT_dialogues}}}}",
 
 //"RejectItem_<id>": "",
 //"RejectItem_<tag>": "",
 
 
 
-"AcceptBouquet": "{{i18n:Dialogues.AcceptBouquet |PlayerName={{PlayerName}}}}",
+"AcceptBouquet": "{{i18n:Dialogues.AcceptBouquet |DT_dialogues={{DT_dialogues}}}}",
 
-"RejectBouquet": "{{i18n:Dialogues.RejectBouquet |PlayerName={{PlayerName}}}}",
-"RejectBouquet_NotDatable": "{{i18n:Dialogues.RejectBouquet_NotDatable |PlayerName={{PlayerName}}}}",
-"RejectBouquet_NpcAlreadyMarried": "{{i18n:Dialogues.RejectBouquet_NpcAlreadyMarried |PlayerName={{PlayerName}}}}",
-"RejectBouquet_VeryLowHearts": "{{i18n:Dialogues.RejectBouquet_VeryLowHearts |PlayerName={{PlayerName}}}}",
-"RejectBouquet_LowHearts": "{{i18n:Dialogues.RejectBouquet_LowHearts |PlayerName={{PlayerName}}}}",
-"RejectBouquet_Divorced": "{{i18n:Dialogues.RejectBouquet_Divorced |PlayerName={{PlayerName}}}}",
+"RejectBouquet": "{{i18n:Dialogues.RejectBouquet |DT_dialogues={{DT_dialogues}}}}",
+"RejectBouquet_NotDatable": "{{i18n:Dialogues.RejectBouquet_NotDatable |DT_dialogues={{DT_dialogues}}}}",
+"RejectBouquet_NpcAlreadyMarried": "{{i18n:Dialogues.RejectBouquet_NpcAlreadyMarried |DT_dialogues={{DT_dialogues}}}}",
+"RejectBouquet_VeryLowHearts": "{{i18n:Dialogues.RejectBouquet_VeryLowHearts |DT_dialogues={{DT_dialogues}}}}",
+"RejectBouquet_LowHearts": "{{i18n:Dialogues.RejectBouquet_LowHearts |DT_dialogues={{DT_dialogues}}}}",
+"RejectBouquet_Divorced": "{{i18n:Dialogues.RejectBouquet_Divorced |DT_dialogues={{DT_dialogues}}}}",
 
-"RejectMermaidPendant": "{{i18n:Dialogues.RejectMermaidPendant |PlayerName={{PlayerName}}}}",
-"RejectMermaidPendant_Divorced": "{{i18n:Dialogues.RejectMermaidPendant_Divorced |PlayerName={{PlayerName}}}}",
-"RejectMermaidPendant_NeedHouseUpgrade": "{{i18n:Dialogues.RejectMermaidPendant_NeedHouseUpgrade |PlayerName={{PlayerName}}}}",
-"RejectMermaidPendant_NotDatable": "{{i18n:Dialogues.RejectMermaidPendant_NotDatable |PlayerName={{PlayerName}}}}",
-"RejectMermaidPendant_NpcWithSomeoneElse": "{{i18n:Dialogues.RejectMermaidPendant_NpcWithSomeoneElse |PlayerName={{PlayerName}}}}",
-"RejectMermaidPendant_PlayerWithSomeoneElse": "{{i18n:Dialogues.RejectMermaidPendant_PlayerWithSomeoneElse |PlayerName={{PlayerName}}}}",
-"RejectMermaidPendant_Under8Hearts": "{{i18n:Dialogues.RejectMermaidPendant_Under8Hearts |PlayerName={{PlayerName}}}}",
-"RejectMermaidPendant_Under10Hearts": "{{i18n:Dialogues.RejectMermaidPendant_Under10Hearts |PlayerName={{PlayerName}}}}",
-"RejectMermaidPendant_Under10Hearts_AskedAgain": "{{i18n:Dialogues.RejectMermaidPendant_Under10Hearts_AskedAgain |PlayerName={{PlayerName}}}}",
+"RejectMermaidPendant": "{{i18n:Dialogues.RejectMermaidPendant |DT_dialogues={{DT_dialogues}}}}",
+"RejectMermaidPendant_Divorced": "{{i18n:Dialogues.RejectMermaidPendant_Divorced |DT_dialogues={{DT_dialogues}}}}",
+"RejectMermaidPendant_NeedHouseUpgrade": "{{i18n:Dialogues.RejectMermaidPendant_NeedHouseUpgrade |DT_dialogues={{DT_dialogues}}}}",
+"RejectMermaidPendant_NotDatable": "{{i18n:Dialogues.RejectMermaidPendant_NotDatable |DT_dialogues={{DT_dialogues}}}}",
+"RejectMermaidPendant_NpcWithSomeoneElse": "{{i18n:Dialogues.RejectMermaidPendant_NpcWithSomeoneElse |DT_dialogues={{DT_dialogues}}}}",
+"RejectMermaidPendant_PlayerWithSomeoneElse": "{{i18n:Dialogues.RejectMermaidPendant_PlayerWithSomeoneElse |DT_dialogues={{DT_dialogues}}}}",
+"RejectMermaidPendant_Under8Hearts": "{{i18n:Dialogues.RejectMermaidPendant_Under8Hearts |DT_dialogues={{DT_dialogues}}}}",
+"RejectMermaidPendant_Under10Hearts": "{{i18n:Dialogues.RejectMermaidPendant_Under10Hearts |DT_dialogues={{DT_dialogues}}}}",
+"RejectMermaidPendant_Under10Hearts_AskedAgain": "{{i18n:Dialogues.RejectMermaidPendant_Under10Hearts_AskedAgain |DT_dialogues={{DT_dialogues}}}}",
 
-"RejectMovieTicket": "{{i18n:Dialogues.RejectMovieTicket |PlayerName={{PlayerName}}}}",
-"RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:Dialogues.RejectMovieTicket_AlreadyInvitedBySomeoneElse |PlayerName={{PlayerName}}}}",
-"RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:Dialogues.RejectMovieTicket_AlreadyWatchedThisWeek |PlayerName={{PlayerName}}}}",
-"RejectMovieTicket_Divorced": "{{i18n:Dialogues.RejectMovieTicket_Divorced |PlayerName={{PlayerName}}}}",
-"RejectMovieTicket_DontWantToSeeThatMovie": "{{i18n:Dialogues.RejectMovieTicket_DontWantToSeeThatMovie |PlayerName={{PlayerName}}}}",
+"RejectMovieTicket": "{{i18n:Dialogues.RejectMovieTicket |DT_dialogues={{DT_dialogues}}}}",
+"RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:Dialogues.RejectMovieTicket_AlreadyInvitedBySomeoneElse |DT_dialogues={{DT_dialogues}}}}",
+"RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:Dialogues.RejectMovieTicket_AlreadyWatchedThisWeek |DT_dialogues={{DT_dialogues}}}}",
+"RejectMovieTicket_Divorced": "{{i18n:Dialogues.RejectMovieTicket_Divorced |DT_dialogues={{DT_dialogues}}}}",
+"RejectMovieTicket_DontWantToSeeThatMovie": "{{i18n:Dialogues.RejectMovieTicket_DontWantToSeeThatMovie |DT_dialogues={{DT_dialogues}}}}",
 
 
 //"PurchasedItem_*": "",	// kinda don't know what to do with that, but let's keep it blocked here
 
 
-"Town_DumpsterDiveComment_Adult": "{{i18n:Dialogues.Town_DumpsterDiveComment_Adult |PlayerName={{PlayerName}}}}",
+"Town_DumpsterDiveComment_Adult": "{{i18n:Dialogues.Town_DumpsterDiveComment_Adult |DT_dialogues={{DT_dialogues}}}}",
 
 
-"MovieInvite_Invited": "{{i18n:Dialogues.MovieInvite_Invited |PlayerName={{PlayerName}}}}",
+"MovieInvite_Invited": "{{i18n:Dialogues.MovieInvite_Invited |DT_dialogues={{DT_dialogues}}}}",
 
 //"MovieInvite_Invited_<NPC name>": "",
 //"MovieInvite_Invited_<manner>": "",
@@ -120,35 +118,35 @@
 
 	// Special dialogues - events
 
-"FlowerDance_Accept": "{{i18n:Dialogues.FlowerDance_Accept |PlayerName={{PlayerName}}}}",
-"FlowerDance_Accept_Roommate": "{{i18n:Dialogues.FlowerDance_Accept_Roommate |PlayerName={{PlayerName}}}}",
-"FlowerDance_Accept_Spouse": "{{i18n:Dialogues.FlowerDance_Accept_Spouse |PlayerName={{PlayerName}}}}",
+"FlowerDance_Accept": "{{i18n:Dialogues.FlowerDance_Accept |DT_dialogues={{DT_dialogues}}}}",
+"FlowerDance_Accept_Roommate": "{{i18n:Dialogues.FlowerDance_Accept_Roommate |DT_dialogues={{DT_dialogues}}}}",
+"FlowerDance_Accept_Spouse": "{{i18n:Dialogues.FlowerDance_Accept_Spouse |DT_dialogues={{DT_dialogues}}}}",
 
-"FlowerDance_Decline": "{{i18n:Dialogues.FlowerDance_Decline |PlayerName={{PlayerName}}}}",
+"FlowerDance_Decline": "{{i18n:Dialogues.FlowerDance_Decline |DT_dialogues={{DT_dialogues}}}}",
 
-//"danceRejection": "{{i18n:Dialogues.danceRejection |PlayerName={{PlayerName}}}}",		// fallback for "FlowerDance_Decline", use that instead
-
-
-"Fair_Judging": "{{i18n:Dialogues.Fair_Judging |PlayerName={{PlayerName}}}}",
-
-"Fair_Judged": "{{i18n:Dialogues.Fair_Judged |PlayerName={{PlayerName}}}}",
-"Fair_Judged_PlayerLost_PurpleShorts": "{{i18n:Dialogues.Fair_Judged_PlayerLost_PurpleShorts |PlayerName={{PlayerName}}}}",
-"Fair_Judged_PlayerLost_Skipped": "{{i18n:Dialogues.Fair_Judged_PlayerLost_Skipped |PlayerName={{PlayerName}}}}",
-"Fair_Judged_PlayerLost": "{{i18n:Dialogues.Fair_Judged_PlayerLost |PlayerName={{PlayerName}}}}",
-"Fair_Judged_PlayerWon": "{{i18n:Dialogues.Fair_Judged_PlayerWon |PlayerName={{PlayerName}}}}",
+//"danceRejection": "{{i18n:Dialogues.danceRejection |DT_dialogues={{DT_dialogues}}}}",		// fallback for "FlowerDance_Decline", use that instead
 
 
-"WinterStar_ReceiveGift": "{{i18n:Dialogues.WinterStar_ReceiveGift |PlayerName={{PlayerName}}}}",
+"Fair_Judging": "{{i18n:Dialogues.Fair_Judging |DT_dialogues={{DT_dialogues}}}}",
+
+"Fair_Judged": "{{i18n:Dialogues.Fair_Judged |DT_dialogues={{DT_dialogues}}}}",
+"Fair_Judged_PlayerLost_PurpleShorts": "{{i18n:Dialogues.Fair_Judged_PlayerLost_PurpleShorts |DT_dialogues={{DT_dialogues}}}}",
+"Fair_Judged_PlayerLost_Skipped": "{{i18n:Dialogues.Fair_Judged_PlayerLost_Skipped |DT_dialogues={{DT_dialogues}}}}",
+"Fair_Judged_PlayerLost": "{{i18n:Dialogues.Fair_Judged_PlayerLost |DT_dialogues={{DT_dialogues}}}}",
+"Fair_Judged_PlayerWon": "{{i18n:Dialogues.Fair_Judged_PlayerWon |DT_dialogues={{DT_dialogues}}}}",
+
+
+"WinterStar_ReceiveGift": "{{i18n:Dialogues.WinterStar_ReceiveGift |DT_dialogues={{DT_dialogues}}}}",
 
 //"WinterStar_ReceiveGift_<id>": "",
 //"WinterStar_ReceiveGift_<tag>": "",
 
-"WinterStar_GiveGift_Before_Roommate": "{{i18n:Dialogues.WinterStar_GiveGift_Before_Roommate |PlayerName={{PlayerName}}}}",
-"WinterStar_GiveGift_Before_Spouse": "{{i18n:Dialogues.WinterStar_GiveGift_Before_Spouse |PlayerName={{PlayerName}}}}",
-"WinterStar_GiveGift_Before": "{{i18n:Dialogues.WinterStar_GiveGift_Before |PlayerName={{PlayerName}}}}",
-"WinterStar_GiveGift_After_Roommate": "{{i18n:Dialogues.WinterStar_GiveGift_After_Roommate |PlayerName={{PlayerName}}}}",
-"WinterStar_GiveGift_After_Spouse": "{{i18n:Dialogues.WinterStar_GiveGift_After_Spouse |PlayerName={{PlayerName}}}}",
-"WinterStar_GiveGift_After": "{{i18n:Dialogues.WinterStar_GiveGift_After |PlayerName={{PlayerName}}}}",
+"WinterStar_GiveGift_Before_Roommate": "{{i18n:Dialogues.WinterStar_GiveGift_Before_Roommate |DT_dialogues={{DT_dialogues}}}}",
+"WinterStar_GiveGift_Before_Spouse": "{{i18n:Dialogues.WinterStar_GiveGift_Before_Spouse |DT_dialogues={{DT_dialogues}}}}",
+"WinterStar_GiveGift_Before": "{{i18n:Dialogues.WinterStar_GiveGift_Before |DT_dialogues={{DT_dialogues}}}}",
+"WinterStar_GiveGift_After_Roommate": "{{i18n:Dialogues.WinterStar_GiveGift_After_Roommate |DT_dialogues={{DT_dialogues}}}}",
+"WinterStar_GiveGift_After_Spouse": "{{i18n:Dialogues.WinterStar_GiveGift_After_Spouse |DT_dialogues={{DT_dialogues}}}}",
+"WinterStar_GiveGift_After": "{{i18n:Dialogues.WinterStar_GiveGift_After |DT_dialogues={{DT_dialogues}}}}",
 
 
 		// 1.6.9. dialogues - will be merged with those above after SV 1.6.9 release
@@ -158,22 +156,22 @@
 //"AcceptGift_<taste>": "",
 
 
-"AcceptGift": "{{i18n:Dialogues.AcceptGift |PlayerName={{PlayerName}}}}",
+"AcceptGift": "{{i18n:Dialogues.AcceptGift |DT_dialogues={{DT_dialogues}}}}",
 
-"RejectBouquet_AlreadyAccepted_Engaged": "{{i18n:Dialogues.RejectBouquet_AlreadyAccepted_Engaged |PlayerName={{PlayerName}}}}",
-"RejectBouquet_AlreadyAccepted_Married": "{{i18n:Dialogues.RejectBouquet_AlreadyAccepted_Married |PlayerName={{PlayerName}}}}",
-"RejectBouquet_AlreadyAccepted": "{{i18n:Dialogues.RejectBouquet_AlreadyAccepted |PlayerName={{PlayerName}}}}",
+"RejectBouquet_AlreadyAccepted_Engaged": "{{i18n:Dialogues.RejectBouquet_AlreadyAccepted_Engaged |DT_dialogues={{DT_dialogues}}}}",
+"RejectBouquet_AlreadyAccepted_Married": "{{i18n:Dialogues.RejectBouquet_AlreadyAccepted_Married |DT_dialogues={{DT_dialogues}}}}",
+"RejectBouquet_AlreadyAccepted": "{{i18n:Dialogues.RejectBouquet_AlreadyAccepted |DT_dialogues={{DT_dialogues}}}}",
 
-"RejectMermaidPendant_AlreadyAccepted_Engaged": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted_Engaged |PlayerName={{PlayerName}}}}",
-"RejectMermaidPendant_AlreadyAccepted_Married": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted_Married |PlayerName={{PlayerName}}}}",
-"RejectMermaidPendant_AlreadyAccepted": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted |PlayerName={{PlayerName}}}}",
+"RejectMermaidPendant_AlreadyAccepted_Engaged": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted_Engaged |DT_dialogues={{DT_dialogues}}}}",
+"RejectMermaidPendant_AlreadyAccepted_Married": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted_Married |DT_dialogues={{DT_dialogues}}}}",
+"RejectMermaidPendant_AlreadyAccepted": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted |DT_dialogues={{DT_dialogues}}}}",
 
-"RejectRoommateProposal": "{{i18n:Dialogues.RejectRoommateProposal |PlayerName={{PlayerName}}}}",
-"RejectRoommateProposal_AlreadyAccepted": "{{i18n:Dialogues.RejectRoommateProposal_AlreadyAccepted |PlayerName={{PlayerName}}}}",
-"RejectRoommateProposal_NpcWithSomeoneElse": "{{i18n:Dialogues.RejectRoommateProposal_NpcWithSomeoneElse |PlayerName={{PlayerName}}}}",
-"RejectRoommateProposal_PlayerWithSomeoneElse": "{{i18n:Dialogues.RejectRoommateProposal_PlayerWithSomeoneElse |PlayerName={{PlayerName}}}}",
-"RejectRoommateProposal_LowFriendship": "{{i18n:Dialogues.RejectRoommateProposal_LowFriendship |PlayerName={{PlayerName}}}}",
-"RejectRoommateProposal_SmallHouse": "{{i18n:Dialogues.RejectRoommateProposal_SmallHouse |PlayerName={{PlayerName}}}}"
+"RejectRoommateProposal": "{{i18n:Dialogues.RejectRoommateProposal |DT_dialogues={{DT_dialogues}}}}",
+"RejectRoommateProposal_AlreadyAccepted": "{{i18n:Dialogues.RejectRoommateProposal_AlreadyAccepted |DT_dialogues={{DT_dialogues}}}}",
+"RejectRoommateProposal_NpcWithSomeoneElse": "{{i18n:Dialogues.RejectRoommateProposal_NpcWithSomeoneElse |DT_dialogues={{DT_dialogues}}}}",
+"RejectRoommateProposal_PlayerWithSomeoneElse": "{{i18n:Dialogues.RejectRoommateProposal_PlayerWithSomeoneElse |DT_dialogues={{DT_dialogues}}}}",
+"RejectRoommateProposal_LowFriendship": "{{i18n:Dialogues.RejectRoommateProposal_LowFriendship |DT_dialogues={{DT_dialogues}}}}",
+"RejectRoommateProposal_SmallHouse": "{{i18n:Dialogues.RejectRoommateProposal_SmallHouse |DT_dialogues={{DT_dialogues}}}}"
 */
 
       }
@@ -186,113 +184,113 @@
       "Entries": {
         //Conversation Topics
         //Vanilla & Vanilla+ (More CT's mod + 1.6 strings)
-        "Introduction": "{{i18n:Dialogues.CT.{{DT_formallity}}.Introduction |PlayerName={{PlayerName}}}}",
-        "danceRejection": "{{i18n:Dialogues.CT.{{DT_formallity}}.danceRejection |PlayerName={{PlayerName}}}}",
-        "divorced": "{{i18n:Dialogues.CT.{{DT_formallity}}.divorced |PlayerName={{PlayerName}}}}",
-        "breakUp": "{{i18n:Dialogues.CT.{{DT_formallity}}.breakUp |PlayerName={{PlayerName}}}}",
+        "Introduction": "{{i18n:Dialogues.CT.Introduction |DT_dialogues={{DT_dialogues}}}}",
+        "danceRejection": "{{i18n:Dialogues.CT.danceRejection |DT_dialogues={{DT_dialogues}}}}",
+        "divorced": "{{i18n:Dialogues.CT.divorced |DT_dialogues={{DT_dialogues}}}}",
+        "breakUp": "{{i18n:Dialogues.CT.breakUp |DT_dialogues={{DT_dialogues}}}}",
 
-        "joja_Begin": "{{i18n:Dialogues.CT.{{DT_formallity}}.joja_Begin |PlayerName={{PlayerName}}}}",
-        "cc_Begin": "{{i18n:Dialogues.CT.{{DT_formallity}}.cc_Begin |PlayerName={{PlayerName}}}}",
-        "cc_Boulder": "{{i18n:Dialogues.CT.{{DT_formallity}}.cc_Boulder |PlayerName={{PlayerName}}}}",
-        "cc_Bridge": "{{i18n:Dialogues.CT.{{DT_formallity}}.cc_Bridge |PlayerName={{PlayerName}}}}",
-        "cc_Bus": "{{i18n:Dialogues.CT.{{DT_formallity}}.cc_Bus |PlayerName={{PlayerName}}}}",
-        "cc_Greenhouse": "{{i18n:Dialogues.CT.{{DT_formallity}}.cc_Greenhouse |PlayerName={{PlayerName}}}}",
-        "cc_Minecart": "{{i18n:Dialogues.CT.{{DT_formallity}}.cc_Minecart |PlayerName={{PlayerName}}}}",
-        "cc_Complete": "{{i18n:Dialogues.CT.{{DT_formallity}}.cc_Complete |PlayerName={{PlayerName}}}}",
-        "movieTheater": "{{i18n:Dialogues.CT.{{DT_formallity}}.movieTheater |PlayerName={{PlayerName}}}}",
-        "willyCrabs": "{{i18n:Dialogues.CT.{{DT_formallity}}.willyCrabs |PlayerName={{PlayerName}}}}",
-        "pamHouseUpgrade": "{{i18n:Dialogues.CT.{{DT_formallity}}.pamHouseUpgrade |PlayerName={{PlayerName}}}}",
-        "pamHouseUpgradeAnonymous": "{{i18n:Dialogues.CT.{{DT_formallity}}.pamHouseUpgradeAnonymous |PlayerName={{PlayerName}}}}",
-        "railroadEarthquake": "{{i18n:Dialogues.CT.{{DT_formallity}}.railroadEarthquake |PlayerName={{PlayerName}}}}",
-        "islandResortUnlocked": "{{i18n:Dialogues.CT.{{DT_formallity}}.islandResortUnlocked |PlayerName={{PlayerName}}}}",
-        "jojaMartStruckByLightning": "{{i18n:Dialogues.CT.{{DT_formallity}}.jojaMartStruckByLightning |PlayerName={{PlayerName}}}}",
-        "babyBoy": "{{i18n:Dialogues.CT.{{DT_formallity}}.babyBoy |PlayerName={{PlayerName}}}}",
-        "babyGirl": "{{i18n:Dialogues.CT.{{DT_formallity}}.babyGirl |PlayerName={{PlayerName}}}}",
-        "wedding": "{{i18n:Dialogues.CT.{{DT_formallity}}.wedding |PlayerName={{PlayerName}}}}",
-        "event_postweddingreception": "{{i18n:Dialogues.CT.{{DT_formallity}}.event_postweddingreception |PlayerName={{PlayerName}}}}",
-        "luauBest": "{{i18n:Dialogues.CT.{{DT_formallity}}.luauBest |PlayerName={{PlayerName}}}}",
-        "luauShorts": "{{i18n:Dialogues.CT.{{DT_formallity}}.luauShorts |PlayerName={{PlayerName}}}}",
-        "luauPoisoned": "{{i18n:Dialogues.CT.{{DT_formallity}}.luauPoisoned |PlayerName={{PlayerName}}}}",
-        "Characters_MovieInvite_Invited": "{{i18n:Dialogues.CT.{{DT_formallity}}.Characters_MovieInvite_Invited |PlayerName={{PlayerName}}}}",
-        "DumpsterDiveComment": "{{i18n:Dialogues.CT.{{DT_formallity}}.DumpsterDiveComment |PlayerName={{PlayerName}}}}",
-        "SpouseStardrop": "{{i18n:Dialogues.CT.{{DT_formallity}}.SpouseStardrop |PlayerName={{PlayerName}}}}",
-        "FlowerDance_Accept_Spouse": "{{i18n:Dialogues.CT.{{DT_formallity}}.FlowerDance_Accept_Spouse |PlayerName={{PlayerName}}}}",
-        "FlowerDance_Accept": "{{i18n:Dialogues.CT.{{DT_formallity}}.FlowerDance_Accept |PlayerName={{PlayerName}}}}",
-        "FlowerDance_Decline": "{{i18n:Dialogues.CT.{{DT_formallity}}.FlowerDance_Decline |PlayerName={{PlayerName}}}}",
-        "GreenRain": "{{i18n:Dialogues.CT.{{DT_formallity}}.GreenRain |PlayerName={{PlayerName}}}}",
-        "GreenRainFinished": "{{i18n:Dialogues.CT.{{DT_formallity}}.GreenRainFinished |PlayerName={{PlayerName}}}}",
-        "GreenRain_2": "{{i18n:Dialogues.CT.{{DT_formallity}}.GreenRain_2 |PlayerName={{PlayerName}}}}",
-        "AcceptGift_(O)StardropTea": "{{i18n:Dialogues.CT.{{DT_formallity}}.AcceptGift_(O)StardropTea |PlayerName={{PlayerName}}}}",
+        "joja_Begin": "{{i18n:Dialogues.CT.joja_Begin |DT_dialogues={{DT_dialogues}}}}",
+        "cc_Begin": "{{i18n:Dialogues.CT.cc_Begin |DT_dialogues={{DT_dialogues}}}}",
+        "cc_Boulder": "{{i18n:Dialogues.CT.cc_Boulder |DT_dialogues={{DT_dialogues}}}}",
+        "cc_Bridge": "{{i18n:Dialogues.CT.cc_Bridge |DT_dialogues={{DT_dialogues}}}}",
+        "cc_Bus": "{{i18n:Dialogues.CT.cc_Bus |DT_dialogues={{DT_dialogues}}}}",
+        "cc_Greenhouse": "{{i18n:Dialogues.CT.cc_Greenhouse |DT_dialogues={{DT_dialogues}}}}",
+        "cc_Minecart": "{{i18n:Dialogues.CT.cc_Minecart |DT_dialogues={{DT_dialogues}}}}",
+        "cc_Complete": "{{i18n:Dialogues.CT.cc_Complete |DT_dialogues={{DT_dialogues}}}}",
+        "movieTheater": "{{i18n:Dialogues.CT.movieTheater |DT_dialogues={{DT_dialogues}}}}",
+        "willyCrabs": "{{i18n:Dialogues.CT.willyCrabs |DT_dialogues={{DT_dialogues}}}}",
+        "pamHouseUpgrade": "{{i18n:Dialogues.CT.pamHouseUpgrade |DT_dialogues={{DT_dialogues}}}}",
+        "pamHouseUpgradeAnonymous": "{{i18n:Dialogues.CT.pamHouseUpgradeAnonymous |DT_dialogues={{DT_dialogues}}}}",
+        "railroadEarthquake": "{{i18n:Dialogues.CT.railroadEarthquake |DT_dialogues={{DT_dialogues}}}}",
+        "islandResortUnlocked": "{{i18n:Dialogues.CT.islandResortUnlocked |DT_dialogues={{DT_dialogues}}}}",
+        "jojaMartStruckByLightning": "{{i18n:Dialogues.CT.jojaMartStruckByLightning |DT_dialogues={{DT_dialogues}}}}",
+        "babyBoy": "{{i18n:Dialogues.CT.babyBoy |DT_dialogues={{DT_dialogues}}}}",
+        "babyGirl": "{{i18n:Dialogues.CT.babyGirl |DT_dialogues={{DT_dialogues}}}}",
+        "wedding": "{{i18n:Dialogues.CT.wedding |DT_dialogues={{DT_dialogues}}}}",
+        "event_postweddingreception": "{{i18n:Dialogues.CT.event_postweddingreception |DT_dialogues={{DT_dialogues}}}}",
+        "luauBest": "{{i18n:Dialogues.CT.luauBest |DT_dialogues={{DT_dialogues}}}}",
+        "luauShorts": "{{i18n:Dialogues.CT.luauShorts |DT_dialogues={{DT_dialogues}}}}",
+        "luauPoisoned": "{{i18n:Dialogues.CT.luauPoisoned |DT_dialogues={{DT_dialogues}}}}",
+        "Characters_MovieInvite_Invited": "{{i18n:Dialogues.CT.Characters_MovieInvite_Invited |DT_dialogues={{DT_dialogues}}}}",
+        "DumpsterDiveComment": "{{i18n:Dialogues.CT.DumpsterDiveComment |DT_dialogues={{DT_dialogues}}}}",
+        "SpouseStardrop": "{{i18n:Dialogues.CT.SpouseStardrop |DT_dialogues={{DT_dialogues}}}}",
+        "FlowerDance_Accept_Spouse": "{{i18n:Dialogues.CT.FlowerDance_Accept_Spouse |DT_dialogues={{DT_dialogues}}}}",
+        "FlowerDance_Accept": "{{i18n:Dialogues.CT.FlowerDance_Accept |DT_dialogues={{DT_dialogues}}}}",
+        "FlowerDance_Decline": "{{i18n:Dialogues.CT.FlowerDance_Decline |DT_dialogues={{DT_dialogues}}}}",
+        "GreenRain": "{{i18n:Dialogues.CT.GreenRain |DT_dialogues={{DT_dialogues}}}}",
+        "GreenRainFinished": "{{i18n:Dialogues.CT.GreenRainFinished |DT_dialogues={{DT_dialogues}}}}",
+        "GreenRain_2": "{{i18n:Dialogues.CT.GreenRain_2 |DT_dialogues={{DT_dialogues}}}}",
+        "AcceptGift_(O)StardropTea": "{{i18n:Dialogues.CT.AcceptGift_(O)StardropTea |DT_dialogues={{DT_dialogues}}}}",
 
         // CT's selection
         // ARV
-        "SterlingDrugs": "{{i18n:Dialogues.CT.{{DT_formallity}}.SterlingDrugs |PlayerName={{PlayerName}}}}",
-        "SterlingRelapse": "{{i18n:Dialogues.CT.{{DT_formallity}}.SterlingRelapse |PlayerName={{PlayerName}}}}",
-        "SterlingApology": "{{i18n:Dialogues.CT.{{DT_formallity}}.SterlingApology |PlayerName={{PlayerName}}}}",
+        "SterlingDrugs": "{{i18n:Dialogues.CT.SterlingDrugs |DT_dialogues={{DT_dialogues}}}}",
+        "SterlingRelapse": "{{i18n:Dialogues.CT.SterlingRelapse |DT_dialogues={{DT_dialogues}}}}",
+        "SterlingApology": "{{i18n:Dialogues.CT.SterlingApology |DT_dialogues={{DT_dialogues}}}}",
         // Alecto
-        "AlectoIntroduction": "{{i18n:Dialogues.CT.{{DT_formallity}}.AlectoIntroduction |PlayerName={{PlayerName}}}}",
-        "AlectoWizardTower": "{{i18n:Dialogues.CT.{{DT_formallity}}.AlectoWizardTower |PlayerName={{PlayerName}}}}",
+        "AlectoIntroduction": "{{i18n:Dialogues.CT.AlectoIntroduction |DT_dialogues={{DT_dialogues}}}}",
+        "AlectoWizardTower": "{{i18n:Dialogues.CT.AlectoWizardTower |DT_dialogues={{DT_dialogues}}}}",
         // Juna
-        "JunaSign": "{{i18n:Dialogues.CT.{{DT_formallity}}.JunaSign |PlayerName={{PlayerName}}}}",
-        "JunaBeachBallet": "{{i18n:Dialogues.CT.{{DT_formallity}}.JunaBeachBallet |PlayerName={{PlayerName}}}}",
-        "JunaJunimos": "{{i18n:Dialogues.CT.{{DT_formallity}}.JunaJunimos |PlayerName={{PlayerName}}}}",
-        "JunaGone": "{{i18n:Dialogues.CT.{{DT_formallity}}.JunaGone |PlayerName={{PlayerName}}}}",
-        "JunaWizard": "{{i18n:Dialogues.CT.{{DT_formallity}}.JunaWizard |PlayerName={{PlayerName}}}}",
-        "JunaProtectiveWizard": "{{i18n:Dialogues.CT.{{DT_formallity}}.JunaProtectiveWizard |PlayerName={{PlayerName}}}}",
+        "JunaSign": "{{i18n:Dialogues.CT.JunaSign |DT_dialogues={{DT_dialogues}}}}",
+        "JunaBeachBallet": "{{i18n:Dialogues.CT.JunaBeachBallet |DT_dialogues={{DT_dialogues}}}}",
+        "JunaJunimos": "{{i18n:Dialogues.CT.JunaJunimos |DT_dialogues={{DT_dialogues}}}}",
+        "JunaGone": "{{i18n:Dialogues.CT.JunaGone |DT_dialogues={{DT_dialogues}}}}",
+        "JunaWizard": "{{i18n:Dialogues.CT.JunaWizard |DT_dialogues={{DT_dialogues}}}}",
+        "JunaProtectiveWizard": "{{i18n:Dialogues.CT.JunaProtectiveWizard |DT_dialogues={{DT_dialogues}}}}",
         /*
-"JunaForestPicnic": "{{i18n:Dialogues.CT.{{DT_formallity}}.JunaForestPicnic |PlayerName={{PlayerName}}}}",
+"JunaForestPicnic": "{{i18n:Dialogues.CT.JunaForestPicnic |DT_dialogues={{DT_dialogues}}}}",
 */
-        "BigFootWizard ": "{{i18n:Dialogues.CT.{{DT_formallity}}.BigFootWizard  |PlayerName={{PlayerName}}}}",
+        "BigFootWizard ": "{{i18n:Dialogues.CT.BigFootWizard  |DT_dialogues={{DT_dialogues}}}}",
         // Lavril
-        "LavrilUnlocked": "{{i18n:Dialogues.CT.{{DT_formallity}}.LavrilUnlocked |PlayerName={{PlayerName}}}}",
+        "LavrilUnlocked": "{{i18n:Dialogues.CT.LavrilUnlocked |DT_dialogues={{DT_dialogues}}}}",
         // Lucikiel
-        "LucikielArrives": "{{i18n:Dialogues.CT.{{DT_formallity}}.LucikielArrives |PlayerName={{PlayerName}}}}",
-        "ReputationIncreased": "{{i18n:Dialogues.CT.{{DT_formallity}}.ReputationIncreased |PlayerName={{PlayerName}}}}",
+        "LucikielArrives": "{{i18n:Dialogues.CT.LucikielArrives |DT_dialogues={{DT_dialogues}}}}",
+        "ReputationIncreased": "{{i18n:Dialogues.CT.ReputationIncreased |DT_dialogues={{DT_dialogues}}}}",
         /*
 			// Jasper
-"JasperGone2": "{{i18n:Dialogues.CT.{{DT_formallity}}.JasperGone2 |PlayerName={{PlayerName}}}}",
-"JasperHomeA": "{{i18n:Dialogues.CT.{{DT_formallity}}.JasperHomeA |PlayerName={{PlayerName}}}}",
+"JasperGone2": "{{i18n:Dialogues.CT.JasperGone2 |DT_dialogues={{DT_dialogues}}}}",
+"JasperHomeA": "{{i18n:Dialogues.CT.JasperHomeA |DT_dialogues={{DT_dialogues}}}}",
 */
         // RSV
-        "RSV_GH1": "{{i18n:Dialogues.CT.{{DT_formallity}}.RSV_GH1 |PlayerName={{PlayerName}}}}",
-        "keahi_prank": "{{i18n:Dialogues.CT.{{DT_formallity}}.keahi_prank |PlayerName={{PlayerName}}}}",
+        "RSV_GH1": "{{i18n:Dialogues.CT.RSV_GH1 |DT_dialogues={{DT_dialogues}}}}",
+        "keahi_prank": "{{i18n:Dialogues.CT.keahi_prank |DT_dialogues={{DT_dialogues}}}}",
         /*
-"Lidens_Return": "{{i18n:Dialogues.CT.{{DT_formallity}}.Lidens_Return |PlayerName={{PlayerName}}}}",
-"Naomi_Return": "{{i18n:Dialogues.CT.{{DT_formallity}}.Naomi_Return |PlayerName={{PlayerName}}}}",
+"Lidens_Return": "{{i18n:Dialogues.CT.Lidens_Return |DT_dialogues={{DT_dialogues}}}}",
+"Naomi_Return": "{{i18n:Dialogues.CT.Naomi_Return |DT_dialogues={{DT_dialogues}}}}",
 */
         // Leilani
-        "LeilaniArrives": "{{i18n:Dialogues.CT.{{DT_formallity}}.LeilaniArrives |PlayerName={{PlayerName}}}}",
+        "LeilaniArrives": "{{i18n:Dialogues.CT.LeilaniArrives |DT_dialogues={{DT_dialogues}}}}",
         // Prank the Jojamart
-        "PTJ03": "{{i18n:Dialogues.CT.{{DT_formallity}}.PTJ03 |PlayerName={{PlayerName}}}}",
+        "PTJ03": "{{i18n:Dialogues.CT.PTJ03 |DT_dialogues={{DT_dialogues}}}}",
         /*
 			// Pumpkin Spice
-"pumpkin_spice_madness": "{{i18n:Dialogues.CT.{{DT_formallity}}.pumpkin_spice_madness |PlayerName={{PlayerName}}}}",
+"pumpkin_spice_madness": "{{i18n:Dialogues.CT.pumpkin_spice_madness |DT_dialogues={{DT_dialogues}}}}",
 */
         // Jorts and Jean
-        "MeetTheCats": "{{i18n:Dialogues.CT.{{DT_formallity}}.MeetTheCats |PlayerName={{PlayerName}}}}",
-        "ButteredJorts": "{{i18n:Dialogues.CT.{{DT_formallity}}.ButteredJorts |PlayerName={{PlayerName}}}}",
-        "JortsZoomies": "{{i18n:Dialogues.CT.{{DT_formallity}}.JortsZoomies |PlayerName={{PlayerName}}}}",
-        "OpenAllTheDoors": "{{i18n:Dialogues.CT.{{DT_formallity}}.OpenAllTheDoors |PlayerName={{PlayerName}}}}",
+        "MeetTheCats": "{{i18n:Dialogues.CT.MeetTheCats |DT_dialogues={{DT_dialogues}}}}",
+        "ButteredJorts": "{{i18n:Dialogues.CT.ButteredJorts |DT_dialogues={{DT_dialogues}}}}",
+        "JortsZoomies": "{{i18n:Dialogues.CT.JortsZoomies |DT_dialogues={{DT_dialogues}}}}",
+        "OpenAllTheDoors": "{{i18n:Dialogues.CT.OpenAllTheDoors |DT_dialogues={{DT_dialogues}}}}",
         // Rodney
-        "BookLaunchParty": "{{i18n:Dialogues.CT.{{DT_formallity}}.BookLaunchParty |PlayerName={{PlayerName}}}}",
+        "BookLaunchParty": "{{i18n:Dialogues.CT.BookLaunchParty |DT_dialogues={{DT_dialogues}}}}",
         // Yri
-        "YriIntroduction": "{{i18n:Dialogues.CT.{{DT_formallity}}.YriIntroduction |PlayerName={{PlayerName}}}}",
-        "CharlesIntroduction": "{{i18n:Dialogues.CT.{{DT_formallity}}.CharlesIntroduction |PlayerName={{PlayerName}}}}",
-        "LewisApology": "{{i18n:Dialogues.CT.{{DT_formallity}}.LewisApology |PlayerName={{PlayerName}}}}",
-        "YriWalk": "{{i18n:Dialogues.CT.{{DT_formallity}}.YriWalk |PlayerName={{PlayerName}}}}",
-        "AfterProposal": "{{i18n:Dialogues.CT.{{DT_formallity}}.AfterProposal |PlayerName={{PlayerName}}}}",
+        "YriIntroduction": "{{i18n:Dialogues.CT.YriIntroduction |DT_dialogues={{DT_dialogues}}}}",
+        "CharlesIntroduction": "{{i18n:Dialogues.CT.CharlesIntroduction |DT_dialogues={{DT_dialogues}}}}",
+        "LewisApology": "{{i18n:Dialogues.CT.LewisApology |DT_dialogues={{DT_dialogues}}}}",
+        "YriWalk": "{{i18n:Dialogues.CT.YriWalk |DT_dialogues={{DT_dialogues}}}}",
+        "AfterProposal": "{{i18n:Dialogues.CT.AfterProposal |DT_dialogues={{DT_dialogues}}}}",
 
         // Mobile phone mod
         /*
-        "MobilePhoneGreeting": "{{Random: {{i18n:{{DT_formallity}}.MobilePhoneGreeting.0}} & {{i18n:{{DT_formallity}}.MobilePhoneGreeting.1}} & {{i18n:{{DT_formallity}}.MobilePhoneGreeting.2}} |inputSeparator=& |PlayerName={{PlayerName}}}}",
-        "MobilePhoneReminisce": "{{i18n:Dialogues.{{DT_formallity}}.MobilePhoneReminisce |PlayerName={{PlayerName}}}}",
-        "MobilePhoneInvite": "{{i18n:Dialogues.{{DT_formallity}}.MobilePhoneInvite |PlayerName={{PlayerName}}}}",
-        "MobilePhoneGoodBye": "{{Random: {{i18n:{{DT_formallity}}.MobilePhoneGoodBye.0}} & {{i18n:{{DT_formallity}}.MobilePhoneGoodBye.1}} & {{i18n:{{DT_formallity}}.MobilePhoneGoodBye.2}} & {{i18n:{{DT_formallity}}.MobilePhoneGoodBye.3}} |inputSeparator=& |PlayerName={{PlayerName}}}}"
+        "MobilePhoneGreeting": "{{Random: {{i18n:MobilePhoneGreeting.0}} & {{i18n:MobilePhoneGreeting.1}} & {{i18n:MobilePhoneGreeting.2}} |inputSeparator=& |DT_dialogues={{DT_dialogues}}}}",
+        "MobilePhoneReminisce": "{{i18n:Dialogues.MobilePhoneReminisce |DT_dialogues={{DT_dialogues}}}}",
+        "MobilePhoneInvite": "{{i18n:Dialogues.MobilePhoneInvite |DT_dialogues={{DT_dialogues}}}}",
+        "MobilePhoneGoodBye": "{{Random: {{i18n:MobilePhoneGoodBye.0}} & {{i18n:MobilePhoneGoodBye.1}} & {{i18n:MobilePhoneGoodBye.2}} & {{i18n:MobilePhoneGoodBye.3}} |inputSeparator=& |DT_dialogues={{DT_dialogues}}}}"
 */
-        "MobilePhoneGreeting": "{{i18n:Dialogues.addons.{{DT_formallity}}.MobilePhoneGreeting.{{Random:{{Range:0,2}}}} |PlayerName={{PlayerName}}}}",
-        "MobilePhoneReminisce": "{{i18n:Dialogues.addons.{{DT_formallity}}.MobilePhoneReminisce |PlayerName={{PlayerName}}}}",
-        "MobilePhoneInvite": "{{i18n:Dialogues.addons.{{DT_formallity}}.MobilePhoneInvite |PlayerName={{PlayerName}}}}",
-        "MobilePhoneGoodBye": "{{i18n:Dialogues.addons.{{DT_formallity}}.MobilePhoneGoodBye.{{Random:{{Range:0,3}}}} |PlayerName={{PlayerName}}}}"
+        "MobilePhoneGreeting": "{{i18n:Dialogues.addons.MobilePhoneGreeting.{{Random:{{Range:0,2}}}} |DT_dialogues={{DT_dialogues}}}}",
+        "MobilePhoneReminisce": "{{i18n:Dialogues.addons.MobilePhoneReminisce |DT_dialogues={{DT_dialogues}}}}",
+        "MobilePhoneInvite": "{{i18n:Dialogues.addons.MobilePhoneInvite |DT_dialogues={{DT_dialogues}}}}",
+        "MobilePhoneGoodBye": "{{i18n:Dialogues.addons.MobilePhoneGoodBye.{{Random:{{Range:0,3}}}} |DT_dialogues={{DT_dialogues}}}}"
       }
     },
 
@@ -303,8 +301,8 @@
       "Action": "EditData",
       "Target": "Data/Festivals/spring24",
       "Entries": {
-        "Eleanor_fest-spr24": "{{i18n:Dialogues.festivals.{{DT_formallity}}-spr24 |PlayerName={{PlayerName}}}}",
-        "Eleanor_fest_spouse-spr24": "{{i18n:Dialogues.festivals.{{DT_formallity}}_spouse-spr24 |PlayerName={{PlayerName}}}}"
+        "Eleanor_fest-spr24": "{{i18n:Dialogues.festivals-spr24 |DT_dialogues={{DT_dialogues}}}}",
+        "Eleanor_fest_spouse-spr24": "{{i18n:Dialogues.festivals_spouse-spr24 |DT_dialogues={{DT_dialogues}}}}"
       },
       "When": {
         "Festivals": "true"
@@ -315,8 +313,8 @@
       "Action": "EditData",
       "Target": "Data/Festivals/summer28",
       "Entries": {
-        "Eleanor_fest-sum28": "{{i18n:Dialogues.festivals.{{DT_formallity}}-sum28 |PlayerName={{PlayerName}}}}",
-        "Eleanor_fest_spouse-sum28": "{{i18n:Dialogues.festivals.{{DT_formallity}}_spouse-sum28 |PlayerName={{PlayerName}}}}"
+        "Eleanor_fest-sum28": "{{i18n:Dialogues.festivals-sum28 |DT_dialogues={{DT_dialogues}}}}",
+        "Eleanor_fest_spouse-sum28": "{{i18n:Dialogues.festivals_spouse-sum28 |DT_dialogues={{DT_dialogues}}}}"
       },
       "When": {
         "Festivals": "true"
@@ -327,8 +325,8 @@
       "Action": "EditData",
       "Target": "Data/Festivals/fall16",
       "Entries": {
-        "Eleanor_fest-fal16": "{{i18n:Dialogues.festivals.{{DT_formallity}}-fal16 |PlayerName={{PlayerName}}}}",
-        "Eleanor_fest_spouse-fal16": "{{i18n:Dialogues.festivals.{{DT_formallity}}_spouse-fal16 |PlayerName={{PlayerName}}}}"
+        "Eleanor_fest-fal16": "{{i18n:Dialogues.festivals-fal16 |DT_dialogues={{DT_dialogues}}}}",
+        "Eleanor_fest_spouse-fal16": "{{i18n:Dialogues.festivals_spouse-fal16 |DT_dialogues={{DT_dialogues}}}}"
       },
       "When": {
         "Festivals": "true"
@@ -339,8 +337,8 @@
       "Action": "EditData",
       "Target": "Data/Festivals/fall27",
       "Entries": {
-        "Eleanor_fest-fal27": "{{i18n:Dialogues.festivals.{{DT_formallity}}-fal27 |PlayerName={{PlayerName}}}}",
-        "Eleanor_fest_spouse-fal27": "{{i18n:Dialogues.festivals.{{DT_formallity}}_spouse-fal27 |PlayerName={{PlayerName}}}}"
+        "Eleanor_fest-fal27": "{{i18n:Dialogues.festivals-fal27 |DT_dialogues={{DT_dialogues}}}}",
+        "Eleanor_fest_spouse-fal27": "{{i18n:Dialogues.festivals_spouse-fal27 |DT_dialogues={{DT_dialogues}}}}"
       },
       "When": {
         "Festivals": "true"
@@ -351,8 +349,8 @@
       "Action": "EditData",
       "Target": "Data/Festivals/winter8",
       "Entries": {
-        "Eleanor_fest-win8": "{{i18n:Dialogues.festivals.{{DT_formallity}}-win8 |PlayerName={{PlayerName}}}}",
-        "Eleanor_fest_spouse-win8": "{{i18n:Dialogues.festivals.{{DT_formallity}}_spouse-win8 |PlayerName={{PlayerName}}}}"
+        "Eleanor_fest-win8": "{{i18n:Dialogues.festivals-win8 |DT_dialogues={{DT_dialogues}}}}",
+        "Eleanor_fest_spouse-win8": "{{i18n:Dialogues.festivals_spouse-win8 |DT_dialogues={{DT_dialogues}}}}"
       },
       "When": {
         "Festivals": "true"
@@ -363,41 +361,104 @@
       "Action": "EditData",
       "Target": "Data/Festivals/winter25",
       "Entries": {
-        "Eleanor_fest-win25": "{{i18n:Dialogues.festivals.{{DT_formallity}}-win25 |PlayerName={{PlayerName}}}}",
-        "Eleanor_fest_spouse-win25": "{{i18n:Dialogues.festivals.{{DT_formallity}}_spouse-win25 |PlayerName={{PlayerName}}}}"
+        "Eleanor_fest-win25": "{{i18n:Dialogues.festivals-win25 |DT_dialogues={{DT_dialogues}}}}",
+        "Eleanor_fest_spouse-win25": "{{i18n:Dialogues.festivals_spouse-win25 |DT_dialogues={{DT_dialogues}}}}"
       },
       "When": {
         "Festivals": "true"
       }
     },
 
+    // Conversation Topics
+    /*
+    {
+      "LogName": "Eleanor - CT's - Abigail",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Abigail",
+      "Entries": {
+        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Abigail |DT_dialogues={{DT_dialogues}}}}"
+      }
+    },
+    {
+      "LogName": "Eleanor - CT's - Leah",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Leah",
+      "Entries": {
+        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Leah |DT_dialogues={{DT_dialogues}}}}"
+      }
+    },
+    {
+      "LogName": "Eleanor - CT's - Susan",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Susan",
+      "Entries": {
+        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Susan |DT_dialogues={{DT_dialogues}}}}"
+      },
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+    {
+      "LogName": "Eleanor - CT's - Pierre",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Pierre",
+      "Entries": {
+        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Pierre |DT_dialogues={{DT_dialogues}}}}"
+      }
+    },
+    {
+      "LogName": "Eleanor - CT's - Maru",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Maru",
+      "Entries": {
+        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Maru |DT_dialogues={{DT_dialogues}}}}"
+      }
+    },
+    {
+      "LogName": "Eleanor - CT's - Linus",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Linus |DT_dialogues={{DT_dialogues}}}}"
+      }
+    },
+    {
+      "LogName": "Eleanor - CT's - Wizard",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Wizard |DT_dialogues={{DT_dialogues}}}}"
+      }
+    },
+*/
+
     // Marriage + engagement dialogues //
     /*
     commented out untill marriage update
-    
+
     {
       "LogName": "Eleanor - engagement dialogues + marriage fix",
       "Action": "EditData",
       "Target": "Data/EngagementDialogue",
       "Entries": {
-        "Eleanor_eng1": "{{i18n:Dialogues.marriage.{{ModId}}_eng1 |PlayerName={{PlayerName}}}}",
-        "Eleanor_eng2": "{{i18n:Dialogues.marriage.{{ModId}}_eng2 |PlayerName={{PlayerName}}}}",
+        "Eleanor_eng1": "{{i18n:Dialogues.marriage.{{ModId}}_eng1 |DT_dialogues={{DT_dialogues}}}}",
+        "Eleanor_eng2": "{{i18n:Dialogues.marriage.{{ModId}}_eng2 |DT_dialogues={{DT_dialogues}}}}",
 
-        "Eleanor_AfterWedding": "{{i18n:Dialogues.marriage.Eleanor_AfterWedding |PlayerName={{PlayerName}}}}",
-        "Eleanor_Engaged": "{{i18n:Dialogues.marriage.Eleanor_Engaged |PlayerName={{PlayerName}}}}",
-        "Eleanor_EngagedRoommate": "{{i18n:Dialogues.marriage.Eleanor_EngagedRoommate |PlayerName={{PlayerName}}}}",
+        "Eleanor_AfterWedding": "{{i18n:Dialogues.marriage.Eleanor_AfterWedding |DT_dialogues={{DT_dialogues}}}}",
+        "Eleanor_Engaged": "{{i18n:Dialogues.marriage.Eleanor_Engaged |DT_dialogues={{DT_dialogues}}}}",
+        "Eleanor_EngagedRoommate": "{{i18n:Dialogues.marriage.Eleanor_EngagedRoommate |DT_dialogues={{DT_dialogues}}}}",
 
         // Marriage edit
-        "Utility.cs.5367": "{{i18n:Dialogues.marriage.Utility.cs.5367 |PlayerName={{PlayerName}}}}",
-        "Utility.cs.5369": "{{i18n:Dialogues.marriage.Utility.cs.5369 |PlayerName={{PlayerName}}}}",
-        "Utility.cs.5370": "{{i18n:Dialogues.marriage.Utility.cs.5370 |PlayerName={{PlayerName}}}}",
-        "Utility.cs.5371": "{{i18n:Dialogues.marriage.Utility.cs.5371 |PlayerName={{PlayerName}}}}",
-        "Utility.cs.5373": "{{i18n:Dialogues.marriage.Utility.cs.5373 |PlayerName={{PlayerName}}}}",
-        "Utility.cs.5375": "{{i18n:Dialogues.marriage.Utility.cs.5375 |PlayerName={{PlayerName}}}}",
-        "Utility.cs.5377": "{{i18n:Dialogues.marriage.Utility.cs.5377 |PlayerName={{PlayerName}}}}",
-        "Utility.cs.5379": "{{i18n:Dialogues.marriage.Utility.cs.5379 |PlayerName={{PlayerName}}}}",
-        "Utility.cs.5381": "{{i18n:Dialogues.marriage.Utility.cs.5381 |PlayerName={{PlayerName}}}}",
-        "Utility.cs.5383": "{{i18n:Dialogues.marriage.Utility.cs.5383 |PlayerName={{PlayerName}}}}"
+        "Utility.cs.5367": "{{i18n:Dialogues.marriage.Utility.cs.5367 |DT_dialogues={{DT_dialogues}}}}",
+        "Utility.cs.5369": "{{i18n:Dialogues.marriage.Utility.cs.5369 |DT_dialogues={{DT_dialogues}}}}",
+        "Utility.cs.5370": "{{i18n:Dialogues.marriage.Utility.cs.5370 |DT_dialogues={{DT_dialogues}}}}",
+        "Utility.cs.5371": "{{i18n:Dialogues.marriage.Utility.cs.5371 |DT_dialogues={{DT_dialogues}}}}",
+        "Utility.cs.5373": "{{i18n:Dialogues.marriage.Utility.cs.5373 |DT_dialogues={{DT_dialogues}}}}",
+        "Utility.cs.5375": "{{i18n:Dialogues.marriage.Utility.cs.5375 |DT_dialogues={{DT_dialogues}}}}",
+        "Utility.cs.5377": "{{i18n:Dialogues.marriage.Utility.cs.5377 |DT_dialogues={{DT_dialogues}}}}",
+        "Utility.cs.5379": "{{i18n:Dialogues.marriage.Utility.cs.5379 |DT_dialogues={{DT_dialogues}}}}",
+        "Utility.cs.5381": "{{i18n:Dialogues.marriage.Utility.cs.5381 |DT_dialogues={{DT_dialogues}}}}",
+        "Utility.cs.5383": "{{i18n:Dialogues.marriage.Utility.cs.5383 |DT_dialogues={{DT_dialogues}}}}"
       },
       "When": {
         "Marriage": "true"
@@ -416,7 +477,7 @@
         "SummitEvent_Dialogue2_Spouse": "Fifth one.../pause 500/message If I can see this, then this one works!",
         "SummitEvent_Dialogue3_StrojvedouciDenis.Eleanor": "Sixth one.../pause 500/message If I can see this, then this one works!"
 
-//        "SummitEvent_Dialogue3_<spouse>": "{{i18n:Dialogues.marriage.SummitEvent_Dialogue3A_{{ModId}} |PlayerName={{PlayerName}}}}/"
+//        "SummitEvent_Dialogue3_<spouse>": "{{i18n:Dialogues.marriage.SummitEvent_Dialogue3A_{{ModId}} |DT_dialogues={{DT_dialogues}}}}/"
             },
             
       "When": {
@@ -433,7 +494,7 @@
       "Entries": {
         "SummitEvent_Intro_Spouse": "Hey, @./pause 500/message \"If I can see this, then it works!\"",
         "SummitEvent_Intro2_Spouse": "/speak StrojvedouciDenis.Eleanor \"It is so beautiful up here...\"/pause 500/speak StrojvedouciDenis.Eleanor \"If I can see this, then the second one works!\"/pause 500",
-        "SummitEvent_Dialogue3_<spouse>": "{{i18n:Dialogues.marriage.SummitEvent_Dialogue3A_{{ModId}} |PlayerName={{PlayerName}}}}/"
+        "SummitEvent_Dialogue3_<spouse>": "{{i18n:Dialogues.marriage.SummitEvent_Dialogue3A_{{ModId}} |DT_dialogues={{DT_dialogues}}}}/"
             },
       "When": {
         "Marriage": "true"
@@ -448,75 +509,75 @@
         
         These 2 commented lines below will stay here as a memory of the Discord chat with many user (including Pathoschild, who gave me the 1st line)
        "Rainy_Day_{{Random: {{Range:0,4}} |key=rainy_day}}": "{{i18n:Dialogues. rainy-day.{{Random: {{Range:0,4}} |key=rainy_day}}}}",
-        "Rainy_Night": "{{i18n:Dialogues.{{ModId}}.Rainy_Day_{{Random:{{Range:0,5}}}} |PlayerName={{PlayerName}}}}",
+        "Rainy_Night": "{{i18n:Dialogues.{{ModId}}.Rainy_Day_{{Random:{{Range:0,5}}}} |DT_dialogues={{DT_dialogues}}}}",
 
-        "Rainy_Day_0": "{{i18n:Dialogues.marriage.Rainy_day_0 |PlayerName={{PlayerName}}}}",
-        "Rainy_Day_1": "{{i18n:Dialogues.marriage.Rainy_day_1 |PlayerName={{PlayerName}}}}",
-        "Rainy_Day_2": "{{i18n:Dialogues.marriage.Rainy_day_2 |PlayerName={{PlayerName}}}}",
-        "Rainy_Day_3": "{{i18n:Dialogues.marriage.Rainy_day_3 |PlayerName={{PlayerName}}}}",
-        "Rainy_Day_4": "{{i18n:Dialogues.marriage.Rainy_day_4 |PlayerName={{PlayerName}}}}",
-        "Rainy_Night_0": "{{i18n:Dialogues.marriage.Rainy_Night_0 |PlayerName={{PlayerName}}}}",
-        "Rainy_Night_1": "{{i18n:Dialogues.marriage.Rainy_Night_1 |PlayerName={{PlayerName}}}}",
-        "Rainy_Night_2": "{{i18n:Dialogues.marriage.Rainy_Night_2 |PlayerName={{PlayerName}}}}",
-        "Rainy_Night_3": "{{i18n:Dialogues.marriage.Rainy_Night_3 |PlayerName={{PlayerName}}}}",
-        "Rainy_Night_4": "{{i18n:Dialogues.marriage.Rainy_Night_4 |PlayerName={{PlayerName}}}}",
-        "Rainy_Night_5": "{{i18n:Dialogues.marriage.Rainy_Night_5 |PlayerName={{PlayerName}}}}",
-        "Indoor_Day_0": "{{i18n:Dialogues.marriage.Indoor_Day_0 |PlayerName={{PlayerName}}}}",
-        "Indoor_Day_1": "{{i18n:Dialogues.marriage.Indoor_Day_1 |PlayerName={{PlayerName}}}}",
-        "Indoor_Day_2": "{{i18n:Dialogues.marriage.Indoor_Day_2 |PlayerName={{PlayerName}}}}",
-        "Indoor_Day_3": "{{i18n:Dialogues.marriage.Indoor_Day_3 |PlayerName={{PlayerName}}}}",
-        "Indoor_Day_4": "{{i18n:Dialogues.marriage.Indoor_Day_4 |PlayerName={{PlayerName}}}}",
-        "Indoor_Day_5": "{{i18n:Dialogues.marriage.Indoor_Day_5 |PlayerName={{PlayerName}}}}",
-        "Indoor_Night_0": "{{i18n:Dialogues.marriage.Indoor_Night_0 |PlayerName={{PlayerName}}}}",
-        "Indoor_Night_1": "{{i18n:Dialogues.marriage.Indoor_Night_1 |PlayerName={{PlayerName}}}}",
-        "Indoor_Night_2": "{{i18n:Dialogues.marriage.Indoor_Night_2 |PlayerName={{PlayerName}}}}",
-        "Indoor_Night_3": "{{i18n:Dialogues.marriage.Indoor_Night_3 |PlayerName={{PlayerName}}}}",
-        "Indoor_Night_4": "{{i18n:Dialogues.marriage.Indoor_Night_4 |PlayerName={{PlayerName}}}}",
-        "Indoor_Night_5": "{{i18n:Dialogues.marriage.Indoor_Night_5 |PlayerName={{PlayerName}}}}",
-        "Outdoor_0": "{{i18n:Dialogues.marriage.Outdoor_0 |PlayerName={{PlayerName}}}}",
-        "Outdoor_1": "{{i18n:Dialogues.marriage.Outdoor_1 |PlayerName={{PlayerName}}}}",
-        "Outdoor_2": "{{i18n:Dialogues.marriage.Outdoor_2 |PlayerName={{PlayerName}}}}",
-        "Outdoor_3": "{{i18n:Dialogues.marriage.Outdoor_3 |PlayerName={{PlayerName}}}}",
-        "Outdoor_4": "{{i18n:Dialogues.marriage.Outdoor_4 |PlayerName={{PlayerName}}}}",
-        "Outdoor_5": "{{i18n:Dialogues.marriage.Outdoor_5 |PlayerName={{PlayerName}}}}",
-        "OneKid_0": "{{i18n:Dialogues.marriage.OneKid_0 |PlayerName={{PlayerName}}}}",
-        "OneKid_1": "{{i18n:Dialogues.marriage.OneKid_1 |PlayerName={{PlayerName}}}}",
-        "OneKid_2": "{{i18n:Dialogues.marriage.OneKid_2 |PlayerName={{PlayerName}}}}",
-        "OneKid_3": "{{i18n:Dialogues.marriage.OneKid_3 |PlayerName={{PlayerName}}}}",
-        "TwoKid_0": "{{i18n:Dialogues.marriage.TwoKid_0 |PlayerName={{PlayerName}}}}",
-        "TwoKid_1": "{{i18n:Dialogues.marriage.TwoKid_1 |PlayerName={{PlayerName}}}}",
-        "TwoKid_2": "{{i18n:Dialogues.marriage.TwoKid_2 |PlayerName={{PlayerName}}}}",
-        "TwoKid_3": "{{i18n:Dialogues.marriage.TwoKid_3 |PlayerName={{PlayerName}}}}",
-        "Good_0": "{{i18n:Dialogues.marriage.Good_0 |PlayerName={{PlayerName}}}}",
-        "Good_1": "{{i18n:Dialogues.marriage.Good_1 |PlayerName={{PlayerName}}}}",
-        "Good_2": "{{i18n:Dialogues.marriage.Good_2 |PlayerName={{PlayerName}}}}",
-        "Good_3": "{{i18n:Dialogues.marriage.Good_3 |PlayerName={{PlayerName}}}}",
-        "Good_4": "{{i18n:Dialogues.marriage.Good_4 |PlayerName={{PlayerName}}}}",
-        "Good_5": "{{i18n:Dialogues.marriage.Good_5 |PlayerName={{PlayerName}}}}",
-        "Good_6": "{{i18n:Dialogues.marriage.Good_6 |PlayerName={{PlayerName}}}}",
-        "Good_7": "{{i18n:Dialogues.marriage.Good_7 |PlayerName={{PlayerName}}}}",
-        "Good_8": "{{i18n:Dialogues.marriage.Good_8 |PlayerName={{PlayerName}}}}",
-        "Good_9": "{{i18n:Dialogues.marriage.Good_9 |PlayerName={{PlayerName}}}}",
-        "Neutral_0": "{{i18n:Dialogues.marriage.Neutral_0 |PlayerName={{PlayerName}}}}",
-        "Neutral_1": "{{i18n:Dialogues.marriage.Neutral_1 |PlayerName={{PlayerName}}}}",
-        "Neutral_2": "{{i18n:Dialogues.marriage.Neutral_2 |PlayerName={{PlayerName}}}}",
-        "Neutral_3": "{{i18n:Dialogues.marriage.Neutral_3 |PlayerName={{PlayerName}}}}",
-        "Neutral_4": "{{i18n:Dialogues.marriage.Neutral_4 |PlayerName={{PlayerName}}}}",
-        "Neutral_5": "{{i18n:Dialogues.marriage.Neutral_5 |PlayerName={{PlayerName}}}}",
-        "Neutral_6": "{{i18n:Dialogues.marriage.Neutral_6 |PlayerName={{PlayerName}}}}",
-        "Neutral_7": "{{i18n:Dialogues.marriage.Neutral_7 |PlayerName={{PlayerName}}}}",
-        "Neutral_8": "{{i18n:Dialogues.marriage.Neutral_8 |PlayerName={{PlayerName}}}}",
-        "Neutral_9": "{{i18n:Dialogues.marriage.Neutral_9 |PlayerName={{PlayerName}}}}",
-        "Bad_0": "{{i18n:Dialogues.marriage.Bad_0 |PlayerName={{PlayerName}}}}",
-        "Bad_1": "{{i18n:Dialogues.marriage.Bad_1 |PlayerName={{PlayerName}}}}",
-        "Bad_2": "{{i18n:Dialogues.marriage.Bad_2 |PlayerName={{PlayerName}}}}",
-        "Bad_3": "{{i18n:Dialogues.marriage.Bad_3 |PlayerName={{PlayerName}}}}",
-        "Bad_4": "{{i18n:Dialogues.marriage.Bad_4 |PlayerName={{PlayerName}}}}",
-        "Bad_5": "{{i18n:Dialogues.marriage.Bad_5 |PlayerName={{PlayerName}}}}",
-        "Bad_6": "{{i18n:Dialogues.marriage.Bad_6 |PlayerName={{PlayerName}}}}",
-        "Bad_7": "{{i18n:Dialogues.marriage.Bad_7 |PlayerName={{PlayerName}}}}",
-        "Bad_8": "{{i18n:Dialogues.marriage.Bad_8 |PlayerName={{PlayerName}}}}",
-        "Bad_9": "{{i18n:Dialogues.marriage.Bad_9 |PlayerName={{PlayerName}}}}"
+        "Rainy_Day_0": "{{i18n:Dialogues.marriage.Rainy_day_0 |DT_dialogues={{DT_dialogues}}}}",
+        "Rainy_Day_1": "{{i18n:Dialogues.marriage.Rainy_day_1 |DT_dialogues={{DT_dialogues}}}}",
+        "Rainy_Day_2": "{{i18n:Dialogues.marriage.Rainy_day_2 |DT_dialogues={{DT_dialogues}}}}",
+        "Rainy_Day_3": "{{i18n:Dialogues.marriage.Rainy_day_3 |DT_dialogues={{DT_dialogues}}}}",
+        "Rainy_Day_4": "{{i18n:Dialogues.marriage.Rainy_day_4 |DT_dialogues={{DT_dialogues}}}}",
+        "Rainy_Night_0": "{{i18n:Dialogues.marriage.Rainy_Night_0 |DT_dialogues={{DT_dialogues}}}}",
+        "Rainy_Night_1": "{{i18n:Dialogues.marriage.Rainy_Night_1 |DT_dialogues={{DT_dialogues}}}}",
+        "Rainy_Night_2": "{{i18n:Dialogues.marriage.Rainy_Night_2 |DT_dialogues={{DT_dialogues}}}}",
+        "Rainy_Night_3": "{{i18n:Dialogues.marriage.Rainy_Night_3 |DT_dialogues={{DT_dialogues}}}}",
+        "Rainy_Night_4": "{{i18n:Dialogues.marriage.Rainy_Night_4 |DT_dialogues={{DT_dialogues}}}}",
+        "Rainy_Night_5": "{{i18n:Dialogues.marriage.Rainy_Night_5 |DT_dialogues={{DT_dialogues}}}}",
+        "Indoor_Day_0": "{{i18n:Dialogues.marriage.Indoor_Day_0 |DT_dialogues={{DT_dialogues}}}}",
+        "Indoor_Day_1": "{{i18n:Dialogues.marriage.Indoor_Day_1 |DT_dialogues={{DT_dialogues}}}}",
+        "Indoor_Day_2": "{{i18n:Dialogues.marriage.Indoor_Day_2 |DT_dialogues={{DT_dialogues}}}}",
+        "Indoor_Day_3": "{{i18n:Dialogues.marriage.Indoor_Day_3 |DT_dialogues={{DT_dialogues}}}}",
+        "Indoor_Day_4": "{{i18n:Dialogues.marriage.Indoor_Day_4 |DT_dialogues={{DT_dialogues}}}}",
+        "Indoor_Day_5": "{{i18n:Dialogues.marriage.Indoor_Day_5 |DT_dialogues={{DT_dialogues}}}}",
+        "Indoor_Night_0": "{{i18n:Dialogues.marriage.Indoor_Night_0 |DT_dialogues={{DT_dialogues}}}}",
+        "Indoor_Night_1": "{{i18n:Dialogues.marriage.Indoor_Night_1 |DT_dialogues={{DT_dialogues}}}}",
+        "Indoor_Night_2": "{{i18n:Dialogues.marriage.Indoor_Night_2 |DT_dialogues={{DT_dialogues}}}}",
+        "Indoor_Night_3": "{{i18n:Dialogues.marriage.Indoor_Night_3 |DT_dialogues={{DT_dialogues}}}}",
+        "Indoor_Night_4": "{{i18n:Dialogues.marriage.Indoor_Night_4 |DT_dialogues={{DT_dialogues}}}}",
+        "Indoor_Night_5": "{{i18n:Dialogues.marriage.Indoor_Night_5 |DT_dialogues={{DT_dialogues}}}}",
+        "Outdoor_0": "{{i18n:Dialogues.marriage.Outdoor_0 |DT_dialogues={{DT_dialogues}}}}",
+        "Outdoor_1": "{{i18n:Dialogues.marriage.Outdoor_1 |DT_dialogues={{DT_dialogues}}}}",
+        "Outdoor_2": "{{i18n:Dialogues.marriage.Outdoor_2 |DT_dialogues={{DT_dialogues}}}}",
+        "Outdoor_3": "{{i18n:Dialogues.marriage.Outdoor_3 |DT_dialogues={{DT_dialogues}}}}",
+        "Outdoor_4": "{{i18n:Dialogues.marriage.Outdoor_4 |DT_dialogues={{DT_dialogues}}}}",
+        "Outdoor_5": "{{i18n:Dialogues.marriage.Outdoor_5 |DT_dialogues={{DT_dialogues}}}}",
+        "OneKid_0": "{{i18n:Dialogues.marriage.OneKid_0 |DT_dialogues={{DT_dialogues}}}}",
+        "OneKid_1": "{{i18n:Dialogues.marriage.OneKid_1 |DT_dialogues={{DT_dialogues}}}}",
+        "OneKid_2": "{{i18n:Dialogues.marriage.OneKid_2 |DT_dialogues={{DT_dialogues}}}}",
+        "OneKid_3": "{{i18n:Dialogues.marriage.OneKid_3 |DT_dialogues={{DT_dialogues}}}}",
+        "TwoKid_0": "{{i18n:Dialogues.marriage.TwoKid_0 |DT_dialogues={{DT_dialogues}}}}",
+        "TwoKid_1": "{{i18n:Dialogues.marriage.TwoKid_1 |DT_dialogues={{DT_dialogues}}}}",
+        "TwoKid_2": "{{i18n:Dialogues.marriage.TwoKid_2 |DT_dialogues={{DT_dialogues}}}}",
+        "TwoKid_3": "{{i18n:Dialogues.marriage.TwoKid_3 |DT_dialogues={{DT_dialogues}}}}",
+        "Good_0": "{{i18n:Dialogues.marriage.Good_0 |DT_dialogues={{DT_dialogues}}}}",
+        "Good_1": "{{i18n:Dialogues.marriage.Good_1 |DT_dialogues={{DT_dialogues}}}}",
+        "Good_2": "{{i18n:Dialogues.marriage.Good_2 |DT_dialogues={{DT_dialogues}}}}",
+        "Good_3": "{{i18n:Dialogues.marriage.Good_3 |DT_dialogues={{DT_dialogues}}}}",
+        "Good_4": "{{i18n:Dialogues.marriage.Good_4 |DT_dialogues={{DT_dialogues}}}}",
+        "Good_5": "{{i18n:Dialogues.marriage.Good_5 |DT_dialogues={{DT_dialogues}}}}",
+        "Good_6": "{{i18n:Dialogues.marriage.Good_6 |DT_dialogues={{DT_dialogues}}}}",
+        "Good_7": "{{i18n:Dialogues.marriage.Good_7 |DT_dialogues={{DT_dialogues}}}}",
+        "Good_8": "{{i18n:Dialogues.marriage.Good_8 |DT_dialogues={{DT_dialogues}}}}",
+        "Good_9": "{{i18n:Dialogues.marriage.Good_9 |DT_dialogues={{DT_dialogues}}}}",
+        "Neutral_0": "{{i18n:Dialogues.marriage.Neutral_0 |DT_dialogues={{DT_dialogues}}}}",
+        "Neutral_1": "{{i18n:Dialogues.marriage.Neutral_1 |DT_dialogues={{DT_dialogues}}}}",
+        "Neutral_2": "{{i18n:Dialogues.marriage.Neutral_2 |DT_dialogues={{DT_dialogues}}}}",
+        "Neutral_3": "{{i18n:Dialogues.marriage.Neutral_3 |DT_dialogues={{DT_dialogues}}}}",
+        "Neutral_4": "{{i18n:Dialogues.marriage.Neutral_4 |DT_dialogues={{DT_dialogues}}}}",
+        "Neutral_5": "{{i18n:Dialogues.marriage.Neutral_5 |DT_dialogues={{DT_dialogues}}}}",
+        "Neutral_6": "{{i18n:Dialogues.marriage.Neutral_6 |DT_dialogues={{DT_dialogues}}}}",
+        "Neutral_7": "{{i18n:Dialogues.marriage.Neutral_7 |DT_dialogues={{DT_dialogues}}}}",
+        "Neutral_8": "{{i18n:Dialogues.marriage.Neutral_8 |DT_dialogues={{DT_dialogues}}}}",
+        "Neutral_9": "{{i18n:Dialogues.marriage.Neutral_9 |DT_dialogues={{DT_dialogues}}}}",
+        "Bad_0": "{{i18n:Dialogues.marriage.Bad_0 |DT_dialogues={{DT_dialogues}}}}",
+        "Bad_1": "{{i18n:Dialogues.marriage.Bad_1 |DT_dialogues={{DT_dialogues}}}}",
+        "Bad_2": "{{i18n:Dialogues.marriage.Bad_2 |DT_dialogues={{DT_dialogues}}}}",
+        "Bad_3": "{{i18n:Dialogues.marriage.Bad_3 |DT_dialogues={{DT_dialogues}}}}",
+        "Bad_4": "{{i18n:Dialogues.marriage.Bad_4 |DT_dialogues={{DT_dialogues}}}}",
+        "Bad_5": "{{i18n:Dialogues.marriage.Bad_5 |DT_dialogues={{DT_dialogues}}}}",
+        "Bad_6": "{{i18n:Dialogues.marriage.Bad_6 |DT_dialogues={{DT_dialogues}}}}",
+        "Bad_7": "{{i18n:Dialogues.marriage.Bad_7 |DT_dialogues={{DT_dialogues}}}}",
+        "Bad_8": "{{i18n:Dialogues.marriage.Bad_8 |DT_dialogues={{DT_dialogues}}}}",
+        "Bad_9": "{{i18n:Dialogues.marriage.Bad_9 |DT_dialogues={{DT_dialogues}}}}"
       },
       "When": {
         "Marriage": "true"
@@ -529,11 +590,11 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
       "Entries": {
-        "summer_3": "{{i18n:Dialogues.addons.summer_3 |PlayerName={{PlayerName}}}}",
-        "summer_4": "{{i18n:Dialogues.addons.summer_4 |PlayerName={{PlayerName}}}}",
-        "summer_5": "{{i18n:Dialogues.addons.summer_5 |PlayerName={{PlayerName}}}}",
-        "summer_6": "{{i18n:Dialogues.addons.summer_6 |PlayerName={{PlayerName}}}}",
-        "summer_7": "{{i18n:Dialogues.addons.summer_7 |PlayerName={{PlayerName}}}}"
+        "summer_3": "{{i18n:Dialogues.addons.summer_3 |DT_dialogues={{DT_dialogues}}}}",
+        "summer_4": "{{i18n:Dialogues.addons.summer_4 |DT_dialogues={{DT_dialogues}}}}",
+        "summer_5": "{{i18n:Dialogues.addons.summer_5 |DT_dialogues={{DT_dialogues}}}}",
+        "summer_6": "{{i18n:Dialogues.addons.summer_6 |DT_dialogues={{DT_dialogues}}}}",
+        "summer_7": "{{i18n:Dialogues.addons.summer_7 |DT_dialogues={{DT_dialogues}}}}"
       },
       "When": {
         "HasMod": "HogwartsET.CP.Hogwarts"

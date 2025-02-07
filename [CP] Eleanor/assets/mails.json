@@ -29,7 +29,7 @@
       "Action": "EditData",
       "Target": "Data/mail",
       "Entries": {
-        "{{ModId}}_mail_Debug": "{{i18n:Mail.Debug |PlayerName={{PlayerName}}}}"
+        "{{ModId}}_mail_Debug": "{{i18n:Mail.Debug |DT_dialogues={{DT_dialogues}}}}"
       }
     }
   ]
