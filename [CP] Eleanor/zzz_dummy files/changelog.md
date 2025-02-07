@@ -6,6 +6,10 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ## Last version
 
+### version 0.7.2-beta.1 (7.2.2025)
+
+* Fixed many gramatical issues
+
 ### version 0.7.1 (7.2.2025)
 
 * Created 4 and 7 hearts events

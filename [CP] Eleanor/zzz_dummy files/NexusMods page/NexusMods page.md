@@ -1,11 +1,10 @@
 # NPC Eleanor
 
-???
+Eleanor is a young witch who studies at Mr. Rasmodius' tower. She is kinda shy at first, but she'll eventually open up to you (or, at least, that's how her dialogues & events are written).
 
 ## **Description of the mod:**
 
 Eleanor is a young witch who studies at Mr. Rasmodius' tower. She is kinda shy at first, but she'll eventually open up to you (or, at least, that's how her dialogues & events are written).
-
 
 ### **Roadmap**:
 
@@ -27,12 +26,12 @@ Other NPC mods:
 ... I'll be honest - this mod *might or might not* work with NPC mods you use. I expect many bugs with many NPCs; if you report them, I'll try my best to fix them. For festivals, I work by LemurKat's method "First in gets priority" which is described here: [https://lemurkat.wordpress.com/2021/11/13/help-theyre-overlapping-at-a-festival/](https://lemurkat.wordpress.com/2021/11/13/help-theyre-overlapping-at-a-festival/). And as my mod is pretty young, I expect A LOT of festival moves on my side.
 
 Other mods:
-There shouldn't be any technical incompactibility, but there might be some things that might bot be 100% "lore friendly", so compactible, but:
+There shouldn't be any technical incompatibility, but there might be some things that might not be 100% "lore friendly", so compatible, but:
 ...only time will tell...
 
 ### **Credits:**
 
-Basics (parts of content.json, manifest.json, now-quite-obstolete mod folder structure) were created with the help of *MissCoriel's NPC Creator*, which is not bad at all, but in my opinion, it is better to do it from some NPC mod you like (I used many NPC mods I play with; as SVE & RSV, but these great mods are so big that their code is not easy to follow at all (ES is in a quite good position,though), so I recommend smaller ones like Jorts and Jean (totally ideal, with combination with this link: [https://stardewmodding.wiki.gg/wiki/Tutorial:_Making_a_Custom_NPC](https://stardewmodding.wiki.gg/wiki/Tutorial:_Making_a_Custom_NPC)), MrGinger (due to his story it is not so easy to follow his code) or this one of course ☻). Anyways credits to those:
+Basics (parts of content.json, manifest.json, now-quite-obsolete mod folder structure) were created with the help of *MissCoriel's NPC Creator*, which is not bad at all, but in my opinion, it is better to do it from some NPC mod you like (I used many NPC mods I play with; as SVE & RSV, but these great mods are so big that their code is not easy to follow at all (ES is in a quite good position, though), so I recommend smaller ones like Jorts and Jean (totally ideal, with combination with this link: [https://stardewmodding.wiki.gg/wiki/Tutorial:_Making_a_Custom_NPC](https://stardewmodding.wiki.gg/wiki/Tutorial:_Making_a_Custom_NPC)), MrGinger (due to his story it is not so easy to follow his code) or this one of course ☻). Anyways credits to those:
 
 **Eric Barone *"ConcernedApe"*** - extremely big THANK YOU for making & updating Stardew Valley (also a big THANK YOU to everyone who was or is working with him);
 
