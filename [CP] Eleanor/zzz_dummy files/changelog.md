@@ -6,9 +6,12 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ## Last version
 
-### version 0.7.2-beta.1 (7.2.2025)
+### version 0.7.2 (7.2.2025)
 
 * Fixed many gramatical issues
+* Fixed Dynamic Token error
+* Deleted files that weren't used/licenced (NPC graphic; sorry for including them, all rights belong to their authors)
+* Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
 
 ### version 0.7.1 (7.2.2025)
 

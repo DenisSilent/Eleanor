@@ -1,5 +1,5 @@
 {
- // "$schema": "https://smapi.io/schemas/content-patcher.json", commented out because of formating problems after format 2.5.0
+  // "$schema": "https://smapi.io/schemas/content-patcher.json", commented out because of formating problems after format 2.5.0
 
   "Format": "2.5.0",
 
@@ -12,15 +12,15 @@
       "AllowValues": "true, false",
       "Default": "true",
       "Section": "Optional content for Eleanor",
-      "Description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 0.7.1 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true."
+      "Description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 0.7.2 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true."
     },
-/*
-commented out untill marriage update
+    /*
+commented out untill marriage update (1.0.0)
     "Marriage": {
       "AllowValues": "true, false",
       "Default": "false",
       "Section": "Optional content for Eleanor",
-      "Description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.7.1, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
+      "Description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.7.2, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
     },
 
     "14hearts-variants": {
@@ -39,13 +39,13 @@ commented out untill marriage update
 */
 
     // Visual side of Eleanor
-/*
+    /*
 commented out because of the missing art
     "Graphics": {
       "AllowValues": "one look only, vanilla, full",
       "Default": "one look only",
       "Section": "Visual side of Eleanor",
-      "Description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.7.1, it includes around 30%-done content. Default setting: only one look.",
+      "Description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.7.2, it includes around 30%-done content. Default setting: only one look.",
     },
     */
 
@@ -54,7 +54,7 @@ commented out because of the missing art
       "AllowValues": "on, safe mode, off",
       "Default": "on",
       "Section": "Experimental - DoNotChange",
-      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 0.7.1, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on."
+      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 0.7.2, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on."
     }
   },
 
@@ -64,22 +64,21 @@ commented out because of the missing art
     // (in)formality + GNMT support
     {
       "Name": "DT_dialogues",
-      "Value": "${Mr.^Ms.^Mx.}$ {{PlayerName}}",
-      "Condition": "MarkEventSeen Current StrojvedouciDenis.Eleanor_4hearts false"
+      "Value": "${Mr.^Ms.^Mx.}$ {{PlayerName}}"
     },
     {
       "Name": "DT_dialogues",
       "Value": "{{Hana.GNMTokens/Title}} {{PlayerName}}",
       "When": {
-      "Condition": "MarkEventSeen Current StrojvedouciDenis.Eleanor_4hearts false",
+        "HasSeenEvent |contains=StrojvedouciDenis.Eleanor_4hearts": true,
         "HasMod": "Hana.GNMTokens"
       }
     },
     {
       "Name": "DT_dialogues",
-       "Value": "{{PlayerName}}",
+      "Value": "{{PlayerName}}",
       "When": {
-      "Condition": "MarkEventSeen Current StrojvedouciDenis.Eleanor_4hearts"
+        "HasSeenEvent |contains=StrojvedouciDenis.Eleanor_4hearts": true
       }
     },
 
@@ -167,12 +166,13 @@ commented out because of the missing art
       "Target": "Data/Characters",
       "Entries": {
         "StrojvedouciDenis.Eleanor": {
+          // all dispositions with their definitions: https://stardewmodding.wiki.gg/wiki/Npc_template#Data/Characters,_Formerly_known_as_%22NPCDispositions%22_pre_1.6
           "DisplayName": "{{i18n:DisplayName}}",
           "Language": "default", // speaks normal Stardew Valley language (default = English) X also knows some arcane or magical languages
           "Gender": "female",
           "Age": "adult", // around 20? might change (23.1.2025)
           "Manner": "polite", // very polite
-          "SocialAnxiety": "shy", // very shy, but should open up to player
+          "SocialAnxiety": "shy", // kinda shy, but should open up to player
           "Optimism": "neutral", // has realistic view on life
           "BirthSeason": "fall",
           "BirthDay": "18",
@@ -180,12 +180,12 @@ commented out because of the missing art
           "IsDarkSkinned": "false",
 
           "CanSocialize": "true",
-          "CanBeRomanced": "false",
+          "CanBeRomanced": "true", // not sure how bugged it will be (7.2.2025)
           "CanReceiveGifts": "true",
           "CanCommentOnPurchasedShopItems": "true",
           "CanGreetNearbyCharacters": "true",
           "CanVisitIsland": "true",
-          "LoveInterest": "null",
+          "LoveInterest": "null", //not sure what it does
           "Calendar": "HiddenUntilMet",
           "SocialTab": "HiddenUntilMet",
           "SpouseAdopts": "null",
@@ -224,7 +224,7 @@ commented out because of the missing art
           "ItemDeliveryQuests": "true",
           "PerfectionScore": "true",
           "EndSlideShow": "TrailingGroup", // Eleanor isn't important enough to be in the main group, so she'll be in the trailing group (with Wizard/Mr. Rasmodius, Sandy, Krobus, etc.)
-          "FriendsAndFamily": { "Wizard": "mentor" }, // NOT SURE IF WORKING NOR IF IT HAS ANY EFFECT (7.1.2025)
+          //"FriendsAndFamily": { "Wizard": "mentor" }, // NOT SURE IF WORKING NOR IF IT HAS ANY EFFECT (7.1.2025)
 
           // Dumpster Diving
           "DumpsterDiveEmote": "28",
@@ -232,7 +232,7 @@ commented out because of the missing art
 
           // Festivals
           "FlowerDanceCanDance": "false",
-          "WinterStarParticipant": "true",
+          "WinterStarParticipant": "false", // not supported... yet
           /*
     "WinterStarGifts": [],
 */
@@ -323,12 +323,11 @@ commented out because of the missing art
     "HiddenProfileEmoteFrameCount": "",
     "HiddenProfileEmoteFrameDuration": "",
 */
-          
-    // Advanced
-   // "CustomFields": "", // what is this? I don't know, so let's skip it
-    "FormerCharacterNames": ["Eleanor"]
-   // "FestivalVanillaActorIndex": ""
 
+          // Advanced
+          // "CustomFields": "", // what is this? I don't know, so let's skip it
+          "FormerCharacterNames": ["Eleanor"]
+          // "FestivalVanillaActorIndex": ""
         }
       }
     },
@@ -354,22 +353,6 @@ commented out because of the missing art
         "On/off": "safe mode"
       }
     },
-    /*
-commented out untill marriage update
-    {
-      "LogName": "{{ModId}} - marriage disposition when turned on load command",
-      "Action": "EditData",
-      "Target": "Data/Characters",
-      "Fields": {
-        "StrojvedouciDenis.Eleanor": {
-          "CanBeRomanced": true
-        }
-      },
-      "When": {
-        "Marriage": "true"
-      }
-    },
-    */
 
     // Blank file triggering
     {

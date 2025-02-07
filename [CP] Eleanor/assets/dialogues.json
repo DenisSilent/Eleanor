@@ -39,6 +39,7 @@
         "spring_12": "{{i18n:Dialogues.spring_12 |DT_dialogues={{DT_dialogues}}}}",
         "spring_23": "{{i18n:Dialogues.spring_23 |DT_dialogues={{DT_dialogues}}}}",
 
+        "summer_1": "{{i18n:Dialogues.summer_1 |DT_dialogues={{DT_dialogues}}}}",
         "summer_10": "{{i18n:Dialogues.summer_10 |DT_dialogues={{DT_dialogues}}}}",
         "summer_27": "{{i18n:Dialogues.summer_27 |DT_dialogues={{DT_dialogues}}}}",
 
@@ -48,18 +49,38 @@
         "fall_18": "{{i18n:Dialogues.fall_18 |DT_dialogues={{DT_dialogues}}}}",
         "fall_26": "{{i18n:Dialogues.fall_26 |DT_dialogues={{DT_dialogues}}}}",
 
+        "winter_1": "{{i18n:Dialogues.winter_1 |DT_dialogues={{DT_dialogues}}}}",
         "winter_7": "{{i18n:Dialogues.winter_7 |DT_dialogues={{DT_dialogues}}}}",
         "winter_23": "{{i18n:Dialogues.winter_23 |DT_dialogues={{DT_dialogues}}}}",
         "winter_24": "{{i18n:Dialogues.winter_24 |DT_dialogues={{DT_dialogues}}}}",
-        "winter_28": "{{i18n:Dialogues.winter_28 |DT_dialogues={{DT_dialogues}}}}"
+        "winter_28": "{{i18n:Dialogues.winter_28 |DT_dialogues={{DT_dialogues}}}}",
+
+        // Special dialogues
+        "FlowerDance_Decline": "{{i18n:Dialogues.FlowerDance_Decline |DT_dialogues={{DT_dialogues}}}}",
+        "HitBySlingshot": "{{i18n:Dialogues.HitBySlingshot |DT_dialogues={{DT_dialogues}}}}",
+        "Resort": "{{i18n:Dialogues.Resort |DT_dialogues={{DT_dialogues}}}}",
+        "SpouseFarmhouseClutter": "{{i18n:Dialogues.SpouseFarmhouseClutter |DT_dialogues={{DT_dialogues}}}}",
+        "SpouseGiftJealous": "{{i18n:Dialogues.SpouseGiftJealous |DT_dialogues={{DT_dialogues}}}}",
+        "Spouse_MonstersInHouse": "{{i18n:Dialogues.Spouse_MonstersInHouse |DT_dialogues={{DT_dialogues}}}}",
+        "WipedMemory": "{{i18n:Dialogues.WipedMemory |DT_dialogues={{DT_dialogues}}}}",
+
+        "RejectItem_(O)460": "{{i18n:Dialogues.RejectItem_(O)460 |DT_dialogues={{DT_dialogues}}}}",
+
+        "AcceptBouquet": "{{i18n:Dialogues.AcceptBouquet |DT_dialogues={{DT_dialogues}}}}",
+        "RejectBouquet": "{{i18n:Dialogues.RejectBouquet |DT_dialogues={{DT_dialogues}}}}",
+        "RejectBouquet_Divorced": "{{i18n:Dialogues.RejectBouquet_Divorced |DT_dialogues={{DT_dialogues}}}}",
+        "RejectBouquet_AlreadyAccepted": "{{i18n:Dialogues.RejectBouquet_AlreadyAccepted |DT_dialogues={{DT_dialogues}}}}",
+        "RejectBouquet_NotDatable": "{{i18n:Dialogues.RejectBouquet_NotDatable |DT_dialogues={{DT_dialogues}}}}",
+        "RejectBouquet_NpcAlreadyMarried": "{{i18n:Dialogues.RejectBouquet_NpcAlreadyMarried |DT_dialogues={{DT_dialogues}}}}",
+        "RejectBouquet_VeryLowHearts": "{{i18n:Dialogues.RejectBouquet_VeryLowHearts |DT_dialogues={{DT_dialogues}}}}",
+        "RejectBouquet_LowHearts": "{{i18n:Dialogues.RejectBouquet_LowHearts |DT_dialogues={{DT_dialogues}}}}",
+
+        "AcceptBirthdayGift_Negative": "{{i18n:Dialogues.AcceptBirthdayGift_Negative |DT_dialogues={{DT_dialogues}}}}",
+        "AcceptBirthdayGift_Positive": "{{i18n:Dialogues.AcceptBirthdayGift_Positive |DT_dialogues={{DT_dialogues}}}}",
+        "RejectGift_Divorced": "{{i18n:Dialogues.RejectGift_Divorced |DT_dialogues={{DT_dialogues}}}}"
 
         // maybe for future updates
-/*
-	// Special dialogues
-
-"AcceptBirthdayGift": "{{i18n:Dialogues.AcceptBirthdayGift |DT_dialogues={{DT_dialogues}}}}",
-"AcceptBirthdayGift_Negative": "{{i18n:Dialogues.AcceptBirthdayGift_Negative |DT_dialogues={{DT_dialogues}}}}",
-"AcceptBirthdayGift_Positive": "{{i18n:Dialogues.AcceptBirthdayGift_Positive |DT_dialogues={{DT_dialogues}}}}",
+        /*
 //"AcceptBirthdayGift_<id>": "",
 //"AcceptBirthdayGift_<tag>": "",
 //"AcceptBirthdayGift_<taste>": "",
@@ -67,21 +88,8 @@
 //"AcceptGift_<id>": "",
 //"AcceptGift_<tag>": "",
 
-"RejectGift_Divorced": "{{i18n:Dialogues.RejectGift_Divorced |DT_dialogues={{DT_dialogues}}}}",
-
 //"RejectItem_<id>": "",
 //"RejectItem_<tag>": "",
-
-
-
-"AcceptBouquet": "{{i18n:Dialogues.AcceptBouquet |DT_dialogues={{DT_dialogues}}}}",
-
-"RejectBouquet": "{{i18n:Dialogues.RejectBouquet |DT_dialogues={{DT_dialogues}}}}",
-"RejectBouquet_NotDatable": "{{i18n:Dialogues.RejectBouquet_NotDatable |DT_dialogues={{DT_dialogues}}}}",
-"RejectBouquet_NpcAlreadyMarried": "{{i18n:Dialogues.RejectBouquet_NpcAlreadyMarried |DT_dialogues={{DT_dialogues}}}}",
-"RejectBouquet_VeryLowHearts": "{{i18n:Dialogues.RejectBouquet_VeryLowHearts |DT_dialogues={{DT_dialogues}}}}",
-"RejectBouquet_LowHearts": "{{i18n:Dialogues.RejectBouquet_LowHearts |DT_dialogues={{DT_dialogues}}}}",
-"RejectBouquet_Divorced": "{{i18n:Dialogues.RejectBouquet_Divorced |DT_dialogues={{DT_dialogues}}}}",
 
 "RejectMermaidPendant": "{{i18n:Dialogues.RejectMermaidPendant |DT_dialogues={{DT_dialogues}}}}",
 "RejectMermaidPendant_Divorced": "{{i18n:Dialogues.RejectMermaidPendant_Divorced |DT_dialogues={{DT_dialogues}}}}",
@@ -173,7 +181,6 @@
 "RejectRoommateProposal_LowFriendship": "{{i18n:Dialogues.RejectRoommateProposal_LowFriendship |DT_dialogues={{DT_dialogues}}}}",
 "RejectRoommateProposal_SmallHouse": "{{i18n:Dialogues.RejectRoommateProposal_SmallHouse |DT_dialogues={{DT_dialogues}}}}"
 */
-
       }
     },
     // Dialogues for other mods //
@@ -183,7 +190,7 @@
       "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
       "Entries": {
         //Conversation Topics
-        //Vanilla & Vanilla+ (More CT's mod + 1.6 strings)
+        //Vanilla & Vanilla+ (More Conversation Topics mod + 1.6 strings)
         "Introduction": "{{i18n:Dialogues.CT.Introduction |DT_dialogues={{DT_dialogues}}}}",
         "danceRejection": "{{i18n:Dialogues.CT.danceRejection |DT_dialogues={{DT_dialogues}}}}",
         "divorced": "{{i18n:Dialogues.CT.divorced |DT_dialogues={{DT_dialogues}}}}",
@@ -368,6 +375,17 @@
         "Festivals": "true"
       }
     },
+    {
+      "LogName": "Eleanor - non-festival festival dialogues",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
+      "Entries": {
+        "Dialogues.WinterStar_ReceiveGift": "{{i18n:Dialogues.WinterStar_ReceiveGift |DT_dialogues={{DT_dialogues}}}}"
+      },
+      "When": {
+        "Festivals": "true"
+      }
+    },
 
     // Conversation Topics
     /*
@@ -434,7 +452,7 @@
 
     // Marriage + engagement dialogues //
     /*
-    commented out untill marriage update
+    commented out untill marriage update (1.0.0)
 
     {
       "LogName": "Eleanor - engagement dialogues + marriage fix",

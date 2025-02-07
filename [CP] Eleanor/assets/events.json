@@ -111,7 +111,7 @@ debug 27.1.25, for summit dialogues
     // Description: Eleanor has prepared a gift for farmer.
 
     /*
-    Replaced with short 14 hearts event variant until marriage update.
+    Replaced with short 14 hearts event variant until marriage update (1.0.0).
     {
       "LogName": "Eleanor - event - 10hearts",
       "Action": "EditData",
@@ -142,7 +142,7 @@ debug 27.1.25, for summit dialogues
     // Description: ???
 
     /*
-    Commented out until marriage update.
+    Commented out until marriage update (1.0.0).
     {
       "LogName": "Eleanor - event - 12hearts",
       "Action": "EditData",
@@ -281,7 +281,7 @@ debug 27.1.25, for summit dialogues
     },
 */
 /*
-Removed for now due to the lack of marriage update
+Removed for now due to the lack of marriage update (1.0.0)
 
     // short versions
     // SVE only version

@@ -12,6 +12,7 @@ Eleanor is a young witch who studies at Mr. Rasmodius' tower. She is kinda shy a
 * 0.7.3 - final mod content before internal testing and debugging
 * 0.7.4-beta.7 - final private internal version, synchronization with GitHub and upcoming NexusMods release
 * 0.8.0 - wide public release on NexusMods (should be the same date as 0.7.4-beta.7)
+* 0.8.X - dialogues update (dedicated movie dialogues, etc.)
 * 0.9.0 - whole vanilla NPC graphics
 * 1.0.0 - marriage update
 * ~~X.X.X - more sprites & portraits - won't happen any time soon~~
