@@ -2,16 +2,6 @@
   // schedule dialogues
 
   "Changes": [
-    {
-      "LogName": "Eleanor - dialogues - schedule strings",
-      "Action": "EditData",
-      "Target": "Strings/schedules/StrojvedouciDenis.Eleanor",
-      "Entries": {
-        "safemode": "{{i18n:Schedule.safemode |DT_dialogues={{DT_dialogues}}}}"
-      }
-    },
-
-    // normal dialogues
 
     {
       "LogName": "Eleanor - dialogues - weekday",
@@ -62,22 +52,7 @@
         "SpouseFarmhouseClutter": "{{i18n:Dialogues.SpouseFarmhouseClutter |DT_dialogues={{DT_dialogues}}}}",
         "SpouseGiftJealous": "{{i18n:Dialogues.SpouseGiftJealous |DT_dialogues={{DT_dialogues}}}}",
         "Spouse_MonstersInHouse": "{{i18n:Dialogues.Spouse_MonstersInHouse |DT_dialogues={{DT_dialogues}}}}",
-        "WipedMemory": "{{i18n:Dialogues.WipedMemory |DT_dialogues={{DT_dialogues}}}}",
-
-        "RejectItem_(O)460": "{{i18n:Dialogues.RejectItem_(O)460 |DT_dialogues={{DT_dialogues}}}}",
-
-        "AcceptBouquet": "{{i18n:Dialogues.AcceptBouquet |DT_dialogues={{DT_dialogues}}}}",
-        "RejectBouquet": "{{i18n:Dialogues.RejectBouquet |DT_dialogues={{DT_dialogues}}}}",
-        "RejectBouquet_Divorced": "{{i18n:Dialogues.RejectBouquet_Divorced |DT_dialogues={{DT_dialogues}}}}",
-        "RejectBouquet_AlreadyAccepted": "{{i18n:Dialogues.RejectBouquet_AlreadyAccepted |DT_dialogues={{DT_dialogues}}}}",
-        "RejectBouquet_NotDatable": "{{i18n:Dialogues.RejectBouquet_NotDatable |DT_dialogues={{DT_dialogues}}}}",
-        "RejectBouquet_NpcAlreadyMarried": "{{i18n:Dialogues.RejectBouquet_NpcAlreadyMarried |DT_dialogues={{DT_dialogues}}}}",
-        "RejectBouquet_VeryLowHearts": "{{i18n:Dialogues.RejectBouquet_VeryLowHearts |DT_dialogues={{DT_dialogues}}}}",
-        "RejectBouquet_LowHearts": "{{i18n:Dialogues.RejectBouquet_LowHearts |DT_dialogues={{DT_dialogues}}}}",
-
-        "AcceptBirthdayGift_Negative": "{{i18n:Dialogues.AcceptBirthdayGift_Negative |DT_dialogues={{DT_dialogues}}}}",
-        "AcceptBirthdayGift_Positive": "{{i18n:Dialogues.AcceptBirthdayGift_Positive |DT_dialogues={{DT_dialogues}}}}",
-        "RejectGift_Divorced": "{{i18n:Dialogues.RejectGift_Divorced |DT_dialogues={{DT_dialogues}}}}"
+        "WipedMemory": "{{i18n:Dialogues.WipedMemory |DT_dialogues={{DT_dialogues}}}}"
 
         // maybe for future updates
         /*
@@ -110,10 +85,6 @@
 
 //"PurchasedItem_*": "",	// kinda don't know what to do with that, but let's keep it blocked here
 
-
-"Town_DumpsterDiveComment_Adult": "{{i18n:Dialogues.Town_DumpsterDiveComment_Adult |DT_dialogues={{DT_dialogues}}}}",
-
-
 "MovieInvite_Invited": "{{i18n:Dialogues.MovieInvite_Invited |DT_dialogues={{DT_dialogues}}}}",
 
 //"MovieInvite_Invited_<NPC name>": "",
@@ -126,12 +97,6 @@
 
 	// Special dialogues - events
 
-"FlowerDance_Accept": "{{i18n:Dialogues.FlowerDance_Accept |DT_dialogues={{DT_dialogues}}}}",
-"FlowerDance_Accept_Roommate": "{{i18n:Dialogues.FlowerDance_Accept_Roommate |DT_dialogues={{DT_dialogues}}}}",
-"FlowerDance_Accept_Spouse": "{{i18n:Dialogues.FlowerDance_Accept_Spouse |DT_dialogues={{DT_dialogues}}}}",
-
-"FlowerDance_Decline": "{{i18n:Dialogues.FlowerDance_Decline |DT_dialogues={{DT_dialogues}}}}",
-
 //"danceRejection": "{{i18n:Dialogues.danceRejection |DT_dialogues={{DT_dialogues}}}}",		// fallback for "FlowerDance_Decline", use that instead
 
 
@@ -142,7 +107,6 @@
 "Fair_Judged_PlayerLost_Skipped": "{{i18n:Dialogues.Fair_Judged_PlayerLost_Skipped |DT_dialogues={{DT_dialogues}}}}",
 "Fair_Judged_PlayerLost": "{{i18n:Dialogues.Fair_Judged_PlayerLost |DT_dialogues={{DT_dialogues}}}}",
 "Fair_Judged_PlayerWon": "{{i18n:Dialogues.Fair_Judged_PlayerWon |DT_dialogues={{DT_dialogues}}}}",
-
 
 "WinterStar_ReceiveGift": "{{i18n:Dialogues.WinterStar_ReceiveGift |DT_dialogues={{DT_dialogues}}}}",
 
@@ -298,92 +262,6 @@
         "MobilePhoneReminisce": "{{i18n:Dialogues.addons.MobilePhoneReminisce |DT_dialogues={{DT_dialogues}}}}",
         "MobilePhoneInvite": "{{i18n:Dialogues.addons.MobilePhoneInvite |DT_dialogues={{DT_dialogues}}}}",
         "MobilePhoneGoodBye": "{{i18n:Dialogues.addons.MobilePhoneGoodBye.{{Random:{{Range:0,3}}}} |DT_dialogues={{DT_dialogues}}}}"
-      }
-    },
-
-    // Festival dialogues //
-
-    {
-      "LogName": "Eleanor - spr24 festival dialogue",
-      "Action": "EditData",
-      "Target": "Data/Festivals/spring24",
-      "Entries": {
-        "Eleanor_fest-spr24": "{{i18n:Dialogues.festivals-spr24 |DT_dialogues={{DT_dialogues}}}}",
-        "Eleanor_fest_spouse-spr24": "{{i18n:Dialogues.festivals_spouse-spr24 |DT_dialogues={{DT_dialogues}}}}"
-      },
-      "When": {
-        "Festivals": "true"
-      }
-    },
-    {
-      "LogName": "Eleanor - sum28 festival dialogue",
-      "Action": "EditData",
-      "Target": "Data/Festivals/summer28",
-      "Entries": {
-        "Eleanor_fest-sum28": "{{i18n:Dialogues.festivals-sum28 |DT_dialogues={{DT_dialogues}}}}",
-        "Eleanor_fest_spouse-sum28": "{{i18n:Dialogues.festivals_spouse-sum28 |DT_dialogues={{DT_dialogues}}}}"
-      },
-      "When": {
-        "Festivals": "true"
-      }
-    },
-    {
-      "LogName": "Eleanor - fal16 festival dialogue",
-      "Action": "EditData",
-      "Target": "Data/Festivals/fall16",
-      "Entries": {
-        "Eleanor_fest-fal16": "{{i18n:Dialogues.festivals-fal16 |DT_dialogues={{DT_dialogues}}}}",
-        "Eleanor_fest_spouse-fal16": "{{i18n:Dialogues.festivals_spouse-fal16 |DT_dialogues={{DT_dialogues}}}}"
-      },
-      "When": {
-        "Festivals": "true"
-      }
-    },
-    {
-      "LogName": "Eleanor - fal27 festival dialogue",
-      "Action": "EditData",
-      "Target": "Data/Festivals/fall27",
-      "Entries": {
-        "Eleanor_fest-fal27": "{{i18n:Dialogues.festivals-fal27 |DT_dialogues={{DT_dialogues}}}}",
-        "Eleanor_fest_spouse-fal27": "{{i18n:Dialogues.festivals_spouse-fal27 |DT_dialogues={{DT_dialogues}}}}"
-      },
-      "When": {
-        "Festivals": "true"
-      }
-    },
-    {
-      "LogName": "Eleanor - win8 festival dialogue",
-      "Action": "EditData",
-      "Target": "Data/Festivals/winter8",
-      "Entries": {
-        "Eleanor_fest-win8": "{{i18n:Dialogues.festivals-win8 |DT_dialogues={{DT_dialogues}}}}",
-        "Eleanor_fest_spouse-win8": "{{i18n:Dialogues.festivals_spouse-win8 |DT_dialogues={{DT_dialogues}}}}"
-      },
-      "When": {
-        "Festivals": "true"
-      }
-    },
-    {
-      "LogName": "Eleanor - win25 festival dialogue",
-      "Action": "EditData",
-      "Target": "Data/Festivals/winter25",
-      "Entries": {
-        "Eleanor_fest-win25": "{{i18n:Dialogues.festivals-win25 |DT_dialogues={{DT_dialogues}}}}",
-        "Eleanor_fest_spouse-win25": "{{i18n:Dialogues.festivals_spouse-win25 |DT_dialogues={{DT_dialogues}}}}"
-      },
-      "When": {
-        "Festivals": "true"
-      }
-    },
-    {
-      "LogName": "Eleanor - non-festival festival dialogues",
-      "Action": "EditData",
-      "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
-      "Entries": {
-        "Dialogues.WinterStar_ReceiveGift": "{{i18n:Dialogues.WinterStar_ReceiveGift |DT_dialogues={{DT_dialogues}}}}"
-      },
-      "When": {
-        "Festivals": "true"
       }
     },
 

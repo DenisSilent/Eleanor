@@ -9,30 +9,32 @@ Eleanor is a young witch who studies at Mr. Rasmodius' tower. She is kinda shy a
 ### **Roadmap**:
 
 * ~~0.7.0 - one look only clothes + 1st GitHub release~~ 1.2.2025
-* 0.7.3 - final mod content before internal testing and debugging
+* ~~0.7.3 - final mod content before internal testing and debugging~~ 8.2.2025
 * 0.7.4-beta.7 - final private internal version, synchronization with GitHub and upcoming NexusMods release
 * 0.8.0 - wide public release on NexusMods (should be the same date as 0.7.4-beta.7)
-* 0.8.X - dialogues update (dedicated movie dialogues, etc.)
-* 0.9.0 - whole vanilla NPC graphics
+* 0.9.0 - dialogues update (dedicated movie dialogues, etc.)
 * 1.0.0 - marriage update
+* 1.1.0 - whole vanilla NPC graphics ??? (maybe...)
 * ~~X.X.X - more sprites & portraits - won't happen any time soon~~
 
 ### **Compatibility with other mods:**
 
-SVE - this mod was created as an add-on NPC, requiring SVE, so it should be fully compatible (there *might* be bugs, as not 100% of the SV or SVE content was tested; if you report them, I'll try my best to fix them)
-RSV - should be fully compatible (there might be bugs; if you report them, I'll try my best to fix them)
-ES - should be fully compatible (there might be bugs; if you report them, I'll try my best to fix them)
+#### Technical compatibility
 
-Other NPC mods:
-... I'll be honest - this mod *might or might not* work with NPC mods you use. I expect many bugs with many NPCs; if you report them, I'll try my best to fix them. For festivals, I work by LemurKat's method "First in gets priority" which is described here: [https://lemurkat.wordpress.com/2021/11/13/help-theyre-overlapping-at-a-festival/](https://lemurkat.wordpress.com/2021/11/13/help-theyre-overlapping-at-a-festival/). And as my mod is pretty young, I expect A LOT of festival moves on my side.
+#### Mod compatibility:
 
-Other mods:
-There shouldn't be any technical incompatibility, but there might be some things that might not be 100% "lore friendly", so compatible, but:
-...only time will tell...
+* SVE - this mod was created as an add-on NPC, requiring SVE, so it should be fully compatible (there *might* be bugs, as not 100% of the SV or SVE content was tested; if you report them, I'll try my best to fix them)
+* RSV - should be fully compatible (there might be bugs; if you report them, I'll try my best to fix them)
+* ES - should be fully compatible (there might be bugs; if you report them, I'll try my best to fix them)
+* Other NPC mods:
+  ... I'll be honest - this mod *might or might not* work with NPC mods you use. I expect many bugs with many NPCs; if you report them, I'll try my best to fix them. For festivals, I work by LemurKat's method "First in gets priority" which is described here: [https://lemurkat.wordpress.com/2021/11/13/help-theyre-overlapping-at-a-festival/](https://lemurkat.wordpress.com/2021/11/13/help-theyre-overlapping-at-a-festival/). And as my mod is pretty new, I expect A LOT of festival moves on my side.
+* Other mods:
+  There shouldn't be any technical incompatibility, but there might be some things that might not be 100% "lore friendly", so compatible, but:
+  ...only time will tell...
 
 ### **Credits:**
 
-Basics (parts of content.json, manifest.json, now-quite-obsolete mod folder structure) were created with the help of *MissCoriel's NPC Creator*, which is not bad at all, but in my opinion, it is better to do it from some NPC mod you like (I used many NPC mods I play with; as SVE & RSV, but these great mods are so big that their code is not easy to follow at all (ES is in a quite good position, though), so I recommend smaller ones like Jorts and Jean (totally ideal, with combination with this link: [https://stardewmodding.wiki.gg/wiki/Tutorial:_Making_a_Custom_NPC](https://stardewmodding.wiki.gg/wiki/Tutorial:_Making_a_Custom_NPC)), MrGinger (due to his story it is not so easy to follow his code) or this one of course ☻). Anyways credits to those:
+Basics (parts of content.json, manifest.json, now-quite-obsolete mod folder structure) were created with the help of *MissCoriel's NPC Creator*, which is not bad at all, but in my opinion, it is better to do it from some NPC mod you like (I used many NPC mods I play with; as SVE & RSV, but these great mods are so big that their code is not easy to follow at all (ES is in a quite good position, though), so I recommend smaller ones like Jorts and Jean (totally ideal, with combination with this link: [https://stardewmodding.wiki.gg/wiki/Tutorial:_Making_a_Custom_NPC](https://stardewmodding.wiki.gg/wiki/Tutorial:_Making_a_Custom_NPC)), MrGinger (due to his story it is not so easy to follow his code) or this one of course ☻). Anyways, credits to those:
 
 **Eric Barone *"ConcernedApe"*** - extremely big THANK YOU for making & updating Stardew Valley (also a big THANK YOU to everyone who was or is working with him);
 
@@ -40,7 +42,7 @@ Basics (parts of content.json, manifest.json, now-quite-obsolete mod folder stru
 
 Anyone who was willing to help or ask for help from Stardew Valley Discord (especially from #making-mods-general; many thanks to everyone there). All users that helped me are mentioned in the "changelog.md" file located [in the changelog file](https://github.com/DenisSilent/Eleanor/blob/main/%5BCP%5D%20Eleanor/zzz_dummy%20files/changelog.md);
 
-Everyone who somehow contributed to Stardew Valley
+Everyone who somehow contributed to Stardew Valley community. Thanks! We appriciate your contributions!
 
 ### **Legal note:**
 
@@ -63,7 +65,7 @@ Portraits for Eleanor are made using [https://jazzybee.itch.io/sdvcharactercreat
 ##### **You can not:**
 
 * steal/dishonest/... this mod
-* place this mod behind a paywall/monetize in any way any part of this mod (you can, however, monetize your mod in any way, even if you are inspired by my code)
+* place this mod behind a paywall/monetize in any way any part of this mod (you can, however, monetize your mod in any way, even if you get inspired by my code)
 
 ##### **Warning for mod authors:**
 

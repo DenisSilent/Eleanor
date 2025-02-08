@@ -1,10 +1,19 @@
 # Changelog
 
-Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/commits/Releases)
+Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/commits/main/)
 
 ---
 
 ## Last version
+
+### version 0.7.3 (8.2.2025)
+
+* Added gift rejections
+* Internal code reorganisation
+* Added schedule if the intro event wasn't triggered
+* Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
+
+---
 
 ### version 0.7.2 (7.2.2025)
 
@@ -13,12 +22,16 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 * Deleted files that weren't used/licenced (NPC graphic; sorry for including them, all rights belong to their authors)
 * Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
 
+---
+
 ### version 0.7.1 (7.2.2025)
 
 * Created 4 and 7 hearts events
 * Fixed events, mails and secrets not using the new Dynamic Token, supporting GNMTokens
 * Added update key to GitHub for this mod so SMAPI would detect updates released on GitHub
 * Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
+
+---
 
 ### version 0.7.1-beta.1 (3.2.2025)
 
@@ -31,6 +44,8 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
   * `@tiakall`
 * Fully rewritten dialogues prefixes format + added proper triggable Gender Neutral Mod support
 
+---
+
 ### version 0.7.0 (1.2.2025)
 
 * First public hoping-that-not-game-breaking release! 🎉
@@ -41,6 +56,8 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 * Corrected manifest versions
 * Synchronized with GitHub repo + made it publicly available
 
+---
+
 ### version 0.7.0-beta.3 (1.2.2025)
 
 * Fixed and improved NPC graphics
@@ -50,14 +67,17 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 * Synchronized manifest versions
 * Various fixes, should be seen in GitHub commit log (if that thing even exists...)
 
+---
+
 ### version 0.7.0-beta.2 (26.1.2025)
 
 * Summit dialogues experiments (again) with Discord help by:
-
   * `@fireredlily`
   * `@wopr1234`
   * `@8awa8`
   * `@forsythia`
+
+---
 
 ### version 0.7.0-beta.1 (26.1.2025)
 
@@ -116,7 +136,7 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
   * `@tlitookilakin`
   * `@chu2.718281828459045235360287471`
   * `@pathoschild`
-* Another hopeless try with local .NET v6.0.428 projects... somewhy, I can't manage to compile any project successfully, no matter if it works and is decompiled properly
+* Another hopeless try with local .NET v6.0.428 projects... for some reason, I can't manage to compile any project successfully, no matter if it works and is decompiled properly
 * Created a private GitHub repository
 
 ---
@@ -240,7 +260,7 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
   * `@endertedi`
   * `@atravita`
   * `@escammc`
-* Help from Discord member (possibility of testing ${male^female^non-binary}$ + italics in Stardew Valley): // 9.1.2025
+* Help from Discord member (possibility of testing {male^female^non-binary} + italics in Stardew Valley): // 9.1.2025
   * `@focustense`
   * `@rokugin`
   * `@abs0rbed`
