@@ -16,7 +16,7 @@
       "Action": "EditData",
       "Target": "Characters/schedules/StrojvedouciDenis.Eleanor",
       "Entries": {
-        "default": "0 WizardHouse 1 1 1 \"Strings\\schedules\\Eleanor:Eleanor.safemode\""
+        "spring": "0 WizardHouse 1 1 1 \"Strings\\schedules\\Eleanor:Eleanor.safemode\""
       },
       "When": {
         "On/off": "safe mode"
@@ -28,7 +28,7 @@
       "Action": "EditData",
       "Target": "Characters/schedules/StrojvedouciDenis.Eleanor",
       "Entries": {
-        "default": "0 Custom_WizardBasement 23 6 2"
+        "spring": "a610 WizardHouse 5 15 2/a1630 Custom_WizardBasement 13 5 2/a2230 Custom_WizardBasement 23 6 2"
       },
       "When": {
         "On/off": "on",
@@ -77,7 +77,7 @@
         "winter_Sun": "a610 WizardHouse 5 15 2/a1400 Custom_AuroraVineyard 15 17 3/a1420 Custom_AuroraVineyard 23 17 0/a1440 Custom_AuroraVineyard 19 6 1/a1500 Custom_AuroraVineyard 6 6 3/1520 Custom_WizardBasement 13 5 0/1800 Custom_WizardBasement 13 5 2/a2130 Custom_WizardBasement 23 6 2",
 
         "rain": "a610 WizardHouse 5 15 2/1100 Forest 16 30 1/a1630 Custom_WizardBasement 13 5 2/a2230 Custom_WizardBasement 23 6 2",
-        "GreenRain": "a610 WizardHouse 5 15 2/a1200 Forest 16 30 1/a1330 Custom_WizardBasement 13 5 2/a2230 Custom_WizardBasement 23 6 2"
+        "GreenRain": "a610 WizardHouse 5 15 2/1200 Forest 16 30 1/a1330 Custom_WizardBasement 13 5 2/a2230 Custom_WizardBasement 23 6 2"
       },
       "When": {
         "On/off": "on",

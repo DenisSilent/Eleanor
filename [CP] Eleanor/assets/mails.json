@@ -8,21 +8,12 @@
       "Entries": {
         "{{ModId}}_mail_Debug": {
           "Id": "{{ModId}}_mail_Debug",
-          "Trigger": "DayEnding",
-          "Action": "AddMail Current {{ModId}}_mail_Debug"
+          "Trigger": "DayStarted",
+          "Action": "AddMail Current {{ModId}}_mail_Debug"  // if you want the mail to be sent immediately, add "Now" at the end
         }
       }
     },
-    /*
-    {
-      "LogName": "Eleanor - mails",
-      "Action": "EditData",
-      "Target": "Data/Events/Farm",
-      "Entries": {
-        "{{ModId}}_mail_DebugT": "null."
-      }
-    },
-    */
+    
     // the mail itself
     {
       "LogName": "Eleanor - mails",

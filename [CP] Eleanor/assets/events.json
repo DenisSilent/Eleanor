@@ -22,7 +22,7 @@ debug 27.1.25, for summit dialogues
       "Action": "EditData",
       "Target": "Data/Events/farm",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_Intro/e 112": "none/-1000 -1000/farmer 2 2 2 StrojvedouciDenis.Eleanor 3 3 0/skippable/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.Intro.0 |DT_dialogues={{DT_dialogues}}}}\"/pause 222/emote farmer 40/pause 222/emote farmer 8/pause 222/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.Intro.1 |DT_dialogues={{DT_dialogues}}}}\"/pause 222/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.Intro.2 |DT_dialogues={{DT_dialogues}}}}\"/pause 222/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.Intro.3 |DT_dialogues={{DT_dialogues}}}}\"/pause 222/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.Intro.4|DT_dialogues={{DT_dialogues}}}}\"/pause 2222/addConversationTopic {{ModId}}.CT_Intro 2/end"
+        "StrojvedouciDenis.Eleanor_Intro/e 112": "none/-1000 -1000/farmer 2 2 2 StrojvedouciDenis.Eleanor 3 3 0/skippable/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.Intro.0 |DT_dialogues={{DT_dialogues}}}}\"/pause 555/emote farmer 40/pause 555/emote farmer 8/pause 555/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.Intro.1 |DT_dialogues={{DT_dialogues}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.Intro.2 |DT_dialogues={{DT_dialogues}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.Intro.3 |DT_dialogues={{DT_dialogues}}}}\"/pause 1111/speak StrojvedouciDenis.Eleanor \"{{i18n:Events.Intro.4|DT_dialogues={{DT_dialogues}}}}\"/pause 2222/addConversationTopic {{ModId}}.CT_Intro 2/end"
       }
     },
 
