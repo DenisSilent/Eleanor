@@ -17,7 +17,6 @@ Eleanor is a young witch who studies under the guidance of the local wizard, Mr.
 * 1.1.0 - whole vanilla NPC graphics ??? (maybe...)
 * ~~X.X.X - more sprites & portraits - won't happen any time soon~~
 
-
 ### **Compatibility with other mods:**
 
 #### Technical compatibility:
@@ -79,3 +78,6 @@ Portraits for Eleanor are made using [https://jazzybee.itch.io/sdvcharactercreat
 This NPC mod *might* (I tried my best to not include anything, but...) include parts of content from other mods. You may not worry, there is NO content like dialogues/events/etc. in this mod, but many things from many different mods were used as a template so I could make this mod work.
 
 However, everything that's NOT created by me is subject to the rights and/or licenses of other authors. If the author doesn't agree with including their content in this mod, please contact me immediately on Nexus Mods, and I'll remove the content from my mod. Please, do not report me/my mod for violating Your rights to Your content, as we can resolve this issue peacefully. I value Your contributions to the community of Stardew Valley and/or other games, and I can guarantee that I do NOT want to steal/dishonest/... Your work.
+
+
+(Please, note that this is my first public mod ever, so sorry for some things that might be done better)

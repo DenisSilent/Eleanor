@@ -14,12 +14,12 @@
   "config.Festivals.name": "Festivals",
   "config.Festivals.values.true": "true",
   "config.Festivals.values.false": "false",
-  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 0.8.0 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
+  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 0.8.1 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
 
   "config.Marriage.name": "Marriage",
   "config.Marriage.values.true": "true",
   "config.Marriage.values.false": "false",
-  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.8.0, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
+  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.8.1, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
 
   "config.14hearts-variants.name": "14 hearts event variant",
   "config.14hearts-variants.values.short": "short",
@@ -40,7 +40,7 @@
   "config.Graphics.values.one look only": "one look only",
   "config.Graphics.values.vanilla": "vanilla",
   "config.Graphics.values.full": "full",
-  "config.Graphics.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.8.0, it includes around 30%-done content. Default setting: only one look.",
+  "config.Graphics.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.8.1, it includes around 30%-done content. Default setting: only one look.",
 
   // Experimental - DoNotChange
 
@@ -51,7 +51,7 @@
   "config.On/off.values.on": "on",
   "config.On/off.values.safe mode": "safe mode",
   "config.On/off.values.off": "off",
-  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 0.8.0, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
+  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 0.8.1, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
 
   // Eleanor's name
   "DisplayName": "Eleanor",
@@ -62,7 +62,7 @@
 
   "Dialogues.0hearts.random.0": "Uh...#$b#Hello, {{DT_dialogues}}.#$b#%Eleanor turns away from you... Looks like she is trying to ignore your existence.",
   "Dialogues.0hearts.random.1": "%Eleanor is mumbling something to herself.#$e#Oh... Hello, {{DT_dialogues}}.#$b#%Eleanor turns away from you and continues in her mumbling.",
-  "Dialogues.0hearts.random.2": "%Eleanor is mumbling something about...#$b#%...Mr. Rasmodius?#$e#%She didn't notice you, so you leave her alone.",
+  "Dialogues.0hearts.random.2": "%Eleanor is mumbling something about...#$b#%...magic?#$e#%She didn't notice you, so you leave her alone.",
   "Dialogues.0hearts.random.3": "%Eleanor looks sad today.#$b#%You decide to leave her alone.",
   "Dialogues.0hearts.random.4": "%Eleanor is mumbling something to herself.#$b#%You have a feeling it was about you...",
   "Dialogues.0hearts.random.5": "%Looks like Eleanor is having her head in the clouds.#$b#%You decide to leave her alone.",
@@ -73,24 +73,29 @@
   "Dialogues.Wed2": "Hello, {{DT_dialogues}}.#$b#I hope your farm is doing well.",
   "Dialogues.Thu2": "Hello, {{DT_dialogues}}.#$e$Wait, you're telling me it's Thursday already?#$b#Time flows so fast...$s",
   "Dialogues.Fri2": "Tomorrow I'll need to stop by Pierre's.#$b#Yes, {{DT_dialogues}}. Even me and Mr. Rasmodius need something to eat, and his garden is not enough.",
+  "Dialogues.Fri2_rasmodia": "Tomorrow I'll need to stop by Pierre's.#$b#Yes, {{DT_dialogues}}. Even me and M. Rasmodia need something to eat, and his garden is not enough.",
   "Dialogues.Sat2": "Hello, {{DT_dialogues}}.#$e#I suppose you don't have much free time like me today, don't you?#$b#But if you didn't have free time, you wouldn't be here...",
   "Dialogues.Sun2": "Yet another week has come to it's end.#$b#I hope you enjoyed it, {{DT_dialogues}}.",
 
   "Dialogues.Mon4": "Hi...#$b#I enjoy studying and working with Mr. Rasmodius.#$b#Yes, I'm a student of his. Didn't I already tell you?",
+  "Dialogues.Mon4_rasmodia": "Hi...#$b#I enjoy studying and working with M. Rasmodia.#$b#Yes, I'm a student of her. Didn't I already tell you?",
   "Dialogues.Tue4": "I wonder what magic will Mr. Rasmodius give me to train this week.#$e#Magic must be trained from time to time, so you won't forget it.#$b#Remember this, {{DT_dialogues}}.",
+  "Dialogues.Tue4_rasmodia": "I wonder what magic will M. Rasmodia give me to train this week.#$e#Magic must be trained from time to time, so you won't forget it.#$b#Remember this, {{DT_dialogues}}.",
   "Dialogues.Wed4": "%Eleanor is repeating some magic words, so you decide to leave her alone - you don't know what would happen if you disturb her.",
   "Dialogues.Thu4": "I wish I'd have more time today...#$b#There is always something to do, don't you think, {{DT_dialogues}}?",
   "Dialogues.Fri4": "Friday.#$b#Hmm.....#$b#Sounds more like ''Freeday'' for some of us, don't you think?",
   "Dialogues.Sat4": "Tomorrow I'll need to stop by Pierre's.#$b#I look forward to it. I like it there.#$b#I'm also a pretty good friend of her daughter, Abigail.",
   "Dialogues.Sun4": "I wonder what magic will Mr. Rasmodius give me to learn next week.",
+  "Dialogues.Sun4_rasmodia": "I wonder what magic will M. Rasmodia give me to learn next week.",
 
   "Dialogues.Mon6": "Another Monday is here, {{DT_dialogues}}...$s#$e#If I look sad, that's because, formally said, I'm not a fan of Mondays.",
   "Dialogues.Tue6": "I wish I'd have more time today...#$b#There is always something to do, don't you think, {{DT_dialogues}}?",
-  "Dialogues.Wed6": "Everything that is magical feels out of this world.#$b#That's it's purpose.#$e#Looks like the balance of nature is pretty good.",
+  "Dialogues.Wed6": "Everything that is magical feels out of this world.#$b#That's its purpose.#$e#Looks like the balance of nature is pretty good.",
   "Dialogues.Thu6": "%Eleanor is repeating some magic words, so you decide to leave her alone - you don't know what would happen if you disturb her.",
   "Dialogues.Fri6": "I wish I'd have more time today...#$b#There is always something to do, don't you think, {{DT_dialogues}}?",
   "Dialogues.Sat6": "%Eleanor is repeating some magic words, so you decide to leave her alone - you don't know what would happen if you disturb her.",
   "Dialogues.Sun6": "I wonder what magic will Mr. Rasmodius give me to learn next week.",
+  "Dialogues.Sun6_rasmodia": "I wonder what magic will M. Rasmodia give me to learn next week.",
 
   "Dialogues.Mon8": "It's Monday, {{DT_dialogues}}...$s#$e#I might've already said that to you - sorry if I already did, my memory is not quite good -, but I really hate Mondays.#$b#Actually, I don't quite know why, but I hate them a lot...",
   "Dialogues.Tue8": "Magic must be trained from time to time, otherwise you will forget it.#$b#Remember this, {{DT_dialogues}}.",
@@ -124,6 +129,7 @@
   "Dialogues.fall_17": "Hello, {{DT_dialogues}}.#$e#Did I already tell you my birthday is Tomorrow?",
   "Dialogues.fall_18": "It's my birthday today.#$e#How nice...I'm just a year older.#$b#Again...$s",
   "Dialogues.fall_26": "Mr. Rasmodius said he might need my help tomorrow, so expect my presence at Spirit's Eve.",
+  "Dialogues.fall_26_rasmodia": "M. Rasmodia said she might need my help tomorrow, so expect my presence at Spirit's Eve.",
 
   "Dialogues.winter_1": "Winter is here, {{DT_dialogues}}.#$b#I hope you're ready for it.",
   "Dialogues.winter_7": "I'd like to attend the Ice Festival tomorrow.#$b#I love snow and ice, however, I don't like to stay outside when it's freezing.#$e#Looks like we have a solid dilemma here...",
@@ -195,6 +201,7 @@
   "Dialogues.CT.cc_Boulder": "The boulder is gone? Good news indeed this is!#$b#I hope it wasn't too hard to get rid of it...",
   "Dialogues.CT.cc_Bridge": "You repaired the bridge? Great work, {{DT_dialogues}}!#$b#I hope it wasn't too hard to repair it...",
   "Dialogues.CT.cc_Bus": "The bus is fixed? Mr. Rasmodius will be happy.#$b#I hope it wasn't too costly...",
+  "Dialogues.CT.cc_Bus_rasmodia": "The bus is fixed? M. Rasmodia will be happy.#$b#I hope it wasn't too costly...",
   "Dialogues.CT.cc_Greenhouse": "The greenhouse is fixed, you're saying? Nice!#$b#I hope it wasn't too hard to fix...",
   "Dialogues.CT.cc_Minecart": "You repaired these minecarts, as far as I've seen. Well done!#$b#I hope it wasn't too hard to fix them...",
   "Dialogues.CT.cc_Complete": "Honest congratulations, {{DT_dialogues}}!$h#$b#You were able to do it!#$b#To finish the one and only Community Center!#$b#And I thought you would stick with Joja...#$b#I'm so proud of you, {{DT_dialogues}}. Really.$b",
@@ -211,6 +218,7 @@
   "Dialogues.CT.event_postweddingreception": "This was such a beautiful wedding, {{DT_dialogues}}.#$b#I'll remember it forever.",
   "Dialogues.CT.luauBest": "This one was better than the others.",
   "Dialogues.CT.luauShorts": "Heh... I need to ask Mr. Rasmodius if he expected that.#$b#I did.",
+  "Dialogues.CT.luauShorts_rasmodia": "Heh... I need to ask M. Rasmodia if she expected that.#$b#I did.",
   "Dialogues.CT.luauPoisoned": "...#$b#I'm glad I didn't taste it, and also sad for those that did.$s",
   "Dialogues.CT.Characters_MovieInvite_Invited": "You're inviting me to a movie?#$b#Well, I accept your offer, {{DT_dialogues}}.",
   "Dialogues.CT.DumpsterDiveComment": "I won't comment on your behavior.",
@@ -230,15 +238,22 @@
   "Dialogues.CT.SterlingApology": "I'm not sure what has happened between Pierre and Sterling, but he is back at work...#$b#No, {{DT_dialogues}}. It is just between them. I don't want to know it.",
   // Alecto
   "Dialogues.CT.AlectoIntroduction": "Something tells me you met Mr. Rasmodius's ex-wife, Alecto.#$b#No, if you thought I'd blame you for that, I will not.#$b#But please, don't tell him you met her, or something tragic might happen.",
+  "Dialogues.CT.AlectoIntroduction_rasmodia": "Something tells me you met M. Rasmodia's ex-wife, Alecto.#$b#No, if you thought I'd blame you for that, I will not.#$b#But please, don't tell her you met her, or something tragic might happen.",
   "Dialogues.CT.AlectoMr. RasmodiusTower": "I noticed that the magical aura of this place changed for a while not long from now.#$b#I lied to Mr. Rasmodius that I can't detect who nor why it happened, but between you and me, I suppose Alecto was nearby.",
+  "Dialogues.CT.AlectoMr. RasmodiusTower_rasmodia": "I noticed that the magical aura of this place changed for a while not long from now.#$b#I lied to M. Rasmodia that I can't detect who nor why it happened, but between you and me, I suppose Alecto was nearby.",
   // Juna
   "Dialogues.CT.JunaSign": "I saw what Juna did to that poor sign.#$b#Do you know what she has against it? OR what she has against Mr. Rasmodius?",
+  "Dialogues.CT.JunaSign_rasmodia": "I saw what Juna did to that poor sign.#$b#Do you know what she has against it? OR what she has against M. Rasmodia?",
   "Dialogues.CT.JunaBeachBallet": "I'm pretty sure that it's not a thing I should care about, but did you see Juna coming home pretty late at night some days?#$b#As she lives near me and Mr. Rasmodius, I heard her walking a few times.#$b#If you could prove me right or wrong, please let me know, {{DT_dialogues}}.",
   "Dialogues.CT.JunaJunimos": "Abigail told me you, her and Juna hang out with Junimos.#$b#So they both also know about you and Junimos...",
   "Dialogues.CT.JunaGone": "Mr. Rasmodius told me Juna went to her parents.#$b#I'm not sure what will come next...",
-  "Dialogues.CT.JunaWizard": "Juna is living with Mr. Rasmodius and me.#$b#I sense incoming changes between them. We shall see if they will be good or not...",
+  "Dialogues.CT.JunaGone_rasmodia": "M. Rasmodia told me Juna went to her parents.#$b#I'm not sure what will come next...",
+  "Dialogues.CT.JunaWizard": "Juna is living with M. Rasmodia and me.#$b#I sense incoming changes between them. We shall see if they will be good or not...",
+  "Dialogues.CT.JunaWizard_rasmodia": "Juna is living with M. Rasmodia and me.#$b#I sense incoming changes between them. We shall see if they will be good or not...",
   "Dialogues.CT.JunaProtectiveWizard": "I overheard that conversation between Mr. Rasmodius and Juna.#$b#I'm not quite sure why he did it.#$b#And I don't want to know.",
-  "Dialogues.CT.BigFootWizard ": "...#$b#I do not want to know the reason Juna thinks that Mr. Rasmodius is Big Foot.",
+  "Dialogues.CT.JunaProtectiveWizard_rasmodia": "I overheard that conversation between M. Rasmodia and Juna.#$b#I'm not quite sure why she did it.#$b#And I don't want to know.",
+  "Dialogues.CT.BigFootWizard": "...#$b#I do not want to know the reason Juna thinks that Mr. Rasmodius is Big Foot.",
+  "Dialogues.CT.BigFootWizard_rasmodia": "...#$b#I do not want to know the reason Juna thinks that M. Rasmodia is Big Foot.",
   // Lavril
   "Dialogues.CT.LavrilUnlocked": "I sense...#$b#... a friendly ghost released?#$b#Quite unexpected...#$b#You know something about it, {{DT_dialogues}}, don't you?",
   // Lucikiel
@@ -284,6 +299,7 @@
 */
   // Spirit's Eve
   "Dialogues.festivals-fal27": "How do you like the maze?#$b#I helped Mr. Rasmodius with its creating, so I hope you'll like it, {{DT_dialogues}}.",
+  "Dialogues.festivals-fal27_rasmodia": "How do you like the maze?#$b#I helped M. Rasmodia with its creating, so I hope you'll like it, {{DT_dialogues}}.",
   "Dialogues.festivals_spouse-fal27": "Well. You're here, so I am here too.",
   // Festival of Ice
   "Dialogues.festivals-win8": "These ice sculptures and snowmen are beautiful, don't you think, {{DT_dialogues}}?#$b#I'm glad I decided to come.",
@@ -314,7 +330,9 @@
 
   // Marriage edit
   "Dialogues.marriage.Utility.cs.5367": "When Eleanor first arrived as a student of Mr. Rasmodius, we had the same feeling as with {{DT_dialogues}} half a year later - we didn't know if they would fit in with our community...#$b#But from this day forward, both of them are going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite {{DT_dialogues}} and Eleanor in the bonds of marriage.",
+  "Dialogues.marriage.Utility.cs.5367_rasmodia": "When Eleanor first arrived as a student of M. Rasmodia, we had the same feeling as with {{DT_dialogues}} half a year later - we didn't know if they would fit in with our community...#$b#But from this day forward, both of them are going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite {{DT_dialogues}} and Eleanor in the bonds of marriage.",
   "Dialogues.marriage.Utility.cs.5369": "When Eleanor first arrived as a student of Mr. Rasmodius, we had the same feeling as with {{DT_dialogues}} half a year later - we didn't know if they would fit in with our community...#$b#But from this day forward, both of them are going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite {{DT_dialogues}} and Eleanor in the bonds of marriage.",
+  "Dialogues.marriage.Utility.cs.5369_rasmodia": "When Eleanor first arrived as a student of M. Rasmodia, we had the same feeling as with {{DT_dialogues}} half a year later - we didn't know if they would fit in with our community...#$b#But from this day forward, both of them are going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite {{DT_dialogues}} and Eleanor in the bonds of marriage.",
   "Dialogues.marriage.Utility.cs.5370": "Well, let's get right to it!",
   "Dialogues.marriage.Utility.cs.5371": "{{DT_dialogues}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you husband and... well, husband!$h",
   "Dialogues.marriage.Utility.cs.5373": "{{DT_dialogues}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you husband and wife!$h",
@@ -415,6 +433,7 @@
   "Events.Intro.0": "I wish you a good morning, {{DT_dialogues}}.",
   "Events.Intro.1": "Who am I, you ask?",
   "Events.Intro.2": "My name is Eleanor, I live at Mr. Rasmodius's tower - you already met him - and I help him with keeping the village safe.",
+  "Events.Intro.2_rasmodia": "My name is Eleanor, I live at M. Rasmodia's tower - you already met her - and I help him with keeping the village safe.",
   "Events.Intro.3": "And from him, I know about you and your 'rat problem'.#$b#You don't have to worry, the Junimos are not dangerous.",
   "Events.Intro.4": "I hope you'll have good luck with your farm. It has magic soil, you know, I can feel it.#$b#Anyways, may your time here in Pelican town be joyful.",
 
@@ -426,6 +445,7 @@
   "Events.2h.4_yes": "I'm glad you like it too.$h#$b#I like to come here and relax when I have some free time.#$b#It's so peaceful here. I can think about everything and nothing at the same time.",
   "Events.2h.4_no": "Oh...$s#$b#Honestly, I would like to know what you would like to see here.#$b#You, as a farmer, should like nature, am I right?#$b#But I can understand if you don't like it. Everyone has their own opinion.",
   "Events.2h.5": "Anyways, I have to return to Mr. Rasmodius. He's waiting for me.#$b#May you have a good day, {{DT_dialogues}}.",
+  "Events.2h.5_rasmodia": "Anyways, I have to return to M. Rasmodia. She's waiting for me.#$b#May you have a good day, {{DT_dialogues}}.",
 
   // 4 hearts
   "Events.4h.0": "It's not there...",
@@ -440,11 +460,12 @@
   "Events.4h.7_time": "Could you, please, check that bookshelf?#$b#I'll check the other ones.",
   "Events.4h.7_notime": "Before you left, you noticed and pointed out to something covered in dust, so Eleanor checked it out. Turned out, it was the book she was looking for!#She thanked you for your help and somehow, you feel closer to her.", //message
   "Events.4h.8": "I haven't even told you what I'm looking for? Oh, that's true, sorry!#$b#It's a big dark green book about the history of these lands, and I got it from Mr. Rasmodius to study.",
+  "Events.4h.8_rasmodia": "I haven't even told you what I'm looking for? Oh, that's true, sorry!#$b#It's a big dark green book about the history of these lands, and I got it from M. Rasmodia to study.",
   "Events.4h.9": "You see a lot of books there, but none of them is the one you are looking for, so you decide to check the other half of the bookshelf.", //message
   "Events.4h.10": "At first, you don't see anything, but then you notice something covered in dust...#Could it be the book Eleanor is looking for?", //message
   "Events.4h.11": "As you didn't quite know how to clean it without damaging it, you called Eleanor.", //message
   "Events.4h.12": "Hmm...#$b#Too many dust on it... Strange.#$b#But it's the book I was looking for!",
-  "Events.4h.13": "Thank you, @!#$b#Oh wait, do you mind me calling you like that?", // do not change @ for {{DT_dialogues}}
+  "Events.4h.13": "Thank you, @!#$b#Oh wait, do you mind me calling you like that?", // do not change @ for {{DT_dialogues}}!
 
   /*
   // 6 hearts
@@ -468,6 +489,7 @@
   "Events.7h.7": "I think you might notice that I don't have as many friends as you.#$b#But it wasn't always like that...",
   "Events.7h.8": "When I was a small kid, I had a lot of friends...#$b#But then, one day, many years ago, something terrible happened, and my whole life turned upside down...$s",
   "Events.7h.9": "I don't want to talk about it right now, but I will tell you about it one day, I promise.#$b#Right now, I have barely any friends. Abigail is the only one who I can call a friend, but that is due to something different...#$b#...then Mr. Rasmodius, even though he is more of a parent and mentor for me...#$b#...and then you, {{DT_dialogues}}.#$b#I might also consider Linus or Sophia as my friends, but I am not sure about them...",
+  "Events.7h.9_rasmodia": "I don't want to talk about it right now, but I will tell you about it one day, I promise.#$b#Right now, I have barely any friends. Abigail is the only one who I can call a friend, but that is due to something different...#$b#...then M. Rasmodia, even though he is more of a parent and mentor for me...#$b#...and then you, {{DT_dialogues}}.#$b#I might also consider Linus or Sophia as my friends, but I am not sure about them...",
   "Events.7h.10": "I am sorry, I am talking too much about myself. I should stop now.#$b#Thanks for listening to me, though, {{DT_dialogues}}. I really appreciate it.",
   "Events.7h.11": "Do you want to watch the rain and the waterfall here with me?#$b#I think it's a good place to relax and think about everything and nothing at the same time.",
   "Events.7h.12": "You shared a nice moment with Eleanor. You feel like you are closer to each other now.",
@@ -595,14 +617,17 @@
   "Events.14h-p1.32": "...but you know that would be true if you won't do anything about it.#You have to find her, you have to help her, you have to...#...you have to do something about this!",
   "Events.14h-p1.33": "You packed some of your stuff and some of her stuff, plus some generic things like food and drinks.#Then you ran out of the house with Eleanor's letter in your hand, knowing that you have to find her, no matter what...#...and you have to do it as soon as it would be even possible!",
   "Events.14h-p1.34": "Next stop: Mr. Rasmodius's tower. You have to find out if he knows something, anything about Eleanor's past, about her parents, about her...",
+  "Events.14h-p1.34_rasmodia": "Next stop: M. Rasmodia's tower. You have to find out if she knows something, anything about Eleanor's past, about her parents, about her...",
 
   // part 2/5
   "Events.14h-p2.0": "Mr. Rasmodius's tower, around the same time you left your house...", // message
+  "Events.14h-p2.0_rasmodia": "M. Rasmodia's tower, around the same time you left your house...", // message
   "Events.14h-p2.1": "Yet another morning...#$b#Wait. Something is not correct.#$b#I can feel it in the air...#$b#...but what is it?",
   "Events.14h-p2.2": "Hmm...#$b#I sense a shift in the magical energy around me...",
   "Events.14h-p2.3": "I know this feeling...#$b#...but I can't remember when I felt it last time...#$b#...and what happened then...",
   "Events.14h-p2.4": "Oh!#$b#{{DT_dialogues}}!#$b#Why are you here this early?",
   "Events.14h-p2.5": "You tell Mr. Rasmodius about Eleanor's situation. He listens to you carefully, but he doesn't say anything.", // message
+  "Events.14h-p2.5_rasmodia": "You tell M. Rasmodia about Eleanor's situation. He listens to you carefully, but he doesn't say anything.", // message
   "Events.14h-p2.6": "So that is why the magical energy is uncommon today...",
   "Events.14h-p2.7": "Well, it is my duty to help you find her, {{DT_dialogues}}.#$b#Especially when she is my apprentice.",
   "Events.14h-p2.8": "*...sighs...*#$b#I hope they'll forgive me for this...",
@@ -614,6 +639,7 @@
 
   // part 3/5
   "Events.14h-p3.0": "Forest, just a few steps from Sprite Spring, after teleporting there with Mr. Rasmodius's help...", // message
+  "Events.14h-p3.0_rasmodia": "Forest, just a few steps from Sprite Spring, after teleporting there with M. Rasmodia's help...", // message
   "Events.14h-p3.1": "As I expected, she isn't here...#$b#...but I can feel her magical aura...",
   //"Event.14h-p3.1-commented": "Sadly, this isn't the place you are now, Eleanor...#...but I can feel your magical aura...", // message
   "Events.14h-p3.2": "You notice something laying on the ground, a few steps from you...", // message
@@ -621,6 +647,7 @@
   "Events.14h-p3.4": "You start reading it, and you can't believe what you see...", // message
   "Events.14h-p3.5": "...neither can you define what you see, because it's just a bunch of random letters and numbers.#$b#But you can feel that it's connected with Eleanor, somehow...", // message
   "Events.14h-p3.6": "Mr. Rasmodius walks to you and he looks at the paper you're holding in your hand...", // message
+  "Events.14h-p3.6_rasmodia": "M. Rasmodia walks to you and she looks at the paper you're holding in your hand...", // message
   "Events.14h-p3.7": "Oh no, this is not good...#$b#...this is not good at all...",
   "Events.14h-p3.8": "What am I talking about?#$b#I'm talking about the fact that this is a magical paper, and it's connected with Eleanor, in a way you can't even imagine...",
   "Events.14h-p3.9": "That is a well-encrypted message, {{DT_dialogues}}.#$b#And what's worse, this encrypted message is connected with Eleanor's past...",
@@ -661,6 +688,7 @@
   "Events.14h-p3.39": "Bye for now, my loved {{DT_dialogues}}.", // message
   "Events.14h-p3.40": "Your heart is full of worries, your head is full of thoughts, your eyes are full of tears...", // message
   "Events.14h-p3.41": "You want to share the note with Mr. Rasmodius, but you can't find him anywhere...#You know he was reading both the note and the decrypted message, but you can't find him anywhere...", // message
+  "Events.14h-p3.41_rasmodia": "You want to share the note with M. Rasmodia, but you can't find him anywhere...#You know he was reading both the note and the decrypted message, but you can't find him anywhere...", // message
   "Events.14h-p3.42": "It looks like he left you alone, with a note in your hand, with a feeling that you're never going to see Eleanor again...", // message
   "Events.14h-p3.43": "...#This problem is getting bigger and bigger, and you have to find a solution, no matter what...#...and you have to do it as soon as it would be even possible!", // message
   "Events.14h-p3.44": "And with that, you start running to the town, to meet her only friend there - Abigail.", // message
