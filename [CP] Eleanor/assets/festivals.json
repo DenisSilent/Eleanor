@@ -9,20 +9,24 @@ win: 8y;25y
   "Changes": [
     // Flower Dance //
     {
-      "LogName": "Eleanor - spr24 festival location",
+      "LogName": "Eleanor - spr24 festivals",
       "Action": "EditData",
       "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "StrojvedouciDenis.Eleanor": "{{i18n:Dialogues.festivals-spr24 |DT_dialogues={{DT_dialogues}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Dialogues.festivals_spouse-spr24 |DT_dialogues={{DT_dialogues}}}}"
+      },
       "TextOperations": [
         {
           "Operation": "Append",
           "Target": ["Entries", "Set-Up_additionalCharacters"],
-          "Value": "Eleanor 18 20 2",
+          "Value": "StrojvedouciDenis.Eleanor 18 20 2",
           "Delimiter": "/"
         },
         {
           "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
-          "Value": "Eleanor 18 20 2",
+          "Value": "StrojvedouciDenis.Eleanor 18 20 2",
           "Delimiter": "/"
         }
       ]
@@ -30,20 +34,24 @@ win: 8y;25y
 
     // Dance of the Moonlight Jellies //
     {
-      "LogName": "Eleanor - sum28 festival location",
+      "LogName": "Eleanor - sum28 festivals",
       "Action": "EditData",
       "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "StrojvedouciDenis.Eleanor": "{{i18n:Dialogues.festivals-sum28 |DT_dialogues={{DT_dialogues}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Dialogues.festivals_spouse-sum28 |DT_dialogues={{DT_dialogues}}}}"
+      },
       "TextOperations": [
         {
           "Operation": "Append",
           "Target": ["Entries", "Set-Up_additionalCharacters"],
-          "Value": "Eleanor 63 5 1",
+          "Value": "StrojvedouciDenis.Eleanor 10 39 1",
           "Delimiter": "/"
         },
         {
           "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
-          "Value": "Eleanor 63 5 1",
+          "Value": "StrojvedouciDenis.Eleanor 10 39 1",
           "Delimiter": "/"
         }
       ]
@@ -51,20 +59,24 @@ win: 8y;25y
 
     // Stardew Valley Fair //
     {
-      "LogName": "Eleanor - fal16 festival location",
+      "LogName": "Eleanor - fal16 festivals",
       "Action": "EditData",
       "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "StrojvedouciDenis.Eleanor": "{{i18n:Dialogues.festivals-fal16 |DT_dialogues={{DT_dialogues}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Dialogues.festivals_spouse-fal16 |DT_dialogues={{DT_dialogues}}}}"
+      },
       "TextOperations": [
         {
           "Operation": "Append",
           "Target": ["Entries", "Set-Up_additionalCharacters"],
-          "Value": "Eleanor 40 85 2",
+          "Value": "StrojvedouciDenis.Eleanor 47 88 0",
           "Delimiter": "/"
         },
         {
           "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
-          "Value": "Eleanor 40 85 3",
+          "Value": "StrojvedouciDenis.Eleanor 47 88 0",
           "Delimiter": "/"
         }
       ]
@@ -72,20 +84,24 @@ win: 8y;25y
 
     // Spirit's Eve //
     {
-      "LogName": "Eleanor - fal27 festival location",
+      "LogName": "Eleanor - fal27 festivals",
       "Action": "EditData",
       "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "StrojvedouciDenis.Eleanor": "{{i18n:Dialogues.festivals-fal27 |DT_dialogues={{DT_dialogues}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Dialogues.festivals_spouse-fal27 |DT_dialogues={{DT_dialogues}}}}"
+      },
       "TextOperations": [
         {
           "Operation": "Append",
           "Target": ["Entries", "Set-Up_additionalCharacters"],
-          "Value": "Eleanor 38 58 2",
+          "Value": "StrojvedouciDenis.Eleanor 38 58 2",
           "Delimiter": "/"
         },
         {
           "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
-          "Value": "Eleanor 38 58 2",
+          "Value": "StrojvedouciDenis.Eleanor 38 58 2",
           "Delimiter": "/"
         }
       ]
@@ -93,20 +109,24 @@ win: 8y;25y
 
     // Ice Festival //
     {
-      "LogName": "Eleanor - win8 festival location",
+      "LogName": "Eleanor - win8 festivals",
       "Action": "EditData",
       "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "StrojvedouciDenis.Eleanor": "{{i18n:Dialogues.festivals-win8 |DT_dialogues={{DT_dialogues}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Dialogues.festivals_spouse-win8 |DT_dialogues={{DT_dialogues}}}}"
+      },
       "TextOperations": [
         {
           "Operation": "Append",
           "Target": ["Entries", "Set-Up_additionalCharacters"],
-          "Value": "Eleanor 30 12 3",
+          "Value": "StrojvedouciDenis.Eleanor 30 12 3",
           "Delimiter": "/"
         },
         {
           "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
-          "Value": "Eleanor 30 12 3",
+          "Value": "StrojvedouciDenis.Eleanor 30 12 3",
           "Delimiter": "/"
         }
       ]
@@ -114,87 +134,27 @@ win: 8y;25y
 
     // Feast of the Winter Star //
     {
-      "LogName": "Eleanor - win25 festival location",
+      "LogName": "Eleanor - win25 festivals",
       "Action": "EditData",
       "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "StrojvedouciDenis.Eleanor": "{{i18n:Dialogues.festivals-win25 |DT_dialogues={{DT_dialogues}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Dialogues.festivals_spouse-win25 |DT_dialogues={{DT_dialogues}}}}"
+      },
       "TextOperations": [
         {
           "Operation": "Append",
           "Target": ["Entries", "Set-Up_additionalCharacters"],
-          "Value": "Eleanor 14 64 3",
+          "Value": "StrojvedouciDenis.Eleanor 14 64 3",
           "Delimiter": "/"
         },
         {
           "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
-          "Value": "Eleanor 14 64 3",
+          "Value": "StrojvedouciDenis.Eleanor 14 64 3",
           "Delimiter": "/"
         }
       ]
-    },
-
-    // Festival dialogues //
-    {
-      "LogName": "Eleanor - spr24 festival dialogue",
-      "Action": "EditData",
-      "Target": "Data/Festivals/spring24",
-      "Entries": {
-        "Eleanor_fest-spr24": "{{i18n:Dialogues.festivals-spr24 |DT_dialogues={{DT_dialogues}}}}",
-        "Eleanor_fest_spouse-spr24": "{{i18n:Dialogues.festivals_spouse-spr24 |DT_dialogues={{DT_dialogues}}}}"
-      }
-    },
-    {
-      "LogName": "Eleanor - sum28 festival dialogue",
-      "Action": "EditData",
-      "Target": "Data/Festivals/summer28",
-      "Entries": {
-        "Eleanor_fest-sum28": "{{i18n:Dialogues.festivals-sum28 |DT_dialogues={{DT_dialogues}}}}",
-        "Eleanor_fest_spouse-sum28": "{{i18n:Dialogues.festivals_spouse-sum28 |DT_dialogues={{DT_dialogues}}}}"
-      }
-    },
-    {
-      "LogName": "Eleanor - fal16 festival dialogue",
-      "Action": "EditData",
-      "Target": "Data/Festivals/fall16",
-      "Entries": {
-        "Eleanor_fest-fal16": "{{i18n:Dialogues.festivals-fal16 |DT_dialogues={{DT_dialogues}}}}",
-        "Eleanor_fest_spouse-fal16": "{{i18n:Dialogues.festivals_spouse-fal16 |DT_dialogues={{DT_dialogues}}}}"
-      }
-    },
-    {
-      "LogName": "Eleanor - fal27 festival dialogue",
-      "Action": "EditData",
-      "Target": "Data/Festivals/fall27",
-      "Entries": {
-        "Eleanor_fest-fal27": "{{i18n:Dialogues.festivals-fal27 |DT_dialogues={{DT_dialogues}}}}",
-        "Eleanor_fest_spouse-fal27": "{{i18n:Dialogues.festivals_spouse-fal27 |DT_dialogues={{DT_dialogues}}}}"
-      }
-    },
-    {
-      "LogName": "Eleanor - win8 festival dialogue",
-      "Action": "EditData",
-      "Target": "Data/Festivals/winter8",
-      "Entries": {
-        "Eleanor_fest-win8": "{{i18n:Dialogues.festivals-win8 |DT_dialogues={{DT_dialogues}}}}",
-        "Eleanor_fest_spouse-win8": "{{i18n:Dialogues.festivals_spouse-win8 |DT_dialogues={{DT_dialogues}}}}"
-      }
-    },
-    {
-      "LogName": "Eleanor - win25 festival dialogue",
-      "Action": "EditData",
-      "Target": "Data/Festivals/winter25",
-      "Entries": {
-        "Eleanor_fest-win25": "{{i18n:Dialogues.festivals-win25 |DT_dialogues={{DT_dialogues}}}}",
-        "Eleanor_fest_spouse-win25": "{{i18n:Dialogues.festivals_spouse-win25 |DT_dialogues={{DT_dialogues}}}}"
-      }
-    },
-    {
-      "LogName": "Eleanor - non-festival festival dialogues",
-      "Action": "EditData",
-      "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
-      "Entries": {
-        "Dialogues.WinterStar_ReceiveGift": "{{i18n:Dialogues.WinterStar_ReceiveGift |DT_dialogues={{DT_dialogues}}}}"
-      }
     }
   ]
 }

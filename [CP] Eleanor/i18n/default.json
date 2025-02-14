@@ -14,12 +14,12 @@
   "config.Festivals.name": "Festivals",
   "config.Festivals.values.true": "true",
   "config.Festivals.values.false": "false",
-  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 0.7.3 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
+  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 0.8.0 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
 
   "config.Marriage.name": "Marriage",
   "config.Marriage.values.true": "true",
   "config.Marriage.values.false": "false",
-  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.7.3, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
+  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.8.0, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
 
   "config.14hearts-variants.name": "14 hearts event variant",
   "config.14hearts-variants.values.short": "short",
@@ -40,7 +40,7 @@
   "config.Graphics.values.one look only": "one look only",
   "config.Graphics.values.vanilla": "vanilla",
   "config.Graphics.values.full": "full",
-  "config.Graphics.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.7.3, it includes around 30%-done content. Default setting: only one look.",
+  "config.Graphics.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.8.0, it includes around 30%-done content. Default setting: only one look.",
 
   // Experimental - DoNotChange
 
@@ -51,7 +51,7 @@
   "config.On/off.values.on": "on",
   "config.On/off.values.safe mode": "safe mode",
   "config.On/off.values.off": "off",
-  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 0.7.3, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
+  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 0.8.0, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
 
   // Eleanor's name
   "DisplayName": "Eleanor",
@@ -105,8 +105,8 @@
   "Dialogues.Wed10": "Hey, {{DT_dialogues}}, such a nice day today, isn't it?$h#$b#Me? I'm doing well, thank you for asking.",
   "Dialogues.Thu10": "%Eleanor is mumbling something to herself.#$b#%You recognize that you already heard this language before, but you don't know it.",
   "Dialogues.Fri10": "Lovely day, isn't it, {{DT_dialogues}}$h?#$b#Especially with your presence...$b",
-  "Dialogues.Sat10": "%Looks like Eleanor's head is in the clouds.#$b#%You decide to leave her alone...#$b#...at least for now.",
-  "Dialogues.Sun10": "%Eleanor is mumbling something to herself.#$b#%You have a feeling it was about... love?#$b#An unexpected theme, indeed.#$b#You start to think if her thoughts are caused by you...",
+  "Dialogues.Sat10": "%Looks like Eleanor's head is in the clouds.#$b#%You decide to leave her alone...#$b#%...at least for now.",
+  "Dialogues.Sun10": "%Eleanor is mumbling something to herself.#$b#%You have a feeling it was about... love?#$b#%An unexpected theme, indeed. You start to think if her thoughts are caused by you...",
 
   // Specific day dialogues
   //Note: Will work only on the first year due to the way the game checks for the dayOfMonth line. Use the format season_dayOfMonth_2 for dialogue in year 2 and later. Ex "summer_10_2". You can only check for 1 (first year) or 2 (all years after). If you want a dialogue to appear on a specific year, consider using CP conditions in addition to the "_2" suffix
@@ -269,10 +269,10 @@
   "Dialogues.festivals-spr24": "I really like dancing, {{DT_dialogues}}, do you like it too?",
   "Dialogues.festivals_spouse-spr24": "Well. You're here, so I am here too.",
   // Dance of the Moonlight Jellies
-  "Dialogues.festivals-sum28": "Moonlight Jellies...#$b# {{DT_dialogues}}, do you know that their name is different?",
+  "Dialogues.festivals-sum28": "Moonlight Jellies...#$b#{{DT_dialogues}}, do you know that their name is different?",
   "Dialogues.festivals_spouse-sum28": "Well. You're here, so I am here too.",
   // Stardew Valley Fair
-  "Dialogues.festivals-fal16": "%Eleanor is in a conversation with that Welwick from TV.#$b#However, they talk in a language you never heard before.",
+  "Dialogues.festivals-fal16": "%Eleanor is in a conversation with that Welwick from TV.#$b#%However, they talk in a language you never heard before.",
   "Dialogues.festivals_spouse-fal16": "Well. You're here, so I am here too.",
   /*
 "Dialogues.Fair_Judging": "",
@@ -415,16 +415,16 @@
   "Events.Intro.0": "I wish you a good morning, {{DT_dialogues}}.",
   "Events.Intro.1": "Who am I, you ask?",
   "Events.Intro.2": "My name is Eleanor, I live at Mr. Rasmodius's tower - you already met him - and I help him with keeping the village safe.",
-  "Events.Intro.3": "And from him, I know about you and your 'rat problem'.#$b#You may not worry, the Junimos are not dangerous.",
-  "Events.Intro.4": "Anyways, may your time here in Pelican town be joyful.",
+  "Events.Intro.3": "And from him, I know about you and your 'rat problem'.#$b#You don't have to worry, the Junimos are not dangerous.",
+  "Events.Intro.4": "I hope you'll have good luck with your farm. It has magic soil, you know, I can feel it.#$b#Anyways, may your time here in Pelican town be joyful.",
 
   // 2 hearts
   "Events.2h.0": "Good morning, {{DT_dialogues}}!",
   "Events.2h.1": "Above you!",
   "Events.2h.2": "Hehe...$h#$b#Took you a while to notice me, didn't it?",
-  "Events.2h.3_q": "Such nice nature here, don't you think?#I know! It's beautiful!#I don't like it. There should be built something more useful.",
+  "Events.2h.3_q": "Such nice nature here, don't you think?#I know! It's beautiful!#I don't like it. Something more useful should be built here.",
   "Events.2h.4_yes": "I'm glad you like it too.$h#$b#I like to come here and relax when I have some free time.#$b#It's so peaceful here. I can think about everything and nothing at the same time.",
-  "Events.2h.4_no": "Oh...$s#$b#Honestly, I would like to know what you would like to see here.$s#$b#You, as a farmer, should like nature, am I right?#$b#But I can understand if you don't like it. Everyone has their own opinion.",
+  "Events.2h.4_no": "Oh...$s#$b#Honestly, I would like to know what you would like to see here.#$b#You, as a farmer, should like nature, am I right?#$b#But I can understand if you don't like it. Everyone has their own opinion.",
   "Events.2h.5": "Anyways, I have to return to Mr. Rasmodius. He's waiting for me.#$b#May you have a good day, {{DT_dialogues}}.",
 
   // 4 hearts
@@ -432,7 +432,7 @@
   "Events.4h.1": "Not here...",
   "Events.4h.2": "Oh, hello, {{DT_dialogues}}! What brings you here?",
   "Events.4h.3": "You heard a noise from downstairs, so you decided to check it out?#$b#Heh... I should be quieter next time.",
-  "Events.4h.4": "It was just me, looking for a book to study...#$b#I can't find it, though...",
+  "Events.4h.4": "It was just me, looking for a certain book to study...#$b#I can't find it, though...",
   "Events.4h.5_q": "Would you like to help me find it?#Of course!#I'll help, but why don't you use magic to find it?#Sorry, I have little time.",
   "Events.4h.6_time": "You'll help me? Glad to hear that!#$b#I'll be grateful for your help, {{DT_dialogues}}.",
   "Events.4h.6_magic": "Well, the book is very, very old, and the spell might destroy it, so it's safer to find it manually.",
@@ -461,7 +461,7 @@
   "Events.7h.1": "So, you are saying that you saw me standing here and decided to check on me?#$b#That is nice of you. Thank you, and don't worry, I am pretty fine.$l",
   "Events.7h.2": "I was just thinking about my life and where I am in it right now...#$b#And before you even ask, no, I am not going to jump from the cliff. I am pretty happy with my life.",
   "Events.7h.3_q": "What about you, are you enjoying your life here in Pelican Town?#I do enjoy it! The community here is so nice!#I still kinda regret leaving the city...",
-  "Events.7h.4_yes": "I'm glad you like it here!#$b#I didn't know about the community, but as no one is complaining about my nor Morgan's presence, I suppose they are pretty tolerating.",
+  "Events.7h.4_yes": "I'm glad you like it here!#$b#I didn't know about the community, but as no one is complaining about my nor Magnus's presence, I suppose they are pretty tolerating.",
   "Events.7h.4_no": "Do you? Really?#$b#Because I can see that you are happy here.",
   "Events.7h.5": "You know, since I came here, I feel like I am at home.#$b#And I am happy that I can call this place my home.#$b#I hope you have this feeling too, {{DT_dialogues}}.",
   "Events.7h.6": "On a more personal note, I am happy that I can call you my friend, {{DT_dialogues}}.$l",
@@ -785,8 +785,8 @@
   "Secret.Dialogues.festivals.spouse-sum11": "Here you have, my loved {{DT_dialogues}}.$action AddItem 71 10 3#$b#Try to add one of these to the soup and wait if the gouvernor will notice them...#$b#(Eleanor secret 2B)",
 
    "Secret.Mail.Eleanor_warning": "Dear player of Stardew Valley (a.k.a. {{DT_dialogues}}),^^if you don't know, you installed a custom NPC mod that adds an NPC named Eleanor. If -  by any chance - you paid for this mod, please demand a full refund immediately, as this mod is fully free and downloadable from Nexus Mods (ID is XXXXX).^^-StrojvedouciDenis; author of NPC Eleanor^^^^^^^^^^^PS: Thanks to NPC mod Qingfeng and the 'secret message warning' in it that inspired me to this.",
-  // "Secret.Mail.Eleanor_warning": "Test",
+  // "Secret.Mail.Eleanor_warning": "Test",     // left here in memory of the discusion on Discord on 10.2.2025
 
-  "Secret.Event.Eleanor_ending.0": "Congratulations!#$b#You triggered all secrets and fully completed this mod's content. You are the best!",
-  "Secret.Event.Eleanor_ending.1": "Thank you so much for playing with this mod! May this Stardew Valley game make You happy."
+  "Secret.Event.Eleanor_ending.0": "Congratulations!#You triggered all secrets and fully completed this mod's content. You are the best!", // message
+  "Secret.Event.Eleanor_ending.1": "Thank you so much for playing with this mod! May this Stardew Valley game make You happy." // message
 }

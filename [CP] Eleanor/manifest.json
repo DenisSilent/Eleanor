@@ -11,7 +11,7 @@
 
   // Current Version
 
-  "Version": "0.7.3",
+  "Version": "0.8.0",
 
   // Description
 
@@ -23,7 +23,7 @@
 
   // Update Keys
 
-  "UpdateKeys": ["GitHub:DenisSilent/Eleanor"],
+  "UpdateKeys": ["Nexus:31663", "GitHub:DenisSilent/Eleanor"],
 
   // Framework Manifest ID
 
