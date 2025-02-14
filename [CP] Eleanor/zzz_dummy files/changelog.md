@@ -4,6 +4,12 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ---
 
+## version 0.8.2 (14.2.2025)
+
+* Fixed basic compactibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
+
+---
+
 ## version 0.8.1 (14.2.2025)
 
 * Added basic compactibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
