@@ -315,7 +315,7 @@ commented out because of the missing art
     "KissSpriteFacingDirection": "true",
 */
           "HiddenProfileEmoteSound": "achievement", // some secret, don't remember what it was
-          "HiddenProfileEmoteDuration": "5000", // some secret, don't remember what it was; 5000 = 5 seconds
+          "HiddenProfileEmoteDuration": "5000" // some secret, don't remember what it was; 5000 = 5 seconds
           /*
     "HiddenProfileEmoteStartFrame": "",
     "HiddenProfileEmoteFrameCount": "",

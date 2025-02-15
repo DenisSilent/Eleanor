@@ -1,4 +1,3 @@
-
 [b][size=5]NPC Eleanor[/size][/b]
 
 [size=3]Eleanor is a young witch who studies at Mr. Rasmodius' tower.[/size]
@@ -40,7 +39,7 @@ Eleanor is a young witch who studies under the guidance of the local wizard, Mr.
 [*][url=https://www.nexusmods.com/stardewvalley/mods/7286]RSV[/url] - should be fully compatible (there might be bugs; if you report them, I'll try my best to fix them)
 [*][url=https://www.nexusmods.com/stardewvalley/mods/5787]ES[/url] - should be fully compatible (there might be bugs; if you report them, I'll try my best to fix them)
 [*]Other NPC mods:
-  ... I'll be honest - this mod *might or might not* work with NPC mods you use. I expect many bugs with many NPCs; if you report them, I'll try my best to fix them. For festivals, I work by LemurKat's method "First in gets priority" which is described [url=https://lemurkat.wordpress.com/2021/11/13/help-theyre-overlapping-at-a-festival/]here.[/url] And as my mod is pretty new, I expect A LOT of festival moves on my side.[*]Other mods:
+  ... I'll be honest - this mod *might or might not* work with NPC mods you use. I expect many bugs with many NPCs; if you report them, I'll try my best to fix them. For festivals, I work by LemurKat's method "First in gets priority" which is described [url=https://lemurkat.wordpress.com/2021/11/13/help-theyre-overlapping-at-a-festival/]here.[/url] And as my mod is pretty new, I expect A LOT of festival moves on my side. BTW, Eleanor will react to these NPC mods: BTW, she also reacts to some events from Always Raining in the Valley, Alecto, Lavril, Lucikiel, RSV, Leilani, Jorts and Jean, Rodney and Yri (incompatible in 1.6).[*]Other mods:
   There shouldn't be any technical incompatibility, but there might be some things that might not be 100% "lore friendly", so compatible, but:  ...only time will tell...[/list]
 
 [b][size=4]Credits:[/size][/b]

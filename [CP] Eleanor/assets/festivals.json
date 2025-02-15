@@ -20,13 +20,13 @@ win: 8y;25y
         {
           "Operation": "Append",
           "Target": ["Entries", "Set-Up_additionalCharacters"],
-          "Value": "StrojvedouciDenis.Eleanor 18 20 2",
+          "Value": "StrojvedouciDenis.Eleanor 3 23 1",
           "Delimiter": "/"
         },
         {
           "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
-          "Value": "StrojvedouciDenis.Eleanor 18 20 2",
+          "Value": "StrojvedouciDenis.Eleanor 3 23 1",
           "Delimiter": "/"
         }
       ]
@@ -45,13 +45,13 @@ win: 8y;25y
         {
           "Operation": "Append",
           "Target": ["Entries", "Set-Up_additionalCharacters"],
-          "Value": "StrojvedouciDenis.Eleanor 10 39 1",
+          "Value": "StrojvedouciDenis.Eleanor 14 39 2",
           "Delimiter": "/"
         },
         {
           "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
-          "Value": "StrojvedouciDenis.Eleanor 10 39 1",
+          "Value": "StrojvedouciDenis.Eleanor 14 39 2",
           "Delimiter": "/"
         }
       ]
@@ -95,13 +95,13 @@ win: 8y;25y
         {
           "Operation": "Append",
           "Target": ["Entries", "Set-Up_additionalCharacters"],
-          "Value": "StrojvedouciDenis.Eleanor 38 58 2",
+          "Value": "StrojvedouciDenis.Eleanor 12 57 1",
           "Delimiter": "/"
         },
         {
           "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
-          "Value": "StrojvedouciDenis.Eleanor 38 58 2",
+          "Value": "StrojvedouciDenis.Eleanor 12 57 1",
           "Delimiter": "/"
         }
       ]
@@ -120,13 +120,13 @@ win: 8y;25y
         {
           "Operation": "Append",
           "Target": ["Entries", "Set-Up_additionalCharacters"],
-          "Value": "StrojvedouciDenis.Eleanor 30 12 3",
+          "Value": "StrojvedouciDenis.Eleanor 30 12 1",
           "Delimiter": "/"
         },
         {
           "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
-          "Value": "StrojvedouciDenis.Eleanor 30 12 3",
+          "Value": "StrojvedouciDenis.Eleanor 30 12 1",
           "Delimiter": "/"
         }
       ]

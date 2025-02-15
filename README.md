@@ -33,7 +33,7 @@ Eleanor is a young witch who studies under the guidance of the local wizard, Mr.
 * [RSV](https://www.nexusmods.com/stardewvalley/mods/7286) - should be fully compatible (there might be bugs; if you report them, I'll try my best to fix them)
 * [ES](https://www.nexusmods.com/stardewvalley/mods/5787) - should be fully compatible (there might be bugs; if you report them, I'll try my best to fix them)
 * Other NPC mods:
-  ... I'll be honest - this mod *might or might not* work with NPC mods you use. I expect many bugs with many NPCs; if you report them, I'll try my best to fix them. For festivals, I work by LemurKat's method "First in gets priority" which is described [here.](https://lemurkat.wordpress.com/2021/11/13/help-theyre-overlapping-at-a-festival/) And as my mod is pretty new, I expect A LOT of festival moves on my side.
+  ... I'll be honest - this mod *might or might not* work with NPC mods you use. I expect many bugs with many NPCs; if you report them, I'll try my best to fix them. For festivals, I work by LemurKat's method "First in gets priority" which is described [here.](https://lemurkat.wordpress.com/2021/11/13/help-theyre-overlapping-at-a-festival/) And as my mod is pretty new, I expect A LOT of festival moves on my side. BTW, Eleanor will react to these NPC mods: BTW, she also reacts to some events from Always Raining in the Valley, Alecto, Lavril, Lucikiel, RSV, Leilani, Jorts and Jean, Rodney and Yri (incompatible in 1.6).
 * Other mods:
   There shouldn't be any technical incompatibility, but there might be some things that might not be 100% "lore friendly", so compatible, but:
   ...only time will tell...
@@ -78,6 +78,5 @@ Portraits for Eleanor are made using [https://jazzybee.itch.io/sdvcharactercreat
 This NPC mod *might* (I tried my best to not include anything, but...) include parts of content from other mods. You may not worry, there is NO content like dialogues/events/etc. in this mod, but many things from many different mods were used as a template so I could make this mod work.
 
 However, everything that's NOT created by me is subject to the rights and/or licenses of other authors. If the author doesn't agree with including their content in this mod, please contact me immediately on Nexus Mods, and I'll remove the content from my mod. Please, do not report me/my mod for violating Your rights to Your content, as we can resolve this issue peacefully. I value Your contributions to the community of Stardew Valley and/or other games, and I can guarantee that I do NOT want to steal/dishonest/... Your work.
-
 
 (Please, note that this is my first public mod ever, so sorry for some things that might be done better)
