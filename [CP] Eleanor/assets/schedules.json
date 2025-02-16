@@ -28,60 +28,60 @@
       "Action": "EditData",
       "Target": "Characters/schedules/StrojvedouciDenis.Eleanor",
       "Entries": {
-        "spring": "a610 WizardHouse 5 15 2/a1630 Custom_WizardBasement 13 5 2/a2230 Custom_WizardBasement 23 6 2"
+        "spring": "0 WizardHouse -1000 -1000"
       },
       "When": {
         "On/off": "on",
-        "HasSeenEvent |contains=StrojvedouciDenis.Eleanor_Intro": false
+        "HasSeenEvent |contains=112": false
       }
     },
+    
     {
       "LogName": "Eleanor - basic schedule",
       "Action": "EditData",
       "Target": "Characters/schedules/StrojvedouciDenis.Eleanor",
       "Entries": {
-        "spring": "a610 WizardHouse 5 15 2/a1300 Town 72 54 2/1700 WizardHouse 12 2 2/a2100 Custom_WizardBasement 13 5 2/2400 Custom_WizardBasement 23 6 2",
-        "spring_Mon": "a610 WizardHouse 5 15 2/a1500 Mountain 57 33 1/a2030 Forest 43 79 2/2100 Custom_WizardBasement 13 5 2/a2330 Custom_WizardBasement 23 6 2",
-        "spring_Tue": "a610 WizardHouse 5 15 2/a1600 Forest 58 87 2/1900 Custom_WizardBasement 13 5 2/a2330 Custom_WizardBasement 23 6 2",
-        "spring_Wed": "a610 WizardHouse 5 15 2/a1300 Town 72 54 2/1700 WizardHouse 12 2 2/a2100 Custom_WizardBasement 13 5 2/2400 Custom_WizardBasement 23 6 2",
-        "spring_Thu": "a610 WizardHouse 5 15 2/a1600 Forest 58 87 2/1900 Custom_WizardBasement 13 5 2/a2330 Custom_WizardBasement 23 6 2",
-        "spring_Fri": "a610 WizardHouse 5 15 2/a1300 Forest 16 30 1/1530 WizardHouse 2 16 3/1800 Custom_WizardBasement 13 5 2/a2330 Custom_WizardBasement 23 6 2",
-        "spring_Sat": "a610 WizardHouse 5 15 2/a910 SeedShop 12 29 3/a1000 SeedShop 4 19 0/1010 Town 85 103 2/a2000 WizardHouse 13 5 0/a2400 Custom_WizardBasement 23 6 2",
-        "spring_Sun": "610 Forest 111 81 0/a1200 Forest 36 99 3/a1600 Custom_AuroraVineyard 15 17 3/1630 Custom_AuroraVineyard 23 17 0/1700 Custom_AuroraVineyard 19 6 1/1730 Custom_AuroraVineyard 6 6 3/1800 Forest 16 30 1/a2100 Custom_WizardBasement 13 5 0/2300 Custom_WizardBasement 23 6 2",
+        "spring": "610 WizardHouse 5 15 2/930 Town 72 54 2/1700 WizardHouse 12 2 2/2100 Custom_WizardBasement 13 5 0/2400 Custom_WizardBasement 23 6 2",
+        "spring_Mon": "610 WizardHouse 5 15 2/1000 Mountain 57 33 1/1530 Forest 43 79 2/2100 Custom_WizardBasement 13 5 0/2330 Custom_WizardBasement 23 6 2",
+        "spring_Tue": "610 WizardHouse 5 15 2/1200 Forest 58 87 2/1900 Custom_WizardBasement 13 5 0/2330 Custom_WizardBasement 23 6 2",
+        "spring_Wed": "GOTO spring",
+        "spring_Thu": "GOTO spring_Tue",
+        "spring_Fri": "610 WizardHouse 5 15 2/1300 Forest 16 30 1/1730 WizardHouse 2 16 3/2000 Custom_WizardBasement 13 5 0/2330 Custom_WizardBasement 23 6 2",
+        "spring_Sat": "610 SeedShop 12 29 3/1000 SeedShop 4 19 0/1030 Town 85 103 2/2000 WizardHouse 13 5 0/2400 Custom_WizardBasement 23 6 2",
+        "spring_Sun": "610 WizardHouse 5 15 2/1000 Custom_AuroraVineyard 15 17 3/1420 Custom_AuroraVineyard 23 17 0/1440 Custom_AuroraVineyard 19 6 1/1500 Custom_AuroraVineyard 6 6 3/1520 Custom_WizardBasement 13 5 0/2100 Custom_WizardBasement 13 5 0/2200 Custom_WizardBasement 23 6 2",
 
-        "summer": "a610 WizardHouse 5 15 2/a1500 Mountain 68 24 3/a1930 Beach 20 20 2/a2430 Custom_WizardBasement 23 6 2",
-        "summer_Mon": "a610 WizardHouse 5 15 2/a1500 Mountain 68 24 3/a1930 Beach 20 20 2/a2430 Custom_WizardBasement 23 6 2",
-        "summer_Tue": "a610 WizardHouse 5 15 2/a1600 Forest 58 87 2/1930 Custom_WizardBasement 13 5 2/a2500 Custom_WizardBasement 23 6 2",
-        "summer_Wed": "a610 WizardHouse 5 15 2/a1300 Town 72 54 2/1700 WizardHouse 12 2 2/a2100 Custom_WizardBasement 13 5 2/2400 Custom_WizardBasement 23 6 2",
-        "summer_Thu": "a610 WizardHouse 5 15 2/a1600 Forest 58 87 2/1930 Custom_WizardBasement 13 5 2/a2330 Custom_WizardBasement 23 6 2",
-        "summer_Fri": "a610 WizardHouse 5 15 2/a1500 Mountain 68 24 3/a1930 Beach 20 20 2/a2430 Custom_WizardBasement 23 6 2",
-        "summer_Sat": "a610 WizardHouse 5 15 2/a910 SeedShop 12 29 3/a1000 SeedShop 4 19 0/1010 Town 85 103 2/1300 Adventure Guild 1 12 1/a2000 WizardHouse 13 5 0/a2400 Custom_WizardBasement 23 6 2",
-        "summer_Sun": "610 Forest 111 81 0/a1230 Forest 36 99 3/a1600 Custom_AuroraVineyard 15 17 3/1630 Custom_AuroraVineyard 23 17 0/1700 Custom_AuroraVineyard 19 6 1/1730 Custom_AuroraVineyard 6 6 3/1800 Forest 16 30 1/a2100 Custom_WizardBasement 13 5 0/2400 Custom_WizardBasement 23 6 2",
+        "summer": "610 WizardHouse 5 15 2/930 Mountain 68 24 3/1430 Beach 20 20 2/2000 Custom_WizardBasement 23 6 2",
+        "summer_Mon": "GOTO summer",
+        "summer_Tue": "610 WizardHouse 5 15 2/1600 Forest 58 87 2/1930 Custom_WizardBasement 13 5 0/2330 Custom_WizardBasement 23 6 2",
+        "summer_Wed": "610 WizardHouse 5 15 2/1300 Town 72 54 2/1700 WizardHouse 12 2 2/2100 Custom_WizardBasement 13 5 0/2400 Custom_WizardBasement 23 6 2",
+        "summer_Thu": "GOTO summer_Tue",
+        "summer_Fri": "GOTO summer",
+        "summer_Sat": "610 SeedShop 12 29 3/1000 SeedShop 4 19 0/1030 Town 85 103 2/1400 Adventure Guild 1 12 1/2000 WizardHouse 13 5 0/2400 Custom_WizardBasement 23 6 2",
+        "summer_Sun": "GOTO spring_Sun",
 
-        "fall": "a610 WizardHouse 5 15 2/1500 Forest 52 98 1/2030 Custom_WizardBasement 13 5 2/a2330 Custom_WizardBasement 23 6 2",
-        "fall_Mon": "a610 WizardHouse 5 15 2/a1500 Mountain 68 24 3/a1930 Beach 20 20 2/a2430 Custom_WizardBasement 23 6 2",
-        "fall_Tue": "a610 WizardHouse 5 15 2/a1600 Forest 58 87 2/1930 Custom_WizardBasement 13 5 2/a2330 Custom_WizardBasement 23 6 2",
-        "fall_Wed": "a610 WizardHouse 5 15 2/a1300 Town 72 54 2/1700 WizardHouse 12 2 2/a2100 Custom_WizardBasement 13 5 2/2400 Custom_WizardBasement 23 6 2",
-        "fall_Thu": "a610 WizardHouse 5 15 2/a1600 Forest 58 87 2/1930 Custom_WizardBasement 13 5 2/a2330 Custom_WizardBasement 23 6 2",
-        "fall_Fri": "a610 WizardHouse 5 15 2/a1230 Custom_AdventurerSummit 6 14 2/a1630 Forest 52 98 1/2130 Custom_WizardBasement 13 5 2/a2330 Custom_WizardBasement 23 6 2",
-        "fall_Sat": "a610 WizardHouse 5 15 2/a910 SeedShop 12 29 3/a1000 SeedShop 4 19 0/1010 Custom_AdventurerSummit 6 14 2/a1800 Forest 52 98 1/2030 Custom_WizardBasement 13 5 2/a2230 Custom_WizardBasement 23 6 2",
-        "fall_Sun": "610 Forest 111 81 0/a1330 Forest 36 99 3/a1600 Custom_AuroraVineyard 15 17 3/1630 Custom_AuroraVineyard 23 17 0/1700 Custom_AuroraVineyard 19 6 1/1730 Custom_AuroraVineyard 6 6 3/1800 Forest 16 30 1//a2100 Custom_WizardBasement 23 6 2",
+        "fall": "610 WizardHouse 5 15 2/1500 Forest 52 98 1/2030 Custom_WizardBasement 13 5 0/2330 Custom_WizardBasement 23 6 2",
+        "fall_Mon": "GOTO summer",
+        "fall_Tue": "GOTO summer_Tue",
+        "fall_Wed": "GOTO summer_Wed",
+        "fall_Thu": "GOTO summer_Tue",
+        "fall_Fri": "610 WizardHouse 5 15 2/1000 Custom_AdventurerSummit 6 14 2/1600 Forest 52 98 1/2130 Custom_WizardBasement 13 5 0/2400 Custom_WizardBasement 23 6 2",
+        "fall_Sat": "610 SeedShop 12 29 3/1000 SeedShop 4 19 0/1030 Forest 52 98 1/1700 Custom_WizardBasement 13 5 0/2230 Custom_WizardBasement 23 6 2",
+        "fall_Sun": "GOTO spring_Sun",
 
-        "winter": "a610 WizardHouse 5 15 2/a1300 Custom_BlueMoonVineyard 31 56 2/1330 Forest 24 68 1/a1800 Custom_WizardBasement 13 5 2/a2130 Custom_WizardBasement 23 6 2",
-        "winter_Mon": "a610 WizardHouse 5 15 2/a1500 Mountain 68 24 3/a1930 Beach 20 20 2/a2230 Custom_WizardBasement 23 6 2",
-        "winter_Tue": "a610 WizardHouse 5 15 2/a1600 Forest 58 87 2/1930 Custom_WizardBasement 13 5 2/a2330 Custom_WizardBasement 23 6 2",
-        "winter_Wed": "a610 WizardHouse 5 15 2/a1300 Town 72 54 2/1700 WizardHouse 12 2 2/a2100 Custom_WizardBasement 13 5 2/a2300 Custom_WizardBasement 23 6 2",
-        "winter_Thu": "a610 WizardHouse 5 15 2/a1600 Forest 58 87 2/1930 Custom_WizardBasement 13 5 2/a2330 Custom_WizardBasement 23 6 2",
-        "winter_Fri": "a610 WizardHouse 5 15 2/a1500 Mountain 68 24 3/a1930 Beach 20 20 2/a2230 Custom_WizardBasement 23 6 2",
-        "winter_Sat": "a610 WizardHouse 5 15 2/a910 SeedShop 12 29 3/a1000 SeedShop 4 19 0/1010 Forest 16 30 1/a1700 Custom_WizardBasement 13 5 2/a2200 Custom_WizardBasement 23 6 2",
-        "winter_Sun": "a610 WizardHouse 5 15 2/a1400 Custom_AuroraVineyard 15 17 3/a1420 Custom_AuroraVineyard 23 17 0/a1440 Custom_AuroraVineyard 19 6 1/a1500 Custom_AuroraVineyard 6 6 3/1520 Custom_WizardBasement 13 5 0/1800 Custom_WizardBasement 13 5 2/a2130 Custom_WizardBasement 23 6 2",
+        "winter": "610 WizardHouse 5 15 2/1300 Custom_BlueMoonVineyard 31 56 2/1330 Forest 24 68 1/1800 Custom_WizardBasement 13 5 0/2130 Custom_WizardBasement 23 6 2",
+        "winter_Mon": "610 WizardHouse 5 15 2/1500 Mountain 68 24 3/1930 Beach 20 20 2/2230 Custom_WizardBasement 23 6 2",
+        "winter_Tue": "GOTO summer_Tue",
+        "winter_Wed": "610 WizardHouse 5 15 2/1300 Town 72 54 2/1700 WizardHouse 12 2 2/2100 Custom_WizardBasement 13 5 0/2300 Custom_WizardBasement 23 6 2",
+        "winter_Thu": "GOTO spring_Tue",
+        "winter_Fri": "610 WizardHouse 5 15 2/1530 Mountain 68 24 3/1930 Beach 20 20 2/2030 Custom_WizardBasement 23 6 2",
+        "winter_Sat": "610 SeedShop 12 29 3/1000 SeedShop 4 19 0/1030 Forest 16 30 1/1600 Custom_WizardBasement 13 5 0/2230 Custom_WizardBasement 23 6 2",
+        "winter_Sun": "GOTO spring_Sun",
 
-        "rain": "a610 WizardHouse 5 15 2/1100 Forest 16 30 1/a1630 Custom_WizardBasement 13 5 2/a2230 Custom_WizardBasement 23 6 2",
-        "GreenRain": "a610 WizardHouse 5 15 2/1200 Forest 16 30 1/a1330 Custom_WizardBasement 13 5 2/a2230 Custom_WizardBasement 23 6 2"
+        "rain": "610 WizardHouse 5 15 2/1100 Forest 52 98 0/1630 Custom_WizardBasement 13 5 0/2230 Custom_WizardBasement 23 6 2",
+        "GreenRain": "610 WizardHouse 5 15 2/1000 Forest 16 30 1/1400 Custom_WizardBasement 13 5 0/2230 Custom_WizardBasement 23 6 2"
       },
       "When": {
-        "On/off": "on",
-        "HasSeenEvent |contains=StrojvedouciDenis.Eleanor_Intro": true
+        "On/off": "on"
       }
     },
 
@@ -90,16 +90,15 @@
       "Action": "EditData",
       "Target": "Characters/schedules/StrojvedouciDenis.Eleanor",
       "Entries": {
-        "spring_Fri": "0 Custom_Ridgeside_AguarBasement 7 8 3/a630 Custom_Ridgeside_RidgesideVillage 112 105 0/700 Custom_Ridgeside_Ridge 91 12 1/a1400 Custom_Ridgeside_RSVCliff 80 23 1/a1630 Town 52 86 3/a2030 EastScarp_Village 31 63 2/2100 EastScarp_OrchardHouse 4 22 3",
+        "spring_Fri": "0 Custom_Ridgeside_AguarBasement 7 8 3/630 Custom_Ridgeside_RidgesideVillage 112 105 0/700 Custom_Ridgeside_Ridge 91 12 1/1400 Custom_Ridgeside_RSVCliff 80 23 1/1630 Town 52 86 3/2030 EastScarp_Village 31 63 2/2100 EastScarp_OrchardHouse 4 22 3",
 
-        "summer_Fri": "0 Custom_Ridgeside_AguarBasement 7 8 3/a630 Custom_Ridgeside_RidgesideVillage 112 105 0/700 Custom_Ridgeside_Ridge 91 12 1/a1400 Custom_Ridgeside_RSVCliff 80 23 1/a1630 Town 52 86 3/a2100 EastScarp_Village 31 63 2/a2330 EastScarp_OrchardHouse 4 22 3",
+        "summer_Fri": "0 Custom_Ridgeside_AguarBasement 7 8 3/630 Custom_Ridgeside_RidgesideVillage 112 105 0/700 Custom_Ridgeside_Ridge 91 12 1/1400 Custom_Ridgeside_RSVCliff 80 23 1/1630 Town 52 86 3/2100 EastScarp_Village 31 63 2/2330 EastScarp_OrchardHouse 4 22 3",
 
-        "fall_Fri": "0 Custom_Ridgeside_AguarBasement 7 8 3/a630 Custom_Ridgeside_RidgesideVillage 112 105 0/700 Custom_Ridgeside_Ridge 91 12 1/a1400 Custom_Ridgeside_RSVCliff 80 23 1/a1700 Town 52 86 3/a2030 EastScarp_Village 31 63 2/2100 EastScarp_OrchardHouse 4 22 3"
+        "fall_Fri": "0 Custom_Ridgeside_AguarBasement 7 8 3/630 Custom_Ridgeside_RidgesideVillage 112 105 0/700 Custom_Ridgeside_Ridge 91 12 1/1400 Custom_Ridgeside_RSVCliff 80 23 1/1700 Town 52 86 3/2030 EastScarp_Village 31 63 2/2100 EastScarp_OrchardHouse 4 22 3"
       },
       "When": {
         "HasMod": "Rafseazz.RSVCP, LemurKat.EastScarpe.CP",
-        "On/off": "on",
-        "HasSeenEvent |contains=StrojvedouciDenis.Eleanor_Intro": true
+        "On/off": "on"
       }
     },
 
@@ -108,16 +107,15 @@
       "Action": "EditData",
       "Target": "Characters/schedules/StrojvedouciDenis.Eleanor",
       "Entries": {
-        "summer_3": "0 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2/610 HogwartsET.CP.Hogwarts_HogsmeadeVillage 22 24 0/a2300 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2",
-        "summer_4": "0 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2/610 HogwartsET.CP.Hogwarts_HogsmeadeVillage 22 24 0/a2300 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2",
-        "summer_5": "0 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2/610 HogwartsET.CP.Hogwarts_HogsmeadeVillage 22 24 0/a2300 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2",
-        "summer_6": "0 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2/610 HogwartsET.CP.Hogwarts_HogsmeadeVillage 22 24 0/a2300 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2",
-        "summer_7": "0 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2/610 HogwartsET.CP.Hogwarts_HogsmeadeVillage 22 24 0/a2300 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2"
+        "summer_3": "0 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2/610 HogwartsET.CP.Hogwarts_HogsmeadeVillage 22 24 0/2300 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2",
+        "summer_4": "0 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2/610 HogwartsET.CP.Hogwarts_HogsmeadeVillage 22 24 0/2300 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2",
+        "summer_5": "0 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2/610 HogwartsET.CP.Hogwarts_HogsmeadeVillage 22 24 0/2300 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2",
+        "summer_6": "0 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2/610 HogwartsET.CP.Hogwarts_HogsmeadeVillage 22 24 0/2300 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2",
+        "summer_7": "0 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2/610 HogwartsET.CP.Hogwarts_HogsmeadeVillage 22 24 0/2300 HogwartsET.CP.Hogwarts_HogsmeadeStation 16 14 2"
       },
       "When": {
         "HasMod": "HogwartsET.CP.Hogwarts",
-        "On/off": "on",
-        "HasSeenEvent |contains=StrojvedouciDenis.Eleanor_Intro": true
+        "On/off": "on"
       }
     }
   ]

@@ -4,6 +4,17 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ---
 
+## version 0.8.4 (16.2.2025)
+
+* Fixed schedules with Discord help by:
+  * `@spiderbuttons`
+  * `@bblueberry`
+  * `@angelofstars`
+  * `@abagaianye` (also helped me fixing one more problem - possibility of meeting Eleanor before her Intro event)
+  * `@fireredlily`
+
+---
+
 ## version 0.8.3 (15.2.2025)
 
 * (hopefully) Fixed festival locations overlapping, see [here.](https://docs.google.com/spreadsheets/d/1q0j3BqE79_wDlTW43teNPEspudt29S0EmlKwL7PDUCo/edit?gid=1457049521#gid=1457049521)
@@ -20,8 +31,7 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 * Added basic compactibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
 * Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
-
-  ---
+  -------------------------------------------------------------------------------------
 
 ## version 0.8.1-beta.1 (14.2.2025)
 

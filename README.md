@@ -1,6 +1,7 @@
 # NPC Eleanor
 
 This Github repo is a repo for NPC Eleanor, a mod created by StrojvedouciDenis (a.k.a. DenisSilent or Denis001 (at Discord)) for the game Stardew Valley.
+If you are interested in the mod, please use the mod's [Nexus Mods page](https://www.nexusmods.com/stardewvalley/mods/31663) instead.
 
 ## **Description of the mod:**
 
