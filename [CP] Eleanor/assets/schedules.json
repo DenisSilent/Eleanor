@@ -81,7 +81,8 @@
         "GreenRain": "610 WizardHouse 5 15 2/1000 Forest 16 30 1/1400 Custom_WizardBasement 13 5 0/2230 Custom_WizardBasement 23 6 2"
       },
       "When": {
-        "On/off": "on"
+        "On/off": "on",
+        "HasSeenEvent |contains=112": true
       }
     },
 
@@ -97,8 +98,10 @@
         "fall_Fri": "0 Custom_Ridgeside_AguarBasement 7 8 3/630 Custom_Ridgeside_RidgesideVillage 112 105 0/700 Custom_Ridgeside_Ridge 91 12 1/1400 Custom_Ridgeside_RSVCliff 80 23 1/1700 Town 52 86 3/2030 EastScarp_Village 31 63 2/2100 EastScarp_OrchardHouse 4 22 3"
       },
       "When": {
-        "HasMod": "Rafseazz.RSVCP, LemurKat.EastScarpe.CP",
-        "On/off": "on"
+        "HasMod |contains=Rafseazz.RSVCP": true,
+        "HasMod |contains=LemurKat.EastScarpe.CP": true,
+        "On/off": "on",
+        "HasSeenEvent |contains=112": true
       }
     },
 
@@ -115,7 +118,8 @@
       },
       "When": {
         "HasMod": "HogwartsET.CP.Hogwarts",
-        "On/off": "on"
+        "On/off": "on",
+        "HasSeenEvent |contains=112": true
       }
     }
   ]

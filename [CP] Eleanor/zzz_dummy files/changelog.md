@@ -4,6 +4,16 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ---
 
+## version 0.8.5 (16.2.2025)
+
+* Fixed schedules (again) + gifts not working with Discord help by:
+  * `@atravita`
+  * `@fireredlily`
+  * `@spiderbuttons`
+  * `@agentlyoko`
+
+---
+
 ## version 0.8.4 (16.2.2025)
 
 * Fixed schedules with Discord help by:
@@ -31,7 +41,7 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 * Added basic compactibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
 * Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
-  -------------------------------------------------------------------------------------
+  ---
 
 ## version 0.8.1-beta.1 (14.2.2025)
 

@@ -5,7 +5,7 @@
       "Action": "EditData",
       "Target": "Data/NPCGiftTastes",
       "Entries": {
-        "Eleanor": "{{i18n:Gift.love |DT_dialogues={{DT_dialogues}}}}/-2 -80 -102 -103 595 866/{{i18n:Gift.like |DT_dialogues={{DT_dialogues}}}}/-7 -17 -18 -19 -25 -26 -27 -74 -75 -79 -81 16 18 20 22 769/{{i18n:Gift.dislike |DT_dialogues={{DT_dialogues}}}}/-4 -8 -9 -24 -28 92/{{i18n:Gift.hate |DT_dialogues={{DT_dialogues}}}}/-20 -21 -22 -23 -95 -96 -97 -98 -99 -100 -101 -999 78/{{i18n:Gift.neutral |DT_dialogues={{DT_dialogues}}}}/-14 -29 72 305 308"
+        "StrojvedouciDenis.Eleanor": "{{i18n:Gift.love |DT_dialogues={{DT_dialogues}}}}/-2 -80 -102 -103 595 866/{{i18n:Gift.like |DT_dialogues={{DT_dialogues}}}}/-7 -17 -18 -19 -25 -26 -27 -74 -75 -79 -81 16 18 20 22 769/{{i18n:Gift.dislike |DT_dialogues={{DT_dialogues}}}}/-4 -8 -9 -24 -28 92/{{i18n:Gift.hate |DT_dialogues={{DT_dialogues}}}}/-20 -21 -22 -23 -95 -96 -97 -98 -99 -100 -101 -999 78/{{i18n:Gift.neutral |DT_dialogues={{DT_dialogues}}}}/-14 -29 72 305 308"
       }
     },
     {
