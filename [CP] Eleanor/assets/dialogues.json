@@ -10,49 +10,49 @@
       "Entries": {
         // GENERIC DIALOGUE
 
-        "{{DT_weekday}}": "{{i18n:Dialogues.0hearts.random.{{Random:{{Range:0,6}}}}|DT_dialogues={{DT_dialogues}}}}",
+        "{{DT_weekday}}": "{{i18n:Dialogues.0hearts.random.{{Random:{{Range:0,6}}}}|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
-        "{{DT_weekday}}2": "{{i18n:Dialogues.{{DT_weekday}}2 |DT_dialogues={{DT_dialogues}}}}",
+        "{{DT_weekday}}2": "{{i18n:Dialogues.{{DT_weekday}}2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
-        "{{DT_weekday}}4": "{{i18n:Dialogues.{{DT_weekday}}4 |DT_dialogues={{DT_dialogues}}}}",
+        "{{DT_weekday}}4": "{{i18n:Dialogues.{{DT_weekday}}4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
-        "{{DT_weekday}}6": "{{i18n:Dialogues.{{DT_weekday}}6 |DT_dialogues={{DT_dialogues}}}}",
+        "{{DT_weekday}}6": "{{i18n:Dialogues.{{DT_weekday}}6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
-        "{{DT_weekday}}8": "{{i18n:Dialogues.{{DT_weekday}}8 |DT_dialogues={{DT_dialogues}}}}",
+        "{{DT_weekday}}8": "{{i18n:Dialogues.{{DT_weekday}}8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
-        "{{DT_weekday}}10": "{{i18n:Dialogues.{{DT_weekday}}10 |DT_dialogues={{DT_dialogues}}}}",
+        "{{DT_weekday}}10": "{{i18n:Dialogues.{{DT_weekday}}10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
         // SPECIFIC DAY DIALOGUE
         // Note: Works only in the first year. Use format season_dayOfMonth_2 for year 2 and later (e.g., "summer_10_2"). To target specific years, use CP conditions with the "_2" suffix.
 
-        "spring_1": "{{i18n:Dialogues.spring_1 |DT_dialogues={{DT_dialogues}}}}",
-        "spring_12": "{{i18n:Dialogues.spring_12 |DT_dialogues={{DT_dialogues}}}}",
-        "spring_23": "{{i18n:Dialogues.spring_23 |DT_dialogues={{DT_dialogues}}}}",
+        "spring_1": "{{i18n:Dialogues.spring_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "spring_12": "{{i18n:Dialogues.spring_12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "spring_23": "{{i18n:Dialogues.spring_23 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
-        "summer_1": "{{i18n:Dialogues.summer_1 |DT_dialogues={{DT_dialogues}}}}",
-        "summer_10": "{{i18n:Dialogues.summer_10 |DT_dialogues={{DT_dialogues}}}}",
-        "summer_27": "{{i18n:Dialogues.summer_27 |DT_dialogues={{DT_dialogues}}}}",
+        "summer_1": "{{i18n:Dialogues.summer_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "summer_10": "{{i18n:Dialogues.summer_10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "summer_27": "{{i18n:Dialogues.summer_27 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
-        "fall_1_1": "{{i18n:Dialogues.fall_1_1 |DT_dialogues={{DT_dialogues}}}}",
-        "fall_15": "{{i18n:Dialogues.fall_15 |DT_dialogues={{DT_dialogues}}}}",
-        "fall_17": "{{i18n:Dialogues.fall_17 |DT_dialogues={{DT_dialogues}}}}",
-        "fall_18": "{{i18n:Dialogues.fall_18 |DT_dialogues={{DT_dialogues}}}}",
-        "fall_26": "{{i18n:Dialogues.fall_26 |DT_dialogues={{DT_dialogues}}}}",
+        "fall_1_1": "{{i18n:Dialogues.fall_1_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "fall_15": "{{i18n:Dialogues.fall_15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "fall_17": "{{i18n:Dialogues.fall_17 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "fall_18": "{{i18n:Dialogues.fall_18 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "fall_26": "{{i18n:Dialogues.fall_26 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
-        "winter_1": "{{i18n:Dialogues.winter_1 |DT_dialogues={{DT_dialogues}}}}",
-        "winter_7": "{{i18n:Dialogues.winter_7 |DT_dialogues={{DT_dialogues}}}}",
-        "winter_23": "{{i18n:Dialogues.winter_23 |DT_dialogues={{DT_dialogues}}}}",
-        "winter_24": "{{i18n:Dialogues.winter_24 |DT_dialogues={{DT_dialogues}}}}",
-        "winter_28": "{{i18n:Dialogues.winter_28 |DT_dialogues={{DT_dialogues}}}}",
+        "winter_1": "{{i18n:Dialogues.winter_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "winter_7": "{{i18n:Dialogues.winter_7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "winter_23": "{{i18n:Dialogues.winter_23 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "winter_24": "{{i18n:Dialogues.winter_24 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "winter_28": "{{i18n:Dialogues.winter_28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
         // Special dialogues
-        "FlowerDance_Decline": "{{i18n:Dialogues.FlowerDance_Decline |DT_dialogues={{DT_dialogues}}}}",
-        "HitBySlingshot": "{{i18n:Dialogues.HitBySlingshot |DT_dialogues={{DT_dialogues}}}}",
-        "Resort": "{{i18n:Dialogues.Resort |DT_dialogues={{DT_dialogues}}}}",
-        "SpouseFarmhouseClutter": "{{i18n:Dialogues.SpouseFarmhouseClutter |DT_dialogues={{DT_dialogues}}}}",
-        "SpouseGiftJealous": "{{i18n:Dialogues.SpouseGiftJealous |DT_dialogues={{DT_dialogues}}}}",
-        "Spouse_MonstersInHouse": "{{i18n:Dialogues.Spouse_MonstersInHouse |DT_dialogues={{DT_dialogues}}}}",
-        "WipedMemory": "{{i18n:Dialogues.WipedMemory |DT_dialogues={{DT_dialogues}}}}"
+        "FlowerDance_Decline": "{{i18n:Dialogues.FlowerDance_Decline |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "HitBySlingshot": "{{i18n:Dialogues.HitBySlingshot |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Resort": "{{i18n:Dialogues.Resort |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "SpouseFarmhouseClutter": "{{i18n:Dialogues.SpouseFarmhouseClutter |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "SpouseGiftJealous": "{{i18n:Dialogues.SpouseGiftJealous |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Spouse_MonstersInHouse": "{{i18n:Dialogues.Spouse_MonstersInHouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "WipedMemory": "{{i18n:Dialogues.WipedMemory |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
 
         // maybe for future updates
         /*
@@ -66,26 +66,26 @@
 //"RejectItem_<id>": "",
 //"RejectItem_<tag>": "",
 
-"RejectMermaidPendant": "{{i18n:Dialogues.RejectMermaidPendant |DT_dialogues={{DT_dialogues}}}}",
-"RejectMermaidPendant_Divorced": "{{i18n:Dialogues.RejectMermaidPendant_Divorced |DT_dialogues={{DT_dialogues}}}}",
-"RejectMermaidPendant_NeedHouseUpgrade": "{{i18n:Dialogues.RejectMermaidPendant_NeedHouseUpgrade |DT_dialogues={{DT_dialogues}}}}",
-"RejectMermaidPendant_NotDatable": "{{i18n:Dialogues.RejectMermaidPendant_NotDatable |DT_dialogues={{DT_dialogues}}}}",
-"RejectMermaidPendant_NpcWithSomeoneElse": "{{i18n:Dialogues.RejectMermaidPendant_NpcWithSomeoneElse |DT_dialogues={{DT_dialogues}}}}",
-"RejectMermaidPendant_PlayerWithSomeoneElse": "{{i18n:Dialogues.RejectMermaidPendant_PlayerWithSomeoneElse |DT_dialogues={{DT_dialogues}}}}",
-"RejectMermaidPendant_Under8Hearts": "{{i18n:Dialogues.RejectMermaidPendant_Under8Hearts |DT_dialogues={{DT_dialogues}}}}",
-"RejectMermaidPendant_Under10Hearts": "{{i18n:Dialogues.RejectMermaidPendant_Under10Hearts |DT_dialogues={{DT_dialogues}}}}",
-"RejectMermaidPendant_Under10Hearts_AskedAgain": "{{i18n:Dialogues.RejectMermaidPendant_Under10Hearts_AskedAgain |DT_dialogues={{DT_dialogues}}}}",
+"RejectMermaidPendant": "{{i18n:Dialogues.RejectMermaidPendant |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectMermaidPendant_Divorced": "{{i18n:Dialogues.RejectMermaidPendant_Divorced |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectMermaidPendant_NeedHouseUpgrade": "{{i18n:Dialogues.RejectMermaidPendant_NeedHouseUpgrade |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectMermaidPendant_NotDatable": "{{i18n:Dialogues.RejectMermaidPendant_NotDatable |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectMermaidPendant_NpcWithSomeoneElse": "{{i18n:Dialogues.RejectMermaidPendant_NpcWithSomeoneElse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectMermaidPendant_PlayerWithSomeoneElse": "{{i18n:Dialogues.RejectMermaidPendant_PlayerWithSomeoneElse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectMermaidPendant_Under8Hearts": "{{i18n:Dialogues.RejectMermaidPendant_Under8Hearts |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectMermaidPendant_Under10Hearts": "{{i18n:Dialogues.RejectMermaidPendant_Under10Hearts |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectMermaidPendant_Under10Hearts_AskedAgain": "{{i18n:Dialogues.RejectMermaidPendant_Under10Hearts_AskedAgain |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
-"RejectMovieTicket": "{{i18n:Dialogues.RejectMovieTicket |DT_dialogues={{DT_dialogues}}}}",
-"RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:Dialogues.RejectMovieTicket_AlreadyInvitedBySomeoneElse |DT_dialogues={{DT_dialogues}}}}",
-"RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:Dialogues.RejectMovieTicket_AlreadyWatchedThisWeek |DT_dialogues={{DT_dialogues}}}}",
-"RejectMovieTicket_Divorced": "{{i18n:Dialogues.RejectMovieTicket_Divorced |DT_dialogues={{DT_dialogues}}}}",
-"RejectMovieTicket_DontWantToSeeThatMovie": "{{i18n:Dialogues.RejectMovieTicket_DontWantToSeeThatMovie |DT_dialogues={{DT_dialogues}}}}",
+"RejectMovieTicket": "{{i18n:Dialogues.RejectMovieTicket |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:Dialogues.RejectMovieTicket_AlreadyInvitedBySomeoneElse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:Dialogues.RejectMovieTicket_AlreadyWatchedThisWeek |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectMovieTicket_Divorced": "{{i18n:Dialogues.RejectMovieTicket_Divorced |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectMovieTicket_DontWantToSeeThatMovie": "{{i18n:Dialogues.RejectMovieTicket_DontWantToSeeThatMovie |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
 
 //"PurchasedItem_*": "",	// kinda don't know what to do with that, but let's keep it blocked here
 
-"MovieInvite_Invited": "{{i18n:Dialogues.MovieInvite_Invited |DT_dialogues={{DT_dialogues}}}}",
+"MovieInvite_Invited": "{{i18n:Dialogues.MovieInvite_Invited |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
 //"MovieInvite_Invited_<NPC name>": "",
 //"MovieInvite_Invited_<manner>": "",
@@ -97,28 +97,28 @@
 
 	// Special dialogues - events
 
-//"danceRejection": "{{i18n:Dialogues.danceRejection |DT_dialogues={{DT_dialogues}}}}",		// fallback for "FlowerDance_Decline", use that instead
+//"danceRejection": "{{i18n:Dialogues.danceRejection |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",		// fallback for "FlowerDance_Decline", use that instead
 
 
-"Fair_Judging": "{{i18n:Dialogues.Fair_Judging |DT_dialogues={{DT_dialogues}}}}",
+"Fair_Judging": "{{i18n:Dialogues.Fair_Judging |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
-"Fair_Judged": "{{i18n:Dialogues.Fair_Judged |DT_dialogues={{DT_dialogues}}}}",
-"Fair_Judged_PlayerLost_PurpleShorts": "{{i18n:Dialogues.Fair_Judged_PlayerLost_PurpleShorts |DT_dialogues={{DT_dialogues}}}}",
-"Fair_Judged_PlayerLost_Skipped": "{{i18n:Dialogues.Fair_Judged_PlayerLost_Skipped |DT_dialogues={{DT_dialogues}}}}",
-"Fair_Judged_PlayerLost": "{{i18n:Dialogues.Fair_Judged_PlayerLost |DT_dialogues={{DT_dialogues}}}}",
-"Fair_Judged_PlayerWon": "{{i18n:Dialogues.Fair_Judged_PlayerWon |DT_dialogues={{DT_dialogues}}}}",
+"Fair_Judged": "{{i18n:Dialogues.Fair_Judged |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"Fair_Judged_PlayerLost_PurpleShorts": "{{i18n:Dialogues.Fair_Judged_PlayerLost_PurpleShorts |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"Fair_Judged_PlayerLost_Skipped": "{{i18n:Dialogues.Fair_Judged_PlayerLost_Skipped |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"Fair_Judged_PlayerLost": "{{i18n:Dialogues.Fair_Judged_PlayerLost |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"Fair_Judged_PlayerWon": "{{i18n:Dialogues.Fair_Judged_PlayerWon |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
-"WinterStar_ReceiveGift": "{{i18n:Dialogues.WinterStar_ReceiveGift |DT_dialogues={{DT_dialogues}}}}",
+"WinterStar_ReceiveGift": "{{i18n:Dialogues.WinterStar_ReceiveGift |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
 //"WinterStar_ReceiveGift_<id>": "",
 //"WinterStar_ReceiveGift_<tag>": "",
 
-"WinterStar_GiveGift_Before_Roommate": "{{i18n:Dialogues.WinterStar_GiveGift_Before_Roommate |DT_dialogues={{DT_dialogues}}}}",
-"WinterStar_GiveGift_Before_Spouse": "{{i18n:Dialogues.WinterStar_GiveGift_Before_Spouse |DT_dialogues={{DT_dialogues}}}}",
-"WinterStar_GiveGift_Before": "{{i18n:Dialogues.WinterStar_GiveGift_Before |DT_dialogues={{DT_dialogues}}}}",
-"WinterStar_GiveGift_After_Roommate": "{{i18n:Dialogues.WinterStar_GiveGift_After_Roommate |DT_dialogues={{DT_dialogues}}}}",
-"WinterStar_GiveGift_After_Spouse": "{{i18n:Dialogues.WinterStar_GiveGift_After_Spouse |DT_dialogues={{DT_dialogues}}}}",
-"WinterStar_GiveGift_After": "{{i18n:Dialogues.WinterStar_GiveGift_After |DT_dialogues={{DT_dialogues}}}}",
+"WinterStar_GiveGift_Before_Roommate": "{{i18n:Dialogues.WinterStar_GiveGift_Before_Roommate |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"WinterStar_GiveGift_Before_Spouse": "{{i18n:Dialogues.WinterStar_GiveGift_Before_Spouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"WinterStar_GiveGift_Before": "{{i18n:Dialogues.WinterStar_GiveGift_Before |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"WinterStar_GiveGift_After_Roommate": "{{i18n:Dialogues.WinterStar_GiveGift_After_Roommate |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"WinterStar_GiveGift_After_Spouse": "{{i18n:Dialogues.WinterStar_GiveGift_After_Spouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"WinterStar_GiveGift_After": "{{i18n:Dialogues.WinterStar_GiveGift_After |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
 
 		// 1.6.9. dialogues - will be merged with those above after SV 1.6.9 release
@@ -128,22 +128,22 @@
 //"AcceptGift_<taste>": "",
 
 
-"AcceptGift": "{{i18n:Dialogues.AcceptGift |DT_dialogues={{DT_dialogues}}}}",
+"AcceptGift": "{{i18n:Dialogues.AcceptGift |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
-"RejectBouquet_AlreadyAccepted_Engaged": "{{i18n:Dialogues.RejectBouquet_AlreadyAccepted_Engaged |DT_dialogues={{DT_dialogues}}}}",
-"RejectBouquet_AlreadyAccepted_Married": "{{i18n:Dialogues.RejectBouquet_AlreadyAccepted_Married |DT_dialogues={{DT_dialogues}}}}",
-"RejectBouquet_AlreadyAccepted": "{{i18n:Dialogues.RejectBouquet_AlreadyAccepted |DT_dialogues={{DT_dialogues}}}}",
+"RejectBouquet_AlreadyAccepted_Engaged": "{{i18n:Dialogues.RejectBouquet_AlreadyAccepted_Engaged |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectBouquet_AlreadyAccepted_Married": "{{i18n:Dialogues.RejectBouquet_AlreadyAccepted_Married |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectBouquet_AlreadyAccepted": "{{i18n:Dialogues.RejectBouquet_AlreadyAccepted |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
-"RejectMermaidPendant_AlreadyAccepted_Engaged": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted_Engaged |DT_dialogues={{DT_dialogues}}}}",
-"RejectMermaidPendant_AlreadyAccepted_Married": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted_Married |DT_dialogues={{DT_dialogues}}}}",
-"RejectMermaidPendant_AlreadyAccepted": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted |DT_dialogues={{DT_dialogues}}}}",
+"RejectMermaidPendant_AlreadyAccepted_Engaged": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted_Engaged |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectMermaidPendant_AlreadyAccepted_Married": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted_Married |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectMermaidPendant_AlreadyAccepted": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
-"RejectRoommateProposal": "{{i18n:Dialogues.RejectRoommateProposal |DT_dialogues={{DT_dialogues}}}}",
-"RejectRoommateProposal_AlreadyAccepted": "{{i18n:Dialogues.RejectRoommateProposal_AlreadyAccepted |DT_dialogues={{DT_dialogues}}}}",
-"RejectRoommateProposal_NpcWithSomeoneElse": "{{i18n:Dialogues.RejectRoommateProposal_NpcWithSomeoneElse |DT_dialogues={{DT_dialogues}}}}",
-"RejectRoommateProposal_PlayerWithSomeoneElse": "{{i18n:Dialogues.RejectRoommateProposal_PlayerWithSomeoneElse |DT_dialogues={{DT_dialogues}}}}",
-"RejectRoommateProposal_LowFriendship": "{{i18n:Dialogues.RejectRoommateProposal_LowFriendship |DT_dialogues={{DT_dialogues}}}}",
-"RejectRoommateProposal_SmallHouse": "{{i18n:Dialogues.RejectRoommateProposal_SmallHouse |DT_dialogues={{DT_dialogues}}}}"
+"RejectRoommateProposal": "{{i18n:Dialogues.RejectRoommateProposal |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectRoommateProposal_AlreadyAccepted": "{{i18n:Dialogues.RejectRoommateProposal_AlreadyAccepted |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectRoommateProposal_NpcWithSomeoneElse": "{{i18n:Dialogues.RejectRoommateProposal_NpcWithSomeoneElse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectRoommateProposal_PlayerWithSomeoneElse": "{{i18n:Dialogues.RejectRoommateProposal_PlayerWithSomeoneElse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectRoommateProposal_LowFriendship": "{{i18n:Dialogues.RejectRoommateProposal_LowFriendship |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"RejectRoommateProposal_SmallHouse": "{{i18n:Dialogues.RejectRoommateProposal_SmallHouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
 */
       }
     },
@@ -155,113 +155,101 @@
       "Entries": {
         //Conversation Topics
         //Vanilla & Vanilla+ (More Conversation Topics mod + 1.6 strings)
-        "Introduction": "{{i18n:Dialogues.CT.Introduction |DT_dialogues={{DT_dialogues}}}}",
-        "danceRejection": "{{i18n:Dialogues.CT.danceRejection |DT_dialogues={{DT_dialogues}}}}",
-        "divorced": "{{i18n:Dialogues.CT.divorced |DT_dialogues={{DT_dialogues}}}}",
-        "breakUp": "{{i18n:Dialogues.CT.breakUp |DT_dialogues={{DT_dialogues}}}}",
+        "Introduction": "{{i18n:Dialogues.CT.Introduction |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "danceRejection": "{{i18n:Dialogues.CT.danceRejection |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "divorced": "{{i18n:Dialogues.CT.divorced |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "breakUp": "{{i18n:Dialogues.CT.breakUp |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
-        "joja_Begin": "{{i18n:Dialogues.CT.joja_Begin |DT_dialogues={{DT_dialogues}}}}",
-        "cc_Begin": "{{i18n:Dialogues.CT.cc_Begin |DT_dialogues={{DT_dialogues}}}}",
-        "cc_Boulder": "{{i18n:Dialogues.CT.cc_Boulder |DT_dialogues={{DT_dialogues}}}}",
-        "cc_Bridge": "{{i18n:Dialogues.CT.cc_Bridge |DT_dialogues={{DT_dialogues}}}}",
-        "cc_Bus": "{{i18n:Dialogues.CT.cc_Bus |DT_dialogues={{DT_dialogues}}}}",
-        "cc_Greenhouse": "{{i18n:Dialogues.CT.cc_Greenhouse |DT_dialogues={{DT_dialogues}}}}",
-        "cc_Minecart": "{{i18n:Dialogues.CT.cc_Minecart |DT_dialogues={{DT_dialogues}}}}",
-        "cc_Complete": "{{i18n:Dialogues.CT.cc_Complete |DT_dialogues={{DT_dialogues}}}}",
-        "movieTheater": "{{i18n:Dialogues.CT.movieTheater |DT_dialogues={{DT_dialogues}}}}",
-        "willyCrabs": "{{i18n:Dialogues.CT.willyCrabs |DT_dialogues={{DT_dialogues}}}}",
-        "pamHouseUpgrade": "{{i18n:Dialogues.CT.pamHouseUpgrade |DT_dialogues={{DT_dialogues}}}}",
-        "pamHouseUpgradeAnonymous": "{{i18n:Dialogues.CT.pamHouseUpgradeAnonymous |DT_dialogues={{DT_dialogues}}}}",
-        "railroadEarthquake": "{{i18n:Dialogues.CT.railroadEarthquake |DT_dialogues={{DT_dialogues}}}}",
-        "islandResortUnlocked": "{{i18n:Dialogues.CT.islandResortUnlocked |DT_dialogues={{DT_dialogues}}}}",
-        "jojaMartStruckByLightning": "{{i18n:Dialogues.CT.jojaMartStruckByLightning |DT_dialogues={{DT_dialogues}}}}",
-        "babyBoy": "{{i18n:Dialogues.CT.babyBoy |DT_dialogues={{DT_dialogues}}}}",
-        "babyGirl": "{{i18n:Dialogues.CT.babyGirl |DT_dialogues={{DT_dialogues}}}}",
-        "wedding": "{{i18n:Dialogues.CT.wedding |DT_dialogues={{DT_dialogues}}}}",
-        "event_postweddingreception": "{{i18n:Dialogues.CT.event_postweddingreception |DT_dialogues={{DT_dialogues}}}}",
-        "luauBest": "{{i18n:Dialogues.CT.luauBest |DT_dialogues={{DT_dialogues}}}}",
-        "luauShorts": "{{i18n:Dialogues.CT.luauShorts |DT_dialogues={{DT_dialogues}}}}",
-        "luauPoisoned": "{{i18n:Dialogues.CT.luauPoisoned |DT_dialogues={{DT_dialogues}}}}",
-        "Characters_MovieInvite_Invited": "{{i18n:Dialogues.CT.Characters_MovieInvite_Invited |DT_dialogues={{DT_dialogues}}}}",
-        "DumpsterDiveComment": "{{i18n:Dialogues.CT.DumpsterDiveComment |DT_dialogues={{DT_dialogues}}}}",
-        "SpouseStardrop": "{{i18n:Dialogues.CT.SpouseStardrop |DT_dialogues={{DT_dialogues}}}}",
-        "FlowerDance_Accept_Spouse": "{{i18n:Dialogues.CT.FlowerDance_Accept_Spouse |DT_dialogues={{DT_dialogues}}}}",
-        "FlowerDance_Accept": "{{i18n:Dialogues.CT.FlowerDance_Accept |DT_dialogues={{DT_dialogues}}}}",
-        "FlowerDance_Decline": "{{i18n:Dialogues.CT.FlowerDance_Decline |DT_dialogues={{DT_dialogues}}}}",
-        "GreenRain": "{{i18n:Dialogues.CT.GreenRain |DT_dialogues={{DT_dialogues}}}}",
-        "GreenRainFinished": "{{i18n:Dialogues.CT.GreenRainFinished |DT_dialogues={{DT_dialogues}}}}",
-        "GreenRain_2": "{{i18n:Dialogues.CT.GreenRain_2 |DT_dialogues={{DT_dialogues}}}}",
-        "AcceptGift_(O)StardropTea": "{{i18n:Dialogues.CT.AcceptGift_(O)StardropTea |DT_dialogues={{DT_dialogues}}}}",
+        "joja_Begin": "{{i18n:Dialogues.CT.joja_Begin |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "cc_Begin": "{{i18n:Dialogues.CT.cc_Begin |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "cc_Boulder": "{{i18n:Dialogues.CT.cc_Boulder |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "cc_Bridge": "{{i18n:Dialogues.CT.cc_Bridge |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "cc_Bus": "{{i18n:Dialogues.CT.cc_Bus |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "cc_Greenhouse": "{{i18n:Dialogues.CT.cc_Greenhouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "cc_Minecart": "{{i18n:Dialogues.CT.cc_Minecart |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "cc_Complete": "{{i18n:Dialogues.CT.cc_Complete |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "movieTheater": "{{i18n:Dialogues.CT.movieTheater |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "willyCrabs": "{{i18n:Dialogues.CT.willyCrabs |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "pamHouseUpgrade": "{{i18n:Dialogues.CT.pamHouseUpgrade |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "pamHouseUpgradeAnonymous": "{{i18n:Dialogues.CT.pamHouseUpgradeAnonymous |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "railroadEarthquake": "{{i18n:Dialogues.CT.railroadEarthquake |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "islandResortUnlocked": "{{i18n:Dialogues.CT.islandResortUnlocked |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "jojaMartStruckByLightning": "{{i18n:Dialogues.CT.jojaMartStruckByLightning |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "babyBoy": "{{i18n:Dialogues.CT.babyBoy |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "babyGirl": "{{i18n:Dialogues.CT.babyGirl |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "wedding": "{{i18n:Dialogues.CT.wedding |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "event_postweddingreception": "{{i18n:Dialogues.CT.event_postweddingreception |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "luauBest": "{{i18n:Dialogues.CT.luauBest |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "luauShorts": "{{i18n:Dialogues.CT.luauShorts |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "luauPoisoned": "{{i18n:Dialogues.CT.luauPoisoned |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Characters_MovieInvite_Invited": "{{i18n:Dialogues.CT.Characters_MovieInvite_Invited |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "DumpsterDiveComment": "{{i18n:Dialogues.CT.DumpsterDiveComment |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "SpouseStardrop": "{{i18n:Dialogues.CT.SpouseStardrop |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "FlowerDance_Accept_Spouse": "{{i18n:Dialogues.CT.FlowerDance_Accept_Spouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "FlowerDance_Accept": "{{i18n:Dialogues.CT.FlowerDance_Accept |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "FlowerDance_Decline": "{{i18n:Dialogues.CT.FlowerDance_Decline |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "GreenRain": "{{i18n:Dialogues.CT.GreenRain |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "GreenRainFinished": "{{i18n:Dialogues.CT.GreenRainFinished |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "GreenRain_2": "{{i18n:Dialogues.CT.GreenRain_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "AcceptGift_(O)StardropTea": "{{i18n:Dialogues.CT.AcceptGift_(O)StardropTea |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
         // CT's selection
         // ARV
-        "SterlingDrugs": "{{i18n:Dialogues.CT.SterlingDrugs |DT_dialogues={{DT_dialogues}}}}",
-        "SterlingRelapse": "{{i18n:Dialogues.CT.SterlingRelapse |DT_dialogues={{DT_dialogues}}}}",
-        "SterlingApology": "{{i18n:Dialogues.CT.SterlingApology |DT_dialogues={{DT_dialogues}}}}",
+        "SterlingDrugs": "{{i18n:Dialogues.CT.SterlingDrugs |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "SterlingRelapse": "{{i18n:Dialogues.CT.SterlingRelapse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "SterlingApology": "{{i18n:Dialogues.CT.SterlingApology |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         // Alecto
-        "AlectoIntroduction": "{{i18n:Dialogues.CT.AlectoIntroduction |DT_dialogues={{DT_dialogues}}}}",
-        "AlectoWizardTower": "{{i18n:Dialogues.CT.AlectoWizardTower |DT_dialogues={{DT_dialogues}}}}",
+        "AlectoIntroduction": "{{i18n:Dialogues.CT.AlectoIntroduction |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "AlectoWizardTower": "{{i18n:Dialogues.CT.AlectoWizardTower |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         // Juna
-        "JunaSign": "{{i18n:Dialogues.CT.JunaSign |DT_dialogues={{DT_dialogues}}}}",
-        "JunaBeachBallet": "{{i18n:Dialogues.CT.JunaBeachBallet |DT_dialogues={{DT_dialogues}}}}",
-        "JunaJunimos": "{{i18n:Dialogues.CT.JunaJunimos |DT_dialogues={{DT_dialogues}}}}",
-        "JunaGone": "{{i18n:Dialogues.CT.JunaGone |DT_dialogues={{DT_dialogues}}}}",
-        "JunaWizard": "{{i18n:Dialogues.CT.JunaWizard |DT_dialogues={{DT_dialogues}}}}",
-        "JunaProtectiveWizard": "{{i18n:Dialogues.CT.JunaProtectiveWizard |DT_dialogues={{DT_dialogues}}}}",
+        "JunaSign": "{{i18n:Dialogues.CT.JunaSign |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "JunaBeachBallet": "{{i18n:Dialogues.CT.JunaBeachBallet |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "JunaJunimos": "{{i18n:Dialogues.CT.JunaJunimos |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "JunaGone": "{{i18n:Dialogues.CT.JunaGone |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "JunaWizard": "{{i18n:Dialogues.CT.JunaWizard |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "JunaProtectiveWizard": "{{i18n:Dialogues.CT.JunaProtectiveWizard |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         /*
-"JunaForestPicnic": "{{i18n:Dialogues.CT.JunaForestPicnic |DT_dialogues={{DT_dialogues}}}}",
+"JunaForestPicnic": "{{i18n:Dialogues.CT.JunaForestPicnic |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 */
-        "BigFootWizard ": "{{i18n:Dialogues.CT.BigFootWizard  |DT_dialogues={{DT_dialogues}}}}",
+        "BigFootWizard ": "{{i18n:Dialogues.CT.BigFootWizard  |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         // Lavril
-        "LavrilUnlocked": "{{i18n:Dialogues.CT.LavrilUnlocked |DT_dialogues={{DT_dialogues}}}}",
+        "LavrilUnlocked": "{{i18n:Dialogues.CT.LavrilUnlocked |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         // Lucikiel
-        "LucikielArrives": "{{i18n:Dialogues.CT.LucikielArrives |DT_dialogues={{DT_dialogues}}}}",
-        "ReputationIncreased": "{{i18n:Dialogues.CT.ReputationIncreased |DT_dialogues={{DT_dialogues}}}}",
+        "LucikielArrives": "{{i18n:Dialogues.CT.LucikielArrives |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "ReputationIncreased": "{{i18n:Dialogues.CT.ReputationIncreased |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         /*
 			// Jasper
-"JasperGone2": "{{i18n:Dialogues.CT.JasperGone2 |DT_dialogues={{DT_dialogues}}}}",
-"JasperHomeA": "{{i18n:Dialogues.CT.JasperHomeA |DT_dialogues={{DT_dialogues}}}}",
+"JasperGone2": "{{i18n:Dialogues.CT.JasperGone2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"JasperHomeA": "{{i18n:Dialogues.CT.JasperHomeA |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 */
         // RSV
-        "RSV_GH1": "{{i18n:Dialogues.CT.RSV_GH1 |DT_dialogues={{DT_dialogues}}}}",
-        "keahi_prank": "{{i18n:Dialogues.CT.keahi_prank |DT_dialogues={{DT_dialogues}}}}",
+        "RSV_GH1": "{{i18n:Dialogues.CT.RSV_GH1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "keahi_prank": "{{i18n:Dialogues.CT.keahi_prank |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         /*
-"Lidens_Return": "{{i18n:Dialogues.CT.Lidens_Return |DT_dialogues={{DT_dialogues}}}}",
-"Naomi_Return": "{{i18n:Dialogues.CT.Naomi_Return |DT_dialogues={{DT_dialogues}}}}",
+"Lidens_Return": "{{i18n:Dialogues.CT.Lidens_Return |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+"Naomi_Return": "{{i18n:Dialogues.CT.Naomi_Return |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 */
         // Leilani
-        "LeilaniArrives": "{{i18n:Dialogues.CT.LeilaniArrives |DT_dialogues={{DT_dialogues}}}}",
+        "LeilaniArrives": "{{i18n:Dialogues.CT.LeilaniArrives |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         // Prank the Jojamart
-        "PTJ03": "{{i18n:Dialogues.CT.PTJ03 |DT_dialogues={{DT_dialogues}}}}",
+        "PTJ03": "{{i18n:Dialogues.CT.PTJ03 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         /*
 			// Pumpkin Spice
-"pumpkin_spice_madness": "{{i18n:Dialogues.CT.pumpkin_spice_madness |DT_dialogues={{DT_dialogues}}}}",
+"pumpkin_spice_madness": "{{i18n:Dialogues.CT.pumpkin_spice_madness |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 */
         // Jorts and Jean
-        "MeetTheCats": "{{i18n:Dialogues.CT.MeetTheCats |DT_dialogues={{DT_dialogues}}}}",
-        "ButteredJorts": "{{i18n:Dialogues.CT.ButteredJorts |DT_dialogues={{DT_dialogues}}}}",
-        "JortsZoomies": "{{i18n:Dialogues.CT.JortsZoomies |DT_dialogues={{DT_dialogues}}}}",
-        "OpenAllTheDoors": "{{i18n:Dialogues.CT.OpenAllTheDoors |DT_dialogues={{DT_dialogues}}}}",
+        "MeetTheCats": "{{i18n:Dialogues.CT.MeetTheCats |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "ButteredJorts": "{{i18n:Dialogues.CT.ButteredJorts |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "JortsZoomies": "{{i18n:Dialogues.CT.JortsZoomies |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "OpenAllTheDoors": "{{i18n:Dialogues.CT.OpenAllTheDoors |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         // Rodney
-        "BookLaunchParty": "{{i18n:Dialogues.CT.BookLaunchParty |DT_dialogues={{DT_dialogues}}}}",
+        "BookLaunchParty": "{{i18n:Dialogues.CT.BookLaunchParty |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         // Yri
-        "YriIntroduction": "{{i18n:Dialogues.CT.YriIntroduction |DT_dialogues={{DT_dialogues}}}}",
-        "CharlesIntroduction": "{{i18n:Dialogues.CT.CharlesIntroduction |DT_dialogues={{DT_dialogues}}}}",
-        "LewisApology": "{{i18n:Dialogues.CT.LewisApology |DT_dialogues={{DT_dialogues}}}}",
-        "YriWalk": "{{i18n:Dialogues.CT.YriWalk |DT_dialogues={{DT_dialogues}}}}",
-        "AfterProposal": "{{i18n:Dialogues.CT.AfterProposal |DT_dialogues={{DT_dialogues}}}}",
-
-        // Mobile phone mod
-        /*
-        "MobilePhoneGreeting": "{{Random: {{i18n:MobilePhoneGreeting.0}} & {{i18n:MobilePhoneGreeting.1}} & {{i18n:MobilePhoneGreeting.2}} |inputSeparator=& |DT_dialogues={{DT_dialogues}}}}",
-        "MobilePhoneReminisce": "{{i18n:Dialogues.MobilePhoneReminisce |DT_dialogues={{DT_dialogues}}}}",
-        "MobilePhoneInvite": "{{i18n:Dialogues.MobilePhoneInvite |DT_dialogues={{DT_dialogues}}}}",
-        "MobilePhoneGoodBye": "{{Random: {{i18n:MobilePhoneGoodBye.0}} & {{i18n:MobilePhoneGoodBye.1}} & {{i18n:MobilePhoneGoodBye.2}} & {{i18n:MobilePhoneGoodBye.3}} |inputSeparator=& |DT_dialogues={{DT_dialogues}}}}"
-*/
-        "MobilePhoneGreeting": "{{i18n:Dialogues.addons.MobilePhoneGreeting.{{Random:{{Range:0,2}}}} |DT_dialogues={{DT_dialogues}}}}",
-        "MobilePhoneReminisce": "{{i18n:Dialogues.addons.MobilePhoneReminisce |DT_dialogues={{DT_dialogues}}}}",
-        "MobilePhoneInvite": "{{i18n:Dialogues.addons.MobilePhoneInvite |DT_dialogues={{DT_dialogues}}}}",
-        "MobilePhoneGoodBye": "{{i18n:Dialogues.addons.MobilePhoneGoodBye.{{Random:{{Range:0,2}}}} |DT_dialogues={{DT_dialogues}}}}"
+        "YriIntroduction": "{{i18n:Dialogues.CT.YriIntroduction |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "CharlesIntroduction": "{{i18n:Dialogues.CT.CharlesIntroduction |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "LewisApology": "{{i18n:Dialogues.CT.LewisApology |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "YriWalk": "{{i18n:Dialogues.CT.YriWalk |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "AfterProposal": "{{i18n:Dialogues.CT.AfterProposal |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       }
     },
 
@@ -272,7 +260,7 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Abigail",
       "Entries": {
-        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Abigail |DT_dialogues={{DT_dialogues}}}}"
+        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Abigail |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       }
     },
     {
@@ -280,7 +268,7 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Leah",
       "Entries": {
-        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Leah |DT_dialogues={{DT_dialogues}}}}"
+        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Leah |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       }
     },
     {
@@ -288,7 +276,7 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Susan",
       "Entries": {
-        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Susan |DT_dialogues={{DT_dialogues}}}}"
+        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Susan |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       },
       "When": {
         "HasMod": "FlashShifter.StardewValleyExpandedCP"
@@ -299,7 +287,7 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Pierre",
       "Entries": {
-        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Pierre |DT_dialogues={{DT_dialogues}}}}"
+        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Pierre |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       }
     },
     {
@@ -307,7 +295,7 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Maru",
       "Entries": {
-        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Maru |DT_dialogues={{DT_dialogues}}}}"
+        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Maru |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       }
     },
     {
@@ -315,7 +303,7 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Linus",
       "Entries": {
-        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Linus |DT_dialogues={{DT_dialogues}}}}"
+        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Linus |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       }
     },
     {
@@ -323,7 +311,7 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Wizard",
       "Entries": {
-        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Wizard |DT_dialogues={{DT_dialogues}}}}"
+        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Wizard |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       }
     },
 */
@@ -337,24 +325,24 @@
       "Action": "EditData",
       "Target": "Data/EngagementDialogue",
       "Entries": {
-        "Eleanor_eng1": "{{i18n:Dialogues.marriage.{{ModId}}_eng1 |DT_dialogues={{DT_dialogues}}}}",
-        "Eleanor_eng2": "{{i18n:Dialogues.marriage.{{ModId}}_eng2 |DT_dialogues={{DT_dialogues}}}}",
+        "Eleanor_eng1": "{{i18n:Dialogues.marriage.{{ModId}}_eng1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Eleanor_eng2": "{{i18n:Dialogues.marriage.{{ModId}}_eng2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
-        "Eleanor_AfterWedding": "{{i18n:Dialogues.marriage.Eleanor_AfterWedding |DT_dialogues={{DT_dialogues}}}}",
-        "Eleanor_Engaged": "{{i18n:Dialogues.marriage.Eleanor_Engaged |DT_dialogues={{DT_dialogues}}}}",
-        "Eleanor_EngagedRoommate": "{{i18n:Dialogues.marriage.Eleanor_EngagedRoommate |DT_dialogues={{DT_dialogues}}}}",
+        "Eleanor_AfterWedding": "{{i18n:Dialogues.marriage.Eleanor_AfterWedding |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Eleanor_Engaged": "{{i18n:Dialogues.marriage.Eleanor_Engaged |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Eleanor_EngagedRoommate": "{{i18n:Dialogues.marriage.Eleanor_EngagedRoommate |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
         // Marriage edit
-        "Utility.cs.5367": "{{i18n:Dialogues.marriage.Utility.cs.5367 |DT_dialogues={{DT_dialogues}}}}",
-        "Utility.cs.5369": "{{i18n:Dialogues.marriage.Utility.cs.5369 |DT_dialogues={{DT_dialogues}}}}",
-        "Utility.cs.5370": "{{i18n:Dialogues.marriage.Utility.cs.5370 |DT_dialogues={{DT_dialogues}}}}",
-        "Utility.cs.5371": "{{i18n:Dialogues.marriage.Utility.cs.5371 |DT_dialogues={{DT_dialogues}}}}",
-        "Utility.cs.5373": "{{i18n:Dialogues.marriage.Utility.cs.5373 |DT_dialogues={{DT_dialogues}}}}",
-        "Utility.cs.5375": "{{i18n:Dialogues.marriage.Utility.cs.5375 |DT_dialogues={{DT_dialogues}}}}",
-        "Utility.cs.5377": "{{i18n:Dialogues.marriage.Utility.cs.5377 |DT_dialogues={{DT_dialogues}}}}",
-        "Utility.cs.5379": "{{i18n:Dialogues.marriage.Utility.cs.5379 |DT_dialogues={{DT_dialogues}}}}",
-        "Utility.cs.5381": "{{i18n:Dialogues.marriage.Utility.cs.5381 |DT_dialogues={{DT_dialogues}}}}",
-        "Utility.cs.5383": "{{i18n:Dialogues.marriage.Utility.cs.5383 |DT_dialogues={{DT_dialogues}}}}"
+        "Utility.cs.5367": "{{i18n:Dialogues.marriage.Utility.cs.5367 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Utility.cs.5369": "{{i18n:Dialogues.marriage.Utility.cs.5369 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Utility.cs.5370": "{{i18n:Dialogues.marriage.Utility.cs.5370 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Utility.cs.5371": "{{i18n:Dialogues.marriage.Utility.cs.5371 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Utility.cs.5373": "{{i18n:Dialogues.marriage.Utility.cs.5373 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Utility.cs.5375": "{{i18n:Dialogues.marriage.Utility.cs.5375 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Utility.cs.5377": "{{i18n:Dialogues.marriage.Utility.cs.5377 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Utility.cs.5379": "{{i18n:Dialogues.marriage.Utility.cs.5379 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Utility.cs.5381": "{{i18n:Dialogues.marriage.Utility.cs.5381 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Utility.cs.5383": "{{i18n:Dialogues.marriage.Utility.cs.5383 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       },
       "When": {
         "Marriage": "true"
@@ -373,7 +361,7 @@
         "SummitEvent_Dialogue2_Spouse": "Fifth one.../pause 500/message If I can see this, then this one works!",
         "SummitEvent_Dialogue3_StrojvedouciDenis.Eleanor": "Sixth one.../pause 500/message If I can see this, then this one works!"
 
-//        "SummitEvent_Dialogue3_<spouse>": "{{i18n:Dialogues.marriage.SummitEvent_Dialogue3A_{{ModId}} |DT_dialogues={{DT_dialogues}}}}/"
+//        "SummitEvent_Dialogue3_<spouse>": "{{i18n:Dialogues.marriage.SummitEvent_Dialogue3A_{{ModId}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}/"
             },
             
       "When": {
@@ -390,7 +378,7 @@
       "Entries": {
         "SummitEvent_Intro_Spouse": "Hey, @./pause 500/message \"If I can see this, then it works!\"",
         "SummitEvent_Intro2_Spouse": "/speak StrojvedouciDenis.Eleanor \"It is so beautiful up here...\"/pause 500/speak StrojvedouciDenis.Eleanor \"If I can see this, then the second one works!\"/pause 500",
-        "SummitEvent_Dialogue3_<spouse>": "{{i18n:Dialogues.marriage.SummitEvent_Dialogue3A_{{ModId}} |DT_dialogues={{DT_dialogues}}}}/"
+        "SummitEvent_Dialogue3_<spouse>": "{{i18n:Dialogues.marriage.SummitEvent_Dialogue3A_{{ModId}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}/"
             },
       "When": {
         "Marriage": "true"
@@ -405,75 +393,75 @@
         
         These 2 commented lines below will stay here as a memory of the Discord chat with many user (including Pathoschild, who gave me the 1st line)
        "Rainy_Day_{{Random: {{Range:0,4}} |key=rainy_day}}": "{{i18n:Dialogues. rainy-day.{{Random: {{Range:0,4}} |key=rainy_day}}}}",
-        "Rainy_Night": "{{i18n:Dialogues.{{ModId}}.Rainy_Day_{{Random:{{Range:0,5}}}} |DT_dialogues={{DT_dialogues}}}}",
+        "Rainy_Night": "{{i18n:Dialogues.{{ModId}}.Rainy_Day_{{Random:{{Range:0,5}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
-        "Rainy_Day_0": "{{i18n:Dialogues.marriage.Rainy_day_0 |DT_dialogues={{DT_dialogues}}}}",
-        "Rainy_Day_1": "{{i18n:Dialogues.marriage.Rainy_day_1 |DT_dialogues={{DT_dialogues}}}}",
-        "Rainy_Day_2": "{{i18n:Dialogues.marriage.Rainy_day_2 |DT_dialogues={{DT_dialogues}}}}",
-        "Rainy_Day_3": "{{i18n:Dialogues.marriage.Rainy_day_3 |DT_dialogues={{DT_dialogues}}}}",
-        "Rainy_Day_4": "{{i18n:Dialogues.marriage.Rainy_day_4 |DT_dialogues={{DT_dialogues}}}}",
-        "Rainy_Night_0": "{{i18n:Dialogues.marriage.Rainy_Night_0 |DT_dialogues={{DT_dialogues}}}}",
-        "Rainy_Night_1": "{{i18n:Dialogues.marriage.Rainy_Night_1 |DT_dialogues={{DT_dialogues}}}}",
-        "Rainy_Night_2": "{{i18n:Dialogues.marriage.Rainy_Night_2 |DT_dialogues={{DT_dialogues}}}}",
-        "Rainy_Night_3": "{{i18n:Dialogues.marriage.Rainy_Night_3 |DT_dialogues={{DT_dialogues}}}}",
-        "Rainy_Night_4": "{{i18n:Dialogues.marriage.Rainy_Night_4 |DT_dialogues={{DT_dialogues}}}}",
-        "Rainy_Night_5": "{{i18n:Dialogues.marriage.Rainy_Night_5 |DT_dialogues={{DT_dialogues}}}}",
-        "Indoor_Day_0": "{{i18n:Dialogues.marriage.Indoor_Day_0 |DT_dialogues={{DT_dialogues}}}}",
-        "Indoor_Day_1": "{{i18n:Dialogues.marriage.Indoor_Day_1 |DT_dialogues={{DT_dialogues}}}}",
-        "Indoor_Day_2": "{{i18n:Dialogues.marriage.Indoor_Day_2 |DT_dialogues={{DT_dialogues}}}}",
-        "Indoor_Day_3": "{{i18n:Dialogues.marriage.Indoor_Day_3 |DT_dialogues={{DT_dialogues}}}}",
-        "Indoor_Day_4": "{{i18n:Dialogues.marriage.Indoor_Day_4 |DT_dialogues={{DT_dialogues}}}}",
-        "Indoor_Day_5": "{{i18n:Dialogues.marriage.Indoor_Day_5 |DT_dialogues={{DT_dialogues}}}}",
-        "Indoor_Night_0": "{{i18n:Dialogues.marriage.Indoor_Night_0 |DT_dialogues={{DT_dialogues}}}}",
-        "Indoor_Night_1": "{{i18n:Dialogues.marriage.Indoor_Night_1 |DT_dialogues={{DT_dialogues}}}}",
-        "Indoor_Night_2": "{{i18n:Dialogues.marriage.Indoor_Night_2 |DT_dialogues={{DT_dialogues}}}}",
-        "Indoor_Night_3": "{{i18n:Dialogues.marriage.Indoor_Night_3 |DT_dialogues={{DT_dialogues}}}}",
-        "Indoor_Night_4": "{{i18n:Dialogues.marriage.Indoor_Night_4 |DT_dialogues={{DT_dialogues}}}}",
-        "Indoor_Night_5": "{{i18n:Dialogues.marriage.Indoor_Night_5 |DT_dialogues={{DT_dialogues}}}}",
-        "Outdoor_0": "{{i18n:Dialogues.marriage.Outdoor_0 |DT_dialogues={{DT_dialogues}}}}",
-        "Outdoor_1": "{{i18n:Dialogues.marriage.Outdoor_1 |DT_dialogues={{DT_dialogues}}}}",
-        "Outdoor_2": "{{i18n:Dialogues.marriage.Outdoor_2 |DT_dialogues={{DT_dialogues}}}}",
-        "Outdoor_3": "{{i18n:Dialogues.marriage.Outdoor_3 |DT_dialogues={{DT_dialogues}}}}",
-        "Outdoor_4": "{{i18n:Dialogues.marriage.Outdoor_4 |DT_dialogues={{DT_dialogues}}}}",
-        "Outdoor_5": "{{i18n:Dialogues.marriage.Outdoor_5 |DT_dialogues={{DT_dialogues}}}}",
-        "OneKid_0": "{{i18n:Dialogues.marriage.OneKid_0 |DT_dialogues={{DT_dialogues}}}}",
-        "OneKid_1": "{{i18n:Dialogues.marriage.OneKid_1 |DT_dialogues={{DT_dialogues}}}}",
-        "OneKid_2": "{{i18n:Dialogues.marriage.OneKid_2 |DT_dialogues={{DT_dialogues}}}}",
-        "OneKid_3": "{{i18n:Dialogues.marriage.OneKid_3 |DT_dialogues={{DT_dialogues}}}}",
-        "TwoKid_0": "{{i18n:Dialogues.marriage.TwoKid_0 |DT_dialogues={{DT_dialogues}}}}",
-        "TwoKid_1": "{{i18n:Dialogues.marriage.TwoKid_1 |DT_dialogues={{DT_dialogues}}}}",
-        "TwoKid_2": "{{i18n:Dialogues.marriage.TwoKid_2 |DT_dialogues={{DT_dialogues}}}}",
-        "TwoKid_3": "{{i18n:Dialogues.marriage.TwoKid_3 |DT_dialogues={{DT_dialogues}}}}",
-        "Good_0": "{{i18n:Dialogues.marriage.Good_0 |DT_dialogues={{DT_dialogues}}}}",
-        "Good_1": "{{i18n:Dialogues.marriage.Good_1 |DT_dialogues={{DT_dialogues}}}}",
-        "Good_2": "{{i18n:Dialogues.marriage.Good_2 |DT_dialogues={{DT_dialogues}}}}",
-        "Good_3": "{{i18n:Dialogues.marriage.Good_3 |DT_dialogues={{DT_dialogues}}}}",
-        "Good_4": "{{i18n:Dialogues.marriage.Good_4 |DT_dialogues={{DT_dialogues}}}}",
-        "Good_5": "{{i18n:Dialogues.marriage.Good_5 |DT_dialogues={{DT_dialogues}}}}",
-        "Good_6": "{{i18n:Dialogues.marriage.Good_6 |DT_dialogues={{DT_dialogues}}}}",
-        "Good_7": "{{i18n:Dialogues.marriage.Good_7 |DT_dialogues={{DT_dialogues}}}}",
-        "Good_8": "{{i18n:Dialogues.marriage.Good_8 |DT_dialogues={{DT_dialogues}}}}",
-        "Good_9": "{{i18n:Dialogues.marriage.Good_9 |DT_dialogues={{DT_dialogues}}}}",
-        "Neutral_0": "{{i18n:Dialogues.marriage.Neutral_0 |DT_dialogues={{DT_dialogues}}}}",
-        "Neutral_1": "{{i18n:Dialogues.marriage.Neutral_1 |DT_dialogues={{DT_dialogues}}}}",
-        "Neutral_2": "{{i18n:Dialogues.marriage.Neutral_2 |DT_dialogues={{DT_dialogues}}}}",
-        "Neutral_3": "{{i18n:Dialogues.marriage.Neutral_3 |DT_dialogues={{DT_dialogues}}}}",
-        "Neutral_4": "{{i18n:Dialogues.marriage.Neutral_4 |DT_dialogues={{DT_dialogues}}}}",
-        "Neutral_5": "{{i18n:Dialogues.marriage.Neutral_5 |DT_dialogues={{DT_dialogues}}}}",
-        "Neutral_6": "{{i18n:Dialogues.marriage.Neutral_6 |DT_dialogues={{DT_dialogues}}}}",
-        "Neutral_7": "{{i18n:Dialogues.marriage.Neutral_7 |DT_dialogues={{DT_dialogues}}}}",
-        "Neutral_8": "{{i18n:Dialogues.marriage.Neutral_8 |DT_dialogues={{DT_dialogues}}}}",
-        "Neutral_9": "{{i18n:Dialogues.marriage.Neutral_9 |DT_dialogues={{DT_dialogues}}}}",
-        "Bad_0": "{{i18n:Dialogues.marriage.Bad_0 |DT_dialogues={{DT_dialogues}}}}",
-        "Bad_1": "{{i18n:Dialogues.marriage.Bad_1 |DT_dialogues={{DT_dialogues}}}}",
-        "Bad_2": "{{i18n:Dialogues.marriage.Bad_2 |DT_dialogues={{DT_dialogues}}}}",
-        "Bad_3": "{{i18n:Dialogues.marriage.Bad_3 |DT_dialogues={{DT_dialogues}}}}",
-        "Bad_4": "{{i18n:Dialogues.marriage.Bad_4 |DT_dialogues={{DT_dialogues}}}}",
-        "Bad_5": "{{i18n:Dialogues.marriage.Bad_5 |DT_dialogues={{DT_dialogues}}}}",
-        "Bad_6": "{{i18n:Dialogues.marriage.Bad_6 |DT_dialogues={{DT_dialogues}}}}",
-        "Bad_7": "{{i18n:Dialogues.marriage.Bad_7 |DT_dialogues={{DT_dialogues}}}}",
-        "Bad_8": "{{i18n:Dialogues.marriage.Bad_8 |DT_dialogues={{DT_dialogues}}}}",
-        "Bad_9": "{{i18n:Dialogues.marriage.Bad_9 |DT_dialogues={{DT_dialogues}}}}"
+        "Rainy_Day_0": "{{i18n:Dialogues.marriage.Rainy_day_0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Rainy_Day_1": "{{i18n:Dialogues.marriage.Rainy_day_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Rainy_Day_2": "{{i18n:Dialogues.marriage.Rainy_day_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Rainy_Day_3": "{{i18n:Dialogues.marriage.Rainy_day_3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Rainy_Day_4": "{{i18n:Dialogues.marriage.Rainy_day_4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Rainy_Night_0": "{{i18n:Dialogues.marriage.Rainy_Night_0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Rainy_Night_1": "{{i18n:Dialogues.marriage.Rainy_Night_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Rainy_Night_2": "{{i18n:Dialogues.marriage.Rainy_Night_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Rainy_Night_3": "{{i18n:Dialogues.marriage.Rainy_Night_3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Rainy_Night_4": "{{i18n:Dialogues.marriage.Rainy_Night_4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Rainy_Night_5": "{{i18n:Dialogues.marriage.Rainy_Night_5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Indoor_Day_0": "{{i18n:Dialogues.marriage.Indoor_Day_0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Indoor_Day_1": "{{i18n:Dialogues.marriage.Indoor_Day_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Indoor_Day_2": "{{i18n:Dialogues.marriage.Indoor_Day_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Indoor_Day_3": "{{i18n:Dialogues.marriage.Indoor_Day_3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Indoor_Day_4": "{{i18n:Dialogues.marriage.Indoor_Day_4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Indoor_Day_5": "{{i18n:Dialogues.marriage.Indoor_Day_5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Indoor_Night_0": "{{i18n:Dialogues.marriage.Indoor_Night_0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Indoor_Night_1": "{{i18n:Dialogues.marriage.Indoor_Night_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Indoor_Night_2": "{{i18n:Dialogues.marriage.Indoor_Night_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Indoor_Night_3": "{{i18n:Dialogues.marriage.Indoor_Night_3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Indoor_Night_4": "{{i18n:Dialogues.marriage.Indoor_Night_4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Indoor_Night_5": "{{i18n:Dialogues.marriage.Indoor_Night_5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Outdoor_0": "{{i18n:Dialogues.marriage.Outdoor_0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Outdoor_1": "{{i18n:Dialogues.marriage.Outdoor_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Outdoor_2": "{{i18n:Dialogues.marriage.Outdoor_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Outdoor_3": "{{i18n:Dialogues.marriage.Outdoor_3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Outdoor_4": "{{i18n:Dialogues.marriage.Outdoor_4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Outdoor_5": "{{i18n:Dialogues.marriage.Outdoor_5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "OneKid_0": "{{i18n:Dialogues.marriage.OneKid_0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "OneKid_1": "{{i18n:Dialogues.marriage.OneKid_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "OneKid_2": "{{i18n:Dialogues.marriage.OneKid_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "OneKid_3": "{{i18n:Dialogues.marriage.OneKid_3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "TwoKid_0": "{{i18n:Dialogues.marriage.TwoKid_0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "TwoKid_1": "{{i18n:Dialogues.marriage.TwoKid_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "TwoKid_2": "{{i18n:Dialogues.marriage.TwoKid_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "TwoKid_3": "{{i18n:Dialogues.marriage.TwoKid_3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Good_0": "{{i18n:Dialogues.marriage.Good_0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Good_1": "{{i18n:Dialogues.marriage.Good_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Good_2": "{{i18n:Dialogues.marriage.Good_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Good_3": "{{i18n:Dialogues.marriage.Good_3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Good_4": "{{i18n:Dialogues.marriage.Good_4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Good_5": "{{i18n:Dialogues.marriage.Good_5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Good_6": "{{i18n:Dialogues.marriage.Good_6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Good_7": "{{i18n:Dialogues.marriage.Good_7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Good_8": "{{i18n:Dialogues.marriage.Good_8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Good_9": "{{i18n:Dialogues.marriage.Good_9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Neutral_0": "{{i18n:Dialogues.marriage.Neutral_0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Neutral_1": "{{i18n:Dialogues.marriage.Neutral_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Neutral_2": "{{i18n:Dialogues.marriage.Neutral_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Neutral_3": "{{i18n:Dialogues.marriage.Neutral_3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Neutral_4": "{{i18n:Dialogues.marriage.Neutral_4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Neutral_5": "{{i18n:Dialogues.marriage.Neutral_5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Neutral_6": "{{i18n:Dialogues.marriage.Neutral_6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Neutral_7": "{{i18n:Dialogues.marriage.Neutral_7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Neutral_8": "{{i18n:Dialogues.marriage.Neutral_8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Neutral_9": "{{i18n:Dialogues.marriage.Neutral_9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Bad_0": "{{i18n:Dialogues.marriage.Bad_0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Bad_1": "{{i18n:Dialogues.marriage.Bad_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Bad_2": "{{i18n:Dialogues.marriage.Bad_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Bad_3": "{{i18n:Dialogues.marriage.Bad_3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Bad_4": "{{i18n:Dialogues.marriage.Bad_4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Bad_5": "{{i18n:Dialogues.marriage.Bad_5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Bad_6": "{{i18n:Dialogues.marriage.Bad_6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Bad_7": "{{i18n:Dialogues.marriage.Bad_7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Bad_8": "{{i18n:Dialogues.marriage.Bad_8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Bad_9": "{{i18n:Dialogues.marriage.Bad_9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       },
       "When": {
         "Marriage": "true"
@@ -486,11 +474,11 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
       "Entries": {
-        "summer_3": "{{i18n:Dialogues.addons.summer_3 |DT_dialogues={{DT_dialogues}}}}",
-        "summer_4": "{{i18n:Dialogues.addons.summer_4 |DT_dialogues={{DT_dialogues}}}}",
-        "summer_5": "{{i18n:Dialogues.addons.summer_5 |DT_dialogues={{DT_dialogues}}}}",
-        "summer_6": "{{i18n:Dialogues.addons.summer_6 |DT_dialogues={{DT_dialogues}}}}",
-        "summer_7": "{{i18n:Dialogues.addons.summer_7 |DT_dialogues={{DT_dialogues}}}}"
+        "summer_3": "{{i18n:Dialogues.addons.summer_3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "summer_4": "{{i18n:Dialogues.addons.summer_4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "summer_5": "{{i18n:Dialogues.addons.summer_5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "summer_6": "{{i18n:Dialogues.addons.summer_6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "summer_7": "{{i18n:Dialogues.addons.summer_7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       },
       "When": {
         "HasMod": "HogwartsET.CP.Hogwarts"
