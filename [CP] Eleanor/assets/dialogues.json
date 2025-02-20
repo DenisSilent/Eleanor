@@ -261,7 +261,7 @@
         "MobilePhoneGreeting": "{{i18n:Dialogues.addons.MobilePhoneGreeting.{{Random:{{Range:0,2}}}} |DT_dialogues={{DT_dialogues}}}}",
         "MobilePhoneReminisce": "{{i18n:Dialogues.addons.MobilePhoneReminisce |DT_dialogues={{DT_dialogues}}}}",
         "MobilePhoneInvite": "{{i18n:Dialogues.addons.MobilePhoneInvite |DT_dialogues={{DT_dialogues}}}}",
-        "MobilePhoneGoodBye": "{{i18n:Dialogues.addons.MobilePhoneGoodBye.{{Random:{{Range:0,3}}}} |DT_dialogues={{DT_dialogues}}}}"
+        "MobilePhoneGoodBye": "{{i18n:Dialogues.addons.MobilePhoneGoodBye.{{Random:{{Range:0,2}}}} |DT_dialogues={{DT_dialogues}}}}"
       }
     },
 

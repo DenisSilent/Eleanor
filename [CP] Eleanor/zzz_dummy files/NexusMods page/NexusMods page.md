@@ -6,6 +6,15 @@
 
 Eleanor is a young witch who studies under the guidance of the local wizard, Mr. Rasmodius. She is kinda shy at first, but she'll eventually open up to you (or, at least, that's how her dialogues & events are written). She loves studying and learning new things. Also, note that her past is not one of the best...
 
+[b][size=4]Features[/size]:
+[/b][list]
+[*]1 NPC named Eleanor that:[list]
+[*]likes studying, learning new things
+[*]loves nature
+[*][b]is datable but[/b] [b]NOT marriable[/b] (until version 1.0.0)
+[*][b]needs SVE; compactible with expansions like Ridgeside Village, East Scrap, Downtown Zuzu, and many more![/b]
+[/list]
+[/list]
 [b][size=4]Roadmap:[/size][/b]
 
 [list]
@@ -39,12 +48,12 @@ Eleanor is a young witch who studies under the guidance of the local wizard, Mr.
 [*][url=https://www.nexusmods.com/stardewvalley/mods/7286]RSV[/url] - should be fully compatible (there might be bugs; if you report them, I'll try my best to fix them)
 [*][url=https://www.nexusmods.com/stardewvalley/mods/5787]ES[/url] - should be fully compatible (there might be bugs; if you report them, I'll try my best to fix them)
 [*]Other NPC mods:
-  ... I'll be honest - this mod *might or might not* work with NPC mods you use. I expect many bugs with many NPCs; if you report them, I'll try my best to fix them. For festivals, I work by LemurKat's method "First in gets priority" which is described [url=https://lemurkat.wordpress.com/2021/11/13/help-theyre-overlapping-at-a-festival/]here.[/url] And as my mod is pretty new, I expect A LOT of festival moves on my side. BTW, Eleanor will react to these NPC mods: BTW, she also reacts to some events from Always Raining in the Valley, Alecto, Lavril, Lucikiel, RSV, Leilani, Jorts and Jean, Rodney and Yri (incompatible in 1.6).[*]Other mods:
+  ... I'll be honest - this mod *might or might not* work with NPC mods you use. I expect many bugs with many NPCs; if you report them, I'll try my best to fix them. For festivals, I work by LemurKat's method "First in gets priority" which is described [url=https://lemurkat.wordpress.com/2021/11/13/help-theyre-overlapping-at-a-festival/]here.[/url] And as my mod is pretty new, I expect A LOT of festival moves on my side. [b]Eleanor will react to these NPC mods: Always Raining in the Valley, Alecto, Lavril, Lucikiel, RSV, Leilani, Jorts and Jean, Rodney and Yri[/b] (incompatible in 1.6).[*]Other mods:
   There shouldn't be any technical incompatibility, but there might be some things that might not be 100% "lore friendly", so compatible, but:  ...only time will tell...[/list]
 
 [b][size=4]Credits:[/size][/b]
 
-Basics (parts of content.json, manifest.json, now-quite-obsolete mod folder structure) were created with the help of [i]MissCoriel's NPC Creator[/i], which is not bad at all, but in my opinion, it is better to do it from some NPC mod you like (I used many NPC mods I play with; as SVE & RSV, but these great mods are so big that their code is not easy to follow at all (ES is in a quite good position, though), so I recommend smaller ones like Jorts and Jean (totally ideal, with combination with this link: [url=https://stardewmodding.wiki.gg/wiki/Tutorial:_Making_a_Custom_NPC]https://stardewmodding.wiki.gg/wiki/Tutorial:_Making_a_Custom_NPC[/url]), MrGinger (due to his story it is not so easy to follow his code) or this one of course ☻). Anyways, credits to those:
+Basics (parts of content.json, manifest.json, now-quite-obsolete mod folder structure) were created with the help of [i]MissCoriel's NPC Creator[/i], which is not bad at all, but in my opinion, it is better to do it from some NPC mod you like (I used many NPC mods I play with; as SVE & RSV, but these great mods are so big that their code is not easy to follow at all (ES is in a quite good position, though), so I recommend smaller ones like Jorts and Jean (totally ideal, with combination with this link: [url=https://stardewmodding.wiki.gg/wiki/Tutorial:_Making_a_Custom_NPC]https://stardewmodding.wiki.gg/wiki/Tutorial:_Making_a_Custom_NPC[/url]), MrGinger (due to his story it is not so easy to follow his code) or this one of course ☻). Anyways, credits go to:
 
 [b]Eric Barone [i]"ConcernedApe"[/i][/b] - extremely big THANK YOU for making & updating Stardew Valley (also a big THANK YOU to everyone who was or is working with him);
 
@@ -60,7 +69,7 @@ Disclaimer (from MIT Licence):
 
 THE SOFTWARE IS PROVIDED [i]"AS IS"[/i], WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Portraits for Eleanor are made using[i] [/i][url=https://jazzybee.itch.io/sdvcharactercreator][i]Stardew Valley Character Creator[/i] [/url]and edited so they could be used as portraits for NPC. As the program's Terms of Use define, I do not claim any rights for these images (not that I would even want them, but...). Also, as the program and its images are shared under Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License, images (Eleanor's portraits) will stay licensed with Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License, no matter the other mod files's licensing.
+Portraits for Eleanor are made using[i] [/i][url=https://jazzybee.itch.io/sdvcharactercreator]Stardew Valley Character Creator [/url]and edited so they could be used as portraits for NPC. As the program's Terms of Use define, I do not claim any rights for these images (not that I would even want them, but...). Also, as the program and its images are shared under Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License, images (Eleanor's portraits) will stay licensed with Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License, no matter the other mod files's licensing.
 
 [b][size=4]Permissons:[/size][/b]
 
@@ -69,7 +78,7 @@ Portraits for Eleanor are made using[i] [/i][url=https://jazzybee.itch.io/sdvch
 [list]
 [*]translate this mod (only i18n files - there's nothing in other files; both releasing independently and giving me your translation is possible, I'll prefer the second one; for this one only Nexus Mods dependency, as there is no manifest)
 [*]use this mod as a template for your mod (code can be used, content like dialogues, etc. can not; of course, you don't have to (but you can if you want!) set dependency for my mod in these cases)
-[*]create different sprites/portraits of this mod (but read the [url=https://jazzybee.itch.io/sdvcharactercreator][/url][url=https://jazzybee.itch.io/sdvcharactercreator][i]Stardew Valley Character Creator[/i][/url]'s Terms of Use, just in case)
+[*]create different sprites/portraits of this mod (but read the [url=https://jazzybee.itch.io/sdvcharactercreator]Stardew Valley Character Creator[/url]'s Terms of Use, just in case)
 [*]edit this mod (for personal usage only!; do NOT share, or it'll be reported)
 [*]release unofficial version of this mod after it would be incompatible with some Stardew Valley version (but it can be only using rules shared at [url=https://forums.stardewvalley.net/threads/unofficial-mod-updates.2096/]https://forums.stardewvalley.net/threads/unofficial-mod-updates.2096/[/url] and [url=https://stardewvalleywiki.com/Modding:Mod_compatibility#Creating_an_unofficial_update]https://stardewvalleywiki.com/Modding:Mod_compatibility#Creating_an_unofficial_update[/url]; copy of those as of 8.10.2024/mod version 0.6.5-beta4 are shared with this mod)
 [/list]
@@ -77,7 +86,7 @@ Portraits for Eleanor are made using[i] [/i][url=https://jazzybee.itch.io/sdvch
 [b][size=3]You can not:[/size][/b]
 
 [list]
-[*]steal/dishonest/... this mod
+[*]steal/defame/... this mod
 [*]place this mod behind a paywall/monetize in any way any part of this mod (you can, however, monetize your mod in any way, even if you get inspired by my code)
 [/list]
 
@@ -87,4 +96,4 @@ This NPC mod *might* (I tried my best to not include anything, but...) include p
 
 However, everything that's NOT created by me is subject to the rights and/or licenses of other authors. If the author doesn't agree with including their content in this mod, please contact me immediately on Nexus Mods, and I'll remove the content from my mod. Please, do not report me/my mod for violating Your rights to Your content, as we can resolve this issue peacefully. I value Your contributions to the community of Stardew Valley and/or other games, and I can guarantee that I do NOT want to steal/dishonest/... Your work.
 
-(Please, note that this is my first public mod ever, so sorry for some things that might be done better)
+(Please, note that this is my first public mod ever, so sorry for some things that might've be done better)

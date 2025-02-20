@@ -7,6 +7,14 @@ If you are interested in the mod, please use the mod's [Nexus Mods page](https:/
 
 Eleanor is a young witch who studies under the guidance of the local wizard, Mr. Rasmodius. She is kinda shy at first, but she'll eventually open up to you (or, at least, that's how her dialogues & events are written). She loves studying and learning new things. Also, note that her past is not one of the best...
 
+### Features:
+
+* 1 NPC named Eleanor that:
+  * likes studying, learning new things
+  * loves nature
+  * **is datable but** **NOT marriable** (until version 1.0.0)
+  * **needs SVE; compactible with expansions like Ridgeside Village, East Scrap, Downtown Zuzu, and many more!**
+
 ### **Roadmap**:
 
 * ~~0.7.0 - one look only clothes + 1st GitHub release~~ 1.2.2025

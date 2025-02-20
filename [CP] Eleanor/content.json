@@ -231,7 +231,7 @@ commented out because of the missing art
           "DumpsterDiveFriendshipEffect": "-5",
 
           // Festivals
-          "FlowerDanceCanDance": "false",
+          "FlowerDanceCanDance": "false", // not supported... yet
           "WinterStarParticipant": "false", // not supported... yet
           //"WinterStarGifts": [],
 
