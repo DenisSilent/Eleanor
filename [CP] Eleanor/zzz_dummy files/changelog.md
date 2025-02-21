@@ -3,6 +3,13 @@
 Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/commits/main/)
 
 ---
+
+## version 0.8.8 (21.2.2025)
+
+* Fixed events not triggerable
+
+---
+
 ## version 0.8.7 (20.2.2025)
 
 * Fixed schedules one more time + simplified them (X plan is to do a randomization for them to fight against repetation)
