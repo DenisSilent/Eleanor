@@ -14,12 +14,12 @@
   "config.Festivals.name": "Festivals",
   "config.Festivals.values.true": "true",
   "config.Festivals.values.false": "false",
-  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 0.8.8 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
+  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 0.9.0-beta.1 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
 
   "config.Marriage.name": "Marriage",
   "config.Marriage.values.true": "true",
   "config.Marriage.values.false": "false",
-  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.8.8, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
+  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.9.0-beta.1, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
 
   "config.14hearts-variants.name": "14 hearts event variant",
   "config.14hearts-variants.values.short": "short",
@@ -36,11 +36,11 @@
   "config.section.Visual side of Eleanor.name": "Visual side of Eleanor",
   "config.section.Visual side of Eleanor.description": "Visual side of Eleanor.",
 
-  "config.Graphics.name": "NPC graphics",
-  "config.Graphics.values.one look only": "one look only",
-  "config.Graphics.values.vanilla": "vanilla",
-  "config.Graphics.values.full": "full",
-  "config.Graphics.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.8.8, it includes around 30%-done content. Default setting: only one look.",
+  "config.Outfits.name": "NPC Outfits",
+  "config.Outfits.values.one look only": "one look only",
+  "config.Outfits.values.vanilla": "vanilla",
+  "config.Outfits.values.seasonal": "seasonal",
+  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.9.0-beta.1, its main part is commented out. Default setting: only one look.",
 
   // Experimental - DoNotChange
 
@@ -51,7 +51,7 @@
   "config.On/off.values.on": "on",
   "config.On/off.values.safe mode": "safe mode",
   "config.On/off.values.off": "off",
-  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 0.8.8, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
+  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 0.9.0-beta.1, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
 
   // Eleanor's name
   "DisplayName": "Eleanor",
@@ -122,6 +122,46 @@
 
   // Specific day dialogues
   //Note: Will work only on the first year due to the way the game checks for the dayOfMonth line. Use the format season_dayOfMonth_2 for dialogue in year 2 and later. Ex "summer_10_2". You can only check for 1 (first year) or 2 (all years after). If you want a dialogue to appear on a specific year, consider using CP conditions in addition to the "_2" suffix
+  "Dialogues.spring.1": "",
+  "Dialogues.spring.2": "",
+  "Dialogues.spring.3": "",
+  "Dialogues.spring.4": "",
+  "Dialogues.spring.5": "",
+  "Dialogues.spring.6": "",
+  "Dialogues.spring.7": "",
+  "Dialogues.spring.8": "",
+  "Dialogues.spring.9": "",
+  "Dialogues.spring.10": "",
+  "Dialogues.summer.1": "",
+  "Dialogues.summer.2": "",
+  "Dialogues.summer.3": "",
+  "Dialogues.summer.4": "",
+  "Dialogues.summer.5": "",
+  "Dialogues.summer.6": "",
+  "Dialogues.summer.7": "",
+  "Dialogues.summer.8": "",
+  "Dialogues.summer.9": "",
+  "Dialogues.summer.10": "",
+  "Dialogues.fall.1": "",
+  "Dialogues.fall.2": "",
+  "Dialogues.fall.3": "",
+  "Dialogues.fall.4": "",
+  "Dialogues.fall.5": "",
+  "Dialogues.fall.6": "",
+  "Dialogues.fall.7": "",
+  "Dialogues.fall.8": "",
+  "Dialogues.fall.9": "",
+  "Dialogues.fall.10": "",
+  "Dialogues.winter.1": "",
+  "Dialogues.winter.2": "",
+  "Dialogues.winter.3": "",
+  "Dialogues.winter.4": "",
+  "Dialogues.winter.5": "",
+  "Dialogues.winter.6": "",
+  "Dialogues.winter.7": "",
+  "Dialogues.winter.8": "",
+  "Dialogues.winter.9": "",
+  "Dialogues.winter.10": "",
 
   "Dialogues.spring_1": "Time for you to start working on your farm, {{DT_name}}.#$b#I don't say you weren't working on %farm farm, I just wanted to tell you that it has got some powerful magical properties.#$e#How do I know, you're asking?#$b#I can sense the magic in it.",
   "Dialogues.spring_12": "I don't plan to attend Egg Festival tomorrow.#$b#Anyways, may you enjoy it, {{DT_name}}.",
@@ -155,7 +195,7 @@
   "WipedMemory": "Huh... I feel like I know you, but I can't remember anything...#$b#Who are you?#$b#And why are you here?#$b#I'm sorry, but I can't remember anything...#$b#By the way, my name is Eleanor.",
 
   /*
-  commented out until dialogue update (0.8.X) or marriage update (1.0.0); do NOT translate (there isn't anything to translate anyway...)
+  commented out until dialogue update (0.9.0) or marriage update (1.0.0); do NOT translate (there isn't anything to translate anyway...)
 
 "Dialogues.RejectMermaidPendant": "",
 "Dialogues.RejectMermaidPendant_Divorced": "",
@@ -315,6 +355,7 @@
 */
 
   // Marriage + engagement dialogues //
+  /*
   "Dialogues.marriage.eng1": "StrojvedouciDenis.Eleanor-DEBUG:eng1",
   "Dialogues.marriage.eng2": "StrojvedouciDenis.Eleanor-DEBUG:eng2",
 
@@ -403,6 +444,7 @@
   "Dialogues.marriage.Bad_7": "StrojvedouciDenis.Eleanor-DEBUG:Bad_7",
   "Dialogues.marriage.Bad_8": "StrojvedouciDenis.Eleanor-DEBUG:Bad_8",
   "Dialogues.marriage.Bad_9": "StrojvedouciDenis.Eleanor-DEBUG:Bad_9",
+  */
 
   // Hogwarts
   "Dialogues.addons.summer_3": "%Looks like Eleanor is lost in her thoughts...#$e#%Wait, aren't those tears you can see on her face?#$b#%You decide to leave her alone for now...",
@@ -774,18 +816,44 @@
   "Dialogues.RejectGift_Divorced": "Oh really, {{DT_name}}?#$b#You're giving me this after what happened between us?#$b#No, {{DT_name}}, I can't accept it...",
 
   // mails.json
-  "Mail.Debug": "StrojvedouciDenis.Eleanor-DEBUG:Mail.Debug",
+  "Mail.HogwartsTrips": "StrojvedouciDenis.Eleanor-DEBUG:Mail.HogwartsTrips",
+
+  // movies.json
+  "Movies.BraveLittleSapling.1": "So this movie is about a sampling turning into a tree?#$b#That could be interesting, I guess.",
+  "Movies.BraveLittleSapling.2": "It is so hard to say goodbye... Believe me, I know...$s",
+  "Movies.BraveLittleSapling.3": "This film reminds me of my childhood memories...#$b#It's fascinating and true. Sometimes, when you lost your hope, you can find it in the most unexpected places.",
+  "Movies.NaturalWonders.1": "I've seen a few mentions of this movie in the books, but I've never watched it...#$b#It should be a good documentary.",
+  "Movies.NaturalWonders.2": "The beauty of nature is captured perfectly in this film...#$b#I can only imagine how it feels to witness those wonders firsthand.",
+  "Movies.NaturalWonders.3": "Yeah, Stardew Valley is indeed a beautiful place...#$b#...and I'm glad I can live here.",
+  "Movies.PrairieKing.1": "I heard a lot about the game, but I have barely played it...#$b#The movie should be nice, thought.",
+  "Movies.PrairieKing.2": "Do you even realize you won't ever win, you evil human?#$b#...but I have to admit, it's a good movie.",
+  "Movies.PrairieKing.3": "That was a pretty good movie. I should ask Abigail if I could play the game with her sometime.",
+  "Movies.Movies.Wumbus.1": "A sci-fi comedy?#$b#That could be taken anyhow, so I'll let it to suprise me.",
+  "Movies.Movies.Wumbus.2": "What a technology they have in this movie!#$b#I wish we had something like that..",
+  "Movies.Movies.Wumbus.3": "I wonder what of their technology would even be functional in our world...#$b#...and what would be the consequences of it. Anyway, good movie",
+  "Movies.Mysterium.1": "This one's name sounds... mysterious.#$b#I wonder what it's about...",
+  "Movies.Mysterium.2": "Eleanor is looking... scared? Looks like she doesn't like this movie...",
+  "Movies.Mysterium.3": "I'd like to ask - how is a human being even able to peacefully sleep after watching this movie?#$b#I already worry what nightmares I'll have tonight...",
+  "Movies.ItHowlsInTheRain.1": "This title piques my interest. What kind of story could it tell?#$b#I wonder if it will be thrilling or more of a drama.",
+  "Movies.ItHowlsInTheRain.2": "Eleanor is looking... scared? Looks like she doesn't like this movie...",
+  "Movies.ItHowlsInTheRain.3": "Why do they make movies like this?#$b#I'm not sure if I'll be able to sleep tonight...",
+  "Movies.MiracleAtColdstarRanch.1": "I have high hopes for this film. I've heard so many good things about it...#$b#Can't wait to see it for myself.",
+  "Movies.MiracleAtColdstarRanch.2": "Their dedication to keeping the sprite of the Winter Star alive, no matter what, is truly inspiring...$s",
+  "Movies.MiracleAtColdstarRanch.3": "What a heartwarming movie!#$b#I'm so glad I watched it.",
+  "Movies.Movies.ZuzuExpress.1": "I heard this movie is a romantic drama...#$b#As a hopeless romantic, I can't wait to watch it.",
+  "Movies.Movies.ZuzuExpress.2": "You have to follow your heart! You love him, he loves you, what's the problem?$s",
+  "Movies.Movies.ZuzuExpress.3": "Who did that ending?! Do they even realize how many people want to know if they'll be together or not?!",
 
   // schedules.json
   "Schedule.safemode": "Hey, {{DT_name}}. I'm in safe mode, for your information.#$b#That means I won't move from this very tile...#$b#%Safemode meant only for experimental usage like fixing this mod's errors without losing barely (?) any progress.",
 
   // z_secrets.json
-  "Secret.Dialogues.festivals-spr13": "Ehm.....#$b#How you got here, {{DT_name}}?#$b#You know you shoud NOT be here!!!#$e#Actually, I hope you won't even tell me, I don't want to know it.#$b#I recommend you to get back to places you should be.",
-  "Secret.Dialogues.festivals.spouse-spr13": "Well, well, well. And I thought my love won't come here...#$b#I shoud've expect that from you, {{DT_name}}, that's for sure.",
+  "Secret.Dialogues.festivals.spr13": "Ehm... How you got here, {{DT_name}}?#$b#You know you shoud NOT be here!!!#$b#Actually, I hope you won't even tell me, I don't want to know it.#$b#I recommend you to get back to places you should be.",
+  "Secret.Dialogues.festivals.spouse.spr13": "Well, well, well...#$b#That's a pretty deep thinking about how to get to me...#$b#I shoud've expect that from you, {{DT_name}}, that's for sure.",
   "Secret.Dialogues.festivals.sum11": "Hmm... And you thought I wouldn't be here, {{DT_name}}, didn't you?#$b#Well, let's just say you should always be prepared for anything.",
-  "Secret.Dialogues.festivals.spouse-sum11": "Here you have, my loved {{DT_name}}.$action AddItem 71 10 3#$b#Try to add one of these to the soup and wait if the gouvernor will notice them...",
+  "Secret.Dialogues.festivals.spouse.sum11": "Here you have, my loved {{DT_name}}.$action AddItem 71 10 3#$b#Try to add one of these to the soup and wait if the gouvernor will notice them...",
 
-  "Secret.Mail.Eleanor_warning": "Dear player of Stardew Valley (a.k.a. {{DT_name}}),^^if you don't know, you installed a custom NPC mod that adds an NPC named Eleanor. If -  by any chance - you paid for this mod, please demand a full refund immediately, as this mod is fully free and downloadable from Nexus Mods (ID is XXXXX).^^-StrojvedouciDenis; author of NPC Eleanor^^^^^^^^^^^PS: Thanks to NPC mod Qingfeng and the 'secret message warning' in it that inspired me to this.",
+  "Secret.Mail.warning": "Dear player of Stardew Valley (a.k.a. {{DT_name}}),^^if you don't know, you installed a custom NPC mod that adds an NPC named Eleanor. If -  by any chance - you paid for this mod, please demand a full refund immediately, as this mod is fully free and downloadable from Nexus Mods (ID is XXXXX).^^-StrojvedouciDenis; author of NPC Eleanor^^^^^^^^^^^PS: Thanks to NPC mod Qingfeng and the 'secret message warning' in it that inspired me to this.",
   // "Secret.Mail.Eleanor_warning": "Test",     // left here in memory of the discusion on Discord on 10.2.2025
 
   "Secret.Event.Eleanor_ending.0": "Congratulations!#You triggered all secrets and fully completed this mod's content. You are the best!", // message

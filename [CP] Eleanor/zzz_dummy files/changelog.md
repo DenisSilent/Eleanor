@@ -4,6 +4,28 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ---
 
+## version 0.9.0-beta.1 (8.3.2025)
+
+* First preparations for 0.9.0 update
+* Added beta movies reactions
+* **Added a part of the sprites and portraits created by hezjena2023! Thanks so much for doing the art ❤**
+  * By that, I mean everything that is not in the `one look only (ORG)` folder
+  * Vanilla-like portraits are created using and editing art from [Stardew Valley Character Creator](https://jazzybee.itch.io/sdvcharactercreator) (credits to Poltergeister & Jaz) and are therefore shared, like my ORG ones, under Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License. Sprites are handmade. For future info, please contact them.
+* Reedited and reorganized NPC graphics code and folders -> decrased the mod's size X delete the old version before istalling the new one
+* Fixed some secrets + added a new one that'll trigger after you trigger all other ones
+* Internal code reorganization
+* Invisible dialogue checker (for secrets) Discord help by:
+  * `@abagaianye`
+* sawAdvancedCharacterCreationIndicator in save Discord question answered by:
+  * `@abagaianye`
+  * `@p.llow`
+* Not all movie strings found Discord help by:
+  * `@abagaianye`
+* Schedule randomization check Discord help by:
+  * `@atravita`
+
+---
+
 ## version 0.8.8 (21.2.2025)
 
 * Fixed events not triggerable
@@ -66,7 +88,7 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 * Added basic compactibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
 * Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
 
-  ---
+---
 
 ## version 0.8.1-beta.1 (14.2.2025)
 

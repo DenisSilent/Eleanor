@@ -1,0 +1,362 @@
+{
+  // 0.9.0
+  "Changes": [
+    {
+      "LogName": "Eleanor - movie tastes",
+      "Action": "EditData",
+      "Target": "Data/ConcessionTastes",
+      "Entries": {
+        "StrojvedouciDenis.Eleanor": {
+          "Name": "StrojvedouciDenis.Eleanor",
+          "LovedTags": [
+            "Cappuccino Mousse Cake",
+            "Stardrop Sorbet",
+            "Star Cookie",
+            "Ice Cream Sandwich",
+            "Popcorn",
+            "Cotton Candy"
+          ],
+          "LikedTags": [
+            "Chocolate Popcorn",
+            "Hummus Snack Pack",
+            "Personal Pizza",
+            "Rock Candy",
+            "Apple Slices",
+            "Salted Peanuts",
+            "Fries",
+            "Jawbreaker"
+          ],
+          "DislikedTags": [
+            "Nachos",
+            "Jasmine Tea",
+            "Black Licorice",
+            "Sour Slimes",
+            "Joja Cola",
+            "Joja Corn",
+            "Kale Smoothie",
+            "Panzanella Salad",
+            "Salmon Burger",
+            "Truffle Popcorn"
+          ]
+        }
+      }
+    },
+    //spring_movie_0 Brave Little Sapling - family, comedy
+    //spring_movie_1 Natural Wonders - documentary, family
+    //summer_movie_0 Prairie King - action
+    //summer_movie_1 Wumbus - sci-fi, comedy, family
+    //fall_movie_0 Mysterium - horror, art
+    //fall_movie_1 Howls in the rain - horror
+    //winter_movie_0 Miracle at Coldstar Ranch - family, romance
+    //winter_movie_1 Zuzu City Express - classic, romance
+    {
+      "LogName": "Eleanor - movies - dialogues, likes and dislikes",
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",
+      "Entries": {
+        "StrojvedouciDenis.Eleanor": {
+          "NPCName": "StrojvedouciDenis.Eleanor",
+          "Reactions": [
+            {
+              "Tag": "spring_movie_0", //Brave Little Sapling
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.BraveLittleSapling.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": "sprout_leave",
+                  "Script": null,
+                  "Text": "{{i18n:Movies.BraveLittleSapling.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.BraveLittleSapling.3}}"
+                }
+              },
+              "ID": "reaction_0"
+            },
+            {
+              "Tag": "spring_movie_1", //Natural Wonders
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.NaturalWonders.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.NaturalWonders.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.NaturalWonders.3}}"
+                }
+              },
+              "ID": "reaction_1"
+            },
+            {
+              "Tag": "summer_movie_0", //Prairie King
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.PrairieKing.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": "PK_villain",
+                  "Script": null,
+                  "Text": "{{i18n:Movies.PrairieKing.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.PrairieKing.3}}"
+                }
+              },
+              "ID": "reaction_2"
+            },
+            {
+              "Tag": "summer_movie_1", //Wumbus
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.Wumbus.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.Wumbus.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.Wumbus.3}}"
+                }
+              },
+              "ID": "reaction_3"
+            },
+            {
+              "Tag": "fall_movie_0", //Mysterium
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.Mysterium.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": "mysterium_shadow",
+                  "Script": "/message \"{{i18n:Movies.Mysterium.2}}\"",
+                  "Text": null
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.Mysterium.3}}"
+                }
+              },
+              "ID": "reaction_4"
+            },
+            {
+              "Tag": "fall_movie_1", //It Howls In The Rain
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Movies.ItHowlsInTheRain.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.ItHowlsInTheRain.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.ItHowlsInTheRain.3}}"
+                }
+              },
+              "ID": "reaction_5"
+            },
+            {
+              "Tag": "winter_movie_0", //Miracle At Coldstar Ranch
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.MiracleAtColdstarRanch.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.MiracleAtColdstarRanch.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.MiracleAtColdstarRanch.3}}"
+                }
+              },
+              "ID": "reaction_6"
+            },
+            {
+              "Tag": "winter_movie_1", //Zuzu City Express
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.ZuzuExpress.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": "zuzucityexpress_mind_heart",
+                  "Script": null,
+                  "Text": "{{i18n:Movies.ZuzuExpress.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movies.ZuzuExpress.3}}"
+                }
+              }
+            }
+            /*
+            // taken from https://stardewvalleywiki.com/Modding:Movie_theater_data on 23.2.2025; I have no idea how it works --> commented out
+            {
+              "Tag": "like",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "Hey, I've heard some good things about this one!"
+                },
+                "DuringMovie": null,
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "That was great! Thanks for seeing this with me!"
+                }
+              },
+              "ID": "reaction_7"
+            },
+            {
+              "Tag": "dislike",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "I can't say I would've picked this one myself, but I'll try to keep an open mind..."
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "..."
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "Sorry if I ruined the movie for you, it just wasn't really my favorite..."
+                }
+              },
+              "ID": "reaction_8"
+            },
+            {
+              "Tag": "seen_love",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "Ooh, '{0}'! I saw this one with {2}!"
+                },
+                "DuringMovie": null,
+                "AfterMovie": null
+              },
+              "ID": "reaction_9"
+            },
+            {
+              "Tag": "seen_like",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "I saw this with {2}, it was pretty good!"
+                },
+                "DuringMovie": null,
+                "AfterMovie": null
+              },
+              "ID": "reaction_10"
+            },
+            {
+              "Tag": "seen_dislike",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "Hmm, I think {2} took me to see this..."
+                },
+                "DuringMovie": null,
+                "AfterMovie": null
+              },
+              "ID": "reaction_11"
+            }
+            */
+          ]
+        }
+      }
+    }
+/*
+    {
+      "LogName": "Eleanor - movies dialogues",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
+      "Entries": {
+        "RejectMovieTicket": "{{i18n:Dialogues.RejectMovieTicket |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:Dialogues.RejectMovieTicket_AlreadyInvitedBySomeoneElse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:Dialogues.RejectMovieTicket_AlreadyWatchedThisWeek |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "RejectMovieTicket_Divorced": "{{i18n:Dialogues.RejectMovieTicket_Divorced |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "RejectMovieTicket_DontWantToSeeThatMovie": "{{i18n:Dialogues.RejectMovieTicket_DontWantToSeeThatMovie |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+
+        //"PurchasedItem_*": "",	// kinda don't know what to do with that, but let's keep it blocked here
+
+        "MovieInvite_Invited": "{{i18n:Dialogues.MovieInvite_Invited |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+
+        //"MovieInvite_Invited_<NPC name>": "",
+        //"MovieInvite_Invited_<manner>": "",
+        //"MovieInvite_Invited_<socialAnxiety>": "",	// kinda don't know what to do with these, but let's keep them blocked here
+        //"MovieInvite_Invited_<optimism>": "",
+        //"MovieInvite_Invited_<age>": "",
+      }
+    }
+      */
+  ]
+}

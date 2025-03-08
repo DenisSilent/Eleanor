@@ -7,15 +7,15 @@ If you are interested in the mod, please use the mod's [Nexus Mods page](https:/
 
 Eleanor is a young witch who studies under the guidance of the local wizard, Mr. Rasmodius. She is kinda shy at first, but she'll eventually open up to you (or, at least, that's how her dialogues & events are written). She loves studying and learning new things. Also, note that her past is not one of the best...
 
-### Features:
+### **Features:**
 
 * 1 NPC named Eleanor that:
   * likes studying, learning new things
   * loves nature
-  * **is datable but** **NOT marriable** (until version 1.0.0)
+  * **is datable but NOT marriable** (until version 1.0.0)
   * **needs SVE; compactible with expansions like Ridgeside Village, East Scrap, Downtown Zuzu, and many more!**
 
-### **Roadmap**:
+### **Roadmap:**
 
 * ~~0.7.0 - one look only clothes + 1st GitHub release~~ 1.2.2025
 * ~~0.7.3 - final mod content before internal testing and debugging~~ 8.2.2025
@@ -23,12 +23,12 @@ Eleanor is a young witch who studies under the guidance of the local wizard, Mr.
 * ~~0.8.0 - wide public release on NexusMods (should be the same date as 0.7.4-beta.7)~~ 14.2.2025
 * 0.9.0 - dialogues update (dedicated movie dialogues, etc.)
 * 1.0.0 - marriage update
-* 1.1.0 - whole vanilla NPC graphics ??? (maybe...)
-* ~~X.X.X - more sprites & portraits - won't happen any time soon~~
+* ~~1.1.0 - whole vanilla NPC graphics ??? (maybe...)~~ art created and, as of 0.9.0-beta.1 included, by **hezjena2023**!
+* ~~X.X.X - more sprites & portraits - won't happen any time soon~~ art created and, as of 0.9.0-beta.1 included, by **hezjena2023**!
 
 ### **Compatibility with other mods:**
 
-#### Technical compatibility:
+#### **Technical compatibility:**
 
 * Platforms/OS:
   * Windows ✔
@@ -36,7 +36,7 @@ Eleanor is a young witch who studies under the guidance of the local wizard, Mr.
   * Linux ❔ partilly supported; might be compactible, needs confirmation
   * Mobile - Android/iOS ❌ not supported
 
-#### Mod compatibility:
+#### **Mod compatibility:**
 
 * [SVE](https://www.nexusmods.com/stardewvalley/mods/3753) - this mod was created as an add-on NPC, requiring SVE, so it should be fully compatible (there *might* be bugs, as not 100% of the SV or SVE content was tested; if you report them, I'll try my best to fix them)
 * [RSV](https://www.nexusmods.com/stardewvalley/mods/7286) - should be fully compatible (there might be bugs; if you report them, I'll try my best to fix them)
@@ -56,6 +56,8 @@ Basics (parts of content.json, manifest.json, now-quite-obsolete mod folder stru
 
 **Jessie Plamondon-Willard *"Pathoschild"*** - very big THANK YOU for making SMAPI, Content Patcher,  many more mods and being the *"Modfather"*; also thanks for helping me;
 
+**hezjena2023** - THANK YOU for creating the art for my Eleanor!
+
 Anyone who was willing to help or ask for help from Stardew Valley Discord (especially from #making-mods-general; many thanks to everyone there). All users that helped me are mentioned in the "changelog.md" file located [in the changelog file](https://github.com/DenisSilent/Eleanor/blob/main/%5BCP%5D%20Eleanor/zzz_dummy%20files/changelog.md);
 
 Everyone who somehow contributed to Stardew Valley community. Thanks! We appriciate your contributions!
@@ -66,17 +68,18 @@ Disclaimer (from MIT Licence):
 
 THE SOFTWARE IS PROVIDED *"AS IS"*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Portraits for Eleanor are made using [https://jazzybee.itch.io/sdvcharactercreator](https://jazzybee.itch.io/sdvcharactercreator) and edited so they could be used as portraits for NPC. However, as the program's Terms of Use define, I do not claim any rights for these images (not that I would even want them, but...). Also, as the program and its images are shared under Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License, images (Eleanor's portraits) will stay licensed with Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License, no matter the other mod files's licensing.
+Portraits for Eleanor are made using [Stardew Valley Character Creator](https://jazzybee.itch.io/sdvcharactercreator) and edited so they could be used as portraits for NPC. However, as the program's Terms of Use define, I do not claim any rights for these images (not that I would even want them, but...). As the program and its images are shared under Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License, the images (Eleanor's portraits) will stay licensed with Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License, no matter the other mod files's licensing/permisions.
 
 #### **Permissons:**
 
-##### You can (without getting permissions; the only thing I demand is that this mod will be a dependency for your mod (set both at NexusMods and in the manifest)):
+##### **You can (without getting permissions; the only thing I demand is that this mod will be a dependency for your mod (set both at NexusMods and in the manifest)):**
 
 * translate this mod (only i18n files - there's nothing in other files; both releasing independently and giving me your translation is possible, I'll prefer the second one; for this one only NexusMods depedency, as there is no manifest)
 * use this mod as a template for your mod (code can be used, content like dialogues, etc. can not; of course, you don't have to (but you can if you want!) set dependency for my mod in these cases)
-* create different sprites/portraits of this mod (but read the [https://jazzybee.itch.io/sdvcharactercreator](https://jazzybee.itch.io/sdvcharactercreator)'s Terms of Use, just in case)
+* create different sprites/portraits of this mod (but read the [Stardew Valley Character Creator](https://jazzybee.itch.io/sdvcharactercreator)'s Terms of Use, just in case)
 * edit this mod (for personal usage only!; do NOT share, or it'll be reported)
-* release unofficial version of this mod after it would be incompatible with some Stardew Valley version (but it can be only using rules shared at [https://forums.stardewvalley.net/threads/unofficial-mod-updates.2096/](https://forums.stardewvalley.net/threads/unofficial-mod-updates.2096/) and [https://stardewvalleywiki.com/Modding:Mod_compatibility#Creating_an_unofficial_update](https://stardewvalleywiki.com/Modding:Mod_compatibility#Creating_an_unofficial_update); copy of those as of 8.10.2024/mod version 0.6.5-beta4 are shared with this mod)
+* convert the last (un)official version of the mod to other games
+* release unofficial version of this mod after it would be incompatible with some Stardew Valley version (but it can be only using rules shared  [here](https://forums.stardewvalley.net/threads/unofficial-mod-updates.2096/) and [here](https://stardewvalleywiki.com/Modding:Mod_compatibility#Creating_an_unofficial_update); copy of those as of 8.10.2024/mod version 0.6.5-beta.4 are shared with this mod)
 
 ##### **You can not:**
 

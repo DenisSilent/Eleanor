@@ -35,7 +35,7 @@
         "HasSeenEvent |contains=112": false
       }
     },
-    
+
     {
       "LogName": "Eleanor - basic schedule",
       "Action": "EditData",
@@ -44,35 +44,35 @@
         "spring": "610 WizardHouse 5 15 2/930 Town 72 54 2/1700 WizardHouse 12 2 2/2100 Custom_WizardBasement 13 5 0/2400 Custom_WizardBasement 23 6 2",
         "spring_Mon": "610 WizardHouse 5 15 2/1000 Mountain 57 33 1/1500 Forest 43 79 2/2000 Custom_WizardBasement 13 5 0/2330 Custom_WizardBasement 23 6 2",
         "spring_Tue": "610 WizardHouse 5 15 2/1130 Forest 58 87 2/1900 Custom_WizardBasement 13 5 0/2330 Custom_WizardBasement 23 6 2",
-        "spring_Wed": "GOTO spring",
+        "spring_Wed": "610 WizardHouse 5 15 2/1300 Forest 16 30 1/1800 WizardHouse 2 16 3/2100 Custom_WizardBasement 13 5 0/2300 Custom_WizardBasement 23 6 2",
         "spring_Thu": "GOTO spring_Tue",
-        "spring_Fri": "610 WizardHouse 5 15 2/1300 Forest 16 30 1/1800 WizardHouse 2 16 3/2100 Custom_WizardBasement 13 5 0/2300 Custom_WizardBasement 23 6 2",
+        "spring_Fri": "GOTO spring",
         "spring_Sat": "610 SeedShop 12 29 3/1000 SeedShop 4 19 0/1030 Town 85 103 2/2000 WizardHouse 13 5 0/2400 Custom_WizardBasement 23 6 2",
         "spring_Sun": "610 WizardHouse 5 15 2/1000 Custom_AuroraVineyard 15 17 3/1420 Custom_AuroraVineyard 23 17 0/1440 Custom_AuroraVineyard 19 6 1/1500 Custom_AuroraVineyard 6 6 3/1520 Custom_WizardBasement 13 5 0/2200 Custom_WizardBasement 23 6 2",
 
-        "summer": "610 WizardHouse 5 15 2/1100 Forest 52 98 0/1630 Custom_WizardBasement 13 5 0/2230 Custom_WizardBasement 23 6 2",
-        "summer_Mon": "GOTO summer",
-        "summer_Tue": "GOTO spring_Tue",
-        "summer_Wed": "GOTO spring",
-        "summer_Thu": "GOTO spring_Fri",
-        "summer_Fri": "GOTO summer",
+        "summer": "610 WizardHouse 5 15 2/1030 Forest 52 98 0/1630 Custom_WizardBasement 13 5 0/2230 Custom_WizardBasement 23 6 2",
+        "summer_Mon": "{{Random: GOTO spring, GOTO spring_Mon, GOTO spring_Tue, GOTO spring_Wed, GOTO summer, GOTO winter}}",
+        "summer_Tue": "{{Random: GOTO spring, GOTO spring_Mon, GOTO spring_Tue, GOTO spring_Wed, GOTO summer, GOTO winter}}",
+        "summer_Wed": "{{Random: GOTO spring, GOTO spring_Mon, GOTO spring_Tue, GOTO spring_Wed, GOTO summer, GOTO winter}}",
+        "summer_Thu": "{{Random: GOTO spring, GOTO spring_Mon, GOTO spring_Tue, GOTO spring_Wed, GOTO summer, GOTO winter}}",
+        "summer_Fri": "{{Random: GOTO spring, GOTO spring_Mon, GOTO spring_Tue, GOTO spring_Wed, GOTO summer, GOTO winter}}",
         "summer_Sat": "GOTO spring_Sat",
         "summer_Sun": "GOTO spring_Sun",
 
-        "fall": "GOTO summer",
-        "fall_Mon": "GOTO summer",
-        "fall_Tue": "GOTO spring_Tue",
-        "fall_Wed": "GOTO spring",
-        "fall_Thu": "GOTO spring_Tue",
+        "fall": "{{Random: GOTO spring, GOTO spring_Mon, GOTO spring_Tue, GOTO spring_Wed, GOTO summer, GOTO winter}}",
+        "fall_Mon": "{{Random: GOTO spring, GOTO spring_Mon, GOTO spring_Tue, GOTO spring_Wed, GOTO summer, GOTO winter}}",
+        "fall_Tue": "{{Random: GOTO spring, GOTO spring_Mon, GOTO spring_Tue, GOTO spring_Wed, GOTO summer, GOTO winter}}",
+        "fall_Wed": "{{Random: GOTO spring, GOTO spring_Mon, GOTO spring_Tue, GOTO spring_Wed, GOTO summer, GOTO winter}}",
+        "fall_Thu": "{{Random: GOTO spring, GOTO spring_Mon, GOTO spring_Tue, GOTO spring_Wed, GOTO summer, GOTO winter}}",
         "fall_Fri": "610 WizardHouse 5 15 2/900 Custom_AdventurerSummit 6 14 2/1600 Forest 52 98 1/2130 Custom_WizardBasement 13 5 0/2400 Custom_WizardBasement 23 6 2",
         "fall_Sat": "GOTO spring_Sat",
         "fall_Sun": "GOTO spring_Sun",
 
         "winter": "610 WizardHouse 5 15 2/900 Custom_BlueMoonVineyard 31 56 2/1330 Forest 24 68 1/1700 Custom_WizardBasement 13 5 0/2130 Custom_WizardBasement 23 6 2",
-        "winter_Mon": "610 WizardHouse 5 15 2/1500 Mountain 68 24 3/1930 Beach 20 20 2/2230 Custom_WizardBasement 23 6 2",
-        "winter_Tue": "GOTO spring_Tue",
-        "winter_Wed": "GOTO spring",
-        "winter_Thu": "GOTO winter",
+        "winter_Mon": "{{Random: GOTO spring, GOTO spring_Mon, GOTO spring_Tue, GOTO spring_Wed, GOTO summer, GOTO winter, GOTO winter_Fri}}",
+        "winter_Tue": "{{Random: GOTO spring, GOTO spring_Mon, GOTO spring_Tue, GOTO spring_Wed, GOTO summer, GOTO winter, GOTO winter_Fri}}",
+        "winter_Wed": "{{Random: GOTO spring, GOTO spring_Mon, GOTO spring_Tue, GOTO spring_Wed, GOTO summer, GOTO winter, GOTO winter_Fri}}",
+        "winter_Thu": "{{Random: GOTO spring, GOTO spring_Mon, GOTO spring_Tue, GOTO spring_Wed, GOTO summer, GOTO winter, GOTO winter_Fri}}",
         "winter_Fri": "610 WizardHouse 5 15 2/1330 Beach 20 20 2/2000 Custom_WizardBasement 23 6 2",
         "winter_Sat": "GOTO spring_Sat",
         "winter_Sun": "GOTO spring_Sun",
@@ -91,13 +91,13 @@
       "Action": "EditData",
       "Target": "Characters/schedules/StrojvedouciDenis.Eleanor",
       "Entries": {
-        "spring_Fri": "0 Custom_Ridgeside_AguarBasement 7 8 3/610  Custom_Ridgeside_Ridge 91 12 1/1400 Custom_Ridgeside_RSVCliff 80 23 1/1630 Town 52 86 3/2030 EastScarp_Village 31 63 2/2100 EastScarp_OrchardHouse 4 22 3",
+        "spring_Fri": "{{Random: 0 Custom_Ridgeside_AguarBasement 7 8 3/610  Custom_Ridgeside_Ridge 91 12 1/1140 Town 52 86 3/1730 EastScarp_Village 31 63 2/2200 EastScarp_OrchardHouse 4 22 3, 0 Custom_Ridgeside_AguarBasement 7 8 3/610 Custom_Ridgeside_RSVCliff 80 23 1/1140 Town 52 86 3/1750 EastScarp_Village 31 63 2/2300 EastScarp_OrchardHouse 4 22 3}}",
 
-        "summer_Fri": "0 Custom_Ridgeside_AguarBasement 7 8 3/610 Custom_Ridgeside_RSVCliff 80 23 1/1140 Town 52 86 3/1750 EastScarp_Village 31 63 2/2300 EastScarp_OrchardHouse 4 22 3",
+        "summer_Fri": "GOTO spring_Fri",
 
         "fall_Fri": "GOTO spring_Fri",
 
-        "winter_Fri": "0 Custom_Ridgeside_AguarBasement 7 8 3/610 Custom_Ridgeside_RSVCliff 80 23 1/1400 Custom_WizardBasement 13 5 0/2400 Custom_WizardBasement 23 6 2"
+        "winter_Fri": "GOTO spring_Fri"
       },
       "When": {
         "HasMod |contains=Rafseazz.RSVCP": true,

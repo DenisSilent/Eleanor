@@ -2,183 +2,90 @@
   "Changes": [
     // Load commands - one look only //
     {
-      "LogName": "Eleanor - one look only - non-seasonal sprites & portraits load command",
-      "Action": "Load",
-      "Priority": "Low+11",
-      "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-      "FromFile": "assets/images/{{TargetPathOnly}}/default.png",
-      "Update": "OnLocationChange"
-      /*
-commented out because of the missing art
-      "When": {
-        "Graphics": "one look only"
-      }
-        */
-    }
-/*
-commented out because of the missing art
-    // Load commands - vanilla //
-    {
-      "LogName": "Eleanor - vanilla - seasonal sprites & portraits load command",
+      "LogName": "Eleanor - one look only (art by StrojvedouciDenis/hezjena2023)",
       "Action": "Load",
       "Priority": "Low",
       "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-      "FromFile": "assets/images/{{TargetPathOnly}}/default.png",
+      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/default.png"
+    },
+    // Load commands - vanilla //
+    {
+      "LogName": "Eleanor - vanilla (art by hezjena2023)",
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
+      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/default.png",
       "Update": "OnLocationChange",
       "When": {
-        "Graphics": "vanilla",
-        "Season": "Spring, Summer, Fall"
+        "Outfits": "vanilla"
       }
     },
     {
-      "LogName": "Eleanor - vanilla - seasonal sprites & portraits load command - winter",
+      "LogName": "Eleanor - vanilla - winter (art by hezjena2023)",
       "Action": "Load",
       "Priority": "Low",
       "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-      "FromFile": "assets/images/{{TargetPathOnly}}/winter_outside.png",
+      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/Winter.png",
       "Update": "OnLocationChange",
       "When": {
-        "Graphics": "vanilla",
+        "Outfits": "vanilla",
         "Season": "Winter"
       }
     },
 
     // Load commands - seasonal sprites & portraits //
     {
-      "LogName": "Eleanor - full - seasonal sprites & portraits load command - spring, summer, fall",
+      "LogName": "Eleanor - seasonal (art by hezjena2023)",
       "Action": "Load",
       "Priority": "Low",
       "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-      "FromFile": "assets/images/{{TargetPathOnly}}/{{season}}.png",
+      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/{{Season}}.png",
       "Update": "OnLocationChange",
       "When": {
-        "Graphics": "full",
-        "Season": "Spring, Summer, Fall"
+        "Outfits": "seasonal"
       }
     },
-
+/*
+deactivated due to missing portraits
     {
-      "LogName": "Eleanor - Winter Inside Sprites & Portraits",
+      "LogName": "Eleanor - seasonal - winter inside (art by hezjena2023)",
       "Action": "Load",
       "Priority": "Low",
       "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-      "FromFile": "assets/images/{{TargetPathOnly}}/winter_inside.png",
+      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/Winter inside.png",
       "Update": "OnLocationChange",
       "When": {
-        "Graphics": "full",
-        "Season": "Winter",
-        "LocationName |contains= WizardHouse, Custom_WizardBasement": "true"
+        "Outfits": "seasonal",
+        "Season |contains=Winter": true,
+        "LocationName |contains=WizardHouse, Custom_WizardBasement": true
       }
     },
+    */
+    // Load commands - rain clothes //
     {
-      "LogName": "Eleanor - Winter Outside Sprites & Portraits",
-      "Action": "Load",
-      "Priority": "Low",
-      "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-      "FromFile": "assets/images/{{TargetPathOnly}}/winter_outside.png",
-      "Update": "OnLocationChange",
-      "When": {
-        "Graphics": "full",
-        "Season": "Winter",
-        "LocationName |contains= WizardHouse, Custom_WizardBasement": "false"
-      }
-    },
-    /*
-
-    {
-  "LogName": "Eleanor - full - seasonal sprites & portraits load command - winter",
-  "Action": "Load",
-  "Priority": "Low",
-  "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-  "FromFile": "assets/images/{{TargetPathOnly}}/winter_{{LocationName |contains=WizardHouse, Custom_WizardBasement |ValueAt=true:inside |ValueAt=false:outside}}.png",
-  "Update": "OnLocationChange",
-  "When": { "Graphics": "full", "Season": "Winter" }
-},
-
-
-// Load commands - rain clothes //
-    {
-      "LogName": "Eleanor - sprites & portraits load command - rain, green rain, storm",
+      "LogName": "Eleanor - rain, green rain, storm",
       "Action": "Load",
       "Priority": "Low + 5",
       "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-      "FromFile": "assets/images/{{TargetPathOnly}}/default.png",
+      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/default.png",
       "Update": "OnLocationChange",
       "When": {
-        "Weather": "Rain, Green Rain, Storm"
+        "Weather |contains=Rain, Green Rain, Storm": true
       }
     },
 
     // Load commands - festival clothes //
-    /*    
     {
-      "LogName": "Eleanor - sprites & portraits - festivals load command",
+      "LogName": "Eleanor - festivals load command",
       "Action": "Load",
       "Priority": "Low + 10",
       "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-      "FromFile": "assets/images/{{TargetPathOnly}}/default.png",
+      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/default.png",
       "Update": "OnLocationChange",
-      "Condition": "IS_FESTIVAL_DAY",
       "When": {
-        "Festivals": "true"
+        "Festivals": "true",
+        "DayEvent |contains=dance of the moonlight jellies, egg festival, feast of the winter star, festival of ice, flower dance, luau, stardew valley fair, spirit's eve": true
       }
     }
-
-
-{
-  "LogName": "Eleanor - sprites & portraits - spring festivals load command",
-  "Action": "Load",
-  "Priority": "Low + 10",
-  "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-  "FromFile": "assets/images/{{TargetPathOnly}}/default.png",
-  "Update": "OnLocationChange",
-  "When": {
-    "Festivals": "true",
-    "Season": "Spring",
-    "Day": "13, 24"
-  }
-},
-{
-  "LogName": "Eleanor - sprites & portraits - summer festivals load command",
-  "Action": "Load",
-  "Priority": "Low + 10",
-  "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-  "FromFile": "assets/images/{{TargetPathOnly}}/default.png",
-  "Update": "OnLocationChange",
-  "When": {
-    "Festivals": "true",
-    "Season": "Summer",
-    "Day": "11, 28"
-  }
-},
-{
-  "LogName": "Eleanor - sprites & portraits - fall festivals load command",
-  "Action": "Load",
-  "Priority": "Low + 10",
-  "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-  "FromFile": "assets/images/{{TargetPathOnly}}/default.png",
-  "Update": "OnLocationChange",
-  "When": {
-    "Festivals": "true",
-    "Season": "Fall",
-    "Day": "16, 27"
-  }
-},
-{
-  "LogName": "Eleanor - sprites & portraits - winter festivals load command",
-  "Action": "Load",
-  "Priority": "Low + 10",
-  "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-  "FromFile": "assets/images/{{TargetPathOnly}}/default.png",
-  "Update": "OnLocationChange",
-  "When": {
-    "Festivals": "true",
-    "Season": "Winter",
-    "Day": "8, 28"
-  }
-    
+  ]
 }
-  */
-]
-}
-

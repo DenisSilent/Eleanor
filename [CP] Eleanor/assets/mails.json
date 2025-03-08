@@ -6,10 +6,15 @@
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
-        "{{ModId}}_mail_Debug": {
-          "Id": "{{ModId}}_mail_Debug",
+        "{{ModId}}_mail_HogwartsTrips": {
+          "Id": "{{ModId}}_mail_HogwartsTrips",
           "Trigger": "DayStarted",
-          "Action": "AddMail Current {{ModId}}_mail_Debug"  // if you want the mail to be sent immediately, add "Now" at the end
+          "Action": "AddMail Current {{ModId}}_mail_HogwartsTrips",  // if you want the mail to be sent immediately, add "Now" at the end
+          "When": {
+            "HasSeenEvent |contains=StrojvedouciDenis.Eleanor_Hog_gone_y1": true,
+            "Day": 10,
+            "Season": "Summer"
+          }
         }
       }
     },
@@ -20,7 +25,7 @@
       "Action": "EditData",
       "Target": "Data/mail",
       "Entries": {
-        "{{ModId}}_mail_Debug": "{{i18n:Mail.Debug |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+        "{{ModId}}_mail_HogwartsTrips": "{{i18n:Mail.HogwartsTrips |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       }
     }
   ]
