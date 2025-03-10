@@ -43,7 +43,7 @@ Eleanor is a young witch who studies under the guidance of the local wizard, Mr.
 * [ES](https://www.nexusmods.com/stardewvalley/mods/5787) - should be fully compatible (there might be bugs; if you report them, I'll try my best to fix them)
 * Other NPC mods:
   ... I'll be honest - this mod *might or might not* work with NPC mods you use. I expect many bugs with many NPCs; if you report them, I'll try my best to fix them. For festivals, I work by LemurKat's method "First in gets priority" which is described [here.](https://lemurkat.wordpress.com/2021/11/13/help-theyre-overlapping-at-a-festival/) And as my mod is pretty new, I expect A LOT of festival moves on my side.
-  **Eleanor will react to these NPC mods: Always Raining in the Valley, Alecto, Lavril, Lucikiel, RSV, Leilani, Jorts and Jean, Rodney and Yri (incompatible in 1.6).**
+  **Eleanor will react to these NPC mods: Always Raining in the Valley, Alecto, Lavril, Lucikiel, RSV, Leilani, Jorts and Jean, Rodney and Yri (incompatible in 1.6).** Also, Eleanor will adapt her dialogues if you use [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)!
 * Other mods:
   There shouldn't be any technical incompatibility, but there might be some things that might not be 100% "lore friendly", so compatible, but:
   ...only time will tell...
@@ -56,7 +56,7 @@ Basics (parts of content.json, manifest.json, now-quite-obsolete mod folder stru
 
 **Jessie Plamondon-Willard *"Pathoschild"*** - very big THANK YOU for making SMAPI, Content Patcher,  many more mods and being the *"Modfather"*; also thanks for helping me;
 
-**hezjena2023** - THANK YOU for creating the art for my Eleanor!
+**hezjena2023** - THANK YOU for creating the art for my Eleanor!;
 
 Anyone who was willing to help or ask for help from Stardew Valley Discord (especially from #making-mods-general; many thanks to everyone there). All users that helped me are mentioned in the "changelog.md" file located [in the changelog file](https://github.com/DenisSilent/Eleanor/blob/main/%5BCP%5D%20Eleanor/zzz_dummy%20files/changelog.md);
 
@@ -79,7 +79,7 @@ Portraits for Eleanor are made using [Stardew Valley Character Creator](https://
 * create different sprites/portraits of this mod (but read the [Stardew Valley Character Creator](https://jazzybee.itch.io/sdvcharactercreator)'s Terms of Use, just in case)
 * edit this mod (for personal usage only!; do NOT share, or it'll be reported)
 * convert the last (un)official version of the mod to other games
-* release unofficial version of this mod after it would be incompatible with some Stardew Valley version (but it can be only using rules shared  [here](https://forums.stardewvalley.net/threads/unofficial-mod-updates.2096/) and [here](https://stardewvalleywiki.com/Modding:Mod_compatibility#Creating_an_unofficial_update); copy of those as of 8.10.2024/mod version 0.6.5-beta.4 are shared with this mod)
+* release unofficial version of this mod after it would be incompatible with some Stardew Valley version (but it can be only using rules shared [here](https://forums.stardewvalley.net/threads/unofficial-mod-updates.2096/) and [here](https://stardewvalleywiki.com/Modding:Mod_compatibility#Creating_an_unofficial_update); copy of those as of 8.10.2024/mod version 0.6.5-beta.4 are shared with this mod)
 
 ##### **You can not:**
 
@@ -92,4 +92,4 @@ This NPC mod *might* (I tried my best to not include anything, but...) include p
 
 However, everything that's NOT created by me is subject to the rights and/or licenses of other authors. If the author doesn't agree with including their content in this mod, please contact me immediately on Nexus Mods, and I'll remove the content from my mod. Please, do not report me/my mod for violating Your rights to Your content, as we can resolve this issue peacefully. I value Your contributions to the community of Stardew Valley and/or other games, and I can guarantee that I do NOT want to steal/dishonest/... Your work.
 
-(Please, note that this is my first public mod ever, so sorry for some things that might be done better)
+(Please, note that this is my first public mod ever, so sorry for some things that might've been done better)

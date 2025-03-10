@@ -24,15 +24,23 @@
         // SPECIFIC DAY DIALOGUE
         // Note: Works only in the first year. Use format season_dayOfMonth_2 for year 2 and later (e.g., "summer_10_2"). To target specific years, use CP conditions with the "_2" suffix.
 
-      // "{{Lowercase:{{Season}}_{{Day}}}}": "{{i18n:Dialogues.{{Season}}.{{Random:{{Range:0,10}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}", // using season_day as a game key but season.1-10 as dialogue key
+        "{{Lowercase:{{Season}}_{{Day}}}}": "{{i18n:Dialogues.{{Season}}.{{Random:{{Range:0,3}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}", // using season_day as a game key but season.1-10 as dialogue key
+        "{{Lowercase:{{Season}}_{{Day}}}}_2": "{{i18n:Dialogues.{{Season}}.{{Random:{{Range:0,3}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}", // using season_day as a game key but season.1-10 as dialogue key
 
-        "spring_1": "{{i18n:Dialogues.spring_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         "spring_12": "{{i18n:Dialogues.spring_12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         "spring_23": "{{i18n:Dialogues.spring_23 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+
+        "spring_1_2": "{{i18n:Dialogues.spring_1_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "spring_12_2": "{{i18n:Dialogues.spring_12_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "spring_23_2": "{{i18n:Dialogues.spring_23_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
         "summer_1": "{{i18n:Dialogues.summer_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         "summer_10": "{{i18n:Dialogues.summer_10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         "summer_27": "{{i18n:Dialogues.summer_27 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+
+        "summer_1_2": "{{i18n:Dialogues.summer_1_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "summer_10_2": "{{i18n:Dialogues.summer_10_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "summer_27_2": "{{i18n:Dialogues.summer_27_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
         "fall_1_1": "{{i18n:Dialogues.fall_1_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         "fall_15": "{{i18n:Dialogues.fall_15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
@@ -40,11 +48,23 @@
         "fall_18": "{{i18n:Dialogues.fall_18 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         "fall_26": "{{i18n:Dialogues.fall_26 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
+        "fall_1_2": "{{i18n:Dialogues.fall_1_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "fall_15_2": "{{i18n:Dialogues.fall_15_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "fall_17_2": "{{i18n:Dialogues.fall_17_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "fall_18_2": "{{i18n:Dialogues.fall_18_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "fall_26_2": "{{i18n:Dialogues.fall_26_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+
         "winter_1": "{{i18n:Dialogues.winter_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         "winter_7": "{{i18n:Dialogues.winter_7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         "winter_23": "{{i18n:Dialogues.winter_23 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         "winter_24": "{{i18n:Dialogues.winter_24 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         "winter_28": "{{i18n:Dialogues.winter_28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        
+        "winter_1_2": "{{i18n:Dialogues.winter_1_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "winter_7_2": "{{i18n:Dialogues.winter_7_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "winter_23_2": "{{i18n:Dialogues.winter_23_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "winter_24_2": "{{i18n:Dialogues.winter_24_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "winter_28_2": "{{i18n:Dialogues.winter_28_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
         // Special dialogues
         "FlowerDance_Decline": "{{i18n:Dialogues.FlowerDance_Decline |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
@@ -59,7 +79,6 @@
     // Dialogues for other mods = CT's //
     
     // Own CT's
-    /*
     {
       "LogName": "Eleanor - CT's - Abigail",
       "Action": "EditData",
@@ -77,14 +96,11 @@
       }
     },
     {
-      "LogName": "Eleanor - CT's - Susan",
+      "LogName": "Eleanor - CT's - Linus",
       "Action": "EditData",
-      "Target": "Characters/Dialogue/Susan",
+      "Target": "Characters/Dialogue/Linus",
       "Entries": {
-        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Susan |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
-      },
-      "When": {
-        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Linus |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       }
     },
     {
@@ -96,22 +112,6 @@
       }
     },
     {
-      "LogName": "Eleanor - CT's - Maru",
-      "Action": "EditData",
-      "Target": "Characters/Dialogue/Maru",
-      "Entries": {
-        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Maru |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
-      }
-    },
-    {
-      "LogName": "Eleanor - CT's - Linus",
-      "Action": "EditData",
-      "Target": "Characters/Dialogue/Linus",
-      "Entries": {
-        "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Linus |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
-      }
-    },
-    {
       "LogName": "Eleanor - CT's - Wizard",
       "Action": "EditData",
       "Target": "Characters/Dialogue/Wizard",
@@ -119,7 +119,8 @@
         "StrojvedouciDenis.Eleanor.CT_Intro": "{{i18n:Dialogues.CT_Intro_Wizard |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       }
     },
-*/
+
+
     {
       "LogName": "Eleanor - formal dialogues - CT's selection",
       "Action": "EditData",
@@ -216,6 +217,10 @@
         "OpenAllTheDoors": "{{i18n:Dialogues.CT.OpenAllTheDoors |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         // Rodney
         "BookLaunchParty": "{{i18n:Dialogues.CT.BookLaunchParty |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        // Toshinori
+        "MarriedToToshinori": "{{i18n:Dialogues.CT.MarriedToToshinori |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "ToshiPTSD": "{{i18n:Dialogues.CT.ToshiPTSD |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "ToshinorisDeathScene": "{{i18n:Dialogues.CT.ToshinorisDeathScene |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         // Yri
         "YriIntroduction": "{{i18n:Dialogues.CT.YriIntroduction |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
         "CharlesIntroduction": "{{i18n:Dialogues.CT.CharlesIntroduction |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",

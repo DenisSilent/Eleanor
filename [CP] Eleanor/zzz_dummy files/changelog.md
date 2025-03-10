@@ -4,6 +4,15 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ---
 
+## version 0.9.0-beta.2 (10.3.2025)
+
+* Added seasonal dialogues + seasonal day dialogues for year 2+
+* Added Intro event Conversation Topics reaction for Abigail, Linus, Leah, Pierre and Wizard
+* Added Conversation Topics for all events that other mods can react to
+* Added Conversation Topics reaction to Toshinori
+
+---
+
 ## version 0.9.0-beta.1 (8.3.2025)
 
 * First preparations for 0.9.0 update

@@ -14,12 +14,12 @@
   "config.Festivals.name": "Festivals",
   "config.Festivals.values.true": "true",
   "config.Festivals.values.false": "false",
-  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 0.9.0-beta.1 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
+  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 0.9.0-beta.2 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
 
   "config.Marriage.name": "Marriage",
   "config.Marriage.values.true": "true",
   "config.Marriage.values.false": "false",
-  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.9.0-beta.1, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
+  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.9.0-beta.2, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
 
   "config.14hearts-variants.name": "14 hearts event variant",
   "config.14hearts-variants.values.short": "short",
@@ -40,7 +40,7 @@
   "config.Outfits.values.one look only": "one look only",
   "config.Outfits.values.vanilla": "vanilla",
   "config.Outfits.values.seasonal": "seasonal",
-  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.9.0-beta.1, its main part is commented out. Default setting: only one look.",
+  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.9.0-beta.2, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
 
   // Experimental - DoNotChange
 
@@ -51,7 +51,7 @@
   "config.On/off.values.on": "on",
   "config.On/off.values.safe mode": "safe mode",
   "config.On/off.values.off": "off",
-  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 0.9.0-beta.1, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
+  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 0.9.0-beta.2, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
 
   // Eleanor's name
   "DisplayName": "Eleanor",
@@ -121,20 +121,25 @@
   "Dialogues.Sun10": "%Eleanor is mumbling something to herself.#$b#%You have a feeling it was about... love?#$b#%An unexpected theme, indeed. You start to think if her thoughts are caused by you...",
 
   // Specific day dialogues
-  //Note: Will work only on the first year due to the way the game checks for the dayOfMonth line. Use the format season_dayOfMonth_2 for dialogue in year 2 and later. Ex "summer_10_2". You can only check for 1 (first year) or 2 (all years after). If you want a dialogue to appear on a specific year, consider using CP conditions in addition to the "_2" suffix
-  "Dialogues.spring.1": "",
-  "Dialogues.spring.2": "",
-  "Dialogues.spring.3": "",
-  "Dialogues.spring.4": "",
-  "Dialogues.spring.5": "",
+  // Note: Will work only on the first year due to the way the game checks for the dayOfMonth line. Use the format season_dayOfMonth_2 for dialogue in year 2 and later. Ex "summer_10_2". You can only check for 1 (first year) or 2 (all years after). If you want a dialogue to appear on a specific year, consider using CP conditions in addition to the "_2" suffix
+
+  // Seasonal dialogues, year 1, 6-10 are commented out until furthure updates
+  "Dialogues.spring.1": "The nature awakes, {{DT_name}}. What a beautiful time of the year.",
+  "Dialogues.spring.2": "The flowers are blooming, the birds are singing...#$b#It's a beautiful day, isn't it, {{DT_name}}?",
+  "Dialogues.spring.3": "Hello, {{DT_name}}. How's your farm doing?#$b#Well, you're saying? It should...",
+  /*
+  "Dialogues.spring.4": "I like spring. The sun shining, the flowers and trees blooming, the birds singing and chattering...#$b#Sorry, I can't help myself, I just admire the beauty of this season, {{DT_name}}.",
+  "Dialogues.spring.5": "Hi, {{DT_name}}. How are you doing today?#$b#I hope you're not too tired from working on your farm.",
   "Dialogues.spring.6": "",
   "Dialogues.spring.7": "",
   "Dialogues.spring.8": "",
   "Dialogues.spring.9": "",
   "Dialogues.spring.10": "",
-  "Dialogues.summer.1": "",
-  "Dialogues.summer.2": "",
-  "Dialogues.summer.3": "",
+  */
+  "Dialogues.summer.1": "Shining sun, hot weather...#$b#Don't forget to drink enough water, {{DT_name}}. It's important.",
+  "Dialogues.summer.2": "Why is summer so hot?#$b#I can't imagine how you can work on your farm in this heat, {{DT_name}}.",
+  "Dialogues.summer.3": "Hi, {{DT_name}}. How are you and your farm handling the heat?",
+  /*
   "Dialogues.summer.4": "",
   "Dialogues.summer.5": "",
   "Dialogues.summer.6": "",
@@ -142,9 +147,11 @@
   "Dialogues.summer.8": "",
   "Dialogues.summer.9": "",
   "Dialogues.summer.10": "",
-  "Dialogues.fall.1": "",
-  "Dialogues.fall.2": "",
-  "Dialogues.fall.3": "",
+  */
+  "Dialogues.fall.1": "Colors are changing, leaves are falling, the air is getting colder...#$b#Yeah, fall is here. Beautiful season, isn't it?",
+  "Dialogues.fall.2": "What a beautiful day, isn't it, {{DT_name}}?#$b#I hope you're enjoying it.",
+  "Dialogues.fall.3": "Hi, {{DT_name}}. How are your plants doing in this season?",
+    /*
   "Dialogues.fall.4": "",
   "Dialogues.fall.5": "",
   "Dialogues.fall.6": "",
@@ -152,36 +159,57 @@
   "Dialogues.fall.8": "",
   "Dialogues.fall.9": "",
   "Dialogues.fall.10": "",
-  "Dialogues.winter.1": "",
-  "Dialogues.winter.2": "",
-  "Dialogues.winter.3": "",
-  "Dialogues.winter.4": "",
-  "Dialogues.winter.5": "",
+  */
+  "Dialogues.winter.1": "Snow, ice, cold...#$b#Winter is here, {{DT_name}}. It's a free time season for you, isn't it?",
+  "Dialogues.winter.2": "Huh... It's pretty cold today, isn't it, {{DT_name}}?",
+  "Dialogues.winter.3": "You know, I have a feeling that winter is the most magical season of the year...#$b#What do you think, {{DT_name}}?",
+  /*
+  "Dialogues.winter.4": "I like winter, the snow, the ice...#$b#But I am not a fan of the cold, especially this cold...#$b#I hope you're not freezing, {{DT_name}}.",
+  "Dialogues.winter.5": "Hi, {{DT_name}}. How are you doing today?#$b#I hope you're not freezing in this cold weather.",
   "Dialogues.winter.6": "",
   "Dialogues.winter.7": "",
   "Dialogues.winter.8": "",
   "Dialogues.winter.9": "",
   "Dialogues.winter.10": "",
+*/
+"Dialogues.spring_12": "I don't plan to attend Egg Festival tomorrow.#$b#Anyways, may you enjoy it, {{DT_name}}.",
+"Dialogues.spring_23": "Flower Dance...#$#I really like dancing, so I'll be there. Will you also participate, {{DT_name}}?",
 
-  "Dialogues.spring_1": "Time for you to start working on your farm, {{DT_name}}.#$b#I don't say you weren't working on %farm farm, I just wanted to tell you that it has got some powerful magical properties.#$e#How do I know, you're asking?#$b#I can sense the magic in it.",
-  "Dialogues.spring_12": "I don't plan to attend Egg Festival tomorrow.#$b#Anyways, may you enjoy it, {{DT_name}}.",
-  "Dialogues.spring_23": "Flower Dance...#$#I really like dancing, so I'll be there. Will you also participate, {{DT_name}}?",
+  "Dialogues.spring_1_2": "Time for you to start working on your farm, {{DT_name}}.#$b#I don't say you weren't working on %farm farm, I just wanted to tell you that it has got some powerful magical properties.#$e#How do I know, you're asking?#$b#I can sense the magic in it.",
+  "Dialogues.spring_12_2": "I don't plan to attend Egg Festival tomorrow.#$b#Anyways, may you enjoy it, {{DT_name}}.",
+  "Dialogues.spring_23_2": "Flower Dance...#$#I really like dancing, so I'll be there. Will you also participate, {{DT_name}}?",
 
   "Dialogues.summer_1": "The hot season, summer, is here, {{DT_name}}.#$b#I hope you're ready for it.",
   "Dialogues.summer_10": "Hi, {{DT_name}}. If you'd like to ask, no, I won't be at the Luau festival tomorrow.",
   "Dialogues.summer_27": "You'll see me at the Dance tomorrow.#$e#Or, at least I'll be there...#$b#You do know I like dancing,  {{DT_name}}?",
+  
+  "Dialogues.summer_1_2": "The hot season, summer, is here, {{DT_name}}.#$b#I hope you're ready for it.",
+  "Dialogues.summer_10_2": "Hi, {{DT_name}}. If you'd like to ask, no, I won't be at the Luau festival tomorrow.",
+  "Dialogues.summer_27_2": "You'll see me at the Dance tomorrow.#$e#Or, at least I'll be there...#$b#You do know I like dancing,  {{DT_name}}?",
 
   "Dialogues.fall_1_1": "I wish you a nice first fall day, {{DT_name}}.#$b#It has been a year since I've been here.#$b#Can't believe it...",
   "Dialogues.fall_15": "I look forward to tomorrow's Stardew Fair, how about you, {{DT_name}}?",
-  "Dialogues.fall_17": "Hello, {{DT_name}}.#$e#Did I already tell you my birthday is Tomorrow?",
+  "Dialogues.fall_17": "Hello, {{DT_name}}.#$e#Did I already tell you my birthday is tomorrow?",
   "Dialogues.fall_18": "It's my birthday today.#$e#How nice...I'm just a year older.#$b#Again...$s",
   "Dialogues.fall_26": "{{DT_wizard_name}} said {{DT_wizard_fem}} might need my help tomorrow, so expect my presence at Spirit's Eve.",
+
+  "Dialogues.fall_1_2": "The color change of the leaves is a sign that fall is here, {{DT_name}}.#$b#I hope you're ready for it.",
+  "Dialogues.fall_15_2": "I look forward to tomorrow's Stardew Fair, how about you, {{DT_name}}?",
+  "Dialogues.fall_17_2": "Hello, {{DT_name}}.#$e#Did I already tell you my birthday is tomorrow?",
+  "Dialogues.fall_18_2": "It's my birthday today.#$e#How nice...I'm just a year older.#$b#Again...$s",
+  "Dialogues.fall_26_2": "{{DT_wizard_name}} said {{DT_wizard_fem}} might need my help tomorrow, so expect my presence at Spirit's Eve.",
 
   "Dialogues.winter_1": "Winter is here, {{DT_name}}.#$b#I hope you're ready for it.",
   "Dialogues.winter_7": "I'd like to attend the Ice Festival tomorrow.#$b#I love snow and ice, however, I don't like to stay outside when it's freezing.#$e#Looks like we have a solid dilemma here...",
   "Dialogues.winter_23": "Hi, {{DT_name}}.#$b#The whole community expects you to attend Winter Star if you don't know. So prepare yourself and your gift, these two remaining days will be gone sooner than you'd think it's even possible...",
   "Dialogues.winter_24": "Hello, {{DT_name}}.#$b#Did you know that not so far from the place I come from, they have a festival like our Winter Star here, but they call it 'Christmas'?#$b#Also, they have it today, not Tomorrow. It's interesting how there are different cultures all around the world.",
   "Dialogues.winter_28": "The end of this year is nearly here, {{DT_name}}.#$e#Many things have happened, some of them were good, some were not as good.#$e#Anyways, may the new year be good for you, {{DT_name}}!",
+
+  "Dialogues.winter_1_2": "Winter is here, {{DT_name}}.#$b#I hope you're ready for it.",
+  "Dialogues.winter_7_2": "I'd like to attend the Ice Festival tomorrow.#$b#I love snow and ice, however, I don't like to stay outside when it's freezing.#$e#Looks like we have a solid dilemma here...",
+  "Dialogues.winter_23_2": "Hi, {{DT_name}}.#$b#The whole community expects you to attend Winter Star if you don't know. So prepare yourself and your gift, these two remaining days will be gone sooner than you'd think it's even possible...",
+  "Dialogues.winter_24_2": "Hello, {{DT_name}}.#$b#Did you know that not so far from the place I come from, they have a festival like our Winter Star here, but they call it 'Christmas'?#$b#Also, they have it today, not Tomorrow. It's interesting how there are different cultures all around the world.",
+  "Dialogues.winter_28_2": "The end of this year is nearly here, {{DT_name}}.#$e#Many things have happened, some of them were good, some were not as good.#$e#Anyways, may the new year be good for you, {{DT_name}}!",
 
   // Special dialogues
 
@@ -237,6 +265,14 @@
 */
 
   //Conversation Topics
+  // Own CT
+  // Intro event reactions
+  "Dialogues.CT_Intro_Abigail": "So, Eleanor told me she introduced to you...#$b#She's a nice person, isn't she? I wonder why she likes me...",
+  "Dialogues.CT_Intro_Leah": "I heard you met Eleanor...#$b#She's a nice person, isn't she?",
+  "Dialogues.CT_Intro_Pierre": "Eleanor? That witch from the tower?#$b#I hope she didn't curse you or something...",
+  "Dialogues.CT_Intro_Linus": "Have you met Eleanor, the witch from the tower?#$b#She's such a nice person, isn't she?",
+  "Dialogues.CT_Intro_Wizard": "I have got an information that you met Eleanor, my apprentice...#$b#She has a lot of magical potential, like you.#$b#I hope you two will get along well.",
+
   //Vanilla & Vanilla+ (More CTs, 1.6 strings)
   "Dialogues.CT.Introduction": "Hi, {{DT_name}}.#$b#I hope your farm is doing well. It should...",
   "Dialogues.CT.divorced": "YOU!!!#$b#Get lost or I'll curse you!",
@@ -276,6 +312,14 @@
   "Dialogues.CT.AcceptGift_(O)StardropTea": "Oh.....#$b#WOW!!! Thanks so much, {{DT_name}}! I really, really love this gift.",
 
   // CT's selection
+  // Fourteen Heart Events for All
+  /*
+  "AbigailKillsGolem": "",
+  "EmilyMagicClothes": "",
+  "MaruCometSighting": "",
+  "PaintingWithLeah": "",
+  "HaleysCakeWalk": "",
+  */
   // ARV
   "Dialogues.CT.SterlingDrugs": "I heard Sterling acting unusually lately.#$b#I know it's strange, but as I don't want anyone to feel bad here, could you please check on him?#$b#Thanks.",
   "Dialogues.CT.SterlingRelapse": "I heard and also noticed Sterling missing at Pierre's lately.#$b#Do you know anything about it, {{DT_name}}?",
@@ -289,7 +333,7 @@
   "Dialogues.CT.JunaJunimos": "Abigail told me you, her and Juna hang out with Junimos.#$b#So they both also know about you and Junimos...",
   "Dialogues.CT.JunaGone": "{{DT_wizard_name}} told me Juna went to her parents.#$b#I'm not sure what will come next...",
   "Dialogues.CT.JunaWizard": "Juna is living with M. Rasmodia and me.#$b#I sense incoming changes between them. We shall see if they will be good or not...",
-  "Dialogues.CT.JunaProtectiveWizard": "I overheard that conversation between {{DT_wizard_name}} and Juna.#$b#I'm not quite sure why he did it.#$b#And I don't want to know.",
+  "Dialogues.CT.JunaProtectiveWizard": "I overheard that conversation between {{DT_wizard_name}} and Juna.#$b#As it is not my thing, I won't comment it.",
   "Dialogues.CT.BigFootWizard": "...#$b#I do not want to know the reason Juna thinks that {{DT_wizard_name}} is Big Foot.",
   // Lavril
   "Dialogues.CT.LavrilUnlocked": "I sense...#$b#... a friendly ghost released?#$b#Quite unexpected...#$b#You know something about it, {{DT_name}}, don't you?",
@@ -310,6 +354,10 @@
   "Dialogues.CT.OpenAllTheDoors": "Finally...#$b#The Joja is gone!#$b#These efforts of making the union have been good and powerful, but this wasn't quite the plan, don't you think, {{DT_name}}?",
   // Rodney
   "Dialogues.CT.BookLaunchParty": "I love Rodney's new book. I hope it'll be successful.#$b#Yes, I know magic, but we can't use it for purposes like making the book successful.",
+  // Toshinori
+  "Dialogues.CT.MarriedToToshinori": "So, you married Toshinori?#$b#I hope you'll be happy together, {{DT_name}}.$h#$b#Who knows, maybe I'll find someone too...",
+  "Dialogues.CT.ToshiPTSD": "Toshinori's health is getting worse...#$b#I hope he'll be fine...#$b#I'm worried about him...$s",
+  "Dialogues.CT.ToshinorisDeathScene": "...$s#$b#I can't believe it...$s#$b#Toshinori is dead...$s#$b#I hope he'll find peace in the afterlife...$s#$e#I'm sorry, {{DT_name}}, it's just too sad...$s",
   // Yri
   "Dialogues.CT.YriIntroduction": "Have you already met Yri?#$b#I saw her working and Robin at your house before your arrival.",
   "Dialogues.CT.CharlesIntroduction": "Have you already met Charles?#$b#I saw him with Yri when she and Robin were working on your house before your arrival.",
@@ -853,7 +901,7 @@
   "Secret.Dialogues.festivals.sum11": "Hmm... And you thought I wouldn't be here, {{DT_name}}, didn't you?#$b#Well, let's just say you should always be prepared for anything.",
   "Secret.Dialogues.festivals.spouse.sum11": "Here you have, my loved {{DT_name}}.$action AddItem 71 10 3#$b#Try to add one of these to the soup and wait if the gouvernor will notice them...",
 
-  "Secret.Mail.warning": "Dear player of Stardew Valley (a.k.a. {{DT_name}}),^^if you don't know, you installed a custom NPC mod that adds an NPC named Eleanor. If -  by any chance - you paid for this mod, please demand a full refund immediately, as this mod is fully free and downloadable from Nexus Mods (ID is XXXXX).^^-StrojvedouciDenis; author of NPC Eleanor^^^^^^^^^^^PS: Thanks to NPC mod Qingfeng and the 'secret message warning' in it that inspired me to this.",
+  "Secret.Mail.warning": "Dear player of Stardew Valley (a.k.a. {{DT_name}}),^^if you don't know, you installed a custom NPC mod that adds an NPC named Eleanor. If -  by any chance - you paid for this mod, please demand a full refund immediately, as this mod is fully free and downloadable from Nexus Mods (ID is 31663).^^-StrojvedouciDenis; author of NPC Eleanor^^^^^^^^^^^PS: Thanks to NPC mod Qingfeng and the 'secret message warning' in it that inspired me to this.",
   // "Secret.Mail.Eleanor_warning": "Test",     // left here in memory of the discusion on Discord on 10.2.2025
 
   "Secret.Event.Eleanor_ending.0": "Congratulations!#You triggered all secrets and fully completed this mod's content. You are the best!", // message
