@@ -1,0 +1,44 @@
+{
+  // "$schema": "https://smapi.io/schemas/manifest.json", commented out because of VS Code schema problems
+
+  // Mod Name
+
+  "Name": "[SMAPI] Eleanor",
+
+  // Mod Author
+
+  "Author": "StrojvedouciDenis",
+
+  // Current Version
+
+  "Version": "0.9.0-beta.3",
+
+  // Description
+
+  "Description": "This mod for Content Patcher adds a new NPC named Eleanor created by StrojvedouciDenis.",
+
+  // Unique Manifest ID for Content Pack
+
+  "UniqueID": "StrojvedouciDenis.Eleanor.SMAPI",
+
+  // Update Keys
+
+  "UpdateKeys": ["Nexus:31663", "GitHub:DenisSilent/Eleanor"],
+
+  // Minimum Version for SMAPI
+
+  "MinimumApiVersion": "4.0.0",
+
+  // dll file
+  "EntryDll": "Eleanor.dll",
+
+  // Dependencies - Required mods and optional mods
+
+  "Dependencies": [
+    {
+      "UniqueID": "Pathoschild.ContentPatcher", // Content Patcher
+      "IsRequired": true,
+      "MinimumVersion": "2.0.0"
+    }
+  ]
+}

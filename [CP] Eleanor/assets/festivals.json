@@ -12,8 +12,8 @@ win: 8y;25y
       "Action": "EditData",
       "Target": "Data/Festivals/spring24",
       "Entries": {
-        "StrojvedouciDenis.Eleanor": "{{i18n:Dialogues.festivals-spr24 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Dialogues.festivals_spouse-spr24 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-spr24 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-spr24 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       },
       "TextOperations": [
         {
@@ -37,8 +37,8 @@ win: 8y;25y
       "Action": "EditData",
       "Target": "Data/Festivals/summer28",
       "Entries": {
-        "StrojvedouciDenis.Eleanor": "{{i18n:Dialogues.festivals-sum28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Dialogues.festivals_spouse-sum28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-sum28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-sum28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       },
       "TextOperations": [
         {
@@ -62,8 +62,8 @@ win: 8y;25y
       "Action": "EditData",
       "Target": "Data/Festivals/fall16",
       "Entries": {
-        "StrojvedouciDenis.Eleanor": "{{i18n:Dialogues.festivals-fal16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Dialogues.festivals_spouse-fal16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-fal16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-fal16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       },
       "TextOperations": [
         {
@@ -87,8 +87,8 @@ win: 8y;25y
       "Action": "EditData",
       "Target": "Data/Festivals/fall27",
       "Entries": {
-        "StrojvedouciDenis.Eleanor": "{{i18n:Dialogues.festivals-fal27 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Dialogues.festivals_spouse-fal27 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-fal27 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-fal27 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       },
       "TextOperations": [
         {
@@ -112,8 +112,8 @@ win: 8y;25y
       "Action": "EditData",
       "Target": "Data/Festivals/winter8",
       "Entries": {
-        "StrojvedouciDenis.Eleanor": "{{i18n:Dialogues.festivals-win8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Dialogues.festivals_spouse-win8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-win8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-win8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       },
       "TextOperations": [
         {
@@ -137,8 +137,8 @@ win: 8y;25y
       "Action": "EditData",
       "Target": "Data/Festivals/winter25",
       "Entries": {
-        "StrojvedouciDenis.Eleanor": "{{i18n:Dialogues.festivals-win25 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Dialogues.festivals_spouse-win25 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-win25 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-win25 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       },
       "TextOperations": [
         {

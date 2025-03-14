@@ -4,10 +4,6 @@
 			"name": "[NPC] Eleanor",
 			"path": ".."
 		},
-		{
-			"name": "! AI exp",
-			"path": "../../! AI exp"
-		}
 	],
 	"settings": {
 		"dotnet.preferCSharpExtension": true

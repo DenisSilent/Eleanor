@@ -14,12 +14,12 @@
   "config.Festivals.name": "Festivals",
   "config.Festivals.values.true": "true",
   "config.Festivals.values.false": "false",
-  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 0.9.0-beta.2 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
+  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 0.9.0-beta.3 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
 
   "config.Marriage.name": "Marriage",
   "config.Marriage.values.true": "true",
   "config.Marriage.values.false": "false",
-  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.9.0-beta.2, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
+  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.9.0-beta.3, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
 
   "config.14hearts-variants.name": "14 hearts event variant",
   "config.14hearts-variants.values.short": "short",
@@ -40,7 +40,7 @@
   "config.Outfits.values.one look only": "one look only",
   "config.Outfits.values.vanilla": "vanilla",
   "config.Outfits.values.seasonal": "seasonal",
-  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.9.0-beta.2, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
+  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.9.0-beta.3, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
 
   // Experimental - DoNotChange
 
@@ -51,7 +51,7 @@
   "config.On/off.values.on": "on",
   "config.On/off.values.safe mode": "safe mode",
   "config.On/off.values.off": "off",
-  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 0.9.0-beta.2, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
+  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 0.9.0-beta.3, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
 
   // Eleanor's name
   "DisplayName": "Eleanor",
@@ -138,7 +138,7 @@
   */
   "Dialogues.summer.1": "Shining sun, hot weather...#$b#Don't forget to drink enough water, {{DT_name}}. It's important.",
   "Dialogues.summer.2": "Why is summer so hot?#$b#I can't imagine how you can work on your farm in this heat, {{DT_name}}.",
-  "Dialogues.summer.3": "Hi, {{DT_name}}. How are you and your farm handling the heat?",
+  "Dialogues.summer.3": "Hi, {{DT_name}}.#$b#How are you and your farm handling the heat?",
   /*
   "Dialogues.summer.4": "",
   "Dialogues.summer.5": "",
@@ -151,7 +151,7 @@
   "Dialogues.fall.1": "Colors are changing, leaves are falling, the air is getting colder...#$b#Yeah, fall is here. Beautiful season, isn't it?",
   "Dialogues.fall.2": "What a beautiful day, isn't it, {{DT_name}}?#$b#I hope you're enjoying it.",
   "Dialogues.fall.3": "Hi, {{DT_name}}. How are your plants doing in this season?",
-    /*
+  /*
   "Dialogues.fall.4": "",
   "Dialogues.fall.5": "",
   "Dialogues.fall.6": "",
@@ -172,8 +172,8 @@
   "Dialogues.winter.9": "",
   "Dialogues.winter.10": "",
 */
-"Dialogues.spring_12": "I don't plan to attend Egg Festival tomorrow.#$b#Anyways, may you enjoy it, {{DT_name}}.",
-"Dialogues.spring_23": "Flower Dance...#$#I really like dancing, so I'll be there. Will you also participate, {{DT_name}}?",
+  "Dialogues.spring_12": "I don't plan to attend Egg Festival tomorrow.#$b#Anyways, may you enjoy it, {{DT_name}}.",
+  "Dialogues.spring_23": "Flower Dance...#$#I really like dancing, so I'll be there. Will you also participate, {{DT_name}}?",
 
   "Dialogues.spring_1_2": "Time for you to start working on your farm, {{DT_name}}.#$b#I don't say you weren't working on %farm farm, I just wanted to tell you that it has got some powerful magical properties.#$e#How do I know, you're asking?#$b#I can sense the magic in it.",
   "Dialogues.spring_12_2": "I don't plan to attend Egg Festival tomorrow.#$b#Anyways, may you enjoy it, {{DT_name}}.",
@@ -182,7 +182,7 @@
   "Dialogues.summer_1": "The hot season, summer, is here, {{DT_name}}.#$b#I hope you're ready for it.",
   "Dialogues.summer_10": "Hi, {{DT_name}}. If you'd like to ask, no, I won't be at the Luau festival tomorrow.",
   "Dialogues.summer_27": "You'll see me at the Dance tomorrow.#$e#Or, at least I'll be there...#$b#You do know I like dancing,  {{DT_name}}?",
-  
+
   "Dialogues.summer_1_2": "The hot season, summer, is here, {{DT_name}}.#$b#I hope you're ready for it.",
   "Dialogues.summer_10_2": "Hi, {{DT_name}}. If you'd like to ask, no, I won't be at the Luau festival tomorrow.",
   "Dialogues.summer_27_2": "You'll see me at the Dance tomorrow.#$e#Or, at least I'll be there...#$b#You do know I like dancing,  {{DT_name}}?",
@@ -220,7 +220,7 @@
   "Dialogues.SpouseFarmhouseClutter": "Ehm... {{DT_name}}? How am I supposed to live here? I can't even get to the kitchen!#$b#I can't even move around...#$b#Please, clean this mess up...",
   "Dialogues.SpouseGiftJealous": "So, {{DT_name}}, I heard you gave {0} a {1} as a gift...#$b#I hope you're not trying to make me jealous...",
   "Dialogues.Spouse_MonstersInHouse": "Ehm... {{DT_name}}? Why are there monsters in our house?#$b#Should I get rid of them?",
-  "WipedMemory": "Huh... I feel like I know you, but I can't remember anything...#$b#Who are you?#$b#And why are you here?#$b#I'm sorry, but I can't remember anything...#$b#By the way, my name is Eleanor.",
+  "Dialogues.WipedMemory": "Huh... I feel like I know you, but I can't remember anything...#$b#Who are you?#$b#And why are you here?#$b#I'm sorry, but I can't remember anything...#$b#By the way, my name is Eleanor.",
 
   /*
   commented out until dialogue update (0.9.0) or marriage update (1.0.0); do NOT translate (there isn't anything to translate anyway...)
@@ -234,19 +234,6 @@
 "Dialogues.RejectMermaidPendant_Under8Hearts": "",
 "Dialogues.RejectMermaidPendant_Under10Hearts": "",
 "Dialogues.RejectMermaidPendant_Under10Hearts_AskedAgain": "",
-
-"Dialogues.RejectMovieTicket": "",
-"Dialogues.RejectMovieTicket_AlreadyInvitedBySomeoneElse": "",
-"Dialogues.RejectMovieTicket_AlreadyWatchedThisWeek": "",
-"Dialogues.RejectMovieTicket_Divorced": "",
-"Dialogues.RejectMovieTicket_DontWantToSeeThatMovie": "",
-
-"Dialogues.MovieInvite_Invited": "",
-
-		// 1.6.9. dialogues - will be merged with those above after SV 1.6.9 release
-			// dialogues are deactivated -> no merging, at least not for now (7.12.2024)
-
-"Dialogues.AcceptGift": "",
 
 "Dialogues.RejectBouquet_AlreadyAccepted_Engaged": "",
 "Dialogues.RejectBouquet_AlreadyAccepted_Married": "",
@@ -363,44 +350,6 @@
   "Dialogues.CT.CharlesIntroduction": "Have you already met Charles?#$b#I saw him with Yri when she and Robin were working on your house before your arrival.",
   "Dialogues.CT.YriWalk": "I'd like to ask you, {{DT_name}}, at any chance, didn't you hear Yri singing?",
   "Dialogues.CT.AfterProposal": "I felt Yri and Charles already fell in each other's love the first time I saw them. I'm happy for them.",
-
-  // Festival dialogues //
-  // Flower Dance
-  "Dialogues.festivals-spr24": "I really like dancing, {{DT_name}}, do you like it too?",
-  "Dialogues.festivals_spouse-spr24": "Well. You're here, so I am here too.",
-  // Dance of the Moonlight Jellies
-  "Dialogues.festivals-sum28": "Moonlight Jellies...#$b#{{DT_name}}, do you know that their name is different?",
-  "Dialogues.festivals_spouse-sum28": "Well. You're here, so I am here too.",
-  // Stardew Valley Fair
-  "Dialogues.festivals-fal16": "%Eleanor is in a conversation with that Welwick from TV.#$b#%However, they talk in a language you never heard before.",
-  "Dialogues.festivals_spouse-fal16": "Well. You're here, so I am here too.",
-  /*
-"Dialogues.Fair_Judging": "",
-"Dialogues.Fair_Judged": "",
-"Dialogues.Fair_Judged_PlayerLost_PurpleShorts": "",
-"Dialogues.Fair_Judged_PlayerLost_Skipped": "",
-"Dialogues.Fair_Judged_PlayerLost": "",
-"Dialogues.Fair_Judged_PlayerWon": "",
-*/
-  // Spirit's Eve
-  "Dialogues.festivals-fal27": "How do you like the maze?#$b#I helped {{DT_wizard_name}} with its creating, so I hope you'll like it, {{DT_name}}.",
-  "Dialogues.festivals_spouse-fal27": "Well. You're here, so I am here too.",
-  // Festival of Ice
-  "Dialogues.festivals-win8": "These ice sculptures and snowmen are beautiful, don't you think, {{DT_name}}?#$b#I'm glad I decided to come.",
-  "Dialogues.festivals_spouse-win8": "Well. You're here, so I am here too.",
-  // Feast of the Winter Star
-  "Dialogues.festivals-win25": "I really love this festival.#$b#By the way, did you already get your secret gift, {{DT_name}}?",
-  "Dialogues.festivals_spouse-win25": "Well. You're here, so I am here too.",
-
-  "Dialogues.WinterStar_ReceiveGift": "Oh, so you are my secret gift giver, {{DT_name}}?#$b#Thank you so much!#$b#I really like this gift!#$b#I hope you'll like yours too.",
-  /*
-"Dialogues.WinterStar_GiveGift_Before_Roommate": "",
-"Dialogues.WinterStar_GiveGift_Before_Spouse": "",
-"Dialogues.WinterStar_GiveGift_Before": "",
-"Dialogues.WinterStar_GiveGift_After_Roommate": "",
-"Dialogues.WinterStar_GiveGift_After_Spouse": "",
-"Dialogues.WinterStar_GiveGift_After": "",
-*/
 
   // Marriage + engagement dialogues //
   /*
@@ -571,14 +520,14 @@
   "Events.8h.2": "StrojvedouciDenis.Eleanor-DEBUG:8h.2",
   "Events.8h.3": "StrojvedouciDenis.Eleanor-DEBUG:8h.3",
   "Events.8h.4": "StrojvedouciDenis.Eleanor-DEBUG:8h.4",
-*/
-  /*
+
   // 10 hearts
    commented out until marriage update (1.0.0); do NOT translate
- "Event.10h.0": "StrojvedouciDenis.Eleanor-DEBUG:10h.0",
- "Event.10h.1": "StrojvedouciDenis.Eleanor-DEBUG:10h.1",
+  "Event.10h.0": "StrojvedouciDenis.Eleanor-DEBUG:10h.0",
+  "Event.10h.1": "StrojvedouciDenis.Eleanor-DEBUG:10h.1",
   "Event.10h.2": "StrojvedouciDenis.Eleanor-DEBUG:10h.2",
-  ...
+  "Event.10h.3": "StrojvedouciDenis.Eleanor-DEBUG:10h.3",
+  "Event.10h.4": "StrojvedouciDenis.Eleanor-DEBUG:10h.4",
 */
 
   // 14 hearts
@@ -840,28 +789,65 @@
   // addon events
   "Event_addons.Hog_gone_y1.0": "Hello, {{DT_name}}.#$b#I made a trip here - I teleported here - to tell you that with the path to the railway station is cleared, Eleanor went out of town until the end of the weekend.#$e#I also want you to come with me when she'll get back. She'll tell you why she left.#$b#Anyways, that's all from me. May you have a good day.",
 
+  // festivals.json
+  "Festivals-spr24": "I really like dancing, {{DT_name}}, do you like it too?",
+  "Festivals_spouse-spr24": "Well. You're here, so I am here too.",
+  // Dance of the Moonlight Jellies
+  "Festivals-sum28": "Moonlight Jellies...#$b#{{DT_name}}, do you know that their name is different?",
+  "Festivals_spouse-sum28": "Well. You're here, so I am here too.",
+  // Stardew Valley Fair
+  "Festivals-fal16": "%Eleanor is in a conversation with that Welwick from TV.#$b#%However, they talk in a language you never heard before.",
+  "Festivals_spouse-fal16": "Well. You're here, so I am here too.",
+  /*
+"Festivals.Fair_Judging": "",
+"Festivals.Fair_Judged": "",
+"Festivals.Fair_Judged_PlayerLost_PurpleShorts": "",
+"Festivals.Fair_Judged_PlayerLost_Skipped": "",
+"Festivals.Fair_Judged_PlayerLost": "",
+"Festivals.Fair_Judged_PlayerWon": "",
+*/
+  // Spirit's Eve
+  "Festivals-fal27": "How do you like the maze?#$b#I helped {{DT_wizard_name}} with its creating, so I hope you'll like it, {{DT_name}}.",
+  "Festivals_spouse-fal27": "Well. You're here, so I am here too.",
+  // Festival of Ice
+  "Festivals-win8": "These ice sculptures and snowmen are beautiful, don't you think, {{DT_name}}?#$b#I'm glad I decided to come.",
+  "Festivals_spouse-win8": "Well. You're here, so I am here too.",
+  // Feast of the Winter Star
+  "Festivals-win25": "I really love this festival.#$b#By the way, did you already get your secret gift, {{DT_name}}?",
+  "Festivals_spouse-win25": "Well. You're here, so I am here too.",
+
+  "Festivals.WinterStar_ReceiveGift": "Oh, so you are my secret gift giver, {{DT_name}}?#$b#Thank you so much!#$b#I really like this gift!#$b#I hope you'll like yours too.",
+  /*
+"Festivals.WinterStar_GiveGift_Before_Roommate": "",
+"Festivals.WinterStar_GiveGift_Before_Spouse": "",
+"Festivals.WinterStar_GiveGift_Before": "",
+"Festivals.WinterStar_GiveGift_After_Roommate": "",
+"Festivals.WinterStar_GiveGift_After_Spouse": "",
+"Festivals.WinterStar_GiveGift_After": "",
+*/
+
   // gifts.json
-  "Gift.love": "Oh, this is amazing! Thank you, {{DT_name}}!$h",
-  "Gift.like": "How nice of you, this is great.$h",
-  "Gift.dislike": "Oh... I don't like this gift. But you tried. And that counts.$a",
-  "Gift.hate": "Oh my, go away with this!$a",
-  "Gift.neutral": "A gift? Oh... thanks?",
+  "Gifts.love": "Oh, this is amazing! Thank you, {{DT_name}}!$h",
+  "Gifts.like": "How nice of you, this is great.$h",
+  "Gifts.dislike": "Oh... I don't like this gift. But you tried. And that counts.$a",
+  "Gifts.hate": "Oh my, go away with this!$a",
+  "Gifts.neutral": "A gift? Oh... thanks?",
 
-  "Dialogues.RejectItem_(O)460": "OH! {{DT_name}}! So you feel THIS way about me?#$b#Not that I don't feel the same way, but I'm not ready for this yet...#$b#I hope you understand...",
-  "Dialogues.RejectItem": "{{DT_name}}, are you trying to give me this?#$b#I'm sorry, but I hate this, so I won't accept it.",
+  "Gifts.RejectItem_(O)460": "OH! {{DT_name}}! So you feel THIS way about me?#$b#Not that I don't feel the same way, but I'm not ready for this yet...#$b#I hope you understand...",
+  "Gifts.RejectItem": "{{DT_name}}, are you trying to give me this?#$b#I'm sorry, but I hate this, so I won't accept it.",
 
-  "Dialogues.AcceptBouquet": "Is that what I think it is?#$b#Oh, {{DT_name}}...#$b#I'm so happy you feel this way about me...#$b#I feel the same way...#$e#I'm so happy...",
-  "Dialogues.RejectBouquet": "Is that what I think it is?#$b#Oh, {{DT_name}}, I'm so sorry, but I can't accept it right now.",
-  "Dialoguse.RejectBouquet_Divorced": "Really?#$b#You're giving me this after what happened between us?#$b#No, {{DT_name}}, I can't accept it...",
-  "Dialogues.RejectBouquet_AlreadyAccepted": "Er... {{DT_name}}, I already accepted one bouquet from you...#$b#I can't accept another one...",
-  "Dialogues.RejectBouquet_NotDatable": "Is that what I think it is?#$b#Oh, {{DT_name}}, I'm so sorry, but I have no romantic feelings for you, at least not right now.",
-  "Dialogues.RejectBouquet_NpcAlreadyMarried": "{{DT_name}}! Do you know what you're doing?#$b#I'm already married!",
-  "Dialogues.RejectBouquet_VeryLowHearts": "Is that what I think it is?#$b#Oh, {{DT_name}}, I'm so sorry, but I have no romantic feelings for you, at least not right now.",
-  "Dialogues.RejectBouquet_LowHearts": "Is that what I think it is?#$b#Oh, {{DT_name}}, I'm so sorry, but I don't feel about you this way...#$b#I hope you understand...",
+  "Gifts.AcceptBouquet": "Is that what I think it is?#$b#Oh, {{DT_name}}...#$b#I'm so happy you feel this way about me...#$b#I feel the same way...#$e#I'm so happy...",
+  "Gifts.RejectBouquet": "Is that what I think it is?#$b#Oh, {{DT_name}}, I'm so sorry, but I can't accept it right now.",
+  "Gifts.RejectBouquet_Divorced": "Really?#$b#You're giving me this after what happened between us?#$b#No, {{DT_name}}, I can't accept it...",
+  "Gifts.RejectBouquet_AlreadyAccepted": "Er... {{DT_name}}, I already accepted one bouquet from you...#$b#I can't accept another one...",
+  "Gifts.RejectBouquet_NotDatable": "Is that what I think it is?#$b#Oh, {{DT_name}}, I'm so sorry, but I have no romantic feelings for you, at least not right now.",
+  "Gifts.RejectBouquet_NpcAlreadyMarried": "{{DT_name}}! Do you know what you're doing?#$b#I'm already married!",
+  "Gifts.RejectBouquet_VeryLowHearts": "Is that what I think it is?#$b#Oh, {{DT_name}}, I'm so sorry, but I have no romantic feelings for you, at least not right now.",
+  "Gifts.RejectBouquet_LowHearts": "Is that what I think it is?#$b#Oh, {{DT_name}}, I'm so sorry, but I don't feel about you this way...#$b#I hope you understand...",
 
-  "Dialogues.AcceptBirthdayGift_Negative": "Is this a birthday gift for me,  {{DT_name}}?#$b#Honestly, I thought you'd give me something else...#$b#But I'm still happy you remembered my birthday, so thank you.",
-  "Dialogues.AcceptBirthdayGift_Positive": "Is that... a birthday gift for me, {{DT_name}}?#$b#Oh, thank you so much!#$b#I'm so happy you remembered my birthday...",
-  "Dialogues.RejectGift_Divorced": "Oh really, {{DT_name}}?#$b#You're giving me this after what happened between us?#$b#No, {{DT_name}}, I can't accept it...",
+  "Gifts.AcceptBirthdayGift_Negative": "Is this a birthday gift for me,  {{DT_name}}?#$b#Honestly, I thought you'd give me something else...#$b#But I'm still happy you remembered my birthday, so thank you.",
+  "Gifts.AcceptBirthdayGift_Positive": "Is that... a birthday gift for me, {{DT_name}}?#$b#Oh, thank you so much!#$b#I'm so happy you remembered my birthday...",
+  "Gifts.RejectGift_Divorced": "Oh really, {{DT_name}}?#$b#You're giving me this after what happened between us?#$b#No, {{DT_name}}, I can't accept it...",
 
   // mails.json
   "Mail.HogwartsTrips": "StrojvedouciDenis.Eleanor-DEBUG:Mail.HogwartsTrips",
@@ -891,6 +877,14 @@
   "Movies.Movies.ZuzuExpress.1": "I heard this movie is a romantic drama...#$b#As a hopeless romantic, I can't wait to watch it.",
   "Movies.Movies.ZuzuExpress.2": "You have to follow your heart! You love him, he loves you, what's the problem?$s",
   "Movies.Movies.ZuzuExpress.3": "Who did that ending?! Do they even realize how many people want to know if they'll be together or not?!",
+
+  "Movies.RejectMovieTicket": "I'm sorry, {{DT_name}}, but I can't go to the movie with you right now.",
+  "Movies.RejectMovieTicket_AlreadyInvitedBySomeoneElse": "I'm sorry, {{DT_name}}, but I'm already invited by someone else. Maybe next time?",
+  "Movies.RejectMovieTicket_AlreadyWatchedThisWeek": "I'm sorry, {{DT_name}}, but I already watched the movie this week.",
+  "Movies.RejectMovieTicket_Divorced": "After everything that was between us?#$b#You know me well enough to know that I won't go with you.",
+  "Movies.RejectMovieTicket_DontWantToSeeThatMovie": "I'm sorry, {{DT_name}}, but I really don't want to see that movie.",
+
+  "Movies.MovieInvite_Invited": "You want to invite me to the movie?#$b#I'd love to go with you, {{DT_name}}.",
 
   // schedules.json
   "Schedule.safemode": "Hey, {{DT_name}}. I'm in safe mode, for your information.#$b#That means I won't move from this very tile...#$b#%Safemode meant only for experimental usage like fixing this mod's errors without losing barely (?) any progress.",

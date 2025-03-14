@@ -333,8 +333,7 @@
           ]
         }
       }
-    }
-/*
+    },
     {
       "LogName": "Eleanor - movies dialogues",
       "Action": "EditData",
@@ -347,14 +346,7 @@
         "RejectMovieTicket_DontWantToSeeThatMovie": "{{i18n:Dialogues.RejectMovieTicket_DontWantToSeeThatMovie |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 
         "MovieInvite_Invited": "{{i18n:Dialogues.MovieInvite_Invited |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
-
-        //"MovieInvite_Invited_<NPC name>": "",
-        //"MovieInvite_Invited_<manner>": "",
-        //"MovieInvite_Invited_<socialAnxiety>": "",	// kinda don't know what to do with these, but let's keep them blocked here
-        //"MovieInvite_Invited_<optimism>": "",
-        //"MovieInvite_Invited_<age>": "",
       }
     }
-      */
   ]
 }

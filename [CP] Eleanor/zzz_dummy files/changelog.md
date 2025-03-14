@@ -4,6 +4,15 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ---
 
+## version 0.9.0-beta.3 (14.3.2025)
+
+* Eleanor is wide public for 1 month 🎉
+* Added SMAPI component for the mod, for now it checks if CP part of this mod is loaded in the game correctly and gives a warning if not
+* Renamed few i18n keys
+* Cleared some code mess
+
+---
+
 ## version 0.9.0-beta.2 (10.3.2025)
 
 * Added seasonal dialogues + seasonal day dialogues for year 2+

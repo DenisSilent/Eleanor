@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eleanor", "Eleanor\Eleanor.csproj", "{06EFCBEF-5F55-4F6D-884D-40443FE0BB8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06EFCBEF-5F55-4F6D-884D-40443FE0BB8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06EFCBEF-5F55-4F6D-884D-40443FE0BB8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06EFCBEF-5F55-4F6D-884D-40443FE0BB8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06EFCBEF-5F55-4F6D-884D-40443FE0BB8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09D18F31-612F-4DA5-A670-F946483A4996}
+	EndGlobalSection
+EndGlobal
