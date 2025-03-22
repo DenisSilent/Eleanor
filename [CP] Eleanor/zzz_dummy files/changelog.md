@@ -4,12 +4,31 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ---
 
+## version 0.9.0 (22.3.2025)
+
+* Discord dividing SMAPI component help by:
+  * `@chu2.718281828459045235360287471`
+  * `@khloeleclair`
+  * `@decidedlyhuman`
+* Fixed intro event error if Rasmodia is installed
+* Changed Intro even mention of day time so it'll be neutral
+* AI translations created with loyal help of Gemini 2.0 Flash Thinking (experimental), link [here](https://aistudio.google.com/prompts/1oyJmm-BZyIPzW5GZ8KX1ajYWO3X1ZdLC).
+
+---
+
 ## version 0.9.0-beta.3 (14.3.2025)
 
 * Eleanor is wide public for 1 month 🎉
 * Added SMAPI component for the mod, for now it checks if CP part of this mod is loaded in the game correctly and gives a warning if not
 * Renamed few i18n keys
 * Cleared some code mess
+* Discord creating SMAPI component help by:
+  * `@abagaianye`
+  * `@superstorm_7`
+  * `@khloeleclair`
+  * `@liliethatesnewnicknames`
+  * `@chu2.718281828459045235360287471`
+  * `@atravita`
 
 ---
 
