@@ -15,7 +15,7 @@ debug 27.1.25, for summit dialogues
 
     // 0hearts - Eleanor's introduction
     // Location: your farm
-    // Trigger: Entering your farm after seeing itroduction event with Mr. Rasmodius.
+    // Trigger: Entering your farm after seeing introduction event with Mr. Rasmodius.
     // Description: Eleanor introduces herself to the player, greeting them politely and explaining who she is and that she knows about you and Junimos.
     {
       "LogName": "Eleanor - event - 0hearts - Introduction",
