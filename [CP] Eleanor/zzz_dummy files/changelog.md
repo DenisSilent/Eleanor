@@ -6,7 +6,7 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ## version 0.9.1 (22.3.2025)
 
-* Deactivadet Secret mail about instalation
+* Deactivated Secret mail about instalation
 * Internal code fixes
 
 ---
