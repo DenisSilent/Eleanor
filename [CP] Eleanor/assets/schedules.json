@@ -6,7 +6,7 @@
       "Action": "EditData",
       "Target": "Strings/schedules/StrojvedouciDenis.Eleanor",
       "Entries": {
-        "safemode": "{{i18n:Schedule.safemode |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+        "safemode": "{{i18n:Schedule.safemode |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       }
     },
 

@@ -1,4 +1,5 @@
 {
+  //! https://docs.google.com/spreadsheets/d/1q0j3BqE79_wDlTW43teNPEspudt29S0EmlKwL7PDUCo/edit?gid=1457049521#gid=1457049521
   /* Festivals and their status: 
 spr: 13s;24y
 sum: 11s;28y
@@ -12,8 +13,8 @@ win: 8y;25y
       "Action": "EditData",
       "Target": "Data/Festivals/spring24",
       "Entries": {
-        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-spr24 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-spr24 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-spr24 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-spr24 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       },
       "TextOperations": [
         {
@@ -37,20 +38,20 @@ win: 8y;25y
       "Action": "EditData",
       "Target": "Data/Festivals/summer28",
       "Entries": {
-        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-sum28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-sum28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-sum28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-sum28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       },
       "TextOperations": [
         {
           "Operation": "Append",
           "Target": ["Entries", "Set-Up_additionalCharacters"],
-          "Value": "StrojvedouciDenis.Eleanor 14 39 2",
+          "Value": "StrojvedouciDenis.Eleanor 11 33 3",
           "Delimiter": "/"
         },
         {
           "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
-          "Value": "StrojvedouciDenis.Eleanor 14 39 2",
+          "Value": "StrojvedouciDenis.Eleanor 11 33 3",
           "Delimiter": "/"
         }
       ]
@@ -62,8 +63,8 @@ win: 8y;25y
       "Action": "EditData",
       "Target": "Data/Festivals/fall16",
       "Entries": {
-        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-fal16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-fal16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-fal16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-fal16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       },
       "TextOperations": [
         {
@@ -87,8 +88,8 @@ win: 8y;25y
       "Action": "EditData",
       "Target": "Data/Festivals/fall27",
       "Entries": {
-        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-fal27 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-fal27 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-fal27 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-fal27 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       },
       "TextOperations": [
         {
@@ -112,8 +113,8 @@ win: 8y;25y
       "Action": "EditData",
       "Target": "Data/Festivals/winter8",
       "Entries": {
-        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-win8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-win8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-win8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-win8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       },
       "TextOperations": [
         {
@@ -137,8 +138,8 @@ win: 8y;25y
       "Action": "EditData",
       "Target": "Data/Festivals/winter25",
       "Entries": {
-        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-win25 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-win25 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+        "StrojvedouciDenis.Eleanor": "{{i18n:Festivals-win25 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "StrojvedouciDenis.Eleanor_spouse": "{{i18n:Festivals_spouse-win25 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       },
       "TextOperations": [
         {
@@ -161,25 +162,25 @@ win: 8y;25y
       "Action": "EditData",
       "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
       "Entries": {
-        "Fair_Judging": "{{i18n:Dialogues.Fair_Judging |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Fair_Judging": "{{i18n:Dialogues.Fair_Judging |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
 
-        "Fair_Judged": "{{i18n:Dialogues.Fair_Judged |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "Fair_Judged_PlayerLost_PurpleShorts": "{{i18n:Dialogues.Fair_Judged_PlayerLost_PurpleShorts |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "Fair_Judged_PlayerLost_Skipped": "{{i18n:Dialogues.Fair_Judged_PlayerLost_Skipped |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "Fair_Judged_PlayerLost": "{{i18n:Dialogues.Fair_Judged_PlayerLost |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "Fair_Judged_PlayerWon": "{{i18n:Dialogues.Fair_Judged_PlayerWon |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "Fair_Judged": "{{i18n:Dialogues.Fair_Judged |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Fair_Judged_PlayerLost_PurpleShorts": "{{i18n:Dialogues.Fair_Judged_PlayerLost_PurpleShorts |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Fair_Judged_PlayerLost_Skipped": "{{i18n:Dialogues.Fair_Judged_PlayerLost_Skipped |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Fair_Judged_PlayerLost": "{{i18n:Dialogues.Fair_Judged_PlayerLost |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Fair_Judged_PlayerWon": "{{i18n:Dialogues.Fair_Judged_PlayerWon |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
 
-        "WinterStar_ReceiveGift": "{{i18n:Dialogues.WinterStar_ReceiveGift |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "WinterStar_ReceiveGift": "{{i18n:Dialogues.WinterStar_ReceiveGift |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
 
         //"WinterStar_ReceiveGift_<id>": "",
         //"WinterStar_ReceiveGift_<tag>": "",
 
-        "WinterStar_GiveGift_Before_Roommate": "{{i18n:Dialogues.WinterStar_GiveGift_Before_Roommate |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "WinterStar_GiveGift_Before_Spouse": "{{i18n:Dialogues.WinterStar_GiveGift_Before_Spouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "WinterStar_GiveGift_Before": "{{i18n:Dialogues.WinterStar_GiveGift_Before |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "WinterStar_GiveGift_After_Roommate": "{{i18n:Dialogues.WinterStar_GiveGift_After_Roommate |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "WinterStar_GiveGift_After_Spouse": "{{i18n:Dialogues.WinterStar_GiveGift_After_Spouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "WinterStar_GiveGift_After": "{{i18n:Dialogues.WinterStar_GiveGift_After |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+        "WinterStar_GiveGift_Before_Roommate": "{{i18n:Dialogues.WinterStar_GiveGift_Before_Roommate |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "WinterStar_GiveGift_Before_Spouse": "{{i18n:Dialogues.WinterStar_GiveGift_Before_Spouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "WinterStar_GiveGift_Before": "{{i18n:Dialogues.WinterStar_GiveGift_Before |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "WinterStar_GiveGift_After_Roommate": "{{i18n:Dialogues.WinterStar_GiveGift_After_Roommate |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "WinterStar_GiveGift_After_Spouse": "{{i18n:Dialogues.WinterStar_GiveGift_After_Spouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "WinterStar_GiveGift_After": "{{i18n:Dialogues.WinterStar_GiveGift_After |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       }
     }
       */

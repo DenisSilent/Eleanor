@@ -4,9 +4,23 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ---
 
+## version 0.9.2 (30.3.2025)
+
+* Hopefully fixed year 1 Moonligt Jelly Fest position - overlapping with Toshinori
+* Added fallback dialogue for all of Eleanor's dialogues (even event or the mail ones)
+* Changed `M. Rasmodia` to `Ms. Rasmodia` after a check from `nom0ri` (Rasmodia's author)
+* Fallback dialogue Discord help by:
+  * `@abagaianye`
+* Mermaid bouquet gifting fix Discord help by:
+  * `@abagaianye`
+  * `@atravita`
+  * `@chu2.718281828459045235360287471`
+
+---
+
 ## version 0.9.1 (22.3.2025)
 
-* Deactivadet Secret mail about instalation
+* Deactivated Secret mail about instalation
 * Internal code fixes
 
 ---

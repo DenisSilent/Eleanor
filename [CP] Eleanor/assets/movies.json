@@ -339,13 +339,13 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
       "Entries": {
-        "RejectMovieTicket": "{{i18n:Dialogues.RejectMovieTicket |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:Dialogues.RejectMovieTicket_AlreadyInvitedBySomeoneElse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:Dialogues.RejectMovieTicket_AlreadyWatchedThisWeek |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "RejectMovieTicket_Divorced": "{{i18n:Dialogues.RejectMovieTicket_Divorced |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-        "RejectMovieTicket_DontWantToSeeThatMovie": "{{i18n:Dialogues.RejectMovieTicket_DontWantToSeeThatMovie |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+        "RejectMovieTicket": "{{i18n:Dialogues.RejectMovieTicket |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:Dialogues.RejectMovieTicket_AlreadyInvitedBySomeoneElse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:Dialogues.RejectMovieTicket_AlreadyWatchedThisWeek |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectMovieTicket_Divorced": "{{i18n:Dialogues.RejectMovieTicket_Divorced |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectMovieTicket_DontWantToSeeThatMovie": "{{i18n:Dialogues.RejectMovieTicket_DontWantToSeeThatMovie |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
 
-        "MovieInvite_Invited": "{{i18n:Dialogues.MovieInvite_Invited |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+        "MovieInvite_Invited": "{{i18n:Dialogues.MovieInvite_Invited |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       }
     }
   ]
