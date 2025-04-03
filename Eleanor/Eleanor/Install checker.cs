@@ -42,11 +42,13 @@ namespace Eleanor
                 this.Monitor.Log(" ", LogLevel.Error);
                 this.Monitor.Log("! WARNING !", LogLevel.Error);
                 this.Monitor.Log(" ", LogLevel.Error);
+                return;
             }
             // ELSE installed correctly
             else
             {
                 this.Monitor.Log($"The mod [NPC] Eleanor and all of its components have been successfully launched.", LogLevel.Debug);
+                 return;
             }
         }
     }

@@ -4,6 +4,18 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ---
 
+## version 0.9.3 (31.3.2025)
+
+* Fixed the mermaid bouquet (from Polyamory Sweet) fix so now it'll refer to correct i18n key
+* Added a mail after Eleanor gets back from summer trip year 1 if Hogwarts mod is installed
+* Prepared parts of the dialogues and code for 1.0.0 update
+* Rewritten some 14 hearts event dialogues and therefore slightly changed Eleanor's (unreveared) history
+* Cleaned up some code mess
+* Fixed some spelling errors here in changelog
+* Probably fixed unknown installation chcek error in CSharp part of the mod
+
+---
+
 ## version 0.9.2 (30.3.2025)
 
 * Hopefully fixed year 1 Moonligt Jelly Fest position - overlapping with Toshinori
@@ -18,8 +30,7 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ---
 
-## version 0.9.1 (22.3.2025)
-
+* Deactivated Secret mail about installation
 * Deactivated Secret mail about instalation
 * Internal code fixes
 
@@ -67,7 +78,7 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 * First preparations for 0.9.0 update
 * Added beta movies reactions
 * **Added a part of the sprites and portraits created by hezjena2023! Thanks so much for doing the art ❤**
-  * By that, I mean everything that is not in the `one look only (ORG)` folder
+* Re-edited and reorganized NPC graphics code and folders -> decreased the mod's size X delete the old version before installing the new one
   * Vanilla-like portraits are created using and editing art from [Stardew Valley Character Creator](https://jazzybee.itch.io/sdvcharactercreator) (credits to Poltergeister & Jaz) and are therefore shared, like my ORG ones, under Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License. Sprites are handmade. For future info, please contact them.
 * Reedited and reorganized NPC graphics code and folders -> decrased the mod's size X delete the old version before istalling the new one
 * Fixed some secrets + added a new one that'll trigger after you trigger all other ones
@@ -135,14 +146,12 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ---
 
-## version 0.8.2 (14.2.2025)
-
+* Fixed basic compatibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
 * Fixed basic compactibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
 
 ---
 
-## version 0.8.1 (14.2.2025)
-
+* Added basic compatibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
 * Added basic compactibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
 * Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
 
@@ -421,7 +430,7 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ## version 0.6.7-beta.11 (8.1.2025)
 
-* Optimizing dialogues and i18n code after response from Pathoschild at discussion(s) on Discord from 7.1.2025 (removing "{{ModId}}" from dialogues, respectively "StrojvedouciDenis.Eleanor" from i18n)
+* Optimizing dialogues and i18n code after response from `@Pathoschild` at discussion(s) on Discord from 7.1.2025 (removing "{{ModId}}" from dialogues, respectively "StrojvedouciDenis.Eleanor" from i18n)
 * Prepared summit fixes and changes
 
 ---

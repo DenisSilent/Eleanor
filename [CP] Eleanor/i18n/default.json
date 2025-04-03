@@ -15,12 +15,12 @@
   "config.Festivals.name": "Festivals",
   "config.Festivals.values.true": "true",
   "config.Festivals.values.false": "false",
-  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 0.9.2 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
+  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 0.9.3 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
 
   "config.Marriage.name": "Marriage",
   "config.Marriage.values.true": "true",
   "config.Marriage.values.false": "false",
-  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.9.2, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
+  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.9.3, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
 
   "config.14hearts-variants.name": "14 hearts event variant",
   "config.14hearts-variants.values.short": "short",
@@ -41,7 +41,7 @@
   "config.Outfits.values.one look only": "one look only",
   "config.Outfits.values.vanilla": "vanilla",
   "config.Outfits.values.seasonal": "seasonal",
-  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.9.2, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
+  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.9.3, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
 
   // Experimental - DoNotChange
 
@@ -52,7 +52,7 @@
   "config.On/off.values.on": "on",
   "config.On/off.values.safe mode": "safe mode",
   "config.On/off.values.off": "off",
-  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 0.9.2, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
+  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 0.9.3, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
 
   // Eleanor's name
   "DisplayName": "Eleanor",
@@ -375,74 +375,73 @@
     
   "Dialogues.marriage.SummitEvent_Dialogue3_StrojvedouciDenis.Eleanor": "Such a nice view here, don't you think, {{DT_name}}?#$b#I'm glad we came here...#$b#It is %years years since you came to Pelican Town, and I'm happy you did.#$b#Because my life is much better with you in it.#$b#Just think about it - how would my life look like if you didn't come here?#$b#Would I ever find out about myself? About my powers? About my parents's past?#$b#Because I can't...#$e#But that doesn't matter anymore, because of you, {{DT_name}}.#$b# It was you who helped me in my search for myself.#$b#And I know that I can't thank you enough for that.#$b#But I'll try to do it every day, every moment, every second of my life.#$b#Because you are the one who helped me to find myself.#$b#And I'm so grateful for that...#$b#I love you, {{DT_name}}.",
 
-
-  "Dialogues.marriage.Rainy_Day_0": "StrojvedouciDenis.Eleanor-DEBUG:Rainy_Day_0",
-  "Dialogues.marriage.Rainy_Day_1": "StrojvedouciDenis.Eleanor-DEBUG:Rainy_Day_1",
-  "Dialogues.marriage.Rainy_Day_2": "StrojvedouciDenis.Eleanor-DEBUG:Rainy_Day_2",
-  "Dialogues.marriage.Rainy_Day_3": "StrojvedouciDenis.Eleanor-DEBUG:Rainy_Day_3",
-  "Dialogues.marriage.Rainy_Day_4": "StrojvedouciDenis.Eleanor-DEBUG:Rainy_Day_4",
-  "Dialogues.marriage.Rainy_Night_0": "StrojvedouciDenis.Eleanor-DEBUG:Rainy_Night_0",
-  "Dialogues.marriage.Rainy_Night_1": "StrojvedouciDenis.Eleanor-DEBUG:Rainy_Night_1",
-  "Dialogues.marriage.Rainy_Night_2": "StrojvedouciDenis.Eleanor-DEBUG:Rainy_Night_2",
-  "Dialogues.marriage.Rainy_Night_3": "StrojvedouciDenis.Eleanor-DEBUG:Rainy_Night_3",
-  "Dialogues.marriage.Rainy_Night_4": "StrojvedouciDenis.Eleanor-DEBUG:Rainy_Night_4",
-  "Dialogues.marriage.Rainy_Night_5": "StrojvedouciDenis.Eleanor-DEBUG:Rainy_Night_5",
-  "Dialogues.marriage.Indoor_Day_0": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Day_0",
-  "Dialogues.marriage.Indoor_Day_1": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Day_1",
-  "Dialogues.marriage.Indoor_Day_2": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Day_2",
-  "Dialogues.marriage.Indoor_Day_3": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Day_3",
-  "Dialogues.marriage.Indoor_Day_4": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Day_4",
-  "Dialogues.marriage.Indoor_Day_5": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Day_5",
-  "Dialogues.marriage.Indoor_Night_0": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Night_0",
-  "Dialogues.marriage.Indoor_Night_1": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Night_1",
-  "Dialogues.marriage.Indoor_Night_2": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Night_2",
-  "Dialogues.marriage.Indoor_Night_3": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Night_3",
-  "Dialogues.marriage.Indoor_Night_4": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Night_4",
-  "Dialogues.marriage.Indoor_Night_5": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Night_5",
-  "Dialogues.marriage.Outdoor_0": "StrojvedouciDenis.Eleanor-DEBUG:Outdoor_0",
-  "Dialogues.marriage.Outdoor_1": "StrojvedouciDenis.Eleanor-DEBUG:Outdoor_1",
-  "Dialogues.marriage.Outdoor_2": "StrojvedouciDenis.Eleanor-DEBUG:Outdoor_2",
-  "Dialogues.marriage.Outdoor_3": "StrojvedouciDenis.Eleanor-DEBUG:Outdoor_3",
-  "Dialogues.marriage.Outdoor_4": "StrojvedouciDenis.Eleanor-DEBUG:Outdoor_4",
-  "Dialogues.marriage.Outdoor_5": "StrojvedouciDenis.Eleanor-DEBUG:Outdoor_5",
-  "Dialogues.marriage.OneKid_0": "StrojvedouciDenis.Eleanor-DEBUG:OneKid_0",
-  "Dialogues.marriage.OneKid_1": "StrojvedouciDenis.Eleanor-DEBUG:OneKid_1",
-  "Dialogues.marriage.OneKid_2": "StrojvedouciDenis.Eleanor-DEBUG:OneKid_2",
-  "Dialogues.marriage.OneKid_3": "StrojvedouciDenis.Eleanor-DEBUG:OneKid_3",
-  "Dialogues.marriage.TwoKid_0": "StrojvedouciDenis.Eleanor-DEBUG:TwoKid_0",
-  "Dialogues.marriage.TwoKid_1": "StrojvedouciDenis.Eleanor-DEBUG:TwoKid_1",
-  "Dialogues.marriage.TwoKid_2": "StrojvedouciDenis.Eleanor-DEBUG:TwoKid_2",
-  "Dialogues.marriage.TwoKid_3": "StrojvedouciDenis.Eleanor-DEBUG:TwoKid_3",
-  "Dialogues.marriage.Good_0": "StrojvedouciDenis.Eleanor-DEBUG:Good_0",
-  "Dialogues.marriage.Good_1": "StrojvedouciDenis.Eleanor-DEBUG:Good_1",
-  "Dialogues.marriage.Good_2": "StrojvedouciDenis.Eleanor-DEBUG:Good_2",
-  "Dialogues.marriage.Good_3": "StrojvedouciDenis.Eleanor-DEBUG:Good_3",
-  "Dialogues.marriage.Good_4": "StrojvedouciDenis.Eleanor-DEBUG:Good_4",
-  "Dialogues.marriage.Good_5": "StrojvedouciDenis.Eleanor-DEBUG:Good_5",
-  "Dialogues.marriage.Good_6": "StrojvedouciDenis.Eleanor-DEBUG:Good_6",
-  "Dialogues.marriage.Good_7": "StrojvedouciDenis.Eleanor-DEBUG:Good_7",
-  "Dialogues.marriage.Good_8": "StrojvedouciDenis.Eleanor-DEBUG:Good_8",
-  "Dialogues.marriage.Good_9": "StrojvedouciDenis.Eleanor-DEBUG:Good_9",
-  "Dialogues.marriage.Neutral_0": "StrojvedouciDenis.Eleanor-DEBUG:Neutral_0",
-  "Dialogues.marriage.Neutral_1": "StrojvedouciDenis.Eleanor-DEBUG:Neutral_1",
-  "Dialogues.marriage.Neutral_2": "StrojvedouciDenis.Eleanor-DEBUG:Neutral_2",
-  "Dialogues.marriage.Neutral_3": "StrojvedouciDenis.Eleanor-DEBUG:Neutral_3",
-  "Dialogues.marriage.Neutral_4": "StrojvedouciDenis.Eleanor-DEBUG:Neutral_4",
-  "Dialogues.marriage.Neutral_5": "StrojvedouciDenis.Eleanor-DEBUG:Neutral_5",
-  "Dialogues.marriage.Neutral_6": "StrojvedouciDenis.Eleanor-DEBUG:Neutral_6",
-  "Dialogues.marriage.Neutral_7": "StrojvedouciDenis.Eleanor-DEBUG:Neutral_7",
-  "Dialogues.marriage.Neutral_8": "StrojvedouciDenis.Eleanor-DEBUG:Neutral_8",
-  "Dialogues.marriage.Neutral_9": "StrojvedouciDenis.Eleanor-DEBUG:Neutral_9",
-  "Dialogues.marriage.Bad_0": "StrojvedouciDenis.Eleanor-DEBUG:Bad_0",
-  "Dialogues.marriage.Bad_1": "StrojvedouciDenis.Eleanor-DEBUG:Bad_1",
-  "Dialogues.marriage.Bad_2": "StrojvedouciDenis.Eleanor-DEBUG:Bad_2",
-  "Dialogues.marriage.Bad_3": "StrojvedouciDenis.Eleanor-DEBUG:Bad_3",
-  "Dialogues.marriage.Bad_4": "StrojvedouciDenis.Eleanor-DEBUG:Bad_4",
-  "Dialogues.marriage.Bad_5": "StrojvedouciDenis.Eleanor-DEBUG:Bad_5",
-  "Dialogues.marriage.Bad_6": "StrojvedouciDenis.Eleanor-DEBUG:Bad_6",
-  "Dialogues.marriage.Bad_7": "StrojvedouciDenis.Eleanor-DEBUG:Bad_7",
-  "Dialogues.marriage.Bad_8": "StrojvedouciDenis.Eleanor-DEBUG:Bad_8",
-  "Dialogues.marriage.Bad_9": "StrojvedouciDenis.Eleanor-DEBUG:Bad_9",
+  "Dialogues.marriage.Rainy_Day_0": "It's raining today, {{DT_name}}. At least you don't have to water the crops.",
+  "Dialogues.marriage.Rainy_Day_1": "The rain is so relaxing, isn't it, {{DT_name}}?",
+  "Dialogues.marriage.Rainy_Day_2": "Hey, {{DT_name}}, did you get wet today?#$b#I hope you didn't. I don't want you to get sick...",
+  //"Dialogues.marriage.Rainy_Day_3": "StrojvedouciDenis.Eleanor-DEBUG:Rainy_Day_3",
+  //"Dialogues.marriage.Rainy_Day_4": "StrojvedouciDenis.Eleanor-DEBUG:Rainy_Day_4",
+  "Dialogues.marriage.Rainy_Night_0": "It's cozy inside while it rains outside, {{DT_name}}.",
+  "Dialogues.marriage.Rainy_Night_1": "It's a perfect night for a warm drink, {{DT_name}}.#$b#What do you think?",
+  "Dialogues.marriage.Rainy_Night_2": "Do you think the rain will stop tomorrow, {{DT_name}}?",
+  //"Dialogues.marriage.Rainy_Night_3": "StrojvedouciDenis.Eleanor-DEBUG:Rainy_Night_3",
+  //"Dialogues.marriage.Rainy_Night_4": "StrojvedouciDenis.Eleanor-DEBUG:Rainy_Night_4",
+  //"Dialogues.marriage.Rainy_Night_5": "StrojvedouciDenis.Eleanor-DEBUG:Rainy_Night_5",
+  "Dialogues.marriage.Indoor_Day_0": "Good morning, {{DT_name}}!#$b#I hope you slept well.#$b#I did, thanks to you...$b",
+  "Dialogues.marriage.Indoor_Day_1": "Well, you're finally awake, {{DT_name}}.#$b#I was starting to think you won't wake up today...#$b#Just kidding, of course.#$e#Here, I prepared you some cookies, I hope you'll like them. [223]",
+  "Dialogues.marriage.Indoor_Day_2": "This night was... magical!#$b#I felt so at peace, and I think you did too.#$b#Here, I prepared you some cookies, I hope you'll like them. [223]",
+  //"Dialogues.marriage.Indoor_Day_3": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Day_3",
+  //"Dialogues.marriage.Indoor_Day_4": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Day_4",
+  //"Dialogues.marriage.Indoor_Day_5": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Day_5",
+  "Dialogues.marriage.Indoor_Night_0": "It's a perfect night for a warm drink, {{DT_name}}.#$b#What do you think?",
+  "Dialogues.marriage.Indoor_Night_1": "Oh, you're back, {{DT_name}}. I was just thinking about you.#$b#I hope you had a good day.",
+  "Dialogues.marriage.Indoor_Night_2": "What? It's already night time? Really?#$b#Looks like I got lost in my books again... How long have I been reading?#$b#That's a lot... Nevermind, how was your day?",
+  //"Dialogues.marriage.Indoor_Night_3": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Night_3",
+  //"Dialogues.marriage.Indoor_Night_4": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Night_4",
+  //"Dialogues.marriage.Indoor_Night_5": "StrojvedouciDenis.Eleanor-DEBUG:Indoor_Night_5",
+  "Dialogues.marriage.Outdoor_0": "Your farm is so beautiful, {{DT_name}}.#$b#I love it here.",
+  "Dialogues.marriage.Outdoor_1": "It's a lovely day outside, {{DT_name}}!#$b#What do you want to do today?",
+  "Dialogues.marriage.Outdoor_2": "I love spending time outdoors with you, {{DT_name}}.#$b#It makes me feel so alive!",
+  //"Dialogues.marriage.Outdoor_3": "StrojvedouciDenis.Eleanor-DEBUG:Outdoor_3",
+  //"Dialogues.marriage.Outdoor_4": "StrojvedouciDenis.Eleanor-DEBUG:Outdoor_4",
+  //"Dialogues.marriage.Outdoor_5": "StrojvedouciDenis.Eleanor-DEBUG:Outdoor_5",
+  "Dialogues.marriage.OneKid_0": "Having and rasing a child is a big responsibility, {{DT_name}}, but look at how much joy it brings us!#$b#I love our child so much, and I know you do too.#$b#I hope we can raise them to be a good person...",
+  "Dialogues.marriage.OneKid_1": "Do you think our child has any magical potential, {{DT_name}}?#$b#I hope they do, I would love to teach them magic one day...",
+  "Dialogues.marriage.OneKid_2": "Heh, I was just thinking about our child.#$b#It looks so happy and healthy, doesn't it?",
+  //"Dialogues.marriage.OneKid_3": "StrojvedouciDenis.Eleanor-DEBUG:OneKid_3",
+  "Dialogues.marriage.TwoKid_0": "Our children are so cute, {{DT_name}}! I love them so much!#$b#Which one you think is more like you?",
+  "Dialogues.marriage.TwoKid_1": "Can you believe we have two children now, {{DT_name}}? Because I can't!#$b#Do you think at least one of them will be a farmer like you?",
+  "Dialogues.marriage.TwoKid_2": "Do you think our children are connected to some magic?#$b#I hope they are, I would love to teach them magic one day...",
+  //"Dialogues.marriage.TwoKid_3": "StrojvedouciDenis.Eleanor-DEBUG:TwoKid_3",
+  "Dialogues.marriage.Good_0": "Aw, {{DT_name}}...#$b#You know how to make me feel special. I love you so much!",
+  "Dialogues.marriage.Good_1": "I feel so lucky to have you in my life, {{DT_name}}.#$b#You make me feel so special and loved.#$b#I hope you feel the same way.",
+  "Dialogues.marriage.Good_2": "I cherish every moment we spend together, {{DT_name}}.#$b#You truly mean the world to me.",
+  "Dialogues.marriage.Good_3": "I can't help but smile when I think of you, {{DT_name}}.#$b#You bring so much joy into my life.",
+  //"Dialogues.marriage.Good_4": "StrojvedouciDenis.Eleanor-DEBUG:Good_4",
+  //"Dialogues.marriage.Good_5": "StrojvedouciDenis.Eleanor-DEBUG:Good_5",
+  //"Dialogues.marriage.Good_6": "StrojvedouciDenis.Eleanor-DEBUG:Good_6",
+  //"Dialogues.marriage.Good_7": "StrojvedouciDenis.Eleanor-DEBUG:Good_7",
+  //"Dialogues.marriage.Good_8": "StrojvedouciDenis.Eleanor-DEBUG:Good_8",
+  //"Dialogues.marriage.Good_9": "StrojvedouciDenis.Eleanor-DEBUG:Good_9",
+  "Dialogues.marriage.Neutral_0": "Hey, {{DT_name}}.#$b#I hope you're doing well.#$b#I was just thinking about you.",
+  "Dialogues.marriage.Neutral_1": "Hey, {{DT_name}}. Here, have some cookies, I hope you'll like them. [223]",
+  "Dialogues.marriage.Neutral_2": "I hope you're having a good day, {{DT_name}}.#$b#If you need anything, just let me know.",
+  "Dialogues.marriage.Neutral_3": "How's the farm doing, {{DT_name}}? I hope everything is going well.#$b#If you need any help, just let me know.",
+  //"Dialogues.marriage.Neutral_4": "StrojvedouciDenis.Eleanor-DEBUG:Neutral_4",
+  //"Dialogues.marriage.Neutral_5": "StrojvedouciDenis.Eleanor-DEBUG:Neutral_5",
+  //"Dialogues.marriage.Neutral_6": "StrojvedouciDenis.Eleanor-DEBUG:Neutral_6",
+  //"Dialogues.marriage.Neutral_7": "StrojvedouciDenis.Eleanor-DEBUG:Neutral_7",
+  //"Dialogues.marriage.Neutral_8": "StrojvedouciDenis.Eleanor-DEBUG:Neutral_8",
+  //"Dialogues.marriage.Neutral_9": "StrojvedouciDenis.Eleanor-DEBUG:Neutral_9",
+  "Dialogues.marriage.Bad_0": "Ugh...#$b#I don't feel so good today, {{DT_name}}.#$b#I hope it will pass soon...",
+  "Dialogues.marriage.Bad_1": "I just need some time to rest, {{DT_name}}.#$b#Thank you for understanding.",
+  "Dialogues.marriage.Bad_2": "Sorry if I seem off today, {{DT_name}}. This is just a rough day for me...#$b#I hope tomorrow will be better.",
+  "Dialogues.marriage.Bad_3": "I haven't slept well last night, {{DT_name}}.#$b#I hope I won't be like this for long...",
+  //"Dialogues.marriage.Bad_4": "StrojvedouciDenis.Eleanor-DEBUG:Bad_4",
+  //"Dialogues.marriage.Bad_5": "StrojvedouciDenis.Eleanor-DEBUG:Bad_5",
+  //"Dialogues.marriage.Bad_6": "StrojvedouciDenis.Eleanor-DEBUG:Bad_6",
+  //"Dialogues.marriage.Bad_7": "StrojvedouciDenis.Eleanor-DEBUG:Bad_7",
+  //"Dialogues.marriage.Bad_8": "StrojvedouciDenis.Eleanor-DEBUG:Bad_8",
+  //"Dialogues.marriage.Bad_9": "StrojvedouciDenis.Eleanor-DEBUG:Bad_9",
   */
 
   // Hogwarts
@@ -680,7 +679,7 @@
   "Events.14h-p3.21": "You check the paper again, just to find out that there is something written on the back of it...", // message
   "Events.14h-p3.22": "...and you find another note from Eleanor, right next to some notes from the decrypted message...#$b#...which means, she was here, she decrypted the message, and she left it here for you to find it...", // message
   "Events.14h-p3.23": "Dear {{DT_name}},", // message
-  //"Event.14h-p3.23-commented": "Another letter from Eleanor...#...and I'm still not sure what to think about that...", // message
+  //"Event.14h-p3.23-commented": "Another letter from Eleanor...#...and I'm still not sure what is going on...", // message
   "Events.14h-p3.24": "I leave this message for you to find it because I know you'll find it.#I know you'll find it because I know you'll look for me.", // message
   //"Event.14h-p3.24-commented": "Eleanor...#...I know you know me too well...#...but I'm not sure if I should be happy or sad about that...", // message
   "Events.14h-p3.25": "Even though I told you not to look for me, I know you'll do it anyway because you love me.", // message
@@ -715,12 +714,12 @@
   "Events.14h-p4.4": "You tell Abigail about Eleanor's situation.", // message
   "Events.14h-p4.5": "Oh my...#$b#...I didn't expect that...#$b#...but I know where she might be...",
   "Events.14h-p4.6": "You see, before you came, I had a strange dream - that's what I wanted to tell you...",
-  "Events.14h-p4.7": "I saw Eleanor somewhere in the forest, near the lake and some waterfall...#$b#...and she was reading and writing something...#$b#I guess it is the same thing you're holding in your hand...",
-  "Events.14h-p4.8": "Anyway, after she was done, she left the forest and went to the mountains.#$b#Someone was waiting for her there, and even though I couldn't see who it was, I knew that it was someone who was not friendly at all...#$b#...and my dream ended with the words I should give to you 'Sorry to use you like this, Abigail, but tell {{DT_name}} that the world is not safe for us, because we have some very powerful enemies that are trying to stop me from finding out who I am. Also, tell my loved {{DT_name}} to meet me at the beach as carefully and as soon as possible.'",
+  "Events.14h-p4.7": "I saw Eleanor somewhere in the forest, near the lake and some waterfall...#$b#...and she was reading and writing something...#$b#I guess it's the same thing you're holding in your hand...",
+  "Events.14h-p4.8": "Anyway, after she was done, she left the forest and went to the mountains.#$b#Someone, probably Atlantes W., was waiting for her there, and they discussed something...#$b#Anyway, my dream ended with the words I should give to you:#$b#'Sorry to use you like this, Abigail, but tell {{DT_name}} that the world is not safe for us, because we have some very powerful enemies that are trying to stop me from finding out who I am. Also, tell my loved {{DT_name}} to meet me at the beach as carefully and as soon as possible.'",
   "Events.14h-p4.9": "I don't know what happened next, because I woke up...#$b#...but if I were you, I would go to the beach and look for her there...",
   "Events.14h-p4.10": "Now, I have to go, because I have to help my mom with the store...#$b#...but I hope you'll find her soon, {{DT_name}}.",
   "Events.14h-p4.11": "So Eleanor should be at the beach...#...but what would she do there?#...and why would she go there?#And especially, who are those enemies she's talking about?#I have to find out, no matter what...", // message
-  "Events.14h-p4.12": "Either way, you run out of the store right to the beach, with a note in your hand, hoping you'll find her there...#...and, maybe for your safety, trying not to think about anything else.", // message
+  "Events.14h-p4.12": "Either way, you run out of the store right to the beach, with a note in your pocket, hoping you'll find her there...#...and, maybe for your safety, trying not to think about anything else.", // message
 
   // part 5/5
   "Events.14h-p5.0": "Pelican Town, Beach, at the same time you started discussing with Abigail...", // message
@@ -731,7 +730,7 @@
   "Events.14h-p5.5": "I don't know if you can hear me, but I hope you can...#$b#...and I hope you can help me...",
   "Events.14h-p5.6": "Either way, I remember that one magical trick that you taught me one time...#$b#So I'll try to use it...",
   "Events.14h-p5.7": "And with that, Eleanor started to cast that magical spell her parents cast when she was a very young kid, a spell that was supposed to protect their village in the mountains from the bad power...", // message
-  "Events.14h-p5.8": "Meanwhile, you keep running to the beach, with a note in your hand, hoping you'll find her there...", // message
+  "Events.14h-p5.8": "Meanwhile, you keep running to the beach, with a note in your pocket, hoping you'll find her there...", // message
   "Events.14h-p5.9": "...#...when suddenly, the ground started to shake, the wind started to blow, the sea started to roar...", // message
   "Events.14h-p5.10": "But you didn't stop running, on the contrary, you started to run even faster, because you don't know what's happening, neither why...#...but it gives you the power to run even faster... #...so by that, you are sure that is has something to do with Eleanor...", // message
   "Events.14h-p5.11": "Even though it looked like the world has come to its end, you didn't stop.#It was like you were under some magical spell that was shielding you from the danger...", // message
@@ -745,7 +744,7 @@
   "Events.14h-p5.19": "Your emotions are mixed, your thoughts are confused, your heart is full of worries, your eyes are full of tears...#...and yet you are happier than ever, because you found her...", // message
   "Events.14h-p5.20": "{{DT_name}}$s?!#$b#What are you doing here?$s#$b#I told you not to look for me!$s",
   "Events.14h-p5.21": "I know, Eleanor, I know...#...but I had to...#...I had to look for you...#...I had to find you...#..and help you...", // message
-  "Events.14h-p5.22": "Suppressed by the emotions from seeing her again, you run to her and you hug her, with a note in your hand, with a feeling that you're never going to let her go...", // message
+  "Events.14h-p5.22": "Suppressed by the emotions from seeing her again, you run to her and you hug her with a feeling that you're never going to let her go...", // message
   "Events.14h-p5.23": "With that, Eleanor started to cry, but she also started to smile...#...and she hugged you back, with the same feeling...", // message
   "Events.14h-p5.24": "Any person that wouldn't know who you two are but who would see you two, they would say that you two are the happiest couple in the world...#...and they would be right...", // message
   "Events.14h-p5.25": "In that hug, you two shared all the emotions, all the thoughts, all the worries, all the tears...", // message
@@ -757,7 +756,7 @@
   "Events.14h-p5.31": "These enemies...$s#$b#...they are the reason what happened to my parents...$s#$b#...that was that bad power they were talking about...$s",
   "Events.14h-p5.32": "These enemies...$s#$b#...they are also one of the most powerful wizards - not witches, just wizards, which is also strange - in the world, like my parents...$s#$b#...and for some reason, they hated my parents, and they hate me...$s",
   "Events.14h-p5.33": "...respectively, they hated me, because I was the only one who could stop them from killing us - yes, {{DT_name}}, they were also going after you...#$b#...and they knew I have that ability...#$b#...",
-  "Events.14h-p5.34": "...#$b#...and that ability was the spell I cast.#$b#That spell stopped them, {{DT_name}}#$b#But I didn't kill them, I did the opposite thing they did to my parents...#$b#...I saved them...",
+  "Events.14h-p5.34": "...#$b#...and that ability was the spell I cast.#$b#That spell stopped them, {{DT_name}}#$b#But I didn't kill them, I did the opposite thing that happened to my parents...#$b#...I saved them...",
   "Events.14h-p5.35": "What do you mean, Eleanor?#.Why and how, but especially why did you save them?#...and how did you save me?",
   "Events.14h-p5.36": "As you are here, {{DT_name}}, you talked to Abigail, right?#$b#...and she told you about the dream she had & the message I left for you, right?",
   "Events.14h-p5.37": "Yes, Eleanor, she did...#...but what does it have to do with you saving them?", // message
@@ -773,23 +772,24 @@
   "Events.14h-p5.47": "By that spell I cast, I took away their curse...#$b#Maybe I even took away something else, but I'm not sure about that...#$b#...but I'm sure that I took away their bad intentions...",
   "Events.14h-p5.48": "Whoever cast that curse on them, they knew that I would be the only one who could stop them...#$b#...and that is why they were after me...",
   "Events.14h-p5.49": "...so they needed to stop me in my search for who I am because I was the only one who could stop them...",
-  "Events.14h-p5.50": "There are many things I don't know, {{DT_name}}. One of them are my parents, and who they were...#$b#...but I know that they were good people and that they loved me...#$b#...and that is all I need to know about them.",
-  "Events.14h-p5.51": "Other one is what happened with the curse I took away from their friends.#But if my theory is correct, they should be back to normal, and they should be back to their families...",
-  "Events.14h-p5.52": "...and that it was my parents who sacrificed themselves to defeat that person who cast these curses on their friends - and as all of them are similar age, they were successful...$s#...and by that they saved you, me, and the whole world...$s",
+  "Events.14h-p5.50": "There are many things I don't know, {{DT_name}}. One of them are my parents, and who they really were...#$b#...but I know that they were good people and that they loved me...#$b#...and that is all I need to know about them. At least right now...",
+  "Events.14h-p5.51": "Other one is what happened with the curse I took away from their friends.#$b#But if my theory is correct, they should be back to normal, and they should be back to their families...",
+  "Events.14h-p5.52": "...and that it was my parents who probably sacrificed themselves to defeat that person who cast these curses on their friends - and as all of them are similar age, they were successful...$s#$b#...and by that they saved you, me, and the whole world...$s",
   "Events.14h-p5.53": "You listen to Eleanor's story, and you can't believe what you hear...", // message
   "Events.14h-p5.54": "I would think of many other things I don't know, {{DT_name}}, but person must also think of something they know...",
-  "Events.14h-p5.55": "...#...and the main thing I know...#...#...is that I love you, {{DT_name}}...#...and I always will, no matter what...#...##...and that is the only thing I need to know...",
+  "Events.14h-p5.55": "...#$b#...and the main thing I know...#$b#...#$b#...is that I love you, {{DT_name}}...#$b#...and I always will, no matter what...#$b#...#$b#...and that is the only thing I need to know...",
   "Events.14h-p5.56": "I love you too, Eleanor...#...and I always will, no matter what.", // message
   "Events.14h-p5.57": "The world is full of wonders & dangers, love & hate, hope & fear, joy & sorrow,...#Everything has its good and bad side, that is for sure.", // message
   "Events.14h-p5.58": "You two stand there, the magic circle slowly disappearing, the sun rising,...#...and you two know that you two are and always will be the happiest couple in the world...", // message
-  "Events.14h-p5.59": "And with that, you two finally start to walk back to your farm...#... the new day is starting, but you two know that no matter what will it bring, you two will be ready for it...#...because you two have each other's love...#...and that is all you both need to have...", // message
+  "Events.14h-p5.59": "And with that, you two finally start to walk back to your farm...#...the new day is starting, but you two know that no matter what will it bring, you two will be ready for it...#...because you two have each other's love...#...and that is all you both need to have...", // message
   "Events.14h-p5.60": " ...#...and that is the end of the story of Eleanor and you, {{DT_name}}, saving the world. But another story, the story of their love, is still going on...", // message
 
   // part 6/5
-  "Events.14h-p6.0": "The End......or is it?#For this story, it indeed is, {{DT_name}}. Thank you for playing with this mod! I hope you enjoyed it! May this Stardew Valley game make You happy. :)#- StrojvedouciDenis; author of NPC Eleanor", // message
+  "Events.14h-p6.0": "The End...#...or is it?#For this story, it indeed is, {{DT_name}}.#Thank you for playing with this mod! I hope you enjoyed it! May this Stardew Valley game make You happy. :)#- StrojvedouciDenis; author of NPC Eleanor", // message
 
   // addon events
-  "Event_addons.Hog_gone_y1.0": "Hello, {{DT_name}}.#$b#I made a trip here - I teleported here - to tell you that with the path to the railway station is cleared, Eleanor went out of town until the end of the weekend.#$e#I also want you to come with me when she'll get back. She'll tell you why she left.#$b#Anyways, that's all from me. May you have a good day.",
+  "Events.addons.Hog_gone_y1.0": "Hello, {{DT_name}}.#$b#I made a trip here - I teleported here - to tell you that with the path to the railway station is cleared, Eleanor went out of town until the end of the weekend.",
+  "Events.addons.Hog_gone_y1.1": "You should receive a message from her regarding the reason why she's not here.#$b#Anyways, that's all from me. May you have a good day.",
 
   // festivals.json
   "Festivals-spr24": "I really like dancing, {{DT_name}}, do you like it too?",
@@ -799,7 +799,7 @@
   "Festivals_spouse-sum28": "Well. You're here, so I am here too.",
   // Stardew Valley Fair
   "Festivals-fal16": "%Eleanor is in a conversation with that Welwick from TV.#$b#%However, they talk in a language you never heard before.",
-  "Festivals_spouse-fal16": "Well. You're here, so I am here too.",
+  "Festivals_spouse-fal16": "Welwick is the best in guessing luck, don't you think, {{DT_name}}?",
   /*
 "Festivals.Fair_Judging": "",
 "Festivals.Fair_Judged": "",
@@ -851,11 +851,8 @@
   "Gifts.AcceptBirthdayGift_Positive": "Is that... a birthday gift for me, {{DT_name}}?#$b#Oh, thank you so much!#$b#I'm so happy you remembered my birthday...",
   "Gifts.RejectGift_Divorced": "Oh really, {{DT_name}}?#$b#You're giving me this after what happened between us?#$b#No, {{DT_name}}, I can't accept it...",
 
-  "Gifts.AcceptGift_ApryllForever.CPPolyamorySweet_MermaidBouquet": "bla2 accept",
-  "Gifts.RejectItem_ApryllForever.CPPolyamorySweet_MermaidBouquet": "bla2 reject",
-
   // mails.json
-  "Mail.HogwartsTrips": "StrojvedouciDenis.Eleanor-DEBUG:Mail.HogwartsTrips",
+  "Mail.HogwartsTrips": "Good day, {{DT_name}},^^I'm writing to you because I was told that  {{DT_wizard_name}} visited you because of my trip to Hogwarts.^^I have to go there every year, as both me being a student and because of something regarding my past... So I'm just letting you know I came back from there, and that will repeat every year.^^I hope you understand. May you have good day.^^Eleanor",
 
   // movies.json
   "Movies.BraveLittleSapling.1": "So this movie is about a sampling turning into a tree?#$b#That could be interesting, I guess.",

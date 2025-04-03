@@ -15,20 +15,6 @@
       "Entries": {
         "RejectItem_(O)460": "{{i18n:Gifts.RejectItem_(O)460 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}", // emergency block --> marriage not possible (hopefully)
         // -20 -21 -22 -23 -29 -95 -96 -97 -98 -99 -100 -101 -999 78
-        /*
-        "RejectItem_ category_junk": "{{i18n:Gifts.RejectItem_category_junk |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "RejectItem_category_bait": "{{i18n:Gifts.RejectItem_category_bait|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "RejectItem_category_tackle": "{{i18n:Gifts.RejectItem_category_tackle |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "RejectItem_category_sell_at_fish_shop": "{{i18n:Gifts.RejectItem_category_sell_at_fish_shop |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "RejectItem_category_hat": "{{i18n:Gifts.RejectItem_category_hat |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "RejectItem_category_ring ": "{{i18n:Gifts.RejectItem_category_ring  |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "RejectItem_category_boots": "{{i18n:Gifts.RejectItem_category_boots |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "RejectItem_category_weapon": "{{i18n:Gifts.RejectItem_category_weapon |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "RejectItem_category_tool": "{{i18n:Gifts.RejectItem_category_tool |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "RejectItem_category_clothing": "{{i18n:Gifts.RejectItem_category_clothing |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "RejectItem_category_trinket": "{{i18n:Gifts.RejectItem_category_trinket |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "RejectItem_category_litter": "{{i18n:Gifts.RejectItem_category_litter |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        */
         "RejectItem_ category_junk": "{{i18n:Gifts.RejectItem |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "RejectItem_category_bait": "{{i18n:Gifts.RejectItem|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "RejectItem_category_tackle": "{{i18n:Gifts.RejectItem |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
@@ -63,7 +49,7 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
       "Entries": {
-        "AcceptGift_(O)ApryllForever.CPPolyamorySweet_MermaidBouquet": "{{i18n:Gifts.AcceptGift_ApryllForever.CPPolyamorySweet_MermaidBouquet |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
+        "AcceptGift_(O)ApryllForever.CPPolyamorySweet_MermaidBouquet": "{{i18n:Gifts.AcceptBouquet |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       },
       "When": {
         "HasMod|contains=ApryllForever.CPPolyamorySweet": true,
@@ -76,7 +62,7 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
       "Entries": {
-        "RejectItem_(O)ApryllForever.CPPolyamorySweet_MermaidBouquet": "{{i18n:Gifts.RejectItem_ApryllForever.CPPolyamorySweet_MermaidBouquet |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
+        "RejectItem_(O)ApryllForever.CPPolyamorySweet_MermaidBouquet": "{{i18n:Gifts.RejectBouquet |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       },
       "When": {
         "HasMod|contains=ApryllForever.CPPolyamorySweet": true,

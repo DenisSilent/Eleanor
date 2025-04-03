@@ -166,6 +166,26 @@ debug 27.1.25, for summit dialogues
       }
     },
     */
+    /*  
+          Code taken with permissions from user `abagaianye` on Discord. Thanks! <3
+          BTW, that's a fade to black and back event code
+                pause 1000/
+                globalFade 0.019 true/
+                pause 700/
+                viewport -1000 -1000/
+                halt/
+                changeToTemporaryMap {{ModID}}_NationalPark/
+                viewport -1000 -1000/
+                warp farmer 37 9/
+                warp {{ModID}}_Hiria 40 12/
+                faceDirection {{ModID}}_Hiria right/
+                showFrame {{ModID}}_Hiria 4/
+                warp {{ModID}}_Louisa 43 12/
+                pause 300/
+                globalFadeToClear 0.007 true/
+                viewport 42 12/
+                pause 100/
+    */
 
     // long versions
     // NOTE: Multiplayer does NOT pause time during cutscenes! One in-game hour = 43 real world seconds, full day = 14 minutes 20 seconds... (Taken from: https://stardewmodding.wiki.gg/wiki/Tips_for_Heart_Events_-_Writing_and_Narrative_Design#Additional_Tips,_Caveats_and_Notes)
@@ -326,7 +346,7 @@ Removed for now due to the lack of marriage update (1.0.0)
       "Action": "EditData",
       "Target": "Data/Events/farm",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_Hog_gone_y1/e {{ModId}}Intro/j 30": "none/-1000 -1000/farmer 2 2 2 Wizard 3 3 0/skippable/addConversationTopic  {{ModId}}.CT_Hog_gone 6/pause 2222/speak Wizard \"{{i18n:Hog_gone_y1.0|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/end"
+        "StrojvedouciDenis.Eleanor_Hog_gone_y1/e {{ModId}}Intro/j 30": "none/-1000 -1000/farmer 2 2 2 Wizard 3 3 0/skippable/addConversationTopic  {{ModId}}.CT_Hog_gone 6/pause 2222/speak Wizard \"{{i18n:Events.addons.Hog_gone_y1.0|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111//speak Wizard \"{{i18n:Events.addons.Hog_gone_y1.1|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/end"
       },
       "When": {
         "HasMod": "HogwartsET.CP.Hogwarts"
