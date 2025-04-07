@@ -13,7 +13,8 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
       "Entries": {
-        "RejectItem_(O)460": "{{i18n:Gifts.RejectItem_(O)460 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}", // emergency block --> marriage not possible (hopefully)
+        "https://discord.com/channels/137344473976799233/156109690059751424/1358449032682537173": "{{i18n:Gifts.AcceptGift_(O)460 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}", // emergency block --> marriage not possible (hopefully)
+        //"RejectItem_(O)460": "{{i18n:Gifts.RejectItem_(O)460 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}", // emergency block --> marriage not possible (hopefully)
         // -20 -21 -22 -23 -29 -95 -96 -97 -98 -99 -100 -101 -999 78
         "RejectItem_ category_junk": "{{i18n:Gifts.RejectItem |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "RejectItem_category_bait": "{{i18n:Gifts.RejectItem|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",

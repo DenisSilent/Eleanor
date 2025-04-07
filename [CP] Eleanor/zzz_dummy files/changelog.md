@@ -4,21 +4,34 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ---
 
-## version 0.9.3 (31.3.2025)
+## version 1.0.0-alpha.1 (5.4.2025)
+
+* Changed development structure - now the `development_UNSTABLE!` GitHub branch is used instead of the `main` branch, that leads to separate development and bugfixing
+* version formating Discord help by:
+  * `@chu2.718281828459045235360287471`
+* Marriage Mermaid pendant dialogue + crashing SMAPI Discord help by:
+  * `@abagaianye`
+  * `@atravita`
+  * `@shockah`
+  * `@thelimeydragon`
+
+---
+
+## version 1.0.0-alpha.1 (31.3.2025)
 
 * Fixed the mermaid bouquet (from Polyamory Sweet) fix so now it'll refer to correct i18n key
 * Added a mail after Eleanor gets back from summer trip year 1 if Hogwarts mod is installed
 * Prepared parts of the dialogues and code for 1.0.0 update
-* Rewritten some 14 hearts event dialogues and therefore slightly changed Eleanor's (unreveared) history
+* Rewritten some 14 hearts event dialogues and therefore slightly changed Eleanor's (unrevealed) history
 * Cleaned up some code mess
 * Fixed some spelling errors here in changelog
-* Probably fixed unknown installation chcek error in CSharp part of the mod
+* Probably fixed unknown installation check error in CSharp part of the mod
 
 ---
 
 ## version 0.9.2 (30.3.2025)
 
-* Hopefully fixed year 1 Moonligt Jelly Fest position - overlapping with Toshinori
+* Hopefully fixed year 1 Moonlight Jelly Fest position - overlapping with Toshinori
 * Added fallback dialogue for all of Eleanor's dialogues (even event or the mail ones)
 * Changed `M. Rasmodia` to `Ms. Rasmodia` after a check from `nom0ri` (Rasmodia's author)
 * Fallback dialogue Discord help by:
@@ -31,7 +44,7 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 ---
 
 * Deactivated Secret mail about installation
-* Deactivated Secret mail about instalation
+* Deactivated Secret mail about installation
 * Internal code fixes
 
 ---
@@ -80,7 +93,7 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 * **Added a part of the sprites and portraits created by hezjena2023! Thanks so much for doing the art ❤**
 * Re-edited and reorganized NPC graphics code and folders -> decreased the mod's size X delete the old version before installing the new one
   * Vanilla-like portraits are created using and editing art from [Stardew Valley Character Creator](https://jazzybee.itch.io/sdvcharactercreator) (credits to Poltergeister & Jaz) and are therefore shared, like my ORG ones, under Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License. Sprites are handmade. For future info, please contact them.
-* Reedited and reorganized NPC graphics code and folders -> decrased the mod's size X delete the old version before istalling the new one
+* Reedited and reorganized NPC graphics code and folders -> decreased the mod's size X delete the old version before installing the new one
 * Fixed some secrets + added a new one that'll trigger after you trigger all other ones
 * Internal code reorganization
 * Invisible dialogue checker (for secrets) Discord help by:
@@ -97,13 +110,13 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ## version 0.8.8 (21.2.2025)
 
-* Fixed events not triggerable
+* Fixed events not able to trigger
 
 ---
 
 ## version 0.8.7 (20.2.2025)
 
-* Fixed schedules one more time + simplified them (X plan is to do a randomization for them to fight against repetation)
+* Fixed schedules one more time + simplified them (X plan is to do a randomization for them to fight against repetition)
 * Fixed forgotten manifest change
 * Improved code compatibility for [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
 
@@ -147,12 +160,12 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 ---
 
 * Fixed basic compatibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
-* Fixed basic compactibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
+* Fixed basic compatibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
 
 ---
 
 * Added basic compatibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
-* Added basic compactibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
+* Added basic compatibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
 * Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
 
 ---
@@ -261,7 +274,7 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 ## version 0.7.3 (8.2.2025)
 
 * Added gift rejections
-* Internal code reorganisation
+* Internal code reorganization
 * Added schedule if the intro event wasn't triggered
 * Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
 
@@ -271,7 +284,7 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 * Fixed many grammatical issues
 * Fixed Dynamic Token error
-* Deleted files that weren't used/licenced (NPC graphic; sorry for including them, all rights belong to their authors)
+* Deleted files that weren't used/licensed (NPC graphic; sorry for including them, all rights belong to their authors)
 * Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
 
 ---
@@ -294,7 +307,7 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
   * `@lumisteria`
   * `@pathoschild`
   * `@tiakall`
-* Fully rewritten dialogues prefixes format + added proper triggable Gender Neutral Mod support
+* Fully rewritten dialogues prefixes format + added Gender Neutral Mod dialogues support
 
 ---
 
