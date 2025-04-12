@@ -54,20 +54,16 @@
   "config.On/off.values.off": "off",
   "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.1, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
 
-  // Eleanor's name
+  /*
+  // Dynamic tokens
+  "Dispositions.DT_name.ORG": "${Mr.^Ms.^Mx.}$ {{PlayerName}}",  // the other name variants are using other mods's tokens (which would need translation) or only {{PlayerName}} CP token
+  "Dispositions.DT_wizard_name.ORG": "Mr. Rasmodius",
+  "Dispositions.DT_wizard_name.patched": "Ms. Rasmodia",
+  "Dispositions.DT_wizard_fem.ORG": "he",
+  "Dispositions.DT_wizard_fem.patched": "she",
+  */
+  // Dispositions
   "DisplayName": "Eleanor",
-
-  // compatibility.json
-
-  // Mobile phone mod (form copied from mod "Jorts and Jean the Helper Cats", text edited of course ☻)
-  "Dialogues.addons.MobilePhoneGreeting.0": "I wish you a good day, {{DT_name}}. It's always a pleasure to receive a call from you.",
-  "Dialogues.addons.MobilePhoneGreeting.1": "Hello, {{DT_name}}. Do you need something?",
-  "Dialogues.addons.MobilePhoneGreeting.2": "Hello. Eleanor here, who is at the other end? {{DT_name}}? Hello, how can I help you?",
-  "Dialogues.addons.MobilePhoneReminisce": "Anything else, {{DT_name}}?",
-  "Dialogues.addons.MobilePhoneInvite": "You'd wish to do something together?",
-  "Dialogues.addons.MobilePhoneGoodBye.0": "Goodbye, {{DT_name}}. May your day continue well.",
-  "Dialogues.addons.MobilePhoneGoodBye.1": "Feel free to call anytime, {{DT_name}}. Goodbye.",
-  "Dialogues.addons.MobilePhoneGoodBye.2": "Bye now, {{DT_name}}.",
 
   // Dialogues.json
 
@@ -352,6 +348,16 @@
   "Dialogues.CT.YriWalk": "I'd like to ask you, {{DT_name}}, at any chance, didn't you hear Yri singing?",
   "Dialogues.CT.AfterProposal": "I felt Yri and Charles already fell in each other's love the first time I saw them. I'm happy for them.",
 
+  // Mobile phone mod (form copied from mod "Jorts and Jean the Helper Cats", text edited of course ☻)
+  "Dialogues.addons.MobilePhoneGreeting.0": "I wish you a good day, {{DT_name}}. It's always a pleasure to receive a call from you.",
+  "Dialogues.addons.MobilePhoneGreeting.1": "Hello, {{DT_name}}. Do you need something?",
+  "Dialogues.addons.MobilePhoneGreeting.2": "Hello. Eleanor here, who is at the other end? {{DT_name}}? Hello, how can I help you?",
+  "Dialogues.addons.MobilePhoneReminisce": "Anything else, {{DT_name}}?",
+  "Dialogues.addons.MobilePhoneInvite": "You'd wish to do something together?",
+  "Dialogues.addons.MobilePhoneGoodBye.0": "Goodbye, {{DT_name}}. May your day continue well.",
+  "Dialogues.addons.MobilePhoneGoodBye.1": "Feel free to call anytime, {{DT_name}}. Goodbye.",
+  "Dialogues.addons.MobilePhoneGoodBye.2": "Bye now, {{DT_name}}.",
+
   // Marriage + engagement dialogues //
   "Dialogues.marriage.Eleanor0": "We're engaged...$b#$b#I can't believe it...#$b#I never thought this day would come, but here we are...$b#$b#I'm so happy, {{DT_name}}...$h",
   "Dialogues.marriage.Eleanor1": "Tomorrow is the day, {{DT_name}}...#$b#The day when we'll get married...$b#$b#Don't worry about the wedding, everything should be prepared by now...$b#$b#I hope you'll like it...$h",
@@ -371,7 +377,7 @@
   "Dialogues.marriage.Utility.cs.5379": "You may kiss.",
   "Dialogues.marriage.Utility.cs.5381": "Life is going to be different from now on...",
   "Dialogues.marriage.Utility.cs.5383": "...But the future looks bright!",
-    
+
   "Dialogues.marriage.SummitEvent_Dialogue3_StrojvedouciDenis.Eleanor": "Such a nice view here, don't you think, {{DT_name}}?#$b#I'm glad we came here...#$b#It is %years years since you came to Pelican Town, and I'm so glad you did.#$b#Because my life is much better with you in it.#$b#Just think about it - how would my life look like if you didn't come here?#$b#Would I ever find out about myself? About my powers? About my parents's past?#$b#Because I can't...#$e#But that doesn't matter anymore, because of you, my loved {{DT_name}}.#$b#It was you who helped me in my search for myself.#$b#And I know that I can't thank you enough for that.#$b#But I'll try to do it every day, every moment, every second of my life.#$b#Because you are the one who helped me to find myself.#$b#And I'm so grateful for that...#$b#I love you, {{DT_name}}.",
 
   "Dialogues.marriage.Rainy_Day_0": "It's raining today, {{DT_name}}. At least you don't have to water the crops.",
@@ -441,7 +447,6 @@
   //"Dialogues.marriage.Bad_7": "StrojvedouciDenis.Eleanor-DEBUG:Bad_7",
   //"Dialogues.marriage.Bad_8": "StrojvedouciDenis.Eleanor-DEBUG:Bad_8",
   //"Dialogues.marriage.Bad_9": "StrojvedouciDenis.Eleanor-DEBUG:Bad_9",
-  
 
   // Hogwarts
   "Dialogues.addons.summer_3": "%Looks like Eleanor is lost in her thoughts...#$e#%Wait, aren't those tears you can see on her face?#$b#%You decide to leave her alone for now...",

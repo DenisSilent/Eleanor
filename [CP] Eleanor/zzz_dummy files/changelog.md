@@ -4,6 +4,12 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ---
 
+## version 1.0.0-alpha.3 (6.4.2025)
+
+* Found out that I broke all the dialogues, testing out!
+
+---
+
 ## version 1.0.0-alpha.2 (6.4.2025)
 
 * Fixed a potentionall error with wrong key in gifts
