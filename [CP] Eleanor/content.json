@@ -77,8 +77,6 @@ commented out because of the missing 256X256 portraits code
       "Value": "{{PlayerSpouses}}", 
       "When": { "Relationship:{{PlayerSpouses}}": "Married" }
     },
-    ... other npcs
-
     {
       "Name": "lSpouse",
       "Value": "{{PlayerSpouses}}",

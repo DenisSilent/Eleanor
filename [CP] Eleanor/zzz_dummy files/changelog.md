@@ -4,6 +4,15 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ---
 
+## version 1.0.0-alpha.2 (6.4.2025)
+
+* Fixed a potentionall error with wrong key in gifts
+* event commands Discord help by:
+  * `@sinz163`
+  * `@abagaianye`
+
+---
+
 ## version 1.0.0-alpha.1 (5.4.2025)
 
 * Changed development structure - now the `development_UNSTABLE!` GitHub branch is used instead of the `main` branch, that leads to separate development and bugfixing

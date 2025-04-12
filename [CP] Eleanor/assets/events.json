@@ -1,170 +1,468 @@
 {
   "Changes": [
-    /*
-debug 27.1.25, for summit dialogues
-{
-  "LogName": "Eleanor - event - debug",
-  "Action": "EditData",
-  "Target": "Data/Events/farm",
-  "Entries": {
-    "StrojvedouciDenis.Eleanor_debug": "none/-1000 -1000/farmer 2 2 2 {{ModId}} 3 3 0/skippable/pause 3333/speak {{ModId}} Hey, @./pause 500/message \"If I can see this, then it works!\"/pause 2222/end"
-  }
-},
-*/
-
-
-    // 0hearts - Eleanor's introduction
-    // Location: your farm
-    // Trigger: Entering your farm after seeing introduction event with Mr. Rasmodius.
-    // Description: Eleanor introduces herself to the player, greeting them politely and explaining who she is and that she knows about you and Junimos.
     {
       "LogName": "Eleanor - event - 0hearts - Introduction",
       "Action": "EditData",
       "Target": "Data/Events/farm",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_Intro/e 112": "none/-1000 -1000/farmer 2 2 2 {{ModId}} 3 3 0/skippable/addConversationTopic {{ModId}}.CT_Intro 2/pause 1111/speak {{ModId}} \"{{i18n:Events.Intro.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 555/emote farmer 40/pause 555/emote farmer 8/pause 555/speak {{ModId}} \"{{i18n:Events.Intro.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.Intro.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.Intro.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.Intro.4|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2222/end"
+        "triggerrer":
+        "none/-1000 -1000/farmer 0 0 0/
+        skippable/
+        changeLocation SeedShop/
+        switchEvent StrojvedouciDenis.Eleanor_14hearts-p4"
       }
     },
 
-    // 2hearts - Eleanor's nature admiring
-    // Location: Forest
-    // Trigger: Enter the Forest between 6:00 and 12:00.
-    // Description: Eleanor is admiring nature when she notices the player. She greets them and asks if they like nature as well.
+    //  0hearts - Eleanor's introduction
+    //  Location: your farm
+    //  Trigger: Entering your farm after seeing introduction event with Mr. Rasmodius.
+    //  Description: Eleanor introduces herself to the player, greeting them politely and explaining who she is and that she knows about you and Junimos.
+    {
+      "LogName": "Eleanor - event - 0hearts - Introduction",
+      "Action": "EditData",
+      "Target": "Data/Events/farm",
+      "Entries": {
+        "StrojvedouciDenis.Eleanor_Intro/e 112":
+        "none/-1000 -1000/farmer 2 2 2 {{ModId}} 3 3 0/
+        skippable/
+        addConversationTopic {{ModId}}.CT_Intro 2/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.Intro.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/ 
+        pause 555/
+        emote farmer 40/
+        pause 555/
+        emote farmer 8/
+        pause 555/
+        speak {{ModId}} \"{{i18n:Events.Intro.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.Intro.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.Intro.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.Intro.4|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2222/
+        end"
+      }
+    },
+
+    //  2hearts - Eleanor's nature admiring
+    //  Location: Forest
+    //  Trigger: Enter the Forest between 6:00 and 12:00.
+    //  Description: Eleanor is admiring nature when she notices the player. She greets them and asks if they like nature as well.
     {
       "LogName": "Eleanor - event - 2hearts",
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_2hearts/e {{ModId}}_Intro/f {{ModId}} 500/t 600 1200": "none/21 31/farmer 21 20 2 {{ModId}} 16 30 1/skippable/addConversationTopic  {{ModId}}.CT_2h 2/pause 1111/Move farmer 0 10 2 true/pause 4444/textAboveHead {{ModId}} \"{{i18n:Events.2h.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 500/emote farmer 8/pause 500/faceDirection farmer 0 true/pause 500/faceDirection farmer 1 true/pause 500/faceDirection farmer 2 true/pause 500/faceDirection farmer 3 true/pause 500/faceDirection farmer 2 true/pause 250/emote {{ModId}} 40/pause 500/speak {{ModId}} \"{{i18n:Events.2h.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 500/faceDirection farmer 3 true/pause 750/emote farmer 16/pause 500/speak {{ModId}} \"{{i18n:Events.2h.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 750/emote farmer 60/pause 500/quickQuestion {{i18n:Events.2h.3_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_2hearts_q1_yes(break)switchEvent {{ModId}}_2hearts_q1_no",
-        "StrojvedouciDenis.Eleanor_2hearts_q1_yes": "resetVariable/friendship {{ModId}} 250/speak {{ModId}} \"{{i18n:Events.2h.4_yes |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/speak {{ModId}} \"{{i18n:Events.2h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/end",
-        "StrojvedouciDenis.Eleanor_2hearts_q1_no": "resetVariable/friendship {{ModId}} -350/speak {{ModId}} \"{{i18n:Events.2h.4_no |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/speak {{ModId}} \"{{i18n:Events.2h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/end"
+        "StrojvedouciDenis.Eleanor_2hearts/e StrojvedouciDenis.Eleanor_Intro/f {{ModId}} 500/t 600 1200":
+        "none/21 31/farmer 21 20 2 {{ModId}} 16 30 1/
+        skippable/
+        addConversationTopic  {{ModId}}.CT_2h 2/
+        pause 1111/
+        Move farmer 0 10 2 true/
+        pause 4444/
+        textAboveHead {{ModId}} \"{{i18n:Events.2h.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 500/
+        emote farmer 8/
+        pause 500/
+        faceDirection farmer 0 true/
+        pause 500/
+        faceDirection farmer 1 true/
+        pause 500/
+        faceDirection farmer 2 true/
+        pause 500/
+        faceDirection farmer 3 true/
+        pause 500/
+        faceDirection farmer 2 true/
+        pause 250/
+        emote {{ModId}} 40/
+        pause 500/
+        speak {{ModId}} \"{{i18n:Events.2h.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 500/
+        faceDirection farmer 3 true/
+        pause 750/
+        emote farmer 16/
+        pause 500/
+        speak {{ModId}} \"{{i18n:Events.2h.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 750/
+        emote farmer 60/
+        pause 500/
+        quickQuestion {{i18n:Events.2h.3_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent StrojvedouciDenis.Eleanor_2hearts_q1_yes(break)switchEvent StrojvedouciDenis.Eleanor_2hearts_q1_no",
+        "StrojvedouciDenis.Eleanor_2hearts_q1_yes": "resetVariable/
+        friendship {{ModId}} 250/
+        speak {{ModId}} \"{{i18n:Events.2h.4_yes |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        speak {{ModId}} \"{{i18n:Events.2h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        end",
+        "StrojvedouciDenis.Eleanor_2hearts_q1_no": "resetVariable/
+        friendship {{ModId}} -350/
+        speak {{ModId}} \"{{i18n:Events.2h.4_no |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        speak {{ModId}} \"{{i18n:Events.2h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        end"
       }
     },
-    // 4hearts - The book search
-    // Location: Wizard's basement
-    // Trigger: Enter the Wizard's basement after 18:00.
-    // Description: Eleanor will be searching for a book when she notices the player. She asks them for help in finding it.
+
+    //  4hearts - The book search
+    //  Location: Wizard's basement
+    //  Trigger: Enter the Wizard's basement after 18:00.
+    //  Description: Eleanor will be searching for a book when she notices the player. She asks them for help in finding it.
     {
       "LogName": "Eleanor - event - 4hearts",
       "Action": "EditData",
       "Target": "Data/Events/Custom_WizardBasement",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_4hearts/e {{ModId}}_2hearts/f {{ModId}} 1000/t 1800 2600": "none/14 12/farmer -1000 -1000 2 {{ModId}} 4 19 3/skippable/addConversationTopic  {{ModId}}.CT_4h 2/beginSimultaneousCommand/textAboveHead {{ModId}} \"{{i18n:Events.4h.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/move {{ModId}} 0 -5 3 true/endSimultaneousCommand/pause 5555/emote {{ModId}} 28/textAboveHead {{ModId}} \"{{i18n:Events.4h.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/move {{ModId}} 0 -1 1/move {{ModId}} 5 0 0 true/pause 1111/warp farmer 4 3/pause 777/move farmer 0 10 1 true/beginSimultaneousCommand/pause 2222/emote farmer 8/pause 1111/emote {{ModId}} 40/pause 111/emote farmer 16/pause 111/faceDirection {{ModId}} 3/pause 111/emote {{ModId}} 16/pause 111/speak {{ModId}} \"{{i18n:Events.4h.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/endSimultaneousCommand/pause 1111/emote farmer 40/pause 111/emote {{ModId}} 60/pause 111/speak {{ModId}} \"{{i18n:Events.4h.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.4h.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 555/emote {{ModId}} 40/quickQuestion {{i18n:Events.4h.5_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_4hearts_q1_time(break)switchEvent {{ModId}}_4hearts_q1_magic(break)switchEvent {{ModId}}_4hearts_q1_notime",
-        "StrojvedouciDenis.Eleanor_4hearts_q1_time": "resetVariable/friendship {{ModId}} 150/speak {{ModId}} \"{{i18n:Events.4h.6_time |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/switchEvent {{ModId}}_4hearts_ending_time",
-        "StrojvedouciDenis.Eleanor_4hearts_q1_magic": "resetVariable/friendship {{ModId}} 50/speak {{ModId}} \"{{i18n:Events.4h.6_magic |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/switchEvent {{ModId}}_4hearts_ending_time",
-        "StrojvedouciDenis.Eleanor_4hearts_q1_notime": "resetVariable/friendship {{ModId}} -5/speak {{ModId}} \"{{i18n:Events.4h.6_notime |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/globalFade/viewport -1000 -1000/pause 1111/message \"{{i18n:Events.4h.7_notime |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/end",
-        "StrojvedouciDenis.Eleanor_4hearts_ending_time": "resetVariable/pause 1111/speak {{ModId}} \"{{i18n:Events.4h.7_time |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 111/emote farmer 56/move {{ModId}} 10 0 0 farmer 0 -2 3/pause 1111/emote farmer 8/pause 1111/speak {{ModId}} \"{{i18n:Events.4h.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/message \"{{i18n:Events.4h.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 111/move farmer 0 -3 3/pause 1111/message \"{{i18n:Events.4h.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/emote farmer 40/pause 1111/message \"{{i18n:Events.4h.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 111/move {{ModId}} -15 0 0/move {{ModId}} 0 -4 3/pause 1111/speak {{ModId}} \"{{i18n:Events.4h.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.4h.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 111/emote farmer 56/end"
+        "StrojvedouciDenis.Eleanor_4hearts/e StrojvedouciDenis.Eleanor_2hearts/f {{ModId}} 1000/t 1800 2600": "none/14 12/farmer -1000 -1000 2 {{ModId}} 4 19 3/
+        skippable/
+        addConversationTopic  {{ModId}}.CT_4h 2/
+        beginSimultaneousCommand/
+        textAboveHead {{ModId}} \"{{i18n:Events.4h.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        move {{ModId}} 0 -5 3 true/
+        endSimultaneousCommand/
+        pause 5555/
+        emote {{ModId}} 28/
+        textAboveHead {{ModId}} \"{{i18n:Events.4h.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        move {{ModId}} 0 -1 1/
+        move {{ModId}} 5 0 0 true/
+        pause 1111/
+        warp farmer 4 3/
+        pause 777/
+        move farmer 0 10 1 true/
+        beginSimultaneousCommand/
+        pause 2222/
+        emote farmer 8/
+        pause 1111/
+        emote {{ModId}} 40/
+        pause 111/
+        emote farmer 16/
+        pause 111/
+        faceDirection {{ModId}} 3/
+        pause 111/
+        emote {{ModId}} 16/
+        pause 111/
+        speak {{ModId}} \"{{i18n:Events.4h.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        endSimultaneousCommand/
+        pause 1111/
+        emote farmer 40/
+        pause 111/
+        emote {{ModId}} 60/
+        pause 111/
+        speak {{ModId}} \"{{i18n:Events.4h.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.4h.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 555/
+        emote {{ModId}} 40/
+        quickQuestion {{i18n:Events.4h.5_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent StrojvedouciDenis.Eleanor_4hearts_q1_time(break)switchEvent StrojvedouciDenis.Eleanor_4hearts_q1_magic(break)switchEvent StrojvedouciDenis.Eleanor_4hearts_q1_notime",
+        "StrojvedouciDenis.Eleanor_4hearts_q1_time": "resetVariable/
+        friendship {{ModId}} 150/
+        speak {{ModId}} \"{{i18n:Events.4h.6_time |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        switchEvent StrojvedouciDenis.Eleanor_4hearts_ending_time",
+        "StrojvedouciDenis.Eleanor_4hearts_q1_magic": "resetVariable/
+        friendship {{ModId}} 50/
+        speak {{ModId}} \"{{i18n:Events.4h.6_magic |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        switchEvent StrojvedouciDenis.Eleanor_4hearts_ending_time",
+        "StrojvedouciDenis.Eleanor_4hearts_q1_notime": "resetVariable/
+        friendship {{ModId}} -5/
+        speak {{ModId}} \"{{i18n:Events.4h.6_notime |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        globalFade/
+        viewport -1000 -1000/
+        pause 1111/
+        message \"{{i18n:Events.4h.7_notime |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        end",
+        "StrojvedouciDenis.Eleanor_4hearts_ending_time": "resetVariable/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.4h.7_time |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 111/
+        emote farmer 56/
+        move {{ModId}} 10 0 0 farmer 0 -2 3/
+        pause 1111/
+        emote farmer 8/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.4h.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.4h.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 111/
+        move farmer 0 -3 3/
+        pause 1111/
+        message \"{{i18n:Events.4h.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        emote farmer 40/
+        pause 1111/
+        message \"{{i18n:Events.4h.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 111/
+        move {{ModId}} -15 0 0/
+        move {{ModId}} 0 -4 3/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.4h.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.4h.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 111/
+        emote farmer 56/
+        end"
       }
     },
 /*
-    // 6hearts - ???
-    // Location: ???
-    // Trigger: ???
-    // Description: ???
+    //  6hearts - ???
+    //  Location: ???
+    //  Trigger: ???
+    //  Description: ???
     {
       "LogName": "Eleanor - event - 6hearts",
       "Action": "EditData",
-      "Target": "Data/Events/Town",
+      "Target": "Data/
+      Events/
+      Town",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_6hearts/e {{ModId}}_4hearts/f {{ModId}} 1500": "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/skippable/end"
+        "StrojvedouciDenis.Eleanor_6hearts/e StrojvedouciDenis.Eleanor_4hearts/ f {{ModId}} 1500": "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
+        skippable/
+        end"
       }
     },
 */
-///*
-    // 7hearts - Check on Eleanor
-    // Location: Forest
-    // Trigger: Enter the Forest when it is raining.
-    // Description: You and Eleanor are getting closer to each other.
+
+// *
+    //  7hearts - Check on Eleanor
+    //  Location: Forest
+    //  Trigger: Enter the Forest when it is raining.
+    //  Description: You and Eleanor are getting closer to each other.
     {
       "LogName": "Eleanor - event - 7hearts",
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_7hearts/e {{ModId}}_4hearts/f {{ModId}} 1750/w rainy": "none/52 98/farmer 35 97 1 {{ModId}} 52 98 2/skippable/addConversationTopic  {{ModId}}.CT_7h 2/pause 1111/move farmer 7 0 1/pause 555/emote farmer 40/pause 555/move farmer 0 1 1/move farmer 5 0 1/pause 111/emote farmer 8/pause 111/faceDirection {{ModId}} 3/pause 111/emote {{ModId}} 16/pause 555/speak {{ModId}} \"{{i18n:Events.7h.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 555/emote farmer 40/pause 555/speak {{ModId}} \"{{i18n:Events.7h.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.7h.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 555/emote farmer 40/pause 555/quickQuestion {{i18n:Events.7h.3_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_7hearts_q1_yes(break)switchEvent {{ModId}}_7hearts_q1_no",
-        "StrojvedouciDenis.Eleanor_7hearts_q1_yes": "resetVariable/friendship {{ModId}} 100/pause 555/speak {{ModId}} \"{{i18n:Events.7h.4_yes |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/switchEvent {{ModId}}_7hearts_ending",
-        "StrojvedouciDenis.Eleanor_7hearts_q1_no": "resetVariable/friendship {{ModId}} 10/pause 555/speak {{ModId}} \"{{i18n:Events.7h.4_no |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/switchEvent {{ModId}}_7hearts_ending",
-        "StrojvedouciDenis.Eleanor_7hearts_ending": "resetVariable/move farmer 4 0 2/pause 555/faceDirection {{ModId}} 2/pause 555/emote {{ModId}} 40/pause 555/speak {{ModId}} \"{{i18n:Events.7h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2222/speak {{ModId}} \"{{i18n:Events.7h.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.7h.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.7h.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 555/emote {{ModId}} 28/pause 555/speak {{ModId}} \"{{i18n:Events.7h.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.7h.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 555/emote farmer 56/pause 555/speak {{ModId}} \"{{i18n:Events.7h.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 555/emote farmer 20/pause 555/globalFade/viewport -1000 -1000/pause 555/message \"{{i18n:Events.7h.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/end"
+        "StrojvedouciDenis.Eleanor_7hearts/e StrojvedouciDenis.Eleanor_4hearts/f {{ModId}} 1750/w rainy":
+        "none/52 98/ farmer 35 97 1 {{ModId}} 52 98 2/
+        skippable/
+        addConversationTopic  {{ModId}}.CT_7h 2/
+        pause 1111/
+        move farmer 7 0 1/
+        pause 555/
+        emote farmer 40/
+        pause 555/
+        move farmer 0 1 1/
+        move farmer 5 0 1/
+        pause 111/
+        emote farmer 8/
+        pause 111/
+        faceDirection {{ModId}} 3/
+        pause 111/
+        emote {{ModId}} 16/
+        pause 555/
+        speak {{ModId}} \"{{i18n:Events.7h.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 555/
+        emote farmer 40/
+        pause 555/
+        speak {{ModId}} \"{{i18n:Events.7h.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.7h.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 555/
+        emote farmer 40/
+        pause 555/
+        quickQuestion {{i18n:Events.7h.3_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent StrojvedouciDenis.Eleanor_7hearts_q1_yes(break)switchEvent StrojvedouciDenis.Eleanor_7hearts_q1_no",
+        "StrojvedouciDenis.Eleanor_7hearts_q1_yes": "resetVariable/
+        friendship {{ModId}} 100/
+        pause 555/
+        speak {{ModId}} \"{{i18n:Events.7h.4_yes |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        switchEvent StrojvedouciDenis.Eleanor_7hearts_ending",
+        "StrojvedouciDenis.Eleanor_7hearts_q1_no": "resetVariable/
+        friendship {{ModId}} 10/
+        pause 555/
+        speak {{ModId}} \"{{i18n:Events.7h.4_no |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        switchEvent StrojvedouciDenis.Eleanor_7hearts_ending",
+        "StrojvedouciDenis.Eleanor_7hearts_ending": "resetVariable/
+        move farmer 4 0 2/
+        pause 555/
+        faceDirection {{ModId}} 2/
+        pause 555/
+        emote {{ModId}} 40/
+        pause 555/
+        speak {{ModId}} \"{{i18n:Events.7h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2222/
+        speak {{ModId}} \"{{i18n:Events.7h.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.7h.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.7h.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 555/
+        emote {{ModId}} 28/
+        pause 555/
+        speak {{ModId}} \"{{i18n:Events.7h.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.7h.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 555/
+        emote farmer 56/
+        pause 555/
+        speak {{ModId}} \"{{i18n:Events.7h.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 555/
+        emote farmer 20/
+        pause 555/
+        globalFade/
+        viewport -1000 -1000/
+        pause 555/
+        message \"{{i18n:Events.7h.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        end"
       }
     },
-    //*/
+    // */
+
 
 /*
-    // 8hearts - Eleanor's puzzle
-    // Location: Wizard's Tower
-    // Trigger: Entering the Wizard's Tower between ??? and ???.
-    // Description: Eleanor is having a discussion with the Wizard about a magical artifact.
+    //  8hearts - Eleanor's puzzle
+    //  Location: Wizard's Tower
+    //  Trigger: Entering the Wizard's Tower between ??? and ???.
+    //  Description: Eleanor is having a discussion with the Wizard about a magical artifact.
     {
       "LogName": "Eleanor - event - 8hearts",
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_8hearts/e {{ModId}}_6hearts/f {{ModId}} 2000": "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/skippable/end"
+        "StrojvedouciDenis.Eleanor_8hearts/
+        e StrojvedouciDenis.Eleanor_6hearts/
+        f {{ModId}} 2000": "none/
+        -1000 -1000/
+        farmer 0 0 0 {{ModId}} 1 1 0/
+        skippable/
+        end"
       }
     },
 */
 
-    // 10hearts - Eleanor's gift
-    // Location: Wizard's Tower
-    // Trigger: Entering the Wizard's Tower after reciving a letter from her.
-    // Description: Eleanor has prepared a gift for farmer.
+
+    //  10hearts - Eleanor's gift
+    //  Location: Wizard's Tower
+    //  Trigger: Entering the Wizard's Tower after reciving a letter from her.
+    //  Description: Eleanor has prepared a gift for farmer.
 
     /*
     Replaced with short 14 hearts event variant until marriage update (1.0.0).
     {
       "LogName": "Eleanor - event - 10hearts",
       "Action": "EditData",
-      "Target": "Data/Events/Forest",
+      "Target": "Data/
+      Events/
+      Forest",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_10hearts/e {{ModId}}_8hearts/f {{ModId}} 2500": "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/skippable/end"
+        "StrojvedouciDenis.Eleanor_10hearts/
+        e StrojvedouciDenis.Eleanor_8hearts/
+        f {{ModId}} 2500": "none/
+        -1000 -1000/
+        farmer 0 0 0 {{ModId}} 1 1 0/
+        skippable/
+        end"
       }
     },
     */
-/*
-    // 10 hearts - same as 14 hearts short event variants
-    // SVE only version
-    // Location: Wizard's Tower
-    // Trigger: Entering the Wizard's Tower after reaching 10 hearts with Eleanor.
-    // Description: Eleanor shares her history with the player, revealing her past and her connection to magic.
+
+
+    //  10 hearts - same as 14 hearts short event variants
+    //  SVE only version
+    //  Location: Wizard's Tower
+    //  Trigger: Entering the Wizard's Tower after reaching 10 hearts with Eleanor.
+    //  Description: Eleanor shares her history with the player, revealing her past and her connection to magic.
     {
       "LogName": "Eleanor - 10hearts temporary event (14h SVE short)",
       "Action": "EditData",
       "Target": "Data/Events/WizardHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_10hearts-temporary/e {{ModId}}_8hearts/f {{ModId}} 2500": "none/10 25/farmer 9 33 0 {{ModId}} 10 17 0/skippable/addConversationTopic  {{ModId}}.CT_10h-temp 2/viewport move 0 -2 4000/pause 1111/move farmer 0 -9 0/pause 1000/emote farmer 8/pause 3000/message \"{{i18n:Events.14h-short_SVE.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1500/move farmer 0 -7 1/pause 1500/message \"{{i18n:Events.14h-short_SVE.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/message \"{{i18n:Events.14h-short_SVE.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 555/jump {{ModId}} 4/pause 111/faceDirection {{ModId}} 3/pause 1111/message \"{{i18n:Events.14h-short_SVE.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/emote farmer 8/pause 111/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/emote farmer 56/pause 222/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2000/shake {{ModId}} 1000/pause 2111/message \"{{i18n:Events.14h-short_SVE.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/globalFade/viewport -1000 -1000/pause 3500/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3333/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 5000/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.16|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 5555/end"
+        "StrojvedouciDenis.Eleanor_10hearts-temporary/e StrojvedouciDenis.Eleanor_8hearts/f {{ModId}} 2500":
+        "none/10 25/farmer 9 33 0 {{ModId}} 10 17 0/
+        skippable/
+        addConversationTopic  {{ModId}}.CT_10h-temp 2/
+        viewport move 0 -2 4000/
+        pause 1111/
+        move farmer 0 -9 0/
+        pause 1000/
+        emote farmer 8/
+        pause 3000/
+        message \"{{i18n:Events.14h-short_SVE.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1500/
+        move farmer 0 -7 1/
+        pause 1500/
+        message \"{{i18n:Events.14h-short_SVE.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-short_SVE.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 555/
+        jump {{ModId}} 4/
+        pause 111/
+        faceDirection {{ModId}} 3/
+        pause 1111/
+        message \"{{i18n:Events.14h-short_SVE.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        emote farmer 8/
+        pause 111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        emote farmer 56/
+        pause 222/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2000/
+        shake {{ModId}} 1000/
+        pause 2111/
+        message \"{{i18n:Events.14h-short_SVE.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        globalFade/
+        viewport -1000 -1000/
+        pause 3500/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3333/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 5000/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.16|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 5555/
+        end"
       }
     },
 
-    // 12hearts - ???
-    // Location: ???
-    // Trigger: ???
-    // Description: ???
-
-
+/*
+    //  12hearts - ???
+    //  Location: ???
+    //  Trigger: ???
+    //  Description: ???
     {
       "LogName": "Eleanor - event - 12hearts",
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_12hearts/e {{ModId}}_10hearts/f {{ModId}} 3000": "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/skippable/end"
+        "StrojvedouciDenis.Eleanor_12hearts/e StrojvedouciDenis.Eleanor_10hearts/f {{ModId}} 3000":
+        "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
+        skippable/
+        end"
       }
     },
 */
 
-    // 14hearts
-    // Part 0 - event checker
-    // Location: your farm
-    // Trigger: Automatically (??? needs testing) after reaching 14 hearts with Eleanor.
-    // Description: It is an event checker. What do you want from him? It just does its job. Wait, it doesn't, it's commented out ;)
 
+    //  14hearts
+    //  Part 0 - event checker
+    //  Location: your farm
+    //  Trigger: Automatically (??? needs testing) after reaching 14 hearts with Eleanor.
+    //  Description: It is an event checker. What do you want from him? It just does its job. Wait, it doesn't, it's commented out ;)
+/*
     {
       "LogName": "Eleanor - 14hearts event (p0) - evnet checker",
       "Action": "EditData",
       "Target": "Data/Events/FarmHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p0/e {{ModId}}_10hearts/f {{ModId}} 3500": "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/eventSeen {{ModId}}_14hearts-p0 false/end"
+        "StrojvedouciDenis.Eleanor_14hearts-p0": // /e StrojvedouciDenis.Eleanor_10hearts/f {{ModId}} 3500
+        "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
+        eventSeen StrojvedouciDenis.Eleanor_14hearts-p0 false/
+        end"
       }
     },
-
+*/
     /*  
           Code taken with permissions from user `abagaianye` on Discord. Thanks! <3
           BTW, that's a fade to black and back event code
@@ -173,33 +471,106 @@ debug 27.1.25, for summit dialogues
                 pause 700/
                 viewport -1000 -1000/
                 halt/
-                changeToTemporaryMap {{ModID}}_NationalPark/
+                changeToTemporaryMap StrojvedouciDenis.Eleanor_NationalPark/
                 viewport -1000 -1000/
                 warp farmer 37 9/
-                warp {{ModID}}_Hiria 40 12/
-                faceDirection {{ModID}}_Hiria right/
-                showFrame {{ModID}}_Hiria 4/
-                warp {{ModID}}_Louisa 43 12/
+                warp StrojvedouciDenis.Eleanor_Hiria 40 12/
+                faceDirection StrojvedouciDenis.Eleanor_Hiria right/
+                showFrame StrojvedouciDenis.Eleanor_Hiria 4/
+                warp StrojvedouciDenis.Eleanor_Louisa 43 12/
                 pause 300/
                 globalFadeToClear 0.007 true/
                 viewport 42 12/
                 pause 100/
     */
 
-    // long versions
-    // NOTE: Multiplayer does NOT pause time during cutscenes! One in-game hour = 43 real world seconds, full day = 14 minutes 20 seconds... (Taken from: https://stardewmodding.wiki.gg/wiki/Tips_for_Heart_Events_-_Writing_and_Narrative_Design#Additional_Tips,_Caveats_and_Notes)
-    // Part 1 - Eleanor's note
-    // NOTE: This event will be unique depending on your configuration.
-    // Location: your farmhouse
-    // Trigger: Automatically when getting up at your farmhouse after reaching 14 hearts with {{ModId}}.
-    // Description: Eleanor will be gone and you will find a letter from her.
-    
+
+    //  long versions
+    //  NOTE: Multiplayer does NOT pause time during cutscenes! One in-game hour = 43 real world seconds, full day = 14 minutes 20 seconds... (Taken from: https://stardewmodding.wiki.gg/wiki/Tips_for_Heart_Events_-_Writing_and_Narrative_Design#Additional_Tips,_Caveats_and_Notes)
+    //  Part 1 - Eleanor's note
+    //  NOTE: This event will be unique depending on your configuration.
+    //  Location: your farmhouse
+    //  Trigger: Automatically when getting up at your farmhouse after reaching 14 hearts with {{ModId}}.
+    //  Description: Eleanor will be gone and you will find a letter from her.
     {
       "LogName": "Eleanor - 14hearts event (p1) - Eleanor's letter (no comment)",
       "Action": "EditData",
       "Target": "Data/Events/FarmHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p1/e {{ModId}}_10hearts/f {{ModId}} 3500": "none/-1000 -1000/farmer 0 0 0 {{ModId}} 0 0 0/viewport -1000 -1000/pause 4500/message \"{{i18n:Events.14h-p1.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.17 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.18 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.19 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.20 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.21 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.22 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.23 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.24 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.25 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.26 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.27 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.29 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.30 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.31 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.32 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.33 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.34|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/switchEvent {{ModId}}_14hearts-p2"
+        "StrojvedouciDenis.Eleanor_14hearts-p1": // /e StrojvedouciDenis.Eleanor_10hearts/f {{ModId}} 3500
+        "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
+        viewport -1000 -1000/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.17 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.18 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.19 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.20 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.21 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.22 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.23 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.24 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.25 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.26 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.27 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.29 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.30 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.31 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.32 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.33 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.34|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        switchEvent StrojvedouciDenis.Eleanor_14hearts-p2"
       },
       "When": {
         "14hearts-variants": "long",
@@ -209,9 +580,135 @@ debug 27.1.25, for summit dialogues
     {
       "LogName": "Eleanor - 14hearts event (p1) - Eleanor's letter (commented)",
       "Action": "EditData",
-      "Target": "Data/Events/FarmHouse",
+      "Target": "Data/ Events/FarmHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p1/e {{ModId}}_10hearts/f {{ModId}} 3500": "none/-1000 -1000/farmer 0 0 0 {{ModId}} 0 0 0/viewport -1000 -1000/pause 4500/message \"{{i18n:Events.14h-p1.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.5-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.6-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.7-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.8-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.9-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.10-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.11-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.12-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.13-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.14-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.15-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.16-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.17 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.17-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.18 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.18-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.19 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.19-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.20 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.20-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.21 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.21-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.22 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.22-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.23 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.23-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.24 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.24-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.25 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.25-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.26 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.26-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.27 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.27-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.28-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.29 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.29-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.30 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3750/message \"{{i18n:Events.14h-p1.30-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.31 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.32 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.33 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2500/message \"{{i18n:Events.14h-p1.34|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/switchEvent {{ModId}}_14hearts-p2"
+        "StrojvedouciDenis.Eleanor_14hearts-p1": // /e StrojvedouciDenis.Eleanor_10hearts/f {{ModId}} 3500
+        "none/-1000 -1000/farmer 0 0 0 {{ModId}} 0 0 0/
+        viewport -1000 -1000/
+        pause 4500/
+        message \"{{i18n:Events.14h-p1.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.5-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.6-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.7-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.8-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.9-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.10-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.11-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.12-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.13-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.14-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.15-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.16-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.17 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.17-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.18 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.18-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.19 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.19-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.20 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.20-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.21 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.21-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.22 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.22-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.23 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.23-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.24 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.24-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.25 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.25-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.26 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.26-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.27 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.27-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.28-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.29 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.29-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.30 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3750/
+        message \"{{i18n:Events.14h-p1.30-commented |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.31 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.32 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.33 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        message \"{{i18n:Events.14h-p1.34|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        changeLocation WizardHouse/
+        switchEvent StrojvedouciDenis.Eleanor_14hearts-p2"
       },
       "When": {
         "14hearts-variants": "long",
@@ -219,16 +716,60 @@ debug 27.1.25, for summit dialogues
       }
     },
 
-    // Part 2 - Wizard's tower
-    // Location: Wizard's tower
-    // Trigger: Immediatly after reading Eleanor's letter.
-    // Description: Eleanor is gone. You run to Mr. Rasmodius to ask him about her.
+// Part 2 - Wizard's tower
+// Location: Wizard's tower
+// Trigger: Immediatly after reading Eleanor's letter.
+// Description: Eleanor is gone. You run to Mr. Rasmodius to ask him about her.
     {
       "LogName": "Eleanor - 14hearts event (p2) - Wizard's tower",
       "Action": "EditData",
       "Target": "Data/Events/WizardHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p2/e {{ModId}}_14hearts-p1": "none/20 20/farmer 9 33 0 Wizard 7 7 0/viewport 20 20/pause 111/move Wizard 0 14 2/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.1|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.2|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.3|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.4|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/message \"{{i18n:Events.14h-p2.5|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.6|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.7|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.8|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.9|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.10|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.11|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.12|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/emote farmer 56/pause 1111/speak Wizard \"{{i18n:Events.14h-p2.13|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/pause 1111/switchEvent {{ModId}}_14hearts-p3"
+        "StrojvedouciDenis.Eleanor_14hearts-p2": // /e StrojvedouciDenis.Eleanor_14hearts-p1
+        "none/-1000 -1000/farmer 9 33 0 Wizard 7 7 0/
+        message \"{{i18n:Events.14h-p2.0|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 300/ --Fade in code taken and edited with permissions from user `abagaianye` on Discord. Thanks! <3 Fade code start/
+        globalFadeToClear 0.007 true/
+        viewport 8 16/
+        pause 100/ -- Fade code end/
+        pause 111/
+        move Wizard 0 10 2/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p2.1|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p2.2|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p2.3|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        move farmer 0 -10 0 true/
+        pause 555/
+        emote Wizard 16/
+        pause 111/
+        speak Wizard \"{{i18n:Events.14h-p2.4|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        move farmer 0 -6 3/
+        faceDirection Wizard 1/
+        pause 1111/
+        message \"{{i18n:Events.14h-p2.5|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p2.6|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 555/
+        emote Wizard 40/
+        pause 555/
+        speak Wizard \"{{i18n:Events.14h-p2.7|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p2.8|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p2.9|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p2.10|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p2.11|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 555/
+        emote farmer 56/
+        pause 555/
+        speak Wizard \"{{i18n:Events.14h-p2.12|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        changeLocation Custom_SpriteSpring2/
+        switchEvent StrojvedouciDenis.Eleanor_14hearts-p3"
       },
       "When": {
         "14hearts-variants": "long"
@@ -242,9 +783,122 @@ debug 27.1.25, for summit dialogues
     {
       "LogName": "Eleanor - 14hearts event (p3) - Sprite Spring note",
       "Action": "EditData",
-      "Target": "Data/Events/WizardHouse",
+      "Target": "Data/Events/Custom_SpriteSpring2",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p3/e {{ModId}}_14hearts-p2": "none/-1000 -1000/farmer 0 0 0 {{ModId}} 0 0 0/nonskippable/pause 2222/message \"{{i18n:Events.14h-p3.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/switchEvent {{ModId}}_14hearts-p4"
+        "StrojvedouciDenis.Eleanor_14hearts-p3":  // /e StrojvedouciDenis.Eleanor_14hearts-p2
+        "none/-1000 -1000/farmer 10 23 1 Wizard 10 22 1/
+        addObject 18 23 97/ -- spawn dwarf scroll II as a note/
+        pause 2222/
+        message \"{{i18n:Events.14h-p3.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 300/ --Fade in code taken and edited with permissions from user `abagaianye` on Discord. Thanks! <3 Fade code start/
+        globalFadeToClear 0.007 true/
+        viewport 18 23/
+        pause 100/ -- Fade code end/
+        move farmer 2 0 1 Wizard 2 0 1/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p3.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 500/
+        emote farmer 16/
+        pause 500/
+        message \"{{i18n:Events.14h-p3.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 500/
+        move farmer 5 0 1/
+        pause 333/
+        removeObject 18 23/ -- RIP dwarf scroll II as a note, it was despawned/
+        pause 500/
+        message \"{{i18n:Events.14h-p3.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 500/
+        emote farmer 40/
+        pause 333/
+        move Wizard 5 0 1/
+        pause 500/
+        message \"{{i18n:Events.14h-p3.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p3.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p3.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p3.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p3.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p3.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p3.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p3.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p3.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p3.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p3.16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p3.17 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p3.18 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p3.19 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak Wizard \"{{i18n:Events.14h-p3.20 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        globalFade 0.07/
+        viewport -1000 -1000/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.21 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.22 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.23 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.24 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.25 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.26 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.27 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.29 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.30 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.31 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.32 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.33 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.34 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.35 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.36 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.37 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.38 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.39 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2222/
+        message \"{{i18n:Events.14h-p3.40 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.41 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.42 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2222/
+        message \"{{i18n:Events.14h-p3.43 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3.44 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        changeLocation SeedShop/
+        switchEvent StrojvedouciDenis.Eleanor_14hearts-p4"
       },
       "When": {
         "14hearts-variants": "long"
@@ -258,72 +912,340 @@ debug 27.1.25, for summit dialogues
     {
       "LogName": "Eleanor - 14hearts event (p4) - Abigail's dream",
       "Action": "EditData",
-      "Target": "Data/Events/AbigailHouse",
+      "Target": "Data/Events/SeedShop",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p4/e {{ModId}}_14hearts-p3": "none/-1000 -1000/farmer 0 0 0 Abigail 0 0 0/nonskippable/pause 2222/message \"{{i18n:Events.14h-p4.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak Abigail \"{{i18n:Events.14h-p4.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/switchEvent {{ModId}}_14hearts-p5"
+        "StrojvedouciDenis.Eleanor_14hearts-p4":  // /e StrojvedouciDenis.Eleanor_14hearts-p3
+        "none/-1000 -1000/farmer 0 0 0 Abigail 1 1 0/
+        pause 2222/
+        message \"{{i18n:Events.14h-p4.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p4.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p4.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p4.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p4.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p4.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p4.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p4.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p4.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p4.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p4.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p4.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p4.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        switchEvent StrojvedouciDenis.Eleanor_14hearts-p5"
       },
       "When": {
         "14hearts-variants": "long"
       }
     },
 
+
     // Part 5 - The end
     // Location: The beach
-    // Trigger: Immediatly after talking to Abigail.
+    //  Trigger: Immediatly after talking to Abigail.
     // Description: Happy end. You find Eleanor on the beach, safe. The mystery will be solved.
     {
       "LogName": "Eleanor - 14hearts event (p5) - The end",
       "Action": "EditData",
       "Target": "Data/Events/Beach",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p5/e {{ModId}}_14hearts-p4": "none/-1000 -1000/farmer 0 0 0 {{ModId}} 0 0 0/nonskippable/pause 2222/message \"{{i18n:Events.14h-p5.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-p5.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/switchEvent {{ModId}}_14hearts-p6"
+        "StrojvedouciDenis.Eleanor_14hearts-p5": // /e StrojvedouciDenis.Eleanor_14hearts-p4
+        "none/-1000 -1000/farmer 0 0 0 {{ModId}} 0 0 0/
+        nonskippable/
+        pause 2222/
+        message \"{{i18n:Events.14h-p5.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.17 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.18 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.19 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.20 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.21 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.22 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.23 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.24 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.25 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.26 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.27 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.29 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.30 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.31 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.32 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.33 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.34 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.35 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.36 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.37 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.38 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.39 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.40 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.41 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.42 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.43 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.44 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.45 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.46 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.47 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.48 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.49 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.50 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.51 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.52 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.53 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.54 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.55 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.56 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.57 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.58 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.59 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p5.60 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        switchEvent StrojvedouciDenis.Eleanor_14hearts-p6"
       },
       "When": {
         "14hearts-variants": "long"
       }
     },
 
-    // Part 6 - Thank you from mod author
-    // Location: your farmhouse
-    // Trigger: Immediatly after the happy end (p5).
-    // Description: Thank you!
+
+// Part 6 - Thank you from mod author
+// Location: your farmhouse
+// Trigger: Immediatly after the happy end (p5).
+// Description: Thank you!
     {
       "LogName": "Eleanor - 14hearts event (p6) - Thank you from mod author",
       "Action": "EditData",
       "Target": "Data/Events/FarmHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p6/e {{ModId}}_14hearts-p5": "none/-1000 -1000/farmer 0 0 0 {{ModId}} 0 0 0/nonskippable/pause 2222/message \"{{i18n:Events.14h-p6.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/end"
+        "StrojvedouciDenis.Eleanor_14hearts-p6/e StrojvedouciDenis.Eleanor_14hearts-p5":
+        "none/-1000 -1000/farmer 0 0 0 {{ModId}} 0 0 0/
+        nonskippable/
+        pause 2222/
+        message \"{{i18n:Events.14h-p6.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        end"
       }
     },
 
 
-    // short versions
-    // SVE only version
-    // Location: Wizard's Tower
-    // Trigger: Entering the Wizard's Tower after reaching 14 hearts with Eleanor.
-    // Description: Eleanor shares her history with the player, revealing her past and her connection to magic.
+// short versions
+// SVE only version
+//  Location: Wizard's Tower
+// Trigger: Entering the Wizard's Tower after reaching 14 hearts with Eleanor.
+// Description: Eleanor shares her history with the player, revealing her past and her connection to magic.
     {
       "LogName": "Eleanor - 14hearts event (short) - SVE",
       "Action": "EditData",
-      "Target": "Data/Events/WizardHouse",
+      "Target": "Data/ Events/ WizardHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-short_SVE/e {{ModId}}_10hearts/f {{ModId}} 3500": "none/10 25/farmer 9 33 0 {{ModId}} 10 17 0/skippable/viewport move 0 -2 4000/pause 1111/move farmer 0 -9 0/pause 1000/emote farmer 8/pause 3000/message \"{{i18n:Events.14h-short_SVE.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1500/move farmer 0 -7 1/pause 1500/message \"{{i18n:Events.14h-short_SVE.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/message \"{{i18n:Events.14h-short_SVE.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 555/jump {{ModId}} 4/pause 111/faceDirection {{ModId}} 3/pause 1111/message \"{{i18n:Events.14h-short_SVE.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/emote farmer 8/pause 111/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/emote farmer 56/pause 222/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2000/shake {{ModId}} 1000/pause 2111/message \"{{i18n:Events.14h-short_SVE.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/globalFade/viewport -1000 -1000/pause 3500/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3333/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 5000/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-short_SVE.16|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 5555/end"
+        "StrojvedouciDenis.Eleanor_14hearts-short_SVE/ e StrojvedouciDenis.Eleanor_10hearts/f {{ModId}} 3500":
+        "none/10 25/farmer 9 33 0 {{ModId}} 10 17 0/
+        skippable/
+        viewport move 0 -2 4000/
+        pause 1111/
+        move farmer 0 -9 0/
+        pause 1000/
+        emote farmer 8/
+        pause 3000/
+        message \"{{i18n:Events.14h-short_SVE.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1500/
+        move farmer 0 -7 1/
+        pause 1500/
+        message \"{{i18n:Events.14h-short_SVE.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-short_SVE.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 555/
+        jump {{ModId}} 4/
+        pause 111/
+        faceDirection {{ModId}} 3/
+        pause 1111/
+        message \"{{i18n:Events.14h-short_SVE.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        emote farmer 8/
+        pause 111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        emote farmer 56/
+        pause 222/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2000/
+        shake {{ModId}} 1000/
+        pause 2111/
+        message \"{{i18n:Events.14h-short_SVE.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        globalFade/
+        viewport -1000 -1000/
+        pause 3500/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3333/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 5000/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.16|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 5555/
+        end"
       },
       "When": {
         "HasMod |contains=HogwartsET.CP.Hogwarts": false,
         "14hearts-variants": "short"
       }
     },
-    // Hogwarts version
-    // Location: Hogwarts Hogsmeade Village
-    // Trigger: Entering Hogsmeade Village after reaching 14 hearts with Eleanor and having the Hogwarts mod installed.
-    // Description: Eleanor shares her history with the player, revealing her past and her connection to magic in the context of Hogwarts.
+
+// Hogwarts version
+// Location: Hogwarts Hogsmeade Village
+// Trigger: Entering Hogsmeade Village after reaching 14 hearts with Eleanor and having the Hogwarts mod installed.
+// Description: Eleanor shares her history with the player, revealing her past and her connection to magic in the context of Hogwarts.
     {
       "LogName": "Eleanor - 14hearts event (short) - Hogwarts ",
       "Action": "EditData",
       "Target": "Data/Events/HogwartsET.CP.Hogwarts_HogsmeadeVillage",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-short_Hog/e {{ModId}}_10hearts/e {{ModId}}Hog_y1/f {{ModId}} 3500": "none/-1000 -1000/farmer 22 20 0 {{ModId}} 22 24 0/pause 2222/move farmer 23 24 1/pause 2500/message \"{{i18n:Events.14h-p3_Hog.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3333/message \"{{i18n:Events.14h-p3_Hog.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/message \"{{i18n:Events.14h-p3_Hog.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/move {{ModId}} 22 24 1/pause 1111/message \"{{i18n:Events.14h-p3_Hog.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/emote farmer 8 true/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/emote farmer 56 true/pause 1111/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 2000/shake {{ModId}} 1000/pause 3000/message \"{{i18n:Events.14h-p3_Hog.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"globalFade/pause 3500/speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 3333/speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"globalFadeToClear/pause 5000/speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/message \"{{i18n:Events.14h-p3_Hog.16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/globalfadeout/pause 5000/speak {{ModId}}  \"{{i18n:Events.14h-p3_Hog.17|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 7777/end newDay"
+        "StrojvedouciDenis.Eleanor_14hearts-short_Hog/ e StrojvedouciDenis.Eleanor_10hearts/e {{ModId}}Hog_y1/f {{ModId}} 3500":
+        "none/-1000 -1000/farmer 22 20 0 {{ModId}} 22 24 0/
+        pause 2222/
+        move farmer 23 24 1/
+        pause 2500/
+        message \"{{i18n:Events.14h-p3_Hog.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3333/
+        message \"{{i18n:Events.14h-p3_Hog.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        message \"{{i18n:Events.14h-p3_Hog.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        move {{ModId}} 22 24 1/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3_Hog.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        emote farmer 8 true/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        emote farmer 56 true/
+        pause 1111/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2000/
+        shake {{ModId}} 1000/
+        pause 3000/
+        message \"{{i18n:Events.14h-p3_Hog.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"globalFade/
+        pause 3500/
+        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3333/
+        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"globalFadeToClear/
+        pause 5000/
+        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-p3_Hog.16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        globalfadeout/
+        pause 5000/
+        speak {{ModId}}  \"{{i18n:Events.14h-p3_Hog.17|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 7777/
+        end newDay"
       },
       "When": {
         "HasMod |contains=HogwartsET.CP.Hogwarts": true,
@@ -331,26 +1253,51 @@ debug 27.1.25, for summit dialogues
       }
     },
 
+// Marriage testing event from Custom Wedding Ceremony
+    {
+      "LogName": "Eleanor - custom wedding test",
+      "Action": "EditData",
+      "Target": "Data/Weddings",
+      "Entries":
+      {
+          "EventScript":
+          {
+              "default": "sweet/27 60/farmer 27 60 0 StrojvedouciDenis.Eleanor 27 64 2/
+              speak StrojvedouciDenis.Eleanor \"Blabla Eleanor custom wedding\"/
+              end wedding"
+          }
+},
+  },
 
-    // Addon events
-    // Hogwarts gone - y1
-    // Location: your farm
-    // Trigger: Entering your farm.
-    // Description: Mr. Rasmodius will inform player about .Eleanor's trip to Hogwarts.
+// Addon events
+// Hogwarts gone - y1
+// Location: your farm
+// Trigger: Entering your farm.
+// Description: Mr. Rasmodius will inform player about .Eleanor's trip to Hogwarts.
     {
       "LogName": "Eleanor - event - Hogwarts gone y1",
       "Action": "EditData",
       "Target": "Data/Events/farm",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_Hog_gone_y1/e {{ModId}}Intro/j 30": "none/-1000 -1000/farmer 2 2 2 Wizard 3 3 0/skippable/addConversationTopic  {{ModId}}.CT_Hog_gone 6/pause 2222/speak Wizard \"{{i18n:Events.addons.Hog_gone_y1.0|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111//speak Wizard \"{{i18n:Events.addons.Hog_gone_y1.1|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/pause 1111/end"
+        "StrojvedouciDenis.Eleanor_Hog_gone_y1/e {{ModId}}Intro/j 30":
+        "none/-1000 -1000/farmer 2 2 2 Wizard 3 3 0/
+        skippable/
+        addConversationTopic  {{ModId}}.CT_Hog_gone 6/
+        pause 2222/
+        speak Wizard \"{{i18n:Events.addons.Hog_gone_y1.0|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        /
+        speak Wizard \"{{i18n:Events.addons.Hog_gone_y1.1|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        end"
       },
       "When": {
         "HasMod": "HogwartsET.CP.Hogwarts"
       }
     }
-    /*
+/*
     Something interesting is preparing for SV 1.6.16:
-    https://stardewvalleywiki.com/Modding:Migrate_to_Stardew_Valley_1.6.16
+    https:// stardewvalleywiki.com/Modding:Migrate_to_Stardew_Valley_1.6.16
     */
   ]
 }

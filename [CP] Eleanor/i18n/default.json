@@ -575,10 +575,10 @@
   // part 1/5
   // NOTE: all lines for part 1 are messages, so different code is used for them (dialogue break is "#", not "#$b#", @ doesn't work to parse the player's name, etc.)
   "Events.14h-p1.0": "While sleeping, you got a feeling that something is wrong, and you find out that Eleanor is not in your bed anymore.",
-  "Events.14h-p1.1": "You get up and start searching for her, but you can't find her anywhere in the house.#Even though de-facto all her stuff, including her clothes, is still here.",
-  "Events.14h-p1.2": "First thing that comes to your mind while looking at her clothes is connected with her sensitivity to the cold.#What if she went outside & now she's freezing?",
-  "Events.14h-p1.3": "You pick up a few of her warmest clothes and decide to search for her outside.#But before you do that, you notice a letter on her desk.",
-  "Events.14h-p1.4": "Full of worries, both about its content and about Eleanor, you start reading it, pushing the thought of her somewhere freezing outside, waiting for you to find her, away.",
+  "Events.14h-p1.1": "That is not concerning for you, as that is pretty normal for her to wake up earlier than you. But that feeling is still there...",
+  "Events.14h-p1.2": "That feeling is so strong you decide to check on her.#But you can't find her anywhere in the house. Nor you can see her through windows on your farm.",
+  "Events.14h-p1.3": "You decide to check out the outside, but before you do that, you notice a letter on her desk.",
+  "Events.14h-p1.4": "Full of worries, both about its content and about Eleanor, you start reading it, pushing the thought of her, probably in danger, waiting for you to save her, away.",
   "Events.14h-p1.5": "My beloved {{DT_name}},",
   "Events.14h-p1.5-commented": "Well, isn't that the worst possible, most generic start of a letter? With this letter heading, I can't determine if it's a love letter or a break-up letter, or something else...",
   "Events.14h-p1.6": "first thing - you may not worry, this is not a break-up letter nor something like that. I would never do that to you.",
@@ -590,12 +590,12 @@
   "Events.14h-p1.9": "Sadly, there is always a 'but'...",
   "Events.14h-p1.9-commented": "And here we go...#...I hope it's not something bad...#...I hope it's not something that will make me cry...#...#... why do I want to cry?! ELEANOR!",
   "Events.14h-p1.10": "...and my letter is not an exception.#I have to tell you something that I should've told you a long time ago...",
-  "Events.14h-p1.10-commented": "Eleanor! What are you talking about?!#...I'm starting to get worried...#...I'm starting to get scared...",
+  "Events.14h-p1.10-commented": "Eleanor! What are you talking about?!#...I'm starting to get worried...",
   "Events.14h-p1.11": "...and the thing is...",
   "Events.14h-p1.11-commented": "COME ON! Get to the point already!",
   "Events.14h-p1.12": "...I don't know who I am.",
   "Events.14h-p1.12-commented": "...#WHAT!?!",
-  "Events.14h-p1.13": "I just don't know who I am, {{DT_name}}.",
+  "Events.14h-p1.13": "I know it sounds crazy. But it's true - I just don't know who I am, {{DT_name}}.",
   "Events.14h-p1.13-commented": "HOW CAN YOU NOT KNOW WHO YOU ARE?!#You're Eleanor!#You're the one I love! The one I care about!#...The one I want to spend the rest of my life with...",
   "Events.14h-p1.14": "It has nothing to do with you, {{DT_name}}.#Really, nothing. You're the best thing that ever happened to me.",
   "Events.14h-p1.14-commented": "...#I'm not sure if I should be happy or sad about that...",
@@ -606,13 +606,13 @@
   "Events.14h-p1.17": "As you know, my childhood was not the best one...",
   "Events.14h-p1.17-commented": "I know...#...but I don't know the details...#WAIT A SECOND! Will this letter provide answers?!",
   "Events.14h-p1.18": "There were a lot of things that I don't remember...",
-  "Events.14h-p1.18-commented": "Yeah, me neither...#...but I know what my grandpa told me...#...and that's why I'm here...#why we met.",
+  "Events.14h-p1.18-commented": "Yeah, me neither...#...but I know what my grandpa told me...#...and that's why I'm here...#why we met...",
   "Events.14h-p1.19": "...but I know what I was told...",
   "Events.14h-p1.19-commented": "...and that is...?",
   "Events.14h-p1.20": "As far as anyone knew back then, my parents left one day because of some incoming danger...",
   "Events.14h-p1.20-commented": "Wait, what?!#Incoming danger?#Depending on the place you lived, as far as I know, there was no danger...#...or was there?",
   "Events.14h-p1.21": "...and no one ever saw nor heard from them again.",
-  "Events.14h-p1.21-commented": "Oh...#...I'm sorry...#...I'm so sorry, Eleanor...#...I'm so sorry that you had to go through that...#...I didn't know, Eleanor, really. I had no idea...",
+  "Events.14h-p1.21-commented": "Oh...#...#...I'm sorry...#...I'm so sorry, Eleanor...#...I'm so sorry that you had to go through that...#...I didn't know, Eleanor, really. I had a theory, but...",
   "Events.14h-p1.22": "And I was left all alone, not knowing what happened to them...",
   "Events.14h-p1.22-commented": "Eleanor...#...oh my Eleanor. I'm so sorry...#...I'm so sorry about that...",
   "Events.14h-p1.23": "...OK, not all alone. I was sent to my grandparents, who took care of me...#...but still, that was not the same...",
@@ -626,7 +626,7 @@
   "Events.14h-p1.27": "Don't worry about me, {{DT_name}}. I'll be back soon. I promise.",
   "Events.14h-p1.27-commented": "Don't worry?#DON'T WORRY?!#How can I not worry about you, Eleanor?!#Tell me, HOW?!#Because I can't!",
   "Events.14h-p1.28": "You don't have to look for me, {{DT_name}}. I don't think you should be even able to find me.",
-  "Events.14h-p1.28-commented": "I don't...#I...#You hopelessly try to give yourself any reason why shouldn't you look for her, until#...I will find you, Eleanor!#...I will find you, no matter what!#If it's the last thing I'll ever do, I will find you!",
+  "Events.14h-p1.28-commented": "I don't...#I...#...I will find you, Eleanor.#I will find you, no matter wha.!#If it's the last thing I'll ever do, I will find you!",
   "Events.14h-p1.29": "I'll come back to you, {{DT_name}}. I promise.",
   "Events.14h-p1.29-commented": "But, will you?#...Will you come back to me, Eleanor?#And if you will, when?#Will you come back to me in one piece?#Will you still be the same Eleanor I know and love?#...#...#$e#NO. I can't let you just go somewhere, Eleanor!#I will find you, I will help you find out who you are, I will help you find out what happened to your parents and then we'll go home!",
   "Events.14h-p1.30": "Bye for now, my loved {{DT_name}}, my true and only love.",
@@ -638,19 +638,18 @@
 
   // part 2/5
   "Events.14h-p2.0": "{{DT_wizard_name}}'s tower, around the same time you left your house...", // message
-  "Events.14h-p2.1": "Yet another morning...#$b#Wait. Something is not correct.#$b#I can feel it in the air...#$b#...but what is it?",
-  "Events.14h-p2.2": "Hmm...#$b#I sense a shift in the magical energy around me...",
-  "Events.14h-p2.3": "I know this feeling...#$b#...but I can't remember when I felt it last time...#$b#...and what happened then...",
+  "Events.14h-p2.1": "Yet another morning...",
+  "Events.14h-p2.2": "Wait. Something is not correct. I can feel it in the air...#$b#...but what is it?",
+  "Events.14h-p2.3": "Maybe a shift in the magical energy around me...",
   "Events.14h-p2.4": "Oh!#$b#{{DT_name}}!#$b#Why are you here this early?",
   "Events.14h-p2.5": "You tell {{DT_wizard_name}} about Eleanor's situation. As you can see, {{DT_wizard_fem}} listens to you carefully, but {{DT_wizard_fem}} doesn't say anything.", // message
   "Events.14h-p2.6": "So that is why the magical energy is uncommon today...",
   "Events.14h-p2.7": "Well, it is my duty to help you find her, {{DT_name}}.#$b#Especially when she is my apprentice.",
-  "Events.14h-p2.8": "*...sighs...*#$b#I hope they'll forgive me for this...",
-  "Events.14h-p2.9": "Actually, they don't have anything to forgive me.#$b#I may have some minor knowledge about her past, but I can't tell you anything else than things that you don't already know, because that is all I know.#$b#Plus, it's her past, not mine.#$b#It is up to her to tell you about it...",
-  "Events.14h-p2.10": "However, I suppose I know where she might be.#$b#I can feel her magical aura.#$b#And at least some of it is coming from Sprite Spring in the forest.",
-  "Events.14h-p2.11": "I know you're worried about her, {{DT_name}}.#$b#But you have to be cautious.#$b#The forest is not a safe place, especially for someone like you.",
-  "Events.14h-p2.12": "I'll help you find her, {{DT_name}}.#$b#But you have to promise me that you'll be careful.",
-  "Events.14h-p2.13": "Good. Let's go then. We have to find her before something bad happens...",
+  "Events.14h-p2.8": "...*sighs*... I worried this day will come...$s",
+  "Events.14h-p2.9": "I suppose I know where she might be.#$b#I can feel her magical aura, and I'm pretty sure you do, too.#$b#And at least some of it is coming from Sprite Spring, deep in the forest.",
+  "Events.14h-p2.10": "I know you're worried about her, {{DT_name}}.#$b#But you have to be cautious. As you know, the forest is not a safe place.",
+  "Events.14h-p2.11": "I'll help you find her, {{DT_name}}.#$b#But you have to promise me that you'll be careful.",
+  "Events.14h-p2.12": "Good. Let's go then. We have to find her before something bad happens...",
 
   // part 3/5
   "Events.14h-p3.0": "Forest, just a few steps from Sprite Spring, after teleporting there with {{DT_wizard_name}}'s help...", // message
@@ -659,24 +658,24 @@
   "Events.14h-p3.2": "You notice something laying on the ground, a few steps from you...", // message
   "Events.14h-p3.3": "You pick it up and you see that it's some piece of paper, with some text on it...", // message
   "Events.14h-p3.4": "You start reading it, and you can't believe what you see...", // message
-  "Events.14h-p3.5": "...neither can you define what you see, because it's just a bunch of random letters and numbers.#$b#But you can feel that it's connected with Eleanor, somehow...", // message
+  "Events.14h-p3.5": "...neither can you define what you see, because it's just a bunch of random letters and numbers.#But you can feel that it's connected with Eleanor, somehow...", // message
   "Events.14h-p3.6": "{{DT_wizard_name}} walks to you and {{DT_wizard_fem}} looks at the paper you're holding in your hand...", // message
-  "Events.14h-p3.7": "Oh no, this is not good...#$b#...this is not good at all...",
+  "Events.14h-p3.7": "No, no no. This is not good...#$b#...this is not good at all...",
   "Events.14h-p3.8": "What am I talking about?#$b#I'm talking about the fact that this is a magical paper, and it's connected with Eleanor, in a way you can't even imagine...",
   "Events.14h-p3.9": "That is a well-encrypted message, {{DT_name}}.#$b#And what's worse, this encrypted message is connected with Eleanor's past...",
   "Events.14h-p3.10": "Last time I saw this type of encryption was when I got a message from her parents...#$b#...and that was the last time I saw them, just a few days before Eleanor's memory from the letter...",
   "Events.14h-p3.11": "If she found this message, why is it here?#$b#Why didn't she take it with her?",
   "Events.14h-p3.12": "We know she found it because it has both its unique and her magical aura...",
-  "Events.14h-p3.13": "...but we don't know if she could decrypt it...#$b#...and if she could, why didn't she take it with her?",
+  "Events.14h-p3.13": "...but we don't know if she could decrypt it...#$b#...and even if she couldn't, why didn't she take it with her?",
   "Events.14h-p3.14": "What does it say, you ask?#$b#As I'm sure you already guessed, this type of encryption was used at the place she was born, up in the mountains...",
-  "Events.14h-p3.15": "And this message is not only connected but even written by her parents themselves...",
+  "Events.14h-p3.15": "And this message is not only connected but even written by her parents themselves, it looks like...",
   "Events.14h-p3.16": "...and it says...#$b#...something about some secret bad power that is hidden in the mountains...#$b#...and that everyone left because of it...#$b#...just so they could stop it.",
   "Events.14h-p3.17": "But that is nonsense!#$b#No matter what, it is not possible to get rid of bad power, because it's always there, somewhere...#$b#...and it's always waiting for it's time to come back...",
   "Events.14h-p3.18": "...and that is due to the simple fact, {{DT_name}}.#$b#If you wouldn't have bad power, you wouldn't have good power either...#$b#...because you wouldn't know what good power is...#$b#...and that is the reason why you have to have both of them, no matter what...",
   "Events.14h-p3.19": "Theoretically, you could get rid of bad power, but that would mean that you would have to get rid of good power as well...",
   "Events.14h-p3.20": "...and as we know, because there still is magic, both of them are still present.",
-  "Events.14h-p3.21": "You check the paper again, just to find out that there is something written on the back of it...", // message
-  "Events.14h-p3.22": "...and you find another note from Eleanor, right next to some notes from the decrypted message...#$b#...which means, she was here, she decrypted the message, and she left it here for you to find it...", // message
+  "Events.14h-p3.21": "You gently touch the paper with your other hand, just to find out that there is something written there...", // message
+  "Events.14h-p3.22": "...and you find another note from Eleanor, right next to some notes from the decrypted message...#...which means, she was here, she decrypted the message, and she left it here for you to find it...", // message
   "Events.14h-p3.23": "Dear {{DT_name}},", // message
   //"Event.14h-p3.23-commented": "Another letter from Eleanor...#...and I'm still not sure what is going on...", // message
   "Events.14h-p3.24": "I leave this message for you to find it because I know you'll find it.#I know you'll find it because I know you'll look for me.", // message
@@ -686,9 +685,9 @@
   "Events.14h-p3.26": "That being said, as you noticed, I know what's written on the paper you're holding in your hand.#And I hope that even though you don't know the details, you'll understand what it means.", // message
   //"Event.14h-p3.26-commented": "I know what's written on the paper...#...but I don't know what it means...#...and I don't know if I want to...", // message
   "Events.14h-p3.27": "As you see, this is a message from my parents, and it's about the bad power that is hidden in the mountains.#And that everyone left because of it, just so my parents could stop it.", // message
-  //"Event.14h-p3.27-commented": "Nothing here, get back to work on your farm!", // message
-  "Events.14h-p3.28": "There also was something about me, that I could stop it...#...but I don't know how...#...and I don't know if I want to...", // message
-  "Events.14h-p3.29": "And that is when I realized that this, even though using the encryption used in our valley and even though singed by them, might not be from my parents.#You see, I don't remember my parents, but I know that they were one of the most powerful wizards in the world.", // message
+  //"Event.14h-p3.27-commented": "Hey! WHY are you looking at the i18n translation files?!", // message
+  "Events.14h-p3.28": "There also was something about me, that I could stop it...#...but I don't know how...#...and I don't know if I should...", // message
+  "Events.14h-p3.29": "And that is when I realized that this letter, even though using the encryption used in our valley and singed by them, might not be from my parents.#You see, I don't remember my parents, but I know that they were one of the most powerful wizards in the world.", // message
   "Events.14h-p3.30": "And they also were very wise.#Which means, they knew that I would find this message, and they knew that I would decrypt it.", // message
   "Events.14h-p3.31": "But it also means that they wouldn't even try to stop the bad power because they knew that it is an impossible task.", // message
   "Events.14h-p3.32": "Which leads me to this conclusion:#It looks like the message is from someone who wants me to find out about my past, about my parents, about me...#...but I don't know who that is, and I don't know why they want me to find out about it...", // message
@@ -696,12 +695,12 @@
   "Events.14h-p3.34": "I don't know what will happen to me, but if I don't come back, I want you to know that I always did and always will love you.", // message
   "Events.14h-p3.35": "But I hope that I'll come back to you and that we'll be able to live our lives together, in peace and love, no matter what.", // message
   "Events.14h-p3.36": "I'd like to say - be careful on your way home, but I know you won't listen to me.#So I'll say - be safe, and I hope you'll find me soon.", // message
-  "Events.14h-p3.37": "And as we both know, you will search for me, so left you a hint about where I'm going next.#But it's not here, it is with my only friend from Pelican Town...", // message
+  "Events.14h-p3.37": "As we both know, you will search for me, so I left you a hint about where I'm going next.#But it's not here, it is with my only friend from Pelican Town...", // message
   "Events.14h-p3.38": "I hope you'll find me soon, {{DT_name}}.#I hope you'll find me soon because I can't wait to see you again.", // message
   "Events.14h-p3.39": "Bye for now, my loved {{DT_name}}.", // message
   "Events.14h-p3.40": "Your heart is full of worries, your head is full of thoughts, your eyes are full of tears...", // message
-  "Events.14h-p3.41": "You want to share the note with {{DT_wizard_name}}, but looks like {{DT_wizard_fem}} disappeared...#You know {{DT_wizard_fem}} was reading both the note and the decrypted message, but you can't find him anywhere...", // message
-  "Events.14h-p3.42": "It looks like {{DT_wizard_fem}} left you alone, with a note in your hand, with a feeling that you're never going to see Eleanor again...", // message
+  "Events.14h-p3.41": "You want to share what you learned with {{DT_wizard_name}}, but looks like {{DT_wizard_fem}} disappeared...#{{DT_wizard_name}} probably told you {{DT_wizard_fem}}'s leaving you alone here, but you were so focused on Eleanor's words that you didn't hear it.", // message
+  "Events.14h-p3.42": "It looks like {{DT_wizard_fem}} left you alone, with a piece of paper in your hand, with a feeling that you're never going to see Eleanor again...", // message
   "Events.14h-p3.43": "...#This problem is getting bigger and bigger, and you have to find a solution, no matter what...#...and you have to do it as soon as it would be even possible!", // message
   "Events.14h-p3.44": "And with that, you start running to the town, to meet her only friend there - Abigail.", // message
 
@@ -717,7 +716,7 @@
   "Events.14h-p4.8": "Anyway, after she was done, she left the forest and went to the mountains.#$b#Someone, probably Atlantes W., was waiting for her there, and they discussed something...#$b#Anyway, my dream ended with the words I should give to you:#$b#'Sorry to use you like this, Abigail, but tell {{DT_name}} that the world is not safe for us, because we have some very powerful enemies that are trying to stop me from finding out who I am. Also, tell my loved {{DT_name}} to meet me at the beach as carefully and as soon as possible.'",
   "Events.14h-p4.9": "I don't know what happened next, because I woke up...#$b#...but if I were you, I would go to the beach and look for her there...",
   "Events.14h-p4.10": "Now, I have to go, because I have to help my mom with the store...#$b#...but I hope you'll find her soon, {{DT_name}}.",
-  "Events.14h-p4.11": "So Eleanor should be at the beach...#...but what would she do there?#...and why would she go there?#And especially, who are those enemies she's talking about?#I have to find out, no matter what...", // message
+  "Events.14h-p4.11": "So Eleanor should be at the beach...#...but what would she do there?#...and why would she go there?#And especially, who are those enemies she's talking about?#You have to find out, no matter what...", // message
   "Events.14h-p4.12": "Either way, you run out of the store right to the beach, with a note in your pocket, hoping you'll find her there...#...and, maybe for your safety, trying not to think about anything else.", // message
 
   // part 5/5
