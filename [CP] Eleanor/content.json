@@ -1,4 +1,5 @@
-{ // NPC Eleanor //
+{
+  // NPC Eleanor //
 
   // "$schema": "https://smapi.io/schemas/content-patcher.json", commented out because of formating problems after format 2.5.0
 
@@ -13,14 +14,14 @@
       "AllowValues": "true, false",
       "Default": "true",
       "Section": "Optional content for Eleanor",
-      "Description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 1.0.0-alpha.1 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true."
+      "Description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 1.0.0-alpha.6 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true."
     },
 
     "Marriage": {
       "AllowValues": "true, false",
       "Default": "false",
       "Section": "Optional content for Eleanor",
-      "Description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.1, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! ="
+      "Description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.6, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! ="
     },
 
     "14hearts-variants": {
@@ -46,7 +47,7 @@
       "AllowValues": "one look only (ORG), one look only, vanilla, seasonal",
       "Default": "vanilla",
       "Section": "Visual side of Eleanor",
-      "Description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.1, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look."
+      "Description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.6, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look."
     },
 
     /*
@@ -64,28 +65,13 @@ commented out because of the missing 256X256 portraits code
       "AllowValues": "on, safe mode, off",
       "Default": "on",
       "Section": "Experimental - DoNotChange",
-      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.1, it is partly (not?) functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on."
+      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.6, it is partly (not?) functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on."
     }
   },
 
   "DynamicTokens": [
+    // CODE DT'S
     // Weekdays - edited code from https://stardewmodding.wiki.gg/wiki/Npc_template#Content.json
-    /*
-    that's for another mod author
-    {
-      "Name": "NPC married",
-      "Value": "{{PlayerSpouses}}", 
-      "When": { "Relationship:{{PlayerSpouses}}": "Married" }
-    },
-    {
-      "Name": "lSpouse",
-      "Value": "{{PlayerSpouses}}",
-      "When": {
-          "HasMod": "ApryllForever.PolyamorySweetLove",
-          "Query: {{ApryllForever.PolyamorySweetLove/NPCWeddingDate:{{PlayerSpouses}}}} % {{kPeriod}} = 0": true,
-      }
-  },
-*/
     {
       "Name": "DT_weekday",
       "Value": "Mon",
@@ -122,6 +108,7 @@ commented out because of the missing 256X256 portraits code
       "When": { "DayOfWeek": "Sunday" }
     },
 
+    // GAME DT'S
     // (in)formality + GNMT support
     {
       "Name": "DT_name",
@@ -165,6 +152,426 @@ commented out because of the missing 256X256 portraits code
       "Value": "she",
       "When": {
         "HasMod |contains=Nom0ri.RomRas": true
+      }
+    },
+
+    // language translations of DT's
+    // GERMAN
+    {
+      "Name": "DT_name",
+      "Value": "${Herr^Frau^Mx.}$ {{PlayerName}}",
+      "When": {
+        "Language": "de"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "Herr Rasmodius",
+      "When": {
+        "Language": "de"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "Frau Rasmodia",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "de"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "er",
+      "When": {
+        "Language": "de"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "sie",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "de"
+      }
+    },
+    // SPANISH
+    {
+      "Name": "DT_name",
+      "Value": "${Señor^Señora^Mx.}$ {{PlayerName}}",
+      "When": {
+        "Language": "es"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "Señor Rasmodius",
+      "When": {
+        "Language": "es"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "Señora Rasmodia",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "es"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "él",
+      "When": {
+        "Language": "es"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "ella",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "es"
+      }
+    },
+    // FRENCH
+    {
+      "Name": "DT_name",
+      "Value": "${Monsieur^Madame^Mx.}$ {{PlayerName}}",
+      "When": {
+        "Language": "fr"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "Monsieur Rasmodius",
+      "When": {
+        "Language": "fr"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "Madame Rasmodia",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "fr"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "il",
+      "When": {
+        "Language": "fr"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "elle",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "fr"
+      }
+    },
+    // HUNGARIAN
+    {
+      "Name": "DT_name",
+      "Value": "${Úr^Asszony^Mx.}$ {{PlayerName}}",
+      "When": {
+        "Language": "hu"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "Úr Rasmodius",
+      "When": {
+        "Language": "hu"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "Asszony Rasmodia",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "hu"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "ő",
+      "When": {
+        "Language": "hu"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "ő",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "hu"
+      }
+    },
+    // ITALIAN
+    {
+      "Name": "DT_name",
+      "Value": "${Signore^Signora^Mx.}$ {{PlayerName}}",
+      "When": {
+        "Language": "it"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "Signor Rasmodius",
+      "When": {
+        "Language": "it"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "Signora Rasmodia",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "it"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "lui",
+      "When": {
+        "Language": "it"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "lei",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "it"
+      }
+    },
+    // JAPANESE
+    {
+      "Name": "DT_name",
+      "Value": "${さん^様^Mx.}$ {{PlayerName}}",
+      "When": {
+        "Language": "ja"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "ラズモディウスさん",
+      "When": {
+        "Language": "ja"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "ラズモディアさん",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "ja"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "彼",
+      "When": {
+        "Language": "ja"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "彼女",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "ja"
+      }
+    },
+    // KOREAN
+    {
+      "Name": "DT_name",
+      "Value": "${씨^님^Mx.}$ {{PlayerName}}",
+      "When": {
+        "Language": "ko"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "라스모디우스 씨",
+      "When": {
+        "Language": "ko"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "라스모디아 씨",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "ko"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "그",
+      "When": {
+        "Language": "ko"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "그녀",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "ko"
+      }
+    },
+    // PORTUGUESE
+    {
+      "Name": "DT_name",
+      "Value": "${Senhor^Senhora^Mx.}$ {{PlayerName}}",
+      "When": {
+        "Language": "pt"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "Senhor Rasmodius",
+      "When": {
+        "Language": "pt"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "Senhora Rasmodia",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "pt"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "ele",
+      "When": {
+        "Language": "pt"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "ela",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "pt"
+      }
+    },
+    // RUSSIAN
+    {
+      "Name": "DT_name",
+      "Value": "${Господин^Госпожа^Mx.}$ {{PlayerName}}",
+      "When": {
+        "Language": "ru"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "Господин Расмодиус",
+      "When": {
+        "Language": "ru"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "Госпожа Расмодия",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "ru"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "он",
+      "When": {
+        "Language": "ru"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "она",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "ru"
+      }
+    },
+    // TURKISH
+    {
+      "Name": "DT_name",
+      "Value": "${Bay^Bayan^Mx.}$ {{PlayerName}}",
+      "When": {
+        "Language": "tr"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "Bay Rasmodius",
+      "When": {
+        "Language": "tr"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "Bayan Rasmodia",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "tr"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "o",
+      "When": {
+        "Language": "tr"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "o",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "tr"
+      }
+    },
+    // CHINESE
+    {
+      "Name": "DT_name",
+      "Value": "${先生^女士^Mx.}$ {{PlayerName}}",
+      "When": {
+        "Language": "zh"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "拉斯莫迪乌斯先生",
+      "When": {
+        "Language": "zh"
+      }
+    },
+    {
+      "Name": "DT_wizard_name",
+      "Value": "拉斯莫迪亚女士",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "zh"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "他",
+      "When": {
+        "Language": "zh"
+      }
+    },
+    {
+      "Name": "DT_wizard_fem",
+      "Value": "她",
+      "When": {
+        "HasMod |contains=Nom0ri.RomRas": true,
+        "Language": "zh"
       }
     }
   ],
@@ -235,7 +642,7 @@ commented out because of the missing 256X256 portraits code
           "ItemDeliveryQuests": "true",
           "PerfectionScore": "true",
           "EndSlideShow": "TrailingGroup", // Eleanor isn't important enough to be in the main group, so she'll be in the trailing group (with Wizard/Mr. Rasmodius, Sandy, Krobus, etc.)
-          //"FriendsAndFamily": { "Wizard": "mentor" }, // NOT SURE IF WORKING NOR IF IT HAS ANY EFFECT (7.1.2025); should be using i18n
+          //"FriendsAndFamily": { "Wizard": "mentor" }, // NOT SURE IF WORKING NOR IF IT HAS ANY EFFECT (7.1.2025); should be using i18n!
 
           // Dumpster Diving
           "DumpsterDiveEmote": "28",
@@ -263,7 +670,7 @@ commented out because of the missing 256X256 portraits code
           ],
 
           // Appearance & Sprite
-          // I don't even want to know what are these lines of code doing, so let's just skip them - may the game use it's default or do whatever it wants
+          // These will be used in NPCgraphics.json file someday (no idea when), but they are skipped here.
           /*
 // keeping default
     "TextureName": "StrojvedouciDenis.Eleanor",
@@ -326,7 +733,7 @@ commented out because of the missing 256X256 portraits code
     "KissSpriteFacingDirection": "true",
 */
           "HiddenProfileEmoteSound": "achievement", // some secret, don't remember what it was
-          "HiddenProfileEmoteDuration": "5000" // some secret, don't remember what it was; 5000 = 5 seconds
+          "HiddenProfileEmoteDuration": "5000" // some secret, don't remember what it was; in milliseconds
           /*
     "HiddenProfileEmoteStartFrame": "",
     "HiddenProfileEmoteFrameCount": "",
@@ -424,7 +831,7 @@ commented out because of the missing 256X256 portraits code
         "On/off": "on, safe mode"
       }
     },
-    
+
     // Movies //
     {
       "LogName": "{{ModId}} - movies load command",
