@@ -4,6 +4,14 @@ This is a changlog including officially unreleased versions of NPC Eleanor. You 
 
 ---
 
+## version 1.0.0-alpha.8 (20.4.2025)
+
+* Multi-device connectivity tests
+* That automatic C# change is not bothering me until I run *"dotnet run"* command to compile the C# component's .dll file, and it propably shouldn't matter even then
+* Manifest version fix one more time (and there will be many more manifest version fixes in the future, I guess)
+
+---
+
 ## version 1.0.0-alpha.7 (20.4.2025)
 
 * Multi-device connectivity tests
