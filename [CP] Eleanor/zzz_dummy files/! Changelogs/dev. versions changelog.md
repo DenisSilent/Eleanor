@@ -4,6 +4,13 @@ This is a changlog including officially unreleased versions of NPC Eleanor. You 
 
 ---
 
+## version 1.0.0-alpha.7 (20.4.2025)
+
+* Multi-device connectivity tests
+* Automatic C# change of the mod location in other device - will check out how many things it'll break
+
+---
+
 ## version 1.0.0-alpha.6 (19.4.2025)
 
 * Finally found a valid method to translate the dynamic tokens

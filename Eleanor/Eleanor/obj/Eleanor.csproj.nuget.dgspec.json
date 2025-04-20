@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\SteamLibrary\\steamapps\\common\\Stardew Valley\\Mods - test\\[NPC] Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj": {}
+    "C:\\Users\\Denis\\Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj": {}
   },
   "projects": {
-    "C:\\SteamLibrary\\steamapps\\common\\Stardew Valley\\Mods - test\\[NPC] Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj": {
+    "C:\\Users\\Denis\\Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SteamLibrary\\steamapps\\common\\Stardew Valley\\Mods - test\\[NPC] Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj",
+        "projectUniqueName": "C:\\Users\\Denis\\Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj",
         "projectName": "Eleanor",
-        "projectPath": "C:\\SteamLibrary\\steamapps\\common\\Stardew Valley\\Mods - test\\[NPC] Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj",
+        "projectPath": "C:\\Users\\Denis\\Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj",
         "packagesPath": "C:\\Users\\Denis\\.nuget\\packages\\",
-        "outputPath": "C:\\SteamLibrary\\steamapps\\common\\Stardew Valley\\Mods - test\\[NPC] Eleanor\\Eleanor\\Eleanor\\obj\\",
+        "outputPath": "C:\\Users\\Denis\\Eleanor\\Eleanor\\Eleanor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -536,7 +536,7 @@ commented out because of the missing 256X256 portraits code
         "Language": "tr"
       }
     },
-    // CHINESE
+    // CHINESE (but which one? I don't quite know)
     {
       "Name": "DT_name",
       "Value": "${先生^女士^Mx.}$ {{PlayerName}}",
