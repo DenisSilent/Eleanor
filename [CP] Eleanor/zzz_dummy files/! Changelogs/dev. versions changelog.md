@@ -4,6 +4,14 @@ This is a changlog including officially unreleased versions of NPC Eleanor. You 
 
 ---
 
+## version 1.0.0-alpha.9 (20.4.2025)
+
+* Multi-device connectivity tests
+* C# maybe broke itself, I don't care right now, I will when I'll get to 1.0.0-beta.1
+* Manifest version fix one more time (and there will be many more manifest version fixes in the future, I guess)
+
+---
+
 ## version 1.0.0-alpha.8 (20.4.2025)
 
 * Multi-device connectivity tests
