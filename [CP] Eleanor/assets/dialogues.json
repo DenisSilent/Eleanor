@@ -229,64 +229,33 @@
     },
 
     // Marriage + engagement dialogues //
- 
+
     {
       "LogName": "Eleanor - engagement dialogues + marriage fix",
       "Action": "EditData",
       "Target": "Strings/StringsFromCSFiles",
-      "Entries": {  //Data/EngagementDialogue
-        /*
-        "StrojvedouciDenis.Eleanor0": "{{i18n:Dialogues.marriage.Eleanor0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "StrojvedouciDenis.Eleanor1": "{{i18n:Dialogues.marriage.Eleanor1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-*/
+      "Entries": {
         "StrojvedouciDenis.Eleanor_AfterWedding": "{{i18n:Dialogues.marriage.Eleanor_AfterWedding |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "StrojvedouciDenis.Eleanor_Engaged": "{{i18n:Dialogues.marriage.Eleanor_Engaged |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "StrojvedouciDenis.Eleanor_EngagedRoommate": "{{i18n:Dialogues.marriage.Eleanor_EngagedRoommate |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-/*
-        // Marriage edit
-        "Utility.cs.5367": "{{i18n:Dialogues.marriage.Utility.cs.5367 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5369": "{{i18n:Dialogues.marriage.Utility.cs.5369 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5370": "{{i18n:Dialogues.marriage.Utility.cs.5370 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5371": "{{i18n:Dialogues.marriage.Utility.cs.5371 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5373": "{{i18n:Dialogues.marriage.Utility.cs.5373 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5375": "{{i18n:Dialogues.marriage.Utility.cs.5375 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5377": "{{i18n:Dialogues.marriage.Utility.cs.5377 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5379": "{{i18n:Dialogues.marriage.Utility.cs.5379 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5381": "{{i18n:Dialogues.marriage.Utility.cs.5381 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5383": "{{i18n:Dialogues.marriage.Utility.cs.5383 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
-      },
-      */
-      "When": {
-        "Marriage": "true"
+        "When": {
+          "Marriage": "true"
+        }
       }
-    }
+    },
 
-    /*{
-      "LogName": "Eleanor - engagement dialogues + marriage fix",
+    {
+      "LogName": "Eleanor - engagement dialogues",
       "Action": "EditData",
       "Target": "Data/EngagementDialogue",
-      "Entries": { 
+      "Entries": {
         "StrojvedouciDenis.Eleanor0": "{{i18n:Dialogues.marriage.Eleanor0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "StrojvedouciDenis.Eleanor1": "{{i18n:Dialogues.marriage.Eleanor1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-
-        // Marriage edit
-        "Utility.cs.5367": "{{i18n:Dialogues.marriage.Utility.cs.5367 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5369": "{{i18n:Dialogues.marriage.Utility.cs.5369 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5370": "{{i18n:Dialogues.marriage.Utility.cs.5370 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5371": "{{i18n:Dialogues.marriage.Utility.cs.5371 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5373": "{{i18n:Dialogues.marriage.Utility.cs.5373 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5375": "{{i18n:Dialogues.marriage.Utility.cs.5375 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5377": "{{i18n:Dialogues.marriage.Utility.cs.5377 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5379": "{{i18n:Dialogues.marriage.Utility.cs.5379 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5381": "{{i18n:Dialogues.marriage.Utility.cs.5381 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Utility.cs.5383": "{{i18n:Dialogues.marriage.Utility.cs.5383 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
+        "StrojvedouciDenis.Eleanor1": "{{i18n:Dialogues.marriage.Eleanor1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       },
       "When": {
         "Marriage": "true"
       }
-        */
     },
-/*
     {
       "LogName": "Eleanor - marriage reject dialogues",
       "Action": "EditData",
@@ -314,10 +283,10 @@
 "RejectMermaidPendant_Under10Hearts_AskedAgan": "{{i18n:Dialogues.RejectMermaidPendant_Under10Hearts_AskedAgain |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
 "RejectMermaidPendant_AlreadyAccepted": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
 "RejectMermaidPendant_AlreadyAccepted_Engaged": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted_Engaged |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectMermaidPendant_AlreadyAccepted_Married": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted_Married |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+"RejectMermaidPendant_AlreadyAccepted_Married": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted_Married |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       }
-    }
-    */
+    },
+
     {
       "LogName": "Eleanor - marriage dialogues",
       "Action": "EditData",
@@ -328,6 +297,20 @@
        "Rainy_Day_{{Random: {{Range:0,4}} |key=rainy_day}}": "{{i18n:Dialogues. rainy-day.{{Random: {{Range:0,4}} |key=rainy_day}}}}",
         "Rainy_Night": "{{i18n:Dialogues.{{ModId}}.Rainy_Day_{{Random:{{Range:0,5}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
 */
+
+        // Wedding edit
+        "Utility.cs.5367": "{{i18n:Dialogues.marriage.Utility.cs.5367 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Utility.cs.5369": "{{i18n:Dialogues.marriage.Utility.cs.5369 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Utility.cs.5370": "{{i18n:Dialogues.marriage.Utility.cs.5370 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Utility.cs.5371": "{{i18n:Dialogues.marriage.Utility.cs.5371 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Utility.cs.5373": "{{i18n:Dialogues.marriage.Utility.cs.5373 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Utility.cs.5375": "{{i18n:Dialogues.marriage.Utility.cs.5375 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Utility.cs.5377": "{{i18n:Dialogues.marriage.Utility.cs.5377 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Utility.cs.5379": "{{i18n:Dialogues.marriage.Utility.cs.5379 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Utility.cs.5381": "{{i18n:Dialogues.marriage.Utility.cs.5381 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Utility.cs.5383": "{{i18n:Dialogues.marriage.Utility.cs.5383 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+
+        // Marriage dialogues
         "Rainy_Day_0": "{{i18n:Dialogues.marriage.Rainy_day_{{Random: {{Range:0,2}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Rainy_Day_1": "{{i18n:Dialogues.marriage.Rainy_day_{{Random: {{Range:0,2}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Rainy_Day_2": "{{i18n:Dialogues.marriage.Rainy_day_{{Random: {{Range:0,2}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
@@ -357,14 +340,14 @@
         "Outdoor_3": "{{i18n:Dialogues.marriage.Outdoor_{{Random: {{Range:0,2}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Outdoor_4": "{{i18n:Dialogues.marriage.Outdoor_{{Random: {{Range:0,2}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Outdoor_5": "{{i18n:Dialogues.marriage.Outdoor_{{Random: {{Range:0,2}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "OneKid_0": "{{i18n:Dialogues.marriage.OneKid_{{Random: {{Range:0,2}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "OneKid_1": "{{i18n:Dialogues.marriage.OneKid_{{Random: {{Range:0,2}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "OneKid_2": "{{i18n:Dialogues.marriage.OneKid_{{Random: {{Range:0,2}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "OneKid_3": "{{i18n:Dialogues.marriage.OneKid_{{Random: {{Range:0,2}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "TwoKid_0": "{{i18n:Dialogues.marriage.TwoKid_{{Random: {{Range:0,2}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "TwoKid_1": "{{i18n:Dialogues.marriage.TwoKid_{{Random: {{Range:0,2}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "TwoKid_2": "{{i18n:Dialogues.marriage.TwoKid_{{Random: {{Range:0,2}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "TwoKid_3": "{{i18n:Dialogues.marriage.TwoKid_{{Random: {{Range:0,2}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "OneKid_0": "{{i18n:Dialogues.marriage.OneKid_0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "OneKid_1": "{{i18n:Dialogues.marriage.OneKid_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "OneKid_2": "{{i18n:Dialogues.marriage.OneKid_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "OneKid_3": "{{i18n:Dialogues.marriage.OneKid_3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "TwoKid_0": "{{i18n:Dialogues.marriage.TwoKid_0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "TwoKid_1": "{{i18n:Dialogues.marriage.TwoKid_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "TwoKid_2": "{{i18n:Dialogues.marriage.TwoKid_2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "TwoKid_3": "{{i18n:Dialogues.marriage.TwoKid_3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Good_0": "{{i18n:Dialogues.marriage.Good_{{Random: {{Range:0,3}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Good_1": "{{i18n:Dialogues.marriage.Good_{{Random: {{Range:0,3}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Good_2": "{{i18n:Dialogues.marriage.Good_{{Random: {{Range:0,3}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",

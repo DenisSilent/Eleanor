@@ -15,12 +15,12 @@
   "config.Festivals.name": "Festivals",
   "config.Festivals.values.true": "true",
   "config.Festivals.values.false": "false",
-  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 1.0.0-alpha.10 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
+  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 1.0.0-alpha.11 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
 
   "config.Marriage.name": "Marriage",
   "config.Marriage.values.true": "true",
   "config.Marriage.values.false": "false",
-  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.10, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
+  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.11, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
 
   "config.14hearts-variants.name": "14 hearts event variant",
   "config.14hearts-variants.values.short": "short",
@@ -41,7 +41,7 @@
   "config.Outfits.values.one look only": "one look only",
   "config.Outfits.values.vanilla": "vanilla",
   "config.Outfits.values.seasonal": "seasonal",
-  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.10, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
+  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.11, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
 
   // Experimental - DoNotChange
 
@@ -52,7 +52,7 @@
   "config.On/off.values.on": "on",
   "config.On/off.values.safe mode": "safe mode",
   "config.On/off.values.off": "off",
-  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.10, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
+  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.11, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
 
   /*
   // Dynamic tokens
@@ -369,18 +369,18 @@
   "Dialogues.marriage.Eleanor_EngagedRoommate": "StrojvedouciDenis.Eleanor-DEBUG:EngagedRoommate",
 
   // Marriage edit
-  "Dialogues.marriage.Utility.cs.5367": "When Eleanor first arrived as a student of {{DT_wizard_name}}, we had the same feeling as with {{DT_name}} half a year later - we didn't know if they would fit in with our community...#$b#But from this day forward, both of them are going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite {{DT_name}} and Eleanor in the bonds of marriage.",
-  "Dialogues.marriage.Utility.cs.5369": "When Eleanor first arrived as a student of {{DT_wizard_name}}, we had the same feeling as with {{DT_name}} half a year later - we didn't know if they would fit in with our community...#$b#But from this day forward, both of them are going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite {{DT_name}} and Eleanor in the bonds of marriage.",
-  "Dialogues.marriage.Utility.cs.5370": "Well, let's get right to it!",
-  "Dialogues.marriage.Utility.cs.5371": "{{DT_name}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you husband and... well, husband!$h",
-  "Dialogues.marriage.Utility.cs.5373": "{{DT_name}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you husband and wife!$h",
-  "Dialogues.marriage.Utility.cs.5375": "{{DT_name}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you wife and... well, wife!$h",
-  "Dialogues.marriage.Utility.cs.5377": "{{DT_name}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you wife and husband!$h",
-  "Dialogues.marriage.Utility.cs.5379": "You may kiss.",
-  "Dialogues.marriage.Utility.cs.5381": "Life is going to be different from now on...",
-  "Dialogues.marriage.Utility.cs.5383": "...But the future looks bright!",
+  "Dialogues.marriage.Utility.cs.5367": "U5367#$b#When Eleanor first arrived as a student of {{DT_wizard_name}}, we had the same feeling as with {{DT_name}} half a year later - we didn't know if they would fit in with our community...#$b#But from this day forward, both of them are going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite {{DT_name}} and Eleanor in the bonds of marriage.",
+  "Dialogues.marriage.Utility.cs.5369": "U5369#$b#When Eleanor first arrived as a student of {{DT_wizard_name}}, we had the same feeling as with {{DT_name}} half a year later - we didn't know if they would fit in with our community...#$b#But from this day forward, both of them are going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite {{DT_name}} and Eleanor in the bonds of marriage.",
+  "Dialogues.marriage.Utility.cs.5370": "U5370#$b#Well, let's get right to it!",
+  "Dialogues.marriage.Utility.cs.5371": "U5371#$b#{{DT_name}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you husband and... well, husband!$h",
+  "Dialogues.marriage.Utility.cs.5373": "U5373#$b#{{DT_name}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you husband and wife!$h",
+  "Dialogues.marriage.Utility.cs.5375": "U5375#$b#{{DT_name}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you wife and... well, wife!$h",
+  "Dialogues.marriage.Utility.cs.5377": "U5377#$b#{{DT_name}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you wife and husband!$h",
+  "Dialogues.marriage.Utility.cs.5379": "U5379#$b#You may kiss.",
+  "Dialogues.marriage.Utility.cs.5381": "U5381#$b#Life is going to be different from now on...",
+  "Dialogues.marriage.Utility.cs.5383": "U5383#$b#...But the future looks bright!",
 
-  "Dialogues.marriage.SummitEvent_Dialogue3_StrojvedouciDenis.Eleanor": "Such a nice view here, don't you think, {{DT_name}}?#$b#I'm glad we came here...#$b#It is %years years since you came to Pelican Town, and I'm so glad you did.#$b#Because my life is much better with you in it.#$b#Just think about it - how would my life look like if you didn't come here?#$b#Would I ever find out about myself? About my powers? About my parents's past?#$b#Because I can't...#$e#But that doesn't matter anymore, because of you, my loved {{DT_name}}.#$b#It was you who helped me in my search for myself.#$b#And I know that I can't thank you enough for that.#$b#But I'll try to do it every day, every moment, every second of my life.#$b#Because you are the one who helped me to find myself.#$b#And I'm so grateful for that...#$b#I love you, {{DT_name}}.",
+  "Dialogues.marriage.SummitEvent_Dialogue3_StrojvedouciDenis.Eleanor": "S3#$b#Such a nice view here, don't you think, {{DT_name}}?#$b#I'm glad we came here...#$b#It is %years years since you came to Pelican Town, and I'm so glad you did.#$b#Because my life is much better with you in it.#$b#Just think about it - how would my life look like if you didn't come here?#$b#Would I ever find out about myself? About my powers? About my parents's past?#$b#Because I can't...#$e#But that doesn't matter anymore, because of you, my loved {{DT_name}}.#$b#It was you who helped me in my search for myself.#$b#And I know that I can't thank you enough for that.#$b#But I'll try to do it every day, every moment, every second of my life.#$b#Because you are the one who helped me to find myself.#$b#And I'm so grateful for that...#$b#I love you, {{DT_name}}.",
 
   "Dialogues.marriage.Rainy_Day_0": "It's raining today, {{DT_name}}. At least you don't have to water the crops.",
   "Dialogues.marriage.Rainy_Day_1": "The rain is so relaxing, isn't it, {{DT_name}}?",
@@ -414,11 +414,11 @@
   "Dialogues.marriage.OneKid_0": "Having and rasing a child is a big responsibility, {{DT_name}}, but look at how much joy it brings us!#$b#I love our child so much, and I know you do too.#$b#I hope we can raise them to be a good person...",
   "Dialogues.marriage.OneKid_1": "Do you think our child has any magical potential, {{DT_name}}?#$b#I hope they do, I would love to teach them magic one day...",
   "Dialogues.marriage.OneKid_2": "Heh, I was just thinking about our child.#$b#It looks so happy and healthy, doesn't it?",
-  //"Dialogues.marriage.OneKid_3": "StrojvedouciDenis.Eleanor-DEBUG:OneKid_3",
+  "Dialogues.marriage.OneKid_3": "What do you think our child will be when they grow up, {{DT_name}}?#$b#I hope they will be a good person, just like you.",
   "Dialogues.marriage.TwoKid_0": "Our children are so cute, {{DT_name}}! I love them so much!#$b#Which one you think is more like you?",
   "Dialogues.marriage.TwoKid_1": "Can you believe we have two children now, {{DT_name}}? Because I can't!#$b#Do you think at least one of them will be a farmer like you?",
   "Dialogues.marriage.TwoKid_2": "Do you think our children are connected to some magic?#$b#I hope they are, I would love to teach them magic one day...",
-  //"Dialogues.marriage.TwoKid_3": "StrojvedouciDenis.Eleanor-DEBUG:TwoKid_3",
+  "Dialogues.marriage.TwoKid_3": "What do you think our child will be when they grow up, {{DT_name}}?#$b#I hope they will be a good person, just like you.",
   "Dialogues.marriage.Good_0": "Aw, {{DT_name}}...#$b#You know how to make me feel special. I love you so much!",
   "Dialogues.marriage.Good_1": "I feel so lucky to have you in my life, {{DT_name}}.#$b#You make me feel so special and loved.#$b#I hope you feel the same way.",
   "Dialogues.marriage.Good_2": "I cherish every moment we spend together, {{DT_name}}.#$b#You truly mean the world to me.",
@@ -790,7 +790,7 @@
   "Events.14h-p5.60": " ...#...and that is the end of the story of Eleanor and you, {{DT_name}}, saving the world. But another story, the story of their love, is still going on...", // message
 
   // part 6/5
-  "Events.14h-p6.0": "The End...#...or is it?#For this story, it indeed is, {{DT_name}}.#Thank you for playing with this mod! I hope you enjoyed it! May this Stardew Valley game make You happy. :)#- StrojvedouciDenis; author of NPC Eleanor", // message
+  "Events.14h-p6.0": "The End#...or is it?#For this story, it indeed is, {{DT_name}}.#Thank you for playing with this mod! I hope you enjoyed it! May this Stardew Valley game make You happy :)#- StrojvedouciDenis; author of NPC Eleanor", // message
 
   // addon events
   "Events.addons.Hog_gone_y1.0": "Hello, {{DT_name}}.#$b#I made a trip here - I teleported here - to tell you that with the path to the railway station is cleared, Eleanor went out of town until the end of the weekend.",
@@ -906,6 +906,6 @@
   //  "Secret.Mail.warning": "Dear player of Stardew Valley (a.k.a. {{DT_name}}),^^if you don't know, you installed a custom NPC mod that adds an NPC named Eleanor. If -  by any chance - you paid for this mod, please demand a full refund immediately, as this mod is fully free and downloadable from Nexus Mods (ID is 31663).^^-StrojvedouciDenis; author of NPC Eleanor^^^^^^^^^^^PS: Thanks to NPC mod Qingfeng and the 'secret message warning' in it that inspired me to this.",
   // "Secret.Mail.Eleanor_warning": "Test",     // left here in memory of the discusion on Discord on 10.2.2025
 
-  "Secret.Event.Eleanor_ending.0": "Congratulations!#You triggered all secrets and fully completed this mod's content. You are the best!", // message
-  "Secret.Event.Eleanor_ending.1": "Thank you so much for playing with this mod! May this Stardew Valley game make You happy." // message
+  "Secret.Event.Eleanor_ending.0": "", // message
+  "Secret.Event.Eleanor_ending.1": "." // message
 }

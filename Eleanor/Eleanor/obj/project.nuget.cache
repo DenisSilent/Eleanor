@@ -1,13 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2lNzyrwg2bY=",
+  "dgSpecHash": "GgbJxie7SQc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\denti\\.vscode\\! SV modding\\[NPC] Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj",
+  "projectFilePath": "C:\\SteamLibrary\\steamapps\\common\\Stardew Valley\\Mods - test\\[NPC] Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\denti\\.nuget\\packages\\pathoschild.stardew.modbuildconfig\\4.3.2\\pathoschild.stardew.modbuildconfig.4.3.2.nupkg.sha512",
-    "C:\\Users\\denti\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\denti\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\denti\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
+    "C:\\Users\\Denis\\.nuget\\packages\\pathoschild.stardew.modbuildconfig\\4.3.2\\pathoschild.stardew.modbuildconfig.4.3.2.nupkg.sha512"
   ],
   "logs": []
 }

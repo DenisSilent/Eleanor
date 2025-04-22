@@ -4,6 +4,15 @@ This is a changlog including officially unreleased versions of NPC Eleanor. You 
 
 ---
 
+## version 1.0.0-alpha.11 (20.4.2025)
+
+* Multi-device connectivity tests
+* C# maybe fixed itself back again, I don't care right now, I will when I'll get to 1.0.0-beta.1
+* Added some marriage dialogues and hopefully fixed them
+* Debugging marriage dialogues
+
+---
+
 ## version 1.0.0-alpha.10 (20.4.2025)
 
 * Multi-device connectivity tests
