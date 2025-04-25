@@ -2,6 +2,24 @@
 
 This is a changlog including officially unreleased versions of NPC Eleanor. You can download the one you want by browsing the proper [GitHub repo commits page](https://github.com/DenisSilent/Eleanor/commits/development_UNSTABLE!/).
 
+If you want to use any of the unreleased versions, please be aware that they are not tested, they contain probably A LOT of bugs and will easily crash your game (and I don't take any responsibility for that). If you want to use them anyway, please make sure to back up your save files before using them.
+Instructions for downloading the unreleased versions:
+
+1. Go to `{{SystemDrive}}:\Users\{{UserName}}\AppData\Roaming\StardewValley` and make a copy of the `Saves` folder, in case anything would go wrong.
+2. Go to the [GitHub repo with correct branch](https://github.com/DenisSilent/Eleanor/tree/development_UNSTABLE!).
+3. Click on the green button "Code" and select "Download ZIP"
+4. Unzip the downloaded file and copy the extracted `[NPC] Eleanor` folder to your `.../Stardew Valley/Mods` folder
+5. Test the mod in your game and report any bugs you find to the [GitHub issues page](https://github.com/DenisSilent/Eleanor/issues), please include the version number of the mod you used and a description of the bug, if possible also a screenshot or a video of the bug happening in your game.
+6. Enjoy the mod (and its bugs)!
+
+---
+
+## version 1.0.0-alpha.12 (25.4.2025)
+
+* Multi-device connectivity tests
+* Fixed incorrect mail after Eleanor gets back from summer trip year 1 if Hogwarts mod is installed
+* Rewritten the events code (and modernized their preconditions) to be more readable and easier to maintain
+
 ---
 
 ## version 1.0.0-alpha.11 (20.4.2025)

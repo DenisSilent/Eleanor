@@ -9,16 +9,14 @@
         "{{ModId}}_mail_HogwartsTrips": {
           "Id": "{{ModId}}_mail_HogwartsTrips",
           "Trigger": "DayStarted",
-          "Action": "AddMail Current {{ModId}}_mail_HogwartsTrips",  // if you want the mail to be sent immediately, add "Now" at the end
-          "When": {
-            "HasSeenEvent |contains=StrojvedouciDenis.Eleanor_Hog_gone_y1": true,
-            "Day": 10,
-            "Season": "Summer"
-          }
+          "Actions": [
+            "AddMail Current {{ModId}}_mail_HogwartsTrips now" // if you want the mail to be sent immediately, add "Now" at the end
+          ],
+          "Condition": "PLAYER_HAS_SEEN_EVENT Current StrojvedouciDenis.Eleanor_Hog_gone_y1, DAY_OF_MONTH 10, SEASON summer"
         }
       }
     },
-    
+
     // the mail itself
     {
       "LogName": "Eleanor - mails",

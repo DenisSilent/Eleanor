@@ -2,7 +2,7 @@
   "Changes": [
     /*
     {
-      "LogName": "Eleanor - event - 0hearts - Introduction",
+      "LogName": "Eleanor - event -debugger",
       "Action": "EditData",
       "Target": "Data/Events/farm",
       "Entries": {
@@ -24,7 +24,7 @@
       "Action": "EditData",
       "Target": "Data/Events/farm",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_Intro/e 112":
+        "StrojvedouciDenis.Eleanor_Intro/SawEvent 112":
         "none/-1000 -1000/farmer 2 2 2 {{ModId}} 3 3 0/
         skippable/
         addConversationTopic {{ModId}}.CT_Intro 2/
@@ -56,7 +56,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_2hearts/e StrojvedouciDenis.Eleanor_Intro/f {{ModId}} 500/t 600 1200":
+        "StrojvedouciDenis.Eleanor_2hearts/SawEvent StrojvedouciDenis.Eleanor_Intro/Friendship {{ModId}} 500/t 600 1200":
         "none/21 31/farmer 21 20 2 {{ModId}} 16 30 1/
         skippable/
         addConversationTopic  {{ModId}}.CT_2h 2/
@@ -114,7 +114,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Custom_WizardBasement",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_4hearts/e StrojvedouciDenis.Eleanor_2hearts/f {{ModId}} 1000/t 1800 2600": "none/14 12/farmer -1000 -1000 2 {{ModId}} 4 19 3/
+        "StrojvedouciDenis.Eleanor_4hearts/SawEvent StrojvedouciDenis.Eleanor_2hearts/Friendship {{ModId}} 1000/t 1800 2600": "none/14 12/farmer -1000 -1000 2 {{ModId}} 4 19 3/
         skippable/
         addConversationTopic  {{ModId}}.CT_4h 2/
         beginSimultaneousCommand/
@@ -216,7 +216,7 @@
       Events/
       Town",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_6hearts/e StrojvedouciDenis.Eleanor_4hearts/ f {{ModId}} 1500": "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
+        "StrojvedouciDenis.Eleanor_6hearts/SawEvent StrojvedouciDenis.Eleanor_4hearts/Friendship {{ModId}} 1500": "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
         skippable/
         end"
       }
@@ -233,7 +233,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_7hearts/e StrojvedouciDenis.Eleanor_4hearts/f {{ModId}} 1750/w rainy":
+        "StrojvedouciDenis.Eleanor_7hearts/SawEvent StrojvedouciDenis.Eleanor_4hearts/Friendship {{ModId}} 1750/Weather rainy":
         "none/52 98/ farmer 35 97 1 {{ModId}} 52 98 2/
         skippable/
         addConversationTopic  {{ModId}}.CT_7h 2/
@@ -367,7 +367,7 @@
       "Action": "EditData",
       "Target": "Data/Events/WizardHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_10hearts-temporary/e StrojvedouciDenis.Eleanor_8hearts/f {{ModId}} 2500":
+        "StrojvedouciDenis.Eleanor_10hearts-temporary/SawEvent StrojvedouciDenis.Eleanor_8hearts/Friendship {{ModId}} 2500":
         "none/10 25/farmer 9 33 0 {{ModId}} 10 17 0/
         skippable/
         addConversationTopic  {{ModId}}.CT_10h-temp 2/
@@ -438,7 +438,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_12hearts/e StrojvedouciDenis.Eleanor_10hearts/f {{ModId}} 3000":
+        "StrojvedouciDenis.Eleanor_12hearts/SawEvent StrojvedouciDenis.Eleanor_10hearts/Friendship {{ModId}} 3000":
         "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
         skippable/
         end"
@@ -458,7 +458,7 @@
       "Action": "EditData",
       "Target": "Data/Events/FarmHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p0": // /e StrojvedouciDenis.Eleanor_10hearts/f {{ModId}} 3500
+        "StrojvedouciDenis.Eleanor_14hearts-p0": // /SawEvent StrojvedouciDenis.Eleanor_10hearts/Friendship {{ModId}} 3500
         "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
         eventSeen StrojvedouciDenis.Eleanor_14hearts-p0 false/
         end"
@@ -499,7 +499,7 @@
       "Action": "EditData",
       "Target": "Data/Events/FarmHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p1": // /e StrojvedouciDenis.Eleanor_10hearts/f {{ModId}} 3500
+        "StrojvedouciDenis.Eleanor_14hearts-p1": // /SawEvent StrojvedouciDenis.Eleanor_10hearts/Friendship {{ModId}} 3500
         "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
         viewport -1000 -1000/
         pause 2500/
@@ -584,7 +584,7 @@
       "Action": "EditData",
       "Target": "Data/ Events/FarmHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p1": // /e StrojvedouciDenis.Eleanor_10hearts/f {{ModId}} 3500
+        "StrojvedouciDenis.Eleanor_14hearts-p1": // /SawEvent StrojvedouciDenis.Eleanor_10hearts/Friendship {{ModId}} 3500
         "none/-1000 -1000/farmer 0 0 0 {{ModId}} 0 0 0/
         viewport -1000 -1000/
         pause 4500/
@@ -727,7 +727,7 @@
       "Action": "EditData",
       "Target": "Data/Events/WizardHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p2": // /e StrojvedouciDenis.Eleanor_14hearts-p1
+        "StrojvedouciDenis.Eleanor_14hearts-p2": // /SawEvent StrojvedouciDenis.Eleanor_14hearts-p1
         "none/-1000 -1000/farmer 9 33 0 Wizard 7 7 0/
         message \"{{i18n:Events.14h-p2.0|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 300/ --Fade in code taken and edited with permissions from user `abagaianye` on Discord. Thanks! <3 Fade code start/
@@ -787,7 +787,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Custom_SpriteSpring2",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p3":  // /e StrojvedouciDenis.Eleanor_14hearts-p2
+        "StrojvedouciDenis.Eleanor_14hearts-p3":  // /SawEvent StrojvedouciDenis.Eleanor_14hearts-p2
         "none/-1000 -1000/farmer 10 23 1 Wizard 10 22 1/
         addObject 18 23 97/ -- spawn dwarf scroll II as a note/
         pause 2222/
@@ -916,7 +916,7 @@
       "Action": "EditData",
       "Target": "Data/Events/SeedShop",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p4":  // /e StrojvedouciDenis.Eleanor_14hearts-p3
+        "StrojvedouciDenis.Eleanor_14hearts-p4":  // /SawEvent StrojvedouciDenis.Eleanor_14hearts-p3
         "none/-1000 -1000/farmer 0 0 0 Abigail 1 1 0/
         pause 2222/
         message \"{{i18n:Events.14h-p4.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
@@ -962,7 +962,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Beach",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p5": // /e StrojvedouciDenis.Eleanor_14hearts-p4
+        "StrojvedouciDenis.Eleanor_14hearts-p5": // /SawEvent StrojvedouciDenis.Eleanor_14hearts-p4
         "none/-1000 -1000/farmer 0 0 0 {{ModId}} 0 0 0/
         nonskippable/
         pause 2222/
@@ -1105,7 +1105,7 @@
       "Action": "EditData",
       "Target": "Data/Events/FarmHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p6/e StrojvedouciDenis.Eleanor_14hearts-p5":
+        "StrojvedouciDenis.Eleanor_14hearts-p6/SawEvent StrojvedouciDenis.Eleanor_14hearts-p5":
         "none/-1000 -1000/farmer 0 0 0 {{ModId}} 0 0 0/
         nonskippable/
         pause 2222/
@@ -1126,7 +1126,7 @@
       "Action": "EditData",
       "Target": "Data/ Events/ WizardHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-short_SVE/ e StrojvedouciDenis.Eleanor_10hearts/f {{ModId}} 3500":
+        "StrojvedouciDenis.Eleanor_14hearts-short_SVE/ e StrojvedouciDenis.Eleanor_10hearts/Friendship {{ModId}} 3500":
         "none/10 25/farmer 9 33 0 {{ModId}} 10 17 0/
         skippable/
         viewport move 0 -2 4000/
@@ -1199,7 +1199,7 @@
       "Action": "EditData",
       "Target": "Data/Events/HogwartsET.CP.Hogwarts_HogsmeadeVillage",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-short_Hog/ e StrojvedouciDenis.Eleanor_10hearts/e {{ModId}}Hog_y1/f {{ModId}} 3500":
+        "StrojvedouciDenis.Eleanor_14hearts-short_Hog/ e StrojvedouciDenis.Eleanor_10hearts/SawEvent {{ModId}}Hog_y1/Friendship {{ModId}} 3500":
         "none/-1000 -1000/farmer 22 20 0 {{ModId}} 22 24 0/
         pause 2222/
         move farmer 23 24 1/
@@ -1281,21 +1281,20 @@
       "Action": "EditData",
       "Target": "Data/Events/farm",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_Hog_gone_y1/e {{ModId}}Intro/j 30":
+        "StrojvedouciDenis.Eleanor_Hog_gone_y1/SawEvent {{ModId}}_Intro/DaysPlayed 30":
         "none/-1000 -1000/farmer 2 2 2 Wizard 3 3 0/
         skippable/
         addConversationTopic  {{ModId}}.CT_Hog_gone 6/
         pause 2222/
         speak Wizard \"{{i18n:Events.addons.Hog_gone_y1.0|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        /
         speak Wizard \"{{i18n:Events.addons.Hog_gone_y1.1|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         end"
-      },
+      },/*
       "When": {
         "HasMod": "HogwartsET.CP.Hogwarts"
-      }
+      }*/
     }
 /*
     Something interesting is preparing for SV 1.6.16:
