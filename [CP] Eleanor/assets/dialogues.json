@@ -257,43 +257,12 @@
       }
     },
     {
-      "LogName": "Eleanor - marriage reject dialogues",
-      "Action": "EditData",
-      "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
-      "Entries": {
-"RejectBouquet_AlreadyAccepted_Engaged": "{{i18n:Dialogues.RejectBouquet_AlreadyAccepted_Engaged |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectBouquet_AlreadyAccepted_Married": "{{i18n:Dialogues.RejectBouquet_AlreadyAccepted_Married |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectBouquet_AlreadyAccepted": "{{i18n:Dialogues.RejectBouquet_AlreadyAccepted |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-
-"RejectRoommateProposal": "{{i18n:Dialogues.RejectRoommateProposal |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectRoommateProposal_AlreadyAccepted": "{{i18n:Dialogues.RejectRoommateProposal_AlreadyAccepted |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectRoommateProposal_NpcWithSomeoneElse": "{{i18n:Dialogues.RejectRoommateProposal_NpcWithSomeoneElse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectRoommateProposal_PlayerWithSomeoneElse": "{{i18n:Dialogues.RejectRoommateProposal_PlayerWithSomeoneElse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectRoommateProposal_LowFriendship": "{{i18n:Dialogues.RejectRoommateProposal_LowFriendship |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectRoommateProposal_SmallHouse": "{{i18n:Dialogues.RejectRoommateProposal_SmallHouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
-
-"RejectMermaidPendant": "{{i18n:Dialogues.RejectMermaidPendant |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectMermaidPendant_Divorced": "{{i18n:Dialogues.RejectMermaidPendant_Divorced |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectMermaidPendant_NeedHouseUpgrade": "{{i18n:Dialogues.RejectMermaidPendant_NeedHouseUpgrade |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectMermaidPendant_NotDatable": "{{i18n:Dialogues.RejectMermaidPendant_NotDatable |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectMermaidPendant_NpcWithSomeoneElse": "{{i18n:Dialogues.RejectMermaidPendant_NpcWithSomeoneElse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectMermaidPendant_PlayerWithSomeoneElse": "{{i18n:Dialogues.RejectMermaidPendant_PlayerWithSomeoneElse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectMermaidPendant_Under8Hearts": "{{i18n:Dialogues.RejectMermaidPendant_Under8Hearts |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectMermaidPendant_Under10Hearts": "{{i18n:Dialogues.RejectMermaidPendant_Under10Hearts |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectMermaidPendant_Under10Hearts_AskedAgan": "{{i18n:Dialogues.RejectMermaidPendant_Under10Hearts_AskedAgain |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectMermaidPendant_AlreadyAccepted": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectMermaidPendant_AlreadyAccepted_Engaged": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted_Engaged |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-"RejectMermaidPendant_AlreadyAccepted_Married": "{{i18n:Dialogues.RejectMermaidPendant_AlreadyAccepted_Married |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
-      }
-    },
-
-    {
       "LogName": "Eleanor - marriage dialogues",
       "Action": "EditData",
       "Target": "Characters/Dialogue/MarriageDialogueEleanor",
       "Entries": {
         /*
-        These 2 commented lines below will stay here as a memory of the Discord chat with many user (including Pathoschild, who gave me the 1st line)
+        These 2 commented lines below will stay here as a memory of the Discord chat with many user (including one of the mod devs Pathoschild, who gave me the 1st line) from 7.1.2025
        "Rainy_Day_{{Random: {{Range:0,4}} |key=rainy_day}}": "{{i18n:Dialogues. rainy-day.{{Random: {{Range:0,4}} |key=rainy_day}}}}",
         "Rainy_Night": "{{i18n:Dialogues.{{ModId}}.Rainy_Day_{{Random:{{Range:0,5}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
 */

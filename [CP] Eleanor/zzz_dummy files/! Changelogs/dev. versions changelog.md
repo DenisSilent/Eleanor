@@ -14,6 +14,14 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.13 (26.4.2025)
+
+* Multi-device connectivity tests
+* Fixed missing changelog for some versions
+* Added and slightly reorginized some dialouges (`RejectMermaidPendant` and `RejectBouquet`)
+
+---
+
 ## version 1.0.0-alpha.12 (25.4.2025)
 
 * Multi-device connectivity tests

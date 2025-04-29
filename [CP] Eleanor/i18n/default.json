@@ -63,7 +63,7 @@
   "Dispositions.DT_wizard_fem.ORG": "he",
   "Dispositions.DT_wizard_fem.patched": "she",
   */
-  
+
   // Dispositions
   "DisplayName": "Eleanor",
 
@@ -220,35 +220,6 @@
   "Dialogues.SpouseGiftJealous": "So, {{DT_name}}, I heard you gave {0} a {1} as a gift...#$b#I hope you're not trying to make me jealous...",
   "Dialogues.Spouse_MonstersInHouse": "Ehm... {{DT_name}}? Why are there monsters in our house?#$b#Should I get rid of them?",
   "Dialogues.WipedMemory": "Huh... I feel like I know you, but I can't remember anything...#$b#Who are you?#$b#And why are you here?#$b#I'm sorry, but I can't remember anything...#$b#By the way, my name is Eleanor.",
-
-  /*
-  commented out until dialogue update (0.9.0) or marriage update (1.0.0); do NOT translate (there isn't anything to translate anyway...)
-
-"Dialogues.RejectMermaidPendant": "",
-"Dialogues.RejectMermaidPendant_Divorced": "",
-"Dialogues.RejectMermaidPendant_NeedHouseUpgrade": "",
-"Dialogues.RejectMermaidPendant_NotDatable": "",
-"Dialogues.RejectMermaidPendant_NpcWithSomeoneElse": "",
-"Dialogues.RejectMermaidPendant_PlayerWithSomeoneElse": "",
-"Dialogues.RejectMermaidPendant_Under8Hearts": "",
-"Dialogues.RejectMermaidPendant_Under10Hearts": "",
-"Dialogues.RejectMermaidPendant_Under10Hearts_AskedAgain": "",
-
-"Dialogues.RejectBouquet_AlreadyAccepted_Engaged": "",
-"Dialogues.RejectBouquet_AlreadyAccepted_Married": "",
-"Dialogues.RejectBouquet_AlreadyAccepted": "",
-
-"Dialogues.RejectMermaidPendant_AlreadyAccepted_Engaged": "",
-"Dialogues.RejectMermaidPendant_AlreadyAccepted_Married": "",
-"Dialogues.RejectMermaidPendant_AlreadyAccepted": "",
-
-"Dialogues.RejectRoommateProposal": "",
-"Dialogues.RejectRoommateProposal_AlreadyAccepted": "",
-"Dialogues.RejectRoommateProposal_NpcWithSomeoneElse": "",
-"Dialogues.RejectRoommateProposal_PlayerWithSomeoneElse": "",
-"Dialogues.RejectRoommateProposal_LowFriendship": "",
-"Dialogues.RejectRoommateProposal_SmallHouse": "",
-*/
 
   //Conversation Topics
   // Own CT
@@ -825,12 +796,12 @@
 
   "Festivals.WinterStar_ReceiveGift": "Oh, so you are my secret gift giver, {{DT_name}}?#$b#Thank you so much!#$b#I really like this gift!#$b#I hope you'll like yours too.",
   /*
-"Festivals.WinterStar_GiveGift_Before_Roommate": "",
-"Festivals.WinterStar_GiveGift_Before_Spouse": "",
-"Festivals.WinterStar_GiveGift_Before": "",
-"Festivals.WinterStar_GiveGift_After_Roommate": "",
-"Festivals.WinterStar_GiveGift_After_Spouse": "",
-"Festivals.WinterStar_GiveGift_After": "",
+  //"Festivals.WinterStar_GiveGift_Before_Roommate": "",
+  "Festivals.WinterStar_GiveGift_Before_Spouse": "",
+  "Festivals.WinterStar_GiveGift_Before": "",
+  //"Festivals.WinterStar_GiveGift_After_Roommate": "",
+  "Festivals.WinterStar_GiveGift_After_Spouse": "",
+  "Festivals.WinterStar_GiveGift_After": "",
 */
 
   // gifts.json
@@ -844,9 +815,33 @@
   //"Gifts.RejectItem_(O)460": "OH! {{DT_name}}! So you feel THIS way about me?#$b#Not that I don't feel the same way, but I'm not ready for this yet...#$b#I hope you understand...",
   "Gifts.RejectItem": "{{DT_name}}, are you trying to give me this?#$b#I'm sorry, but I hate this, so I won't accept it.",
 
+  "Gifts.RejectMermaidPendant": "OH! {{DT_name}}! So you feel THIS way about me?#$b#Not that I don't feel the same way, but I'm not ready for this yet...#$b#I hope you understand...",
+  "Gifts.RejectMermaidPendant_AlreadyAccepted_Engaged": "Ehm... You already gave me this less than 3 day ago, {{DT_name}}, don't you remember?#$b#Or are you trying to show me how much you love me by offering me the pendant again?#$b#If so, I really appreciate it, but it just is not a good idea to give it to me again...",
+  "Gifts.RejectMermaidPendant_AlreadyAccepted_Married": "{{DT_name}}, we're already married! Didn't you notice?#$b#Why are you giving this to me? Are you feeling OK? Should I take you to the doctor?",
+  "Gifts.RejectMermaidPendant_AlreadyAccepted": "Ehm... {{DT_name}}, you already gave me this, don't you remember?#$b#It just is not possible to give it to me again...#$b#Or are you trying to show me how much you love me by offering me the pendant again?",
+  "Gifts.RejectMermaidPendant_Divorced": "Really?#$b#After all, after everything that happened between us, you want to give me this?#$b#Sadly for you, no, {{DT_name}}, I won't accept it, and I reccomend you to not try to give it to me again.",
+  "Gifts.RejectMermaidPendant_NeedHouseUpgrade": "OH! {{DT_name}}! So you feel THIS way about me?#$b#Not that I don't feel the same way, but isn't your house too small for us to live together?",
+  // "Gifts.RejectMermaidPendant_NotDatable": "", // Ommited, as Eleanor is datable and marriable since 1.0.0 + not used in previous versions
+  "Gifts.RejectMermaidPendant_NpcWithSomeoneElse": "{{DT_name}}, I know you like me, but I can't accept this.#$b#I don't want to hurt your feelings, but I have already found someone...#$b#I hope you understand...",
+  "Gifts.RejectMermaidPendant_PlayerWithSomeoneElse": "{{DT_name}}!#b$#I'd like to accept this, but aren't you with someone else?",
+  "Gifts.RejectMermaidPendant_Under8Hearts": "{{DT_name}}, is this... for me?#$b#Well, I indeed am pleasured by this, however, I'm sure we don't know each other well enough for this. I hope you understand...",
+  "Gifts.RejectMermaidPendant_Under10Hearts": "OH! {{DT_name}}! So you feel THIS way about me?#$b#Not that I don't feel the same way, but I'm not ready for this yet...#$b#I hope you understand...",
+  "Gifts.RejectMermaidPendant_Under10Hearts_AskedAgain": "Ehm... You already asked me this, {{DT_name}}, don't you remember?#$b#Or are you asking me if I'm ready?#$b#If so, I really appreciate your feelings, but I'm sure we have to know each other better before we get married...#$b#I hope you understand...",
+
+  /*
+  "Gifts.RejectRoommateProposal": "",
+  "Gifts.RejectRoommateProposal_AlreadyAccepted": "",
+  "Gifts.RejectRoommateProposal_NpcWithSomeoneElse": "",
+  "Gifts.RejectRoommateProposal_PlayerWithSomeoneElse": "",
+  "Gifts.RejectRoommateProposal_LowFriendship": "",
+  "Gifts.RejectRoommateProposal_SmallHouse": "",
+*/
+
   "Gifts.AcceptBouquet": "Is that what I think it is?#$b#Oh, {{DT_name}}...#$b#I'm so happy you feel this way about me...#$b#I feel the same way...#$e#I'm so happy...",
   "Gifts.RejectBouquet": "Is that what I think it is?#$b#Oh, {{DT_name}}, I'm so sorry, but I can't accept it right now.",
   "Gifts.RejectBouquet_Divorced": "Really?#$b#You're giving me this after what happened between us?#$b#No, {{DT_name}}, I can't accept it...",
+  "Gifts.RejectBouquet_AlreadyAccepted_Engaged": "Ehm... You already gave me this, {{DT_name}}, don't you remember?#$b#Or are you trying to show me how much you like me by offering me the pendant again?#$b#If so, I really appreciate it, but it just is not a good idea to give it to me again...",
+  "Gifts.RejectBouquet_AlreadyAccepted_Married": "{{DT_name}}, we're already married! Didn't you notice?#$b#Why are you giving this to me? Are you feeling OK? Should I take you to the doctor?",
   "Gifts.RejectBouquet_AlreadyAccepted": "Er... {{DT_name}}, I already accepted one bouquet from you...#$b#I can't accept another one...",
   "Gifts.RejectBouquet_NotDatable": "Is that what I think it is?#$b#Oh, {{DT_name}}, I'm so sorry, but I have no romantic feelings for you, at least not right now.",
   "Gifts.RejectBouquet_NpcAlreadyMarried": "{{DT_name}}! Do you know what you're doing?#$b#I'm already married!",

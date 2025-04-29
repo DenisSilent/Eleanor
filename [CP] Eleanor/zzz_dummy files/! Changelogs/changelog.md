@@ -1,15 +1,33 @@
-# **Changelog**
+# **Changelog - list of versions**
 
-This is a list of all officially publicly (both on NexusMods and GitHub)  released verisons of NPC Eleanor.
-For other versions, visit these links:
-Pre-release versions changelog (0.0.0-0.7.4-beta.7): [click here]([https://github.com/DenisSilent/Eleanor/blob/development_UNSTABLE!/%5BCP%5D%20Eleanor/zzz_dummy%20files/!%20Changelogs/dev.%20versions%20changelog.md)
-Development versions changelog (f.e. 1.0.0-alpha.1): [click here](https://github.com/DenisSilent/Eleanor/blob/development_UNSTABLE!/%5BCP%5D%20Eleanor/zzz_dummy%20files/!%20Changelogs/pre-release%20versions%20changelog.md)
+Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/commits/main/)
+
+---
+
+## version 0.9.4 (25.4.2025)
+
+* Fixed incorrect mail after Eleanor gets back from summer trip year 1 if Hogwarts mod is installed
+* Rewritten the events code (and modernized their preconditions) to be more readable and easier to maintain
+* Finally found a valid method to translate the dynamic tokens
+* Parted the changelog to different files
+
+---
+
+## version 0.9.3 (31.3.2025)
+
+* Fixed the mermaid bouquet (from Polyamory Sweet) fix so now it'll refer to correct i18n key
+* Added a mail after Eleanor gets back from summer trip year 1 if Hogwarts mod is installed
+* Prepared parts of the dialogues and code for 1.0.0 update
+* Rewritten some 14 hearts event dialogues and therefore slightly changed Eleanor's (unreveared) history
+* Cleaned up some code mess
+* Fixed some spelling errors here in changelog
+* Probably fixed unknown installation chcek error in CSharp part of the mod
 
 ---
 
 ## version 0.9.2 (30.3.2025)
 
-* Hopefully fixed year 1 Moonlight Jelly Fest position - overlapping with Toshinori
+* Hopefully fixed year 1 Moonligt Jelly Fest position - overlapping with Toshinori
 * Added fallback dialogue for all of Eleanor's dialogues (even event or the mail ones)
 * Changed `M. Rasmodia` to `Ms. Rasmodia` after a check from `nom0ri` (Rasmodia's author)
 * Fallback dialogue Discord help by:
@@ -21,10 +39,8 @@ Development versions changelog (f.e. 1.0.0-alpha.1): [click here](https://github
 
 ---
 
-## version 0.9.1 (30.3.2025)
-
 * Deactivated Secret mail about installation
-* Deactivated Secret mail about installation
+* Deactivated Secret mail about instalation
 * Internal code fixes
 
 ---
@@ -73,7 +89,7 @@ Development versions changelog (f.e. 1.0.0-alpha.1): [click here](https://github
 * **Added a part of the sprites and portraits created by hezjena2023! Thanks so much for doing the art ❤**
 * Re-edited and reorganized NPC graphics code and folders -> decreased the mod's size X delete the old version before installing the new one
   * Vanilla-like portraits are created using and editing art from [Stardew Valley Character Creator](https://jazzybee.itch.io/sdvcharactercreator) (credits to Poltergeister & Jaz) and are therefore shared, like my ORG ones, under Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License. Sprites are handmade. For future info, please contact them.
-* Reedited and reorganized NPC graphics code and folders -> decreased the mod's size X delete the old version before installing the new one
+* Reedited and reorganized NPC graphics code and folders -> decrased the mod's size X delete the old version before istalling the new one
 * Fixed some secrets + added a new one that'll trigger after you trigger all other ones
 * Internal code reorganization
 * Invisible dialogue checker (for secrets) Discord help by:
@@ -90,13 +106,13 @@ Development versions changelog (f.e. 1.0.0-alpha.1): [click here](https://github
 
 ## version 0.8.8 (21.2.2025)
 
-* Fixed events not able to trigger
+* Fixed events not triggerable
 
 ---
 
 ## version 0.8.7 (20.2.2025)
 
-* Fixed schedules one more time + simplified them (X plan is to do a randomization for them to fight against repetition)
+* Fixed schedules one more time + simplified them (X plan is to do a randomization for them to fight against repetation)
 * Fixed forgotten manifest change
 * Improved code compatibility for [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
 
@@ -139,13 +155,15 @@ Development versions changelog (f.e. 1.0.0-alpha.1): [click here](https://github
 
 ---
 
-* Fixed basic compatibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
-* Fixed basic compatibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
+## version 0.8.2 (14.2.2025)
+
+* Fixed basic compactibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
 
 ---
 
-* Added basic compatibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
-* Added basic compatibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
+## version 0.8.1 (14.2.2025)
+
+* Added basic compactibility with [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)
 * Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
 
 ---
