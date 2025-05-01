@@ -15,10 +15,10 @@
     },
     */
 
-    //  0hearts - Eleanor's introduction
-    //  Location: your farm
-    //  Trigger: Entering your farm after seeing introduction event with Mr. Rasmodius.
-    //  Description: Eleanor introduces herself to the player, greeting them politely and explaining who she is and that she knows about you and Junimos.
+    // 0hearts - Eleanor's introduction
+    // Location: your farm
+    // Trigger: Entering your farm after seeing introduction event with Mr. Rasmodius.
+    // Description: Eleanor introduces herself to the player, greeting them politely and explaining who she is and that she knows about you and Junimos.
     {
       "LogName": "Eleanor - event - 0hearts - Introduction",
       "Action": "EditData",
@@ -47,10 +47,10 @@
       }
     },
 
-    //  2hearts - Eleanor's nature admiring
-    //  Location: Forest
-    //  Trigger: Enter the Forest between 6:00 and 12:00.
-    //  Description: Eleanor is admiring nature when she notices the player. She greets them and asks if they like nature as well.
+    // 2hearts - Eleanor's nature admiring
+    // Location: Forest
+    // Trigger: Enter the Forest between 6:00 and 12:00.
+    // Description: Eleanor is admiring nature when she notices the player. She greets them and asks if they like nature as well.
     {
       "LogName": "Eleanor - event - 2hearts",
       "Action": "EditData",
@@ -59,7 +59,7 @@
         "StrojvedouciDenis.Eleanor_2hearts/SawEvent StrojvedouciDenis.Eleanor_Intro/Friendship {{ModId}} 500/t 600 1200":
         "none/21 31/farmer 21 20 2 {{ModId}} 16 30 1/
         skippable/
-        addConversationTopic  {{ModId}}.CT_2h 2/
+        addConversationTopic {{ModId}}.CT_2h 2/
         pause 1111/
         Move farmer 0 10 2 true/
         pause 4444/
@@ -105,10 +105,10 @@
       }
     },
 
-    //  4hearts - The book search
-    //  Location: Wizard's basement
-    //  Trigger: Enter the Wizard's basement after 18:00.
-    //  Description: Eleanor will be searching for a book when she notices the player. She asks them for help in finding it.
+    // 4hearts - The book search
+    // Location: Wizard's basement
+    // Trigger: Enter the Wizard's basement after 18:00.
+    // Description: Eleanor will be searching for a book when she notices the player. She asks them for help in finding it.
     {
       "LogName": "Eleanor - event - 4hearts",
       "Action": "EditData",
@@ -116,7 +116,7 @@
       "Entries": {
         "StrojvedouciDenis.Eleanor_4hearts/SawEvent StrojvedouciDenis.Eleanor_2hearts/Friendship {{ModId}} 1000/t 1800 2600": "none/14 12/farmer -1000 -1000 2 {{ModId}} 4 19 3/
         skippable/
-        addConversationTopic  {{ModId}}.CT_4h 2/
+        addConversationTopic {{ModId}}.CT_4h 2/
         beginSimultaneousCommand/
         textAboveHead {{ModId}} \"{{i18n:Events.4h.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
@@ -205,10 +205,10 @@
       }
     },
 /*
-    //  6hearts - ???
-    //  Location: ???
-    //  Trigger: ???
-    //  Description: ???
+    // 6hearts - ???
+    // Location: ???
+    // Trigger: ???
+    // Description: ???
     {
       "LogName": "Eleanor - event - 6hearts",
       "Action": "EditData",
@@ -224,10 +224,10 @@
 */
 
 // *
-    //  7hearts - Check on Eleanor
-    //  Location: Forest
-    //  Trigger: Enter the Forest when it is raining.
-    //  Description: You and Eleanor are getting closer to each other.
+    // 7hearts - Check on Eleanor
+    // Location: Forest
+    // Trigger: Enter the Forest when it is raining.
+    // Description: You and Eleanor are getting closer to each other.
     {
       "LogName": "Eleanor - event - 7hearts",
       "Action": "EditData",
@@ -236,7 +236,7 @@
         "StrojvedouciDenis.Eleanor_7hearts/SawEvent StrojvedouciDenis.Eleanor_4hearts/Friendship {{ModId}} 1750/Weather rainy":
         "none/52 98/ farmer 35 97 1 {{ModId}} 52 98 2/
         skippable/
-        addConversationTopic  {{ModId}}.CT_7h 2/
+        addConversationTopic {{ModId}}.CT_7h 2/
         pause 1111/
         move farmer 7 0 1/
         pause 555/
@@ -310,10 +310,10 @@
 
 
 /*
-    //  8hearts - Eleanor's puzzle
-    //  Location: Wizard's Tower
-    //  Trigger: Entering the Wizard's Tower between ??? and ???.
-    //  Description: Eleanor is having a discussion with the Wizard about a magical artifact.
+    // 8hearts - Eleanor's puzzle
+    // Location: Wizard's Tower
+    // Trigger: Entering the Wizard's Tower between ??? and ???.
+    // Description: Eleanor is having a discussion with the Wizard about a magical artifact.
     {
       "LogName": "Eleanor - event - 8hearts",
       "Action": "EditData",
@@ -331,37 +331,30 @@
 */
 
 
-    //  10hearts - Eleanor's gift
-    //  Location: Wizard's Tower
-    //  Trigger: Entering the Wizard's Tower after reciving a letter from her.
-    //  Description: Eleanor has prepared a gift for farmer.
-
-    /*
-    Replaced with short 14 hearts event variant until marriage update (1.0.0).
+    // 10hearts - ???
+    // Location: Wizard's Tower
+    // Trigger: ???
+    // Description: ???
     {
       "LogName": "Eleanor - event - 10hearts",
       "Action": "EditData",
-      "Target": "Data/
-      Events/
-      Forest",
+      "Target": "Data/Events/Forest",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_10hearts/
-        e StrojvedouciDenis.Eleanor_8hearts/
-        f {{ModId}} 2500": "none/
-        -1000 -1000/
-        farmer 0 0 0 {{ModId}} 1 1 0/
+        "StrojvedouciDenis.Eleanor_10hearts/e StrojvedouciDenis.Eleanor_8hearts/Friendship {{ModId}} 2500":
+        "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
         skippable/
+        pause 1111/
         end"
       }
     },
-    */
 
 
-    //  10 hearts - same as 14 hearts short event variants
-    //  SVE only version
-    //  Location: Wizard's Tower
-    //  Trigger: Entering the Wizard's Tower after reaching 10 hearts with Eleanor.
-    //  Description: Eleanor shares her history with the player, revealing her past and her connection to magic.
+
+    // 10 hearts - same as 14 hearts short event variants
+    // SVE only version
+    // Location: Wizard's Tower
+    // Trigger: Entering the Wizard's Tower after reaching 10 hearts with Eleanor.
+    // Description: Eleanor shares her history with the player, revealing her past and her connection to magic.
     {
       "LogName": "Eleanor - 10hearts temporary event (14h SVE short)",
       "Action": "EditData",
@@ -370,7 +363,7 @@
         "StrojvedouciDenis.Eleanor_10hearts-temporary/SawEvent StrojvedouciDenis.Eleanor_8hearts/Friendship {{ModId}} 2500":
         "none/10 25/farmer 9 33 0 {{ModId}} 10 17 0/
         skippable/
-        addConversationTopic  {{ModId}}.CT_10h-temp 2/
+        addConversationTopic {{ModId}}.CT_10h-temp 2/
         viewport move 0 -2 4000/
         pause 1111/
         move farmer 0 -9 0/
@@ -429,10 +422,10 @@
     },
 
 /*
-    //  12hearts - ???
-    //  Location: ???
-    //  Trigger: ???
-    //  Description: ???
+    // 12hearts - ???
+    // Location: ???
+    // Trigger: ???
+    // Description: ???
     {
       "LogName": "Eleanor - event - 12hearts",
       "Action": "EditData",
@@ -447,24 +440,25 @@
 */
 
 
-    //  14hearts
-    //  Part 0 - event checker
-    //  Location: your farm
-    //  Trigger: Automatically (??? needs testing) after reaching 14 hearts with Eleanor.
-    //  Description: It is an event checker. What do you want from him? It just does its job. Wait, it doesn't, it's commented out ;)
-/*
+    // 14hearts
+    // Part 0 - event checker
+    // Location: your farm
+    // Trigger: Automatically (??? needs testing) after reaching 14 hearts with Eleanor.
+    // Description: It is an event checker. What do you want from him? It just does its job. Wait, it doesn't, it's commented out ;)
+
     {
       "LogName": "Eleanor - 14hearts event (p0) - evnet checker",
       "Action": "EditData",
       "Target": "Data/Events/FarmHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p0": // /SawEvent StrojvedouciDenis.Eleanor_10hearts/Friendship {{ModId}} 3500
-        "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
-        eventSeen StrojvedouciDenis.Eleanor_14hearts-p0 false/
+        "StrojvedouciDenis.Eleanor_14hearts-p0/SawEvent StrojvedouciDenis.Eleanor_10hearts/Friendship {{ModId}} 3500":
+        "none/-1000 -1000/farmer 0 0 0/
+        addConversationTopic {{ModId}}.CT_14h 2/
+        quickQuestion {{i18n:Events.14h-p0.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent StrojvedouciDenis.Eleanor_14hearts-p1(break)eventSeen StrojvedouciDenis.Eleanor_14hearts-p0 false/
         end"
       }
     },
-*/
+
     /*  
           Code taken with permissions from user `abagaianye` on Discord. Thanks! <3
           BTW, that's a fade to black and back event code
@@ -487,13 +481,13 @@
     */
 
 
-    //  long versions
-    //  NOTE: Multiplayer does NOT pause time during cutscenes! One in-game hour = 43 real world seconds, full day = 14 minutes 20 seconds... (Taken from: https://stardewmodding.wiki.gg/wiki/Tips_for_Heart_Events_-_Writing_and_Narrative_Design#Additional_Tips,_Caveats_and_Notes)
-    //  Part 1 - Eleanor's note
-    //  NOTE: This event will be unique depending on your configuration.
-    //  Location: your farmhouse
-    //  Trigger: Automatically when getting up at your farmhouse after reaching 14 hearts with {{ModId}}.
-    //  Description: Eleanor will be gone and you will find a letter from her.
+    // long versions
+    // NOTE: Multiplayer does NOT pause time during cutscenes! One in-game hour = 43 real world seconds, full day = 14 minutes 20 seconds... (Taken from: https://stardewmodding.wiki.gg/wiki/Tips_for_Heart_Events_-_Writing_and_Narrative_Design#Additional_Tips,_Caveats_and_Notes)
+    // Part 1 - Eleanor's note
+    // NOTE: This event will be unique depending on your configuration.
+    // Location: your farmhouse
+    // Trigger: Automatically when getting up at your farmhouse after reaching 14 hearts with {{ModId}}.
+    // Description: Eleanor will be gone and you will find a letter from her.
     {
       "LogName": "Eleanor - 14hearts event (p1) - Eleanor's letter (no comment)",
       "Action": "EditData",
@@ -955,7 +949,7 @@
 
     // Part 5 - The end
     // Location: The beach
-    //  Trigger: Immediatly after talking to Abigail.
+    // Trigger: Immediatly after talking to Abigail.
     // Description: Happy end. You find Eleanor on the beach, safe. The mystery will be solved.
     {
       "LogName": "Eleanor - 14hearts event (p5) - The end",
@@ -1254,8 +1248,8 @@
         "14hearts-variants": "short"
       }
     },
-
-// Marriage testing event from Custom Wedding Ceremony
+/*
+// Marriage testing event
     {
       "LogName": "Eleanor - custom wedding test",
       "Action": "EditData",
@@ -1270,6 +1264,7 @@
           }
 },
   },
+*/
 
 // Addon events
 // Hogwarts gone - y1
@@ -1284,17 +1279,17 @@
         "StrojvedouciDenis.Eleanor_Hog_gone_y1/SawEvent {{ModId}}_Intro/DaysPlayed 30":
         "none/-1000 -1000/farmer 2 2 2 Wizard 3 3 0/
         skippable/
-        addConversationTopic  {{ModId}}.CT_Hog_gone 6/
+        addConversationTopic {{ModId}}.CT_Hog_gone 6/
         pause 2222/
         speak Wizard \"{{i18n:Events.addons.Hog_gone_y1.0|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         speak Wizard \"{{i18n:Events.addons.Hog_gone_y1.1|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         end"
-      },/*
+      },
       "When": {
         "HasMod": "HogwartsET.CP.Hogwarts"
-      }*/
+      }
     }
 /*
     Something interesting is preparing for SV 1.6.16:

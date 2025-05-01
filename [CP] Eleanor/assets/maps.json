@@ -1,0 +1,46 @@
+{
+  /*
+https://stardewvalleywiki.com/Modding:Maps
+https://stardewvalleywiki.com/Modding:Location_data
+
+https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/action-load.md
+https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/action-editmap.md
+    */
+  "Changes": [
+    {
+      "LogName": "{{ModId}} - maps - Eleanor's home load command",
+      "Action": "Load",
+      "Target": "Maps/Eleanor_home",
+      "FromFile": "assets/maps/Eleanor_home.tmx"
+    },
+    // add location data
+    {
+      "LogName": "{{ModId}} - maps - Eleanor's home location data",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "Eleanor_home": {
+          "CreateOnLoad": {
+            "MapPath": "Maps/Eleanor_home"
+          }
+        }
+      }
+    },
+    {
+      "LogName": "{{ModId}} - maps - Eleanor's home - warp to Eleanor's home",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_WizardBasement",
+      "AddWarps": [
+        "23 6 Eleanor_home 10 10" // warp from 23 6 of Custom_WizardBasement to 10 10 of Eleanor_home
+      ]
+    },
+    {
+        "LogName": "{{ModId}} - maps - Eleanor's home - warp from Eleanor's home",
+        "Action": "EditMap",
+        "Target": "Maps/Eleanor_home",
+        "AddWarps": [
+          "10 10 Custom_WizardBasement 23 6" // warp from 10 10 of Eleanor_home to 23 6 of Custom_WizardBasement
+        ]
+      }
+  ]
+}

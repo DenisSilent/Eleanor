@@ -353,6 +353,34 @@
       }
     },
 
+    // Generic topics
+/*
+achievement_<id> 	Player earns the given achievement for the first time.
+cropMatured_<object id> 	Player has harvested a fully-grown crop of the given type for the first time.
+dating_<npc internal name> 	Player begins dating the given NPC for the first time (only set when the player gives the NPC a bouquet and it is accepted; other means of changing the relationship do not count).
+divorced_<npc internal name> 	Player divorces the given NPC for the first time (only set when using the book in the Mayor's Manor; does not apply to roommates).
+eventSeen_<id> 	Player sees the given event for the first time.
+firstVisit_<location name> 	Player enters the given location for the first time.
+fishCaught_<id> 	Player catches the given fish for the first time.
+houseUpgrade_<level> 	Player upgrades their house to the given level (e.g. 2).
+married_<npc internal name> 	Player marries the given NPC for the first time (only set by watching the wedding event with that NPC; other means of changing the relationship do not count).
+mineArea_<area> 	Player enters the given mine area (an integer) for the first time. This is 0 for floors 1-10, 10 for floors 11-39, 40 for floors 40-79, 80 for floors 80-120, 121 for any Skull Cavern floors, and 77377 for the Quarry Mine. (FIXME: there may be other values for MineShafts with level == -1)
+purchasedAnimal_<type> 	Player buys the given animal type for the first time.
+questComplete_<id> 	Player completes the given quest for the first time.
+roommates_<npc internal name> 	The given NPC moves in as the player's roommate for the first time.
+structureBuilt_<type> 	Player builds the given type of farm building for the first time.
+*/
+/*
+{
+  "LogName": "Eleanor - dialogues - Generic topics",
+  "Action": "EditData",
+  "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
+  "Entries": {
+    "achievement_Perfection": "{{i18n:Dialogues.addons.achievement_Perfection |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+  }
+},
+*/
+
     // Other mods
     {
       "LogName": "Eleanor - dialogues - Hogwarts",

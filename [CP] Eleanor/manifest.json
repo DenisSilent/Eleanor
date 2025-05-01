@@ -11,7 +11,7 @@
 
   // Current Version
 
-  "Version": "1.0.0-alpha.12",
+  "Version": "1.0.0-alpha.14",
 
   // Description
 
@@ -75,6 +75,14 @@
     },
     {
       "UniqueID": "HogwartsET.CP.Hogwarts", // Hogwarts
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Spiderbuttons.BETAS",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "spacechase0.SpaceCore",
       "IsRequired": false
     }
   ]

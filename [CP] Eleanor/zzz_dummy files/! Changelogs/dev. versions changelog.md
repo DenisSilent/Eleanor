@@ -14,6 +14,20 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.14 (1.5.2025)
+
+* Multi-device connectivity tests
+* Fixed missing changelog for some versions
+* Added and slightly reorginized some dialouges (`RejectMermaidPendant` and `RejectBouquet`)
+* Started creating Eleanor's home
+* Created addons file
+  * First addon: CT's created with BETAS
+* Added 2 false/soft dependencies - BETAS and SpaceCore (for future addons)
+* Event formating edits
+* Added festival locations
+
+---
+
 ## version 1.0.0-alpha.13 (26.4.2025)
 
 * Multi-device connectivity tests
