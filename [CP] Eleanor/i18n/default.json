@@ -856,6 +856,10 @@
   "Gifts.AcceptBirthdayGift_Positive": "Is that... a birthday gift for me, {{DT_name}}?#$b#Oh, thank you so much!#$b#I'm so happy you remembered my birthday...",
   "Gifts.RejectGift_Divorced": "Oh really, {{DT_name}}?#$b#You're giving me this after what happened between us?#$b#No, {{DT_name}}, I can't accept it...",
 
+
+  // Maps.json
+  "Maps.Eleanor.home_broom": "Looks like this broom is used for cleaning. Could it also be used for flying?",
+
   // mails.json
   "Mail.HogwartsTrips": "Good day, {{DT_name}},^^I'm writing to you because I was told that  {{DT_wizard_name}} visited you because of my trip to Hogwarts.^^I have to go there every year, as both me being a student and because of something regarding my past... So I'm just letting you know I came back from there, and that will repeat every year.^^I hope you understand. May you have good day.^^Eleanor",
 

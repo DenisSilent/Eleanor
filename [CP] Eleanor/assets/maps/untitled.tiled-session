@@ -4,20 +4,47 @@
         "width": 2
     },
     "activeFile": "Eleanor_home.tmx",
+    "automapping.whileDrawing": false,
     "expandedProjectPaths": [
         "."
     ],
     "fileStates": {
+        "": {
+            "scaleInDock": 2
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SebastianRoom.tmx": {
+            "expandedObjectLayers": [
+                10
+            ],
+            "scale": 3.9461538461538463,
+            "selectedLayer": 9,
+            "viewCenter": {
+                "x": 139.50292397660817,
+                "y": 103.89863547758283
+            }
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SebastianRoom.tmx#1": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SebastianRoom.tmx#p": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SebastianRoom.tmx#v15_townInterior_2": {
+            "scaleInDock": 1
+        },
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SeedShop.tmx": {
+            "expandedObjectLayers": [
+                10
+            ],
             "scale": 3,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 262.66666666666663,
-                "y": 271.3333333333333
+                "x": 145.16666666666669,
+                "y": 185.99999999999997
             }
         },
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SeedShop.tmx#1": {
-            "scaleInDock": 1
+            "scaleInDock": 2
         },
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SeedShop.tmx#2": {
             "scaleInDock": 1
@@ -40,18 +67,21 @@
             "scaleInDock": 1
         },
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WizardHouse.tmx": {
+            "expandedObjectLayers": [
+                10
+            ],
             "scale": 2,
-            "selectedLayer": 7,
+            "selectedLayer": 9,
             "viewCenter": {
-                "x": 47.5,
-                "y": 259
+                "x": 141.75,
+                "y": 296.5
             }
         },
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WizardHouse.tmx#p": {
             "scaleInDock": 1.5
         },
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WizardHouse.tmx#untitled tile sheet": {
-            "scaleInDock": 1.5
+            "scaleInDock": 2
         },
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WizardHouse.tmx#v16_TownInterior_2": {
             "scaleInDock": 1.5
@@ -159,21 +189,39 @@
             "scaleInDock": 1
         },
         "Eleanor_home.tmx": {
-            "scale": 2.052,
-            "selectedLayer": 12,
+            "expandedObjectLayers": [
+                10,
+                11,
+                8
+            ],
+            "scale": 1,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 199.80506822612085,
-                "y": 199.80506822612085
+                "x": 310.5,
+                "y": 214
             }
         },
         "Eleanor_home.tmx#p": {
+            "scaleInDock": 2
+        },
+        "Eleanor_home.tmx#paths": {
             "scaleInDock": 1
+        },
+        "Eleanor_home.tmx#townInterior": {
+            "scaleInDock": 2
+        },
+        "Eleanor_home.tmx#townInterior_2": {
+            "scaleInDock": 1.5
         },
         "Eleanor_home.tmx#untitled tile sheet": {
-            "scaleInDock": 1
+            "scaleInDock": 2,
+            "scaleInEditor": 1
         },
         "Eleanor_home.tmx#v16_TownInterior_2": {
-            "scaleInDock": 1
+            "scaleInDock": 2
+        },
+        "Eleanor_home.tmx#wizard_furniture": {
+            "scaleInDock": 3
         },
         "WizardHouse.tmx": {
             "expandedObjectLayers": [
@@ -206,11 +254,17 @@
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SeedShop.tmx",
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WizardHouse.tmx",
         "Eleanor_home.tmx",
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SebastianRoom.tmx",
         "WizardHouse.tmx",
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WitchHut.tmx",
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/WizardBasement.tbin",
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/ZCCC_Courtyard.tbin",
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin"
     ],
-    "resizeMap.removeObjects": true
+    "resizeMap.removeObjects": true,
+    "tileset.embedInMap": true,
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
 }

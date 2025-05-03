@@ -7,10 +7,11 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
 https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/action-editmap.md
     */
   "Changes": [
+    // Eleanor's home
     {
       "LogName": "{{ModId}} - maps - Eleanor's home load command",
       "Action": "Load",
-      "Target": "Maps/Eleanor_home",
+      "Target": "Maps/{{ModId}}.Maps.Eleanor.home",
       "FromFile": "assets/maps/Eleanor_home.tmx"
     },
     // add location data
@@ -19,10 +20,23 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
       "Action": "EditData",
       "Target": "Data/Locations",
       "Entries": {
-        "Eleanor_home": {
+        "{{ModId}}.Maps.Eleanor.home": {
+          "DisplayName": "Eleanor's home",
+          "DefaultArrivalTile": {
+            "X": 4,
+            "Y": 12
+          },
           "CreateOnLoad": {
-            "MapPath": "Maps/Eleanor_home"
+            "MapPath": "Maps/{{ModId}}.Maps.Eleanor.home"
+          },
+          "CanPlantHere": false,
+          "CanHaveGreenRainSpawns": false,
+         /*
+          "Music": {
+            "Id": "{{ModId}}.Maps.Eleanor.home_bgmusic-WizardSong",
+            "Track": "WizardSong"
           }
+            */
         }
       }
     },
@@ -31,15 +45,15 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
       "Action": "EditMap",
       "Target": "Maps/Custom_WizardBasement",
       "AddWarps": [
-        "23 6 Eleanor_home 10 10" // warp from 23 6 of Custom_WizardBasement to 10 10 of Eleanor_home
+        "23 6 {{ModId}}.Maps.Eleanor.home 8 11" // warp from 23 6 of Custom_WizardBasement to 8 11 of Eleanor_home
       ]
     },
     {
         "LogName": "{{ModId}} - maps - Eleanor's home - warp from Eleanor's home",
         "Action": "EditMap",
-        "Target": "Maps/Eleanor_home",
+        "Target": "Maps/{{ModId}}.Maps.Eleanor.home",
         "AddWarps": [
-          "10 10 Custom_WizardBasement 23 6" // warp from 10 10 of Eleanor_home to 23 6 of Custom_WizardBasement
+          "10 11 Custom_WizardBasement 22 6" // warp from 10 11 of Eleanor_home to 22 6 of Custom_WizardBasement
         ]
       }
   ]

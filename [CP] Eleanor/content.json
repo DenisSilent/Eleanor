@@ -658,11 +658,11 @@ commented out because of the missing 256X256 portraits code
           "SpawnIfMissing": "true",
           "Home": [
             {
-              "ID": "Default",
-              "Location": "WizardHouse",
+              "ID": "{{ModId}}.Spawning_tile",
+              "Location": "{{ModId}}.Maps.Eleanor.home",
               "Tile": {
-                "X": 10,
-                "Y": 17
+                "X": 20,
+                "Y": 16
               },
               "Direction": "down",
               "Condition": "true"
@@ -755,7 +755,7 @@ commented out because of the missing 256X256 portraits code
         "StrojvedouciDenis.Eleanor": {
           "Home": [
             {
-              "Id": "Default",
+              "Id": "{{ModId}}.Safemode_spawning_tile",
               "Location": "WizardHouse",
               "Tile": {
                 "X": 1,
