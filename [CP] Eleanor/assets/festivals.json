@@ -19,13 +19,25 @@ win: 8y;25y
       "TextOperations": [
         {
           "Operation": "Append",
-          "Target": ["Entries", "Set-Up_additionalCharacters", "Set-Up_additionalCharacters_y2"],
+          "Target": ["Entries", "Set-Up_additionalCharacters"],
           "Value": "StrojvedouciDenis.Eleanor 3 23 1",
           "Delimiter": "/"
         },
         {
           "Operation": "Append",
-          "Target": ["Entries", "MainEvent_additionalCharacters", "MainEvent_additionalCharacters_y2"],
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+          "Value": "StrojvedouciDenis.Eleanor 3 23 1",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "StrojvedouciDenis.Eleanor 3 23 1",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
           "Value": "StrojvedouciDenis.Eleanor 3 23 1",
           "Delimiter": "/"
         }
@@ -44,13 +56,25 @@ win: 8y;25y
       "TextOperations": [
         {
           "Operation": "Append",
-          "Target": ["Entries", "Set-Up_additionalCharacters", "Set-Up_additionalCharacters_y2"],
+          "Target": ["Entries", "Set-Up_additionalCharacters"],
           "Value": "StrojvedouciDenis.Eleanor 11 33 3",
           "Delimiter": "/"
         },
         {
           "Operation": "Append",
-          "Target": ["Entries", "MainEvent_additionalCharacters", "MainEvent_additionalCharacters_y2"],
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+          "Value": "StrojvedouciDenis.Eleanor 11 33 3",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "StrojvedouciDenis.Eleanor 11 33 3",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
           "Value": "StrojvedouciDenis.Eleanor 11 33 3",
           "Delimiter": "/"
         }
@@ -75,7 +99,19 @@ win: 8y;25y
         },
         {
           "Operation": "Append",
-          "Target": ["Entries", "MainEvent_additionalCharacters", "MainEvent_additionalCharacters_y2"],
+          "Target": ["Entries",  "Set-Up_additionalCharacters_y2"],
+          "Value": "StrojvedouciDenis.Eleanor 47 88 0",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "StrojvedouciDenis.Eleanor 47 88 0",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries","MainEvent_additionalCharacters_y2"],
           "Value": "StrojvedouciDenis.Eleanor 47 88 0",
           "Delimiter": "/"
         }
@@ -94,13 +130,25 @@ win: 8y;25y
       "TextOperations": [
         {
           "Operation": "Append",
-          "Target": ["Entries", "Set-Up_additionalCharacters", "Set-Up_additionalCharacters_y2"],
+          "Target": ["Entries", "Set-Up_additionalCharacters"],
           "Value": "StrojvedouciDenis.Eleanor 12 57 1",
           "Delimiter": "/"
         },
         {
           "Operation": "Append",
-          "Target": ["Entries", "MainEvent_additionalCharacters", "MainEvent_additionalCharacters_y2"],
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+          "Value": "StrojvedouciDenis.Eleanor 12 57 1",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "StrojvedouciDenis.Eleanor 12 57 1",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
           "Value": "StrojvedouciDenis.Eleanor 12 57 1",
           "Delimiter": "/"
         }
@@ -119,13 +167,25 @@ win: 8y;25y
       "TextOperations": [
         {
           "Operation": "Append",
-          "Target": ["Entries", "Set-Up_additionalCharacters", "Set-Up_additionalCharacters_y2"],
+          "Target": ["Entries", "Set-Up_additionalCharacters"],
           "Value": "StrojvedouciDenis.Eleanor 30 12 1",
           "Delimiter": "/"
         },
         {
           "Operation": "Append",
-          "Target": ["Entries", "MainEvent_additionalCharacters", "MainEvent_additionalCharacters_y2"],
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+          "Value": "StrojvedouciDenis.Eleanor 30 12 1",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "StrojvedouciDenis.Eleanor 30 12 1",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
           "Value": "StrojvedouciDenis.Eleanor 30 12 1",
           "Delimiter": "/"
         }
@@ -150,7 +210,19 @@ win: 8y;25y
         },
         {
           "Operation": "Append",
-          "Target": ["Entries", "MainEvent_additionalCharacters", "MainEvent_additionalCharacters_y2"],
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+          "Value": "StrojvedouciDenis.Eleanor 14 64 3",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "StrojvedouciDenis.Eleanor 14 64 3",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
           "Value": "StrojvedouciDenis.Eleanor 14 64 3",
           "Delimiter": "/"
         }

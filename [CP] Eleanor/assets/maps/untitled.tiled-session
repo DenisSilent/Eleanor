@@ -36,11 +36,11 @@
             "expandedObjectLayers": [
                 10
             ],
-            "scale": 3,
-            "selectedLayer": 3,
+            "scale": 5.5,
+            "selectedLayer": 9,
             "viewCenter": {
-                "x": 145.16666666666669,
-                "y": 185.99999999999997
+                "x": 63.45454545454545,
+                "y": 75.81818181818183
             }
         },
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SeedShop.tmx#1": {
@@ -73,7 +73,7 @@
             "scale": 2,
             "selectedLayer": 9,
             "viewCenter": {
-                "x": 141.75,
+                "x": 123.75,
                 "y": 296.5
             }
         },
@@ -85,6 +85,43 @@
         },
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WizardHouse.tmx#v16_TownInterior_2": {
             "scaleInDock": 1.5
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/SpouseRoomsEastScarp.tmx": {
+            "scale": 4.73515625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 95.98416102953307,
+                "y": 71.80333278336907
+            }
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/SpouseRoomsEastScarp.tmx#indoor": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/SpouseRoomsEastScarp.tmx#paths": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/SpouseRoomsEastScarp.tmx#z_LemurCustom": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/SpouseRoomsEastScarp.tmx#z_lumi_towninterior": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/spousePatiosEastScarp.tmx": {
+            "scale": 5.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 60.45454545454545,
+                "y": 33.27272727272727
+            }
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/spousePatiosEastScarp.tmx#Paths": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/spousePatiosEastScarp.tmx#untitled tile sheet": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/spousePatiosEastScarp.tmx#zz_chickenShack": {
+            "scaleInDock": 1
         },
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin": {
             "scale": 1.4657142857142857,
@@ -190,22 +227,22 @@
         },
         "Eleanor_home.tmx": {
             "expandedObjectLayers": [
-                10,
                 11,
+                10,
                 8
             ],
-            "scale": 1,
-            "selectedLayer": 2,
+            "scale": 2,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 310.5,
-                "y": 214
+                "x": 271.25,
+                "y": 162
             }
         },
         "Eleanor_home.tmx#p": {
             "scaleInDock": 2
         },
         "Eleanor_home.tmx#paths": {
-            "scaleInDock": 1
+            "scaleInDock": 3
         },
         "Eleanor_home.tmx#townInterior": {
             "scaleInDock": 2
@@ -221,7 +258,7 @@
             "scaleInDock": 2
         },
         "Eleanor_home.tmx#wizard_furniture": {
-            "scaleInDock": 3
+            "scaleInDock": 2
         },
         "WizardHouse.tmx": {
             "expandedObjectLayers": [
@@ -254,6 +291,8 @@
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SeedShop.tmx",
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WizardHouse.tmx",
         "Eleanor_home.tmx",
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/spousePatiosEastScarp.tmx",
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/SpouseRoomsEastScarp.tmx",
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SebastianRoom.tmx",
         "WizardHouse.tmx",
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WitchHut.tmx",

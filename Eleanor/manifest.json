@@ -11,7 +11,7 @@
 
   // Current Version
 
-  "Version": "1.0.0-alpha.14",
+  "Version": "1.0.0-beta.16",
 
   // Description
 
@@ -29,7 +29,7 @@
 
   "MinimumApiVersion": "4.0.0",
 
-  // .dll file
+  // dll file
   "EntryDll": "Eleanor.dll",
 
   // Dependencies - Required mods and optional mods

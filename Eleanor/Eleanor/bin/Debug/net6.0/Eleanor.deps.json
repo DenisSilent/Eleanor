@@ -6,29 +6,29 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Eleanor/1.0.0": {
+      "Eleanor/1.0.0-beta.16": {
         "dependencies": {
-          "Pathoschild.Stardew.ModBuildConfig": "4.3.2"
+          "Pathoschild.Stardew.ModBuildConfig": "4.4.0"
         },
         "runtime": {
           "Eleanor.dll": {}
         }
       },
-      "Pathoschild.Stardew.ModBuildConfig/4.3.2": {}
+      "Pathoschild.Stardew.ModBuildConfig/4.4.0": {}
     }
   },
   "libraries": {
-    "Eleanor/1.0.0": {
+    "Eleanor/1.0.0-beta.16": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Pathoschild.Stardew.ModBuildConfig/4.3.2": {
+    "Pathoschild.Stardew.ModBuildConfig/4.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wRnRRTgB84YPyNIGFpI12Gdjfwery/JTgRbTboG0uJK5VJsuQ2VWT4fS4bcvPgOKMK8lqYyqxV7sEq7zgd60gQ==",
-      "path": "pathoschild.stardew.modbuildconfig/4.3.2",
-      "hashPath": "pathoschild.stardew.modbuildconfig.4.3.2.nupkg.sha512"
+      "sha512": "sha512-Yi7/8bZlLS1bqZxft1yZWxJmIBfIoRxQBFIwWrF0AjC4/j/HmWdDC7dbNzzM4ZtOTtjOAQ8AC7WjP6KHgLPpdg==",
+      "path": "pathoschild.stardew.modbuildconfig/4.4.0",
+      "hashPath": "pathoschild.stardew.modbuildconfig.4.4.0.nupkg.sha512"
     }
   }
 }

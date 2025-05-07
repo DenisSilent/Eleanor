@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\SteamLibrary\\steamapps\\common\\Stardew Valley\\Mods - test\\[NPC] Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.0-beta.16",
       "restore": {
         "projectUniqueName": "C:\\SteamLibrary\\steamapps\\common\\Stardew Valley\\Mods - test\\[NPC] Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj",
         "projectName": "Eleanor",
@@ -52,7 +52,7 @@
           "dependencies": {
             "Pathoschild.Stardew.ModBuildConfig": {
               "target": "Package",
-              "version": "[4.3.2, )"
+              "version": "[4.4.0, )"
             }
           },
           "imports": [

@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "Pathoschild.Stardew.ModBuildConfig/4.3.2": {
+      "Pathoschild.Stardew.ModBuildConfig/4.4.0": {
         "type": "package",
         "build": {
           "build/Pathoschild.Stardew.ModBuildConfig.targets": {}
@@ -11,10 +11,10 @@
     }
   },
   "libraries": {
-    "Pathoschild.Stardew.ModBuildConfig/4.3.2": {
-      "sha512": "wRnRRTgB84YPyNIGFpI12Gdjfwery/JTgRbTboG0uJK5VJsuQ2VWT4fS4bcvPgOKMK8lqYyqxV7sEq7zgd60gQ==",
+    "Pathoschild.Stardew.ModBuildConfig/4.4.0": {
+      "sha512": "Yi7/8bZlLS1bqZxft1yZWxJmIBfIoRxQBFIwWrF0AjC4/j/HmWdDC7dbNzzM4ZtOTtjOAQ8AC7WjP6KHgLPpdg==",
       "type": "package",
-      "path": "pathoschild.stardew.modbuildconfig/4.3.2",
+      "path": "pathoschild.stardew.modbuildconfig/4.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -27,14 +27,14 @@
         "build/find-game-folder.targets",
         "images/icon.png",
         "mod-package.md",
-        "pathoschild.stardew.modbuildconfig.4.3.2.nupkg.sha512",
+        "pathoschild.stardew.modbuildconfig.4.4.0.nupkg.sha512",
         "pathoschild.stardew.modbuildconfig.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Pathoschild.Stardew.ModBuildConfig >= 4.3.2"
+      "Pathoschild.Stardew.ModBuildConfig >= 4.4.0"
     ]
   },
   "packageFolders": {
@@ -42,7 +42,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.0-beta.16",
     "restore": {
       "projectUniqueName": "C:\\SteamLibrary\\steamapps\\common\\Stardew Valley\\Mods - test\\[NPC] Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj",
       "projectName": "Eleanor",
@@ -89,7 +89,7 @@
         "dependencies": {
           "Pathoschild.Stardew.ModBuildConfig": {
             "target": "Package",
-            "version": "[4.3.2, )"
+            "version": "[4.4.0, )"
           }
         },
         "imports": [

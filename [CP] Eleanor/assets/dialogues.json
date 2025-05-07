@@ -237,10 +237,10 @@
       "Entries": {
         "StrojvedouciDenis.Eleanor_AfterWedding": "{{i18n:Dialogues.marriage.Eleanor_AfterWedding |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "StrojvedouciDenis.Eleanor_Engaged": "{{i18n:Dialogues.marriage.Eleanor_Engaged |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "StrojvedouciDenis.Eleanor_EngagedRoommate": "{{i18n:Dialogues.marriage.Eleanor_EngagedRoommate |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "When": {
-          "Marriage": "true"
-        }
+        "StrojvedouciDenis.Eleanor_EngagedRoommate": "{{i18n:Dialogues.marriage.Eleanor_EngagedRoommate |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
+      },
+      "When": {
+        "Marriage": "true"
       }
     },
 

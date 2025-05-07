@@ -14,7 +14,19 @@ Instructions for downloading the unreleased versions:
 
 ---
 
-## version 1.0.0-alpha.15 (2.5.2025)
+## version 1.0.0-alpha.16 (4.5.2025)
+
+* Multi-device connectivity tests
+* Fixed A LOT of errors at the new Eleanor's home map
+  * Yet found out that NPC pathfinding does not work
+* Updated `Pathoschild.Stardew.ModBuildConfig` for the C# part of the mod
+* A lot of marriage fixes
+* Sprite marriage fixes
+* Probably fixed y2 festivals
+
+---
+
+## version 1.0.0-alpha.15 (3.5.2025)
 
 * Multi-device connectivity tests
 * Fixed A LOT of errors at the new Eleanor's home map

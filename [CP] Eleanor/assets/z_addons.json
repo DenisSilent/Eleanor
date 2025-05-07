@@ -3,7 +3,7 @@
     // BETAS - Button's Extra Trigger Action Stuff //
     // https://stardew.button.gay/docs/betas
     {
-      "LogName": "{{ModId}}_BETAS_TriggerActions-books",
+      "LogName": "{{ModId}}_BETAS_TriggerActions",
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
@@ -20,7 +20,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)102",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_LostBook"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_LostBook 3"
             ]
             },
         "{{ModId}}_BETAS_BookRead_StoneBase": {
@@ -28,7 +28,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)449",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_StoneBase"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_StoneBase 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_ArtifactSpot": {
@@ -36,7 +36,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)590",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_ArtifactSpot"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_ArtifactSpot 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_JournalScrap": {
@@ -44,7 +44,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)842",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_JournalScrap"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_JournalScrap 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_Artifact Spot": {
@@ -52,7 +52,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)SeedSpot",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_Artifact Spot"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_Artifact Spot 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_BookOfStars": {
@@ -60,7 +60,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)PurpleBook",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_BookOfStars"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_BookOfStars 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_StardewValleyAlmanac": {
@@ -68,7 +68,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)SkillBook_0",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_StardewValleyAlmanac"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_StardewValleyAlmanac 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_WoodcuttersWeekly": {
@@ -76,7 +76,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)SkillBook_2",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_WoodcuttersWeekly"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_WoodcuttersWeekly 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_BaitAndBobber": {
@@ -84,7 +84,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)SkillBook_1",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_BaitAndBobber"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_BaitAndBobber 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_MiningMonthly": {
@@ -92,7 +92,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)SkillBook_3",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_MiningMonthly"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_MiningMonthly 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_CombatQuarterly": {
@@ -100,7 +100,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)SkillBook_4",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_CombatQuarterly"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_CombatQuarterly 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_TheAlleywayBuffet": {
@@ -108,7 +108,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_Trash",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_TheAlleywayBuffet"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_TheAlleywayBuffet 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_TheArto": {
@@ -116,7 +116,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_Crabbing",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_TheArto"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_TheArto 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_DwarvishSafetyManual": {
@@ -124,7 +124,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_Bombs",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_DwarvishSafetyManual"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_DwarvishSafetyManual 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_JewelsOfTheSea": {
@@ -132,7 +132,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_Roe",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_JewelsOfTheSea"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_JewelsOfTheSea 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_RaccoonJournal": {
@@ -140,7 +140,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_WildSeeds",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_RaccoonJournal"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_RaccoonJournal 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_WoodysSecret": {
@@ -148,7 +148,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_Woodcutting",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_WoodysSecret"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_WoodysSecret 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_JackBeNimble": {
@@ -156,7 +156,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_Defense",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_JackBeNimble"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_JackBeNimble 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_Friendship101": {
@@ -164,7 +164,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_Friendship",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_Friendship101"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_Friendship101 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_MonsterCompendium": {
@@ -172,7 +172,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_Void",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_MonsterCompendium"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_MonsterCompendium 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_WayoftheWindPt1": {
@@ -180,7 +180,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_Speed",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_WayoftheWindPt1"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_WayoftheWindPt1 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_MappingCaveSystems": {
@@ -188,7 +188,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_Marlon",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_MappingCaveSystems"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_MappingCaveSystems 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_PriceCatalogue": {
@@ -196,7 +196,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_PriceCatalogue",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_PriceCatalogue"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_PriceCatalogue 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_QueenOfSauceCookbook": {
@@ -204,7 +204,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_QueenOfSauce",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_QueenOfSauceCookbook"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_QueenOfSauceCookbook 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_TheDiamondHunter": {
@@ -212,7 +212,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_Diamonds",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_TheDiamondHunter"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_TheDiamondHunter 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_BookOfMysteries": {
@@ -220,7 +220,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_Mystery",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_BookOfMysteries"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_BookOfMysteries 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_AnimalCatalogue": {
@@ -228,7 +228,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_AnimalCatalogue",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_AnimalCatalogue"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_AnimalCatalogue 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_WayoftheWindPt2": {
@@ -236,7 +236,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_Speed2",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_WayoftheWindPt2"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_WayoftheWindPt2 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_GoldenAnimalCracker": {
@@ -244,7 +244,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)GoldenAnimalCracker",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_GoldenAnimalCracker"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_GoldenAnimalCracker 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_TreasureAppraisalGuide": {
@@ -252,7 +252,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_Artifact",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_TreasureAppraisalGuide"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_TreasureAppraisalGuide 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_HorseTheBook": {
@@ -260,7 +260,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_Horse",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_HorseTheBook"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_HorseTheBook 3"
             ]
         },
         "{{ModId}}_BETAS_BookRead_OlSlitherlegs": {
@@ -268,7 +268,7 @@
             "Trigger": "Spiderbuttons.BETAS_BookRead",
             "Condition": "ITEM_ID Target (O)Book_Grass",
             "Actions": [
-                "AddConversationTopic {{ModId}}_BETAS_BookRead_OlSlitherlegs"
+                "AddConversationTopic {{ModId}}_BETAS_BookRead_OlSlitherlegs 3"
             ]
         }
       }

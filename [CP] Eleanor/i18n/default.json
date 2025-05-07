@@ -15,12 +15,12 @@
   "config.Festivals.name": "Festivals",
   "config.Festivals.values.true": "true",
   "config.Festivals.values.false": "false",
-  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 1.0.0-alpha.14 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
+  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 1.0.0-alpha.16 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
 
   "config.Marriage.name": "Marriage",
   "config.Marriage.values.true": "true",
   "config.Marriage.values.false": "false",
-  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.14, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
+  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.16, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
 
   "config.14hearts-variants.name": "14 hearts event variant",
   "config.14hearts-variants.values.short": "short",
@@ -41,7 +41,7 @@
   "config.Outfits.values.one look only": "one look only",
   "config.Outfits.values.vanilla": "vanilla",
   "config.Outfits.values.seasonal": "seasonal",
-  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.14, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
+  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.16, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
 
   // Experimental - DoNotChange
 
@@ -52,7 +52,7 @@
   "config.On/off.values.on": "on",
   "config.On/off.values.safe mode": "safe mode",
   "config.On/off.values.off": "off",
-  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.14, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
+  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.16, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
 
   /*
   // Dynamic tokens
@@ -814,7 +814,7 @@
   "Gifts.hate": "Oh my, go away with this!$a",
   "Gifts.neutral": "A gift? Oh... thanks?",
 
-  "Gifts.AcceptGift_(O)460": "StrojvedouciDenis.Eleanor-DEBUG:Gifts.AcceptItem_(O)460",
+  //"Gifts.AcceptGift_(O)460": "StrojvedouciDenis.Eleanor-DEBUG:Gifts.AcceptItem_(O)460",
   //"Gifts.RejectItem_(O)460": "OH! {{DT_name}}! So you feel THIS way about me?#$b#Not that I don't feel the same way, but I'm not ready for this yet...#$b#I hope you understand...",
   "Gifts.RejectItem": "{{DT_name}}, are you trying to give me this?#$b#I'm sorry, but I hate this, so I won't accept it.",
 
@@ -859,6 +859,17 @@
 
   // Maps.json
   "Maps.Eleanor.home_broom": "Looks like this broom is used for cleaning. Could it also be used for flying?",
+  "Maps.Eleanor.home_junimo": "You have already seen this in the community center. Why is it here?",
+  "Maps.Eleanor.home_kitchen": "Even wizards and witches need to eat, right?",
+  "Maps.Eleanor.home_potions": "Better not touch anything! You don't want to end up like a frog, do you?",
+  "Maps.Eleanor.home_chess": "Looks like Eleanor is a fan of chess. Maybe you could play with her sometime?",
+  "Maps.Eleanor.home_books-strange": "This book is certainly different than the other ones Eleanor have here. Better stay in a distance from it.",
+  "Maps.Eleanor.home_books-bookshelf_big": "This is probably the biggest bookshelf you've ever seen. How many books does it hold? And how many of them Eleanor already read?",
+  "Maps.Eleanor.home_books-1": "These are books about magic. You don't know much about it, but you can tell that they are very valuable.",
+  "Maps.Eleanor.home_books-table": "The book is open, so you try to read it. However, you can't understand a word of it. It looks like it's written in some strange language.",
+  "Maps.Eleanor.home_ball": "Is that... a crystal ball?#Can Eleanor use it? And if so, what can she see in it?",  // message
+  "Maps.Eleanor.home_fireplace": "At least Eleanor has a fireplace. It looks like she uses it to keep her home warm.",
+  "Maps.Eleanor.home_globe": "A globe? Why would Eleanor need it? She can teleport anywhere she wants!",
 
   // mails.json
   "Mail.HogwartsTrips": "Good day, {{DT_name}},^^I'm writing to you because I was told that  {{DT_wizard_name}} visited you because of my trip to Hogwarts.^^I have to go there every year, as both me being a student and because of something regarding my past... So I'm just letting you know I came back from there, and that will repeat every year.^^I hope you understand. May you have good day.^^Eleanor",

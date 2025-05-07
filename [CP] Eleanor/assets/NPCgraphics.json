@@ -57,7 +57,7 @@ deactivated due to missing portraits
       "When": {
         "Outfits": "seasonal",
         "Season |contains=Winter": true,
-        "LocationName |contains=WizardHouse, Custom_WizardBasement": true
+        "LocationName |contains=WizardHouse, Custom_WizardBasement, {{ModId}}.Maps.Eleanor.home": true
       }
     },
     */
@@ -85,6 +85,18 @@ deactivated due to missing portraits
       "When": {
         "Festivals": "true",
         "DayEvent |contains=dance of the moonlight jellies, egg festival, feast of the winter star, festival of ice, flower dance, luau, stardew valley fair, spirit's eve": true
+      }
+    },
+    // Marriage
+    {
+      "LogName": "Eleanor - marriage (art by hezjena2023)",
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
+      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/default.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "Relationship:StrojvedouciDenis.Eleanor": "Engaged, Married"
       }
     }
   ]
