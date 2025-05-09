@@ -73,7 +73,7 @@
             "scale": 2,
             "selectedLayer": 9,
             "viewCenter": {
-                "x": 111.25,
+                "x": 105.75,
                 "y": 296.5
             }
         },
@@ -248,10 +248,10 @@
         },
         "Eleanor_home.tmx": {
             "scale": 2,
-            "selectedLayer": 3,
+            "selectedLayer": 12,
             "viewCenter": {
-                "x": 226.25,
-                "y": 258
+                "x": 177.25,
+                "y": 195
             }
         },
         "Eleanor_home.tmx#p": {
@@ -304,10 +304,10 @@
     ],
     "project": "untitled.tiled-project",
     "recentFiles": [
-        "Eleanor_home - kopie.tmx",
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SeedShop.tmx",
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WizardHouse.tmx",
         "Eleanor_home.tmx",
+        "Eleanor_home - kopie.tmx",
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/spousePatiosEastScarp.tmx",
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/SpouseRoomsEastScarp.tmx",
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SebastianRoom.tmx",

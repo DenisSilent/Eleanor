@@ -46,7 +46,7 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
       "Target": "Maps/Custom_WizardBasement",
       "AddWarps": [
         "23 6 {{ModId}}.Maps.Eleanor.home 8 11" // warp from 23 6 of Custom_WizardBasement to 8 11 of Eleanor_home
-      ],
+      ]
       /*
       "When": {
         "Hearts:StrojvedouciDenis.Eleanor": "{{Range: 8,14}}"
@@ -59,7 +59,7 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
       "Target": "Maps/{{ModId}}.Maps.Eleanor.home",
       "AddWarps": [
         "10 11 WizardHouse 10 17" // warp from 10 11 of Eleanor_home to 10 17 of WizardHouse
-      ],
+      ]
       /*
       "When": {
         "Hearts:StrojvedouciDenis.Eleanor": "{{Range: 8,14}}"
@@ -82,7 +82,11 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
         "Maps.Eleanor.home_books-table": "{{i18n:Maps.Eleanor.home_books-table |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Maps.Eleanor.home_ball": "{{i18n:Maps.Eleanor.home_ball |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Maps.Eleanor.home_fireplace": "{{i18n:Maps.Eleanor.home_fireplace |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Maps.Eleanor.home_globe": "{{i18n:Maps.Eleanor.home_ball |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
+        "Maps.Eleanor.home_globe": "{{i18n:Maps.Eleanor.home_ball |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Maps.Eleanor.home_PC": "{{i18n:Maps.Eleanor.home_PC |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Maps.Eleanor.home_potions-cheat": "{{i18n:Maps.Eleanor.home_potions-cheat |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Maps.Eleanor.home_cauldron": "{{i18n:Maps.Eleanor.home_cauldron |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Maps.Eleanor.home_picture": "{{i18n:Maps.Eleanor.home_picture |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       }
     }
   ]

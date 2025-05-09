@@ -14,7 +14,17 @@ Instructions for downloading the unreleased versions:
 
 ---
 
-## version 1.0.0-alpha.16 (4.5.2025)
+## version 1.0.0-alpha.18 (9.5.2025)
+
+* Multi-device connectivity tests
+* Fixing pathfinding error by editing the broken schedule
+* Added few more map strings
+* Internally fixed an error of folder not loading (it shouldn't)
+* Fixed wrong manifests
+
+---
+
+## version 1.0.0-alpha.17 (9.5.2025)
 
 * Multi-device connectivity tests
 * Pathfinding still not working
@@ -22,7 +32,7 @@ Instructions for downloading the unreleased versions:
 
 ---
 
-## version 1.0.0-alpha.16 (4.5.2025)
+## version 1.0.0-alpha.18 (4.5.2025)
 
 * Multi-device connectivity tests
 * Fixed A LOT of errors at the new Eleanor's home map
