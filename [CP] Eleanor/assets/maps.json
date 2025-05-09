@@ -23,8 +23,8 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
         "{{ModId}}.Maps.Eleanor.home": {
           "DisplayName": "Eleanor's home",
           "DefaultArrivalTile": {
-            "X": 4,
-            "Y": 12
+            "X": 8,
+            "Y": 11
           },
           "CreateOnLoad": {
             "MapPath": "Maps/{{ModId}}.Maps.Eleanor.home"
@@ -46,15 +46,25 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
       "Target": "Maps/Custom_WizardBasement",
       "AddWarps": [
         "23 6 {{ModId}}.Maps.Eleanor.home 8 11" // warp from 23 6 of Custom_WizardBasement to 8 11 of Eleanor_home
-      ]
+      ],
+      /*
+      "When": {
+        "Hearts:StrojvedouciDenis.Eleanor": "{{Range: 8,14}}"
+      }
+        */
     },
     {
       "LogName": "{{ModId}} - maps - Eleanor's home - warp from Eleanor's home",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}.Maps.Eleanor.home",
       "AddWarps": [
-        "10 11 Custom_WizardBasement 22 6" // warp from 10 11 of Eleanor_home to 22 6 of Custom_WizardBasement
-      ]
+        "10 11 WizardHouse 10 17" // warp from 10 11 of Eleanor_home to 10 17 of WizardHouse
+      ],
+      /*
+      "When": {
+        "Hearts:StrojvedouciDenis.Eleanor": "{{Range: 8,14}}"
+      }
+        */
     },
     {
       "LogName": "{{ModId}} - maps - Eleanor's home - map strings",
@@ -69,7 +79,7 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
         "Maps.Eleanor.home_books-strange": "{{i18n:Maps.Eleanor.home_books-strange |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Maps.Eleanor.home_books-bookshelf_big": "{{i18n:Maps.Eleanor.home_books-bookshelf_big|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Maps.Eleanor.home_books-1": "{{i18n:Maps.Eleanor.home_books-1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Maps.Eleanor:home_books-table": "{{i18n:Maps.Eleanor.home_books-table |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Maps.Eleanor.home_books-table": "{{i18n:Maps.Eleanor.home_books-table |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Maps.Eleanor.home_ball": "{{i18n:Maps.Eleanor.home_ball |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Maps.Eleanor.home_fireplace": "{{i18n:Maps.Eleanor.home_fireplace |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Maps.Eleanor.home_globe": "{{i18n:Maps.Eleanor.home_ball |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
