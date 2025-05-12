@@ -1,6 +1,6 @@
 # **Prerelease changelog (0.0.0-0.7.4-beta.7)**
 
-This is a changlog including all unreleased versions of NPC Eleanor that were before the official public (both on NexusMods and GitHub) release.
+This is a changlog including all unreleased versions of NPC Eleanor that were before the official public ( NexusMods) release.
 
 ---
 
@@ -533,4 +533,4 @@ This is a changlog including all unreleased versions of NPC Eleanor that were be
 
 ## version 0.0.0 (5.7.2024)
 
-* First documented file -> official birth of this mod (tries from 1.7.2024)
+* First documented file -> official birth of this mod (tries from 1.7.2024 or earlier)

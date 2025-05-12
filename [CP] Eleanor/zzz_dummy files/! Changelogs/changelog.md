@@ -39,7 +39,8 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ---
 
-* Deactivated Secret mail about installation
+## version 0.9.1 (22.3.2025)
+
 * Deactivated Secret mail about instalation
 * Internal code fixes
 

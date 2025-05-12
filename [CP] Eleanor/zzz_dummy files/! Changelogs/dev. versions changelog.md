@@ -14,6 +14,16 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.19 (10.5.2025)
+
+* Multi-device connectivity tests
+* Partially automated release files creating
+* Fixed some things in changelogs (even though I already fixed that)
+* Added 0.9.4 archive to releases, I totally forgot about it
+* Adding more folders to GitHub repo for probably better multi device connectivity
+
+---
+
 ## version 1.0.0-alpha.18 (9.5.2025)
 
 * Multi-device connectivity tests
@@ -32,7 +42,7 @@ Instructions for downloading the unreleased versions:
 
 ---
 
-## version 1.0.0-alpha.18 (4.5.2025)
+## version 1.0.0-alpha.16 (4.5.2025)
 
 * Multi-device connectivity tests
 * Fixed A LOT of errors at the new Eleanor's home map

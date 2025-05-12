@@ -2,6 +2,7 @@
   /*
 https://stardewvalleywiki.com/Modding:Maps
 https://stardewvalleywiki.com/Modding:Location_data
+https://stardewmodding.wiki.gg/wiki/Tutorial:_Map_Patches_and_Warps
 
 https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/action-load.md
 https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/action-editmap.md
@@ -41,11 +42,24 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
       }
     },
     {
-      "LogName": "{{ModId}} - maps - Eleanor's home - warp to Eleanor's home",
+      "LogName": "{{ModId}} - maps - Eleanor's home - warp to Eleanor's home from Custom_WizardBasement",
       "Action": "EditMap",
       "Target": "Maps/Custom_WizardBasement",
       "AddWarps": [
         "23 6 {{ModId}}.Maps.Eleanor.home 8 11" // warp from 23 6 of Custom_WizardBasement to 8 11 of Eleanor_home
+      ]
+      /*
+      "When": {
+        "Hearts:StrojvedouciDenis.Eleanor": "{{Range: 8,14}}"
+      }
+        */
+    },
+        {
+      "LogName": "{{ModId}} - maps - Eleanor's home - warp to Eleanor's home from WizardHouse",
+      "Action": "EditMap",
+      "Target": "Maps/WizardHouse",
+      "AddWarps": [
+        "10 17 {{ModId}}.Maps.Eleanor.home 8 11" // warp from 23 6 of Custom_WizardBasement to 8 11 of Eleanor_home
       ]
       /*
       "When": {
@@ -58,7 +72,12 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}.Maps.Eleanor.home",
       "AddWarps": [
-        "10 11 WizardHouse 10 17" // warp from 10 11 of Eleanor_home to 10 17 of WizardHouse
+        "14 5 WizardHouse 9 31", // warp from 14 5 of Eleanor_home to 9 31 of WizardHouse
+        "17 5 Custom_WizardBasement 22 6" // warp from 14 5 of Eleanor_home to 22 6 of Custom_WizardBasement
+        /*
+        "20 5 WizardHouse 10 17", // warp from 14 5 of Eleanor_home to 10 17 of WizardHouse
+        "23 5 WizardHouse 10 17" // warp from 14 5 of Eleanor_home to 10 17 of WizardHouse
+        */
       ]
       /*
       "When": {
@@ -82,7 +101,7 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
         "Maps.Eleanor.home_books-table": "{{i18n:Maps.Eleanor.home_books-table |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Maps.Eleanor.home_ball": "{{i18n:Maps.Eleanor.home_ball |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Maps.Eleanor.home_fireplace": "{{i18n:Maps.Eleanor.home_fireplace |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Maps.Eleanor.home_globe": "{{i18n:Maps.Eleanor.home_ball |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Maps.Eleanor.home_globe": "{{i18n:Maps.Eleanor.home_globe |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Maps.Eleanor.home_PC": "{{i18n:Maps.Eleanor.home_PC |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Maps.Eleanor.home_potions-cheat": "{{i18n:Maps.Eleanor.home_potions-cheat |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Maps.Eleanor.home_cauldron": "{{i18n:Maps.Eleanor.home_cauldron |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",

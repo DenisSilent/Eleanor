@@ -114,7 +114,8 @@
       "Action": "EditData",
       "Target": "Data/Events/Custom_WizardBasement",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_4hearts/SawEvent StrojvedouciDenis.Eleanor_2hearts/Friendship {{ModId}} 1000/t 1800 2600": "none/14 12/farmer -1000 -1000 2 {{ModId}} 4 19 3/
+        "StrojvedouciDenis.Eleanor_4hearts/SawEvent StrojvedouciDenis.Eleanor_2hearts/Friendship {{ModId}} 1000/t 1800 2600":
+        "none/14 12/farmer -1000 -1000 2 {{ModId}} 4 19 3/
         skippable/
         addConversationTopic {{ModId}}.CT_4h 2/
         beginSimultaneousCommand/
@@ -309,27 +310,24 @@
     // */
 
 
-/*
-    // 8hearts - Eleanor's puzzle
-    // Location: Wizard's Tower
-    // Trigger: Entering the Wizard's Tower between ??? and ???.
-    // Description: Eleanor is having a discussion with the Wizard about a magical artifact.
+
+    // 8hearts - ?
+    // Location: Forest, Wizard's Tower
+    // Trigger: Entering the For between ??? and ???.
+    // Description: 
     {
       "LogName": "Eleanor - event - 8hearts",
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_8hearts/
-        e StrojvedouciDenis.Eleanor_6hearts/
-        f {{ModId}} 2000": "none/
-        -1000 -1000/
-        farmer 0 0 0 {{ModId}} 1 1 0/
+        "StrojvedouciDenis.Eleanor_8hearts/e StrojvedouciDenis.Eleanor_7hearts/ f {{ModId}} 2000":
+        "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
         skippable/
+        addConversationTopic {{ModId}}.CT_8h 2/
+        
         end"
       }
     },
-*/
-
 
     // 10hearts - ???
     // Location: Wizard's Tower
@@ -467,13 +465,13 @@
                 pause 700/
                 viewport -1000 -1000/
                 halt/
-                changeToTemporaryMap StrojvedouciDenis.Eleanor_NationalPark/
+                changeToTemporaryMap ???/
                 viewport -1000 -1000/
                 warp farmer 37 9/
-                warp StrojvedouciDenis.Eleanor_Hiria 40 12/
-                faceDirection StrojvedouciDenis.Eleanor_Hiria right/
-                showFrame StrojvedouciDenis.Eleanor_Hiria 4/
-                warp StrojvedouciDenis.Eleanor_Louisa 43 12/
+                warp {{ModId}}_Hiria 40 12/
+                faceDirection {{ModId}}_Hiria right/
+                showFrame {{ModId}}_Hiria 4/
+                warp {{ModId}}_Louisa 43 12/
                 pause 300/
                 globalFadeToClear 0.007 true/
                 viewport 42 12/
@@ -915,25 +913,25 @@
         pause 2222/
         message \"{{i18n:Events.14h-p4.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p4.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak Abigail \"{{i18n:Events.14h-p4.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p4.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak Abigail \"{{i18n:Events.14h-p4.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p4.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak Abigail \"{{i18n:Events.14h-p4.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         message \"{{i18n:Events.14h-p4.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p4.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak Abigail \"{{i18n:Events.14h-p4.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p4.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak Abigail \"{{i18n:Events.14h-p4.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p4.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak Abigail \"{{i18n:Events.14h-p4.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p4.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak Abigail \"{{i18n:Events.14h-p4.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p4.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak Abigail \"{{i18n:Events.14h-p4.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p4.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak Abigail \"{{i18n:Events.14h-p4.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         message \"{{i18n:Events.14h-p4.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
@@ -962,18 +960,22 @@
         pause 2222/
         message \"{{i18n:Events.14h-p5.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
+        globalFade 0.019 true/ --Fade out code taken and edited with permissions from user `abagaianye` on Discord. Thanks! <3 Fade code start/
+        pause 700/
+        viewport -1000 -1000/
+        pause 300/ -- Fade out code end/
         message \"{{i18n:Events.14h-p5.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         message \"{{i18n:Events.14h-p5.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
@@ -1000,7 +1002,10 @@
         pause 1111/
         message \"{{i18n:Events.14h-p5.19 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.20 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        globalFadeToClear 0.007 true/ --Fade in code taken and edited with permissions from user `abagaianye` on Discord. Thanks! <3 Fade code start/
+        viewport 42 12/
+        pause 100/ -- Fade in code end/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.20 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         message \"{{i18n:Events.14h-p5.21 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
@@ -1016,62 +1021,66 @@
         pause 1111/
         message \"{{i18n:Events.14h-p5.27 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.28 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         message \"{{i18n:Events.14h-p5.29 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.30 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.30 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.31 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.31 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.32 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.32 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.33 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.33 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.34 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.34 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         message \"{{i18n:Events.14h-p5.35 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.36 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.36 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         message \"{{i18n:Events.14h-p5.37 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.38 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.38 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.39 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.39 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.40 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.40 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.41 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.41 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.42 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.42 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.43 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.43 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.44 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.44 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.45 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.45 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.46 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.46 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.47 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.47 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.48 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.48 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.49 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.49 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.50 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.50 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.51 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.51 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.52 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.52 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         message \"{{i18n:Events.14h-p5.53 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.54 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.54 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p5.55 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-p5.55 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
+        globalFade 0.019 true/ --Fade out code taken and edited with permissions from user `abagaianye` on Discord. Thanks! <3 Fade code start/
+        pause 700/
+        viewport -1000 -1000/
+        pause 300/ -- Fade out code end/
         message \"{{i18n:Events.14h-p5.56 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         message \"{{i18n:Events.14h-p5.57 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
