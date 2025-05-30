@@ -14,6 +14,18 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.20 (30.5.2025)
+
+* Multi-device development possibility tests
+  * You'll probably wondering what does that even mean, esspecially since there are technically no changes. True, but I want to be able to develop the mod on multiple devices, so I can work on it even when I'm not at home.
+* IRL stuff stopped me from working on the mod for a while, but now I'm slowly getting back
+  * and also my motivation left the chat...
+* Edited Eleanor's home map
+* Changed schedules (slightly so they'll accord to the new home map)
+* Commented out and deactivated the 14 hearts long variant events - not ready yet + needs more time --> sacrificed so the beta version can be released much sooner
+
+---
+
 ## version 1.0.0-alpha.19 (10.5.2025)
 
 * Multi-device connectivity tests

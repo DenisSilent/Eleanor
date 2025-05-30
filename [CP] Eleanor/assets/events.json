@@ -10,7 +10,7 @@
         "none/-1000 -1000/farmer 0 0 0/
         skippable/
         changeLocation SeedShop/
-        switchEvent StrojvedouciDenis.Eleanor_14hearts-p4"
+        switchEvent {{ModId}}_14hearts-p4"
       }
     },
     */
@@ -24,7 +24,7 @@
       "Action": "EditData",
       "Target": "Data/Events/farm",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_Intro/SawEvent 112":
+        "{{ModId}}_Intro/SawEvent 112":
         "none/-1000 -1000/farmer 2 2 2 {{ModId}} 3 3 0/
         skippable/
         addConversationTopic {{ModId}}.CT_Intro 2/
@@ -56,7 +56,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_2hearts/SawEvent StrojvedouciDenis.Eleanor_Intro/Friendship {{ModId}} 500/t 600 1200":
+        "{{ModId}}_2hearts/SawEvent {{ModId}}_Intro/Friendship {{ModId}} 500/t 600 1200":
         "none/21 31/farmer 21 20 2 {{ModId}} 16 30 1/
         skippable/
         addConversationTopic {{ModId}}.CT_2h 2/
@@ -89,14 +89,14 @@
         pause 750/
         emote farmer 60/
         pause 500/
-        quickQuestion {{i18n:Events.2h.3_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent StrojvedouciDenis.Eleanor_2hearts_q1_yes(break)switchEvent StrojvedouciDenis.Eleanor_2hearts_q1_no",
-        "StrojvedouciDenis.Eleanor_2hearts_q1_yes": "resetVariable/
+        quickQuestion {{i18n:Events.2h.3_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_2hearts_q1_yes(break)switchEvent {{ModId}}_2hearts_q1_no",
+        "{{ModId}}_2hearts_q1_yes": "resetVariable/
         friendship {{ModId}} 250/
         speak {{ModId}} \"{{i18n:Events.2h.4_yes |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 2500/
         speak {{ModId}} \"{{i18n:Events.2h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         end",
-        "StrojvedouciDenis.Eleanor_2hearts_q1_no": "resetVariable/
+        "{{ModId}}_2hearts_q1_no": "resetVariable/
         friendship {{ModId}} -350/
         speak {{ModId}} \"{{i18n:Events.2h.4_no |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 2500/
@@ -114,7 +114,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Custom_WizardBasement",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_4hearts/SawEvent StrojvedouciDenis.Eleanor_2hearts/Friendship {{ModId}} 1000/t 1800 2600":
+        "{{ModId}}_4hearts/SawEvent {{ModId}}_2hearts/Friendship {{ModId}} 1000/t 1800 2600":
         "none/14 12/farmer -1000 -1000 2 {{ModId}} 4 19 3/
         skippable/
         addConversationTopic {{ModId}}.CT_4h 2/
@@ -156,16 +156,16 @@
         speak {{ModId}} \"{{i18n:Events.4h.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 555/
         emote {{ModId}} 40/
-        quickQuestion {{i18n:Events.4h.5_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent StrojvedouciDenis.Eleanor_4hearts_q1_time(break)switchEvent StrojvedouciDenis.Eleanor_4hearts_q1_magic(break)switchEvent StrojvedouciDenis.Eleanor_4hearts_q1_notime",
-        "StrojvedouciDenis.Eleanor_4hearts_q1_time": "resetVariable/
+        quickQuestion {{i18n:Events.4h.5_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_4hearts_q1_time(break)switchEvent {{ModId}}_4hearts_q1_magic(break)switchEvent {{ModId}}_4hearts_q1_notime",
+        "{{ModId}}_4hearts_q1_time": "resetVariable/
         friendship {{ModId}} 150/
         speak {{ModId}} \"{{i18n:Events.4h.6_time |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        switchEvent StrojvedouciDenis.Eleanor_4hearts_ending_time",
-        "StrojvedouciDenis.Eleanor_4hearts_q1_magic": "resetVariable/
+        switchEvent {{ModId}}_4hearts_ending_time",
+        "{{ModId}}_4hearts_q1_magic": "resetVariable/
         friendship {{ModId}} 50/
         speak {{ModId}} \"{{i18n:Events.4h.6_magic |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        switchEvent StrojvedouciDenis.Eleanor_4hearts_ending_time",
-        "StrojvedouciDenis.Eleanor_4hearts_q1_notime": "resetVariable/
+        switchEvent {{ModId}}_4hearts_ending_time",
+        "{{ModId}}_4hearts_q1_notime": "resetVariable/
         friendship {{ModId}} -5/
         speak {{ModId}} \"{{i18n:Events.4h.6_notime |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         globalFade/
@@ -173,7 +173,7 @@
         pause 1111/
         message \"{{i18n:Events.4h.7_notime |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         end",
-        "StrojvedouciDenis.Eleanor_4hearts_ending_time": "resetVariable/
+        "{{ModId}}_4hearts_ending_time": "resetVariable/
         pause 1111/
         speak {{ModId}} \"{{i18n:Events.4h.7_time |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 111/
@@ -217,7 +217,7 @@
       Events/
       Town",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_6hearts/SawEvent StrojvedouciDenis.Eleanor_4hearts/Friendship {{ModId}} 1500": "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
+        "{{ModId}}_6hearts/SawEvent {{ModId}}_4hearts/Friendship {{ModId}} 1500": "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
         skippable/
         end"
       }
@@ -234,7 +234,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_7hearts/SawEvent StrojvedouciDenis.Eleanor_4hearts/Friendship {{ModId}} 1750/Weather rainy":
+        "{{ModId}}_7hearts/SawEvent {{ModId}}_4hearts/Friendship {{ModId}} 1750/Weather rainy":
         "none/52 98/ farmer 35 97 1 {{ModId}} 52 98 2/
         skippable/
         addConversationTopic {{ModId}}.CT_7h 2/
@@ -262,18 +262,18 @@
         pause 555/
         emote farmer 40/
         pause 555/
-        quickQuestion {{i18n:Events.7h.3_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent StrojvedouciDenis.Eleanor_7hearts_q1_yes(break)switchEvent StrojvedouciDenis.Eleanor_7hearts_q1_no",
-        "StrojvedouciDenis.Eleanor_7hearts_q1_yes": "resetVariable/
+        quickQuestion {{i18n:Events.7h.3_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_7hearts_q1_yes(break)switchEvent {{ModId}}_7hearts_q1_no",
+        "{{ModId}}_7hearts_q1_yes": "resetVariable/
         friendship {{ModId}} 100/
         pause 555/
         speak {{ModId}} \"{{i18n:Events.7h.4_yes |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        switchEvent StrojvedouciDenis.Eleanor_7hearts_ending",
-        "StrojvedouciDenis.Eleanor_7hearts_q1_no": "resetVariable/
+        switchEvent {{ModId}}_7hearts_ending",
+        "{{ModId}}_7hearts_q1_no": "resetVariable/
         friendship {{ModId}} 10/
         pause 555/
         speak {{ModId}} \"{{i18n:Events.7h.4_no |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        switchEvent StrojvedouciDenis.Eleanor_7hearts_ending",
-        "StrojvedouciDenis.Eleanor_7hearts_ending": "resetVariable/
+        switchEvent {{ModId}}_7hearts_ending",
+        "{{ModId}}_7hearts_ending": "resetVariable/
         move farmer 4 0 2/
         pause 555/
         faceDirection {{ModId}} 2/
@@ -312,18 +312,19 @@
 
 
     // 8hearts - ?
-    // Location: Forest, Wizard's Tower
-    // Trigger: Entering the For between ??? and ???.
+    // Location: Forest, Wizard's Tower, Eleanor's home
+    // Trigger: Entering the Forest between ??? and ???.
     // Description: 
     {
       "LogName": "Eleanor - event - 8hearts",
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_8hearts/e StrojvedouciDenis.Eleanor_7hearts/ f {{ModId}} 2000":
+        "{{ModId}}_8hearts/e {{ModId}}_7hearts/ f {{ModId}} 2000":
         "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
         skippable/
         addConversationTopic {{ModId}}.CT_8h 2/
+        addObject 1 1 97/ -- spawn dwarf scroll II as a note; tile /
         
         end"
       }
@@ -338,7 +339,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_10hearts/e StrojvedouciDenis.Eleanor_8hearts/Friendship {{ModId}} 2500":
+        "{{ModId}}_10hearts/e {{ModId}}_8hearts/Friendship {{ModId}} 2500":
         "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
         skippable/
         pause 1111/
@@ -346,7 +347,7 @@
       }
     },
 
-
+/*
 
     // 10 hearts - same as 14 hearts short event variants
     // SVE only version
@@ -358,7 +359,7 @@
       "Action": "EditData",
       "Target": "Data/Events/WizardHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_10hearts-temporary/SawEvent StrojvedouciDenis.Eleanor_8hearts/Friendship {{ModId}} 2500":
+        "{{ModId}}_10hearts-temporary/SawEvent {{ModId}}_8hearts/Friendship {{ModId}} 2500":
         "none/10 25/farmer 9 33 0 {{ModId}} 10 17 0/
         skippable/
         addConversationTopic {{ModId}}.CT_10h-temp 2/
@@ -418,6 +419,8 @@
         end"
       }
     },
+*/
+
 
 /*
     // 12hearts - ???
@@ -429,7 +432,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_12hearts/SawEvent StrojvedouciDenis.Eleanor_10hearts/Friendship {{ModId}} 3000":
+        "{{ModId}}_12hearts/SawEvent {{ModId}}_10hearts/Friendship {{ModId}} 3000":
         "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
         skippable/
         end"
@@ -449,10 +452,10 @@
       "Action": "EditData",
       "Target": "Data/Events/FarmHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p0/SawEvent StrojvedouciDenis.Eleanor_10hearts/Friendship {{ModId}} 3500":
+        "{{ModId}}_14hearts-p0/SawEvent {{ModId}}_10hearts/Friendship {{ModId}} 3500":
         "none/-1000 -1000/farmer 0 0 0/
         addConversationTopic {{ModId}}.CT_14h 2/
-        quickQuestion {{i18n:Events.14h-p0.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent StrojvedouciDenis.Eleanor_14hearts-p1(break)eventSeen StrojvedouciDenis.Eleanor_14hearts-p0 false/
+        quickQuestion {{i18n:Events.14h-p0.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_14hearts-p1(break)eventSeen {{ModId}}_14hearts-p0 false/
         end"
       }
     },
@@ -491,7 +494,7 @@
       "Action": "EditData",
       "Target": "Data/Events/FarmHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p1": // /SawEvent StrojvedouciDenis.Eleanor_10hearts/Friendship {{ModId}} 3500
+        "{{ModId}}_14hearts-p1": // /SawEvent {{ModId}}_10hearts/Friendship {{ModId}} 3500
         "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
         viewport -1000 -1000/
         pause 2500/
@@ -564,7 +567,7 @@
         message \"{{i18n:Events.14h-p1.33 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 2500/
         message \"{{i18n:Events.14h-p1.34|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        switchEvent StrojvedouciDenis.Eleanor_14hearts-p2"
+        switchEvent {{ModId}}_14hearts-p2"
       },
       "When": {
         "14hearts-variants": "long",
@@ -576,7 +579,7 @@
       "Action": "EditData",
       "Target": "Data/ Events/FarmHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p1": // /SawEvent StrojvedouciDenis.Eleanor_10hearts/Friendship {{ModId}} 3500
+        "{{ModId}}_14hearts-p1": // /SawEvent {{ModId}}_10hearts/Friendship {{ModId}} 3500
         "none/-1000 -1000/farmer 0 0 0 {{ModId}} 0 0 0/
         viewport -1000 -1000/
         pause 4500/
@@ -702,7 +705,7 @@
         pause 2500/
         message \"{{i18n:Events.14h-p1.34|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         changeLocation WizardHouse/
-        switchEvent StrojvedouciDenis.Eleanor_14hearts-p2"
+        switchEvent {{ModId}}_14hearts-p2"
       },
       "When": {
         "14hearts-variants": "long",
@@ -719,7 +722,7 @@
       "Action": "EditData",
       "Target": "Data/Events/WizardHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p2": // /SawEvent StrojvedouciDenis.Eleanor_14hearts-p1
+        "{{ModId}}_14hearts-p2": // /SawEvent {{ModId}}_14hearts-p1
         "none/-1000 -1000/farmer 9 33 0 Wizard 7 7 0/
         message \"{{i18n:Events.14h-p2.0|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 300/ --Fade in code taken and edited with permissions from user `abagaianye` on Discord. Thanks! <3 Fade code start/
@@ -763,7 +766,7 @@
         speak Wizard \"{{i18n:Events.14h-p2.12|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         changeLocation Custom_SpriteSpring2/
-        switchEvent StrojvedouciDenis.Eleanor_14hearts-p3"
+        switchEvent {{ModId}}_14hearts-p3"
       },
       "When": {
         "14hearts-variants": "long"
@@ -779,9 +782,9 @@
       "Action": "EditData",
       "Target": "Data/Events/Custom_SpriteSpring2",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p3":  // /SawEvent StrojvedouciDenis.Eleanor_14hearts-p2
+        "{{ModId}}_14hearts-p3":  // /SawEvent {{ModId}}_14hearts-p2
         "none/-1000 -1000/farmer 10 23 1 Wizard 10 22 1/
-        addObject 18 23 97/ -- spawn dwarf scroll II as a note/
+        addObject 18 23 97/ -- spawn dwarf scroll II as a note; tile 18 23/
         pause 2222/
         message \"{{i18n:Events.14h-p3.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 300/ --Fade in code taken and edited with permissions from user `abagaianye` on Discord. Thanks! <3 Fade code start/
@@ -892,7 +895,7 @@
         message \"{{i18n:Events.14h-p3.44 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         changeLocation SeedShop/
-        switchEvent StrojvedouciDenis.Eleanor_14hearts-p4"
+        switchEvent {{ModId}}_14hearts-p4"
       },
       "When": {
         "14hearts-variants": "long"
@@ -908,8 +911,8 @@
       "Action": "EditData",
       "Target": "Data/Events/SeedShop",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p4":  // /SawEvent StrojvedouciDenis.Eleanor_14hearts-p3
-        "none/-1000 -1000/farmer 0 0 0 Abigail 1 1 0/
+        "{{ModId}}_14hearts-p4":  // /SawEvent {{ModId}}_14hearts-p3
+        "none/10 10/farmer 10 10 0 Abigail 11 10 0/
         pause 2222/
         message \"{{i18n:Events.14h-p4.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
@@ -937,7 +940,8 @@
         pause 1111/
         message \"{{i18n:Events.14h-p4.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        switchEvent StrojvedouciDenis.Eleanor_14hearts-p5"
+        changeLocation Beach/
+        switchEvent {{ModId}}_14hearts-p5"
       },
       "When": {
         "14hearts-variants": "long"
@@ -954,7 +958,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Beach",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p5": // /SawEvent StrojvedouciDenis.Eleanor_14hearts-p4
+        "{{ModId}}_14hearts-p5": // /SawEvent {{ModId}}_14hearts-p4
         "none/-1000 -1000/farmer 0 0 0 {{ModId}} 0 0 0/
         nonskippable/
         pause 2222/
@@ -1091,7 +1095,7 @@
         pause 1111/
         message \"{{i18n:Events.14h-p5.60 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        switchEvent StrojvedouciDenis.Eleanor_14hearts-p6"
+        switchEvent {{ModId}}_14hearts-p6"
       },
       "When": {
         "14hearts-variants": "long"
@@ -1108,7 +1112,7 @@
       "Action": "EditData",
       "Target": "Data/Events/FarmHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-p6/SawEvent StrojvedouciDenis.Eleanor_14hearts-p5":
+        "{{ModId}}_14hearts-p6/SawEvent {{ModId}}_14hearts-p5":
         "none/-1000 -1000/farmer 0 0 0 {{ModId}} 0 0 0/
         nonskippable/
         pause 2222/
@@ -1129,7 +1133,7 @@
       "Action": "EditData",
       "Target": "Data/ Events/ WizardHouse",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-short_SVE/ e StrojvedouciDenis.Eleanor_10hearts/Friendship {{ModId}} 3500":
+        "{{ModId}}_14hearts-short_SVE/ e {{ModId}}_10hearts/Friendship {{ModId}} 3500":
         "none/10 25/farmer 9 33 0 {{ModId}} 10 17 0/
         skippable/
         viewport move 0 -2 4000/
@@ -1202,53 +1206,53 @@
       "Action": "EditData",
       "Target": "Data/Events/HogwartsET.CP.Hogwarts_HogsmeadeVillage",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_14hearts-short_Hog/ e StrojvedouciDenis.Eleanor_10hearts/SawEvent {{ModId}}Hog_y1/Friendship {{ModId}} 3500":
+        "{{ModId}}_14hearts-short_Hog/ e {{ModId}}_10hearts/SawEvent {{ModId}}Hog_y1/Friendship {{ModId}} 3500":
         "none/-1000 -1000/farmer 22 20 0 {{ModId}} 22 24 0/
         pause 2222/
         move farmer 23 24 1/
         pause 2500/
-        message \"{{i18n:Events.14h-p3_Hog.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        message \"{{i18n:Events.14h-short_Hog.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 3333/
-        message \"{{i18n:Events.14h-p3_Hog.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        message \"{{i18n:Events.14h-p3_Hog.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        message \"{{i18n:Events.14h-short_Hog.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        message \"{{i18n:Events.14h-short_Hog.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         move {{ModId}} 22 24 1/
         pause 1111/
-        message \"{{i18n:Events.14h-p3_Hog.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        message \"{{i18n:Events.14h-short_Hog.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         emote farmer 8 true/
         pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         emote farmer 56 true/
         pause 1111/
         pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 2000/
         shake {{ModId}} 1000/
         pause 3000/
-        message \"{{i18n:Events.14h-p3_Hog.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"globalFade/
+        message \"{{i18n:Events.14h-short_Hog.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"globalFade/
         pause 3500/
-        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 3333/
-        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"globalFadeToClear/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"globalFadeToClear/
         pause 5000/
-        speak {{ModId}} \"{{i18n:Events.14h-p3_Hog.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        message \"{{i18n:Events.14h-p3_Hog.16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        message \"{{i18n:Events.14h-short_Hog.16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         globalfadeout/
         pause 5000/
-        speak {{ModId}}  \"{{i18n:Events.14h-p3_Hog.17|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}}  \"{{i18n:Events.14h-short_Hog.17|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 7777/
         end newDay"
       },
@@ -1257,23 +1261,21 @@
         "14hearts-variants": "short"
       }
     },
-/*
+
 // Marriage testing event
     {
       "LogName": "Eleanor - custom wedding test",
       "Action": "EditData",
       "Target": "Data/Weddings",
-      "Entries":
-      {
-          "EventScript":
-          {
-              "default": "sweet/27 60/farmer 27 60 0 StrojvedouciDenis.Eleanor 27 64 2/
-              speak StrojvedouciDenis.Eleanor \"Blabla Eleanor custom wedding\"/
+      "Entries": {
+        "EventScript": {
+              "default": "wedding/27 60/farmer 67 41 1 {{ModId}} 70 41 3 Wizard 68 39 2 Camila 69 39 2 Abigail 70 44 0 Lewis 67 44 0 Linus 66 44 0 Morgan 64 41 1 Jadu /
+              speak {{ModId}} \"Blabla Eleanor custom wedding\"/
+              pause 1111/
               end wedding"
           }
-},
-  },
-*/
+      },
+    },
 
 // Addon events
 // Hogwarts gone - y1
@@ -1285,7 +1287,7 @@
       "Action": "EditData",
       "Target": "Data/Events/farm",
       "Entries": {
-        "StrojvedouciDenis.Eleanor_Hog_gone_y1/SawEvent {{ModId}}_Intro/DaysPlayed 30":
+        "{{ModId}}_Hog_gone_y1/SawEvent {{ModId}}_Intro/DaysPlayed 30":
         "none/-1000 -1000/farmer 2 2 2 Wizard 3 3 0/
         skippable/
         addConversationTopic {{ModId}}.CT_Hog_gone 6/

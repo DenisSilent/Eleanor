@@ -25,7 +25,7 @@
     },
 
     "14hearts-variants": {
-      "AllowValues": "short, long",
+      "AllowValues": "short", // "short, long"
       "Default": "short", // short due to multiplayer support, I worry that long is too long for 1 SV multiplayer day
       "Section": "Optional content for Eleanor",
       "Description": "This setting lets you choose the variant of Eleanor's 14hearts event. You can choose between short and long versions, which contain of 5 automatically triggered events. = The short version has a fully different outcome than the long one! = Default setting: long."
