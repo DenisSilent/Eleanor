@@ -14,6 +14,14 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.21 (1.6.2025)
+
+* Multi-device development possibility tests
+* First draft of the 8 hearts event
+* Added new draft of the new Terms of Use for this mod
+
+---
+
 ## version 1.0.0-alpha.20 (30.5.2025)
 
 * Multi-device development possibility tests

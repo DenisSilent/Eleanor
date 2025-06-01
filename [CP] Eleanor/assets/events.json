@@ -321,11 +321,22 @@
       "Target": "Data/Events/Forest",
       "Entries": {
         "{{ModId}}_8hearts/e {{ModId}}_7hearts/ f {{ModId}} 2000":
-        "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
+        "none/-1000 -1000/farmer 105 36 0 {{ModId}} 1 1 0/
         skippable/
         addConversationTopic {{ModId}}.CT_8h 2/
-        addObject 1 1 97/ -- spawn dwarf scroll II as a note; tile /
-        
+        viewport 98 33/
+        move farmer -20 0 0 true/
+        pause 5555/
+        globalFade 0.019 true/ --Fade out code taken and edited with permissions from user `abagaianye` on Discord. Thanks! <3 Fade code start/
+        pause 700/
+        viewport -1000 -1000/
+        pause 300/ -- Fade out code end/
+        warp farmer 25 111 0/
+        addObject 11 125 96/ -- spawn dwarf scroll I as a lost piece of paper; tile 11 125/
+        pause 300/ --Fade in code taken and edited with permissions from user `abagaianye` on Discord. Thanks! <3 Fade code start/
+        globalFadeToClear 0.007 true/
+        viewport 8 16/
+        pause 100/ -- Fade code end/
         end"
       }
     },
@@ -440,7 +451,7 @@
     },
 */
 
-
+/*
     // 14hearts
     // Part 0 - event checker
     // Location: your farm
@@ -481,7 +492,7 @@
                 pause 100/
     */
 
-
+/*
     // long versions
     // NOTE: Multiplayer does NOT pause time during cutscenes! One in-game hour = 43 real world seconds, full day = 14 minutes 20 seconds... (Taken from: https://stardewmodding.wiki.gg/wiki/Tips_for_Heart_Events_-_Writing_and_Narrative_Design#Additional_Tips,_Caveats_and_Notes)
     // Part 1 - Eleanor's note
@@ -1121,7 +1132,7 @@
         end"
       }
     },
-
+*/
 
 // short versions
 // SVE only version
