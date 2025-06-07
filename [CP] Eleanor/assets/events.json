@@ -1,4 +1,17 @@
 {
+  /*
+  Useful links:
+  https://stardewvalleywiki.com/Modding:Event_data
+  https://stardewvalleywiki.com/Modding:Event_data#Built-in_preconditions
+  https://stardewvalleywiki.com/Modding:Event_data#Event_scripts
+  https://stardewvalleywiki.com/Modding:Event_data#Emotes
+  https://stardewmodding.wiki.gg/wiki/Tips_for_Making_Events_from_a_Novice_by_LenneDalben
+  https://stardewvalleywiki.com/Modding:Migrate_to_Stardew_Valley_1.6.16#Event_changes
+  https://stardewvalleywiki.com/Modding:Migrate_to_Stardew_Valley_1.6.16#Deprecated_commands
+  ---
+  https://stardewvalleywiki.com/Modding:Custom_wedding_events
+  https://github.com/Pathoschild/StardewMods/tree/develop/ContentPatcher/docs/author-guide
+  */
   "Changes": [
     /*
     {
@@ -203,6 +216,106 @@
         pause 111/
         emote farmer 56/
         end"
+
+        /*
+        1.6.16
+        copy from 6.6.2025
+
+        "{{ModId}}_4hearts/SawEvent {{ModId}}_2hearts/Friendship {{ModId}} 1000/t 1800 2600":
+        "none/14 12/farmer -1000 -1000 2 {{ModId}} 4 19 3/
+        skippable/
+        addConversationTopic {{ModId}}.CT_4h 2/
+        beginSimultaneousCommand/
+        textAboveHead {{ModId}} \"{{i18n:Events.4h.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        move {{ModId}} 0 -5 3 true/
+        endSimultaneousCommand/
+        pause 5555/
+        emote {{ModId}} 28/
+        textAboveHead {{ModId}} \"{{i18n:Events.4h.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        move {{ModId}} 0 -1 1/
+        move {{ModId}} 5 0 0 true/
+        pause 1111/
+        warp farmer 4 3/
+        pause 777/
+        move farmer 0 10 1 true/
+        beginSimultaneousCommand/
+        pause 2222/
+        emote farmer 8/
+        pause 1111/
+        emote {{ModId}} 40/
+        pause 111/
+        emote farmer 16/
+        pause 111/
+        faceDirection {{ModId}} 3/
+        pause 111/
+        emote {{ModId}} 16/
+        pause 111/
+        speak {{ModId}} \"{{i18n:Events.4h.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        endSimultaneousCommand/
+        pause 1111/
+        emote farmer 40/
+        pause 111/
+        emote {{ModId}} 60/
+        pause 111/
+        speak {{ModId}} \"{{i18n:Events.4h.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.4h.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 555/
+        emote {{ModId}} 40/
+        choose \"{{i18n:Events.4h.5_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" \"{{i18n:Events.4h.5_q1a1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" q1a1 \"{{i18n:Events.4h.5_q1a2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" q1a2 \"{{i18n:Events.4h.5_q1a3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" q1a3/
+        
+        label q1a1/ --Answer 1
+        friendship {{ModId}} 150/
+        speak {{ModId}} \"{{i18n:Events.4h.6_time |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        goto q1a1+q1a2_end/
+        
+        label q1a2/ --Answer 2
+        friendship {{ModId}} 50/
+        speak {{ModId}} \"{{i18n:Events.4h.6_magic |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        goto q1a1+q1a2_end/
+        
+        label q1a3/ --Answer 3
+        friendship {{ModId}} -5/
+        speak {{ModId}} \"{{i18n:Events.4h.6_notime |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        globalFade/
+        viewport -1000 -1000/
+        pause 1111/
+        message \"{{i18n:Events.4h.7_notime |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        goto end/
+      
+        label q1a1+q1a2_end/ --Unified end for answers 1 and 2
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.4h.7_time |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 111/
+        emote farmer 56/
+        move {{ModId}} 10 0 0 farmer 0 -2 3/
+        pause 1111/
+        emote farmer 8/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.4h.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.4h.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 111/
+        move farmer 0 -3 3/
+        pause 1111/
+        message \"{{i18n:Events.4h.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        emote farmer 40/
+        pause 1111/
+        message \"{{i18n:Events.4h.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 111/
+        move {{ModId}} -15 0 0/
+        move {{ModId}} 0 -4 3/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.4h.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.4h.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 111/
+        emote farmer 56/
+        end"
+
+        */
       }
     },
 /*
@@ -312,32 +425,43 @@
 
 
     // 8hearts - ?
-    // Location: Forest, Wizard's Tower, Eleanor's home
-    // Trigger: Entering the Forest between ??? and ???.
+    // Location: West Forest (SVE), Wizard's Tower, Eleanor's home
+    // Trigger: Entering the West Forest (SVE).
     // Description: 
     {
       "LogName": "Eleanor - event - 8hearts",
       "Action": "EditData",
-      "Target": "Data/Events/Forest",
+      "Target": "Data/Events/Custom_ForestWest",
       "Entries": {
-        "{{ModId}}_8hearts/e {{ModId}}_7hearts/ f {{ModId}} 2000":
-        "none/-1000 -1000/farmer 105 36 0 {{ModId}} 1 1 0/
+        "{{ModId}}_8hearts/SawEvent  {{ModId}}_7hearts/Friendship {{ModId}} 2000":
+        "none/-1000 -1000/farmer 105 36 0 {{ModId}} 20 128 0/
         skippable/
         addConversationTopic {{ModId}}.CT_8h 2/
         viewport 98 33/
         move farmer -20 0 0 true/
-        pause 5555/
+        pause 3333/
         globalFade 0.019 true/ --Fade out code taken and edited with permissions from user `abagaianye` on Discord. Thanks! <3 Fade code start/
         pause 700/
         viewport -1000 -1000/
         pause 300/ -- Fade out code end/
         warp farmer 25 111 0/
+        move farmer 0 12 0 true/
         addObject 11 125 96/ -- spawn dwarf scroll I as a lost piece of paper; tile 11 125/
         pause 300/ --Fade in code taken and edited with permissions from user `abagaianye` on Discord. Thanks! <3 Fade code start/
         globalFadeToClear 0.007 true/
-        viewport 8 16/
-        pause 100/ -- Fade code end/
-        end"
+        viewport 20 125/
+        pause 111/ -- Fade code end/
+        emote farmer 40/
+        move Eleanor -9 0 0/
+        emote {{ModId}} 16/
+        textAboveHead {{ModId}} \"{{i18n:Events.8h.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        emote farmer 8/
+        advancedMove farmer 0 4 3 111 -14 0 0 111/
+        emote farmer 16/
+        faceDirection {{ModId}} 2/
+        emote {{ModId}} 16/
+        speak {{ModId}} \"{{i18n:Events.8h.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        quickQuestion {{i18n:Events.8h.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_8hearts_q1_forage(break)switchEvent {{ModId}}_4hearts_q1_spy",
       }
     },
 
@@ -350,7 +474,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "{{ModId}}_10hearts/e {{ModId}}_8hearts/Friendship {{ModId}} 2500":
+        "{{ModId}}_10hearts/SawEvent  {{ModId}}_8hearts/Friendship {{ModId}} 2500":
         "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
         skippable/
         pause 1111/

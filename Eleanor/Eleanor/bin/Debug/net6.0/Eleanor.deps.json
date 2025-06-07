@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Eleanor/1.0.0-alpha.19": {
+      "Eleanor/1.0.0-alpha.22": {
         "dependencies": {
           "Pathoschild.Stardew.ModBuildConfig": "4.4.0"
         },
@@ -18,7 +18,7 @@
     }
   },
   "libraries": {
-    "Eleanor/1.0.0-alpha.19": {
+    "Eleanor/1.0.0-alpha.22": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

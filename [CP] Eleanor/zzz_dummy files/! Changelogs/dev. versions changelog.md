@@ -14,6 +14,19 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.22 (7.6.2025)
+
+* Multi-device development possibility tests
+* Internal reorganization of the dummy files folder
+* Updated manifest (forgot to do that)
+* Slightly expanded the 8 hearts event X not complete/working at all
+* Fixed wrong prefix in 10 hearts event
+* First preparation for the (no one knows when) 1.6.16 update of the game - first 4 hearts 1.6.16 event variant X IDK how to test their (in)correctness
+  * That means important changes of the event formating to be up to date - in other words, uinstead of `quickQuestion` and `swichEvent` commands, the new (and much better, I'd say) `choose`, `goto` and `label` commands are used
+* Recompiled the C# part of the mod (IDK why, though - nothing was changed there)
+
+---
+
 ## version 1.0.0-alpha.21 (1.6.2025)
 
 * Multi-device development possibility tests

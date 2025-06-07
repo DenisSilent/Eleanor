@@ -15,12 +15,12 @@
   "config.Festivals.name": "Festivals",
   "config.Festivals.values.true": "true",
   "config.Festivals.values.false": "false",
-  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 1.0.0-alpha.19 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
+  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 1.0.0-alpha.22 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
 
   "config.Marriage.name": "Marriage",
   "config.Marriage.values.true": "true",
   "config.Marriage.values.false": "false",
-  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.19, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
+  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.22, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
 
   "config.14hearts-variants.name": "14 hearts event variant",
   "config.14hearts-variants.values.short": "short",
@@ -41,7 +41,7 @@
   "config.Outfits.values.one look only": "one look only",
   "config.Outfits.values.vanilla": "vanilla",
   "config.Outfits.values.seasonal": "seasonal",
-  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.19, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
+  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.22, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
 
   // Experimental - DoNotChange
 
@@ -52,7 +52,7 @@
   "config.On/off.values.on": "on",
   "config.On/off.values.safe mode": "safe mode",
   "config.On/off.values.off": "off",
-  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.19, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
+  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.22, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
 
   /*
   // Dynamic tokens
@@ -452,6 +452,14 @@
   "Events.4h.3": "You heard a noise from downstairs, so you decided to check it out?#$b#Heh... I should be quieter next time.",
   "Events.4h.4": "It was just me, looking for a certain book to study...#$b#I can't find it, though...",
   "Events.4h.5_q": "Would you like to help me find it?#Of course!#I'll help, but why don't you use magic to find it?#Sorry, I have little time.",
+  /*
+  1.6.16
+  copy from 6.6.2025
+  "Events.4h.5_q1": "Would you like to help me find it?",
+  "Events.4h.5_q1a1": "Of course!",
+  "Events.4h.5_q1a2": "I'll help, but why don't you use magic to find it?",
+  "Events.4h.5_q1a3": "Sorry, I have little time.",
+  */
   "Events.4h.6_time": "You'll help me? Glad to hear that!#$b#I'll be grateful for your help, {{DT_name}}.",
   "Events.4h.6_magic": "Well, the book is very, very old, and the spell might destroy it, so it's safer to find it manually.",
   "Events.4h.6_notime": "Oh, don't worry, {{DT_name}}. I'll find it sooner or later.",
@@ -490,23 +498,20 @@
   "Events.7h.11": "Do you want to watch the rain and the waterfall here with me?#$b#I think it's a good place to relax and think about everything and nothing at the same time.",
   "Events.7h.12": "You shared a nice moment with Eleanor. You feel like you are closer to each other now.",
 
-  /*
+
   // 8 hearts
-    commented out until marriage update (1.0.0); do NOT translate
-  "Events.8h.0": "StrojvedouciDenis.Eleanor-DEBUG:8h.0",
+  "Events.8h.0": "Here it is!",
   "Events.8h.1": "StrojvedouciDenis.Eleanor-DEBUG:8h.1",
   "Events.8h.2": "StrojvedouciDenis.Eleanor-DEBUG:8h.2",
   "Events.8h.3": "StrojvedouciDenis.Eleanor-DEBUG:8h.3",
   "Events.8h.4": "StrojvedouciDenis.Eleanor-DEBUG:8h.4",
 
   // 10 hearts
-   commented out until marriage update (1.0.0); do NOT translate
   "Event.10h.0": "StrojvedouciDenis.Eleanor-DEBUG:10h.0",
   "Event.10h.1": "StrojvedouciDenis.Eleanor-DEBUG:10h.1",
   "Event.10h.2": "StrojvedouciDenis.Eleanor-DEBUG:10h.2",
   "Event.10h.3": "StrojvedouciDenis.Eleanor-DEBUG:10h.3",
   "Event.10h.4": "StrojvedouciDenis.Eleanor-DEBUG:10h.4",
-*/
 
   // 14 hearts
   // OLD part 1/1 (old 14h event dialogues, now 14h-short; variants are automatically used depending if you have Hogwarts installed or not; also 10 hearts temporary event)
