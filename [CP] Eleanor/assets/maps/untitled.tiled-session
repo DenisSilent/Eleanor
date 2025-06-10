@@ -93,7 +93,7 @@
             "scale": 2,
             "selectedLayer": 9,
             "viewCenter": {
-                "x": 71.25,
+                "x": 65.75,
                 "y": 170.5
             }
         },
@@ -270,11 +270,11 @@
             "expandedObjectLayers": [
                 10
             ],
-            "scale": 3,
+            "scale": 2,
             "selectedLayer": 9,
             "viewCenter": {
-                "x": 351.5,
-                "y": 123.66666666666669
+                "x": 206.25,
+                "y": 202
             }
         },
         "Eleanor_home.tmx#p": {

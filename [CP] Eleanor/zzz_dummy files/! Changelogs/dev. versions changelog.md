@@ -14,6 +14,16 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.23 (8.6.2025)
+
+* Multi-device development possibility tests
+* Moved the ToU draft to the `zzz_dummy files` folder
+* Fixed the map loading the tilesheets --> deleted my copy of them
+* Deleted the old map copy (if it would be ever needed, it can be restored from proprer commit in the development_UNSTABLE! GitHub branch (another reason of having multiple branches and mainly the GitHub repo itself; at least before the C# part's introduction --> then needed to be open sourced))
+* Fixed some conditions for the events
+
+---
+
 ## version 1.0.0-alpha.22 (7.6.2025)
 
 * Multi-device development possibility tests
