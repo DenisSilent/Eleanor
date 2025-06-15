@@ -102,19 +102,75 @@
         pause 750/
         emote farmer 60/
         pause 500/
-        quickQuestion {{i18n:Events.2h.3_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_2hearts_q1_yes(break)switchEvent {{ModId}}_2hearts_q1_no",
-        "{{ModId}}_2hearts_q1_yes": "resetVariable/
+        quickQuestion {{i18n:Events.2h.3_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_2hearts_q1_yes(break)switchEvent {{ModId}}_2hearts_q1_no",
+
+        "{{ModId}}_2hearts_q1a1": "resetVariable/
+        friendship {{ModId}} 250/
+        speak {{ModId}} \"{{i18n:Events.2h.q1r1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        speak {{ModId}} \"{{i18n:Events.2h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        end",
+
+        "{{ModId}}_2hearts_q1a2": "resetVariable/
+        friendship {{ModId}} -350/
+        speak {{ModId}} \"{{i18n:Events.2h.q1r2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2500/
+        speak {{ModId}} \"{{i18n:Events.2h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        end"
+
+        /*
+        1.6.16
+
+        "{{ModId}}_2hearts/SawEvent {{ModId}}_Intro/Friendship {{ModId}} 500/Time 600 1200":
+        "none/21 31/farmer 21 20 2 {{ModId}} 16 30 1/
+        skippable/
+        addConversationTopic {{ModId}}.CT_2h 2/
+        pause 1111/
+        Move farmer 0 10 2 true/
+        pause 4444/
+        textAboveHead {{ModId}} \"{{i18n:Events.2h.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 500/
+        emote farmer 8/
+        pause 500/
+        faceDirection farmer 0 true/
+        pause 500/
+        faceDirection farmer 1 true/
+        pause 500/
+        faceDirection farmer 2 true/
+        pause 500/
+        faceDirection farmer 3 true/
+        pause 500/
+        faceDirection farmer 2 true/
+        pause 250/
+        emote {{ModId}} 40/
+        pause 500/
+        speak {{ModId}} \"{{i18n:Events.2h.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 500/
+        faceDirection farmer 3 true/
+        pause 750/
+        emote farmer 16/
+        pause 500/
+        speak {{ModId}} \"{{i18n:Events.2h.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 750/
+        emote farmer 60/
+        pause 500/
+        choose "{{i18n:Events.2h.3_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}" "{{i18n:Events.2h.3_q1a1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}" q1a1 "{{i18n:Events.2h.3_q1a2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}" q1a2/
+
+        label q1a1/ --Answer 1/
         friendship {{ModId}} 250/
         speak {{ModId}} \"{{i18n:Events.2h.4_yes |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 2500/
         speak {{ModId}} \"{{i18n:Events.2h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        end",
-        "{{ModId}}_2hearts_q1_no": "resetVariable/
+        goto end/
+
+        label q1a2/ --Answer 2/
         friendship {{ModId}} -350/
         speak {{ModId}} \"{{i18n:Events.2h.4_no |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 2500/
         speak {{ModId}} \"{{i18n:Events.2h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         end"
+
+        */
       }
     },
 
@@ -169,26 +225,30 @@
         speak {{ModId}} \"{{i18n:Events.4h.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 555/
         emote {{ModId}} 40/
-        quickQuestion {{i18n:Events.4h.5_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_4hearts_q1_time(break)switchEvent {{ModId}}_4hearts_q1_magic(break)switchEvent {{ModId}}_4hearts_q1_notime",
-        "{{ModId}}_4hearts_q1_time": "resetVariable/
+        quickQuestion {{i18n:Events.4h.5_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_4hearts_q1a1(break)switchEvent {{ModId}}_4hearts_q1a2(break)switchEvent {{ModId}}_4hearts_q1a3",
+
+        "{{ModId}}_4hearts_q1a1": "resetVariable/
         friendship {{ModId}} 150/
-        speak {{ModId}} \"{{i18n:Events.4h.6_time |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.4h.6_q1r1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         switchEvent {{ModId}}_4hearts_ending_time",
-        "{{ModId}}_4hearts_q1_magic": "resetVariable/
+
+        "{{ModId}}_4hearts_q1a2": "resetVariable/
         friendship {{ModId}} 50/
-        speak {{ModId}} \"{{i18n:Events.4h.6_magic |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.4h.6_q1r2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         switchEvent {{ModId}}_4hearts_ending_time",
-        "{{ModId}}_4hearts_q1_notime": "resetVariable/
+
+        "{{ModId}}_4hearts_q1a3": "resetVariable/
         friendship {{ModId}} -5/
-        speak {{ModId}} \"{{i18n:Events.4h.6_notime |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.4h.6_q1r3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         globalFade/
         viewport -1000 -1000/
         pause 1111/
-        message \"{{i18n:Events.4h.7_notime |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        message \"{{i18n:Events.4h.7_q1r3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         end",
+
         "{{ModId}}_4hearts_ending_time": "resetVariable/
         pause 1111/
-        speak {{ModId}} \"{{i18n:Events.4h.7_time |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.4h.7_q1r1/2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 111/
         emote farmer 56/
         move {{ModId}} 10 0 0 farmer 0 -2 3/
@@ -219,7 +279,6 @@
 
         /*
         1.6.16
-        copy from 6.6.2025
 
         "{{ModId}}_4hearts/SawEvent {{ModId}}_2hearts/Friendship {{ModId}} 1000/Time 1800 2600":
         "none/14 12/farmer -1000 -1000 2 {{ModId}} 4 19 3/
@@ -265,26 +324,26 @@
         emote {{ModId}} 40/
         choose \"{{i18n:Events.4h.5_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" \"{{i18n:Events.4h.5_q1a1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" q1a1 \"{{i18n:Events.4h.5_q1a2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" q1a2 \"{{i18n:Events.4h.5_q1a3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" q1a3/
         
-        label q1a1/ --Answer 1
+        label q1a1/ --Answer 1/
         friendship {{ModId}} 150/
-        speak {{ModId}} \"{{i18n:Events.4h.6_time |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.4h.6_q1r1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         goto q1a1+q1a2_end/
         
-        label q1a2/ --Answer 2
+        label q1a2/ --Answer 2/
         friendship {{ModId}} 50/
-        speak {{ModId}} \"{{i18n:Events.4h.6_magic |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.4h.6_q1r2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         goto q1a1+q1a2_end/
         
-        label q1a3/ --Answer 3
+        label q1a3/ --Answer 3/
         friendship {{ModId}} -5/
-        speak {{ModId}} \"{{i18n:Events.4h.6_notime |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.4h.6_q1r3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         globalFade/
         viewport -1000 -1000/
         pause 1111/
         message \"{{i18n:Events.4h.7_notime |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         goto end/
       
-        label q1a1+q1a2_end/ --Unified end for answers 1 and 2
+        label q1a1+q1a2_end/ --Unified end for answers 1 and 2/
         pause 1111/
         speak {{ModId}} \"{{i18n:Events.4h.7_time |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 111/
@@ -337,7 +396,6 @@
     },
 */
 
-// *
     // 7hearts - Check on Eleanor
     // Location: Forest
     // Trigger: Enter the Forest when it is raining.
@@ -375,17 +433,20 @@
         pause 555/
         emote farmer 40/
         pause 555/
-        quickQuestion {{i18n:Events.7h.3_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_7hearts_q1_yes(break)switchEvent {{ModId}}_7hearts_q1_no",
-        "{{ModId}}_7hearts_q1_yes": "resetVariable/
+        quickQuestion {{i18n:Events.7h.3_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_7hearts_q1a1(break)switchEvent {{ModId}}_7hearts_q1a2",
+
+        "{{ModId}}_7hearts_q1a1": "resetVariable/
         friendship {{ModId}} 100/
         pause 555/
-        speak {{ModId}} \"{{i18n:Events.7h.4_yes |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.7h.4_q1a1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         switchEvent {{ModId}}_7hearts_ending",
-        "{{ModId}}_7hearts_q1_no": "resetVariable/
+
+        "{{ModId}}_7hearts_q1a2": "resetVariable/
         friendship {{ModId}} 10/
         pause 555/
-        speak {{ModId}} \"{{i18n:Events.7h.4_no |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.7h.4_q1a2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         switchEvent {{ModId}}_7hearts_ending",
+
         "{{ModId}}_7hearts_ending": "resetVariable/
         move farmer 4 0 2/
         pause 555/
@@ -418,11 +479,87 @@
         pause 555/
         message \"{{i18n:Events.7h.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         end"
+
+        /*
+        1.6.16
+
+        "{{ModId}}_7hearts/SawEvent {{ModId}}_4hearts/Friendship {{ModId}} 1750/Weather rainy":
+        "none/52 98/ farmer 35 97 1 {{ModId}} 52 98 2/
+        skippable/
+        addConversationTopic {{ModId}}.CT_7h 2/
+        pause 1111/
+        move farmer 7 0 1/
+        pause 555/
+        emote farmer 40/
+        pause 555/
+        move farmer 0 1 1/
+        move farmer 5 0 1/
+        pause 111/
+        emote farmer 8/
+        pause 111/
+        faceDirection {{ModId}} 3/
+        pause 111/
+        emote {{ModId}} 16/
+        pause 555/
+        speak {{ModId}} \"{{i18n:Events.7h.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 555/
+        emote farmer 40/
+        pause 555/
+        speak {{ModId}} \"{{i18n:Events.7h.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.7h.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 555/
+        emote farmer 40/
+        pause 555/
+        choose \"{{i18n:Events.7h.3_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" \"{{i18n:Events.7h.3_q1a1_choiceText |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" label_7h_q1a1 \"{{i18n:Events.7h.3_q1a2_choiceText |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" label_7h_q1a2/
+        
+        label label_7h_q1a1/ --Answer 1
+        friendship {{ModId}} 100/
+        pause 555/
+        speak {{ModId}} \"{{i18n:Events.7h.4_q1a1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        goto label_7h_ending/
+        
+        label label_7h_q1a2/ --Answer 2
+        friendship {{ModId}} 10/
+        pause 555/
+        speak {{ModId}} \"{{i18n:Events.7h.4_q1a2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        goto label_7h_ending/
+        
+        label label_7h_ending/ --Unified ending for answers
+        move farmer 4 0 2/
+        pause 555/
+        faceDirection {{ModId}} 2/
+        pause 555/
+        emote {{ModId}} 40/
+        pause 555/
+        speak {{ModId}} \"{{i18n:Events.7h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2222/
+        speak {{ModId}} \"{{i18n:Events.7h.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.7h.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.7h.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 555/
+        emote {{ModId}} 28/
+        pause 555/
+        speak {{ModId}} \"{{i18n:Events.7h.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.7h.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 555/
+        emote farmer 56/
+        pause 555/
+        speak {{ModId}} \"{{i18n:Events.7h.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 555/
+        emote farmer 20/
+        pause 555/
+        globalFade/
+        viewport -1000 -1000/
+        pause 555/
+        message \"{{i18n:Events.7h.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        end"
+        */
       }
     },
-    // */
-
-
 
     // 8hearts - ?
     // Location: West Forest (SVE), Wizard's Tower, Eleanor's home
@@ -461,7 +598,19 @@
         faceDirection {{ModId}} 2/
         emote {{ModId}} 16/
         speak {{ModId}} \"{{i18n:Events.8h.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        quickQuestion {{i18n:Events.8h.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_8hearts_q1_forage(break)switchEvent {{ModId}}_4hearts_q1_spy",
+        quickQuestion {{i18n:Events.8h.2_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_8hearts_q1a1(break)switchEvent {{ModId}}_8hearts_q1a2(break){{ModId}}_8hearts_q1a3",
+
+        "{{ModId}}_8hearts_q1a1": "resetVariable/
+        friendship {{ModId}} 50/
+        end",
+
+        "{{ModId}}_8hearts_q1a2": "resetVariable/
+        friendship {{ModId}} 25/
+        end",
+
+       "{{ModId}}_8hearts_q1a3": "resetVariable/
+        friendship {{ModId}} -250/
+        end",
       }
     },
 
@@ -477,6 +626,8 @@
         "{{ModId}}_10hearts/SawEvent  {{ModId}}_8hearts/Friendship {{ModId}} 2500":
         "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
         skippable/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.10h.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         end"
       }

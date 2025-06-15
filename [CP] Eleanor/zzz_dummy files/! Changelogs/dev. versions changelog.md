@@ -14,6 +14,18 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.24 (15.6.2025)
+
+* Multi-device development possibility tests
+* Some C# non-code files were automatically changed - locally moved to .NET 10.0.0-preview.5
+  * Hopefully it doesn't break anything - as I didn't compile it yet, it should be fine
+* Edited 2h, 4h and 7h events and their questions code, including the switched events name (aka the chosen answers)
+  * also created 1.6.16 versions for them, including correct i18n keys
+* Started creating a secret event for my 1 year modding anniversary, aka 1 year from start of NPC template what later dynamically moved to creating this very mod, NPC Eleanor
+* Added the mentions of users who helped me with the mod development and weren't mentioned before (sorry guys, I forgot to do that)
+
+---
+
 ## version 1.0.0-alpha.23 (8.6.2025)
 
 * Multi-device development possibility tests
@@ -31,8 +43,11 @@ Instructions for downloading the unreleased versions:
 * Updated manifest (forgot to do that)
 * Slightly expanded the 8 hearts event X not complete/working at all
 * Fixed wrong prefix in 10 hearts event
-* First preparation for the (no one knows when) 1.6.16 update of the game - first 4 hearts 1.6.16 event variant X IDK how to test their (in)correctness
+* First preparation for the (no one knows when) 1.6.16 update of the game - first 4 hearts 1.6.16 event variant X IDK how to test its (in)correctness
   * That means important changes of the event formating to be up to date - in other words, uinstead of `quickQuestion` and `swichEvent` commands, the new (and much better, I'd say) `choose`, `goto` and `label` commands are used
+  * Also Discord help with this by:
+    * `@chu2.718281828459045235360287471`
+    * `@pathoschild`
 * Recompiled the C# part of the mod (IDK why, though - nothing was changed there)
 
 ---
@@ -50,10 +65,13 @@ Instructions for downloading the unreleased versions:
 * Multi-device development possibility tests
   * You'll probably wondering what does that even mean, esspecially since there are technically no changes. True, but I want to be able to develop the mod on multiple devices, so I can work on it even when I'm not at home.
 * IRL stuff stopped me from working on the mod for a while, but now I'm slowly getting back
-  * and also my motivation left the chat...
 * Edited Eleanor's home map
 * Changed schedules (slightly so they'll accord to the new home map)
 * Commented out and deactivated the 14 hearts long variant events - not ready yet + needs more time --> sacrificed so the beta version can be released much sooner
+  * Aslo item spawning Discord help by:
+    * `@sinz163`
+    * `@abagaianye`
+    * `@shockah`
 
 ---
 
@@ -70,7 +88,9 @@ Instructions for downloading the unreleased versions:
 ## version 1.0.0-alpha.18 (9.5.2025)
 
 * Multi-device connectivity tests
-* Fixing pathfinding error by editing the broken schedule
+* Fixing pathfinding error by editing the broken schedule Discord help by:
+  * `@abagaianye`
+  * `@atravita`
 * Added few more map strings
 * Internally fixed an error of folder not loading (it shouldn't)
 * Fixed wrong manifests
@@ -132,7 +152,8 @@ Instructions for downloading the unreleased versions:
 ## version 1.0.0-alpha.12 (25.4.2025)
 
 * Multi-device connectivity tests
-* Fixed incorrect mail after Eleanor gets back from summer trip year 1 if Hogwarts mod is installed
+* Fixed incorrect mail after Eleanor gets back from summer trip year 1 if Hogwarts mod is installed Discord help by:
+  * `@ichortower`
 * Rewritten the events code (and modernized their preconditions) to be more readable and easier to maintain
 
 ---
@@ -200,9 +221,12 @@ Instructions for downloading the unreleased versions:
 ## version 1.0.0-alpha.3 (6.4.2025)
 
 * Fixed a potentionall error with wrong key in gifts
-* event commands Discord help by:
+* Event commands Discord help by:
   * `@sinz163`
   * `@abagaianye`
+* Dialogue Discord clarification (and many other things, like my SV making AVE) and help by:
+  * `@abagaianye`
+  * `@atravita`
 
 ---
 

@@ -15,12 +15,12 @@
   "config.Festivals.name": "Festivals",
   "config.Festivals.values.true": "true",
   "config.Festivals.values.false": "false",
-  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 1.0.0-alpha.23 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
+  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 1.0.0-alpha.24 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
 
   "config.Marriage.name": "Marriage",
   "config.Marriage.values.true": "true",
   "config.Marriage.values.false": "false",
-  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.23, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
+  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.24, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
 
   "config.14hearts-variants.name": "14 hearts event variant",
   "config.14hearts-variants.values.short": "short",
@@ -41,7 +41,7 @@
   "config.Outfits.values.one look only": "one look only",
   "config.Outfits.values.vanilla": "vanilla",
   "config.Outfits.values.seasonal": "seasonal",
-  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.23, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
+  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.24, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
 
   // Experimental - DoNotChange
 
@@ -52,7 +52,7 @@
   "config.On/off.values.on": "on",
   "config.On/off.values.safe mode": "safe mode",
   "config.On/off.values.off": "off",
-  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.23, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
+  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.24, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
 
   /*
   // Dynamic tokens
@@ -440,9 +440,16 @@
   "Events.2h.0": "Good morning, {{DT_name}}!",
   "Events.2h.1": "Above you!",
   "Events.2h.2": "Hehe...$h#$b#Took you a while to notice me, didn't it?",
-  "Events.2h.3_q": "Such nice nature here, don't you think?#I know! It's beautiful!#I don't like it. Something more useful should be built here.",
-  "Events.2h.4_yes": "I'm glad you like it too.$h#$b#I like to come here and relax when I have some free time.#$b#It's so peaceful here. I can think about everything and nothing at the same time.",
-  "Events.2h.4_no": "Oh...$s#$b#Honestly, I would like to know what you would like to see here.#$b#You, as a farmer, should like nature, am I right?#$b#But I can understand if you don't like it. Everyone has their own opinion.",
+  /*
+  1.6.16
+"Events.2h.3_q1": "Such nice nature here, don't you think?",
+"Events.2h.3_q1a1": "I know! It's beautiful!",
+"Events.2h.3_q1a2": "I don't like it. Something more useful should be built here."
+
+  */
+  "Events.2h.3_q1": "Such nice nature here, don't you think?#I know! It's beautiful!#I don't like it. Something more useful should be built here.",
+  "Events.2h.4_q1r1": "I'm glad you like it too.$h#$b#I like to come here and relax when I have some free time.#$b#It's so peaceful here. I can think about everything and nothing at the same time.",
+  "Events.2h.4_q1r2": "Oh...$s#$b#Honestly, I would like to know what you would like to see here.#$b#You, as a farmer, should like nature, am I right?#$b#But I can understand if you don't like it. Everyone has their own opinion.",
   "Events.2h.5": "Anyways, I have to return to {{DT_wizard_name}}, {{DT_wizard_fem}} should be waiting for me.#$b#May you have a good day, {{DT_name}}.",
 
   // 4 hearts
@@ -451,20 +458,19 @@
   "Events.4h.2": "Oh, hello, {{DT_name}}! What brings you here?",
   "Events.4h.3": "You heard a noise from downstairs, so you decided to check it out?#$b#Heh... I should be quieter next time.",
   "Events.4h.4": "It was just me, looking for a certain book to study...#$b#I can't find it, though...",
-  "Events.4h.5_q": "Would you like to help me find it?#Of course!#I'll help, but why don't you use magic to find it?#Sorry, I have little time.",
-  /*
+    /*
   1.6.16
-  copy from 6.6.2025
   "Events.4h.5_q1": "Would you like to help me find it?",
   "Events.4h.5_q1a1": "Of course!",
   "Events.4h.5_q1a2": "I'll help, but why don't you use magic to find it?",
   "Events.4h.5_q1a3": "Sorry, I have little time.",
   */
-  "Events.4h.6_time": "You'll help me? Glad to hear that!#$b#I'll be grateful for your help, {{DT_name}}.",
-  "Events.4h.6_magic": "Well, the book is very, very old, and the spell might destroy it, so it's safer to find it manually.",
-  "Events.4h.6_notime": "Oh, don't worry, {{DT_name}}. I'll find it sooner or later.",
-  "Events.4h.7_time": "Could you, please, check that bookshelf?#$b#I'll check the other ones.",
-  "Events.4h.7_notime": "Before you left, you noticed and pointed out to something covered in dust, so Eleanor checked it out. Turned out, it was the book she was looking for!#She thanked you for your help and somehow, you feel closer to her.", //message
+  "Events.4h.5_q1": "Would you like to help me find it?#Of course!#I'll help, but why don't you use magic to find it?#Sorry, I have little time.",
+  "Events.4h.6_q1r1": "You'll help me? Glad to hear that!#$b#I'll be grateful for your help, {{DT_name}}.",
+  "Events.4h.6_q1r2": "Well, the book is very, very old, and the spell might destroy it, so it's safer to find it manually.",
+  "Events.4h.6_q1r3": "Oh, don't worry, {{DT_name}}. I'll find it sooner or later.",
+  "Events.4h.7_q1r1/2": "Could you, please, check that bookshelf?#$b#I'll check the other ones.",
+  "Events.4h.7_q1r3": "Before you left, you noticed and pointed out to something covered in dust, so Eleanor checked it out. Turned out, it was the book she was looking for!#She thanked you for your help and somehow, you feel closer to her.", //message
   "Events.4h.8": "I haven't even told you what I'm looking for? Oh, that's true, sorry!#$b#It's a big dark green book about the history of these lands, and I got it from {{DT_wizard_name}} to study.",
   "Events.4h.9": "You see a lot of books there, but none of them is the one you are looking for, so you decide to check the other half of the bookshelf.", //message
   "Events.4h.10": "At first, you don't see anything, but then you notice something covered in dust...#Could it be the book Eleanor is looking for?", //message
@@ -474,7 +480,6 @@
 
   /*
   // 6 hearts
-    commented out until the marriage update (1.0.0); do NOT translate
   "Events.6h.0": "StrojvedouciDenis.Eleanor-DEBUG:6h.0", 
   "Events.6h.1": "StrojvedouciDenis.Eleanor-DEBUG:6h.1",
   "Events.6h.2": "StrojvedouciDenis.Eleanor-DEBUG:6h.2",
@@ -486,9 +491,15 @@
   "Events.7h.0": "Oh!#$b#{{DT_name}}!#$b#Hi! What brings you here?",
   "Events.7h.1": "So, you are saying that you saw me standing here and decided to check on me?#$b#That is nice of you. Thank you, and don't worry, I am pretty fine.$l",
   "Events.7h.2": "I was just thinking about my life and where I am in it right now...#$b#And before you even ask, no, I am not going to jump from the cliff. I am pretty happy with my life.",
-  "Events.7h.3_q": "What about you, are you enjoying your life here in Pelican Town?#I do enjoy it! The community here is so nice!#I still kinda regret leaving the city...",
-  "Events.7h.4_yes": "I'm glad you like it here!#$b#I didn't know about the community, but as no one is complaining about my nor Magnus's presence, I suppose they are pretty tolerating.",
-  "Events.7h.4_no": "Do you? Really?#$b#Because I can see that you are happy here.",
+    /*
+  1.6.16
+  "Events.7h.3_q1": "What about you, are you enjoying your life here in Pelican Town?",
+  "Events.7h.3_q1a1": "I do enjoy it! The community here is so nice!",
+  "Events.7h.3_q1a2": "I still kinda regret leaving the city...",
+  */
+  "Events.7h.3_q1": "What about you, are you enjoying your life here in Pelican Town?#I do enjoy it! The community here is so nice!#I still kinda regret leaving the city...",
+  "Events.7h.4_q1r1": "I'm glad you like it here!#$b#I didn't know about the community, but as no one is complaining about my nor Magnus's presence, I suppose they are pretty tolerating.",
+  "Events.7h.4_q1r2": "Do you? Really?#$b#Because I can see that you are happy here.",
   "Events.7h.5": "You know, since I came here, I feel like I am at home.#$b#And I am happy that I can call this place my home.#$b#I hope you have this feeling too, {{DT_name}}.",
   "Events.7h.6": "On a more personal note, I am happy that I can call you my friend, {{DT_name}}.$l",
   "Events.7h.7": "I think you might notice that I don't have as many friends as you.#$b#But it wasn't always like that...",
@@ -501,8 +512,8 @@
 
   // 8 hearts
   "Events.8h.0": "Here it is!",
-  "Events.8h.1": "StrojvedouciDenis.Eleanor-DEBUG:8h.1",
-  "Events.8h.2": "StrojvedouciDenis.Eleanor-DEBUG:8h.2",
+  "Events.8h.1": "Oh, {{DT_name}}! Hi!",
+  "Events.8h.2_q1": "What brings you here?#Just looking for foragables.#I heard a noise and wanted to check it out.#I was spying you.",
   "Events.8h.3": "StrojvedouciDenis.Eleanor-DEBUG:8h.3",
   "Events.8h.4": "StrojvedouciDenis.Eleanor-DEBUG:8h.4",
 
@@ -928,6 +939,10 @@
   //  "Secret.Mail.warning": "Dear player of Stardew Valley (a.k.a. {{DT_name}}),^^if you don't know, you installed a custom NPC mod that adds an NPC named Eleanor. If -  by any chance - you paid for this mod, please demand a full refund immediately, as this mod is fully free and downloadable from Nexus Mods (ID is 31663).^^-StrojvedouciDenis; author of NPC Eleanor^^^^^^^^^^^PS: Thanks to NPC mod Qingfeng and the 'secret message warning' in it that inspired me to this.",
   // "Secret.Mail.Eleanor_warning": "Test",     // left here in memory of the discusion on Discord on 10.2.2025
 
-  "Secret.Event.Eleanor_ending.0": "", // message
-  "Secret.Event.Eleanor_ending.1": "" // message
+  //  "Secret.Event.Eleanor_ending.0": "",
+  "Secret.Event.Eleanor_ThankYou.0": "Well, well, well...#You got to the end of the story of Eleanor.", // message
+  "Secret.Event.Eleanor_ThankYou.1": "I really hope that you enjoyed it!", // message
+  "Secret.Event.Eleanor_ThankYou.2": "This mod was only an idea for NPC template for both me and others at its beginnings, but now, it is so far from being that.", // message
+  "Secret.Event.Eleanor_ThankYou.3": "And...#Honestly, this wouldn't ever be possible without the support I got from the beloved modding community on Stardew Valley Discord server.", // message
+  "Secret.Event.Eleanor_ThankYou.4": "", // message
 }
