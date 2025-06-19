@@ -15,12 +15,17 @@
   "config.Festivals.name": "Festivals",
   "config.Festivals.values.true": "true",
   "config.Festivals.values.false": "false",
-  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 1.0.0-alpha.24 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
+  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. As of 1.0.0-alpha.25 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
 
   "config.Marriage.name": "Marriage",
   "config.Marriage.values.true": "true",
   "config.Marriage.values.false": "false",
-  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.24, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
+  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.25, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
+
+  "config.Map-furniture.name": "Map furniture",
+  "config.Map-furniture.values.default": "default",
+  "config.Map-furniture.values.wizard": "wizard",
+  "config.Map-furniture.description": "=! The wizard furniture is working only if you have the Arbitrary Tilesheet Access mod installed! = This setting lets you choose if Eleanor's home will have normal or wizard-like furniture. Default setting: default.",
 
   "config.14hearts-variants.name": "14 hearts event variant",
   "config.14hearts-variants.values.short": "short",
@@ -41,7 +46,7 @@
   "config.Outfits.values.one look only": "one look only",
   "config.Outfits.values.vanilla": "vanilla",
   "config.Outfits.values.seasonal": "seasonal",
-  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.24, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
+  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.25, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
 
   // Experimental - DoNotChange
 
@@ -52,7 +57,7 @@
   "config.On/off.values.on": "on",
   "config.On/off.values.safe mode": "safe mode",
   "config.On/off.values.off": "off",
-  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.24, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
+  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.25, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
 
   /*
   // Dynamic tokens
@@ -944,5 +949,5 @@
   "Secret.Event.Eleanor_ThankYou.1": "I really hope that you enjoyed it!", // message
   "Secret.Event.Eleanor_ThankYou.2": "This mod was only an idea for NPC template for both me and others at its beginnings, but now, it is so far from being that.", // message
   "Secret.Event.Eleanor_ThankYou.3": "And...#Honestly, this wouldn't ever be possible without the support I got from the beloved modding community on Stardew Valley Discord server.", // message
-  "Secret.Event.Eleanor_ThankYou.4": "", // message
+  "Secret.Event.Eleanor_ThankYou.4": "Therefore, I'd like to thank everyone who helped me on my way of creating this mod.#Thank you!#-StrojvedouciDenis; author of NPC Eleanor" // message
 }

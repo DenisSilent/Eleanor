@@ -14,6 +14,19 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.25 (19.6.2025)
+
+* Multi-device development possibility tests
+* Killing my ToU (both the draft and the applied permissions thing) - replaced by MIT License
+* Internal reorganization (see commit log for more info)
+* Fixed some typos in the changelogs
+* Rewritten Readme file, NexusMods page; added LICENCE file
+* Added a config for maps variant
+  * Also their tilesheets are back (for the time being, at least)
+* Added commented-out links to code files
+
+---
+
 ## version 1.0.0-alpha.24 (15.6.2025)
 
 * Multi-device development possibility tests

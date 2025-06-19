@@ -1,6 +1,7 @@
 {
-  // schedule dialogues
-
+/*
+https://stardewvalleywiki.com/Modding:Schedule_data
+*/
   "Changes": [
     {
       "LogName": "Eleanor - dialogues - weekday",

@@ -1,32 +1,31 @@
 {
+/*
+https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/action-editimage.md
+https://stardewvalleywiki.com/Modding:NPC_data#Appearance_.26_sprite
+*/
   "Changes": [
     // Load commands - one look only //
     {
       "LogName": "Eleanor - one look only (art by StrojvedouciDenis/hezjena2023)",
       "Action": "Load",
-      "Priority": "Low",
       "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
       "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/default.png"
     },
     // Load commands - vanilla //
     {
       "LogName": "Eleanor - vanilla (art by hezjena2023)",
-      "Action": "Load",
-      "Priority": "Low",
+      "Action": "EditImage",
       "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
       "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/default.png",
-      "Update": "OnLocationChange",
       "When": {
         "Outfits": "vanilla"
       }
     },
     {
       "LogName": "Eleanor - vanilla - winter (art by hezjena2023)",
-      "Action": "Load",
-      "Priority": "Low",
+      "Action": "EditImage",
       "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
       "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/Winter.png",
-      "Update": "OnLocationChange",
       "When": {
         "Outfits": "vanilla",
         "Season": "Winter"
@@ -36,11 +35,9 @@
     // Load commands - seasonal sprites & portraits //
     {
       "LogName": "Eleanor - seasonal (art by hezjena2023)",
-      "Action": "Load",
-      "Priority": "Low",
+      "Action": "EditImage",
       "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
       "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/{{Season}}.png",
-      "Update": "OnLocationChange",
       "When": {
         "Outfits": "seasonal"
       }
@@ -49,8 +46,7 @@
 deactivated due to missing portraits
     {
       "LogName": "Eleanor - seasonal - winter inside (art by hezjena2023)",
-      "Action": "Load",
-      "Priority": "Low",
+      "Action": "EditImage",
       "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
       "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/Winter inside.png",
       "Update": "OnLocationChange",
@@ -64,11 +60,9 @@ deactivated due to missing portraits
     // Load commands - rain clothes //
     {
       "LogName": "Eleanor - rain, green rain, storm",
-      "Action": "Load",
-      "Priority": "Low + 5",
+      "Action": "EditImage",
       "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
       "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/default.png",
-      "Update": "OnLocationChange",
       "When": {
         "Weather |contains=Rain, Green Rain, Storm": true
       }
@@ -77,11 +71,9 @@ deactivated due to missing portraits
     // Load commands - festival clothes //
     {
       "LogName": "Eleanor - festivals load command",
-      "Action": "Load",
-      "Priority": "Low + 10",
+      "Action": "EditImage",
       "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
       "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/default.png",
-      "Update": "OnLocationChange",
       "When": {
         "Festivals": "true",
         "DayEvent |contains=dance of the moonlight jellies, egg festival, feast of the winter star, festival of ice, flower dance, luau, stardew valley fair, spirit's eve": true
@@ -90,11 +82,9 @@ deactivated due to missing portraits
     // Marriage
     {
       "LogName": "Eleanor - marriage (art by hezjena2023)",
-      "Action": "Load",
-      "Priority": "Low",
+      "Action": "EditImage",
       "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
       "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/default.png",
-      "Update": "OnLocationChange",
       "When": {
         "Relationship:StrojvedouciDenis.Eleanor": "Engaged, Married"
       }

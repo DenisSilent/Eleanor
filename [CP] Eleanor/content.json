@@ -1,7 +1,15 @@
 {
-  // NPC Eleanor //
+// NPC Eleanor //
 
-  // "$schema": "https://smapi.io/schemas/content-patcher.json", commented out because of formating problems after format 2.5.0
+// "$schema": "https://smapi.io/schemas/content-patcher.json", commented out because of formating problems after format 2.5.0
+
+
+/*
+https://stardewvalleywiki.com/Modding:Index
+https://stardewvalleywiki.com/Modding:NPC_data
+
+https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide.md
+*/
 
   "Format": "2.7.0",
 
@@ -14,14 +22,21 @@
       "AllowValues": "true, false",
       "Default": "true",
       "Section": "Optional content for Eleanor",
-      "Description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 1.0.0-alpha.24 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true."
+      "Description": "This setting activates Eleanor at some vanilla festivals. As of 1.0.0-alpha.25 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true."
     },
 
     "Marriage": {
       "AllowValues": "true, false",
       "Default": "false",
       "Section": "Optional content for Eleanor",
-      "Description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.24, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! ="
+      "Description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.25, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! ="
+    },
+
+    "Map-furniture": {
+      "AllowValues": "default, wizard",
+      "Default": "default",
+      "Section": "Optional content for Eleanor",
+      "Description": "=! The wizard furniture is working only if you have the Arbitrary Tilesheet Access mod installed! = This setting lets you choose if Eleanor's home will have normal or wizard-like furniture. Default setting: default."
     },
 
     "14hearts-variants": {
@@ -47,7 +62,7 @@
       "AllowValues": "one look only (ORG), one look only, vanilla, seasonal",
       "Default": "vanilla",
       "Section": "Visual side of Eleanor",
-      "Description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.24, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look."
+      "Description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.25, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look."
     },
 
     /*
@@ -65,7 +80,7 @@ commented out because of the missing 256X256 portraits code
       "AllowValues": "on, safe mode, off",
       "Default": "on",
       "Section": "Experimental - DoNotChange",
-      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.24, it is partly (not?) functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on."
+      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.25, it is partly (not?) functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on."
     }
   },
 
@@ -106,6 +121,20 @@ commented out because of the missing 256X256 portraits code
       "Name": "DT_weekday",
       "Value": "Sun",
       "When": { "DayOfWeek": "Sunday" }
+    },
+
+    // Map furnitures
+    {
+      "Name": "DT_furniture",
+      "Value": "default"
+    },
+    {
+      "Name": "DT_furniture",
+      "Value": "wizard",
+      "When": {
+        "Map-furniture": "wizard",
+        "HasMod |contains=Spiderbuttons.ArbitraryTilesheetAccess": true
+      }
     },
 
     // GAME DT'S
@@ -612,6 +641,8 @@ commented out because of the missing 256X256 portraits code
           "SpouseGiftJealousyFriendshipChange": -15,
 
           /* 
+          these thingies will probably be used in maps.json, at least when their time comes
+
    "SpouseRoom": {
         "MapAsset": "",
         "MapSourceRect": {
@@ -670,8 +701,9 @@ commented out because of the missing 256X256 portraits code
           ],
 
           // Appearance & Sprite
-          // These will be used in NPCgraphics.json file someday (no idea when), but they are skipped here.
           /*
+           These will be used in NPCgraphics.json file someday (no idea when)
+
 // keeping default
     "TextureName": "StrojvedouciDenis.Eleanor",
     "Appearance": [

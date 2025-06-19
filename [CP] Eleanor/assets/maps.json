@@ -1,19 +1,30 @@
 {
-  /*
+/*
 https://stardewvalleywiki.com/Modding:Maps
 https://stardewvalleywiki.com/Modding:Location_data
 https://stardewmodding.wiki.gg/wiki/Tutorial:_Map_Patches_and_Warps
 
 https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/action-load.md
 https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/action-editmap.md
-    */
+*/
   "Changes": [
-    // Eleanor's home
+    // Eleanor's home - generic furniture
     {
-      "LogName": "{{ModId}} - maps - Eleanor's home load command",
+      "LogName": "{{ModId}} - maps - Eleanor's home (default) load command",
       "Action": "Load",
       "Target": "Maps/{{ModId}}.Maps.Eleanor.home",
       "FromFile": "assets/maps/Eleanor_home.tmx"
+    },
+        // Eleanor's home - wizard furniture
+    {
+      "LogName": "{{ModId}} - maps - Eleanor's home (wizard) load command",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}.Maps.Eleanor.home",
+      "FromFile": "assets/maps/wizard/Eleanor_home.tmx",
+      "PatchMode": "Replace",
+      "When": {
+        "DT_furniture": "wizard"
+      }
     },
     // add location data
     {
@@ -79,11 +90,6 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
         "23 5 WizardHouse 10 17" // warp from 14 5 of Eleanor_home to 10 17 of WizardHouse
         */
       ]
-      /*
-      "When": {
-        "Hearts:StrojvedouciDenis.Eleanor": "{{Range: 8,14}}"
-      }
-        */
     },
     {
       "LogName": "{{ModId}} - maps - Eleanor's home - map strings",

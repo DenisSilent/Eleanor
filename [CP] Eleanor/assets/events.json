@@ -511,7 +511,7 @@
         pause 555/
         emote farmer 40/
         pause 555/
-        choose \"{{i18n:Events.7h.3_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" \"{{i18n:Events.7h.3_q1a1_choiceText |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" label_7h_q1a1 \"{{i18n:Events.7h.3_q1a2_choiceText |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" label_7h_q1a2/
+        choose \"{{i18n:Events.7h.3_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" \"{{i18n:Events.7h.3_q1a1_choiceText |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" label_7h_q1a1 \"{{i18n:Events.7h.3_q1a2_choiceText |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" label_7h_q1a2/
         
         label label_7h_q1a1/ --Answer 1
         friendship {{ModId}} 100/

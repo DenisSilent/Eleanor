@@ -1,6 +1,11 @@
 {
-  //! https://docs.google.com/spreadsheets/d/1q0j3BqE79_wDlTW43teNPEspudt29S0EmlKwL7PDUCo/edit?gid=1457049521#gid=1457049521
-  /* Festivals and their status: 
+/*
+https://stardewvalleywiki.com/Modding:Festival_data
+https://stardewvalleywiki.com/Modding:Passive_Festival_data
+
+https://docs.google.com/spreadsheets/d/1q0j3BqE79_wDlTW43teNPEspudt29S0EmlKwL7PDUCo/edit?gid=1457049521#gid=1457049521
+
+Festivals and their status: 
 spr: 13s;24y
 sum: 11s;28y
 fal: 16y;27y
