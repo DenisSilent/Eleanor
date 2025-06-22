@@ -1,93 +1,120 @@
 {
-/*
-https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/action-editimage.md
+  /*
+https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/action-editimage.md // old methods
 https://stardewvalleywiki.com/Modding:NPC_data#Appearance_.26_sprite
+https://stardewmodding.wiki.gg/wiki/Tutorial:_Adding_Seasonal_Outfits_via_Appearances
 */
   "Changes": [
-    // Load commands - one look only //
+    // Appearance code block = logic of NPC graphics //
     {
-      "LogName": "Eleanor - one look only (art by StrojvedouciDenis/hezjena2023)",
+      "LogName": "Eleanor - NPCgraphics - appearance code block",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [
+        "{{ModId}}",
+        "Appearance"
+      ],
+      "Entries": {
+        /*
+        "{{ModId}}_default": {
+          "Id": "{{ModId}}_default",
+          "Portrait": "Portraits/{{ModId}}_{{ModId}}_default",
+          "Sprite": "Characters/{{ModId}}_{{ModId}}_default",
+          "Precedence": 0, // priority
+          "Condition": "ANY \"{{Outfits |contains=one look only (ORG)}}\" \"{{Outfits |contains=one look only}}\"",
+        },
+        "{{ModId}}_vanilla_winter": {
+          "Id": "{{ModId}}_vanilla_winter",
+          "Portrait": "Portraits/{{ModId}}_{{ModId}}_vanilla_winter",
+          "Sprite": "Characters/{{ModId}}_{{ModId}}_vanilla_winter",
+          "Precedence": -11, // priority
+          "Condition": "{{Outfits |contains=vanilla}}",
+          "Season": "winter"
+        },
+        "{{ModId}}_seasonal": {
+          "Id": "{{ModId}}_seasonal",
+          "Portrait": "Portraits/{{ModId}}_{{ModId}}_seasonal",
+          "Sprite": "Characters/{{ModId}}_{{ModId}}_seasonal",
+          "Precedence": -20, // priority
+          "Condition": "{{Outfits |contains=seasonal}}"
+        }
+          */
+          "{{ModId}}_default_ORG": {
+          "Id": "{{ModId}}_default_ORG",
+          "Portrait": "Portraits/{{ModId}}_default_ORG",
+          "Sprite": "Characters/{{ModId}}_default_ORG",
+          "Precedence": 0, // priority
+          "Condition": "{{Outfits |contains=one look only (ORG)}}"
+        },
+        "{{ModId}}_default_NON-ORG": {
+          "Id": "{{ModId}}_default_NON-ORG",
+          "Portrait": "Portraits/{{ModId}}_default",
+          "Sprite": "Characters/{{ModId}}_default",
+          "Precedence": -10 // priority
+        },
+          "{{ModId}}_spring": {
+          "Id": "{{ModId}}_spring",
+          "Portrait": "Portraits/{{ModId}}_spring",
+          "Sprite": "Characters/{{ModId}}_spring",
+          "Precedence": -12, // priority
+          "Condition": "{{Outfits |contains=seasonal}}",
+          "Season": "spring"
+        },
+        "{{ModId}}_summer": {
+          "Id": "{{ModId}}_summer",
+          "Portrait": "Portraits/{{ModId}}_summer",
+          "Sprite": "Characters/{{ModId}}_summer",
+          "Precedence": -13, // priority
+          "Condition": "{{Outfits |contains=seasonal}}",
+          "Season": "summer"
+        },
+        "{{ModId}}_fall": {
+          "Id": "{{ModId}}_fall",
+          "Portrait": "Portraits/{{ModId}}_fall",
+          "Sprite": "Characters/{{ModId}}_fall",
+          "Precedence": -14, // priority
+          "Condition": "{{Outfits |contains=seasonal}}",
+          "Season": "fall"
+        },
+        "{{ModId}}_winter": {
+          "Id": "{{ModId}}_winter",
+          "Portrait": "Portraits/{{ModId}}_winter",
+          "Sprite": "Characters/{{ModId}}_winter",
+          "Precedence": -15, // priority
+         // "Condition": "ANY \"{{Outfits |contains=vanilla}}\" \"{{Outfits |contains=seasonal}}\"",
+          "Season": "winter"
+        },
+
+        "{{ModId}}_festivals": {
+          "Id": "{{ModId}}_festivals",
+          "Portrait": "Portraits/{{ModId}}_default",
+          "Sprite": "Characters/{{ModId}}_default",
+          "Precedence": -30,
+          "Condition": "IS_FESTIVAL_DAY"
+        },
+        "{{ModId}}_marriage": {
+          "Id": "{{ModId}}_marriage",
+          "Portrait": "Portraits/{{ModId}}_default",
+          "Sprite": "Characters/{{ModId}}_default",
+          "Precedence": -40,
+          "Condition": "ANY \"PLAYER_NPC_RELATIONSHIP Current {{ModId}} Engaged\" \"PLAYER_NPC_RELATIONSHIP Current {{ModId}} Married\""
+        },
+        "{{ModId}}_rain": {
+          "Id": "{{ModId}}_rain",
+          "Portrait": "Portraits/{{ModId}}_default",
+          "Sprite": "Characters/{{ModId}}_default",
+          "Precedence": -50,
+          "Condition": "ANY \"WEATHER Here Rain\" \"WEATHER Here Storm\""
+        }
+      }
+    },
+
+    // Load commands //
+    {
+      "LogName": "Eleanor - NPCgraphics - default load command",
       "Action": "Load",
-      "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/default.png"
-    },
-    // Load commands - vanilla //
-    {
-      "LogName": "Eleanor - vanilla (art by hezjena2023)",
-      "Action": "EditImage",
-      "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/default.png",
-      "When": {
-        "Outfits": "vanilla"
-      }
-    },
-    {
-      "LogName": "Eleanor - vanilla - winter (art by hezjena2023)",
-      "Action": "EditImage",
-      "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/Winter.png",
-      "When": {
-        "Outfits": "vanilla",
-        "Season": "Winter"
-      }
-    },
-
-    // Load commands - seasonal sprites & portraits //
-    {
-      "LogName": "Eleanor - seasonal (art by hezjena2023)",
-      "Action": "EditImage",
-      "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/{{Season}}.png",
-      "When": {
-        "Outfits": "seasonal"
-      }
-    },
-/*
-deactivated due to missing portraits
-    {
-      "LogName": "Eleanor - seasonal - winter inside (art by hezjena2023)",
-      "Action": "EditImage",
-      "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/Winter inside.png",
-      "Update": "OnLocationChange",
-      "When": {
-        "Outfits": "seasonal",
-        "Season |contains=Winter": true,
-        "LocationName |contains=WizardHouse, Custom_WizardBasement, {{ModId}}.Maps.Eleanor.home": true
-      }
-    },
-    */
-    // Load commands - rain clothes //
-    {
-      "LogName": "Eleanor - rain, green rain, storm",
-      "Action": "EditImage",
-      "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/default.png",
-      "When": {
-        "Weather |contains=Rain, Green Rain, Storm": true
-      }
-    },
-
-    // Load commands - festival clothes //
-    {
-      "LogName": "Eleanor - festivals load command",
-      "Action": "EditImage",
-      "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/default.png",
-      "When": {
-        "Festivals": "true",
-        "DayEvent |contains=dance of the moonlight jellies, egg festival, feast of the winter star, festival of ice, flower dance, luau, stardew valley fair, spirit's eve": true
-      }
-    },
-    // Marriage
-    {
-      "LogName": "Eleanor - marriage (art by hezjena2023)",
-      "Action": "EditImage",
-      "Target": "Characters/StrojvedouciDenis.Eleanor, Portraits/StrojvedouciDenis.Eleanor",
-      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{Outfits}}/default.png",
-      "When": {
-        "Relationship:StrojvedouciDenis.Eleanor": "Engaged, Married"
-      }
-    }
+      "Target": "Characters/{{ModId}}_default_ORG, Portraits/{{ModId}}_default_ORG, Characters/{{ModId}}_default, Portraits/{{ModId}}_default, Characters/{{ModId}}_spring, Portraits/{{ModId}}_spring, Characters/{{ModId}}_summer, Portraits/{{ModId}}_summer, Characters/{{ModId}}_fall, Portraits/{{ModId}}_fall, Characters/{{ModId}}_winter, Portraits/{{ModId}}_winter",
+      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{TargetWithoutPath}}.png"
+    } //"default_ORG, default, spring, summer, fall, winter",
   ]
 }

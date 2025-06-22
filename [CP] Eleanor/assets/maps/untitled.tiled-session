@@ -3,14 +3,14 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "wizard/Eleanor_home.tmx",
+    "activeFile": "",
     "automapping.whileDrawing": false,
     "expandedProjectPaths": [
         "."
     ],
     "fileStates": {
         "": {
-            "scaleInDock": 1.5
+            "scaleInDock": 1
         },
         "ATA/Eleanor_home_ATA.tmx": {
             "expandedObjectLayers": [
@@ -296,8 +296,8 @@
             "scale": 1.5,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 195.33333333333331,
-                "y": 180.66666666666663
+                "x": 189.99999999999997,
+                "y": 179.33333333333337
             }
         },
         "Eleanor_home.tmx#p": {
@@ -321,6 +321,26 @@
         },
         "Eleanor_home.tmx#wizard_furniture": {
             "scaleInDock": 2
+        },
+        "Eleanor_home_default.tmx": {
+            "scale": 2.139973958333333,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 192.52570733191362,
+                "y": 189.2546394888957
+            }
+        },
+        "Eleanor_home_default.tmx#paths": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Eleanor_home_default.tmx#townInterior": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Eleanor_home_default.tmx#townInterior_2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "WizardHouse.tmx": {
             "expandedObjectLayers": [
@@ -346,29 +366,33 @@
             "scale": 2.011625,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 230.16218231529234,
-                "y": 191.88467035356985
+                "x": 210.277760516995,
+                "y": 244.578388119058
             }
         },
         "wizard/Eleanor_home.tmx#paths": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "wizard/Eleanor_home.tmx#townInterior": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "wizard/Eleanor_home.tmx#townInterior_2": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "wizard/Eleanor_home.tmx#wizard_furniture": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         }
     },
+    "last.imagePath": "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps",
     "openFiles": [
-        "Eleanor_home.tmx",
-        "wizard/Eleanor_home.tmx"
     ],
     "project": "untitled.tiled-project",
     "recentFiles": [
+        "Eleanor_home_default.tmx",
         "Eleanor_home.tmx",
         "wizard/Eleanor_home.tmx",
         "ATA/Eleanor_home_ATA.tmx",
@@ -379,8 +403,7 @@
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/spousePatiosEastScarp.tmx",
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/SpouseRoomsEastScarp.tmx",
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SebastianRoom.tmx",
-        "WizardHouse.tmx",
-        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WitchHut.tmx"
+        "WizardHouse.tmx"
     ],
     "resizeMap.removeObjects": true,
     "tileset.embedInMap": true,

@@ -8,23 +8,12 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
 https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/action-editmap.md
 */
   "Changes": [
-    // Eleanor's home - generic furniture
+    // Eleanor's home - load command
     {
-      "LogName": "{{ModId}} - maps - Eleanor's home (default) load command",
+      "LogName": "{{ModId}} - maps - Eleanor's home load command",
       "Action": "Load",
       "Target": "Maps/{{ModId}}.Maps.Eleanor.home",
-      "FromFile": "assets/maps/Eleanor_home.tmx"
-    },
-        // Eleanor's home - wizard furniture
-    {
-      "LogName": "{{ModId}} - maps - Eleanor's home (wizard) load command",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}.Maps.Eleanor.home",
-      "FromFile": "assets/maps/wizard/Eleanor_home.tmx",
-      "PatchMode": "Replace",
-      "When": {
-        "DT_furniture": "wizard"
-      }
+      "FromFile": "assets/maps/Eleanor_home_{{Map-furniture}}.tmx"
     },
     // add location data
     {
@@ -109,9 +98,10 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
         "Maps.Eleanor.home_fireplace": "{{i18n:Maps.Eleanor.home_fireplace |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Maps.Eleanor.home_globe": "{{i18n:Maps.Eleanor.home_globe |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Maps.Eleanor.home_PC": "{{i18n:Maps.Eleanor.home_PC |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Maps.Eleanor.home_potions-cheat": "{{i18n:Maps.Eleanor.home_potions-cheat |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Maps.Eleanor.home_cheat": "{{i18n:Maps.Eleanor.home_cheat |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Maps.Eleanor.home_cauldron": "{{i18n:Maps.Eleanor.home_cauldron |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Maps.Eleanor.home_picture": "{{i18n:Maps.Eleanor.home_picture |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
+        "Maps.Eleanor.home_picture": "{{i18n:Maps.Eleanor.home_picture |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Maps.Eleanor.home_block-1": "{{i18n:Maps.Eleanor.home_block-1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
       }
     }
   ]

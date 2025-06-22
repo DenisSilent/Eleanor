@@ -188,7 +188,7 @@ This is a changlog including all unreleased versions of NPC Eleanor that were be
 ## version 0.6.9-beta.4 (23.1.2025)
 
 * Changed config names for better readability in GMCM
-* "ModID" in entries and its duplicating with Discord help by:
+* "ModId" in entries and its duplicating with Discord help by:
   * `@spiderbuttons`
   * `@atravita`
   * `@chu2.718281828459045235360287471`

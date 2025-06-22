@@ -14,6 +14,19 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.26 (22.6.2025)
+
+* Multi-device development possibility tests
+* Changed Eleanor's sprites/portraits logic again
+* Appearances massive Discord help by:
+  * `@abagaianye`
+* Reduced number of sprites/portraits files and therefore the total mod size
+* Fixed map config variants
+* Removed the tilesheets for the maps that will be kept in releases --> created new dev folder for maps for Tiled
+* Updated dependencies minimal versions in manifest
+
+---
+
 ## version 1.0.0-alpha.25 (19.6.2025)
 
 * Multi-device development possibility tests
@@ -24,6 +37,7 @@ Instructions for downloading the unreleased versions:
 * Added a config for maps variant
   * Also their tilesheets are back (for the time being, at least)
 * Added commented-out links to code files
+* Changed Eleanor's sprites/portraits logic
 
 ---
 

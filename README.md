@@ -44,7 +44,7 @@ Eleanor is a young witch who studies under the guidance of the local wizard, Mr.
 * [RSV](https://www.nexusmods.com/stardewvalley/mods/7286) - should be fully compatible (there might be bugs; if you report them, I'll try my best to fix them)
 * [ES](https://www.nexusmods.com/stardewvalley/mods/5787) - should be fully compatible (there might be bugs; if you report them, I'll try my best to fix them)
 * Other NPC mods:
-  ... I'll be honest - this mod *might or might not* work with NPC mods you use. I expect many bugs with many NPCs; if you report them, I'll try my best to fix them. For festivals, I work by LemurKat's method "First in gets priority" which is described [in LemurKat's blog post about festival overlaps.](https://lemurkat.wordpress.com/2021/11/13/help-theyre-overlapping-at-a-festival/) And as my mod is pretty new, I expect A LOT of festival moves on my side.
+  ... I'll be honest - this mod *might or might not* work with NPC mods you use. I expect many bugs with many NPCs; if you report them, I'll try my best to fix them. For festivals, I work by LemurKat's method "First in gets priority" which is described [in LemurKat&#39;s blog post about festival overlaps.](https://lemurkat.wordpress.com/2021/11/13/help-theyre-overlapping-at-a-festival/) And as my mod is pretty new, I expect A LOT of festival moves on my side.
   **Eleanor will react to these NPC mods: Always Raining in the Valley, Alecto, Lavril, Lucikiel, RSV, Leilani, Jorts and Jean, Rodney and Yri (incompatible in 1.6).** Also, Eleanor will adapt her dialogues if you use [Rasmodia](https://www.nexusmods.com/stardewvalley/mods/8265)!
 * Other mods:
   There shouldn't be any technical incompatibility, but there might be some things that might not be 100% "lore friendly", so compatible, but:
@@ -66,18 +66,18 @@ Everyone who somehow contributed to Stardew Valley community. Thanks! We appreci
 
 ### **Legal note:**
 
-NPC Eleanor
-
 Copyright (c) 2025 StrojvedouciDenis
 
 This mod, including all code (.json, C# source/dll,... files), is licensed under the MIT License.
-A copy of the MIT License can be found in the LICENSE file in this distribution.
+A copy of the MIT License can be found in the LICENSE file in this distribution (in `[CP] Eleanor/zzz_dummy files/LICENCE`), direct GitHub links:
+[main branch, stable](https://github.com/DenisSilent/Eleanor/%5BCP%5D%20Eleanor/zzz_dummy%20files/LICENCE)
+[development branch, unstable, not recommended for use](https://github.com/DenisSilent/Eleanor/tree/development_UNSTABLE!/%5BCP%5D%20Eleanor/zzz_dummy%20files/LICENCE)
 
 The source code for the C# portion of this mod is publicly available at:
-[https://github.com/DenisSilent/Eleanor](https://github.com/DenisSilent/Eleanor) (official releases)
-[https://github.com/DenisSilent/Eleanor/tree/development_UNSTABLE!](https://github.com/DenisSilent/Eleanor/tree/development_UNSTABLE!) (development branch, unstable, not recommended for use)
+[main branch, stable](https://github.com/DenisSilent/Eleanor)
+[development branch, unstable, not recommended for use](https://github.com/DenisSilent/Eleanor/tree/development_UNSTABLE!)
 
-Exception:
+**Exception:**
 
 All files located in `[CP] Eleanor/assets/NPC sprites and portraits/Portraits` are licensed under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.
 This includes works derived from the Stardew Valley Character Creator by jazzybee.itch.io, licensed under CC BY-SA 4.0.
