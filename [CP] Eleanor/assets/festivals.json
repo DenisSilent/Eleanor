@@ -1,6 +1,11 @@
 {
-  //! https://docs.google.com/spreadsheets/d/1q0j3BqE79_wDlTW43teNPEspudt29S0EmlKwL7PDUCo/edit?gid=1457049521#gid=1457049521
-  /* Festivals and their status: 
+/*
+https://stardewvalleywiki.com/Modding:Festival_data
+https://stardewvalleywiki.com/Modding:Passive_Festival_data
+
+https://docs.google.com/spreadsheets/d/1q0j3BqE79_wDlTW43teNPEspudt29S0EmlKwL7PDUCo/edit?gid=1457049521#gid=1457049521
+
+Festivals and their status: 
 spr: 13s;24y
 sum: 11s;28y
 fal: 16y;27y
@@ -25,7 +30,19 @@ win: 8y;25y
         },
         {
           "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+          "Value": "StrojvedouciDenis.Eleanor 3 23 1",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "StrojvedouciDenis.Eleanor 3 23 1",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
           "Value": "StrojvedouciDenis.Eleanor 3 23 1",
           "Delimiter": "/"
         }
@@ -50,7 +67,19 @@ win: 8y;25y
         },
         {
           "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+          "Value": "StrojvedouciDenis.Eleanor 11 33 3",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "StrojvedouciDenis.Eleanor 11 33 3",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
           "Value": "StrojvedouciDenis.Eleanor 11 33 3",
           "Delimiter": "/"
         }
@@ -69,13 +98,25 @@ win: 8y;25y
       "TextOperations": [
         {
           "Operation": "Append",
-          "Target": ["Entries", "Set-Up_additionalCharacters"],
+          "Target": ["Entries", "Set-Up_additionalCharacters", "Set-Up_additionalCharacters_y2"],
+          "Value": "StrojvedouciDenis.Eleanor 47 88 0",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries",  "Set-Up_additionalCharacters_y2"],
           "Value": "StrojvedouciDenis.Eleanor 47 88 0",
           "Delimiter": "/"
         },
         {
           "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "StrojvedouciDenis.Eleanor 47 88 0",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries","MainEvent_additionalCharacters_y2"],
           "Value": "StrojvedouciDenis.Eleanor 47 88 0",
           "Delimiter": "/"
         }
@@ -100,7 +141,19 @@ win: 8y;25y
         },
         {
           "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+          "Value": "StrojvedouciDenis.Eleanor 12 57 1",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "StrojvedouciDenis.Eleanor 12 57 1",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
           "Value": "StrojvedouciDenis.Eleanor 12 57 1",
           "Delimiter": "/"
         }
@@ -125,7 +178,19 @@ win: 8y;25y
         },
         {
           "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+          "Value": "StrojvedouciDenis.Eleanor 30 12 1",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "StrojvedouciDenis.Eleanor 30 12 1",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
           "Value": "StrojvedouciDenis.Eleanor 30 12 1",
           "Delimiter": "/"
         }
@@ -144,13 +209,25 @@ win: 8y;25y
       "TextOperations": [
         {
           "Operation": "Append",
-          "Target": ["Entries", "Set-Up_additionalCharacters"],
+          "Target": ["Entries", "Set-Up_additionalCharacters", "Set-Up_additionalCharacters_y2"],
+          "Value": "StrojvedouciDenis.Eleanor 14 64 3",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
           "Value": "StrojvedouciDenis.Eleanor 14 64 3",
           "Delimiter": "/"
         },
         {
           "Operation": "Append",
           "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "StrojvedouciDenis.Eleanor 14 64 3",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
           "Value": "StrojvedouciDenis.Eleanor 14 64 3",
           "Delimiter": "/"
         }

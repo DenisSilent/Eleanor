@@ -1,8 +1,17 @@
-{ // NPC Eleanor //
+{
+// NPC Eleanor //
 
-  // "$schema": "https://smapi.io/schemas/content-patcher.json", commented out because of formating problems after format 2.5.0
+// "$schema": "https://smapi.io/schemas/content-patcher.json", commented out because of formating problems after format 2.5.0
 
-  "Format": "2.6.0",
+
+/*
+https://stardewvalleywiki.com/Modding:Index
+https://stardewvalleywiki.com/Modding:NPC_data
+
+https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide.md
+*/
+
+  "Format": "2.7.0",
 
   // NPC Eleanor - config.json file //
 
@@ -13,22 +22,28 @@
       "AllowValues": "true, false",
       "Default": "true",
       "Section": "Optional content for Eleanor",
-      "Description": "This setting activates Eleanor at some vanilla festivals. However, Eleanor doesn't have any festival clothes for now, so Eleanor'll use its default. As of 0.9.4 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true."
+      "Description": "This setting activates Eleanor at some vanilla festivals. As of 0.9.5 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true."
     },
-    /*
-commented out untill marriage update (1.0.0)
+
     "Marriage": {
       "AllowValues": "true, false",
       "Default": "false",
       "Section": "Optional content for Eleanor",
-      "Description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.9.4, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
+      "Description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 0.9.5, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! ="
+    },
+
+    "Map-furniture": {
+      "AllowValues": "default, wizard",
+      "Default": "default",
+      "Section": "Optional content for Eleanor",
+      "Description": "=! The wizard furniture is working only if you have the Arbitrary Tilesheet Access mod installed! = This setting lets you choose if Eleanor's home will have normal or wizard-like furniture. Default setting: default."
     },
 
     "14hearts-variants": {
-      "AllowValues": "short, long",
+      "AllowValues": "short", // "short, long"
       "Default": "short", // short due to multiplayer support, I worry that long is too long for 1 SV multiplayer day
       "Section": "Optional content for Eleanor",
-      "Description": "This setting lets you choose the variant of Eleanor's 14hearts event. You can choose between short and long versions, which contain of 5 automatically triggered events. = The short version has a fully different outcome than the long one! = Default setting: long.",
+      "Description": "This setting lets you choose the variant of Eleanor's 14hearts event. You can choose between short and long versions, which contain of 5 automatically triggered events. = The short version has a fully different outcome than the long one! = Default setting: long."
     },
 
     "14hearts-commented": {
@@ -37,7 +52,6 @@ commented out untill marriage update (1.0.0)
       "Section": "Optional content for Eleanor",
       "Description": "This setting lets you choose if Eleanor's 14hearts event will include comments or not. Default setting: false."
     },
-*/
 
     // Visual side of Eleanor
 
@@ -48,7 +62,7 @@ commented out untill marriage update (1.0.0)
       "AllowValues": "one look only (ORG), one look only, vanilla, seasonal",
       "Default": "vanilla",
       "Section": "Visual side of Eleanor",
-      "Description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.9.4, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look."
+      "Description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 0.9.5, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look."
     },
 
     /*
@@ -66,7 +80,7 @@ commented out because of the missing 256X256 portraits code
       "AllowValues": "on, safe mode, off",
       "Default": "on",
       "Section": "Experimental - DoNotChange",
-      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 0.9.4, it is partly (not?) functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on."
+      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 0.9.5, it is partly (not?) functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on."
     }
   },
 
@@ -108,6 +122,50 @@ commented out because of the missing 256X256 portraits code
       "Value": "Sun",
       "When": { "DayOfWeek": "Sunday" }
     },
+
+    // Map furnitures
+    {
+      "Name": "DT_furniture",
+      "Value": "default"
+    },
+    {
+      "Name": "DT_furniture",
+      "Value": "wizard",
+      "When": {
+        "Map-furniture": "wizard",
+        "HasMod |contains=Spiderbuttons.ArbitraryTilesheetAccess": true
+      }
+    },
+    /*
+    {
+      "Name": "DT_outfits",
+      "Value": "one look only (ORG)",
+      "When": {
+        "Outfits": "one look only (ORG)"
+      }
+    },
+    {
+      "Name": "DT_outfits",
+      "Value": "one look only",
+      "When": {
+        "Outfits": "one look only"
+      }
+    },
+    {
+      "Name": "DT_outfits",
+      "Value": "vanilla",
+      "When": {
+        "Outfits": "vanilla"
+      }
+    },
+    {
+      "Name": "DT_outfits",
+      "Value": "seasonal",
+      "When": {
+        "Outfits": "seasonal"
+      }
+    },    
+*/
 
     // GAME DT'S
     // (in)formality + GNMT support
@@ -613,6 +671,8 @@ commented out because of the missing 256X256 portraits code
           "SpouseGiftJealousyFriendshipChange": -15,
 
           /* 
+          these thingies will probably be used in maps.json, at least when their time comes
+
    "SpouseRoom": {
         "MapAsset": "",
         "MapSourceRect": {
@@ -651,7 +711,7 @@ commented out because of the missing 256X256 portraits code
 
           // Festivals
           "FlowerDanceCanDance": "false", // not supported... yet
-          "WinterStarParticipant": "false", // not supported... yet
+          "WinterStarParticipant": "false", // not supported... yet ?
           //"WinterStarGifts": [],
 
           // Spawn Rules
@@ -659,11 +719,11 @@ commented out because of the missing 256X256 portraits code
           "SpawnIfMissing": "true",
           "Home": [
             {
-              "ID": "Default",
-              "Location": "WizardHouse",
+              "ID": "{{ModId}}.Spawning_tile",
+              "Location": "{{ModId}}.Maps.Eleanor.home",
               "Tile": {
-                "X": 10,
-                "Y": 17
+                "X": 20,
+                "Y": 16
               },
               "Direction": "down",
               "Condition": "true"
@@ -671,8 +731,9 @@ commented out because of the missing 256X256 portraits code
           ],
 
           // Appearance & Sprite
-          // These will be used in NPCgraphics.json file someday (no idea when), but they are skipped here.
           /*
+           These will be used in NPCgraphics.json file someday (no idea when)
+
 // keeping default
     "TextureName": "StrojvedouciDenis.Eleanor",
     "Appearance": [
@@ -727,18 +788,17 @@ commented out because of the missing 256X256 portraits code
         "X": 0,
         "Y": 0
     },
+
+          "ShakePortraits": [], // I honestly can't imagine what this does, it's empty by default, so 100% safe to skip
 */
+          "KissSpriteIndex": "28",
+          "KissSpriteFacingRight": false, // huh?
+          "HiddenProfileEmoteSound": "achievement", // https://stardewvalleywiki.com/Secrets#Gift_Log
+          "HiddenProfileEmoteDuration": "5000" // https://stardewvalleywiki.com/Secrets#Gift_Log
           /*
-    "ShakePortraits": [],
-    "KissSpriteIndex": "",
-    "KissSpriteFacingDirection": "true",
-*/
-          "HiddenProfileEmoteSound": "achievement", // some secret, don't remember what it was
-          "HiddenProfileEmoteDuration": "5000" // some secret, don't remember what it was; in milliseconds
-          /*
-    "HiddenProfileEmoteStartFrame": "",
-    "HiddenProfileEmoteFrameCount": "",
-    "HiddenProfileEmoteFrameDuration": "",
+    "HiddenProfileEmoteStartFrame": "", // https://stardewvalleywiki.com/Secrets#Gift_Log
+    "HiddenProfileEmoteFrameCount": "", // https://stardewvalleywiki.com/Secrets#Gift_Log
+    "HiddenProfileEmoteFrameDuration": "", // https://stardewvalleywiki.com/Secrets#Gift_Log
 */
 
           // Advanced
@@ -756,7 +816,7 @@ commented out because of the missing 256X256 portraits code
         "StrojvedouciDenis.Eleanor": {
           "Home": [
             {
-              "Id": "Default",
+              "Id": "{{ModId}}.Safemode_spawning_tile",
               "Location": "WizardHouse",
               "Tile": {
                 "X": 1,
@@ -777,6 +837,16 @@ commented out because of the missing 256X256 portraits code
       "Action": "Load",
       "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor, Characters/schedules/StrojvedouciDenis.Eleanor",
       "FromFile": "assets/zzz_blankfile.json",
+      "When": {
+        "On/off": "on, safe mode"
+      }
+    },
+
+    // Addons //
+    {
+      "LogName": "{{ModId}} - addons load command",
+      "Action": "Include",
+      "FromFile": "assets/z_addons.json",
       "When": {
         "On/off": "on, safe mode"
       }
@@ -828,6 +898,16 @@ commented out because of the missing 256X256 portraits code
       "LogName": "{{ModId}} - mails load command",
       "Action": "Include",
       "FromFile": "assets/mails.json",
+      "When": {
+        "On/off": "on, safe mode"
+      }
+    },
+
+    // Maps //
+    {
+      "LogName": "{{ModId}} - maps load command",
+      "Action": "Include",
+      "FromFile": "assets/maps.json",
       "When": {
         "On/off": "on, safe mode"
       }

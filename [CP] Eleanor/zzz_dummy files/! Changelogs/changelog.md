@@ -1,6 +1,26 @@
 # **Changelog - list of versions**
 
-Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/commits/main/)
+Full list of all [Github commits.](https://github.com/DenisSilent/Eleanor/commits/main/)
+
+---
+
+## version 0.9.5 (24.6.2025)
+
+* Relicensed the mod from custom ToU to [MIT License](https://opensource.org/license/mit)
+* Updated minimal requirements version
+* Added a home map for Eleanor!
+  * That includes 2 variants - basic-only furniture and Wizard furniture, for the later one you have to have [Arbitrary Tilesheet Access](https://www.nexusmods.com/stardewvalley/mods/30001) installed
+  * Is unlocked from the start
+  * Also this includes f.e. schedule edits, map strings,...
+* Added a new secret event
+* New NPCgraphics code logic
+  * This also includes new file structure, which removed unnecesary duplicates --> smaller release size X recommended deleting the old version before installing the new one
+* Fixed Eleanor not being in festivals in year 2+
+* Recompiled C# part of the mod
+* Fixed some typos in the changelog
+* Internal (not only code) reorganization
+* Preparations for SV 1.6.16 update
+* And many more things, see versions 1.0.0-alpha.13-1.0.0-alpha.27 in dev changelog for more info
 
 ---
 
@@ -21,7 +41,7 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 * Rewritten some 14 hearts event dialogues and therefore slightly changed Eleanor's (unreveared) history
 * Cleaned up some code mess
 * Fixed some spelling errors here in changelog
-* Probably fixed unknown installation chcek error in CSharp part of the mod
+* Probably fixed unknown installation check error in C# part of the mod
 
 ---
 
@@ -39,7 +59,8 @@ Full list of all Github commits [here.](https://github.com/DenisSilent/Eleanor/c
 
 ---
 
-* Deactivated Secret mail about installation
+## version 0.9.1 (22.3.2025)
+
 * Deactivated Secret mail about instalation
 * Internal code fixes
 

@@ -1,14 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <Version>0.9.5</Version>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	  <GamePath>c:\SteamLibrary\steamapps\common\Stardew Valley\</GamePath>
+    <GamePath>c:\SteamLibrary\steamapps\common\Stardew Valley\</GamePath>
+    <ModFolderName>[NPC] Eleanor</ModFolderName>
+    <ModZipPath>C:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\[CP] Eleanor\zzz_dummy files\releases</ModZipPath>
+
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.3.2" />
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0" />
+    <ContentPacks Include="C:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\[CP] Eleanor" Version="$(Version) "/>
   </ItemGroup>
 
 </Project>

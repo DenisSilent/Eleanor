@@ -11,7 +11,7 @@
 
   // Current Version
 
-  "Version": "0.9.4",
+  "Version": "%ProjectVersion%",
 
   // Description
 

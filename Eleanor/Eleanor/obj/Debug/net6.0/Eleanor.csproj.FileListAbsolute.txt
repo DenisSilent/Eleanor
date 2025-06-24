@@ -1,9 +1,19 @@
-C:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\bin\Debug\net6.0\Eleanor.deps.json
-C:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\bin\Debug\net6.0\Eleanor.dll
-C:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\obj\Debug\net6.0\Eleanor.csproj.AssemblyReference.cache
-C:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\obj\Debug\net6.0\Eleanor.GeneratedMSBuildEditorConfig.editorconfig
-C:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\obj\Debug\net6.0\Eleanor.AssemblyInfoInputs.cache
-C:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\obj\Debug\net6.0\Eleanor.AssemblyInfo.cs
-C:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\obj\Debug\net6.0\Eleanor.csproj.CoreCompileInputs.cache
-C:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\obj\Debug\net6.0\Eleanor.sourcelink.json
-C:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\obj\Debug\net6.0\Eleanor.dll
+C:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\bin\Debug
+et6.0\Eleanor.deps.json
+et6.0\Eleanor.dll
+C:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\obj\Debug
+et6.0\Eleanor.csproj.AssemblyReference.cache
+et6.0\Eleanor.GeneratedMSBuildEditorConfig.editorconfig
+et6.0\Eleanor.AssemblyInfoInputs.cache
+et6.0\Eleanor.AssemblyInfo.cs
+et6.0\Eleanor.csproj.CoreCompileInputs.cache
+et6.0\Eleanor.sourcelink.json
+c:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\bin\Debug\net6.0\Eleanor.deps.json
+c:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\bin\Debug\net6.0\Eleanor.dll
+c:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\obj\Debug\net6.0\Eleanor.csproj.AssemblyReference.cache
+c:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\obj\Debug\net6.0\Eleanor.GeneratedMSBuildEditorConfig.editorconfig
+c:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\obj\Debug\net6.0\Eleanor.AssemblyInfoInputs.cache
+c:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\obj\Debug\net6.0\Eleanor.AssemblyInfo.cs
+c:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\obj\Debug\net6.0\Eleanor.csproj.CoreCompileInputs.cache
+c:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\obj\Debug\net6.0\Eleanor.sourcelink.json
+c:\SteamLibrary\steamapps\common\Stardew Valley\Mods - test\[NPC] Eleanor\Eleanor\Eleanor\obj\Debug\net6.0\Eleanor.dll

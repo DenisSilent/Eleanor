@@ -1,4 +1,7 @@
 {
+/*
+https://stardewvalleywiki.com/Modding:Gift_taste_data
+*/
   "Changes": [
     {
       "LogName": "Eleanor - gifts",
@@ -13,6 +16,7 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
       "Entries": {
+        //"AcceptGift_(O)460": "{{i18n:Gifts.AcceptGift_(O)460 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}", // not used in the game?
         "RejectItem_(O)460": "{{i18n:Gifts.RejectItem_(O)460 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}", // emergency block --> marriage not possible (hopefully)
         // -20 -21 -22 -23 -29 -95 -96 -97 -98 -99 -100 -101 -999 78
         "RejectItem_ category_junk": "{{i18n:Gifts.RejectItem |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
@@ -28,18 +32,47 @@
         "RejectItem_category_trinket": "{{i18n:Gifts.RejectItem |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "RejectItem_category_litter": "{{i18n:Gifts.RejectItem |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
 
+        "AcceptBirthdayGift_Negative": "{{i18n:Gifts.AcceptBirthdayGift_Negative |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "AcceptBirthdayGift_Positive": "{{i18n:Gifts.AcceptBirthdayGift_Positive |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectGift_Divorced": "{{i18n:Gifts.RejectGift_Divorced |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
+      }
+    },
+    {
+      "LogName": "Eleanor - relationship dialogues",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
+      "Entries": {
         "AcceptBouquet": "{{i18n:Gifts.AcceptBouquet |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "RejectBouquet": "{{i18n:Gifts.RejectBouquet |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "RejectBouquet_Divorced": "{{i18n:Gifts.RejectBouquet_Divorced |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "RejectBouquet_AlreadyAccepted": "{{i18n:Gifts.RejectBouquet_AlreadyAccepted |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "RejectBouquet_NotDatable": "{{i18n:Gifts.RejectBouquet_NotDatable |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "RejectBouquet_NpcAlreadyMarried": "{{i18n:Gifts.RejectBouquet_NpcAlreadyMarried |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "RejectBouquet_VeryLowHearts": "{{i18n:Gifts.RejectBouquet_VeryLowHearts |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "RejectBouquet_LowHearts": "{{i18n:Gifts.RejectBouquet_LowHearts |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectBouquet_AlreadyAccepted_Engaged": "{{i18n:Gifts.RejectBouquet_AlreadyAccepted_Engaged |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectBouquet_AlreadyAccepted_Married": "{{i18n:Gifts.RejectBouquet_AlreadyAccepted_Married |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectBouquet_AlreadyAccepted": "{{i18n:Gifts.RejectBouquet_AlreadyAccepted |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+/*
+        "RejectRoommateProposal": "{{i18n:Gifts.RejectRoommateProposal |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectRoommateProposal_AlreadyAccepted": "{{i18n:Gifts.RejectRoommateProposal_AlreadyAccepted |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectRoommateProposal_NpcWithSomeoneElse": "{{i18n:Gifts.RejectRoommateProposal_NpcWithSomeoneElse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectRoommateProposal_PlayerWithSomeoneElse": "{{i18n:Gifts.RejectRoommateProposal_PlayerWithSomeoneElse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectRoommateProposal_LowFriendship": "{{i18n:Gifts.RejectRoommateProposal_LowFriendship |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectRoommateProposal_SmallHouse": "{{i18n:Gifts.RejectRoommateProposal_SmallHouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
+*/
 
-        "AcceptBirthdayGift_Negative": "{{i18n:Gifts.AcceptBirthdayGift_Negative |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "AcceptBirthdayGift_Positive": "{{i18n:Gifts.AcceptBirthdayGift_Positive |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "RejectGift_Divorced": "{{i18n:Gifts.RejectGift_Divorced |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
+        "RejectMermaidPendant": "{{i18n:Gifts.RejectMermaidPendant |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectMermaidPendant_Divorced": "{{i18n:Gifts.RejectMermaidPendant_Divorced |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectMermaidPendant_NeedHouseUpgrade": "{{i18n:Gifts.RejectMermaidPendant_NeedHouseUpgrade |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectMermaidPendant_NotDatable": "{{i18n:Gifts.RejectMermaidPendant_NotDatable |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectMermaidPendant_NpcWithSomeoneElse": "{{i18n:Gifts.RejectMermaidPendant_NpcWithSomeoneElse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectMermaidPendant_PlayerWithSomeoneElse": "{{i18n:Gifts.RejectMermaidPendant_PlayerWithSomeoneElse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectMermaidPendant_Under8Hearts": "{{i18n:Gifts.RejectMermaidPendant_Under8Hearts |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectMermaidPendant_Under10Hearts": "{{i18n:Gifts.RejectMermaidPendant_Under10Hearts |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectMermaidPendant_Under10Hearts_AskedAgan": "{{i18n:Gifts.RejectMermaidPendant_Under10Hearts_AskedAgain |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectMermaidPendant_AlreadyAccepted": "{{i18n:Gifts.RejectMermaidPendant_AlreadyAccepted |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectMermaidPendant_AlreadyAccepted_Engaged": "{{i18n:Gifts.RejectMermaidPendant_AlreadyAccepted_Engaged |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "RejectMermaidPendant_AlreadyAccepted_Married": "{{i18n:Gifts.RejectMermaidPendant_AlreadyAccepted_Married |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       }
     },
     // compatibility

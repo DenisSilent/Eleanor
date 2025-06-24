@@ -1,0 +1,414 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "automapping.whileDrawing": false,
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "ATA/Eleanor_home_ATA.tmx": {
+            "expandedObjectLayers": [
+                10
+            ],
+            "scale": 2,
+            "selectedLayer": 9,
+            "viewCenter": {
+                "x": 199.75,
+                "y": 158.5
+            }
+        },
+        "ATA/Eleanor_home_ATA.tmx#paths": {
+            "scaleInDock": 1
+        },
+        "ATA/Eleanor_home_ATA.tmx#townInterior": {
+            "scaleInDock": 1
+        },
+        "ATA/Eleanor_home_ATA.tmx#townInterior_2": {
+            "scaleInDock": 1
+        },
+        "ATA/Eleanor_home_ATA.tmx#wizard_furniture": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/Farm.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 550.3333333333334,
+                "y": 439.99999999999994
+            }
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/Farm.tmx#Paths": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/Farm.tmx#extra_tiles": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/Farm.tmx#untitled tile sheet": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/Farm.tmx#v16_Outdoors2": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SebastianRoom.tmx": {
+            "expandedObjectLayers": [
+                10
+            ],
+            "scale": 3.9461538461538463,
+            "selectedLayer": 9,
+            "viewCenter": {
+                "x": 139.50292397660817,
+                "y": 103.89863547758283
+            }
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SebastianRoom.tmx#1": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SebastianRoom.tmx#p": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SebastianRoom.tmx#v15_townInterior_2": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SeedShop.tmx": {
+            "expandedObjectLayers": [
+                10
+            ],
+            "scale": 5.5,
+            "selectedLayer": 9,
+            "viewCenter": {
+                "x": 61.09090909090909,
+                "y": 75.81818181818183
+            }
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SeedShop.tmx#1": {
+            "scaleInDock": 2
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SeedShop.tmx#2": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SeedShop.tmx#Paths": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WitchHut.tmx": {
+            "scale": 3.20625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 120.07797270955169,
+                "y": 127.87524366471739
+            }
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WitchHut.tmx#paths": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WitchHut.tmx#untitled tile sheet": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WizardHouse.tmx": {
+            "expandedObjectLayers": [
+                10
+            ],
+            "scale": 2,
+            "selectedLayer": 9,
+            "viewCenter": {
+                "x": 36.75,
+                "y": 170.5
+            }
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WizardHouse.tmx#p": {
+            "scaleInDock": 1.5
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WizardHouse.tmx#untitled tile sheet": {
+            "scaleInDock": 2
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WizardHouse.tmx#v16_TownInterior_2": {
+            "scaleInDock": 1.5
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WizardHouse.tmx#wizard_furniture": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/SpouseRoomsEastScarp.tmx": {
+            "scale": 4.73515625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 95.98416102953307,
+                "y": 71.80333278336907
+            }
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/SpouseRoomsEastScarp.tmx#indoor": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/SpouseRoomsEastScarp.tmx#paths": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/SpouseRoomsEastScarp.tmx#z_LemurCustom": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/SpouseRoomsEastScarp.tmx#z_lumi_towninterior": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/spousePatiosEastScarp.tmx": {
+            "scale": 5.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 60.45454545454545,
+                "y": 33.27272727272727
+            }
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/spousePatiosEastScarp.tmx#Paths": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/spousePatiosEastScarp.tmx#untitled tile sheet": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/spousePatiosEastScarp.tmx#zz_chickenShack": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin": {
+            "scale": 1.4657142857142857,
+            "selectedLayer": 7,
+            "viewCenter": {
+                "x": 66.17933723196882,
+                "y": 234.69785575048732
+            }
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#p": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#untitled tile sheet": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#v16_TownInterior_2": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#zVanillaCraftables": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#zVanillaFurniture": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#zVanillaWallsAndFloors": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#z_SVEbuildingShadow": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#z_WizardTowerLights": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#zspring_z_extras": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/Locations/WizardHouse.tbin#ztownInterior_2": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/WizardBasement.tbin": {
+            "scale": 1.7730603448275861,
+            "selectedLayer": 11,
+            "viewCenter": {
+                "x": 231.52060289291353,
+                "y": 338.9619545399295
+            }
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/WizardBasement.tbin#VanillaCraftables": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/WizardBasement.tbin#VanillaFurniture": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/WizardBasement.tbin#VanillaWallsAndFloors": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/WizardBasement.tbin#paths": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/WizardBasement.tbin#spring_z_extras": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/WizardBasement.tbin#townInterior_2": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/WizardBasement.tbin#wizardhouse": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/WizardBasement.tbin#z_SVEbuildingShadow": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/WizardBasement.tbin#z_WizardBasementLights": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/ZCCC_Courtyard.tbin": {
+            "scale": 0.8429303278688524,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 487.5847818159719,
+                "y": 291.83906648839195
+            }
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/ZCCC_Courtyard.tbin#CherryBlossomPetals": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/ZCCC_Courtyard.tbin#Paths": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/ZCCC_Courtyard.tbin#ZCCC_Courtyard_NPCs": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/ZCCC_Courtyard.tbin#spring_outdoorsTileSheet": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/ZCCC_Courtyard.tbin#spring_town": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/ZCCC_Courtyard.tbin#z_SVEbuildingShadow": {
+            "scaleInDock": 1
+        },
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Maps/NewLocations/ZCCC_Courtyard.tbin#zspring_z_extras": {
+            "scaleInDock": 1
+        },
+        "Eleanor_home - kopie.tmx": {
+            "scale": 2.052,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 200.04873294346976,
+                "y": 199.80506822612085
+            }
+        },
+        "Eleanor_home - kopie.tmx#p": {
+            "scaleInDock": 1
+        },
+        "Eleanor_home - kopie.tmx#untitled tile sheet": {
+            "scaleInDock": 1
+        },
+        "Eleanor_home - kopie.tmx#v16_TownInterior_2": {
+            "scaleInDock": 1
+        },
+        "Eleanor_home.tmx": {
+            "expandedObjectLayers": [
+                10
+            ],
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 189.99999999999997,
+                "y": 179.33333333333337
+            }
+        },
+        "Eleanor_home.tmx#p": {
+            "scaleInDock": 2
+        },
+        "Eleanor_home.tmx#paths": {
+            "scaleInDock": 1.5
+        },
+        "Eleanor_home.tmx#townInterior": {
+            "scaleInDock": 1.5
+        },
+        "Eleanor_home.tmx#townInterior_2": {
+            "scaleInDock": 1.5
+        },
+        "Eleanor_home.tmx#untitled tile sheet": {
+            "scaleInDock": 2,
+            "scaleInEditor": 1
+        },
+        "Eleanor_home.tmx#v16_TownInterior_2": {
+            "scaleInDock": 2
+        },
+        "Eleanor_home.tmx#wizard_furniture": {
+            "scaleInDock": 2
+        },
+        "Eleanor_home_default.tmx": {
+            "scale": 2.139973958333333,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 192.52570733191362,
+                "y": 189.2546394888957
+            }
+        },
+        "Eleanor_home_default.tmx#paths": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Eleanor_home_default.tmx#townInterior": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Eleanor_home_default.tmx#townInterior_2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "WizardHouse.tmx": {
+            "expandedObjectLayers": [
+                10
+            ],
+            "scale": 3,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 110.66666666666666,
+                "y": 123.33333333333331
+            }
+        },
+        "WizardHouse.tmx#p": {
+            "scaleInDock": 2
+        },
+        "WizardHouse.tmx#untitled tile sheet": {
+            "scaleInDock": 2
+        },
+        "WizardHouse.tmx#v16_TownInterior_2": {
+            "scaleInDock": 1
+        },
+        "wizard/Eleanor_home.tmx": {
+            "scale": 2.011625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 210.277760516995,
+                "y": 244.578388119058
+            }
+        },
+        "wizard/Eleanor_home.tmx#paths": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "wizard/Eleanor_home.tmx#townInterior": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "wizard/Eleanor_home.tmx#townInterior_2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "wizard/Eleanor_home.tmx#wizard_furniture": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps",
+    "openFiles": [
+    ],
+    "project": "untitled.tiled-project",
+    "recentFiles": [
+        "Eleanor_home_default.tmx",
+        "Eleanor_home.tmx",
+        "wizard/Eleanor_home.tmx",
+        "ATA/Eleanor_home_ATA.tmx",
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SeedShop.tmx",
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/WizardHouse.tmx",
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/Farm.tmx",
+        "Eleanor_home - kopie.tmx",
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/spousePatiosEastScarp.tmx",
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/SpouseRoomsEastScarp.tmx",
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SebastianRoom.tmx",
+        "WizardHouse.tmx"
+    ],
+    "resizeMap.removeObjects": true,
+    "tileset.embedInMap": true,
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}

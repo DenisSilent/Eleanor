@@ -11,11 +11,11 @@
 
   // Current Version
 
-  "Version": "0.9.4",
+  "Version": "0.9.5",
 
   // Description
 
-  "Description": "This mod for Content Patcher adds a new NPC named Eleanor created by StrojvedouciDenis.",
+  "Description": "This CP mod for Stardew Valley adds a new NPC named Eleanor created by StrojvedouciDenis.",
 
   // Unique Manifest ID for Content Pack
 
@@ -31,8 +31,8 @@
 
   // Minimum Versions
 
-  "MinimumGameVersion": "1.6.0",  // SV version
-  "MinimumApiVersion": "4.0.0",   // SMAPI version
+  "MinimumGameVersion": "1.6.9",  // SV version
+  "MinimumApiVersion": "4.1.0",   // SMAPI version
 
 
   // Dependencies - Required mods and optional mods
@@ -41,7 +41,7 @@
     {
       "UniqueID": "Pathoschild.ContentPatcher", // Content Patcher
       "IsRequired": true,
-      "MinimumVersion": "2.0.0"
+      "MinimumVersion": "2.4.0"
     },
     {
       "UniqueID": "FlashShifter.StardewValleyExpandedCP", // Stardew Valley Expanded (a.k.a. SVE)
@@ -75,6 +75,18 @@
     },
     {
       "UniqueID": "HogwartsET.CP.Hogwarts", // Hogwarts
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Spiderbuttons.BETAS",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "spacechase0.SpaceCore",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Spiderbuttons.ArbitraryTilesheetAccess",
       "IsRequired": false
     }
   ]

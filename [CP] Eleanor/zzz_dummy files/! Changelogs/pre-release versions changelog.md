@@ -1,6 +1,6 @@
-# **Prerelease changelog (0.0.0-0.7.4-beta.7)**
+# **rPrerelease changelog (0.0.0-0.7.4-beta.7)**
 
-This is a changlog including all unreleased versions of NPC Eleanor that were before the official public (both on NexusMods and GitHub) release.
+This is a changlog including all unreleased versions of NPC Eleanor that were before the official public ( NexusMods) release.
 
 ---
 
@@ -12,7 +12,7 @@ This is a changlog including all unreleased versions of NPC Eleanor that were be
 * Created NexusMods page
 * Written release messages for Discord
 * Roadmap for 0.8.X:
-  * Add my NPC [here.](https://docs.google.com/spreadsheets/d/1q0j3BqE79_wDlTW43teNPEspudt29S0EmlKwL7PDUCo/edit?gid=1457049521#gid=1457049521)
+  * Add my NPC [to the event table](https://docs.google.com/spreadsheets/d/1q0j3BqE79_wDlTW43teNPEspudt29S0EmlKwL7PDUCo/edit?gid=1457049521#gid=1457049521)
 
 ---
 
@@ -23,7 +23,7 @@ This is a changlog including all unreleased versions of NPC Eleanor that were be
   * festivals (`festivals.json` and `z_secrets.json`)
 * Festivals not working correctly Discord help by:
   * `@pheaux`
-* Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
+* Various fixes and edits; see the appropriate commit log ([all commit logs](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
 
 ---
 
@@ -32,7 +32,7 @@ This is a changlog including all unreleased versions of NPC Eleanor that were be
 * Final checking before mod release! 🎉
 * Checked:
   * dialogues - not really and not all of them (how to even test all of them? only hearts + day specific dialogues confirmed), but... I hope they'll work, they already did (`dialogues.json`; help by AgentDavid001)
-* Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
+* Various fixes and edits; see the appropriate commit log ([all commit logs](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
 
 ---
 
@@ -47,7 +47,7 @@ This is a changlog including all unreleased versions of NPC Eleanor that were be
   * `@wopr1234`
 * Checked:
   * events (`events.json`)
-* Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
+* Various fixes and edits; see the appropriate commit log ([all commit logs](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
 
 ---
 
@@ -62,7 +62,7 @@ This is a changlog including all unreleased versions of NPC Eleanor that were be
 * Checked:
   * secrets (`z_secrets.json`)
   * mails (`mails.json`)
-* Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
+* Various fixes and edits; see the appropriate commit log ([all commit logs](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
 
 ---
 
@@ -93,7 +93,7 @@ This is a changlog including all unreleased versions of NPC Eleanor that were be
 * Added gift rejections
 * Internal code reorganization
 * Added schedule if the intro event wasn't triggered
-* Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
+* Various fixes and edits; see the appropriate commit log ([all commit logs](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
 
 ---
 
@@ -102,7 +102,7 @@ This is a changlog including all unreleased versions of NPC Eleanor that were be
 * Fixed many grammatical issues
 * Fixed Dynamic Token error
 * Deleted files that weren't used/licensed (NPC graphic; sorry for including them, all rights belong to their authors)
-* Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
+* Various fixes and edits; see the appropriate commit log ([all commit logs](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
 
 ---
 
@@ -111,7 +111,7 @@ This is a changlog including all unreleased versions of NPC Eleanor that were be
 * Created 4 and 7 hearts events
 * Fixed events, mails and secrets not using the new Dynamic Token, supporting GNMTokens
 * Added update key to GitHub for this mod so SMAPI would detect updates released on GitHub
-* Various fixes and edits; see the appropriate commit log (all logs [here](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
+* Various fixes and edits; see the appropriate commit log ([all commit logs](https://github.com/DenisSilent/Eleanor/commits/main)) for more info
 
 ---
 
@@ -188,7 +188,7 @@ This is a changlog including all unreleased versions of NPC Eleanor that were be
 ## version 0.6.9-beta.4 (23.1.2025)
 
 * Changed config names for better readability in GMCM
-* "ModID" in entries and its duplicating with Discord help by:
+* "ModId" in entries and its duplicating with Discord help by:
   * `@spiderbuttons`
   * `@atravita`
   * `@chu2.718281828459045235360287471`
@@ -533,4 +533,4 @@ This is a changlog including all unreleased versions of NPC Eleanor that were be
 
 ## version 0.0.0 (5.7.2024)
 
-* First documented file -> official birth of this mod (tries from 1.7.2024)
+* First documented file -> official birth of this mod (tries from 1.7.2024 or earlier)
