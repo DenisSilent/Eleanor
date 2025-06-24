@@ -15,30 +15,6 @@ https://stardewmodding.wiki.gg/wiki/Tutorial:_Adding_Seasonal_Outfits_via_Appear
         "Appearance"
       ],
       "Entries": {
-        /*
-        "{{ModId}}_default": {
-          "Id": "{{ModId}}_default",
-          "Portrait": "Portraits/{{ModId}}_{{ModId}}_default",
-          "Sprite": "Characters/{{ModId}}_{{ModId}}_default",
-          "Precedence": 0, // priority
-          "Condition": "ANY \"{{Outfits |contains=one look only (ORG)}}\" \"{{Outfits |contains=one look only}}\"",
-        },
-        "{{ModId}}_vanilla_winter": {
-          "Id": "{{ModId}}_vanilla_winter",
-          "Portrait": "Portraits/{{ModId}}_{{ModId}}_vanilla_winter",
-          "Sprite": "Characters/{{ModId}}_{{ModId}}_vanilla_winter",
-          "Precedence": -11, // priority
-          "Condition": "{{Outfits |contains=vanilla}}",
-          "Season": "winter"
-        },
-        "{{ModId}}_seasonal": {
-          "Id": "{{ModId}}_seasonal",
-          "Portrait": "Portraits/{{ModId}}_{{ModId}}_seasonal",
-          "Sprite": "Characters/{{ModId}}_{{ModId}}_seasonal",
-          "Precedence": -20, // priority
-          "Condition": "{{Outfits |contains=seasonal}}"
-        }
-          */
           "{{ModId}}_default_ORG": {
           "Id": "{{ModId}}_default_ORG",
           "Portrait": "Portraits/{{ModId}}_default_ORG",

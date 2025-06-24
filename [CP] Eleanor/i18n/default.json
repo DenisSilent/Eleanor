@@ -131,51 +131,51 @@
   "Dialogues.spring.1": "The nature awakes, {{DT_name}}. What a beautiful time of the year.",
   "Dialogues.spring.2": "The flowers are blooming, the birds are singing...#$b#It's a beautiful day, isn't it, {{DT_name}}?",
   "Dialogues.spring.3": "Hello, {{DT_name}}. How's your farm doing?#$b#Well, you're saying? It should...",
-  /*
   "Dialogues.spring.4": "I like spring. The sun shining, the flowers and trees blooming, the birds singing and chattering...#$b#Sorry, I can't help myself, I just admire the beauty of this season, {{DT_name}}.",
+
   "Dialogues.spring.5": "Hi, {{DT_name}}. How are you doing today?#$b#I hope you're not too tired from working on your farm.",
-  "Dialogues.spring.6": "",
+  "Dialogues.spring.6": "I love spring, the flowers, the trees...#$b#But I am not a fan of the pollen...#$b#I hope you're not allergic to it, {{DT_name}}.",
   "Dialogues.spring.7": "",
   "Dialogues.spring.8": "",
   "Dialogues.spring.9": "",
   "Dialogues.spring.10": "",
-  */
+
   "Dialogues.summer.1": "Shining sun, hot weather...#$b#Don't forget to drink enough water, {{DT_name}}. It's important.",
   "Dialogues.summer.2": "Why is summer so hot?#$b#I can't imagine how you can work on your farm in this heat, {{DT_name}}.",
   "Dialogues.summer.3": "Hi, {{DT_name}}.#$b#How are you and your farm handling the heat?",
-  /*
-  "Dialogues.summer.4": "",
-  "Dialogues.summer.5": "",
+  "Dialogues.summer.4": "So hot today...#$b#I'm even losing my formality from it!#$b#Sorry, {{DT_name}}, it's just way too hot for me to be in my best shape.",
+
+  "Dialogues.summer.5": "In days like these, I wish I could just sit in the shade and drink some lemonade...#$b#But I can't, I have to work on my magic.",
   "Dialogues.summer.6": "",
   "Dialogues.summer.7": "",
   "Dialogues.summer.8": "",
   "Dialogues.summer.9": "",
   "Dialogues.summer.10": "",
-  */
+
   "Dialogues.fall.1": "Colors are changing, leaves are falling, the air is getting colder...#$b#Yeah, fall is here. Beautiful season, isn't it?",
   "Dialogues.fall.2": "What a beautiful day, isn't it, {{DT_name}}?#$b#I hope you're enjoying it.",
   "Dialogues.fall.3": "Hi, {{DT_name}}. How are your plants doing in this season?",
-  /*
-  "Dialogues.fall.4": "",
+  "Dialogues.fall.4": "The fall breeze is so refreshing...#$b#I love this time of year.",
+
   "Dialogues.fall.5": "",
   "Dialogues.fall.6": "",
   "Dialogues.fall.7": "",
   "Dialogues.fall.8": "",
   "Dialogues.fall.9": "",
   "Dialogues.fall.10": "",
-  */
-  "Dialogues.winter.1": "Snow, ice, cold...#$b#Winter is here, {{DT_name}}. It's a free time season for you, isn't it?",
+
+  "Dialogues.winter.1": "Snow, ice, cold...#$b#Winter is here, {{DT_name}}. It's basically a free time season for you, isn't it?",
   "Dialogues.winter.2": "Huh... It's pretty cold today, isn't it, {{DT_name}}?",
   "Dialogues.winter.3": "You know, I have a feeling that winter is the most magical season of the year...#$b#What do you think, {{DT_name}}?",
-  /*
   "Dialogues.winter.4": "I like winter, the snow, the ice...#$b#But I am not a fan of the cold, especially this cold...#$b#I hope you're not freezing, {{DT_name}}.",
+
   "Dialogues.winter.5": "Hi, {{DT_name}}. How are you doing today?#$b#I hope you're not freezing in this cold weather.",
   "Dialogues.winter.6": "",
   "Dialogues.winter.7": "",
   "Dialogues.winter.8": "",
   "Dialogues.winter.9": "",
   "Dialogues.winter.10": "",
-*/
+
   "Dialogues.spring_12": "I don't plan to attend Egg Festival tomorrow.#$b#Anyways, may you enjoy it, {{DT_name}}.",
   "Dialogues.spring_23": "Flower Dance...#$#I really like dancing, so I'll be there. Will you also participate, {{DT_name}}?",
 
@@ -345,18 +345,18 @@
   "Dialogues.marriage.Eleanor_EngagedRoommate": "StrojvedouciDenis.Eleanor-DEBUG:EngagedRoommate",
 
   // Marriage edit
-  "Dialogues.marriage.Utility.cs.5367": "U5367#$b#When Eleanor first arrived as a student of {{DT_wizard_name}}, we had the same feeling as with {{DT_name}} half a year later - we didn't know if they would fit in with our community...#$b#But from this day forward, both of them are going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite {{DT_name}} and Eleanor in the bonds of marriage.",
-  "Dialogues.marriage.Utility.cs.5369": "U5369#$b#When Eleanor first arrived as a student of {{DT_wizard_name}}, we had the same feeling as with {{DT_name}} half a year later - we didn't know if they would fit in with our community...#$b#But from this day forward, both of them are going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite {{DT_name}} and Eleanor in the bonds of marriage.",
-  "Dialogues.marriage.Utility.cs.5370": "U5370#$b#Well, let's get right to it!",
-  "Dialogues.marriage.Utility.cs.5371": "U5371#$b#{{DT_name}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you husband and... well, husband!$h",
-  "Dialogues.marriage.Utility.cs.5373": "U5373#$b#{{DT_name}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you husband and wife!$h",
-  "Dialogues.marriage.Utility.cs.5375": "U5375#$b#{{DT_name}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you wife and... well, wife!$h",
-  "Dialogues.marriage.Utility.cs.5377": "U5377#$b#{{DT_name}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you wife and husband!$h",
-  "Dialogues.marriage.Utility.cs.5379": "U5379#$b#You may kiss.",
-  "Dialogues.marriage.Utility.cs.5381": "U5381#$b#Life is going to be different from now on...",
-  "Dialogues.marriage.Utility.cs.5383": "U5383#$b#...But the future looks bright!",
+  "Dialogues.marriage.Utility.cs.5367": "When Eleanor first arrived as a student of {{DT_wizard_name}}, we had the same feeling as with {{DT_name}} half a year later - we didn't know if they would fit in with our community...#$b#But from this day forward, both of them are going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite {{DT_name}} and Eleanor in the bonds of marriage.",
+  "Dialogues.marriage.Utility.cs.5369": "When Eleanor first arrived as a student of {{DT_wizard_name}}, we had the same feeling as with {{DT_name}} half a year later - we didn't know if they would fit in with our community...#$b#But from this day forward, both of them are going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite {{DT_name}} and Eleanor in the bonds of marriage.",
+  "Dialogues.marriage.Utility.cs.5370": "Well, let's get right to it!",
+  "Dialogues.marriage.Utility.cs.5371": "{{DT_name}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you husband and... well, husband!$h",
+  "Dialogues.marriage.Utility.cs.5373": "{{DT_name}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you husband and wife!$h",
+  "Dialogues.marriage.Utility.cs.5375": "{{DT_name}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you wife and... well, wife!$h",
+  "Dialogues.marriage.Utility.cs.5377": "{{DT_name}}... #$b#Eleanor... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you wife and husband!$h",
+  "Dialogues.marriage.Utility.cs.5379": "You may kiss.",
+  "Dialogues.marriage.Utility.cs.5381": "Life is going to be different from now on...",
+  "Dialogues.marriage.Utility.cs.5383": "...But the future looks bright!",
 
-  "Dialogues.marriage.SummitEvent_Dialogue3_StrojvedouciDenis.Eleanor": "S3#$b#Such a nice view here, don't you think, {{DT_name}}?#$b#I'm glad we came here...#$b#It is %years years since you came to Pelican Town, and I'm so glad you did.#$b#Because my life is much better with you in it.#$b#Just think about it - how would my life look like if you didn't come here?#$b#Would I ever find out about myself? About my powers? About my parents's past?#$b#Because I can't...#$e#But that doesn't matter anymore, because of you, my loved {{DT_name}}.#$b#It was you who helped me in my search for myself.#$b#And I know that I can't thank you enough for that.#$b#But I'll try to do it every day, every moment, every second of my life.#$b#Because you are the one who helped me to find myself.#$b#And I'm so grateful for that...#$b#I love you, {{DT_name}}.",
+  "Dialogues.marriage.SummitEvent_Dialogue3_StrojvedouciDenis.Eleanor": "Such a nice view here, don't you think, {{DT_name}}?#$b#I'm glad we came here...#$b#It is %years years since you came to Pelican Town, and I'm so glad you did.#$b#Because my life is much better with you in it.#$b#Just think about it - how would my life look like if you didn't come here?#$b#Would I ever find out about myself? About my powers? About my parents's past?#$b#Because I can't...#$e#But that doesn't matter anymore, because of you, my loved {{DT_name}}.#$b#It was you who helped me in my search for myself.#$b#And I know that I can't thank you enough for that.#$b#But I'll try to do it every day, every moment, every second of my life.#$b#Because you are the one who helped me to find myself.#$b#And I'm so grateful for that...#$b#I love you, {{DT_name}}.",
 
   "Dialogues.marriage.Rainy_Day_0": "It's raining today, {{DT_name}}. At least you don't have to water the crops.",
   "Dialogues.marriage.Rainy_Day_1": "The rain is so relaxing, isn't it, {{DT_name}}?",
@@ -393,14 +393,14 @@
   "Dialogues.marriage.OneKid_3": "What do you think our child will be when they grow up, {{DT_name}}?#$b#I hope they will be a good person, just like you.",
   "Dialogues.marriage.TwoKid_0": "Our children are so cute, {{DT_name}}! I love them so much!#$b#Which one you think is more like you?",
   "Dialogues.marriage.TwoKid_1": "Can you believe we have two children now, {{DT_name}}? Because I can't!#$b#Do you think at least one of them will be a farmer like you?",
-  "Dialogues.marriage.TwoKid_2": "Do you think our children are connected to some magic?#$b#I hope they are, I would love to teach them magic one day...",
+  "Dialogues.marriage.TwoKid_2": "Do you think our children are connected to some magic?#$b#I hope they are. I would love to teach them magic one day...",
   "Dialogues.marriage.TwoKid_3": "What do you think our child will be when they grow up, {{DT_name}}?#$b#I hope they will be a good person, just like you.",
   "Dialogues.marriage.Good_0": "Aw, {{DT_name}}...#$b#You know how to make me feel special. I love you so much!",
   "Dialogues.marriage.Good_1": "I feel so lucky to have you in my life, {{DT_name}}.#$b#You make me feel so special and loved.#$b#I hope you feel the same way.",
   "Dialogues.marriage.Good_2": "I cherish every moment we spend together, {{DT_name}}.#$b#You truly mean the world to me.",
   "Dialogues.marriage.Good_3": "I can't help but smile when I think of you, {{DT_name}}.#$b#You bring so much joy into my life.",
-  //"Dialogues.marriage.Good_4": "StrojvedouciDenis.Eleanor-DEBUG:Good_4",
-  //"Dialogues.marriage.Good_5": "StrojvedouciDenis.Eleanor-DEBUG:Good_5",
+  "Dialogues.marriage.Good_4": "{{DT_name}}, I just wanted to say how much I appreciate you.#$b#You make my life so much better, and I love you for that.",
+  "Dialogues.marriage.Good_5": "What spell did you cast at me, {{DT_name}}? I can't stop thinking about you!$4",
   //"Dialogues.marriage.Good_6": "StrojvedouciDenis.Eleanor-DEBUG:Good_6",
   //"Dialogues.marriage.Good_7": "StrojvedouciDenis.Eleanor-DEBUG:Good_7",
   //"Dialogues.marriage.Good_8": "StrojvedouciDenis.Eleanor-DEBUG:Good_8",
@@ -495,7 +495,7 @@
   // 7 hearts
   "Events.7h.0": "Oh!#$b#{{DT_name}}!#$b#Hi! What brings you here?",
   "Events.7h.1": "So, you are saying that you saw me standing here and decided to check on me?#$b#That is nice of you. Thank you, and don't worry, I am pretty fine.$l",
-  "Events.7h.2": "I was just thinking about my life and where I am in it right now...#$b#And before you even ask, no, I am not going to jump from the cliff. I am pretty happy with my life.",
+  "Events.7h.2": "",
     /*
   1.6.16
   "Events.7h.3_q1": "What about you, are you enjoying your life here in Pelican Town?",
