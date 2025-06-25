@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "",
+    "activeFile": "development/Eleanor_home_default.tmx",
     "automapping.whileDrawing": false,
     "expandedProjectPaths": [
         "."
@@ -362,6 +362,23 @@
         "WizardHouse.tmx#v16_TownInterior_2": {
             "scaleInDock": 1
         },
+        "development/Eleanor_home_default.tmx": {
+            "scale": 3,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 131,
+                "y": 55.999999999999986
+            }
+        },
+        "development/Eleanor_home_default.tmx#paths": {
+            "scaleInDock": 1
+        },
+        "development/Eleanor_home_default.tmx#townInterior": {
+            "scaleInDock": 1
+        },
+        "development/Eleanor_home_default.tmx#townInterior_2": {
+            "scaleInDock": 1
+        },
         "wizard/Eleanor_home.tmx": {
             "scale": 2.011625,
             "selectedLayer": 0,
@@ -389,9 +406,11 @@
     },
     "last.imagePath": "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps",
     "openFiles": [
+        "development/Eleanor_home_default.tmx"
     ],
     "project": "untitled.tiled-project",
     "recentFiles": [
+        "development/Eleanor_home_default.tmx",
         "Eleanor_home_default.tmx",
         "Eleanor_home.tmx",
         "wizard/Eleanor_home.tmx",
@@ -402,8 +421,7 @@
         "Eleanor_home - kopie.tmx",
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/spousePatiosEastScarp.tmx",
         "C:/SteamLibrary/steamapps/common/Stardew Valley/Mods - test/East Scarp (1.6)/[CP] East Scarp NPCs/assets/Maps/SpouseRoomsEastScarp.tmx",
-        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SebastianRoom.tmx",
-        "WizardHouse.tmx"
+        "C:/SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/SebastianRoom.tmx"
     ],
     "resizeMap.removeObjects": true,
     "tileset.embedInMap": true,

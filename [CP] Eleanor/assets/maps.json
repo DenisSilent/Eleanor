@@ -13,7 +13,7 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
       "LogName": "{{ModId}} - maps - Eleanor's home load command",
       "Action": "Load",
       "Target": "Maps/{{ModId}}.Maps.Eleanor.home",
-      "FromFile": "assets/maps/Eleanor_home_{{Map-furniture}}.tmx"
+      "FromFile": "assets/maps/Eleanor_home_{{DT_furniture}}.tmx"
     },
     // add location data
     {

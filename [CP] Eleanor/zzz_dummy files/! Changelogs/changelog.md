@@ -4,6 +4,14 @@ Full list of all [Github commits.](https://github.com/DenisSilent/Eleanor/commit
 
 ---
 
+## version 0.9.6 (25.6.2025)
+
+* Hopefully fixed errors while loading the map on `wizard` config while not having [Arbitrary Tilesheet Access](https://www.nexusmods.com/stardewvalley/mods/30001) installed
+* Fixed errors with otherwise unused BETAS addons when BETAS is not installed
+* Fixed some Eleanor's default map errors
+
+---
+
 ## version 0.9.5 (24.6.2025)
 
 * Relicensed the mod from custom ToU to [MIT License](https://opensource.org/license/mit)

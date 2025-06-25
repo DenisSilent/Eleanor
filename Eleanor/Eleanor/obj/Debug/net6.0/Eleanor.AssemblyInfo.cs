@@ -12,11 +12,11 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Eleanor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("0.9.5.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.9.5+dc898fe375e25646921a38306b4a62cf078e27a0")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.9.6.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.9.6+cb22aa9b2d455ad7f101eb1047ad5547774bc9ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("Eleanor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eleanor")]
-[assembly: System.Reflection.AssemblyVersionAttribute("0.9.5.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("0.9.6.0")]
 
 // Vygenerované třídou WriteCodeFragment nástroje MSBuild
 

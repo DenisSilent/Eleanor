@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Eleanor/0.9.5": {
+      "Eleanor/0.9.6": {
         "runtime": {
           "Eleanor.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "Eleanor/0.9.5": {
+    "Eleanor/0.9.6": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
