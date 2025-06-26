@@ -9,6 +9,22 @@ https://stardewvalleywiki.com/Modding:Mail_data
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
+          "{{ModId}}_mail_maps.Eleanor.home_incorrect_add": {
+          "Id": "{{ModId}}_mail_maps.Eleanor.home_incorrect_add",
+          "Trigger": "DayStarted",
+          "Actions": [
+            "AddMail Current {{ModId}}_mail_maps.Eleanor.home_incorrect now" // if you want the mail to be sent immediately, add "Now" at the end
+          ],
+          "Condition": "{{Map-furniture |contains=wizard}}, !{{HasMod |contains=Spiderbuttons.ArbitraryTilesheetAccess}}"
+        },
+          "{{ModId}}_mail_maps.Eleanor.home_incorrect_remove": {
+          "Id": "{{ModId}}_mail_maps.Eleanor.home_incorrect_remove",
+          "Trigger": "DayEnding",
+          "Actions": [
+            "RemoveMail Current {{ModId}}_mail_maps.Eleanor.home_incorrect now" // if you want the mail to be sent immediately, add "Now" at the end
+          ],
+          "Condition": "{{Map-furniture |contains=wizard}}, !{{HasMod |contains=Spiderbuttons.ArbitraryTilesheetAccess}}"
+        },
         "{{ModId}}_mail_HogwartsTrips": {
           "Id": "{{ModId}}_mail_HogwartsTrips",
           "Trigger": "DayStarted",
@@ -26,6 +42,7 @@ https://stardewvalleywiki.com/Modding:Mail_data
       "Action": "EditData",
       "Target": "Data/mail",
       "Entries": {
+        "{{ModId}}_mail_maps.Eleanor.home_incorrect": "{{i18n:Mail.maps.Eleanor.home_incorrect |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "{{ModId}}_mail_HogwartsTrips": "{{i18n:Mail.HogwartsTrips |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       }
     }

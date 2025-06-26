@@ -14,6 +14,13 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.29 (26.6.2025)
+
+* Multi-device development possibility tests
+* Hopefully included all 0.9.6 hotfixes
+
+---
+
 ## version 1.0.0-alpha.28 (24.6.2025)
 
 * Multi-device development possibility tests

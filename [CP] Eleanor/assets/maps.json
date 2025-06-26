@@ -13,7 +13,7 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
       "LogName": "{{ModId}} - maps - Eleanor's home load command",
       "Action": "Load",
       "Target": "Maps/{{ModId}}.Maps.Eleanor.home",
-      "FromFile": "assets/maps/Eleanor_home_{{Map-furniture}}.tmx"
+      "FromFile": "assets/maps/Eleanor_home_{{DT_furniture}}.tmx"
     },
     // add location data
     {
@@ -101,7 +101,7 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
         "Maps.Eleanor.home_cheat": "{{i18n:Maps.Eleanor.home_cheat |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Maps.Eleanor.home_cauldron": "{{i18n:Maps.Eleanor.home_cauldron |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "Maps.Eleanor.home_picture": "{{i18n:Maps.Eleanor.home_picture |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Maps.Eleanor.home_block-1": "{{i18n:Maps.Eleanor.home_block-1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Maps.Eleanor.home_block-1": "{{i18n:Maps.Eleanor.home_block-1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       }
     }
   ]

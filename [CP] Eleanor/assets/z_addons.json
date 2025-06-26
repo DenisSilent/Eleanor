@@ -271,6 +271,9 @@
                 "AddConversationTopic {{ModId}}_BETAS_BookRead_OlSlitherlegs 3"
             ]
         }
+      },
+      "When": {
+          "HasMod |contains=Spiderbuttons.BETAS": true
       }
     }
   ]
