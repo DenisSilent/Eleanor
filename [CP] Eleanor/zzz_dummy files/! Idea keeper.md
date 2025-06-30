@@ -14,3 +14,15 @@
   * Access after 10? hearts event
     * --> change the 14h-p1 text
   * New NPCs with its lore?
+
+## Improvements
+
+* Page rewrite
+  * More screenshots
+  * Better text
+  * More details
+    * Includes more guides,...
+* More content
+* Leaving SVE as a requirement? We'll see...
+* Better/more art!!!!!!!!!! (Will probably never improve X ....)
+

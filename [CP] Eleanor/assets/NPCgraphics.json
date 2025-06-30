@@ -26,7 +26,8 @@ https://stardewmodding.wiki.gg/wiki/Tutorial:_Adding_Seasonal_Outfits_via_Appear
           "Id": "{{ModId}}_default_NON-ORG",
           "Portrait": "Portraits/{{ModId}}_default",
           "Sprite": "Characters/{{ModId}}_default",
-          "Precedence": -10 // priority
+          "Precedence": -10, // priority
+          "Condition": "{{Outfits |contains=one look only}}"
         },
           "{{ModId}}_spring": {
           "Id": "{{ModId}}_spring",
@@ -57,7 +58,7 @@ https://stardewmodding.wiki.gg/wiki/Tutorial:_Adding_Seasonal_Outfits_via_Appear
           "Portrait": "Portraits/{{ModId}}_winter",
           "Sprite": "Characters/{{ModId}}_winter",
           "Precedence": -15, // priority
-         // "Condition": "ANY \"{{Outfits |contains=vanilla}}\" \"{{Outfits |contains=seasonal}}\"",
+          "Condition": "ANY \"{{Outfits |contains=vanilla}}\" \"{{Outfits |contains=seasonal}}\"",
           "Season": "winter"
         },
 
@@ -89,8 +90,14 @@ https://stardewmodding.wiki.gg/wiki/Tutorial:_Adding_Seasonal_Outfits_via_Appear
     {
       "LogName": "Eleanor - NPCgraphics - default load command",
       "Action": "Load",
+      "Target": "Characters/{{ModId}}, Portraits/{{ModId}}",
+      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/StrojvedouciDenis.Eleanor_default_ORG.png"
+    },
+    {
+      "LogName": "Eleanor - NPCgraphics - default load command",
+      "Action": "Load",
       "Target": "Characters/{{ModId}}_default_ORG, Portraits/{{ModId}}_default_ORG, Characters/{{ModId}}_default, Portraits/{{ModId}}_default, Characters/{{ModId}}_spring, Portraits/{{ModId}}_spring, Characters/{{ModId}}_summer, Portraits/{{ModId}}_summer, Characters/{{ModId}}_fall, Portraits/{{ModId}}_fall, Characters/{{ModId}}_winter, Portraits/{{ModId}}_winter",
       "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{TargetWithoutPath}}.png"
-    } //"default_ORG, default, spring, summer, fall, winter",
+    }
   ]
 }

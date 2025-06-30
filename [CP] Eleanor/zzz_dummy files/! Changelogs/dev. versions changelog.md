@@ -14,6 +14,27 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.31 (30.6.2025)
+
+* Multi-device development possibility tests
+* De-commented-out 1.6.16 i18n lines
+* Appearances not working as expected Discord help by:
+  * `@airyn16`
+  * `@nai.nai.naira`
+* generic mod popularity Discord help by:
+  * `@airyn16`
+  * `@irocendar`
+  * `@abagaianye`
+
+---
+
+## version 1.0.0-alpha.30 (27.6.2025)
+
+* Multi-device development possibility tests
+* Resystemized the future mod development to be totally unknown until future updates
+
+---
+
 ## version 1.0.0-alpha.29 (26.6.2025)
 
 * Multi-device development possibility tests

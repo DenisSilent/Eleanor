@@ -445,14 +445,14 @@
   "Events.2h.0": "Good morning, {{DT_name}}!",
   "Events.2h.1": "Above you!",
   "Events.2h.2": "Hehe...$h#$b#Took you a while to notice me, didn't it?",
-  /*
-  1.6.16
+
+  // 1.6.16
 "Events.2h.3_q1": "Such nice nature here, don't you think?",
 "Events.2h.3_q1a1": "I know! It's beautiful!",
-"Events.2h.3_q1a2": "I don't like it. Something more useful should be built here."
+"Events.2h.3_q1a2": "I don't like it. Something more useful should be built here.",
 
-  */
-  "Events.2h.3_q1": "Such nice nature here, don't you think?#I know! It's beautiful!#I don't like it. Something more useful should be built here.",
+
+//  "Events.2h.3_q1": "Such nice nature here, don't you think?#I know! It's beautiful!#I don't like it. Something more useful should be built here.",
   "Events.2h.4_q1r1": "I'm glad you like it too.$h#$b#I like to come here and relax when I have some free time.#$b#It's so peaceful here. I can think about everything and nothing at the same time.",
   "Events.2h.4_q1r2": "Oh...$s#$b#Honestly, I would like to know what you would like to see here.#$b#You, as a farmer, should like nature, am I right?#$b#But I can understand if you don't like it. Everyone has their own opinion.",
   "Events.2h.5": "Anyways, I have to return to {{DT_wizard_name}}, {{DT_wizard_fem}} should be waiting for me.#$b#May you have a good day, {{DT_name}}.",
@@ -463,14 +463,14 @@
   "Events.4h.2": "Oh, hello, {{DT_name}}! What brings you here?",
   "Events.4h.3": "You heard a noise from downstairs, so you decided to check it out?#$b#Heh... I should be quieter next time.",
   "Events.4h.4": "It was just me, looking for a certain book to study...#$b#I can't find it, though...",
-    /*
-  1.6.16
+
+//  1.6.16
   "Events.4h.5_q1": "Would you like to help me find it?",
   "Events.4h.5_q1a1": "Of course!",
   "Events.4h.5_q1a2": "I'll help, but why don't you use magic to find it?",
   "Events.4h.5_q1a3": "Sorry, I have little time.",
-  */
-  "Events.4h.5_q1": "Would you like to help me find it?#Of course!#I'll help, but why don't you use magic to find it?#Sorry, I have little time.",
+
+//  "Events.4h.5_q1": "Would you like to help me find it?#Of course!#I'll help, but why don't you use magic to find it?#Sorry, I have little time.",
   "Events.4h.6_q1r1": "You'll help me? Glad to hear that!#$b#I'll be grateful for your help, {{DT_name}}.",
   "Events.4h.6_q1r2": "Well, the book is very, very old, and the spell might destroy it, so it's safer to find it manually.",
   "Events.4h.6_q1r3": "Oh, don't worry, {{DT_name}}. I'll find it sooner or later.",
@@ -495,14 +495,14 @@
   // 7 hearts
   "Events.7h.0": "Oh!#$b#{{DT_name}}!#$b#Hi! What brings you here?",
   "Events.7h.1": "So, you are saying that you saw me standing here and decided to check on me?#$b#That is nice of you. Thank you, and don't worry, I am pretty fine.$l",
-  "Events.7h.2": "",
-    /*
-  1.6.16
+  "Events.7h.2": "I was just thinking about my life and where I am in it right now...#$b#And before you even ask, no, I am not going to jump from the cliff. I am pretty happy with my life.",
+
+//  1.6.16
   "Events.7h.3_q1": "What about you, are you enjoying your life here in Pelican Town?",
   "Events.7h.3_q1a1": "I do enjoy it! The community here is so nice!",
   "Events.7h.3_q1a2": "I still kinda regret leaving the city...",
-  */
-  "Events.7h.3_q1": "What about you, are you enjoying your life here in Pelican Town?#I do enjoy it! The community here is so nice!#I still kinda regret leaving the city...",
+
+//  "Events.7h.3_q1": "What about you, are you enjoying your life here in Pelican Town?#I do enjoy it! The community here is so nice!#I still kinda regret leaving the city...",
   "Events.7h.4_q1r1": "I'm glad you like it here!#$b#I didn't know about the community, but as no one is complaining about my nor Magnus's presence, I suppose they are pretty tolerating.",
   "Events.7h.4_q1r2": "Do you? Really?#$b#Because I can see that you are happy here.",
   "Events.7h.5": "You know, since I came here, I feel like I am at home.#$b#And I am happy that I can call this place my home.#$b#I hope you have this feeling too, {{DT_name}}.",
