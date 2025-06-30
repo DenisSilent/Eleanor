@@ -1,6 +1,14 @@
+
 # **Changelog - list of versions**
 
 Full list of all [Github commits.](https://github.com/DenisSilent/Eleanor/commits/main/)
+
+---
+
+## version 0.9.7 (30.6.2025)
+
+* Fixed Eleanor not loading into the game
+* Various code fixes and improvements (see commit log for more info)
 
 ---
 
@@ -17,11 +25,13 @@ Full list of all [Github commits.](https://github.com/DenisSilent/Eleanor/commit
 * Relicensed the mod from custom ToU to [MIT License](https://opensource.org/license/mit)
 * Updated minimal requirements version
 * Added a home map for Eleanor!
+
   * That includes 2 variants - basic-only furniture and Wizard furniture, for the later one you have to have [Arbitrary Tilesheet Access](https://www.nexusmods.com/stardewvalley/mods/30001) installed
   * Is unlocked from the start
   * Also this includes f.e. schedule edits, map strings,...
 * Added a new secret event
 * New NPCgraphics code logic
+
   * This also includes new file structure, which removed unnecesary duplicates --> smaller release size X recommended deleting the old version before installing the new one
 * Fixed Eleanor not being in festivals in year 2+
 * Recompiled C# part of the mod
@@ -59,11 +69,15 @@ Full list of all [Github commits.](https://github.com/DenisSilent/Eleanor/commit
 * Added fallback dialogue for all of Eleanor's dialogues (even event or the mail ones)
 * Changed `M. Rasmodia` to `Ms. Rasmodia` after a check from `nom0ri` (Rasmodia's author)
 * Fallback dialogue Discord help by:
-  * `@abagaianye`
+
+  *`@abagaianye`
 * Mermaid bouquet gifting fix Discord help by:
-  * `@abagaianye`
-  * `@atravita`
-  * `@chu2.718281828459045235360287471`
+
+  *`@abagaianye`
+
+  *`@atravita`
+
+  *`@chu2.718281828459045235360287471`
 
 ---
 
@@ -77,9 +91,12 @@ Full list of all [Github commits.](https://github.com/DenisSilent/Eleanor/commit
 ## version 0.9.0 (22.3.2025)
 
 * Discord dividing SMAPI component help by:
-  * `@chu2.718281828459045235360287471`
-  * `@khloeleclair`
-  * `@decidedlyhuman`
+
+  *`@chu2.718281828459045235360287471`
+
+  *`@khloeleclair`
+
+  *`@decidedlyhuman`
 * Fixed intro event error if Rasmodia is installed
 * Changed Intro even mention of day time so it'll be neutral
 * AI translations created with loyal help of Gemini 2.0 Flash Thinking (experimental), link [here](https://aistudio.google.com/prompts/1oyJmm-BZyIPzW5GZ8KX1ajYWO3X1ZdLC).
@@ -93,12 +110,18 @@ Full list of all [Github commits.](https://github.com/DenisSilent/Eleanor/commit
 * Renamed few i18n keys
 * Cleared some code mess
 * Discord creating SMAPI component help by:
-  * `@abagaianye`
-  * `@superstorm_7`
-  * `@khloeleclair`
-  * `@liliethatesnewnicknames`
-  * `@chu2.718281828459045235360287471`
-  * `@atravita`
+
+  *`@abagaianye`
+
+  *`@superstorm_7`
+
+  *`@khloeleclair`
+
+  *`@liliethatesnewnicknames`
+
+  *`@chu2.718281828459045235360287471`
+
+  *`@atravita`
 
 ---
 
@@ -115,21 +138,29 @@ Full list of all [Github commits.](https://github.com/DenisSilent/Eleanor/commit
 
 * First preparations for 0.9.0 update
 * Added beta movies reactions
-* **Added a part of the sprites and portraits created by hezjena2023! Thanks so much for doing the art ❤**
+
+***Added a part of the sprites and portraits created by hezjena2023! Thanks so much for doing the art ❤**
+
 * Re-edited and reorganized NPC graphics code and folders -> decreased the mod's size X delete the old version before installing the new one
+
   * Vanilla-like portraits are created using and editing art from [Stardew Valley Character Creator](https://jazzybee.itch.io/sdvcharactercreator) (credits to Poltergeister & Jaz) and are therefore shared, like my ORG ones, under Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License. Sprites are handmade. For future info, please contact them.
 * Reedited and reorganized NPC graphics code and folders -> decrased the mod's size X delete the old version before istalling the new one
 * Fixed some secrets + added a new one that'll trigger after you trigger all other ones
 * Internal code reorganization
 * Invisible dialogue checker (for secrets) Discord help by:
-  * `@abagaianye`
+
+  *`@abagaianye`
 * sawAdvancedCharacterCreationIndicator in save Discord question answered by:
-  * `@abagaianye`
-  * `@p.llow`
+
+  *`@abagaianye`
+
+  *`@p.llow`
 * Not all movie strings found Discord help by:
-  * `@abagaianye`
+
+  *`@abagaianye`
 * Schedule randomization check Discord help by:
-  * `@atravita`
+
+  *`@atravita`
 
 ---
 
@@ -150,31 +181,44 @@ Full list of all [Github commits.](https://github.com/DenisSilent/Eleanor/commit
 ## version 0.8.6 (18.2.2025)
 
 * Fixed schedules (again) + gifts not working with Discord help by:
-  * `@atravita`
-  * `@fireredlily`
-  * `@spiderbuttons`
-  * `@agentlyoko`
+
+  *`@atravita`
+
+  *`@fireredlily`
+
+  *`@spiderbuttons`
+
+  *`@agentlyoko`
 
 ---
 
 ## version 0.8.5 (17.2.2025)
 
 * Fixed schedules (again) + gifts not working with Discord help by:
-  * `@atravita`
-  * `@fireredlily`
-  * `@spiderbuttons`
-  * `@agentlyoko`
+
+  *`@atravita`
+
+  *`@fireredlily`
+
+  *`@spiderbuttons`
+
+  *`@agentlyoko`
 
 ---
 
 ## version 0.8.4 (16.2.2025)
 
 * Fixed schedules with Discord help by:
-  * `@spiderbuttons`
-  * `@bblueberry`
-  * `@angelofstars`
-  * `@abagaianye` (also helped me fixing one more problem - possibility of meeting Eleanor before her Intro event)
-  * `@fireredlily`
+
+  *`@spiderbuttons`
+
+  *`@bblueberry`
+
+  *`@angelofstars`
+
+  *`@abagaianye` (also helped me fixing one more problem - possibility of meeting Eleanor before her Intro event)
+
+  *`@fireredlily`
 
 ---
 
@@ -201,10 +245,13 @@ Full list of all [Github commits.](https://github.com/DenisSilent/Eleanor/commit
 
 * Nexus Mods release notes by:
 
-  * `@DenisSilent` (yeah, that's me)
-  * `@lumisteria`
-  * `@decidedlyhuman`
-  * `@chu2.718281828459045235360287471`
+  *`@DenisSilent` (yeah, that's me)
+
+  *`@lumisteria`
+
+  *`@decidedlyhuman`
+
+  *`@chu2.718281828459045235360287471`
 
   ---
 

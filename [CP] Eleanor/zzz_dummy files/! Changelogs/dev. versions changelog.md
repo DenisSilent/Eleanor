@@ -11,6 +11,43 @@ Instructions for downloading the unreleased versions:
 4. Unzip the downloaded file and copy the extracted `[NPC] Eleanor` folder to your `.../Stardew Valley/Mods` folder
 5. Test the mod in your game and report any bugs you find to the [GitHub issues page](https://github.com/DenisSilent/Eleanor/issues), please include the version number of the mod you used and a description of the bug, if possible also a screenshot or a video of the bug happening in your game.
 6. Enjoy the mod (and its bugs)!
+
+---
+
+## version 1.0.0-alpha.31 (30.6.2025)
+
+* Multi-device development possibility tests
+* De-commented-out 1.6.16 i18n lines
+* Appearances not working as expected Discord help by:
+  * `@airyn16`
+  * `@nai.nai.naira`
+* generic mod popularity Discord help by:
+  * `@airyn16`
+  * `@irocendar`
+  * `@abagaianye`
+
+---
+
+## version 1.0.0-alpha.30 (27.6.2025)
+
+* Multi-device development possibility tests
+* Resystemized the future mod development to be totally unknown until future updates
+
+---
+
+## version 1.0.0-alpha.29 (26.6.2025)
+
+* Multi-device development possibility tests
+* Hopefully included all 0.9.6 hotfixes
+
+---
+
+## version 1.0.0-alpha.28 (24.6.2025)
+
+* Multi-device development possibility tests
+* Included "1 year of my SV modding" 0.9.5 update
+* Fixed NexusMods page not including link to GitHub repo
+
 ---
 
 ## version 1.0.0-alpha.27 (24.6.2025)

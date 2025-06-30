@@ -1,4 +1,3 @@
-
 [size=6][b]NPC Eleanor[/b][/size]
 
 Eleanor is a young witch who studies under the guidance of the local
@@ -6,6 +5,8 @@ wizard, Mr. Rasmodius. She is kinda shy at first, but she'll eventually
 open up to you (or, at least, that's how her dialogues & events are
 written). She loves studying and learning new things. But her past is
 not one of the best...
+
+
 
 [size=5][b]Description of the mod:[/b][/size]
 
@@ -72,7 +73,7 @@ Anyone who was willing to help or ask for help from Stardew Valley Discord (espe
 
 Everyone who somehow contributed to Stardew Valley community. Thanks! We appreciate your contributions!
 
-[size=4][b]Legal note:[/b][/size]
+[size=4]Legal note:[/size][/b]
 
 NPC Eleanor
 
@@ -98,8 +99,10 @@ You can view the full CC BY-SA 4.0 license at:
 
 [url=https://creativecommons.org/licenses/by-sa/4.0/]https://creativecommons.org/licenses/by-sa/4.0/[/url]
 
-[size=5][b]Warning for mod authors:[/b][/size]
+[size=5]Warning for mod authors:[/size][/b]
 
 This NPC mod [i]might[/i] (I tried my best to not include anything, but...) include parts of content from other mods. You may not worry, there is NO content like dialogues/events/etc. in this mod, but many things from many different mods were used as a template so I could make this mod work.
 
 However, everything that's NOT created by me is subject to the rights and/or licenses of other authors. If the author doesn't agree with including their content in this mod, please contact me immediately on Nexus Mods, and I'll remove the content from my mod. Please, do not report me/my mod for violating Your rights to Your content, as we can resolve this issue peacefully. I value Your contributions to the community of Stardew Valley and/or other games, and I can guarantee that I do NOT want to steal/dishonest/... Your work.
+
+[url=https://github.com/DenisSilent/Eleanor]Source code[/url]

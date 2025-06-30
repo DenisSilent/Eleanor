@@ -560,8 +560,7 @@
         */
       }
     },
-
-    /*
+/*
     // 8hearts - ?
     // Location: West Forest (SVE), Wizard's Tower, Eleanor's home
     // Trigger: Entering the West Forest (SVE).
@@ -1417,7 +1416,7 @@
       "Action": "EditData",
       "Target": "Data/ Events/ WizardHouse",
       "Entries": {
-        "{{ModId}}_14hearts-short_SVE/SawEvent  {{ModId}}_10hearts/Friendship {{ModId}} 3500":
+        "{{ModId}}_14hearts-short_SVE/ e {{ModId}}_10hearts/Friendship {{ModId}} 3500":
         "none/10 25/farmer 9 33 0 {{ModId}} 10 17 0/
         skippable/
         viewport move 0 -2 4000/
@@ -1490,7 +1489,7 @@
       "Action": "EditData",
       "Target": "Data/Events/HogwartsET.CP.Hogwarts_HogsmeadeVillage",
       "Entries": {
-        "{{ModId}}_14hearts-short_Hog/SawEvent  {{ModId}}_10hearts/SawEvent {{ModId}}Hog_y1/Friendship {{ModId}} 3500":
+        "{{ModId}}_14hearts-short_Hog/ e {{ModId}}_10hearts/SawEvent {{ModId}}Hog_y1/Friendship {{ModId}} 3500":
         "none/-1000 -1000/farmer 22 20 0 {{ModId}} 22 24 0/
         pause 2222/
         move farmer 23 24 1/
