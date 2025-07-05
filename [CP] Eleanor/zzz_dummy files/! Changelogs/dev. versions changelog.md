@@ -14,6 +14,14 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.32 (5.7.2025)
+
+* Multi-device development possibility tests
+* Fixed event errors
+* Fixed grammar error
+
+---
+
 ## version 1.0.0-alpha.31 (30.6.2025)
 
 * Multi-device development possibility tests
