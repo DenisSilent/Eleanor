@@ -1,7 +1,13 @@
-
 # **Changelog - list of versions**
 
 Full list of all [Github commits.](https://github.com/DenisSilent/Eleanor/commits/main/)
+
+---
+
+## version 0.9.8 (5.7.2025)
+
+* Fixed Eleanor's 2, 4 and 7 hearts event error + some event mess
+* i18n fixes
 
 ---
 

@@ -8,7 +8,7 @@
 
 * ~~Eleanor's home~~
   * ~~Somewhere in the void~~
-  * Access with 8 hearts event
+  * Access with ???
 * Accessable brand new map - the village where Eleanor is from
   * Located somewhere in the mountains
   * Access after 10? hearts event
@@ -23,6 +23,5 @@
   * More details
     * Includes more guides,...
 * More content
-* Leaving SVE as a requirement? We'll see...
+* Leaving SVE as a requirement? We'll see... (ping Tia on Discord when it happens!)
 * Better/more art!!!!!!!!!! (Will probably never improve X ....)
-

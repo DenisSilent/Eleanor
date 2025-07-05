@@ -42,7 +42,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "0.9.7",
+    "version": "0.9.8",
     "restore": {
       "projectUniqueName": "C:\\SteamLibrary\\steamapps\\common\\Stardew Valley\\Mods - test\\[NPC] Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj",
       "projectName": "Eleanor",

@@ -12,22 +12,29 @@
   https://stardewvalleywiki.com/Modding:Custom_wedding_events
   https://github.com/Pathoschild/StardewMods/tree/develop/ContentPatcher/docs/author-guide
   */
-  "Changes": [
-    /*
-    {
-      "LogName": "Eleanor - event -debugger",
-      "Action": "EditData",
-      "Target": "Data/Events/farm",
-      "Entries": {
-        "triggerrer":
-        "none/-1000 -1000/farmer 0 0 0/
-        skippable/
-        changeLocation SeedShop/
-        switchEvent {{ModId}}_14hearts-p4"
-      }
-    },
+
+        /*  
+          Code taken with permissions from user `abagaianye` on Discord. Thanks! <3
+          BTW, that's a fade to black and back event code
+                pause 1000/
+                globalFade 0.019 true/
+                pause 700/
+                viewport -1000 -1000/
+                halt/
+                changeToTemporaryMap ???/
+                viewport -1000 -1000/
+                warp farmer 37 9/
+                warp {{ModId}}_Hiria 40 12/
+                faceDirection {{ModId}}_Hiria right/
+                showFrame {{ModId}}_Hiria 4/
+                warp {{ModId}}_Louisa 43 12/
+                pause 300/
+                globalFadeToClear 0.007 true/
+                viewport 42 12/
+                pause 100/
     */
 
+  "Changes": [
     // 0hearts - Eleanor's introduction
     // Location: your farm
     // Trigger: Entering your farm after seeing introduction event with Mr. Rasmodius.
@@ -102,75 +109,21 @@
         pause 750/
         emote farmer 60/
         pause 500/
-        quickQuestion {{i18n:Events.2h.3_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_2hearts_q1_yes(break)switchEvent {{ModId}}_2hearts_q1_no",
+        quickQuestion {{i18n:Events.2h.3_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_2hearts_q1a1(break)switchEvent {{ModId}}_2hearts_q1a2",
 
         "{{ModId}}_2hearts_q1a1": "resetVariable/
         friendship {{ModId}} 250/
-        speak {{ModId}} \"{{i18n:Events.2h.q1r1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.2h.4_q1r1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 2500/
         speak {{ModId}} \"{{i18n:Events.2h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         end",
 
         "{{ModId}}_2hearts_q1a2": "resetVariable/
         friendship {{ModId}} -350/
-        speak {{ModId}} \"{{i18n:Events.2h.q1r2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.2h.4_q1r2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 2500/
         speak {{ModId}} \"{{i18n:Events.2h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         end"
-
-        /*
-        1.6.16
-
-        "{{ModId}}_2hearts/SawEvent {{ModId}}_Intro/Friendship {{ModId}} 500/Time 600 1200":
-        "none/21 31/farmer 21 20 2 {{ModId}} 16 30 1/
-        skippable/
-        addConversationTopic {{ModId}}.CT_2h 2/
-        pause 1111/
-        Move farmer 0 10 2 true/
-        pause 4444/
-        textAboveHead {{ModId}} \"{{i18n:Events.2h.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 500/
-        emote farmer 8/
-        pause 500/
-        faceDirection farmer 0 true/
-        pause 500/
-        faceDirection farmer 1 true/
-        pause 500/
-        faceDirection farmer 2 true/
-        pause 500/
-        faceDirection farmer 3 true/
-        pause 500/
-        faceDirection farmer 2 true/
-        pause 250/
-        emote {{ModId}} 40/
-        pause 500/
-        speak {{ModId}} \"{{i18n:Events.2h.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 500/
-        faceDirection farmer 3 true/
-        pause 750/
-        emote farmer 16/
-        pause 500/
-        speak {{ModId}} \"{{i18n:Events.2h.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 750/
-        emote farmer 60/
-        pause 500/
-        choose "{{i18n:Events.2h.3_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}" "{{i18n:Events.2h.3_q1a1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}" q1a1 "{{i18n:Events.2h.3_q1a2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}" q1a2/
-
-        label q1a1/ --Answer 1/
-        friendship {{ModId}} 250/
-        speak {{ModId}} \"{{i18n:Events.2h.4_yes |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 2500/
-        speak {{ModId}} \"{{i18n:Events.2h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        goto end/
-
-        label q1a2/ --Answer 2/
-        friendship {{ModId}} -350/
-        speak {{ModId}} \"{{i18n:Events.2h.4_no |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 2500/
-        speak {{ModId}} \"{{i18n:Events.2h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        end"
-
-        */
       }
     },
 
@@ -276,105 +229,6 @@
         pause 111/
         emote farmer 56/
         end"
-
-        /*
-        1.6.16
-
-        "{{ModId}}_4hearts/SawEvent {{ModId}}_2hearts/Friendship {{ModId}} 1000/Time 1800 2600":
-        "none/14 12/farmer -1000 -1000 2 {{ModId}} 4 19 3/
-        skippable/
-        addConversationTopic {{ModId}}.CT_4h 2/
-        beginSimultaneousCommand/
-        textAboveHead {{ModId}} \"{{i18n:Events.4h.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        move {{ModId}} 0 -5 3 true/
-        endSimultaneousCommand/
-        pause 5555/
-        emote {{ModId}} 28/
-        textAboveHead {{ModId}} \"{{i18n:Events.4h.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        move {{ModId}} 0 -1 1/
-        move {{ModId}} 5 0 0 true/
-        pause 1111/
-        warp farmer 4 3/
-        pause 777/
-        move farmer 0 10 1 true/
-        beginSimultaneousCommand/
-        pause 2222/
-        emote farmer 8/
-        pause 1111/
-        emote {{ModId}} 40/
-        pause 111/
-        emote farmer 16/
-        pause 111/
-        faceDirection {{ModId}} 3/
-        pause 111/
-        emote {{ModId}} 16/
-        pause 111/
-        speak {{ModId}} \"{{i18n:Events.4h.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        endSimultaneousCommand/
-        pause 1111/
-        emote farmer 40/
-        pause 111/
-        emote {{ModId}} 60/
-        pause 111/
-        speak {{ModId}} \"{{i18n:Events.4h.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.4h.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 555/
-        emote {{ModId}} 40/
-        choose \"{{i18n:Events.4h.5_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" \"{{i18n:Events.4h.5_q1a1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" q1a1 \"{{i18n:Events.4h.5_q1a2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" q1a2 \"{{i18n:Events.4h.5_q1a3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" q1a3/
-        
-        label q1a1/ --Answer 1/
-        friendship {{ModId}} 150/
-        speak {{ModId}} \"{{i18n:Events.4h.6_q1r1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        goto q1a1+q1a2_end/
-        
-        label q1a2/ --Answer 2/
-        friendship {{ModId}} 50/
-        speak {{ModId}} \"{{i18n:Events.4h.6_q1r2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        goto q1a1+q1a2_end/
-        
-        label q1a3/ --Answer 3/
-        friendship {{ModId}} -5/
-        speak {{ModId}} \"{{i18n:Events.4h.6_q1r3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        globalFade/
-        viewport -1000 -1000/
-        pause 1111/
-        message \"{{i18n:Events.4h.7_notime |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        goto end/
-      
-        label q1a1+q1a2_end/ --Unified end for answers 1 and 2/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.4h.7_time |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 111/
-        emote farmer 56/
-        move {{ModId}} 10 0 0 farmer 0 -2 3/
-        pause 1111/
-        emote farmer 8/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.4h.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        message \"{{i18n:Events.4h.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 111/
-        move farmer 0 -3 3/
-        pause 1111/
-        message \"{{i18n:Events.4h.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        emote farmer 40/
-        pause 1111/
-        message \"{{i18n:Events.4h.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 111/
-        move {{ModId}} -15 0 0/
-        move {{ModId}} 0 -4 3/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.4h.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.4h.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 111/
-        emote farmer 56/
-        end"
-
-        */
       }
     },
 /*
@@ -433,18 +287,18 @@
         pause 555/
         emote farmer 40/
         pause 555/
-        quickQuestion {{i18n:Events.7h.3_q |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_7hearts_q1a1(break)switchEvent {{ModId}}_7hearts_q1a2",
+        quickQuestion {{i18n:Events.7h.3_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_7hearts_q1a1(break)switchEvent {{ModId}}_7hearts_q1a2",
 
         "{{ModId}}_7hearts_q1a1": "resetVariable/
         friendship {{ModId}} 100/
         pause 555/
-        speak {{ModId}} \"{{i18n:Events.7h.4_q1a1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.7h.4_q1r1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         switchEvent {{ModId}}_7hearts_ending",
 
         "{{ModId}}_7hearts_q1a2": "resetVariable/
         friendship {{ModId}} 10/
         pause 555/
-        speak {{ModId}} \"{{i18n:Events.7h.4_q1a2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.7h.4_q1r2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         switchEvent {{ModId}}_7hearts_ending",
 
         "{{ModId}}_7hearts_ending": "resetVariable/
@@ -479,87 +333,9 @@
         pause 555/
         message \"{{i18n:Events.7h.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         end"
-
-        /*
-        1.6.16
-
-        "{{ModId}}_7hearts/SawEvent {{ModId}}_4hearts/Friendship {{ModId}} 1750/Weather rainy":
-        "none/52 98/ farmer 35 97 1 {{ModId}} 52 98 2/
-        skippable/
-        addConversationTopic {{ModId}}.CT_7h 2/
-        pause 1111/
-        move farmer 7 0 1/
-        pause 555/
-        emote farmer 40/
-        pause 555/
-        move farmer 0 1 1/
-        move farmer 5 0 1/
-        pause 111/
-        emote farmer 8/
-        pause 111/
-        faceDirection {{ModId}} 3/
-        pause 111/
-        emote {{ModId}} 16/
-        pause 555/
-        speak {{ModId}} \"{{i18n:Events.7h.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 555/
-        emote farmer 40/
-        pause 555/
-        speak {{ModId}} \"{{i18n:Events.7h.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.7h.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 555/
-        emote farmer 40/
-        pause 555/
-        choose \"{{i18n:Events.7h.3_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" \"{{i18n:Events.7h.3_q1a1_choiceText |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" label_7h_q1a1 \"{{i18n:Events.7h.3_q1a2_choiceText |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\" label_7h_q1a2/
-        
-        label label_7h_q1a1/ --Answer 1
-        friendship {{ModId}} 100/
-        pause 555/
-        speak {{ModId}} \"{{i18n:Events.7h.4_q1a1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        goto label_7h_ending/
-        
-        label label_7h_q1a2/ --Answer 2
-        friendship {{ModId}} 10/
-        pause 555/
-        speak {{ModId}} \"{{i18n:Events.7h.4_q1a2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        goto label_7h_ending/
-        
-        label label_7h_ending/ --Unified ending for answers
-        move farmer 4 0 2/
-        pause 555/
-        faceDirection {{ModId}} 2/
-        pause 555/
-        emote {{ModId}} 40/
-        pause 555/
-        speak {{ModId}} \"{{i18n:Events.7h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 2222/
-        speak {{ModId}} \"{{i18n:Events.7h.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.7h.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.7h.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 555/
-        emote {{ModId}} 28/
-        pause 555/
-        speak {{ModId}} \"{{i18n:Events.7h.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.7h.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 555/
-        emote farmer 56/
-        pause 555/
-        speak {{ModId}} \"{{i18n:Events.7h.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 555/
-        emote farmer 20/
-        pause 555/
-        globalFade/
-        viewport -1000 -1000/
-        pause 555/
-        message \"{{i18n:Events.7h.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        end"
-        */
       }
     },
+
 /*
     // 8hearts - ?
     // Location: West Forest (SVE), Wizard's Tower, Eleanor's home
@@ -613,9 +389,10 @@
         end",
       }
     },
-
+  */
+  /*
     // 10hearts - ???
-    // Location: Wizard's Tower
+    // Location: ???
     // Trigger: ???
     // Description: ???
     {
@@ -633,6 +410,7 @@
       }
     },
 */
+
 
     // 10 hearts - same as 14 hearts short event variants
     // SVE only version
@@ -705,6 +483,7 @@
       }
     },
 
+
 /*
     // 12hearts - ???
     // Location: ???
@@ -725,6 +504,150 @@
 
 /*
     // 14hearts
+
+    // short versions
+    // SVE only version
+    //  Location: Wizard's Tower
+    // Trigger: Entering the Wizard's Tower after reaching 14 hearts with Eleanor.
+    // Description: Eleanor shares her history with the player, revealing her past and her connection to magic.
+    {
+      "LogName": "Eleanor - 14hearts event (short) - SVE",
+      "Action": "EditData",
+      "Target": "Data/ Events/ WizardHouse",
+      "Entries": {
+        "{{ModId}}_14hearts-short_SVE/SawEvent{{ModId}}_10hearts/Friendship {{ModId}} 3500":
+        "none/10 25/farmer 9 33 0 {{ModId}} 10 17 0/
+        skippable/
+        viewport move 0 -2 4000/
+        pause 1111/
+        move farmer 0 -9 0/
+        pause 1000/
+        emote farmer 8/
+        pause 3000/
+        message \"{{i18n:Events.14h-short_SVE.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1500/
+        move farmer 0 -7 1/
+        pause 1500/
+        message \"{{i18n:Events.14h-short_SVE.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-short_SVE.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 555/
+        jump {{ModId}} 4/
+        pause 111/
+        faceDirection {{ModId}} 3/
+        pause 1111/
+        message \"{{i18n:Events.14h-short_SVE.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        emote farmer 8/
+        pause 111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        emote farmer 56/
+        pause 222/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2000/
+        shake {{ModId}} 1000/
+        pause 2111/
+        message \"{{i18n:Events.14h-short_SVE.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        globalFade/
+        viewport -1000 -1000/
+        pause 3500/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3333/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 5000/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.16|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 5555/
+        end"
+      },
+      "When": {
+        "HasMod |contains=HogwartsET.CP.Hogwarts": false,
+        "14hearts-variants": "short"
+      }
+    },
+
+// Hogwarts version
+// Location: Hogwarts Hogsmeade Village
+// Trigger: Entering Hogsmeade Village after reaching 14 hearts with Eleanor and having the Hogwarts mod installed.
+// Description: Eleanor shares her history with the player, revealing her past and her connection to magic in the context of Hogwarts.
+    {
+      "LogName": "Eleanor - 14hearts event (short) - Hogwarts ",
+      "Action": "EditData",
+      "Target": "Data/Events/HogwartsET.CP.Hogwarts_HogsmeadeVillage",
+      "Entries": {
+        "{{ModId}}_14hearts-short_Hog/SawEvent {{ModId}}_10hearts/SawEvent {{ModId}}Hog_y1/Friendship {{ModId}} 3500":
+        "none/-1000 -1000/farmer 22 20 0 {{ModId}} 22 24 0/
+        pause 2222/
+        move farmer 23 24 1/
+        pause 2500/
+        message \"{{i18n:Events.14h-short_Hog.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3333/
+        message \"{{i18n:Events.14h-short_Hog.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        message \"{{i18n:Events.14h-short_Hog.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        move {{ModId}} 22 24 1/
+        pause 1111/
+        message \"{{i18n:Events.14h-short_Hog.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        emote farmer 8 true/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        emote farmer 56 true/
+        pause 1111/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 2000/
+        shake {{ModId}} 1000/
+        pause 3000/
+        message \"{{i18n:Events.14h-short_Hog.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"globalFade/
+        pause 3500/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 3333/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"globalFadeToClear/
+        pause 5000/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 1111/
+        message \"{{i18n:Events.14h-short_Hog.16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        globalfadeout/
+        pause 5000/
+        speak {{ModId}}  \"{{i18n:Events.14h-short_Hog.17|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
+        pause 7777/
+        end newDay"
+      },
+      "When": {
+        "HasMod |contains=HogwartsET.CP.Hogwarts": true,
+        "14hearts-variants": "short"
+      }
+    },
+
+
+    // long versions
+    // NOTE: Multiplayer does NOT pause time during cutscenes! One in-game hour = 43 real world seconds, full day = 14 minutes 20 seconds... (Taken from: https://stardewmodding.wiki.gg/wiki/Tips_for_Heart_Events_-_Writing_and_Narrative_Design#Additional_Tips,_Caveats_and_Notes)
+
     // Part 0 - event checker
     // Location: your farm
     // Trigger: Automatically (??? needs testing) after reaching 14 hearts with Eleanor.
@@ -743,30 +666,6 @@
       }
     },
 
-    /*  
-          Code taken with permissions from user `abagaianye` on Discord. Thanks! <3
-          BTW, that's a fade to black and back event code
-                pause 1000/
-                globalFade 0.019 true/
-                pause 700/
-                viewport -1000 -1000/
-                halt/
-                changeToTemporaryMap ???/
-                viewport -1000 -1000/
-                warp farmer 37 9/
-                warp {{ModId}}_Hiria 40 12/
-                faceDirection {{ModId}}_Hiria right/
-                showFrame {{ModId}}_Hiria 4/
-                warp {{ModId}}_Louisa 43 12/
-                pause 300/
-                globalFadeToClear 0.007 true/
-                viewport 42 12/
-                pause 100/
-    */
-
-/*
-    // long versions
-    // NOTE: Multiplayer does NOT pause time during cutscenes! One in-game hour = 43 real world seconds, full day = 14 minutes 20 seconds... (Taken from: https://stardewmodding.wiki.gg/wiki/Tips_for_Heart_Events_-_Writing_and_Narrative_Design#Additional_Tips,_Caveats_and_Notes)
     // Part 1 - Eleanor's note
     // NOTE: This event will be unique depending on your configuration.
     // Location: your farmhouse
@@ -1404,147 +1303,8 @@
         end"
       }
     },
-*/
+
 /*
-// short versions
-// SVE only version
-//  Location: Wizard's Tower
-// Trigger: Entering the Wizard's Tower after reaching 14 hearts with Eleanor.
-// Description: Eleanor shares her history with the player, revealing her past and her connection to magic.
-    {
-      "LogName": "Eleanor - 14hearts event (short) - SVE",
-      "Action": "EditData",
-      "Target": "Data/ Events/ WizardHouse",
-      "Entries": {
-        "{{ModId}}_14hearts-short_SVE/ e {{ModId}}_10hearts/Friendship {{ModId}} 3500":
-        "none/10 25/farmer 9 33 0 {{ModId}} 10 17 0/
-        skippable/
-        viewport move 0 -2 4000/
-        pause 1111/
-        move farmer 0 -9 0/
-        pause 1000/
-        emote farmer 8/
-        pause 3000/
-        message \"{{i18n:Events.14h-short_SVE.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1500/
-        move farmer 0 -7 1/
-        pause 1500/
-        message \"{{i18n:Events.14h-short_SVE.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        message \"{{i18n:Events.14h-short_SVE.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 555/
-        jump {{ModId}} 4/
-        pause 111/
-        faceDirection {{ModId}} 3/
-        pause 1111/
-        message \"{{i18n:Events.14h-short_SVE.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        emote farmer 8/
-        pause 111/
-        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        emote farmer 56/
-        pause 222/
-        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 2000/
-        shake {{ModId}} 1000/
-        pause 2111/
-        message \"{{i18n:Events.14h-short_SVE.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        globalFade/
-        viewport -1000 -1000/
-        pause 3500/
-        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 3333/
-        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 5000/
-        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-short_SVE.16|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 5555/
-        end"
-      },
-      "When": {
-        "HasMod |contains=HogwartsET.CP.Hogwarts": false,
-        "14hearts-variants": "short"
-      }
-    },
-
-// Hogwarts version
-// Location: Hogwarts Hogsmeade Village
-// Trigger: Entering Hogsmeade Village after reaching 14 hearts with Eleanor and having the Hogwarts mod installed.
-// Description: Eleanor shares her history with the player, revealing her past and her connection to magic in the context of Hogwarts.
-    {
-      "LogName": "Eleanor - 14hearts event (short) - Hogwarts ",
-      "Action": "EditData",
-      "Target": "Data/Events/HogwartsET.CP.Hogwarts_HogsmeadeVillage",
-      "Entries": {
-        "{{ModId}}_14hearts-short_Hog/ e {{ModId}}_10hearts/SawEvent {{ModId}}Hog_y1/Friendship {{ModId}} 3500":
-        "none/-1000 -1000/farmer 22 20 0 {{ModId}} 22 24 0/
-        pause 2222/
-        move farmer 23 24 1/
-        pause 2500/
-        message \"{{i18n:Events.14h-short_Hog.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 3333/
-        message \"{{i18n:Events.14h-short_Hog.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        message \"{{i18n:Events.14h-short_Hog.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        move {{ModId}} 22 24 1/
-        pause 1111/
-        message \"{{i18n:Events.14h-short_Hog.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        emote farmer 8 true/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        emote farmer 56 true/
-        pause 1111/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.6 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 2000/
-        shake {{ModId}} 1000/
-        pause 3000/
-        message \"{{i18n:Events.14h-short_Hog.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"globalFade/
-        pause 3500/
-        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.9 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.10 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.11 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 3333/
-        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"globalFadeToClear/
-        pause 5000/
-        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-        message \"{{i18n:Events.14h-short_Hog.16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        globalfadeout/
-        pause 5000/
-        speak {{ModId}}  \"{{i18n:Events.14h-short_Hog.17|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 7777/
-        end newDay"
-      },
-      "When": {
-        "HasMod |contains=HogwartsET.CP.Hogwarts": true,
-        "14hearts-variants": "short"
-      }
-    },
-
 // Marriage testing event
     {
       "LogName": "Eleanor - custom wedding test",
@@ -1560,7 +1320,9 @@
       },
     },
 
+*/
 // Addon events
+
 // Hogwarts gone - y1
 // Location: your farm
 // Trigger: Entering your farm.
