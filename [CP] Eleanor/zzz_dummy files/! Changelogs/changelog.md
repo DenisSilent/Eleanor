@@ -4,6 +4,12 @@ Full list of all [Github commits.](https://github.com/DenisSilent/Eleanor/commit
 
 ---
 
+## version 0.9.9 (13.7.2025)
+
+* Fixed Eleanor's default map variant being heavilly broken
+
+---
+
 ## version 0.9.8 (5.7.2025)
 
 * Fixed Eleanor's 2, 4 and 7 hearts event error + some event mess
