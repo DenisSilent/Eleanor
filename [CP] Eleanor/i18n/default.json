@@ -15,12 +15,12 @@
   "config.Festivals.name": "Festivals",
   "config.Festivals.values.true": "true",
   "config.Festivals.values.false": "false",
-  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. As of 1.0.0-alpha.29 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
+  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. As of 1.0.0-alpha.33 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
 
   "config.Marriage.name": "Marriage",
   "config.Marriage.values.true": "true",
   "config.Marriage.values.false": "false",
-  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.29, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
+  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.33, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
 
   "config.Map-furniture.name": "Map furniture",
   "config.Map-furniture.values.default": "default",
@@ -46,7 +46,7 @@
   "config.Outfits.values.one look only": "one look only",
   "config.Outfits.values.vanilla": "vanilla",
   "config.Outfits.values.seasonal": "seasonal",
-  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.29, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
+  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.33, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
 
   // Experimental - DoNotChange
 
@@ -57,7 +57,7 @@
   "config.On/off.values.on": "on",
   "config.On/off.values.safe mode": "safe mode",
   "config.On/off.values.off": "off",
-  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.29, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
+  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.33, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
 
   /*
   // Dynamic tokens
@@ -516,18 +516,65 @@
 
 
   // 8 hearts
-  "Events.8h.0": "Here it is!",
-  "Events.8h.1": "Oh, {{DT_name}}! Hi!",
-  "Events.8h.2_q1": "What brings you here?#Just looking for foragables.#I heard a noise and wanted to check it out.#I was spying you.",
+  "Events.8h.0": "StrojvedouciDenis.Eleanor-DEBUG:8h.0",
+  "Events.8h.1": "StrojvedouciDenis.Eleanor-DEBUG:8h.1",
+  "Events.8h.2": "StrojvedouciDenis.Eleanor-DEBUG:8h.2",
   "Events.8h.3": "StrojvedouciDenis.Eleanor-DEBUG:8h.3",
   "Events.8h.4": "StrojvedouciDenis.Eleanor-DEBUG:8h.4",
 
   // 10 hearts
-  "Event.10h.0": "StrojvedouciDenis.Eleanor-DEBUG:10h.0",
-  "Event.10h.1": "StrojvedouciDenis.Eleanor-DEBUG:10h.1",
-  "Event.10h.2": "StrojvedouciDenis.Eleanor-DEBUG:10h.2",
-  "Event.10h.3": "StrojvedouciDenis.Eleanor-DEBUG:10h.3",
-  "Event.10h.4": "StrojvedouciDenis.Eleanor-DEBUG:10h.4",
+  // check for correct verbs and their times
+  "Event.10h.0": "Here it is!",
+  "Event.10h.1": "Oh, {{DT_name}}! Hi!",
+  "Event.10h.2_q1": "What brings you here?#Just looking for foragables.#I heard your voice and wanted to check out.",
+  "Event.10h.3_q1r1": "This place is full of things. I like to go here as well, and sometimes pick up something and take it, either for studying or for eating.",
+  "Event.10h.3_q1r2": "Haven't we already had something similar before? Hehe...",
+  "Event.10h.4": "Eitehr way, you're probably asking why I'm here, right?",
+  "Event.10h.5": "Well, I love the beautiful nature here, and I really like to go here, learning, reading, or just thinking.#$b#{{DT_wizard_name}} did show me this place in one of our lessons.",
+  "Event.10h.6": "That was few days after my arrival. Since then, I often read here.#$b#Which also was this case - I studied a certain book about these land's history, and I found a scroll in it, however, I lost it here.",
+  "Event.10h.7": "When I came back home, I didn't find it, so I thought I lost it here, and came back to search for it.",
+  "Event.10h.8": "Well, since you're here, {{DT_name}}, I'd ask you for a help of searching for it, but I already found it, so I'll rather ask - do you want to help me with studying it?",
+  "Event.10h.9": "Great!#$b#Let's go to my home, I think I know what to do...",
+  "Event.10h.10": "I have a feeling coming from this scroll. And honestly, I worry about it a bit.#$b#Yeah, I know, it's just a scroll, but that's not entirely true.",
+  "Event.10h.11": "I created my home, using magic, of course. However, for some reason, there is a magic circle.#$b#I wanted to create it either way, but I didn't expect it to be here.",
+  "Event.10h.12": "Anyone would say that the magic I casted while creating this room listened to my thoughts and made it here.#$b#But that's not true. And I'll tell you why - you see, everything magical has something, which is not really known what it is.",
+  "Event.10h.13": "For this explanation, I'll call it 'magical signature', and as the name suggests, simply said, everything magical has a unique part of itself, through which it can be told who created it.#$b#Something similar to DNA in medicine, I'd say.",
+  "Event.10h.14": "There's a big problem of researching this 'signature', though - not that no one knows what it is, why it is, how it works or how it is created. But that is with everything unknown for the ones who research it.",
+  "Event.10h.15": "The problem is pretty much simple - if my own hypothesis are correct, then there are only a few living beings who can sense it.#$b#I'm intentionally saying 'living beings', because humans aren't the only ones who can work with magic.",
+  "Event.10h.16": "And as I'm talking about it, you might have already guessed that I am one of those who can sense it.",
+  "Event.10h.17": "Why? How? I don't quite know.#$b#However, that's not the point.",
+  "Event.10h.18": "The point is that - as I already said - I can sense this 'signature' from the magic circle.#$b#And it is not mine, nor {{DT_wizard_name}}'s. And what's even worse - it had mine 'signature', but it has changed.",
+  "Event.10h.19": "There are 2 rightfull questions - whose is it, and why did it change.#$b#That's where the interesting part comes - I'm pretty sure that this scroll has the answer to this, because the 'signature' is pretty much the same as the one from the magic circle.",
+  "Event.10h.20": "Yes, I know, it's really strange.#$b#But I still didn't tell you why I'm telling you all of this, right? My bad, sorry.",
+  "Event.10h.21": "Well, as you already know, you are connected with magic. That means that you, like me, {{DT_wizard_name}}, or anyone else anyhow connected with magic, has a magical aura.",
+  "Event.10h.22": "Yeah, I know, it sounds strange, yet it's true - you have a magical aura, which is unique to you, and it can be seen by those who can sense it.",
+  "Event.10h.23": "And, as I already mentioned the first time we met, I could sense your farm's aura.#$b#And yours as well, {{DT_name}}.",
+  "Event.10h.24": "I know, it's a lot of information I told you, but - probably sadly for you - I haven't finished yet.", //There's still one more thing to mention - the magical aura can change over time, influenced by various factors such as emotions, experiences, and even the environment. So, it's not static, but rather dynamic and ever-evolving.
+  "Event.10h.25": "To get back to the topic - I started with my worries about the scroll, and I think I should finish with it.",
+  "Event.10h.26": "To recapitulate - its 'siganture' is similar to the circle's one.#$b#A question is why it is here, as I know about this scroll for less than a hour or two.",
+  "Event.10h.27": "However, when I left it here today, the 'signature' was mine. Now it isn't.#$b#However, it is familiar to me.",
+  "Event.10h.28": "The 'signature' tells me that it...#$b#...that it is from my parents.$s",
+  "Event.10h.29": "Which is strange...$s",
+  "Event.10h.30": "I know you probably won't ever forgive me this, {{DT_name}}, but seeing this, feeling this,...#$b#...I feel like I have to tell you about my past, about my parents, and about what happened to them.",
+  "Event.10h.31": "And honestly, I planned to tell you about them soon, really soon. Maybe even today.#$b#But this... this scroll...#$b#...it changes everything.",
+  "Event.10h.32": "But first, I think we should open the scroll and see what it can give us.#$b#And I'm saying 'we', because you, {{DT_name}}, are the key to this mystery.",
+  "Event.10h.33": "But be cautious, {{DT_name}}. I don't know what will happen when we open it, but I have a feeling that it will be something big.#$b#Moments like these are one of the most dangerous ones, as you never know what will happen.#$b#The world we know as of today could easilly be destroyed in a blink of an eye, even from something that seems to be so innocent, like opening a scroll.",
+  "Event.10h.34": "So, are you ready to open it?",
+  "Event.10h.35": "Eleanor placed the scroll to the circle's center, and it opened itself, revealing...#$b#...totally nothing but overwhelming darkness.#$b#Not darkness like evil, but darkness like the one you see when you close your eyes and try to sleep.", //message
+  "Event.10h.36": "You feel like you are falling into it, but you don't feel any fear, nor pain, nor anything else...#...just peace and calmness.", //message
+  "Event.10h.37": "Out of nowhere, Eleanor appears next to you, and she looks like she is in the same state as you.", //message
+  "Event.10h.38": "The only discomforting thing is that both of you are unable to self-willingly do anything.#You can't move, you can't speak, you can't even think.", //message
+  "Event.10h.39": "In an instant, a thought appears in your mind - the scroll was dangerous, and you should have never opened it.#$b#Yet as soon as it appears, it disappears.", //message
+  "Event.10h.40": "After a while, a voice appears in your mind. Eleanor's voice, to be exact.#Yet it is not the voice you know, but rather a voice of a small child, who is scared and confused.", //message
+  "Event.10h.41": "And what's even more strange, you can perfectly hear it and understand it, but you don't have a clue about what you're hearing, as you know that the voice is saying something, you understand it, but it is like your brain could not memorize it. Like you forget what the voice say right after you hear it.", //message
+  "Event.10h.42": "Distantly, you hear more voices, this time adult ones.#$b#Same with them - you can hear them, you can understand them, but you can't memorize what they say.", //message
+  "Event.10h.43": "Suddenly, Eleanor - not her child voice, but the one you know - turns your head towards you, revealing her face...#...and you know that you have never ever seen a face like this before, and you never, ever want to.", //message
+  "Event.10h.44": "In that very moment, her face revealed a deep sadness, a longing for something lost, and a fear of what is to come.#But her emotions were so big, so overwhelming, that you felt like you couldn't even wish it to your greatest enemy.", //message
+  "Event.10h.45": "Her face was like a mirror, reflecting her soul's deepest wounds and scars, and you felt like you were looking into the abyss of her heart.", //message
+  "Event.10h.46": "Clearly, her feelings were so strong that they could be felt even in this strange place, and you felt like you were drowning in them.", //message
+  "Event.10h.47": "But her feelings weren't the only thing you felt - what you also felt was a really strong power, magic or somthing similar, radiating from the darkness around you.#In an instant, you realized what it is, and why it is, and also sadly how painful it is.", //message
+  "Event.10h.48": "Eleanor was trying to gain control over this.. whatever it was.", //message
+
 
   // 14 hearts
   // OLD part 1/1 (old 14h event dialogues, now 14h-short; variants are automatically used depending if you have Hogwarts installed or not; also 10 hearts temporary event)
@@ -550,7 +597,7 @@
   "Events.14h-short_SVE.15": "I was never able to fully solve those dreams, but there is this one thing they said to me in these strange dreams - that I have a secret soulmate that also has unique magical abilities - and I'll meet my soulmate when I will miss my parents the most.#$b#Which was the day when Pelican Town got big news - someone was coming to take over your grandpa's farm...#$b#My parents knew your grandpa...#$b#...they knew about you.#$b#You, {{DT_name}}.#$b#It's a mystery I don't expect I'll ever solve, but...",
   "Events.14h-short_SVE.16": "...I love you, {{DT_name}}.$l",
   // Hogwarts
-  "Events.14h-short_Hog.0": "... You ask yourself why on earth is Eleanor here, next to the memorial of the only Battle of Hogwarts, May 2, 1998??", //message
+  "Events.14h-short_Hog.0": "... You ask yourself why on earth is Eleanor here, next to the memorial of the one and only Battle of Hogwarts, May 2, 1998??", //message
   "Events.14h-short_Hog.1": "Wait, she still didn't notice you.#$b#You look at her face and you see...#$b#...#$b#tears???#$b#Now THIS is unexpected.", //message
   "Events.14h-short_Hog.2": "You give yourself a second to process this situation and then you ask her if she is okay.", //message
   "Events.14h-short_Hog.3": "You scared her, which was not the goal but looks like it worked... ", //message
@@ -645,7 +692,7 @@
   "Events.14h-p2.3": "Maybe a shift in the magical energy around me...",
   "Events.14h-p2.4": "Oh!#$b#{{DT_name}}!#$b#Why are you here this early?",
   "Events.14h-p2.5": "You tell {{DT_wizard_name}} about Eleanor's situation. As you can see, {{DT_wizard_fem}} listens to you carefully, but {{DT_wizard_fem}} doesn't say anything.", // message
-  "Events.14h-p2.6": "So that is why the magical energy is uncommon today...",
+  "Events.14h-p2.6": "So that is why the magical energy is so uncommon today...",
   "Events.14h-p2.7": "Well, it is my duty to help you find her, {{DT_name}}.#$b#Especially when she is my apprentice.",
   "Events.14h-p2.8": "...*sighs*... I worried this day will come...$s",
   "Events.14h-p2.9": "I suppose I know where she might be.#$b#I can feel her magical aura, and I'm pretty sure you do, too.#$b#And at least some of it is coming from Sprite Spring, deep in the forest.",
@@ -690,7 +737,7 @@
   //"Event.14h-p3.27-commented": "Hey! WHY are you looking at the i18n translation files?!", // message
   "Events.14h-p3.28": "There also was something about me, that I could stop it...#...but I don't know how...#...and I don't know if I should...", // message
   "Events.14h-p3.29": "And that is when I realized that this letter, even though using the encryption used in our valley and singed by them, might not be from my parents.#You see, I don't remember my parents, but I know that they were one of the most powerful wizards in the world.", // message
-  "Events.14h-p3.30": "And they also were very wise.#Which means, they knew that I would find this message, and they knew that I would decrypt it.", // message
+  "Events.14h-p3.30": "Yet they also were very wise.#Which means, they knew that I would find this message, and they knew that I would decrypt it.", // message
   "Events.14h-p3.31": "But it also means that they wouldn't even try to stop the bad power because they knew that it is an impossible task.", // message
   "Events.14h-p3.32": "Which leads me to this conclusion:#It looks like the message is from someone who wants me to find out about my past, about my parents, about me...#...but I don't know who that is, and I don't know why they want me to find out about it...", // message
   "Events.14h-p3.33": "So, I'm asking you, {{DT_name}}, to look and not look for me at the same time.#I want you to get me to safety, but I know that it would be so dangerous for you to do it.#And I don't want you to get hurt because of me.", // message
@@ -736,7 +783,7 @@
   "Events.14h-p5.11": "Even though it looked like the world has come to its end, you didn't stop.#It was like you were under some magical spell that was shielding you from the danger...", // message
   "Events.14h-p5.12": "In this very moment, the truth of this spell was revealed to you - that isn't just some magical spell nor shield...", // message
   "Events.14h-p5.13": "...#...that is the spell Eleanor was casting, but it is not just some spell...#...to be accurate, that isn't even a spell...#...#...that is the true power of love.", // message
-  "Events.14h-p5.14": "With that thought, nature comes back to normal and you finally reached the beach, and you saw something you couldn't believe...#...and also something you couldn't understand, imagine, or even think of, something you hoped would happen and also something you worried about...", // message
+  "Events.14h-p5.14": "With that thought, nature comes back to normal and you finally reach the beach, and you see something you couldn't believe...#...and also something you couldn't understand, imagine, or even think of, something you hoped would happen and also something you worried about...", // message
   "Events.14h-p5.15": "...#...and that was Eleanor, standing all alone in the middle of a magic circle...#...", // message
   "Events.14h-p5.16": "...#...and surprisingly enough, she wasn't casting any spell, nor she was doing anything magical...", // message
   "Events.14h-p5.17": "She was just standing there.#All alone, with a sad look on her face and tears in her eyes, but just standing there...", // message
@@ -762,7 +809,7 @@
   "Events.14h-p5.37": "Yes, Eleanor, she did...#...but what does it have to do with you saving them?", // message
   "Events.14h-p5.38": "Well, {{DT_name}}, I have very strange magical abilities, as you saw with your own eyes - that spell I cast was one of them - no ordinary wizard or witch could do that...#$b#...",
   "Events.14h-p5.39": "And that is because I'm not an ordinary witch, or at least I suspect that...#$b#...to be honest, I still don't know what I am...",
-  "Events.14h-p5.40": "...#$b#...but that is what my parents wanted from me to find out - that sometimes, some things...#$b#...are better unknown.",
+  "Events.14h-p5.40": "...#$b#...but that is what my parents wanted from me to find out - that sometimes, some things...#$b#...are better left unknown.",
   "Events.14h-p5.41": "You don't have to be a wizard or a witch to be powerful, {{DT_name}}...#$b#...you just have to be yourself.#$b#And that is who we are, {{DT_name}}. We are, who we are.",
   "Events.14h-p5.42": "But that is not the point, my {{DT_name}}...#$b#...the point is that I saved them, because...",
   "Events.14h-p5.43": "...#$b#...because they aren't enemies, {{DT_name}}.#$b#They were under some curse that was cast on them by someone who wanted to use them for their purposes...#$b#...and that is why they were after me because they knew I could stop them...#$b#...and that is why I saved them because I knew they were not enemies...",

@@ -1,7 +1,26 @@
-
 # **Changelog - list of versions**
 
 Full list of all [Github commits.](https://github.com/DenisSilent/Eleanor/commits/main/)
+
+---
+
+## version 0.9.9 (13.7.2025)
+
+* Fixed Eleanor's default map variant being heavily broken
+
+---
+
+## version 0.9.8 (5.7.2025)
+
+* Fixed Eleanor's 2, 4 and 7 hearts event error + some event mess
+* i18n fixes
+
+---
+
+## version 0.9.7 (30.6.2025)
+
+* Fixed Eleanor not loading into the game
+* Various code fixes and improvements (see commit log for more info)
 
 ---
 

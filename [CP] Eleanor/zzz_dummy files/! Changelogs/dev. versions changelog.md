@@ -14,6 +14,16 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.33 (21.7.2025)
+
+* Multi-device development possibility tests
+* Fixed broken Eleanor's home map on `default` config (13.7.?)
+* Resynchronized official versions (added releases)
+* Dialogue writing for 10h event (which probably will be today's 14h variants one, and this one will be in optional config I guess?)
+* Some event changes and fixes (will continue)
+
+---
+
 ## version 1.0.0-alpha.32 (5.7.2025)
 
 * Multi-device development possibility tests

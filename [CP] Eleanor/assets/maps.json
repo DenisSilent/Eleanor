@@ -80,6 +80,20 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
         */
       ]
     },
+    // Eleanor's spouse room and patio room
+    {
+      "LogName": "{{ModId}} - maps - Eleanor's spouse room - load command",
+      "Action": "Load",
+      "Target": "Data/SpouseRooms",
+      "FromFile": "assets/maps/Eleanor_spouse_room.tmx"
+    },
+    {
+      "LogName": "{{ModId}} - maps - Eleanor's patio room - load command",
+      "Action": "Load",
+      "Target": "Data/SpouseRooms",
+      "FromFile": "assets/maps/Eleanor_patio_room.tmx"
+    },
+
     {
       "LogName": "{{ModId}} - maps - Eleanor's home - map strings",
       "Action": "EditData",
