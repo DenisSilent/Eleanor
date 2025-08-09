@@ -14,6 +14,17 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.34 (9.8.2025)
+
+* Multi-device development possibility tests
+* Added some new dialogues
+* Massive advancements in 10h event - both text (done) and code
+* Changed spouse and patio maps names and added the files to dev maps folder
+* Commented out the 14h event variants
+* Like no clue what on earth was I doing, see the commit log, please
+
+---
+
 ## version 1.0.0-alpha.33 (21.7.2025)
 
 * Multi-device development possibility tests

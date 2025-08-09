@@ -1,4 +1,6 @@
 {
+  //! check for correct verbs and their times
+
   // ! Warning - contains spoilers!
   // ! Translators don't have to translate commented parts (those with "//" or "/* ... */"), it's better to leave them as they are!
 
@@ -15,12 +17,12 @@
   "config.Festivals.name": "Festivals",
   "config.Festivals.values.true": "true",
   "config.Festivals.values.false": "false",
-  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. As of 1.0.0-alpha.33 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
+  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. As of 1.0.0-alpha.34 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
 
   "config.Marriage.name": "Marriage",
   "config.Marriage.values.true": "true",
   "config.Marriage.values.false": "false",
-  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.33, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
+  "config.Marriage.description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.34, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! =",
 
   "config.Map-furniture.name": "Map furniture",
   "config.Map-furniture.values.default": "default",
@@ -46,7 +48,7 @@
   "config.Outfits.values.one look only": "one look only",
   "config.Outfits.values.vanilla": "vanilla",
   "config.Outfits.values.seasonal": "seasonal",
-  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.33, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
+  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.34, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
 
   // Experimental - DoNotChange
 
@@ -57,7 +59,7 @@
   "config.On/off.values.on": "on",
   "config.On/off.values.safe mode": "safe mode",
   "config.On/off.values.off": "off",
-  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.33, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
+  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.34, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
 
   /*
   // Dynamic tokens
@@ -128,54 +130,51 @@
   // Note: Will work only on the first year due to the way the game checks for the dayOfMonth line. Use the format season_dayOfMonth_2 for dialogue in year 2 and later. Ex "summer_10_2". You can only check for 1 (first year) or 2 (all years after). If you want a dialogue to appear on a specific year, consider using CP conditions in addition to the "_2" suffix
 
   // Seasonal dialogues, year 1, 6-10 are commented out until furthure updates
-  "Dialogues.spring.1": "The nature awakes, {{DT_name}}. What a beautiful time of the year.",
-  "Dialogues.spring.2": "The flowers are blooming, the birds are singing...#$b#It's a beautiful day, isn't it, {{DT_name}}?",
-  "Dialogues.spring.3": "Hello, {{DT_name}}. How's your farm doing?#$b#Well, you're saying? It should...",
-  "Dialogues.spring.4": "I like spring. The sun shining, the flowers and trees blooming, the birds singing and chattering...#$b#Sorry, I can't help myself, I just admire the beauty of this season, {{DT_name}}.",
+  "Dialogues.spring.0": "The nature awakes, {{DT_name}}. What a beautiful time of the year.",
+  "Dialogues.spring.1": "The flowers are blooming, the birds are singing...#$b#It's a beautiful day, isn't it, {{DT_name}}?",
+  "Dialogues.spring.2": "Hello, {{DT_name}}. How's your farm doing?#$b#Well, you're saying? It should...",
+  "Dialogues.spring.3": "I like spring. The sun shining, the flowers and trees blooming, the birds singing and chattering...#$b#Sorry, I can't help myself, I just admire the beauty of this season, {{DT_name}}.",
+  "Dialogues.spring.4": "Hi, {{DT_name}}. How are you doing today?#$b#I hope you're not too tired from working on your farm.",
+  "Dialogues.spring.5": "I love spring, the flowers, the trees...#$b#But I am not a fan of the pollen...#$b#I hope you're not allergic to it, {{DT_name}}.",
+  "Dialogues.spring.6": "Spring is a beautiful season, isn't it, {{DT_name}}?#$b#I love the smell of fresh grass and flowers.",
+  "Dialogues.spring.7": "I hope you're enjoying the spring, {{DT_name}}.#$b#It's a beautiful time of the year.",
+  "Dialogues.spring.8": "The spring is, naturally, a time of new beginnings, {{DT_name}}. Enjoy it while it lasts.",
+  "Dialogues.spring.9": "Not too cold, not too warm. Just a perfect spring.",
 
-  "Dialogues.spring.5": "Hi, {{DT_name}}. How are you doing today?#$b#I hope you're not too tired from working on your farm.",
-  "Dialogues.spring.6": "I love spring, the flowers, the trees...#$b#But I am not a fan of the pollen...#$b#I hope you're not allergic to it, {{DT_name}}.",
-  "Dialogues.spring.7": "",
-  "Dialogues.spring.8": "",
-  "Dialogues.spring.9": "",
-  "Dialogues.spring.10": "",
+  "Dialogues.summer.0": "Shining sun, hot weather...#$b#Don't forget to drink enough water, {{DT_name}}. It's important.",
+  "Dialogues.summer.1": "'Why is summer so hot?' is such a stupid question, but I can't stop asking it in this weather.#$b#I can't imagine how you can work on your farm in this heat, {{DT_name}}.",
+  "Dialogues.summer.2": "Hi, {{DT_name}}.#$b#How are you and your farm handling the heat?",
+  "Dialogues.summer.3": "So hot today...#$b#I'm even losing my formality from it!#$b#Sorry, {{DT_name}}, it's just way too hot for me to be in my best shape.",
+  "Dialogues.summer.4": "In days like these, I wish I could just sit in the shade and drink some lemonade...#$b#But I can't, I have to work on my magic.",
+  "Dialogues.summer.5": "The summer heat is something else, isn't it, {{DT_name}}?#$b#I hope you're staying hydrated.",
+  "Dialogues.summer.6": "I love summer, but sometimes I wish it wasn't so hot.#$b#It's hard to focus on magic when you're sweating so much.",
+  "Dialogues.summer.7": "I hope you're enjoying the summer, {{DT_name}}.#$b#It's a beautiful time of the year, despite the heat.",
+  "Dialogues.summer.8": "Summer is a time for adventures, don't you think, {{DT_name}}?#$b#I wonder what kind of adventures await us.",
+  "Dialogues.summer.9": "The days are long and the nights are warm.#$b#Summer is truly a magical season, {{DT_name}}.",
 
-  "Dialogues.summer.1": "Shining sun, hot weather...#$b#Don't forget to drink enough water, {{DT_name}}. It's important.",
-  "Dialogues.summer.2": "Why is summer so hot?#$b#I can't imagine how you can work on your farm in this heat, {{DT_name}}.",
-  "Dialogues.summer.3": "Hi, {{DT_name}}.#$b#How are you and your farm handling the heat?",
-  "Dialogues.summer.4": "So hot today...#$b#I'm even losing my formality from it!#$b#Sorry, {{DT_name}}, it's just way too hot for me to be in my best shape.",
+  "Dialogues.fall.0": "Colors are changing, leaves are falling, the air is getting colder...#$b#Yeah, fall is here. Beautiful season, isn't it?",
+  "Dialogues.fall.1": "What a beautiful day, isn't it, {{DT_name}}?#$b#I hope you're enjoying it.",
+  "Dialogues.fall.2": "Hi, {{DT_name}}. How are your plants doing in this season?",
+  "Dialogues.fall.3": "The fall breeze is so refreshing...#$b#I love this time of year.",
+  "Dialogues.fall.4": "I love fall, the colors, the crisp air...#$b#It's a beautiful time of the year, isn't it, {{DT_name}}?",
+  "Dialogues.fall.5": "The fall breeze is so refreshing...#$b#I love this time of year.",
+  "Dialogues.fall.6": "Hi, {{DT_name}}. How are your plants doing in this season?",
+  "Dialogues.fall.7": "What a beautiful day, isn't it, {{DT_name}}?#$b#I hope you're enjoying it.",
+  "Dialogues.fall.8": "Colors are changing, leaves are falling, the air is getting colder...#$b#Yeah, fall is here. Beautiful season, isn't it?",
+  "Dialogues.fall.9": "The fall breeze is so refreshing...#$b#I love this time of year.",
 
-  "Dialogues.summer.5": "In days like these, I wish I could just sit in the shade and drink some lemonade...#$b#But I can't, I have to work on my magic.",
-  "Dialogues.summer.6": "",
-  "Dialogues.summer.7": "",
-  "Dialogues.summer.8": "",
-  "Dialogues.summer.9": "",
-  "Dialogues.summer.10": "",
+  "Dialogues.winter.0": "Snow, ice, cold...#$b#Winter is here, {{DT_name}}. It's basically a free time season for you, isn't it?",
+  "Dialogues.winter.1": "Huh... It's pretty cold today, isn't it, {{DT_name}}?",
+  "Dialogues.winter.2": "You know, I have a feeling that winter is the most magical season of the year...#$b#What do you think, {{DT_name}}?",
+  "Dialogues.winter.3": "I like winter, the snow, the ice...#$b#But I am not a fan of the cold, especially this cold...#$b#I hope you're not freezing, {{DT_name}}.",
+  "Dialogues.winter.4": "Hi, {{DT_name}}. How are you doing today?#$b#I hope you're not freezing in this cold weather.",
+  "Dialogues.winter.5": "I love winter, the snow, the ice...#$b#But I am not a fan of the cold, especially this cold...#$b#I hope you're not freezing, {{DT_name}}.",
+  "Dialogues.winter.6": "Hi, {{DT_name}}. How are you doing today?#$b#I hope you're not freezing in this cold weather.",
+  "Dialogues.winter.7": "You know, I have a feeling that winter is the most magical season of the year...#$b#What do you think, {{DT_name}}?",
+  "Dialogues.winter.8": "Snow, ice, cold...##Winter is here, {{DT_name}}. It's basically a free time season for you, isn't it?",
+  "Dialogues.winter.9": "The winter is truly a magical season, {{DT_name}}.",
 
-  "Dialogues.fall.1": "Colors are changing, leaves are falling, the air is getting colder...#$b#Yeah, fall is here. Beautiful season, isn't it?",
-  "Dialogues.fall.2": "What a beautiful day, isn't it, {{DT_name}}?#$b#I hope you're enjoying it.",
-  "Dialogues.fall.3": "Hi, {{DT_name}}. How are your plants doing in this season?",
-  "Dialogues.fall.4": "The fall breeze is so refreshing...#$b#I love this time of year.",
-
-  "Dialogues.fall.5": "",
-  "Dialogues.fall.6": "",
-  "Dialogues.fall.7": "",
-  "Dialogues.fall.8": "",
-  "Dialogues.fall.9": "",
-  "Dialogues.fall.10": "",
-
-  "Dialogues.winter.1": "Snow, ice, cold...#$b#Winter is here, {{DT_name}}. It's basically a free time season for you, isn't it?",
-  "Dialogues.winter.2": "Huh... It's pretty cold today, isn't it, {{DT_name}}?",
-  "Dialogues.winter.3": "You know, I have a feeling that winter is the most magical season of the year...#$b#What do you think, {{DT_name}}?",
-  "Dialogues.winter.4": "I like winter, the snow, the ice...#$b#But I am not a fan of the cold, especially this cold...#$b#I hope you're not freezing, {{DT_name}}.",
-
-  "Dialogues.winter.5": "Hi, {{DT_name}}. How are you doing today?#$b#I hope you're not freezing in this cold weather.",
-  "Dialogues.winter.6": "",
-  "Dialogues.winter.7": "",
-  "Dialogues.winter.8": "",
-  "Dialogues.winter.9": "",
-  "Dialogues.winter.10": "",
-
+  "Dialogues.spring_1": "Hey, {{DT_name}}, you shouldn't see this thing!",
   "Dialogues.spring_12": "I don't plan to attend Egg Festival tomorrow.#$b#Anyways, may you enjoy it, {{DT_name}}.",
   "Dialogues.spring_23": "Flower Dance...#$#I really like dancing, so I'll be there. Will you also participate, {{DT_name}}?",
 
@@ -229,7 +228,7 @@
   //Conversation Topics
   // Own CT
   // Intro event reactions
-  "Dialogues.CT_Intro_Abigail": "So, Eleanor told me she introduced to you...#$b#She's a nice person, isn't she? I wonder why she likes me...",
+  "Dialogues.CT_Intro_Abigail": "So, Eleanor told me she introduced herself to you...#$b#She's a nice person, isn't she? I wonder why she likes me...",
   "Dialogues.CT_Intro_Leah": "I heard you met Eleanor...#$b#She's a nice person, isn't she?",
   "Dialogues.CT_Intro_Pierre": "Eleanor? That witch from the tower?#$b#I hope she didn't curse you or something...",
   "Dialogues.CT_Intro_Linus": "Have you met Eleanor, the witch from the tower?#$b#She's such a nice person, isn't she?",
@@ -445,13 +444,11 @@
   "Events.2h.0": "Good morning, {{DT_name}}!",
   "Events.2h.1": "Above you!",
   "Events.2h.2": "Hehe...$h#$b#Took you a while to notice me, didn't it?",
-
-  // 1.6.16
-//"Events.2h.3_q1": "Such nice nature here, don't you think?",
-"Events.2h.3_q1a1": "I know! It's beautiful!",
-"Events.2h.3_q1a2": "I don't like it. Something more useful should be built here.",
-
-
+/*  1.6.16
+  "Events.2h.3_q1": "Such nice nature here, don't you think?",
+  "Events.2h.3_q1a1": "I know! It's beautiful!",
+  "Events.2h.3_q1a2": "I don't like it. Something more useful should be built here.",
+*/
   "Events.2h.3_q1": "Such nice nature here, don't you think?#I know! It's beautiful!#I don't like it. Something more useful should be built here.",
   "Events.2h.4_q1r1": "I'm glad you like it too.$h#$b#I like to come here and relax when I have some free time.#$b#It's so peaceful here. I can think about everything and nothing at the same time.",
   "Events.2h.4_q1r2": "Oh...$s#$b#Honestly, I would like to know what you would like to see here.#$b#You, as a farmer, should like nature, am I right?#$b#But I can understand if you don't like it. Everyone has their own opinion.",
@@ -463,13 +460,12 @@
   "Events.4h.2": "Oh, hello, {{DT_name}}! What brings you here?",
   "Events.4h.3": "You heard a noise from downstairs, so you decided to check it out?#$b#Heh... I should be quieter next time.",
   "Events.4h.4": "It was just me, looking for a certain book to study...#$b#I can't find it, though...",
-
-//  1.6.16
-//  "Events.4h.5_q1": "Would you like to help me find it?",
+/*  1.6.16
+  "Events.4h.5_q1": "Would you like to help me find it?",
   "Events.4h.5_q1a1": "Of course!",
   "Events.4h.5_q1a2": "I'll help, but why don't you use magic to find it?",
   "Events.4h.5_q1a3": "Sorry, I have little time.",
-
+*/
   "Events.4h.5_q1": "Would you like to help me find it?#Of course!#I'll help, but why don't you use magic to find it?#Sorry, I have little time.",
   "Events.4h.6_q1r1": "You'll help me? Glad to hear that!#$b#I'll be grateful for your help, {{DT_name}}.",
   "Events.4h.6_q1r2": "Well, the book is very, very old, and the spell might destroy it, so it's safer to find it manually.",
@@ -496,12 +492,11 @@
   "Events.7h.0": "Oh!#$b#{{DT_name}}!#$b#Hi! What brings you here?",
   "Events.7h.1": "So, you are saying that you saw me standing here and decided to check on me?#$b#That is nice of you. Thank you, and don't worry, I am pretty fine.$l",
   "Events.7h.2": "I was just thinking about my life and where I am in it right now...#$b#And before you even ask, no, I am not going to jump from the cliff. I am pretty happy with my life.",
-
-//  1.6.16
-//  "Events.7h.3_q1": "What about you, are you enjoying your life here in Pelican Town?",
+/*  1.6.16
+  "Events.7h.3_q1": "What about you, are you enjoying your life here in Pelican Town?",
   "Events.7h.3_q1a1": "I do enjoy it! The community here is so nice!",
   "Events.7h.3_q1a2": "I still kinda regret leaving the city...",
-
+*/
   "Events.7h.3_q1": "What about you, are you enjoying your life here in Pelican Town?#I do enjoy it! The community here is so nice!#I still kinda regret leaving the city...",
   "Events.7h.4_q1r1": "I'm glad you like it here!#$b#I didn't know about the community, but as no one is complaining about my nor Magnus's presence, I suppose they are pretty tolerating.",
   "Events.7h.4_q1r2": "Do you? Really?#$b#Because I can see that you are happy here.",
@@ -509,21 +504,21 @@
   "Events.7h.6": "On a more personal note, I am happy that I can call you my friend, {{DT_name}}.$l",
   "Events.7h.7": "I think you might notice that I don't have as many friends as you.#$b#But it wasn't always like that...",
   "Events.7h.8": "When I was a small kid, I had a lot of friends...#$b#But then, one day, many years ago, something terrible happened, and my whole life turned upside down...$s",
-  "Events.7h.9": "I don't want to talk about it right now, but I will tell you about it one day, I promise.#$b#Right now, I have barely any friends. Abigail is the only one who I can call a friend, but that is due to something different...#$b#...then {{DT_wizard_name}}, even though {{DT_wizard_fem}} is more of a parent and mentor for me...#$b#...and then you, {{DT_name}}.#$b#I might also consider Linus or Sophia as my friends, but I am not sure about them...",
+  "Events.7h.9": "I don't want to talk about it right now, but I will tell you about it one day, I promise.#$b#Right now, I have barely any friends. Abigail is the only one who I trust I can call a friend, but that is a whole another story...#$b#...then {{DT_wizard_name}}, even though {{DT_wizard_fem}} is more of a parent and mentor for me...#$b#...and then you, {{DT_name}}.#$b#I might also consider Linus or Sophia as my friends, but I am not sure about them...",
   "Events.7h.10": "I am sorry, I am talking too much about myself. I should stop now.#$b#Thanks for listening to me, though, {{DT_name}}. I really appreciate it.",
   "Events.7h.11": "Do you want to watch the rain and the waterfall here with me?#$b#I think it's a good place to relax and think about everything and nothing at the same time.",
-  "Events.7h.12": "You shared a nice moment with Eleanor. You feel like you are closer to each other now.",
+  "Events.7h.12": "You shared a nice moment with Eleanor. You feel like you are close to each other now, and somehow, you are sure Eleanor feels it too.",
 
-
+/*
   // 8 hearts
   "Events.8h.0": "StrojvedouciDenis.Eleanor-DEBUG:8h.0",
   "Events.8h.1": "StrojvedouciDenis.Eleanor-DEBUG:8h.1",
   "Events.8h.2": "StrojvedouciDenis.Eleanor-DEBUG:8h.2",
   "Events.8h.3": "StrojvedouciDenis.Eleanor-DEBUG:8h.3",
   "Events.8h.4": "StrojvedouciDenis.Eleanor-DEBUG:8h.4",
+*/
 
   // 10 hearts
-  // check for correct verbs and their times
   "Event.10h.0": "Here it is!",
   "Event.10h.1": "Oh, {{DT_name}}! Hi!",
   "Event.10h.2_q1": "What brings you here?#Just looking for foragables.#I heard your voice and wanted to check out.",
@@ -549,7 +544,7 @@
   "Event.10h.21": "Well, as you already know, you are connected with magic. That means that you, like me, {{DT_wizard_name}}, or anyone else anyhow connected with magic, has a magical aura.",
   "Event.10h.22": "Yeah, I know, it sounds strange, yet it's true - you have a magical aura, which is unique to you, and it can be seen by those who can sense it.",
   "Event.10h.23": "And, as I already mentioned the first time we met, I could sense your farm's aura.#$b#And yours as well, {{DT_name}}.",
-  "Event.10h.24": "I know, it's a lot of information I told you, but - probably sadly for you - I haven't finished yet.", //There's still one more thing to mention - the magical aura can change over time, influenced by various factors such as emotions, experiences, and even the environment. So, it's not static, but rather dynamic and ever-evolving.
+  "Event.10h.24": "I know, it's a lot of information I told you, but - probably sadly for you - I haven't finished yet.",
   "Event.10h.25": "To get back to the topic - I started with my worries about the scroll, and I think I should finish with it.",
   "Event.10h.26": "To recapitulate - its 'siganture' is similar to the circle's one.#$b#A question is why it is here, as I know about this scroll for less than a hour or two.",
   "Event.10h.27": "However, when I left it here today, the 'signature' was mine. Now it isn't.#$b#However, it is familiar to me.",
@@ -564,18 +559,78 @@
   "Event.10h.36": "You feel like you are falling into it, but you don't feel any fear, nor pain, nor anything else...#...just peace and calmness.", //message
   "Event.10h.37": "Out of nowhere, Eleanor appears next to you, and she looks like she is in the same state as you.", //message
   "Event.10h.38": "The only discomforting thing is that both of you are unable to self-willingly do anything.#You can't move, you can't speak, you can't even think.", //message
-  "Event.10h.39": "In an instant, a thought appears in your mind - the scroll was dangerous, and you should have never opened it.#$b#Yet as soon as it appears, it disappears.", //message
-  "Event.10h.40": "After a while, a voice appears in your mind. Eleanor's voice, to be exact.#Yet it is not the voice you know, but rather a voice of a small child, who is scared and confused.", //message
-  "Event.10h.41": "And what's even more strange, you can perfectly hear it and understand it, but you don't have a clue about what you're hearing, as you know that the voice is saying something, you understand it, but it is like your brain could not memorize it. Like you forget what the voice say right after you hear it.", //message
+  "Event.10h.39": "In an instant, a thought appears in your mind - the scroll was dangerous, and you should have never opened it.#$b#Yet as soon as it appears, it disappears, like it never happened.", //message
+  "Event.10h.40": "After a while, a voice appears in your mind. Eleanor's voice, to be exact.#Yet it is not the voice you know, but rather a voice of a small child.", //message
+  "Event.10h.41": "And what's even more strange, you can perfectly hear it and understand it, but you don't have a clue about what you're hearing, as you know that the voice is saying something, you understand it, but it is like your brain could not memorize it. Like you forget what the voice say right after you hear it. Maybe even before...", //message
   "Event.10h.42": "Distantly, you hear more voices, this time adult ones.#$b#Same with them - you can hear them, you can understand them, but you can't memorize what they say.", //message
-  "Event.10h.43": "Suddenly, Eleanor - not her child voice, but the one you know - turns your head towards you, revealing her face...#...and you know that you have never ever seen a face like this before, and you never, ever want to.", //message
+  "Event.10h.43": "Suddenly, Eleanor turns your head towards you, revealing her face...#...and you know that you have never ever seen a face like this before, and you never, ever want to.", //message
   "Event.10h.44": "In that very moment, her face revealed a deep sadness, a longing for something lost, and a fear of what is to come.#But her emotions were so big, so overwhelming, that you felt like you couldn't even wish it to your greatest enemy.", //message
-  "Event.10h.45": "Her face was like a mirror, reflecting her soul's deepest wounds and scars, and you felt like you were looking into the abyss of her heart.", //message
-  "Event.10h.46": "Clearly, her feelings were so strong that they could be felt even in this strange place, and you felt like you were drowning in them.", //message
-  "Event.10h.47": "But her feelings weren't the only thing you felt - what you also felt was a really strong power, magic or somthing similar, radiating from the darkness around you.#In an instant, you realized what it is, and why it is, and also sadly how painful it is.", //message
-  "Event.10h.48": "Eleanor was trying to gain control over this.. whatever it was.", //message
+  "Event.10h.45": "Her face was like a mirror, reflecting her soul's deepest wounds and scars, and you felt like you were looking into the abyss of her heart.#Clearly, her feelings were so strong that they could be felt even in this strange place, and you felt like you were drowning in them.", //message
+  "Event.10h.46": "And that look made you realize...#...realize through how much she must've been suffering.#You can't help but feel a deep sense of empathy for her pain, and you wish you could reach out and comfort her.", //message
+  "Event.10h.47": "And the wish is fulfiled as all the voices fade away and the darkness slowly lifts itself up, taking you two back to place this... whatever it is... started - back to the place you found her today...", //message
+  "Event.10h.48": "Oh my...$s#$b#{{DT_name}}...$s#$b#I...$s#$b#...I...$s", 
+  "Event.10h.49": "I have... no clue what was that...$s",
+  "Event.10h.50": "From what I saw in your face, I don't suppose you heard anything, right?",
+  "Event.10h.51": "Well, as you saw, I did. Every... single... world...#$b#...but before I'll continue, are you OK? At least, as OK as you can be after this?",
+  "Event.10h.52": "Good, I'm glad to hear that.#$b#But I warn you - if you were OK after this, then I worry you won't be after I tell you what I heard.#$b#But I don't want to push you into anything, so disturb me if anything is wrong, OK?",
+  "Event.10h.53_q2": "So, do you want to discover what this all was about?#Yes, I want to know what happened.#No, I don't want to know.",
+/*  1.6.16
+  "Events.10h.53_q2": "So, do you want to discover what this all was about?",
+  "Events.10h.53_q2a1": "Yes, I want to know what happened.",
+  "Events.10h.53_q2a2": "No, I don't want to know.",
+*/
+  "Events.10h.54_q2r1": "So listen carefully, {{DT_name}}, as this is going to be a long story...#$b#...an unknown story, never told before, that I knew I would have to share with the world, sooner or later... ",
+  "Events.10h.54_q2r2": "Well, I understand...#$b#Oh, what am I saying? Of course I don't understand!#$b#This could easilly be the end of the world, and you don't want to know what it was about?!#$b#I...#$b#I don't know what to say...#$b#But I respect your decision, {{DT_name}}.",
+  "Events.10h.55_q2r1": "...a story about me, my childhood, my parents...#$b#...and not surprisingly, about the scroll, magic circle and {{DT_wizard_name}}, and also, to everyone's suprise, you, {{DT_name}}.",
+  "Events.10h.55_q2r2": "Before you leave, I'd at least say that this was about me, and about my childhood.#$b#As you now know what it was about, do you really not want to know more?",
+  "Events.10h.56_q2r1": "Yes, {{DT_name}}, also about you.#$b#You could never imagine how big of a role you played in my life, even before we met, before either one of us knew about the other one's existence.",
+  "Events.10h.56_q2r2": "Heh, I knew it!#$b#You are curious, aren't you? I can see it in your eyes!#$b#Well, let's start with the beginning, then.", // goes back to .54_q2r1 and follows *_r1 path
+  "Events.10h.57": "Yeah, it sounds strange, I know.#$b#But looks like it is the truth, and we have to accept it.",
+  "Events.10h.58": "I know, it is a lot of information, but I think I should start from the beginning, so you can understand everything.",
+  "Events.10h.59": "I was born in a small mountain village, far away from here, surrounded by tall trees and beautiful landscapes.#$b#If you could only see it, {{DT_name}}...#$b#...it was a beautiful place, and I loved it.",
+  "Events.10h.60": "The scenery was breathtaking, with mountains towering in the distance and lush forests all around us.#$b#I was a happy child, and I had a lot of friends. I remember playing with them in the fields, running through the trees, feeling so free...#$b# Just like normal children do, no matter the fact that we all were future wizards and witches.",
+  "Events.10h.61": "Huh, I really remember more than I thought...#$b#Anyways, even at that very young age, we already were learning magic. I was a very good student, always eager to learn more and more and more.",
+  "Events.10h.62": "We all were like a one very big family - kids, parents, grandparents, no one cared how old they are nor from who they belong - and I loved every single one of them, even though I barely can think of any of their names right now...",
+  "Events.10h.63": "Then there were were my parents, who were the best parents I could ever wish for.#$b#They loved me so much, and I loved them back. They were always there for me, supporting me in everything I did.#$b#Even though they were one of the most powerful wizards and witches at their time - not only them, our whole village was like this - they always found time for me, and I was their little princess.",
+  "Events.10h.64": "Now, looking back, I can say that it was perfect.#$b#And that, probably, was the problem...#$b#Because, as you know, nothing is perfect, and everything has always two sides.",
+  "Events.10h.65": "It's how it works - we always have at least two sides of everything, commonly known as 'good' and 'bad'.#$b#These two sides are always there, no matter if we want it or not, and they are always in a constant fight with each other.",
+  "Events.10h.66": "They are always there, always fighting, no matter if we see them or not.#$b#It is a never-ending battle of good and evil, light and darkness, love and hate, and everything else that could or could not be imagined.#$b#Sometimes, one side is stronger, sometimes the other one.",
+  "Events.10h.67": "Therfore, it was only a matter of time when something bad would happen to us.#$b#And yes, it did happen.",
+  "Events.10h.68": "Even at that time, we knew. Everyone knew.#$b#Some danger was coming... for us, for our village.#$b#I don't remember if they knew what exactly it was coming after us, but all our parents knew one thing for sure - they'll try to protect us.",
+  "Events.10h.69": "I know that it wouldn't make any difference in our lives if we would or would not know, as we lived our lives like nothing was happening, but I still remember that day when my parents told me about it.",
+  "Events.10h.70": "No one was scared, worried, nor sad. No, we were all happy, parents and children alike, because they knew what they'll have to do, and we knew they'll do it.",
+  "Events.10h.71": "I'm still saying 'it', because I don't have a clue what it was.#$b#If it was a person, a creature, uncontrolled magic, or something else.#$b#It didn't matter. It never mattered.",
+  "Events.10h.72": "One summer night, one of my friend's parents noticed something.#$b#They were astronomers, and that night, the stars gave them a sign - a sign that said the same thing they said - 'the night is close'.",
+  "Events.10h.73": "Sounds really innocent, doesn't it?#$b#Without context, it really is.#$b#But we all knew...",
+  "Events.10h.74": "That night, I got ill. To this day, no one can say what it was. But I knew why it was.#$b#That night, I heard a voice I never heard before nor after that. 'You know, Eleanor, you are a unique child, with special abilities.' it said. Nothing more, nothing less.",
+  "Events.10h.75": "Morning after that night, my parents sent me to my grandparents, pretty much far away from our village.#$b#They didn't say much, actually barely nothing, but I knew they knew I exactly know.",
+  "Events.10h.76": "That's all I remember about my original home, about my friends, my parents...",
+  "Events.10h.77": "I always thought I knew what was going to happen next, but we all were wrong.#$b#And by this, {{DT_name}}, I finally go from what I remember to the scroll... ",
+  "Events.10h.78": "But before I continue, within the possibilities, is all good? It's a lot, I know, that's why I ask.",
+  "Events.10h.79": "Ok, glad to know. So let's slowly proceed to the scroll.",
+  "Events.10h.80": "Nineteen years later, I got here, to study under {{DT_wizard_name}}. The time between, I never actually thought about it.",
+  "Events.10h.81": "When I was at my grandparents, almost two week after I arrived, my illness went away as quickly as it came, and that day, we got a message - that my parents left to fight the danger, and no one ever saw them again.",
+  "Events.10h.82": "I...#$b#...I was devastated when I was told so...#$b#...but somehow, deep down, I knew that this is not the end of the world, but instead, it's beginning.",
+  "Events.10h.83": "Since then, I continued in my studies, keeping discovering more and more, and probably also hoping I'll find something about my past.#$b#And today, I did.",
+  "Events.10h.84": "As we opened the scroll, {{DT_name}}, we were sent to a void.#$b#Probably a time void, to be exact. I honestly have no clue - I've never read nor heard about something similar to this.",
+  "Events.10h.85": "There were three different voices talking. First was my young me talking to me, to us.#$b#It was one of the messages I created for my future me. I...completely forgot about them.",
+  "Events.10h.86": "Which was supposed to happen. These messages were special - they would appear when I need them the most.#$b#They are meant to motivate me, to help me, to tell me that now it might be bad, but that doesn't mean it will always stay that way.",
+  "Events.10h.87": "That is the majority.#$b#Some, however, are the other way around - that my life is too good, and that I should be cautious, as this will not be forever.#$b#However, I haven't have either one of them for such a long time...",
+  "Events.10h.88": "If I would ever remember of this, I'd say that this is all of them. But it isn't. It never was, and it will never be.#$b#And the one my young me was one of these, one of the ones that are neither motivation nor warning.",
+  "Events.10h.89": "This one...#$b#...I don't even know how I could do it. How I could even think like that, at that young age?#$b#And what is even worse....#$b#...it came true.",
+  "Events.10h.90": "'Trying to keep yourself getting back in the past is never an option. Look ahead, and you'll find that the world has something prepared for you.#$b#Believe yourself - if you won't go forwards, you'll always go backwards. That's one of the rules of the life.'#$b#Such a wise words, {{DT_name}}...",
+  "Events.10h.91": "...but these are not all.#$b#'Now I might feel like my life will never be good again, but...#$b#...it will. And if you hear this, then it is, as you have found something that makes you happy, something that makes you feel like the life is great again, maybe even better than before.#$b#And you know excatly what it is and why.'",
+  "Events.10h.92": "This is what my young me told my future me. But there were another two voices - my parents.#$b#Well, it was their voices, but they were not talking to me, but to each other, at least at first.",
+  "Events.10h.93": "They were talking about what they have to do, but they weren't talking directly about something specific.#$b#I don't quite know why, because ",
+  "Events.10h.94": "They were talking about me, about how much they love me, and how much they will miss me.#$b#And then, they said something about my future.",
+  "Events.10h.95": "'Eleanor, there will come a moment in your life, where you will, out of nowhere, remember us and feel... like your life has a sense, but it will never be fullfilled.'#$b#'That day will come, and with it, something that'll change your life forever, and make you and your life better than before.#$b#Somewhere, you have a secret soulmate that also has unique magical abilities - and you'll meet them when you'll miss us the most. It is written in the stars, you can't change it and you'll never want to.'",
+  "Events.10h.96": "I never knew it, but looking back, they were right. I don't know, and probably even don't want to know how they could know what would happen.#$b#But I am sure that I found and know about that 'something' they told me about.",
+  "Events.10h.97": "That something...#$b#... is you, {{DT_name}}.#$b#Yes. You.",
+  "Events.10h.98": "And that is where you're coming to the scene, {{DT_name}}.#$b#The day my parents talked about really happened, and as they said, something happened, too.#$b##$b#It was the day when Pelican Town got big news - someone was coming to take over your grandpa's farm.#$b#My parents knew your grandpa...#$b#...they knew about you.",
+  "Events.10h.99": "And that is why I'm telling you all of this, {{DT_name}}.#$b#Because you are, that soulmate who makes me happy, who makes me feel like my life has a sense, who makes me feel like I am home.",
+  "Events.10h.100": "The soulmate... who I hopelessly fell in love with, {{DT_name}}.#$b#Before you ask it, yes, I'm sure I do, forever.#$b#I love you, {{DT_name}}.",
 
-
+/*
   // 14 hearts
   // OLD part 1/1 (old 14h event dialogues, now 14h-short; variants are automatically used depending if you have Hogwarts installed or not; also 10 hearts temporary event)
   // SVE
@@ -615,6 +670,7 @@
   "Events.14h-short_Hog.15": "Every year from then, I visit this memorial - so I can thank all souls that defended Hogwarts,...$s#$b#...and to pray for my parent's lives.",
   "Events.14h-short_Hog.16": "I was never able to fully solve those dreams, but there is this one thing my parents said to me in my strange dreams - that somewhere, I have a secret soulmate that also has unique magical abilities - and I'll meet my soulmate when I will miss my parents the most.#$b#Which was the day when Pelican Town got big news - someone was coming to take over your grandpa's farm.#$b#My parents knew your grandpa...#$b#...they knew about you.#$b#You, {{DT_name}}.#$b#It's a mystery I don't expect I'll ever solve, but...",
   "Events.14h-short_Hog.17": "...I love you, {{DT_name}}.",
+*/
 
   // Event.14 hearts
   // part 0/5
@@ -675,9 +731,9 @@
   "Events.14h-p1.27": "Don't worry about me, {{DT_name}}. I'll be back soon. I promise.",
   "Events.14h-p1.27-commented": "Don't worry?#DON'T WORRY?!#How can I not worry about you, Eleanor?!#Tell me, HOW?!#Because I can't!",
   "Events.14h-p1.28": "You don't have to look for me, {{DT_name}}. I don't think you should be even able to find me.",
-  "Events.14h-p1.28-commented": "I don't...#I...#...I will find you, Eleanor.#I will find you, no matter wha.!#If it's the last thing I'll ever do, I will find you!",
+  "Events.14h-p1.28-commented": "I don't...#I...#...I will find you, Eleanor.#I will find you, no matter what!#If it's the last thing I'll ever do, I will find you!",
   "Events.14h-p1.29": "I'll come back to you, {{DT_name}}. I promise.",
-  "Events.14h-p1.29-commented": "But, will you?#...Will you come back to me, Eleanor?#And if you will, when?#Will you come back to me in one piece?#Will you still be the same Eleanor I know and love?#...#...#$e#NO. I can't let you just go somewhere, Eleanor!#I will find you, I will help you find out who you are, I will help you find out what happened to your parents and then we'll go home!",
+  "Events.14h-p1.29-commented": "But, will you?#...Will you come back to me, Eleanor?#And if you will, when?#Will you come back to me in one piece?#Will you still be the same Eleanor I know and love?#...#...#$e#NO. I can't let you just go somewhere, Eleanor!#I will find you, I will help you find out who you are, I will help you find out what happened to your parents and then...",
   "Events.14h-p1.30": "Bye for now, my loved {{DT_name}}, my true and only love.",
   "Events.14h-p1.30-commented": "Goodbye, Eleanor...#...my beloved Eleanor...",
   "Events.14h-p1.31": "Your head is full of thoughts, your heart is full of worries, your eyes are full of tears...#...and you're left all alone in the house, with a letter in your hand, with a feeling that you're never going to see Eleanor again...",

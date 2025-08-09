@@ -11,7 +11,7 @@
 
   // Current Version
 
-  "Version": "1.0.0-alpha.33",
+  "Version": "1.0.0-alpha.34",
 
   // Description
 
@@ -55,6 +55,10 @@
     },
     
     // Optional mods & their compatibility		// CT's *should* not care about that mod missing or not --> these mods are not listed here
+    {
+    "UniqueID": "spacechase0.GenericModConfigMenu",
+    "IsRequired": false
+    },
     {
       "UniqueID": "flashshifter.immersivefarm2remastered", // SVE map layout
       "IsRequired": false

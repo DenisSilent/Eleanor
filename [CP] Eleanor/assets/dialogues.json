@@ -24,9 +24,10 @@ https://stardewvalleywiki.com/Modding:Schedule_data
         // SPECIFIC DAY DIALOGUE
         // Note: Works only in the first year. Use format season_dayOfMonth_2 for year 2 and later (e.g., "summer_10_2"). To target specific years, use CP conditions with the "_2" suffix.
 
-        "{{Lowercase:{{Season}}_{{Day}}}}": "{{i18n:Dialogues.{{Season}}.{{Random:{{Range:1,4}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}", // using season_day as a game key but season.1-10 as dialogue key
-        "{{Lowercase:{{Season}}_{{Day}}}}_2": "{{i18n:Dialogues.{{Season}}.{{Random:{{Range:1,4}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}", // using season_day as a game key but season.1-10 as dialogue key
+        "{{Lowercase:{{Season}}_{{Day}}}}": "{{i18n:Dialogues.{{Season}}.{{Random:{{Range:0,9}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}", // using season_day as a game key but season.1-10 as dialogue key
+        "{{Lowercase:{{Season}}_{{Day}}}}_2": "{{i18n:Dialogues.{{Season}}.{{Random:{{Range:0,9}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}", // using season_day as a game key but season.1-10 as dialogue key
 
+        "spring_1": "{{i18n:Dialogues.spring_1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "spring_12": "{{i18n:Dialogues.spring_12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "spring_23": "{{i18n:Dialogues.spring_23 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
 

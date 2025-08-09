@@ -85,13 +85,13 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
       "LogName": "{{ModId}} - maps - Eleanor's spouse room - load command",
       "Action": "Load",
       "Target": "Data/SpouseRooms",
-      "FromFile": "assets/maps/Eleanor_spouse_room.tmx"
+      "FromFile": "assets/maps/Eleanor_spouse.tmx"
     },
     {
       "LogName": "{{ModId}} - maps - Eleanor's patio room - load command",
       "Action": "Load",
       "Target": "Data/SpouseRooms",
-      "FromFile": "assets/maps/Eleanor_patio_room.tmx"
+      "FromFile": "assets/maps/Eleanor_patio.tmx"
     },
 
     {

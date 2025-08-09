@@ -39,6 +39,10 @@
       "UniqueID": "Pathoschild.ContentPatcher", // Content Patcher
       "IsRequired": true,
       "MinimumVersion": "2.0.0"
-    }
+    },
+  {
+    "UniqueID": "spacechase0.GenericModConfigMenu",
+    "IsRequired": false
+  }
   ]
 }
