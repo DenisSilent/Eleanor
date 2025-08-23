@@ -14,6 +14,15 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.35 (23.8.2025)
+
+* Multi-device development possibility tests
+* Fixes and advancements in 10h event (to be continued...; for detailed info, see commit log)
+* Fixed VSCode + Stardew debugging issues
+* Recompiled the mod again (no clue why; no changes made)
+
+---
+
 ## version 1.0.0-alpha.34 (9.8.2025)
 
 * Multi-device development possibility tests

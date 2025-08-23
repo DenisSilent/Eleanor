@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "SMAPI X VSCode fix",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "C:\\SteamLibrary\\steamapps\\common\\Stardew Valley\\StardewModdingAPI.exe",
+            "args": [
+                "--mods-path",
+                "Mods - test"
+            ],
+            "cwd": "C:\\SteamLibrary\\steamapps\\common\\Stardew Valley",
+            "console": "integratedTerminal",
+            "stopAtEntry": false,
+            "env": {
+                "DOTNET_SYSTEM_CONSOLE_ENCODING": "utf-8"
+            }
+        }
+    ]
+}
