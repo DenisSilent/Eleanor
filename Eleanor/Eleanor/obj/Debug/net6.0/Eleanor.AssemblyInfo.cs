@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Eleanor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0-alpha.34+de07b906c5464041bbb4102dddd697d5bce16a52")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0-alpha.36+eca9348d35e6c0426d4c4480dd26fbbad8341bfb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Eleanor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eleanor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

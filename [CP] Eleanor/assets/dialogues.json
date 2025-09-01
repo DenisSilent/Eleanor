@@ -1,6 +1,8 @@
 {
 /*
+https://stardewvalleywiki.com/Modding:Dialogue
 https://stardewvalleywiki.com/Modding:Schedule_data
+https://stardewvalleywiki.com/Modding:Migrate_to_Stardew_Valley_1.7#DialogueKeyValidator
 */
   "Changes": [
     {
@@ -351,7 +353,8 @@ https://stardewvalleywiki.com/Modding:Schedule_data
         "Bad_9": "{{i18n:Dialogues.marriage.Bad_{{Random: {{Range:0,3}}}} |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}"
       },
       "When": {
-        "Marriage": "true"
+        "Marriage": "true",
+        "Relationship:{{ModId}} |contains=Engaged, Married": true
       }
     },
 

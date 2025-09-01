@@ -73,13 +73,13 @@ A copy of the MIT License can be found in the LICENSE file in this distribution 
 [main branch, stable](https://github.com/DenisSilent/Eleanor/%5BCP%5D%20Eleanor/zzz_dummy%20files/LICENCE)
 [development branch, unstable, not recommended for use](https://github.com/DenisSilent/Eleanor/tree/development_UNSTABLE!/%5BCP%5D%20Eleanor/zzz_dummy%20files/LICENCE)
 
-The source code for the C# portion of this mod is publicly available at:
+The source code of this mod, as well as all releases, is publicly available at:
 [main branch, stable](https://github.com/DenisSilent/Eleanor)
 [development branch, unstable, not recommended for use](https://github.com/DenisSilent/Eleanor/tree/development_UNSTABLE!)
 
 **Exception:**
 
-All files located in `[CP] Eleanor/assets/NPC sprites and portraits/Portraits` are licensed under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.
+All files located in `[CP] Eleanor/assets/NPC sprites and portraits` are licensed under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.
 This includes works derived from the Stardew Valley Character Creator by jazzybee.itch.io, licensed under CC BY-SA 4.0.
 
 You can view the full CC BY-SA 4.0 license at:

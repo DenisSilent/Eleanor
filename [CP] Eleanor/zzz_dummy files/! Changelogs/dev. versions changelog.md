@@ -14,6 +14,18 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.36 (1.9.2025)
+
+* Multi-device development possibility tests
+* Completed 10h event (hopefully)
+* Added spouse room and patio
+* Added marriage schedules
+* Preparation for 1.0.0 full version - see that new dynamic token
+* Removed the 1 year of development secret event
+* Fixed (probably fatal) error when marrying any other NPC (than unmariable Eleanor)
+
+---
+
 ## version 1.0.0-alpha.35 (23.8.2025)
 
 * Multi-device development possibility tests

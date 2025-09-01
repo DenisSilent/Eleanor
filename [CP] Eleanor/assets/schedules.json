@@ -157,6 +157,25 @@ https://lemurkat.wordpress.com/2020/10/10/npc-creation-schedules/
         "HasSeenEvent |contains=112": true
       }
     },
+    {
+      "LogName": "Eleanor - marriage schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/StrojvedouciDenis.Eleanor",
+      "Entries": {
+        "marriage_{{Lowercase:{{DT_weekday}}}}}": "
+    610 WizardHouse 5 15 2/
+    930 Town 72 54 2/
+    1630 WizardHouse 12 2 2/
+    1900 Custom_WizardBasement 13 5 0/
+    2130 {{ModId}}.Maps.Eleanor.home 2 20 3/
+    2300 {{ModId}}.Maps.Eleanor.home 20 16 2
+"
+      },
+      "When": {
+        "Relationship:{{ModId}} |contains=Engaged, Married": true,
+        "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday"
+      }
+    },    
 
     {
       "LogName": "Eleanor - schedule - RSV+ES",

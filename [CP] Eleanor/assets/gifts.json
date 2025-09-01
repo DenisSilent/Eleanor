@@ -60,7 +60,6 @@ https://stardewvalleywiki.com/Modding:Gift_taste_data
         "RejectRoommateProposal_LowFriendship": "{{i18n:Gifts.RejectRoommateProposal_LowFriendship |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "RejectRoommateProposal_SmallHouse": "{{i18n:Gifts.RejectRoommateProposal_SmallHouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}}}}",
 */
-
         "RejectMermaidPendant": "{{i18n:Gifts.RejectMermaidPendant |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "RejectMermaidPendant_Divorced": "{{i18n:Gifts.RejectMermaidPendant_Divorced |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "RejectMermaidPendant_NeedHouseUpgrade": "{{i18n:Gifts.RejectMermaidPendant_NeedHouseUpgrade |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
