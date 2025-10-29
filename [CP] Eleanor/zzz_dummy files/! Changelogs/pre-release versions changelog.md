@@ -1,4 +1,4 @@
-# **rPrerelease changelog (0.0.0-0.7.4-beta.7)**
+# **Prerelease changelog (0.0.0-0.7.4-beta.7)**
 
 This is a changlog including all unreleased versions of NPC Eleanor that were before the official public ( NexusMods) release.
 

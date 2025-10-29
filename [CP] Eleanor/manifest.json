@@ -45,7 +45,7 @@
     },
     {
       "UniqueID": "FlashShifter.StardewValleyExpandedCP", // Stardew Valley Expanded (a.k.a. SVE)
-      "IsRequired": true,
+      "IsRequired": true,  // TODO - change to false
       "MinimumVersion": "1.14.25"
     },
     {

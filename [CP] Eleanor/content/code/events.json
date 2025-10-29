@@ -34,8 +34,23 @@
                 viewport 42 12/
                 pause 100/
     */
-
   "Changes": [
+// common
+    // 0hearts - Eleanor's introduction
+    // Location: your farm
+    // Trigger: Entering your farm after seeing introduction event with Mr. Rasmodius.
+    // Description: Eleanor introduces herself to the player, greeting them politely and explaining who she is and that she knows about you and Junimos.
+    {
+      "LogName": "Eleanor - event - 0hearts - Introduction",
+      "Action": "EditData",
+      "Target": "Data/Events/farm",
+      "Entries": {
+        "{{ModId}}_Intro/SawEvent 112":
+        "none/-1000 -1000/farmer 2 2 2 {{ModId}} 3 3 0/\n        skippable/\n        addConversationTopic {{ModId}}.CT_Intro 2/\n        pause 1111/\n        speak {{ModId}} \"{{i18n:Events.Intro.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/ \n        pause 555/\n        emote farmer 40/\n        pause 555/\n        emote farmer 8/\n        pause 555/\n        speak {{ModId}} \"{{i18n:Events.Intro.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/\n        pause 1111/\n        speak {{ModId}} \"{{i18n:Events.Intro.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/\n        pause 1111/\n        speak {{ModId}} \"{{i18n:Events.Intro.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/\n        pause 1111/\n        speak {{ModId}} \"{{i18n:Events.Intro.4|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/\n        pause 2222/\n        end"\n      }\n    },
+
+// vanilla
+
+// SVE
     // 0hearts - Eleanor's introduction
     // Location: your farm
     // Trigger: Entering your farm after seeing introduction event with Mr. Rasmodius.
@@ -68,6 +83,13 @@
       }
     },
 
+// vanilla
+
+
+
+// SVE
+    // main (heart/story) events
+    
     // 2hearts - Eleanor's nature admiring
     // Location: Forest
     // Trigger: Enter the Forest between 6:00 and 12:00.
@@ -77,7 +99,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "{{ModId}}_2hearts/SawEvent {{ModId}}_Intro/Friendship {{ModId}} 500/Time 600 1200":
+        "{{ModId}}_events_Eleanor_SVE_main_2hearts/SawEvent {{ModId}}_events_Eleanor_common_main_Intro/Friendship {{ModId}} 500/Time 600 1200":
         "none/21 31/farmer 21 20 2 {{ModId}} 16 30 1/
         skippable/
         addConversationTopic {{ModId}}.CT_2h 2/
@@ -110,16 +132,16 @@
         pause 750/
         emote farmer 60/
         pause 500/
-        quickQuestion {{i18n:Events.2h.3_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_2hearts_q1a1(break)switchEvent {{ModId}}_2hearts_q1a2",
+        quickQuestion {{i18n:Events.2h.3_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_events_Eleanor_SVE_main_2hearts_q1a1(break)switchEvent {{ModId}}_events_Eleanor_SVE_main_2hearts_q1a2",
 
-        "{{ModId}}_2hearts_q1a1": "resetVariable/
+        "{{ModId}}_events_Eleanor_SVE_main_2hearts_q1a1": "resetVariable/
         friendship {{ModId}} 250/
         speak {{ModId}} \"{{i18n:Events.2h.4_q1r1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 2500/
         speak {{ModId}} \"{{i18n:Events.2h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         end",
 
-        "{{ModId}}_2hearts_q1a2": "resetVariable/
+        "{{ModId}}_events_Eleanor_SVE_main_2hearts_q1a2": "resetVariable/
         friendship {{ModId}} -350/
         speak {{ModId}} \"{{i18n:Events.2h.4_q1r2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 2500/
@@ -137,7 +159,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Custom_WizardBasement",
       "Entries": {
-        "{{ModId}}_4hearts/SawEvent {{ModId}}_2hearts/Friendship {{ModId}} 1000/Time 1800 2600":
+        "{{ModId}}_events_Eleanor_SVE_main_4hearts/SawEvent {{ModId}}_events_Eleanor_SVE_main_2hearts/Friendship {{ModId}} 1000/Time 1800 2600":
         "none/14 12/farmer -1000 -1000 2 {{ModId}} 4 19 3/
         skippable/
         addConversationTopic {{ModId}}.CT_4h 2/
@@ -179,19 +201,19 @@
         speak {{ModId}} \"{{i18n:Events.4h.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 555/
         emote {{ModId}} 40/
-        quickQuestion {{i18n:Events.4h.5_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_4hearts_q1a1(break)switchEvent {{ModId}}_4hearts_q1a2(break)switchEvent {{ModId}}_4hearts_q1a3",
+        quickQuestion {{i18n:Events.4h.5_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_events_Eleanor_SVE_main_4hearts_q1a1(break)switchEvent {{ModId}}_events_Eleanor_SVE_main_4hearts_q1a2(break)switchEvent {{ModId}}_events_Eleanor_SVE_main_4hearts_q1a3",
 
-        "{{ModId}}_4hearts_q1a1": "resetVariable/
+        "{{ModId}}_events_Eleanor_SVE_main_4hearts_q1a1": "resetVariable/
         friendship {{ModId}} 150/
         speak {{ModId}} \"{{i18n:Events.4h.6_q1r1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         switchEvent {{ModId}}_4hearts_ending",
 
-        "{{ModId}}_4hearts_q1a2": "resetVariable/
+        "{{ModId}}_events_Eleanor_SVE_main_4hearts_q1a2": "resetVariable/
         friendship {{ModId}} 50/
         speak {{ModId}} \"{{i18n:Events.4h.6_q1r2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        switchEvent {{ModId}}_4hearts_ending",
+        switchEvent {{ModId}}_events_Eleanor_SVE_main_4hearts_ending",
 
-        "{{ModId}}_4hearts_q1a3": "resetVariable/
+        "{{ModId}}_events_Eleanor_SVE_main_4hearts_q1a3": "resetVariable/
         friendship {{ModId}} -5/
         speak {{ModId}} \"{{i18n:Events.4h.6_q1r3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         globalFade/
@@ -200,7 +222,7 @@
         message \"{{i18n:Events.4h.7_q1r3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         end",
 
-        "{{ModId}}_4hearts_ending": "resetVariable/
+        "{{ModId}}_events_Eleanor_SVE_main_4hearts_ending": "resetVariable/
         pause 1111/
         speak {{ModId}} \"{{i18n:Events.4h.7_q1r1/2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 111/
@@ -232,24 +254,7 @@
         end"
       }
     },
-/*
-    // 6hearts - ???
-    // Location: ???
-    // Trigger: ???
-    // Description: ???
-    {
-      "LogName": "Eleanor - event - 6hearts",
-      "Action": "EditData",
-      "Target": "Data/
-      Events/
-      Town",
-      "Entries": {
-        "{{ModId}}_6hearts/SawEvent {{ModId}}_4hearts/Friendship {{ModId}} 1500": "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
-        skippable/
-        end"
-      }
-    },
-*/
+
 
     // 7hearts - Check on Eleanor
     // Location: Forest
@@ -260,7 +265,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "{{ModId}}_7hearts/SawEvent {{ModId}}_4hearts/Friendship {{ModId}} 1750/Weather rainy":
+        "{{ModId}}_events_Eleanor_SVE_main_7hearts/SawEvent {{ModId}}_events_Eleanor_SVE_main_4hearts/Friendship {{ModId}} 1750/Weather rainy":
         "none/52 98/ farmer 35 97 1 {{ModId}} 52 98 2/
         skippable/
         addConversationTopic {{ModId}}.CT_7h 2/
@@ -288,21 +293,21 @@
         pause 555/
         emote farmer 40/
         pause 555/
-        quickQuestion {{i18n:Events.7h.3_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_7hearts_q1a1(break)switchEvent {{ModId}}_7hearts_q1a2",
+        quickQuestion {{i18n:Events.7h.3_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_events_Eleanor_SVE_main_7hearts_q1a1(break)switchEvent {{ModId}}_events_Eleanor_SVE_main_7hearts_q1a2",
 
-        "{{ModId}}_7hearts_q1a1": "resetVariable/
+        "{{ModId}}_events_Eleanor_SVE_main_7hearts_q1a1": "resetVariable/
         friendship {{ModId}} 100/
         pause 555/
         speak {{ModId}} \"{{i18n:Events.7h.4_q1r1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        switchEvent {{ModId}}_7hearts_ending",
+        switchEvent {{ModId}}_events_Eleanor_SVE_main_7hearts_ending",
 
-        "{{ModId}}_7hearts_q1a2": "resetVariable/
+        "{{ModId}}_events_Eleanor_SVE_main_7hearts_q1a2": "resetVariable/
         friendship {{ModId}} 10/
         pause 555/
         speak {{ModId}} \"{{i18n:Events.7h.4_q1r2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        switchEvent {{ModId}}_7hearts_ending",
+        switchEvent {{ModId}}_events_Eleanor_SVE_main_7hearts_ending",
 
-        "{{ModId}}_7hearts_ending": "resetVariable/
+        "{{ModId}}_events_Eleanor_SVE_main_7hearts_ending": "resetVariable/
         move farmer 4 0 2/
         pause 555/
         faceDirection {{ModId}} 2/
@@ -337,23 +342,6 @@
       }
     },
 
-    /*
-    // 8hearts - ?
-    // Location: West Forest (SVE), Wizard's Tower, Eleanor's home
-    // Trigger: Entering the West Forest (SVE).
-    // Description: 
-    {
-      "LogName": "Eleanor - event - 8hearts",
-      "Action": "EditData",
-      "Target": "Data/Events/Custom_ForestWest",
-      "Entries": {
-        "{{ModId}}_8hearts/SawEvent  {{ModId}}_7hearts/Friendship {{ModId}} 2000":
-
-      }
-    },
-
-*/
-
     // 10hearts - ???
     // Location: ???
     // Trigger: ???
@@ -363,7 +351,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Custom_ForestWest",
       "Entries": {
-        "{{ModId}}_10hearts/SawEvent {{ModId}}_7hearts/Friendship {{ModId}} 2500":
+        "{{ModId}}_events_Eleanor_SVE_main_10hearts/SawEvent {{ModId}}_events_Eleanor_SVE_main_7hearts/Friendship {{ModId}} 2500":
         "none/-1000 -1000/farmer 105 36 0 {{ModId}} 20 128 0/
         skippable/
         addConversationTopic {{ModId}}.CT_10h 2/
@@ -397,19 +385,19 @@
         faceDirection {{ModId}} 1/
         emote {{ModId}} 16/
         speak {{ModId}} \"{{i18n:Events.10h.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        quickQuestion {{i18n:Events.10h.2_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_10hearts_q1a1(break)switchEvent {{ModId}}_10hearts_q1a2",
+        quickQuestion {{i18n:Events.10h.2_q1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_events_Eleanor_SVE_main_10hearts_q1a1(break)switchEvent {{ModId}}_events_Eleanor_SVE_main_10hearts_q1a2",
 
-        "{{ModId}}_10hearts_q1a1": "resetVariable/
+        "{{ModId}}_10hearts_events_Eleanor_SVE_main_q1a1": "resetVariable/
         friendship {{ModId}} 25/
         speak {{ModId}} \"{{i18n:Events.10h.3_q1r1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        switchEvent {{ModId}}_10hearts_continue",
+        switchEvent {{ModId}}_events_Eleanor_SVE_main_10hearts_continue",
 
-        "{{ModId}}_10hearts_q1a2": "resetVariable/
+        "{{ModId}}_10hearts_events_Eleanor_SVE_main_q1a2": "resetVariable/
         friendship {{ModId}} 25/
         speak {{ModId}} \"{{i18n:Events.10h.3_q1r2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        switchEvent {{ModId}}_10hearts_continue",
+        switchEvent {{ModId}}_events_Eleanor_SVE_main_10hearts_continue",
         
-        "{{ModId}}_10hearts_continue": "resetVariable/
+        "{{ModId}}_events_Eleanor_SVE_main_10hearts_continue": "resetVariable/
         pause 1111/
         speak {{ModId}} \"{{i18n:Events.10h.4 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 555/
@@ -547,10 +535,9 @@
         emote farmer 56/
         pause 111/
         speak {{ModId}} \"{{i18n:Events.10h.52 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
-
-        pause 111/--quickQuestion {{i18n:Events.10h.53_q2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_10hearts_q2a1(break)switchEvent {{ModId}}_10hearts_q2a2/
-
+        pause 555/
+        emote farmer 56/--quickQuestion {{i18n:Events.10h.53_q2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_10hearts_q2a1(break)switchEvent {{ModId}}_10hearts_q2a2/
+        pause 555/
         speak {{ModId}} \"{{i18n:Events.10h.54_q2r1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         speak {{ModId}} \"{{i18n:Events.10h.55_q2r1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
@@ -600,7 +587,9 @@
         speak {{ModId}} \"{{i18n:Events.10h.77 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         speak {{ModId}} \"{{i18n:Events.10h.78 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        pause 1111/
+        pause 555/
+        emote farmer 56/
+        pause 555/
         speak {{ModId}} \"{{i18n:Events.10h.79 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         speak {{ModId}} \"{{i18n:Events.10h.80 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/

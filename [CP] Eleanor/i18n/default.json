@@ -73,6 +73,9 @@
   // Dispositions
   "DisplayName": "Eleanor",
 
+// TODO - add emotions
+
+
   // Dialogues.json
 
   // Daily dialogues
@@ -603,12 +606,12 @@
   "Events.10h.75": "Morning after that night, my parents sent me to my grandparents, pretty much far away from our village.#$b#They didn't say much, actually barely nothing, but I knew they knew I exactly knew.",
   "Events.10h.76": "That's all I remember about my original home, about my friends, my parents...",
   "Events.10h.77": "I always thought I knew what was going to happen next, but we all were wrong.#$b#And by this, {{DT_name}}, I finally go from what I remember to the scroll... ",
-  "Events.10h.78": "But before I continue, within the possibilities, is all good? It's a lot, I know, that's why I ask.",
+  "Events.10h.78": "But before I continue, within the possibilities, is everything all right? It's a lot, I know, that's why I ask.",
   "Events.10h.79": "Ok, glad to know. So let's slowly proceed to the scroll.",
   "Events.10h.80": "Nineteen years later, I got here, to study under {{DT_wizard_name}}. The time between, I never actually thought about it.",
   "Events.10h.81": "When I was at my grandparents, almost two weeks after I arrived, my illness went away as quickly as it came, and that day, we got a message - that my parents left to fight the danger, and no one ever saw them again.",
   "Events.10h.82": "I...#$b#...I was devastated when I was told so...#$b#...but somehow, deep down, I knew that this was not the end of the world, but instead, its beginning.",
-  "Events.10h.83": "Since then, I continued in my studies, keeping discovering more and more, and probably also hoping I'll find something about my past.#$b#And today, I did.",
+  "Events.10h.83": "Since then, I continued in my studies, kept discovering more and more, and probably also hoping I'll find something about my past.#$b#And today, I did.",
   "Events.10h.84": "As we opened the scroll, {{DT_name}}, we were sent to a void.#$b#Probably a time void, to be exact. I honestly have no clue - I've never read nor heard about something similar to this.",
   "Events.10h.85": "There were three different voices talking. First was my young me talking to me, to us.#$b#It was one of the messages I created for my future me. I...completely forgot about them.",
   "Events.10h.86": "Which was supposed to happen. These messages were special - they would appear when I need them the most.#$b#They are meant to motivate me, to help me, to tell me that now it might be bad, but that doesn't mean it will always stay that way.",

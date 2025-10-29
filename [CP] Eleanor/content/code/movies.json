@@ -3,6 +3,11 @@
 https://stardewvalleywiki.com/Modding:Movie_theater_data
 */
   "Changes": [
+// common
+
+// vanilla
+
+// SVE
     {
       "LogName": "Eleanor - movie tastes",
       "Action": "EditData",

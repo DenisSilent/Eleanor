@@ -1,9 +1,9 @@
-/*
+{
+  /*
 https://stardewvalleywiki.com/Modding:Mail_data
 */
-{
   "Changes": [
-    // triggering mails
+// common
     {
       "LogName": "Eleanor - mails - trigger",
       "Action": "EditData",
@@ -46,5 +46,8 @@ https://stardewvalleywiki.com/Modding:Mail_data
         "{{ModId}}_mail_HogwartsTrips": "{{i18n:Mail.HogwartsTrips |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       }
     }
+// vanilla
+
+// SVE
   ]
 }

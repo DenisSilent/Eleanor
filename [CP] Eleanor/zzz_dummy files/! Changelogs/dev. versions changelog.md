@@ -14,6 +14,21 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.37 (29.10.2025)
+
+* Multi-device development possibility tests (28.9.)
+* Fixed bug when seening vanilla event with ID `112` did an instant teleport to her home map (28.9.)
+* Commented out the 14h event variants again - not ready yet + needs more time --> sacrificed (again!) so the beta version can be released much sooner (28.9.)
+* folder and files reorganization (28.10.)
+* event IDs changed --> multiple events unless prevented (28.10.)
+  * events repeating if seen will be prevented soon
+* code structure changes (28.10.)
+  * will continue in future patches
+* first really slow preparations for non-SVE release X will be delayed until future notice (28.10.)
+* IRL not giving me enough time to work on the mod --> slowed down the development speed to almost zero
+
+---
+
 ## version 1.0.0-alpha.36 (1.9.2025)
 
 * Multi-device development possibility tests

@@ -39,25 +39,24 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
       "Description": "=! The wizard furniture is working only if you have the Arbitrary Tilesheet Access mod installed! = This setting lets you choose if Eleanor's home will have normal or wizard-like furniture. Default setting: default."
     },
 
-///*
+/*
     "14hearts-variants": {
       "AllowValues": "short, long",
       "Default": "short", // short due to multiplayer support, I worry that long is too long for 1 SV multiplayer day
       "Section": "Optional content for Eleanor",
       "Description": "This setting lets you choose the variant of Eleanor's 14hearts event. You can choose between short and long versions, which contain of 5 automatically triggered events. = The short version has a fully different outcome than the long one! = Default setting: long."
     },
-//*/
-
+*/
+/*
     "14hearts-commented": {
       "AllowValues": "true, false",
       "Default": "false",
       "Section": "Optional content for Eleanor",
       "Description": "This setting lets you choose if Eleanor's 14hearts event will include comments or not. Default setting: false."
     },
-
+*/
     // Visual side of Eleanor
 
-    //commented out because of the missing art - working on it with hezjena2023
     "Outfits": {
       "AllowValues": "one look only (ORG), one look only, vanilla, seasonal",
       "Default": "vanilla",
@@ -86,6 +85,19 @@ commented out because of the missing 256X256 portraits code
 
   "DynamicTokens": [
     // CODE DT'S
+    // vanilla/SVE compatibility
+    {
+      "Name": "DT_Vanilla/SVE",
+      "Value": "vanilla"
+    },
+    {
+      "Name": "DT_Vanilla/SVE",
+      "Value": "SVE",
+      "When":{
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+
     // Weekdays - edited code from https://stardewmodding.wiki.gg/wiki/Npc_template#Content.json
     {
       "Name": "DT_weekday",
@@ -845,7 +857,7 @@ commented out because of the missing 256X256 portraits code
       "LogName": "{{ModId}} - blank file load command",
       "Action": "Load",
       "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor, Characters/schedules/StrojvedouciDenis.Eleanor",
-      "FromFile": "assets/zzz_blankfile.json",
+      "FromFile": "content/code/zzz_blankfile.json",
       "When": {
         "On/off": "on, safe mode"
       }
@@ -854,7 +866,7 @@ commented out because of the missing 256X256 portraits code
     {
       "LogName": "{{ModId}} - addons load command",
       "Action": "Include",
-      "FromFile": "assets/z_addons.json",
+      "FromFile": "content/code/z_addons.json",
       "When": {
         "On/off": "on, safe mode"
       }
@@ -864,7 +876,7 @@ commented out because of the missing 256X256 portraits code
     {
       "LogName": "{{ModId}} - dialogues load command",
       "Action": "Include",
-      "FromFile": "assets/dialogues.json",
+      "FromFile": "content/code/{{DT_Vanilla/SVE}}/dialogues.json",
       "When": {
         "On/off": "on, safe mode"
       }
@@ -874,7 +886,7 @@ commented out because of the missing 256X256 portraits code
     {
       "LogName": "{{ModId}} - events load command",
       "Action": "Include",
-      "FromFile": "assets/events.json",
+      "FromFile": "content/code/events.json",
       "When": {
         "On/off": "on, safe mode"
       }
@@ -884,7 +896,7 @@ commented out because of the missing 256X256 portraits code
     {
       "LogName": "{{ModId}} - festivals load command",
       "Action": "Include",
-      "FromFile": "assets/festivals.json",
+      "FromFile": "content/code/festivals.json",
       "When": {
         "On/off": "on, safe mode",
         "Festivals": "true"
@@ -895,7 +907,7 @@ commented out because of the missing 256X256 portraits code
     {
       "LogName": "{{ModId}} - gifts load command",
       "Action": "Include",
-      "FromFile": "assets/gifts.json",
+      "FromFile": "content/code/gifts.json",
       "When": {
         "On/off": "on, safe mode"
       }
@@ -905,7 +917,7 @@ commented out because of the missing 256X256 portraits code
     {
       "LogName": "{{ModId}} - mails load command",
       "Action": "Include",
-      "FromFile": "assets/mails.json",
+      "FromFile": "content/code/mails.json",
       "When": {
         "On/off": "on, safe mode"
       }
@@ -915,7 +927,7 @@ commented out because of the missing 256X256 portraits code
     {
       "LogName": "{{ModId}} - maps load command",
       "Action": "Include",
-      "FromFile": "assets/maps.json",
+      "FromFile": "content/code/maps.json",
       "When": {
         "On/off": "on, safe mode"
       }
@@ -925,7 +937,7 @@ commented out because of the missing 256X256 portraits code
     {
       "LogName": "{{ModId}} - movies load command",
       "Action": "Include",
-      "FromFile": "assets/movies.json",
+      "FromFile": "content/code/movies.json",
       "When": {
         "On/off": "on, safe mode"
       }
@@ -935,7 +947,7 @@ commented out because of the missing 256X256 portraits code
     {
       "LogName": "{{ModId}} - graphics load command",
       "Action": "Include",
-      "FromFile": "assets/NPCgraphics.json",
+      "FromFile": "content/code/NPCgraphics.json",
       "When": {
         "On/off": "on, safe mode"
       }
@@ -945,7 +957,7 @@ commented out because of the missing 256X256 portraits code
     {
       "LogName": "{{ModId}} - schedule load command",
       "Action": "Include",
-      "FromFile": "assets/schedules.json",
+      "FromFile": "content/code/schedules.json",
       "When": {
         "On/off": "on, safe mode"
       }
@@ -955,7 +967,7 @@ commented out because of the missing 256X256 portraits code
     {
       "LogName": "{{ModId}} - secrets load command",
       "Action": "Include",
-      "FromFile": "assets/z_secrets.json",
+      "FromFile": "content/code/z_secrets.json",
       "When": {
         "On/off": "on, safe mode"
       }

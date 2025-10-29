@@ -3,6 +3,7 @@
 https://stardewvalleywiki.com/Modding:Gift_taste_data
 */
   "Changes": [
+// common
     {
       "LogName": "Eleanor - gifts",
       "Action": "EditData",
@@ -101,5 +102,9 @@ https://stardewvalleywiki.com/Modding:Gift_taste_data
         "Hearts:StrojvedouciDenis.Eleanor": "{{Range:0, 7}}"
       }
     }
+
+// vanilla
+
+// SVE
   ]
 }

@@ -12,7 +12,12 @@ fal: 16y;27y
 win: 8y;25y
 */
   "Changes": [
-    // Flower Dance //
+// common
+
+// vanilla
+
+// SVE
+      // Flower Dance //
     {
       "LogName": "Eleanor - spr24 festivals",
       "Action": "EditData",
@@ -49,7 +54,7 @@ win: 8y;25y
       ]
     },
 
-    // Dance of the Moonlight Jellies //
+      // Dance of the Moonlight Jellies //
     {
       "LogName": "Eleanor - sum28 festivals",
       "Action": "EditData",
@@ -86,7 +91,7 @@ win: 8y;25y
       ]
     },
 
-    // Stardew Valley Fair //
+      // Stardew Valley Fair //
     {
       "LogName": "Eleanor - fal16 festivals",
       "Action": "EditData",
@@ -123,7 +128,7 @@ win: 8y;25y
       ]
     },
 
-    // Spirit's Eve //
+      // Spirit's Eve //
     {
       "LogName": "Eleanor - fal27 festivals",
       "Action": "EditData",
@@ -160,7 +165,7 @@ win: 8y;25y
       ]
     },
 
-    // Ice Festival //
+      // Ice Festival //
     {
       "LogName": "Eleanor - win8 festivals",
       "Action": "EditData",
@@ -197,7 +202,7 @@ win: 8y;25y
       ]
     },
 
-    // Feast of the Winter Star //
+      // Feast of the Winter Star //
     {
       "LogName": "Eleanor - win25 festivals",
       "Action": "EditData",
