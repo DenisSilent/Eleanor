@@ -4,10 +4,6 @@ https://stardewvalleywiki.com/Modding:Movie_theater_data
 */
   "Changes": [
 // common
-
-// vanilla
-
-// SVE
     {
       "LogName": "Eleanor - movie tastes",
       "Action": "EditData",
@@ -355,5 +351,9 @@ https://stardewvalleywiki.com/Modding:Movie_theater_data
         "MovieInvite_Invited": "{{i18n:Dialogues.MovieInvite_Invited |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       }
     }
+
+// vanilla
+
+// SVE
   ]
 }

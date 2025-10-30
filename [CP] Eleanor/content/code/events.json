@@ -45,27 +45,12 @@
       "Action": "EditData",
       "Target": "Data/Events/farm",
       "Entries": {
-        "{{ModId}}_Intro/SawEvent 112":
-        "none/-1000 -1000/farmer 2 2 2 {{ModId}} 3 3 0/\n        skippable/\n        addConversationTopic {{ModId}}.CT_Intro 2/\n        pause 1111/\n        speak {{ModId}} \"{{i18n:Events.Intro.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/ \n        pause 555/\n        emote farmer 40/\n        pause 555/\n        emote farmer 8/\n        pause 555/\n        speak {{ModId}} \"{{i18n:Events.Intro.1 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/\n        pause 1111/\n        speak {{ModId}} \"{{i18n:Events.Intro.2 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/\n        pause 1111/\n        speak {{ModId}} \"{{i18n:Events.Intro.3 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/\n        pause 1111/\n        speak {{ModId}} \"{{i18n:Events.Intro.4|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/\n        pause 2222/\n        end"\n      }\n    },
-
-// vanilla
-
-// SVE
-    // 0hearts - Eleanor's introduction
-    // Location: your farm
-    // Trigger: Entering your farm after seeing introduction event with Mr. Rasmodius.
-    // Description: Eleanor introduces herself to the player, greeting them politely and explaining who she is and that she knows about you and Junimos.
-    {
-      "LogName": "Eleanor - event - 0hearts - Introduction",
-      "Action": "EditData",
-      "Target": "Data/Events/farm",
-      "Entries": {
-        "{{ModId}}_Intro/SawEvent 112":
+        "{{ModId}}_events_Eleanor_common_main_Intro/SawEvent 112":
         "none/-1000 -1000/farmer 2 2 2 {{ModId}} 3 3 0/
         skippable/
         addConversationTopic {{ModId}}.CT_Intro 2/
         pause 1111/
-        speak {{ModId}} \"{{i18n:Events.Intro.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/ 
+        speak {{ModId}} \"{{i18n:Events.Intro.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"
         pause 555/
         emote farmer 40/
         pause 555/
@@ -84,8 +69,6 @@
     },
 
 // vanilla
-
-
 
 // SVE
     // main (heart/story) events
@@ -1641,10 +1624,10 @@
       }
     },
 
-// Part 6 - Thank you from mod author
-// Location: your farmhouse
-// Trigger: Immediatly after the happy end (p5).
-// Description: Thank you!
+    // Part 6 - Thank you from mod author
+    // Location: your farmhouse
+    // Trigger: Immediatly after the happy end (p5).
+    // Description: Thank you!
     {
       "LogName": "Eleanor - 14hearts event (p6) - Thank you from mod author",
       "Action": "EditData",
@@ -1663,7 +1646,7 @@
 
 
 /*
-// Marriage testing event
+    // Marriage testing event
     {
       "LogName": "Eleanor - custom wedding",
       "Action": "EditData",
@@ -1681,16 +1664,16 @@
 */
 // Addon events
 
-// Hogwarts gone - y1
-// Location: your farm
-// Trigger: Entering your farm.
-// Description: Mr. Rasmodius will inform player about .Eleanor's trip to Hogwarts.
+    // Hogwarts gone - y1
+    // Location: your farm
+    // Trigger: Entering your farm.
+    // Description: Mr. Rasmodius will inform player about .Eleanor's trip to Hogwarts.
     {
       "LogName": "Eleanor - event - Hogwarts gone y1",
       "Action": "EditData",
       "Target": "Data/Events/farm",
       "Entries": {
-        "{{ModId}}_Hog_gone_y1/SawEvent {{ModId}}_Intro/DaysPlayed 30":
+        "{{ModId}}_events_Eleanor_common_add-ons_Hog_gone_y1/SawEvent {{ModId}}_Intro/DaysPlayed 30":
         "none/-1000 -1000/farmer 2 2 2 Wizard 3 3 0/
         skippable/
         addConversationTopic {{ModId}}.CT_Hog_gone 6/

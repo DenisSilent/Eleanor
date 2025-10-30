@@ -14,17 +14,28 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.38 (30.10.2025)
+
+* Multi-device development possibility tests
+* Hotfixed events not loading from broken code in alpha.37
+* Created migration code for events --> should prevent new event showcase if already seen in previous version
+* Multiple code changes --> see commit log for more info
+  * Add migration for addons
+* Fixed manifest version again (why does it keep *not* changing itself automatically... 😭)
+
+---
+
 ## version 1.0.0-alpha.37 (29.10.2025)
 
 * Multi-device development possibility tests (28.9.)
 * Fixed bug when seening vanilla event with ID `112` did an instant teleport to her home map (28.9.)
 * Commented out the 14h event variants again - not ready yet + needs more time --> sacrificed (again!) so the beta version can be released much sooner (28.9.)
-* folder and files reorganization (28.10.)
-* event IDs changed --> multiple events unless prevented (28.10.)
-  * events repeating if seen will be prevented soon
-* code structure changes (28.10.)
-  * will continue in future patches
-* first really slow preparations for non-SVE release X will be delayed until future notice (28.10.)
+* Folder and files reorganization (28.10.)
+* Event IDs changed --> multiple events unless prevented (28.10.)
+  * Events repeating if seen will be prevented soon
+* Code structure changes (28.10.)
+  * Will continue in future patches
+* First really slow preparations for non-SVE release X will be delayed until future notice (28.10.)
 * IRL not giving me enough time to work on the mod --> slowed down the development speed to almost zero
 
 ---

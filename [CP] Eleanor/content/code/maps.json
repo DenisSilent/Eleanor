@@ -45,7 +45,6 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
 // vanilla
 
 // SVE
-
     // add location data
     {
       "LogName": "{{ModId}} - maps - Eleanor's home location data",
