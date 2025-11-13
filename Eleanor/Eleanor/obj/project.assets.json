@@ -42,7 +42,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.0-alpha.38",
+    "version": "1.0.0-alpha.39",
     "restore": {
       "projectUniqueName": "C:\\SteamLibrary\\steamapps\\common\\Stardew Valley\\Mods - dev\\[NPC] Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj",
       "projectName": "Eleanor",
@@ -63,6 +63,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

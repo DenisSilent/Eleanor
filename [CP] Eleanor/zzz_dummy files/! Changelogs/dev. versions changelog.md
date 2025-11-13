@@ -14,6 +14,15 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.39 (13.11.2025)
+
+* Multi-device development possibility tests
+* Minor edits in C# mod part
+* Decommented and fasten up 14 hearts event
+* Migrations for addons not needed?
+
+---
+
 ## version 1.0.0-alpha.38 (30.10.2025)
 
 * Multi-device development possibility tests

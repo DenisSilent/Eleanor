@@ -36,9 +36,9 @@ namespace Eleanor
                 this.Monitor.Log("! WARNING !", LogLevel.Error);
                 this.Monitor.Log(" ", LogLevel.Error);
                 this.Monitor.Log("The CP part `[CP] Eleanor` of the [NPC] Eleanor is installed incorrectly.", LogLevel.Error);
-                this.Monitor.Log("Please check the errors section above to see what is wrong.", LogLevel.Error);
+                this.Monitor.Log("Please check the errors section above (or below...) to see what is wrong.", LogLevel.Error);
                 this.Monitor.Log("We recommend deleting the mod and installing it again.", LogLevel.Error);
-                this.Monitor.Log("Don't hesitate to reach out for support!", LogLevel.Error);
+                this.Monitor.Log("Don't hesitate to reach out for support on the mod's Nexus page (mod number ID: 31663)!", LogLevel.Error);
                 this.Monitor.Log(" ", LogLevel.Error);
                 this.Monitor.Log("! WARNING !", LogLevel.Error);
                 this.Monitor.Log(" ", LogLevel.Error);

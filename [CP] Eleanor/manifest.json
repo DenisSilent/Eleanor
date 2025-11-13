@@ -11,7 +11,7 @@
 
   // Current Version
 
-  "Version": "1.0.0-alpha.38",
+  "Version": "1.0.0-alpha.39",
 
   // Description
 
@@ -45,7 +45,7 @@
     },
     {
       "UniqueID": "FlashShifter.StardewValleyExpandedCP", // Stardew Valley Expanded (a.k.a. SVE)
-      "IsRequired": true,  // TODO - change to false
+      "IsRequired": true,  // TODO - change to false aka drop the dependency for SVE
       "MinimumVersion": "1.14.25"
     },
     {

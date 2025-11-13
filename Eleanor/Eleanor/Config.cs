@@ -2,7 +2,7 @@
 
 namespace Eleanor
 {
-    /// <summary>The mod entry point.</summary>
+    /// <summary>The mod entry point; handels internal ON/OFF config.</summary>
     internal sealed class Config_file : Mod
     {
         private ModConfig? Config;
