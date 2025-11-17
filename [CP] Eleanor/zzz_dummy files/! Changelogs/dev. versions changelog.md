@@ -6,11 +6,21 @@ If you want to use any of the unreleased versions, please be aware that they are
 Instructions for downloading the unreleased versions:
 
 1. Go to `%APPDATA%\StardewValley\` and make a copy of the `Saves` folder, in case anything would go wrong.
-2. Go to the [GitHub repo with correct branch](https://github.com/DenisSilent/Eleanor/tree/development_UNSTABLE!).
-3. Click on the green button "Code" and select "Download ZIP"
+2. Go to the [development branch of the mod's GitHub repo](https://github.com/DenisSilent/Eleanor/tree/development_UNSTABLE!).
+3. Click on the green button "Code" and select "Download ZIP" (note: this will also download the mod's source code and its old versions (in releases folder), so the ZIP file will be big).
 4. Unzip the downloaded file and copy the extracted `[NPC] Eleanor` folder to your `.../Stardew Valley/Mods` folder
 5. Test the mod in your game and report any bugs you find to the [GitHub issues page](https://github.com/DenisSilent/Eleanor/issues), please include the version number of the mod you used and a description of the bug, if possible also a screenshot or a video of the bug happening in your game.
 6. Enjoy the mod (and its bugs)!
+
+---
+
+## version 1.0.0-alpha.40 (17.11.2025)
+
+* Multi-device development possibility tests
+* I18n-ized C# mod part
+* Added 2, 4 and 7 hearts event variant for vanilla - big step forward to SVE dependency drop
+* Added more festival and marriage dialogues
+* Added neccesary migrations for addons
 
 ---
 

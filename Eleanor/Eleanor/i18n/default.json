@@ -1,0 +1,25 @@
+{
+
+  // ! Warning - contains spoilers!
+  // ! Translators don't have to translate commented parts (those with "//" or "/* ... */"), it's better to leave them as they are!
+
+ "$schema": "https://smapi.io/schemas/i18n.json", // The schema for this file (don't change it!)
+
+  // Fallback message
+  "key_not_found": "The proper dialogue key was not found! Please, take a screenshot of this, then your SMAPI log and start a bug report, containing what you did to achieve this!",
+
+ // Install checker.cs
+  // disabled
+  "installer.smapi-disabled": "The SMAPI part of the [NPC] Eleanor mod is disabled in the config file. This message (you shouldn't even see normally, if not using Debug SMAPI version or if you're not looking at SMAPI log with Trace messages enabled) is the only thing that the SMAPI part does right now.",
+
+  // CP part not installed 
+  "installer.warning": "! WARNING !",
+  "installer.cp-not-installed": "The CP part `[CP] Eleanor` of the [NPC] Eleanor is installed incorrectly.",
+  "installer.check-errors": "Please check the errors section above (or below...) to see what is wrong.",
+  "installer.recommend-reinstall": "We recommend deleting the mod and installing it again.",
+  "installer.support-link": "Don't hesitate to reach out for support on the mod's Nexus page (mod number ID: 31663)!",
+
+  // success message
+  "installer.success": "The mod [NPC] Eleanor and all of its components have been successfully launched."
+  
+}

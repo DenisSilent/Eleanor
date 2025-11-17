@@ -12,7 +12,7 @@
           "Trigger": "Spiderbuttons.BETAS_BookRead",
           "Condition": "ITEM_ID Target (O)79",
           "Actions": [
-            "AddConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_SecretNote"
+            "AddConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_SecretNote 3"
           ]
         },
         "{{ModId}}_addons_Eleanor_BETAS_BookRead_LostBook": {

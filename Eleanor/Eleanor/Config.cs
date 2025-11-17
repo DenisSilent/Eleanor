@@ -9,7 +9,7 @@ namespace Eleanor
 
         public override void Entry(IModHelper helper)
         {
-            // Load the config
+             // Load the config
             this.Config = this.Helper.ReadConfig<ModConfig>();
 
             // Initialize the install checker

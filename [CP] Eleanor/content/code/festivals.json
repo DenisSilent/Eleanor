@@ -13,7 +13,6 @@ win: 8y;25y
 */
   "Changes": [
 // common
-/*
     {
       "LogName": "Eleanor - festival add-on dialogues",
       "Action": "EditData",
@@ -39,8 +38,7 @@ win: 8y;25y
         "WinterStar_GiveGift_After_Spouse": "{{i18n:Dialogues.WinterStar_GiveGift_After_Spouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
         "WinterStar_GiveGift_After": "{{i18n:Dialogues.WinterStar_GiveGift_After |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
       }
-    }
-      */
+    },
 
 // vanilla
 

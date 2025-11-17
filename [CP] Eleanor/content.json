@@ -22,14 +22,14 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
       "AllowValues": "true, false",
       "Default": "true",
       "Section": "Optional content for Eleanor",
-      "Description": "This setting activates Eleanor at some vanilla festivals. As of 1.0.0-alpha.39 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true."
+      "Description": "This setting activates Eleanor at some vanilla festivals. As of 1.0.0-alpha.40 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true."
     },
 
     "Marriage": {
       "AllowValues": "true, false",
       "Default": "false",
       "Section": "Optional content for Eleanor",
-      "Description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.39, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! ="
+      "Description": "! PRE-ALPHA VERSION --> = U = N = U = S = A = B = L = E =  - WILL RESULT IN GAME (BREAKING?) ERRORS ! This setting lets you choose if Eleanor can be married. As of 1.0.0-alpha.40, it should include A LOT of ERRORS! Default setting: false. = Turn on at your own risk! ="
     },
 
     "Map-furniture": {
@@ -61,7 +61,7 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
       "AllowValues": "one look only (ORG), one look only, vanilla, seasonal",
       "Default": "vanilla",
       "Section": "Visual side of Eleanor",
-      "Description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.39, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look."
+      "Description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-alpha.40, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look."
     },
 
     /*
@@ -79,7 +79,7 @@ commented out because of the missing 256X256 portraits code
       "AllowValues": "on, safe mode, off",
       "Default": "on",
       "Section": "Experimental - DoNotChange",
-      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.39, it is partly (not?) functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on."
+      "Description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-alpha.40, it is partly (not?) functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on."
     }
   },
 
@@ -718,8 +718,8 @@ commented out because of the missing 256X256 portraits code
                }
                    */
            },
-          "SpouseFloors": "",
-          "SpouseWallpapers": "", 
+          // "SpouseFloors": "",
+          // "SpouseWallpapers": "", 
           "IntroductionsQuest": "true",
           "ItemDeliveryQuests": "true",
           "PerfectionScore": "true",
@@ -732,8 +732,8 @@ commented out because of the missing 256X256 portraits code
 
           // Festivals
           "FlowerDanceCanDance": "false", // not supported... yet
-          "WinterStarParticipant": "false", // not supported... yet ?
-          //"WinterStarGifts": [],
+          "WinterStarParticipant": "true", // supported?
+          // "WinterStarGifts": [],
 
           // Spawn Rules
           "UnlockConditions": "true",
@@ -753,7 +753,7 @@ commented out because of the missing 256X256 portraits code
 
           // Appearance & Sprite
           /*
-           These will be used in NPCgraphics.json file someday (no idea when)
+           This is used in NPCgraphics.json
 
 // keeping default
     "TextureName": "StrojvedouciDenis.Eleanor",
@@ -813,19 +813,21 @@ commented out because of the missing 256X256 portraits code
           "ShakePortraits": [], // I honestly can't imagine what this does, it's empty by default, so 100% safe to skip
 */
           "KissSpriteIndex": "28",
-          "KissSpriteFacingRight": false, // huh?
+          "KissSpriteFacingRight": false, // needs proper testing; might be bugged (seen it fixed in 1.6.16 I think)
           "HiddenProfileEmoteSound": "achievement", // https://stardewvalleywiki.com/Secrets#Gift_Log
           "HiddenProfileEmoteDuration": "5000" // https://stardewvalleywiki.com/Secrets#Gift_Log
           /*
     "HiddenProfileEmoteStartFrame": "", // https://stardewvalleywiki.com/Secrets#Gift_Log
     "HiddenProfileEmoteFrameCount": "", // https://stardewvalleywiki.com/Secrets#Gift_Log
     "HiddenProfileEmoteFrameDuration": "", // https://stardewvalleywiki.com/Secrets#Gift_Log
-*/
+        */
 
           // Advanced
-          // "CustomFields": "", // what is this? I don't know, so let's skip it
-          // "FormerCharacterNames": ["Eleanor"] //could have been used as a callback for older name, but as I changed internal name before 0.7.0, it's not needed anymore, so commented out for compatibility
-          // "FestivalVanillaActorIndex": ""
+          /*
+          "CustomFields": "", // what is this? I don't know, so let's skip it
+          "FormerCharacterNames": ["Eleanor"] //could have been used as a callback for older name, but as I changed internal name before 0.7.0, it's not needed anymore, so commented out for compatibility
+          "FestivalVanillaActorIndex": ""
+          */
         }
       }
     },
@@ -975,16 +977,56 @@ commented out because of the missing 256X256 portraits code
     },
 
 // Migrations //
-{
+    {
     "LogName": "{{ModId}} - migrations command",
     "Action": "EditData",
     "Target": "Data/TriggerActions",
     "Entries": {
-        "{{ModId}}_1.0.0_migrations_events": {
-            "Id": "{{ModId}}_1.0.0_migrations_events",
+        "{{ModId}}_mod-version-1.0.0_migrations_events": {
+            "Id": "{{ModId}}_mod-version-1.0.0_migrations_events",
             "Trigger": "DayStarted",
             "Actions": [
                 "Pathoschild.ContentPatcher_MigrateIds Events {{ModId}}_Intro {{ModId}}_events_Eleanor_common_main_Intro {{ModId}}_2hearts {{ModId}}_events_Eleanor_SVE_main_2hearts {{ModId}}_2hearts_q1a1 {{ModId}}_events_Eleanor_SVE_main_2hearts_q1a1 {{ModId}}_2hearts_q1a2 {{ModId}}_events_Eleanor_SVE_main_2hearts_q1a2 {{ModId}}_4hearts {{ModId}}_events_Eleanor_SVE_main_4hearts {{ModId}}_4hearts_q1a1 {{ModId}}_events_Eleanor_SVE_main_4hearts_q1a1 {{ModId}}_4hearts_q1a2 {{ModId}}_events_Eleanor_SVE_main_4hearts_q1a2 {{ModId}}_4hearts_q1a3 {{ModId}}_events_Eleanor_SVE_main_4hearts_q1a3 {{ModId}}_4hearts_ending {{ModId}}_events_Eleanor_SVE_main_4hearts_ending {{ModId}}_7hearts {{ModId}}_events_Eleanor_SVE_main_7hearts {{ModId}}_7hearts_q1a1 {{ModId}}_events_Eleanor_SVE_main_7hearts_q1a1 {{ModId}}_7hearts_q1a2 {{ModId}}_events_Eleanor_SVE_main_7hearts_q1a2  {{ModId}}_7hearts_ending {{ModId}}_events_Eleanor_SVE_main_7hearts_ending {{ModId}}_10hearts {{ModId}}_events_Eleanor_SVE_main_10hearts {{ModId}}_10hearts_q1a1 {{ModId}}_events_Eleanor_SVE_main_10hearts_q1a1 {{ModId}}_10hearts_q1a2 {{ModId}}_events_Eleanor_SVE_main_10hearts_q1a2 {{ModId}}_10hearts_continue {{ModId}}_events_Eleanor_SVE_main_10hearts_continue"
+            ],
+            "HostOnly": true // left only because it's needed (see https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/trigger-actions.md)
+        },
+        "{{ModId}}_mod-version-1.0.0_migrations_addons": {
+            "Id": "{{ModId}}_mod-version-1.0.0_migrations_addons",
+            "Trigger": "DayStarted",
+            "Actions": [
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_SecretNote",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_LostBook",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_StoneBase",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_ArtifactSpot",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_JournalScrap",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_Artifact Spot",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_BookOfStars",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_StardewValleyAlmanac",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_WoodcuttersWeekly",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_BaitAndBobber",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_MiningMonthly",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_CombatQuarterly",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_TheAlleywayBuffet",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_TheArto",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_DwarvishSafetyManual",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_JewelsOfTheSea",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_RaccoonJournal",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_WoodysSecret",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_JackBeNimble",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_Friendship101",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_MonsterCompendium",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_WayoftheWindPt1",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_MappingCaveSystems",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_PriceCatalogue",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_QueenOfSauceCookbook",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_TheDiamondHunter",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_BookOfMysteries",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_AnimalCatalogue",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_WayoftheWindPt2",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_GoldenAnimalCracker",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_TreasureAppraisalGuide",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_HorseTheBook",
+                "RemoveConversationTopic {{ModId}}_addons_Eleanor_BETAS_BookRead_OlSlitherlegs"
             ],
             "HostOnly": true // left only because it's needed (see https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/trigger-actions.md)
         }
