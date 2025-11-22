@@ -14,6 +14,15 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.41 (22.11.2025)
+
+* Multi-device development possibility tests
+* Added GMCM support (with i18n support) for C# mod part
+* Fixed C# mod part not having i18n
+* Added more portrait changes in dialogues
+
+---
+
 ## version 1.0.0-alpha.40 (17.11.2025)
 
 * Multi-device development possibility tests
@@ -68,6 +77,7 @@ Instructions for downloading the unreleased versions:
 * Preparation for 1.0.0 full version - see that new dynamic token
 * Removed the 1 year of development secret event
 * Fixed (probably fatal) error when marrying any other NPC (than unmariable Eleanor)
+  * AFAIK this error was introduced somewhere in alpha versions, so it should not be hopefully present in official releases
 
 ---
 

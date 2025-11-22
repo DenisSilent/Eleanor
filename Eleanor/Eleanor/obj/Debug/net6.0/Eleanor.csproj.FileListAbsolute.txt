@@ -26,3 +26,4 @@ c:\SteamLibrary\steamapps\common\Stardew Valley\Mods - dev\[NPC] Eleanor\Eleanor
 c:\SteamLibrary\steamapps\common\Stardew Valley\Mods - dev\[NPC] Eleanor\Eleanor\Eleanor\bin\Debug\net6.0\Eleanor.deps.json
 c:\SteamLibrary\steamapps\common\Stardew Valley\Mods - dev\[NPC] Eleanor\Eleanor\Eleanor\bin\Debug\net6.0\Eleanor.dll
 c:\SteamLibrary\steamapps\common\Stardew Valley\Mods - dev\[NPC] Eleanor\Eleanor\Eleanor\obj\Debug\net6.0\Eleanor.dll
+c:\SteamLibrary\steamapps\common\Stardew Valley\Mods - dev\[NPC] Eleanor\Eleanor\Eleanor\bin\Debug\net6.0\i18n\default.json
