@@ -77,7 +77,10 @@ win: 8y;25y
           "Value": "StrojvedouciDenis.Eleanor 3 23 1",
           "Delimiter": "/"
         }
-      ]
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
     },
 
       // Dance of the Moonlight Jellies //
@@ -114,7 +117,10 @@ win: 8y;25y
           "Value": "StrojvedouciDenis.Eleanor 11 33 3",
           "Delimiter": "/"
         }
-      ]
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
     },
 
       // Stardew Valley Fair //
@@ -151,7 +157,10 @@ win: 8y;25y
           "Value": "StrojvedouciDenis.Eleanor 47 88 0",
           "Delimiter": "/"
         }
-      ]
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
     },
 
       // Spirit's Eve //
@@ -188,7 +197,10 @@ win: 8y;25y
           "Value": "StrojvedouciDenis.Eleanor 12 57 1",
           "Delimiter": "/"
         }
-      ]
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
     },
 
       // Ice Festival //
@@ -225,7 +237,10 @@ win: 8y;25y
           "Value": "StrojvedouciDenis.Eleanor 30 12 1",
           "Delimiter": "/"
         }
-      ]
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
     },
 
       // Feast of the Winter Star //
@@ -262,7 +277,10 @@ win: 8y;25y
           "Value": "StrojvedouciDenis.Eleanor 14 64 3",
           "Delimiter": "/"
         }
-      ]
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
     }
   ]
 }

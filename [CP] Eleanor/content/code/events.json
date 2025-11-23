@@ -67,6 +67,23 @@
         end"
       }
     },
+    
+/*
+    // Marriage testing event
+    {
+      "LogName": "Eleanor - custom wedding",
+      "Action": "EditData",
+      "Target": "Data/Weddings",
+      "Entries": {
+        "EventScript": {
+              "default": "wedding/27 60/farmer 67 41 1 {{ModId}} 70 41 3 Wizard 68 39 2 Camila 69 39 2 Abigail 70 44 0 Lewis 67 44 0 Linus 66 44 0 Morgan 64 41 1 Jadu /
+              speak {{ModId}} \"Blabla Eleanor custom wedding\"/
+              pause 1111/
+              end wedding"
+          }
+      },
+    },
+*/
 
 // vanilla 
     // 2hearts - Eleanor's nature admiring
@@ -126,6 +143,9 @@
         pause 1500/
         speak {{ModId}} \"{{i18n:Events.2h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         end"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
       }
     },
 
@@ -216,6 +236,9 @@
         pause 111/
         emote farmer 56/
         end"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
       }
     },
 
@@ -303,6 +326,9 @@
         pause 555/
         message \"{{i18n:Events.7h.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         end"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
       }
     },
 
@@ -604,6 +630,9 @@
         speak {{ModId}} \"{{i18n:Events.10h.100 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 2222/
         end invisible {{ModId}}"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
       }
     },
 */
@@ -668,6 +697,9 @@
         pause 1500/
         speak {{ModId}} \"{{i18n:Events.2h.5 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         end"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
       }
     },
 
@@ -773,6 +805,9 @@
         pause 111/
         emote farmer 56/
         end"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
       }
     },
 
@@ -860,6 +895,9 @@
         pause 555/
         message \"{{i18n:Events.7h.12 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         end"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
       }
     },
 
@@ -1160,6 +1198,9 @@
         speak {{ModId}} \"{{i18n:Events.10h.100 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 2222/
         end invisible {{ModId}}"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
       }
     },
     /*
@@ -1268,7 +1309,11 @@
         pause 300/ -- Fade out code end/
         speak {{ModId}} \"{{i18n:Events.10h.100 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 2222/
-        end",
+        end"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      },
 
         "{{ModId}}_10hearts_q2a2": "resetVariable/
         friendship {{ModId}} -25/
@@ -1355,6 +1400,10 @@
         speak {{ModId}} \"{{i18n:Events.14h-short_SVE.16|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 5555/
         end"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
       }
     },
 */
@@ -1374,6 +1423,10 @@
         "none/-1000 -1000/farmer 0 0 0 {{ModId}} 1 1 0/
         skippable/
         end"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
       }
     },
 */
@@ -1451,6 +1504,7 @@
         end"
       },
       "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
         "HasMod |contains=HogwartsET.CP.Hogwarts": false,
         "14hearts-variants": "short"
       }
@@ -1516,6 +1570,7 @@
         end newDay"
       },
       "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
         "HasMod |contains=HogwartsET.CP.Hogwarts": true,
         "14hearts-variants": "short"
       }
@@ -1540,6 +1595,9 @@
         addConversationTopic {{ModId}}.CT_14h 2/
         quickQuestion {{i18n:Events.14h-p0.0 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}(break)switchEvent {{ModId}}_14hearts-p1(break)eventSeen {{ModId}}_14hearts-p0 false/
         end"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
       }
     },
 */
@@ -1630,6 +1688,7 @@
         switchEvent {{ModId}}_14hearts-p2"
       },
       "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
         "14hearts-variants": "long",
         "14hearts-commented": "false"
       }
@@ -1768,6 +1827,7 @@
         switchEvent {{ModId}}_14hearts-p2"
       },
       "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
         "14hearts-variants": "long",
         "14hearts-commented": "true"
       }
@@ -1829,6 +1889,7 @@
         switchEvent {{ModId}}_14hearts-p3"
       },
       "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
         "14hearts-variants": "long"
       }
     },
@@ -1958,6 +2019,7 @@
         switchEvent {{ModId}}_14hearts-p4"
       },
       "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
         "14hearts-variants": "long"
       }
     },
@@ -2004,6 +2066,7 @@
         switchEvent {{ModId}}_14hearts-p5"
       },
       "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
         "14hearts-variants": "long"
       }
     },
@@ -2159,7 +2222,9 @@
         switchEvent {{ModId}}_14hearts-p6"
       },
       "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
         "14hearts-variants": "long"
+      }
       }
     },
 
@@ -2183,24 +2248,6 @@
     },
 */
 
-
-/*
-    // Marriage testing event
-    {
-      "LogName": "Eleanor - custom wedding",
-      "Action": "EditData",
-      "Target": "Data/Weddings",
-      "Entries": {
-        "EventScript": {
-              "default": "wedding/27 60/farmer 67 41 1 {{ModId}} 70 41 3 Wizard 68 39 2 Camila 69 39 2 Abigail 70 44 0 Lewis 67 44 0 Linus 66 44 0 Morgan 64 41 1 Jadu /
-              speak {{ModId}} \"Blabla Eleanor custom wedding\"/
-              pause 1111/
-              end wedding"
-          }
-      },
-    },
-
-*/
 // Addon events
 
     // Hogwarts gone - y1

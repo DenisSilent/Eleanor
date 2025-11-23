@@ -14,6 +14,17 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.42 (23.11.2025)
+
+* Multi-device development possibility tests
+* Finally removed SVE as dependency!
+  * Highly experimental, but should be pretty much stable I think
+  * Has less content than the SVE version, but honestly thought it would be worse than it is
+* Removed unused and/or duplicated dynamic tokens
+* Got rid of images that were and never would be used (+ GitHub repo makes them accesable thru commits anyway, just in case)
+
+---
+
 ## version 1.0.0-alpha.41 (22.11.2025)
 
 * Multi-device development possibility tests
