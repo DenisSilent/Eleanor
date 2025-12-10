@@ -14,6 +14,14 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.43 (10.12.2025)
+
+* Multi-device development possibility tests
+* Fixed reported bug in leftover festival code
+* Commiting again because of checking out GitHub functions in real usage for moving into stable branch aka beta releases
+
+---
+
 ## version 1.0.0-alpha.42 (23.11.2025)
 
 * Multi-device development possibility tests

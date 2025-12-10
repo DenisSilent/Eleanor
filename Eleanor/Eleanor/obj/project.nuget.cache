@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A7vqaW9I4v8=",
+  "dgSpecHash": "zn3zHd8GLPE=",
   "success": true,
-  "projectFilePath": "c:\\SteamLibrary\\steamapps\\common\\Stardew Valley\\Mods - dev\\[NPC] Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj",
+  "projectFilePath": "C:\\SteamLibrary\\steamapps\\common\\Stardew Valley\\Mods - dev\\[NPC] Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Denis\\.nuget\\packages\\pathoschild.stardew.modbuildconfig\\4.4.0\\pathoschild.stardew.modbuildconfig.4.4.0.nupkg.sha512"
   ],

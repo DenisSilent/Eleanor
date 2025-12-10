@@ -135,7 +135,7 @@ win: 8y;25y
       "TextOperations": [
         {
           "Operation": "Append",
-          "Target": ["Entries", "Set-Up_additionalCharacters", "Set-Up_additionalCharacters_y2"],
+          "Target": ["Entries", "Set-Up_additionalCharacters"],
           "Value": "StrojvedouciDenis.Eleanor 47 88 0",
           "Delimiter": "/"
         },
@@ -255,7 +255,7 @@ win: 8y;25y
       "TextOperations": [
         {
           "Operation": "Append",
-          "Target": ["Entries", "Set-Up_additionalCharacters", "Set-Up_additionalCharacters_y2"],
+          "Target": ["Entries", "Set-Up_additionalCharacters"],
           "Value": "StrojvedouciDenis.Eleanor 14 64 3",
           "Delimiter": "/"
         },
