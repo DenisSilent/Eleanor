@@ -14,6 +14,14 @@ Instructions for downloading the unreleased versions:
 
 ---
 
+## version 1.0.0-alpha.44 (11.2.2026)
+
+* Multi-device development possibility tests
+* Fixed compactibility bug with other mods due to unnecessary map warp
+* Postponed all ideas and basically the whole work on the mod, the development is slowed down to minimal pace of stagnating mod support for potential bug fixing (not guaranteed); sadly I don't suppose this will ever change, but only time will tell.
+
+---
+
 ## version 1.0.0-alpha.43 (10.12.2025)
 
 * Multi-device development possibility tests

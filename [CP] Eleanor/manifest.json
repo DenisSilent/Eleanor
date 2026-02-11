@@ -11,7 +11,7 @@
 
   // Current Version
 
-  "Version": "1.0.0-alpha.43",
+  "Version": "1.0.0-beta.1",
 
   // Description
 
@@ -31,8 +31,8 @@
 
   // Minimum Versions
 
-  "MinimumGameVersion": "1.6.9",  // SV version
-  "MinimumApiVersion": "4.1.0",   // SMAPI version
+  "MinimumGameVersion": "1.6.15",  // SV version
+  "MinimumApiVersion": "4.5.0",   // SMAPI version
 
 
   // Dependencies - Required mods and optional mods
@@ -46,7 +46,7 @@
     {
       "UniqueID": "StrojvedouciDenis.Eleanor.SMAPI", // Eleanor
       "IsRequired": true,
-      "MinimumVersion": "0.9.0-beta.3"
+      "MinimumVersion": "1.0.0-beta.1"
     },
     
     // Optional mods & their compatibility		// CT's *should* not care about that mod missing or not --> these mods are not listed here
@@ -55,7 +55,6 @@
       "IsRequired": false,
       "MinimumVersion": "1.14.25"
     },
-
     {
     "UniqueID": "spacechase0.GenericModConfigMenu",
     "IsRequired": false

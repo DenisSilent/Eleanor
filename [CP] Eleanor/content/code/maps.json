@@ -77,7 +77,7 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
           "Layer": "Back",
           "SetProperties": { "TouchAction": "MagicWarp StrojvedouciDenis.Eleanor.Maps.Eleanor.home 8 11" }
         },
-        // make tiles passable where warp is
+        // make tiles passable where the warp itself is
         {
           "Position": { "X": 9, "Y": 16 },
           "Layer": "Buildings",
@@ -158,18 +158,20 @@ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/auth
         "HasSeenEvent": "112"
       }
     },
+/*    
     {
       "LogName": "{{ModId}} - maps - Eleanor's home - warp to Eleanor's home from WizardHouse (SVE)",
       "Action": "EditMap",
       "Target": "Maps/WizardHouse",
       "AddWarps": [
-        "10 17 {{ModId}}.Maps.Eleanor.home 8 11" // warp from 23 6 of Custom_WizardBasement to 8 11 of Eleanor_home
+        "10 17 {{ModId}}.Maps.Eleanor.home 8 11" // warp from 10 17 of WizardHouse to 8 11 of Eleanor_home
       ],
       "When": {
         "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
         "HasSeenEvent": "112"
       }
     },
+    */
     {
       "LogName": "{{ModId}} - maps - Eleanor's home - warp from Eleanor's home",
       "Action": "EditMap",
