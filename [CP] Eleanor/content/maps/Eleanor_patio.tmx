@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="4" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" name="spring_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
+ </tileset>
+ <tileset firstgid="1976" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <layer id="1" name="Back" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+1867,0,0,0,
+0,0,0,162
+</data>
+ </layer>
+ <layer id="2" name="Front" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="AlwaysFront" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Paths" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Back"/>
+ <objectgroup id="9" name="Buildings"/>
+ <objectgroup id="10" name="Front"/>
+ <objectgroup id="11" name="AlwaysFront"/>
+ <objectgroup id="12" name="Paths"/>
+</map>

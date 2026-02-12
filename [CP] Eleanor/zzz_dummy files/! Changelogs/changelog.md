@@ -4,9 +4,24 @@ Full list of all [Github commits.](https://github.com/DenisSilent/Eleanor/commit
 
 ---
 
+## version 1.0.0-beta.1 (11.2.2026)
+
+* Dropped dependency on SVE!
+  * Highly experimental, but should be pretty much stable I think
+  * Has less content than the SVE version, but honestly thought it would be worse than it is
+* Marriage support!
+  * though only basic one, pretty much no content; I honestly do NOT recommend marrying Eleanor right now due to lack of content and barely any tests, so it probably is fatally buggy - so if you want to try it out, at least make a backup of your save before doing it and learn how to use CJB Cheats and other great mods that can help you with fixing the save if something goes wrong
+* Added some content - few dialogues (maybe?; some improved); new 10h events; maybe some longevity support; ...
+* Probably fixed some bugs but caused many more
+* New code structure because of the dropped SVE dependency
+* And maybe more...
+* Due to not having enough time to properly work on the mod, the development is slowed down to minimal pace of stagnating mod support for potential bug fixing (not guaranteed); sadly I don't suppose this will ever change, but only time will tell.
+
+---
+
 ## version 0.9.9 (13.7.2025)
 
-* Fixed Eleanor's default map variant being heavilly broken
+* Fixed Eleanor's default map variant being heavily broken
 
 ---
 

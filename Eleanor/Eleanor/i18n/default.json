@@ -1,0 +1,46 @@
+{
+
+  // ! Warning - contains spoilers!
+  // ! Translators don't have to translate commented parts (those with "//" or "/* ... */"), it's better to leave them as they are!
+
+ "$schema": "https://smapi.io/schemas/i18n.json", // The schema for this file (don't change it!)
+
+  // Fallback message
+  "key_not_found": "The proper dialogue key was not found! Please, take a screenshot of this, then your SMAPI log and start a bug report, containing what you did to achieve this!",
+
+ // Install checker.cs
+  // disabled
+  "installer.smapi-disabled": "The SMAPI part of the [NPC] Eleanor mod is disabled in the config file. This message (you shouldn't even see normally, if not using Debug SMAPI version or if you're not looking at SMAPI log with Trace messages enabled) is basically the only thing that the SMAPI part does right now.",
+
+  // CP part not installed 
+  "installer.warning": "! WARNING !",
+  "installer.cp-not-installed": "The CP part '[CP] Eleanor' of the [NPC] Eleanor is installed incorrectly.",
+  "installer.check-errors": "Please check the errors section above (or below...) to see what is wrong.",
+  "installer.recommend-reinstall": "We recommend deleting the mod and installing it again.",
+  "installer.support-link": "Don't hesitate to reach out for support on the mod's Nexus page (mod number ID: 31663) or on Stardew Discord (user: dennis001_81324)!",
+
+  // success message
+  "installer.success": "The mod [NPC] Eleanor and all of its components have been successfully launched.",
+
+  // Config
+  "config.smapi_component.name": "Enable SMAPI Component",
+  "config.smapi_component.tooltip": "This config sets whether the SMAPI component of the mod is enabled. As of 1.0.0-beta.1, it is enabled by default and it only checks if the CP part of this mod is installed correctly.",
+
+  /*
+  // GMCM Example Config
+  "config.example.section_title": "Section Title",
+  "config.example.tooltip": "Tooltip",
+  "config.example.paragraph": "Paragraph text.",
+  "config.example.int_option.name": "Int Option",
+  "config.example.float_option.name": "Float Option",
+  "config.example.text_option.name": "Text Option",
+  "config.example.text_option.value.value1": "Value 1",
+  "config.example.text_option.value.value2": "Value 2",
+  "config.example.keybind.name": "Keybind",
+  "config.example.keybind_list.name": "Keybind List",
+  "config.example.page.title": "Page Title",
+  "config.example.page_link.text": "Link to Page 1",
+  "config.example.subheader.text": "Subheader"
+  */
+  
+}

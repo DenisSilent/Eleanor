@@ -6,11 +6,143 @@ If you want to use any of the unreleased versions, please be aware that they are
 Instructions for downloading the unreleased versions:
 
 1. Go to `%APPDATA%\StardewValley\` and make a copy of the `Saves` folder, in case anything would go wrong.
-2. Go to the [GitHub repo with correct branch](https://github.com/DenisSilent/Eleanor/tree/development_UNSTABLE!).
-3. Click on the green button "Code" and select "Download ZIP"
+2. Go to the [development branch of the mod's GitHub repo](https://github.com/DenisSilent/Eleanor/tree/development_UNSTABLE!).
+3. Click on the green button "Code" and select "Download ZIP" (note: this will also download the mod's source code and its old versions (in releases folder), so the ZIP file will be big).
 4. Unzip the downloaded file and copy the extracted `[NPC] Eleanor` folder to your `.../Stardew Valley/Mods` folder
 5. Test the mod in your game and report any bugs you find to the [GitHub issues page](https://github.com/DenisSilent/Eleanor/issues), please include the version number of the mod you used and a description of the bug, if possible also a screenshot or a video of the bug happening in your game.
 6. Enjoy the mod (and its bugs)!
+
+---
+
+## version 1.0.0-alpha.44 (11.2.2026)
+
+* Multi-device development possibility tests
+* Fixed compactibility bug with other mods due to unnecessary map warp
+* Postponed all ideas and basically the whole work on the mod, the development is slowed down to minimal pace of stagnating mod support for potential bug fixing (not guaranteed); sadly I don't suppose this will ever change, but only time will tell.
+
+---
+
+## version 1.0.0-alpha.43 (10.12.2025)
+
+* Multi-device development possibility tests
+* Fixed reported bug in leftover festival code
+* Commiting again because of checking out GitHub functions in real usage for moving into stable branch aka beta releases
+
+---
+
+## version 1.0.0-alpha.42 (23.11.2025)
+
+* Multi-device development possibility tests
+* Finally removed SVE as dependency!
+  * Highly experimental, but should be pretty much stable I think
+  * Has less content than the SVE version, but honestly thought it would be worse than it is
+* Removed unused and/or duplicated dynamic tokens
+* Got rid of images that were and never would be used (+ GitHub repo makes them accesable thru commits anyway, just in case)
+
+---
+
+## version 1.0.0-alpha.41 (22.11.2025)
+
+* Multi-device development possibility tests
+* Added GMCM support (with i18n support) for C# mod part
+* Fixed C# mod part not having i18n
+* Added more portrait changes in dialogues
+
+---
+
+## version 1.0.0-alpha.40 (17.11.2025)
+
+* Multi-device development possibility tests
+* I18n-ized C# mod part
+* Added 2, 4 and 7 hearts event variant for vanilla - big step forward to SVE dependency drop
+* Added more festival and marriage dialogues
+* Added neccesary migrations for addons
+
+---
+
+## version 1.0.0-alpha.39 (13.11.2025)
+
+* Multi-device development possibility tests
+* Minor edits in C# mod part
+* Decommented and fasten up 14 hearts event
+* Migrations for addons not needed?
+
+---
+
+## version 1.0.0-alpha.38 (30.10.2025)
+
+* Multi-device development possibility tests
+* Hotfixed events not loading from broken code in alpha.37
+* Created migration code for events --> should prevent new event showcase if already seen in previous version
+* Multiple code changes --> see commit log for more info
+  * Add migration for addons
+* Fixed manifest version again (why does it keep *not* changing itself automatically... 😭)
+
+---
+
+## version 1.0.0-alpha.37 (29.10.2025)
+
+* Multi-device development possibility tests (28.9.)
+* Fixed bug when seening vanilla event with ID `112` did an instant teleport to her home map (28.9.)
+* Commented out the 14h event variants again - not ready yet + needs more time --> sacrificed (again!) so the beta version can be released much sooner (28.9.)
+* Folder and files reorganization (28.10.)
+* Event IDs changed --> multiple events unless prevented (28.10.)
+  * Events repeating if seen will be prevented soon
+* Code structure changes (28.10.)
+  * Will continue in future patches
+* First really slow preparations for non-SVE release X will be delayed until future notice (28.10.)
+* IRL not giving me enough time to work on the mod --> slowed down the development speed to almost zero
+
+---
+
+## version 1.0.0-alpha.36 (1.9.2025)
+
+* Multi-device development possibility tests
+* Completed 10h event (hopefully)
+* Added spouse room and patio
+* Added marriage schedules
+* Preparation for 1.0.0 full version - see that new dynamic token
+* Removed the 1 year of development secret event
+* Fixed (probably fatal) error when marrying any other NPC (than unmariable Eleanor)
+  * AFAIK this error was introduced somewhere in alpha versions, so it should not be hopefully present in official releases
+
+---
+
+## version 1.0.0-alpha.35 (23.8.2025)
+
+* Multi-device development possibility tests
+* Fixes and advancements in 10h event (to be continued...; for detailed info, see commit log)
+* Fixed VSCode + Stardew debugging issues
+* Recompiled the mod again (no clue why; no changes made)
+
+---
+
+## version 1.0.0-alpha.34 (9.8.2025)
+
+* Multi-device development possibility tests
+* Added some new dialogues
+* Massive advancements in 10h event - both text (done) and code
+* Changed spouse and patio maps names and added the files to dev maps folder
+* Commented out the 14h event variants
+* Like no clue what on earth was I doing, see the commit log, please
+
+---
+
+## version 1.0.0-alpha.33 (21.7.2025)
+
+* Multi-device development possibility tests
+* Fixed broken Eleanor's home map on `default` config (13.7.?)
+* Resynchronized official versions (added releases)
+* Dialogue writing for 10h event (which probably will be today's 14h variants one, and this one will be in optional config I guess?)
+* Some event changes and fixes (will continue)
+
+---
+
+## version 1.0.0-alpha.32 (5.7.2025)
+
+* Multi-device development possibility tests
+* Fixed event errors
+* Fixed grammar error
 
 ---
 

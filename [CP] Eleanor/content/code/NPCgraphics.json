@@ -5,6 +5,7 @@ https://stardewvalleywiki.com/Modding:NPC_data#Appearance_.26_sprite
 https://stardewmodding.wiki.gg/wiki/Tutorial:_Adding_Seasonal_Outfits_via_Appearances
 */
   "Changes": [
+// common
     // Appearance code block = logic of NPC graphics //
     {
       "LogName": "Eleanor - NPCgraphics - appearance code block",
@@ -91,13 +92,17 @@ https://stardewmodding.wiki.gg/wiki/Tutorial:_Adding_Seasonal_Outfits_via_Appear
       "LogName": "Eleanor - NPCgraphics - default load command",
       "Action": "Load",
       "Target": "Characters/{{ModId}}, Portraits/{{ModId}}",
-      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/StrojvedouciDenis.Eleanor_default_ORG.png"
+      "FromFile": "content/NPC sprites and portraits/{{TargetPathOnly}}/StrojvedouciDenis.Eleanor_default_ORG.png"
     },
     {
       "LogName": "Eleanor - NPCgraphics - default load command",
       "Action": "Load",
       "Target": "Characters/{{ModId}}_default_ORG, Portraits/{{ModId}}_default_ORG, Characters/{{ModId}}_default, Portraits/{{ModId}}_default, Characters/{{ModId}}_spring, Portraits/{{ModId}}_spring, Characters/{{ModId}}_summer, Portraits/{{ModId}}_summer, Characters/{{ModId}}_fall, Portraits/{{ModId}}_fall, Characters/{{ModId}}_winter, Portraits/{{ModId}}_winter",
-      "FromFile": "assets/NPC sprites and portraits/{{TargetPathOnly}}/{{TargetWithoutPath}}.png"
+      "FromFile": "content/NPC sprites and portraits/{{TargetPathOnly}}/{{TargetWithoutPath}}.png"
     }
+
+// vanilla
+
+// SVE
   ]
 }

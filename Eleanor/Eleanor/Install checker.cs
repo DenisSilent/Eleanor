@@ -25,7 +25,9 @@ namespace Eleanor
             // IF config "Eleanor_SMAPI_on" is set to false
             if (!this.Helper.ReadConfig<Config_file.ModConfig>().Eleanor_SMAPI_on)
             {
-                this.Monitor.Log("The SMAPI part of the [NPC] Eleanor mod is disabled in the config file. This message (you shouldn't even see normally, if not using Debug SMAPI version or if you're not looking at SMAPI log with Trace messages enabled) is the only thing that the SMAPI part does right now.", LogLevel.Trace);
+                this.Monitor.Log(
+                    this.Helper.Translation.Get("installer.smapi-disabled").Default(this.Helper.Translation.Get("key_not_found")),
+                    LogLevel.Trace);
                 return;
             }
 
@@ -33,21 +35,21 @@ namespace Eleanor
             if (!this.Helper.ModRegistry.IsLoaded("StrojvedouciDenis.Eleanor"))
             {
                 this.Monitor.Log(" ", LogLevel.Error);
-                this.Monitor.Log("! WARNING !", LogLevel.Error);
+                this.Monitor.Log(this.Helper.Translation.Get("installer.warning").Default(this.Helper.Translation.Get("key_not_found")), LogLevel.Error);
                 this.Monitor.Log(" ", LogLevel.Error);
-                this.Monitor.Log("The CP part `[CP] Eleanor` of the [NPC] Eleanor is installed incorrectly.", LogLevel.Error);
-                this.Monitor.Log("Please check the errors section above to see what is wrong.", LogLevel.Error);
-                this.Monitor.Log("We recommend deleting the mod and installing it again.", LogLevel.Error);
-                this.Monitor.Log("Don't hesitate to reach out for support!", LogLevel.Error);
+                this.Monitor.Log(this.Helper.Translation.Get("installer.cp-not-installed").Default(this.Helper.Translation.Get("key_not_found")), LogLevel.Error);
+                this.Monitor.Log(this.Helper.Translation.Get("installer.check-errors").Default(this.Helper.Translation.Get("key_not_found")), LogLevel.Error);
+                this.Monitor.Log(this.Helper.Translation.Get("installer.recommend-reinstall").Default(this.Helper.Translation.Get("key_not_found")), LogLevel.Error);
+                this.Monitor.Log(this.Helper.Translation.Get("installer.support-link").Default(this.Helper.Translation.Get("key_not_found")), LogLevel.Error);
                 this.Monitor.Log(" ", LogLevel.Error);
-                this.Monitor.Log("! WARNING !", LogLevel.Error);
+                this.Monitor.Log(this.Helper.Translation.Get("installer.warning").Default(this.Helper.Translation.Get("key_not_found")), LogLevel.Error);
                 this.Monitor.Log(" ", LogLevel.Error);
                 return;
             }
             // ELSE installed correctly
             else
             {
-                this.Monitor.Log($"The mod [NPC] Eleanor and all of its components have been successfully launched.", LogLevel.Debug);
+                this.Monitor.Log(this.Helper.Translation.Get("installer.success").Default(this.Helper.Translation.Get("key_not_found")), LogLevel.Debug);
                  return;
             }
         }

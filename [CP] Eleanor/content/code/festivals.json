@@ -12,7 +12,38 @@ fal: 16y;27y
 win: 8y;25y
 */
   "Changes": [
-    // Flower Dance //
+// common
+    {
+      "LogName": "Eleanor - festival add-on dialogues",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
+      "Entries": {
+        "Fair_Judging": "{{i18n:Dialogues.Fair_Judging |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+
+        "Fair_Judged": "{{i18n:Dialogues.Fair_Judged |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Fair_Judged_PlayerLost_PurpleShorts": "{{i18n:Dialogues.Fair_Judged_PlayerLost_PurpleShorts |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Fair_Judged_PlayerLost_Skipped": "{{i18n:Dialogues.Fair_Judged_PlayerLost_Skipped |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Fair_Judged_PlayerLost": "{{i18n:Dialogues.Fair_Judged_PlayerLost |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "Fair_Judged_PlayerWon": "{{i18n:Dialogues.Fair_Judged_PlayerWon |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+
+        "WinterStar_ReceiveGift": "{{i18n:Dialogues.WinterStar_ReceiveGift |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+
+        //"WinterStar_ReceiveGift_<id>": "",
+        //"WinterStar_ReceiveGift_<tag>": "",
+
+        "WinterStar_GiveGift_Before_Roommate": "{{i18n:Dialogues.WinterStar_GiveGift_Before_Roommate |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "WinterStar_GiveGift_Before_Spouse": "{{i18n:Dialogues.WinterStar_GiveGift_Before_Spouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "WinterStar_GiveGift_Before": "{{i18n:Dialogues.WinterStar_GiveGift_Before |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "WinterStar_GiveGift_After_Roommate": "{{i18n:Dialogues.WinterStar_GiveGift_After_Roommate |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "WinterStar_GiveGift_After_Spouse": "{{i18n:Dialogues.WinterStar_GiveGift_After_Spouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
+        "WinterStar_GiveGift_After": "{{i18n:Dialogues.WinterStar_GiveGift_After |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
+      }
+    },
+
+// vanilla
+
+// SVE
+      // Flower Dance //
     {
       "LogName": "Eleanor - spr24 festivals",
       "Action": "EditData",
@@ -46,10 +77,13 @@ win: 8y;25y
           "Value": "StrojvedouciDenis.Eleanor 3 23 1",
           "Delimiter": "/"
         }
-      ]
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
     },
 
-    // Dance of the Moonlight Jellies //
+      // Dance of the Moonlight Jellies //
     {
       "LogName": "Eleanor - sum28 festivals",
       "Action": "EditData",
@@ -83,10 +117,13 @@ win: 8y;25y
           "Value": "StrojvedouciDenis.Eleanor 11 33 3",
           "Delimiter": "/"
         }
-      ]
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
     },
 
-    // Stardew Valley Fair //
+      // Stardew Valley Fair //
     {
       "LogName": "Eleanor - fal16 festivals",
       "Action": "EditData",
@@ -98,7 +135,7 @@ win: 8y;25y
       "TextOperations": [
         {
           "Operation": "Append",
-          "Target": ["Entries", "Set-Up_additionalCharacters", "Set-Up_additionalCharacters_y2"],
+          "Target": ["Entries", "Set-Up_additionalCharacters"],
           "Value": "StrojvedouciDenis.Eleanor 47 88 0",
           "Delimiter": "/"
         },
@@ -120,10 +157,13 @@ win: 8y;25y
           "Value": "StrojvedouciDenis.Eleanor 47 88 0",
           "Delimiter": "/"
         }
-      ]
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
     },
 
-    // Spirit's Eve //
+      // Spirit's Eve //
     {
       "LogName": "Eleanor - fal27 festivals",
       "Action": "EditData",
@@ -157,10 +197,13 @@ win: 8y;25y
           "Value": "StrojvedouciDenis.Eleanor 12 57 1",
           "Delimiter": "/"
         }
-      ]
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
     },
 
-    // Ice Festival //
+      // Ice Festival //
     {
       "LogName": "Eleanor - win8 festivals",
       "Action": "EditData",
@@ -194,10 +237,13 @@ win: 8y;25y
           "Value": "StrojvedouciDenis.Eleanor 30 12 1",
           "Delimiter": "/"
         }
-      ]
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
     },
 
-    // Feast of the Winter Star //
+      // Feast of the Winter Star //
     {
       "LogName": "Eleanor - win25 festivals",
       "Action": "EditData",
@@ -209,7 +255,7 @@ win: 8y;25y
       "TextOperations": [
         {
           "Operation": "Append",
-          "Target": ["Entries", "Set-Up_additionalCharacters", "Set-Up_additionalCharacters_y2"],
+          "Target": ["Entries", "Set-Up_additionalCharacters"],
           "Value": "StrojvedouciDenis.Eleanor 14 64 3",
           "Delimiter": "/"
         },
@@ -231,35 +277,10 @@ win: 8y;25y
           "Value": "StrojvedouciDenis.Eleanor 14 64 3",
           "Delimiter": "/"
         }
-      ]
-    }
-/*
-    {
-      "LogName": "Eleanor - festival add-on dialogues",
-      "Action": "EditData",
-      "Target": "Characters/Dialogue/StrojvedouciDenis.Eleanor",
-      "Entries": {
-        "Fair_Judging": "{{i18n:Dialogues.Fair_Judging |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-
-        "Fair_Judged": "{{i18n:Dialogues.Fair_Judged |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Fair_Judged_PlayerLost_PurpleShorts": "{{i18n:Dialogues.Fair_Judged_PlayerLost_PurpleShorts |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Fair_Judged_PlayerLost_Skipped": "{{i18n:Dialogues.Fair_Judged_PlayerLost_Skipped |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Fair_Judged_PlayerLost": "{{i18n:Dialogues.Fair_Judged_PlayerLost |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "Fair_Judged_PlayerWon": "{{i18n:Dialogues.Fair_Judged_PlayerWon |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-
-        "WinterStar_ReceiveGift": "{{i18n:Dialogues.WinterStar_ReceiveGift |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-
-        //"WinterStar_ReceiveGift_<id>": "",
-        //"WinterStar_ReceiveGift_<tag>": "",
-
-        "WinterStar_GiveGift_Before_Roommate": "{{i18n:Dialogues.WinterStar_GiveGift_Before_Roommate |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "WinterStar_GiveGift_Before_Spouse": "{{i18n:Dialogues.WinterStar_GiveGift_Before_Spouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "WinterStar_GiveGift_Before": "{{i18n:Dialogues.WinterStar_GiveGift_Before |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "WinterStar_GiveGift_After_Roommate": "{{i18n:Dialogues.WinterStar_GiveGift_After_Roommate |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "WinterStar_GiveGift_After_Spouse": "{{i18n:Dialogues.WinterStar_GiveGift_After_Spouse |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}",
-        "WinterStar_GiveGift_After": "{{i18n:Dialogues.WinterStar_GiveGift_After |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}"
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
       }
     }
-      */
   ]
 }
