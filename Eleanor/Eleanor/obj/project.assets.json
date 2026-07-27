@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net6.0": {
       "Pathoschild.Stardew.ModBuildConfig/4.4.0": {
@@ -42,7 +42,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.0-beta.1",
+    "version": "1.0.0-beta.2",
     "restore": {
       "projectUniqueName": "C:\\SteamLibrary\\steamapps\\common\\Stardew Valley\\Mods - dev\\[NPC] Eleanor\\Eleanor\\Eleanor\\Eleanor.csproj",
       "projectName": "Eleanor",
@@ -55,18 +55,17 @@
       ],
       "configFilePaths": [
         "C:\\Users\\Denis\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
+          "framework": "net6.0",
           "targetAlias": "net6.0",
           "projectReferences": {}
         }
@@ -81,10 +80,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net6.0": {
+        "framework": "net6.0",
         "targetAlias": "net6.0",
         "dependencies": {
           "Pathoschild.Stardew.ModBuildConfig": {
@@ -108,7 +108,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

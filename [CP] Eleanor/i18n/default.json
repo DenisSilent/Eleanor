@@ -16,12 +16,12 @@
   "config.Festivals.name": "Festivals",
   "config.Festivals.values.true": "true",
   "config.Festivals.values.false": "false",
-  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. As of 1.0.0-beta.1 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
+  "config.Festivals.description": "This setting activates Eleanor at some vanilla festivals. As of 1.0.0-beta.2 it includes unique non-marriage dialogues (year 1 only) for each festival she'll attend and one marriage dialogue. Default setting: true.",
 
   "config.Marriage.name": "Marriage",
   "config.Marriage.values.true": "true",
   "config.Marriage.values.false": "false",
-  "config.Marriage.description": "This setting lets you choose if Eleanor can be married. As of 1.0.0-beta.1, it might include many errors. Default setting: false. = Turn on at your own risk! =",
+  "config.Marriage.description": "This setting lets you choose if Eleanor can be married. As of 1.0.0-beta.2, it might include many errors. Default setting: false. = Turn on at your own risk! =",
 
   "config.Map-furniture.name": "Map furniture",
   "config.Map-furniture.values.default": "default",
@@ -47,7 +47,7 @@
   "config.Outfits.values.one look only": "one look only",
   "config.Outfits.values.vanilla": "vanilla",
   "config.Outfits.values.seasonal": "seasonal",
-  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-beta.1, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
+  "config.Outfits.description": "= ! EXPERIMENTAL - MIGHT (but shouldn't) RESULT IN NPC WITHOUT SPRITES OR PORTRAITS ! = This setting sets sprites & portraits for Eleanor.  As of 1.0.0-beta.2, it is an experimental feature that would be stable in 0.9.0. Default setting: only one look.",
 
   // Experimental - DoNotChange
 
@@ -58,7 +58,7 @@
   "config.On/off.values.on": "on",
   "config.On/off.values.safe mode": "safe mode",
   "config.On/off.values.off": "off",
-  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-beta.1, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
+  "config.On/off.description": " = D O = N O T = U S E = For experimental usage only -> change at your own risk! = This setting lets you choose if Eleanor will be added to the game. As of 1.0.0-beta.2, it is functional. When set to safe mode, Eleanor will be put out of the map but all progress with her will be kept. When off, Eleanor will be deleted from the game. Default setting: on.",
 
   /*
   // Dynamic tokens
@@ -372,7 +372,7 @@
   "Events.2h.0": "Good morning, {{DT_name}}!",
   "Events.2h.1": "Above you!",
   "Events.2h.2": "Hehe...$1#$b#Took you a while to notice me, didn't it?$1",
-/* 1.7
+/* 1.6.16
   "Events.2h.3_q1": "Such nice nature here, don't you think?",
   "Events.2h.3_q1a1": "I know! It's beautiful!",
   "Events.2h.3_q1a2": "I don't like it. Something more useful should be built here.",
@@ -388,7 +388,7 @@
   "Events.4h.2": "Oh, hello, {{DT_name}}! What brings you here?",
   "Events.4h.3": "You heard a noise from downstairs, so you decided to check it out?#$b#Heh... I should be quieter next time.",
   "Events.4h.4": "It was just me, looking for a certain book to study...#$b#I can't find it, though...$2",
-/* 1.7
+/* 1.6.16
   "Events.4h.5_q1": "Would you like to help me find it?",
   "Events.4h.5_q1a1": "Of course!",
   "Events.4h.5_q1a2": "I'll help, but why don't you use magic to find it?",
@@ -420,7 +420,7 @@
   "Events.7h.0": "Oh!#$b#{{DT_name}}!#$b#Hi! What brings you here?",
   "Events.7h.1": "So, you are saying that you saw me standing here and decided to check on me?#$b#That is nice of you. Thank you, and don't worry, I am pretty fine.$l",
   "Events.7h.2": "I was just thinking about my life and where I am in it right now...#$b#And before you even ask, no, I am not going to jump from the cliff. I am pretty happy with my life.",
-/* 1.7
+/* 1.6.16
   "Events.7h.3_q1": "What about you, are you enjoying your life here in Pelican Town?",
   "Events.7h.3_q1a1": "I do enjoy it! The community here is so nice!",
   "Events.7h.3_q1a2": "I still kinda regret leaving the city...",
@@ -449,6 +449,11 @@
   // 10 hearts
   "Events.10h.0": "Here it is!",
   "Events.10h.1": "Oh, {{DT_name}}! Hi!",
+  /* 1.6.16
+  "Events.10h.2_q1": "What brings you here",
+  "Events.10h.2_q1a1": Just looking for foragables.",
+  "Events.10h.2_q1a2": "I heard your voice and wanted to check out.",
+*/
   "Events.10h.2_q1": "What brings you here?#Just looking for foragables.#I heard your voice and wanted to check out.",
   "Events.10h.3_q1r1": "This place is full of things. I like to go here as well, and sometimes pick up something and take it, either for studying or for eating.",
   "Events.10h.3_q1r2": "Haven't we already had something similar before? Hehe...",
@@ -502,7 +507,7 @@
   "Events.10h.51": "Well, as you saw, I did. Every... single... world...#$b#...but before I'll continue, are you OK? At least, as OK as you can be after this?",
   "Events.10h.52": "Good, I'm glad to hear that.#$b#But I warn you - if you were OK after this, then I worry you won't be after I tell you what I heard.#$b#But I don't want to push you into anything, so disturb me if anything is wrong, OK?",
   "Events.10h.53_q2": "So, do you want to discover what this all was about?#Yes, I want to know what happened.#No, I don't want to know.",
-/* 1.7
+/* 1.6.16
   "Events.10h.53_q2": "So, do you want to discover what this all was about?",
   "Events.10h.53_q2a1": "Yes, I want to know what happened.",
   "Events.10h.53_q2a2": "No, I don't want to know.",
@@ -558,7 +563,7 @@
   "Events.10h.99": "And that is why I'm telling you all of this, {{DT_name}}.#$b#Because you are, that soulmate who makes me happy, who makes me feel like my life has a sense, who makes me feel like I am home.",
   "Events.10h.100": "The soulmate... who I hopelessly fell in love with, {{DT_name}}.#$b#Before you ask it, yes, I'm sure I do, forever.#$b#I love you, {{DT_name}}.$4",
 
-/*
+/* //! the '!' is there just for syntax colouring in my development environment
   // 14 hearts
   // OLD part 1/1 (old 14h event dialogues, now 14h-short; variants are automatically used depending if you have Hogwarts installed or not; also 10 hearts temporary event)
   // SVE
@@ -598,7 +603,6 @@
   "Events.14h-short_Hog.15": "Every year from then, I visit this memorial - so I can thank all souls that defended Hogwarts,...$2#$b#...and to pray for my parent's lives.",
   "Events.14h-short_Hog.16": "I was never able to fully solve those dreams, but there is this one thing my parents said to me in my strange dreams - that somewhere, I have a secret soulmate that also has unique magical abilities - and I'll meet my soulmate when I will miss my parents the most.#$b#Which was the day when Pelican Town got big news - someone was coming to take over your grandpa's farm.#$b#My parents knew your grandpa...#$b#...they knew about you.#$b#You, {{DT_name}}.#$b#It's a mystery I don't expect I'll ever solve, but...",
   "Events.14h-short_Hog.17": "...I love you, {{DT_name}}.",
-*/
 
   // Event.14 hearts
   // part 0/5
@@ -718,7 +722,7 @@
   "Events.14h-p3.26": "That being said, as you noticed, I know what's written on the paper you're holding in your hand.#And I hope that even though you don't know the details, you'll understand what it means.", // message
   //"Event.14h-p3.26-commented": "I know what's written on the paper...#...but I don't know what it means...#...and I don't know if I want to...", // message
   "Events.14h-p3.27": "As you see, this is a message from my parents, and it's about the bad power that is hidden in the mountains.#And that everyone left because of it, just so my parents could stop it.", // message
-  //"Event.14h-p3.27-commented": "Hey! WHY are you looking at the i18n translation files?!", // message
+  //"Event.14h-p3.27-commented": "Hey! WHY are you looking at the i18n translation files?! :)", // message
   "Events.14h-p3.28": "There also was something about me, that I could stop it...#...but I don't know how...#...and I don't know if I should...", // message
   "Events.14h-p3.29": "And that is when I realized that this letter, even though using the encryption used in our valley and signed by them, might not be from my parents.#You see, I don't remember my parents, but I know that they were one of the most powerful wizards in the world.", // message
   "Events.14h-p3.30": "Yet they also were very wise.#Which means, they knew that I would find this message, and they knew that I would decrypt it.", // message
@@ -818,7 +822,15 @@
   // part 6/5
   "Events.14h-p6.0": "The End#...or is it?#For this story, it indeed is, {{DT_name}}.#Thank you for playing with this mod! I hope you enjoyed it! May this Stardew Valley game make You happy :)#- StrojvedouciDenis; author of NPC Eleanor", // message
 
-  "Gifts.neutral": "A gift? Oh... thanks?$2",
+  ! */ // the '!' is there just for syntax colouring in my development environment
+
+  // gifts.json
+  "Gift.love": "Oh, this is amazing! Thank you, {{DT_dialogues}}!$h",
+  "Gift.like": "How nice of you, this is great.$h",
+  "Gift.dislike": "Oh... I don't like this gift. But you tried. And that counts.$a",
+  "Gift.hate": "Oh my, go away with this!$a",
+  "Gift.neutral": "A gift? Oh... thanks?",
+
 
   //"Gifts.AcceptGift_(O)460": "StrojvedouciDenis.Eleanor-DEBUG:Gifts.AcceptItem_(O)460",
   "Gifts.RejectItem_(O)460": "OH! {{DT_name}}! So you feel THIS way about me?#$b#Not that I don't feel the same way, but I'm not ready for this yet...#$b#I hope you understand...$2",
@@ -864,7 +876,7 @@
   "Gifts.AcceptBirthdayGift_Positive": "Is that... a birthday gift for me, {{DT_name}}?#$b#Oh, thank you so much!#$b#I'm so happy you remembered my birthday...$1",
   "Gifts.RejectGift_Divorced": "Oh really, {{DT_name}}?#$b#You're giving me this after what happened between us?#$b#No, {{DT_name}}, I can't accept it...$2",
 
-  // Maps.json
+  // maps.json
   "Maps.Eleanor.home_broom": "Looks like this broom is used for cleaning. Could it also be used for flying?",
   "Maps.Eleanor.home_junimo": "You have already seen this in the community center. Why is it here?",
   "Maps.Eleanor.home_kitchen": "Even wizards and witches need to eat, right?",

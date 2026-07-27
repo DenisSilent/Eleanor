@@ -4,6 +4,14 @@ Full list of all [Github commits.](https://github.com/DenisSilent/Eleanor/commit
 
 ---
 
+## version 1.0.0-beta.2 (26.7.2026)
+
+* Hotfixed reported bug regarding gifts
+* Some general changes of things I noticed
+* Slightly trying to get back to this mod; no promises though; might improve in 2027
+
+---
+
 ## version 1.0.0-beta.1 (11.2.2026)
 
 * Dropped dependency on SVE!

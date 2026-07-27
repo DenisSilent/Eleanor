@@ -24,7 +24,7 @@
 
   // Config
   "config.smapi_component.name": "Enable SMAPI Component",
-  "config.smapi_component.tooltip": "This config sets whether the SMAPI component of the mod is enabled. As of 1.0.0-beta.1, it is enabled by default and it only checks if the CP part of this mod is installed correctly.",
+  "config.smapi_component.tooltip": "This config sets whether the SMAPI component of the mod is enabled. As of 1.0.0-beta.2, it is enabled by default and it only checks if the CP part of this mod is installed correctly.",
 
   /*
   // GMCM Example Config

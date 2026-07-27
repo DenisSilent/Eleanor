@@ -1203,7 +1203,7 @@
         "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
       }
     },
-    /*
+    /* //! // the '!' is there just for syntax colouring in my development environment
     {
       "LogName": "Eleanor - event - 10 hearts (p2)",
       "Action": "EditData",
@@ -1544,7 +1544,7 @@
         pause 2000/
         shake {{ModId}} 1000/
         pause 3000/
-        message \"{{i18n:Events.14h-short_Hog.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"globalFade/
+        message \"{{i18n:Events.14h-short_Hog.7 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/globalFade 0.019 true/
         pause 3500/
         speak {{ModId}} \"{{i18n:Events.14h-short_Hog.8 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
@@ -1558,12 +1558,12 @@
         pause 3333/
         speak {{ModId}} \"{{i18n:Events.14h-short_Hog.13 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"globalFadeToClear/
+        speak {{ModId}} \"{{i18n:Events.14h-short_Hog.14 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/globalFadeToClear/
         pause 5000/
         speak {{ModId}} \"{{i18n:Events.14h-short_Hog.15 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
         message \"{{i18n:Events.14h-short_Hog.16 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
-        globalfadeout/
+        globalFade 0.019 true/
         pause 5000/
         speak {{ModId}}  \"{{i18n:Events.14h-short_Hog.17|DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 7777/
@@ -1696,7 +1696,7 @@
     {
       "LogName": "Eleanor - 14hearts event (p1) - Eleanor's letter (commented)",
       "Action": "EditData",
-      "Target": "Data/ Events/FarmHouse",
+      "Target": "Data/Events/FarmHouse",
       "Entries": {
         "{{ModId}}_14hearts-p1/SawEvent {{ModId}}_10hearts/Friendship {{ModId}} 3500":
         "none/-1000 -1000/farmer 0 0 0 {{ModId}} 0 0 0/
@@ -1964,7 +1964,7 @@
         pause 1111/
         speak Wizard \"{{i18n:Events.14h-p3.20 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/
         pause 1111/
-        globalFade 0.07/
+        globalFade 0.07 true/
         viewport -1000 -1000/
         pause 1111/
         message \"{{i18n:Events.14h-p3.21 |DT_name={{DT_name}} |DT_wizard_name={{DT_wizard_name}} |DT_wizard_fem={{DT_wizard_fem}} |default={{i18n:key_not_found}}}}\"/

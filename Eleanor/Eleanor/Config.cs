@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 namespace Eleanor
 {
     /// <summary>The mod entry point; handles internal ON/OFF config.</summary>
-    internal sealed class Config_file : Mod
+    internal sealed class Config_file : Mod // maybe Configfile
     {
         private ModConfig? Config;
 

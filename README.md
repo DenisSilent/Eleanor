@@ -24,7 +24,7 @@ Eleanor is a young witch who studies under the guidance of the local wizard, Mr.
 * ~~0.7.4-beta.7 - final private internal version, synchronization with GitHub and upcoming NexusMods release~~ 13.2.2025
 * ~~0.8.0 - wide public release on NexusMods (should be the same date as 0.7.4-beta.7)~~ 14.2.2025
 * ~~0.9.0 - dialogues update (dedicated movie dialogues, etc.)~~ 22.3.2025
-* 1.0.0 - marriage update
+* ~~1.0.0 - marriage update~~ technically done 12.2.2026
 * 1.1.0 - ???
 * ~~X.X.X - more sprites & portraits - won't happen any time soon~~ art created and, as of 0.9.0-beta.1 included, by **hezjena2023**!
 
@@ -60,7 +60,7 @@ Basics (parts of content.json, manifest.json, now-quite-obsolete mod folder stru
 
 **hezjena2023** - THANK YOU for creating the art for my Eleanor!;
 
-Anyone who was willing to help or ask for help from Stardew Valley Discord (especially from #making-mods-general; many thanks to everyone there). All users that helped me are mentioned in the "changelog.md" file located [in the changelog files](https://github.com/DenisSilent/Eleanor/tree/main/%5BCP%5D%20Eleanor/zzz_dummy%20files/!%20Changelogs);
+Anyone who was willing to help or ask for help from Stardew Valley Discord (especially from #making-mods-general; many thanks to everyone there). All users that helped me are mentioned in the "changelog.md" file located [in the changelog files](<https://github.com/DenisSilent/Eleanor/tree/main/%5BCP%5D%20Eleanor/zzz_dummy%20files/!%20Changelogs>);
 
 Everyone who somehow contributed to Stardew Valley community. Thanks! We appreciate your contributions!
 
@@ -70,8 +70,8 @@ Copyright (c) 2025 StrojvedouciDenis
 
 This mod, including all code (.json, C# source/dll,... files), is licensed under the MIT License.
 A copy of the MIT License can be found in the LICENSE file in this distribution (in `[CP] Eleanor/zzz_dummy files/LICENCE`), direct GitHub links:
-[main branch, stable](https://github.com/DenisSilent/Eleanor/%5BCP%5D%20Eleanor/zzz_dummy%20files/LICENCE)
-[development branch, unstable, not recommended for use](https://github.com/DenisSilent/Eleanor/tree/development_UNSTABLE!/%5BCP%5D%20Eleanor/zzz_dummy%20files/LICENCE)
+[main branch, stable](<https://github.com/DenisSilent/Eleanor/%5BCP%5D%20Eleanor/zzz_dummy%20files/LICENCE>)
+[development branch, unstable, not recommended for use](<https://github.com/DenisSilent/Eleanor/tree/development_UNSTABLE!/%5BCP%5D%20Eleanor/zzz_dummy%20files/LICENCE>)
 
 The source code of this mod, as well as all releases, is publicly available at:
 [main branch, stable](https://github.com/DenisSilent/Eleanor)
