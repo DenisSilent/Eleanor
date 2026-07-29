@@ -4,7 +4,14 @@ Full list of all [Github commits.](https://github.com/DenisSilent/Eleanor/commit
 
 ---
 
-## version 1.0.0-beta.2 (26.7.2026)
+## version 1.0.0-beta.3 (29.7.2026)
+
+* Repacked beta.2 again due to file corruption
+  * Therefore a new version for update ping
+
+---
+
+## version 1.0.0-beta.2 (27.7.2026)
 
 * Hotfixed reported bug regarding gifts
 * Some general changes of things I noticed

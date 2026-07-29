@@ -11,7 +11,7 @@
 
   // Current Version
 
-  "Version": "1.0.0-beta.2",
+  "Version": "1.0.0-beta.3",
 
   // Description
 
@@ -46,7 +46,7 @@
     {
       "UniqueID": "StrojvedouciDenis.Eleanor.SMAPI", // Eleanor
       "IsRequired": true,
-      "MinimumVersion": "1.0.0-beta.2"
+      "MinimumVersion": "1.0.0-beta.3"
     },
     
     // Optional mods & their compatibility		// CT's *should* not care about that mod missing or not --> these mods are not listed here
